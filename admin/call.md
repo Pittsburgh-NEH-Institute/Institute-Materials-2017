@@ -63,3 +63,7 @@ _____
 1. Robinson, Peter, 2013. “Towards a theory of digital editions.” _Variants_ 10, pp.105–31.
 1. Haentjens Dekker, Ronald, Dirk van Hulle, Gregor Middell, Vincent Neyt, Joris van Zundert, 2015. “Computer-supported collation of modern manuscripts: CollateX and the Beckett Digital Manuscript Project”, _Digital scholarship in the humanities_, 30(3), pp. 452–70.
 1. Andrews, Tara L., 2012. “The third way: philology and critical edition in the digital age.” _Variants_ 10, pp. 61–76.
+
+___
+This anouncement has been posted to Humanist,
+Digital Classicist, Digital Medievalist, TEI-L, and WWP-Encoding. Please circulate.
