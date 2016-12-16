@@ -33,6 +33,9 @@ The Institute will meet at the main (Oakland) campus of the University of Pittsb
 * Mike Kestemont (Department of Literature, University of Antwerp)
 * Leif-Jöran Olsson (Department of Swedish Language, University of Gothenburg)
 
+The instructors will be assisted by Gabrielle (Gabi) Keane (Senior Undergraduate Institute Assistant, University of Pittsburgh).
+
+
 ## Details
 
 Applications are invited for the full three-week Institute or, in the case of those who are already comfortable with the types of first-week topics described above, for just the second and third weeks. Applicants should already be proficient with digital textual editing in TEI XML or similar technologies, and should be seeking guidance and training in how to move their texts into innovative digital editions that will enable them to explore project-specific research questions. Evidence of meaningful prior hands-on digital textual editing experience is required, but prior experience in programming for textual exploration and publication is not. Applicants who do not have prior experience with the Python programming language must agree to complete a recommended free online Introductory Python course before the beginning of the Institute, for which the Institute will maintain its own support and discussion board for Institute participants.
