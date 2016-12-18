@@ -8,7 +8,7 @@ Digital humanists with advanced expertise in some areas, such as editing files i
 
 ### Day 2: Regular expressions and operating system conventions
 
-Regular expressions are an indispensable text-search mechanism used in word processors, text editors, and programming languages, and many of the conventions that arise in regular expressions are influential elsewhere in the operating system (e.g., the use of the “*” character to mean “everything”). On Day 2 the instructors will introduce the participants to using regular expressions on the command line and in programming languages.
+Regular expressions are an indispensable text-search mechanism used in word processors, text editors, and programming languages, and many of the conventions that arise in regular expressions are influential elsewhere in the operating system (e.g., the use of the **`*`** character to mean “everything”). On Day 2 the instructors will introduce the participants to using regular expressions on the command line and in programming languages.
 
 ### Day 3: Understanding programming and naming conventions
 
