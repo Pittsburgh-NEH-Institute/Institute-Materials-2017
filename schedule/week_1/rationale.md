@@ -1,0 +1,28 @@
+# Week 1: Bootcamp: Computational groundwork skills
+## Rationale
+
+Perhaps the greatest practical challenge in any hands-on workshop in the Digital Humanities is the variation in background knowledge of the computing environment that the participants bring to the class. We put forward a novel solution to this problem, which we hope will be adopted in workshops throughout the digital cultural heritage sector, by dedicating an optional first week to laying a groundwork of computational skills and knowledge that cannot reliably be assumed of digital humanists.
+All participants will have been asked to prepare beforehand by working through an introductory Python programming tutorial on the Internet, of the sort that we have used as preparatory material in other workshops we have taught, and for which we will provide support before and during the Institute on a discussion board that we will maintain. The goal is not that the participants will arrive as capable Pythonprogrammers, but that they will have had the opportunity to operate at an introductory level within a programming environment. But because web-based courses such as those offered by Codeacademy teach programming within a browser, once new programmers have written Python code, how do they run it? Test it? Re-use the logic elsewhere? Indicate that a program should access a particular file on the computer or on the Internet? Interpret and respond to cryptic error messages? The first week of our Institute will provide intensive hands-on practice within the computing environment, so that all participants will be able to participate fully in the digital scholarship activities that form the focus of the following twoweeks.
+Participation in the first week of the Institute is optional. Those who already have this basic technical background knowledge can begin the Institute in the second week without any disadvantage, and they will be joined by participants who will have had the chance to acquire confidence in their ability to keep up with their “power user” peers. We regard this bootcamp strategy as an innovative way to maximize theaccessibility of the Institute by enabling scholars with different levels of prior expertise to participate equivalently in the digital-editions core activities, to which we dedicate the second and third weeks.
+
+## Topics
+
+### Day 1: Working with files, programs, and the command line
+
+Digital humanists with advanced expertise in some areas, such as editing files in an XML editor, often have little or no meaningful understanding of the way files are organized on their computers, or of how to interact with them from the command line. On Day 1 the instructors will introduce the participants to the command line and hierarchical file system as part of the working environment in Windows, Mac OS, and Linux.
+
+### Day 2: Regular expressions and operating system conventions
+
+Regular expressions are an indispensable text-search mechanism used in word processors, text editors, and programming languages, and manyof the conventions that arise in regular expressions are influential elsewhere in the operating system (e.g., the use of the “*” character to mean “everything”). On Day 2 the instructors will introduce the participants to using regular expressions on the command line and in programming languages.
+
+### Day 3: Understanding programming and naming conventions
+
+Anyone who has taught Digital Humanities has encountered students whose markup or code doesn’t work because they’ve written it in Microsoft Word, which has turned their straight apostrophes and quotation marks into curly, typographic ones. Programming requires the use of an appropriate editor and an understanding of how appearancescan be deceiving (e.g., a tab that looks like four spaces to a human doesn’t look like four spaces to a computer), and an understanding of how to manage names (of files, functions, variables, etc.) in a way that respects reserved words and special-function metacharacters. On Day 3 the instructors will introduce the participants to formatting, file-naming, and command-line character conventions.
+
+### Day 4: Understanding how the Internet works
+
+With the growth of HTML5 and Web apps, digital publication on the Internet continues to overtake CD and DVD publication, and digital humanists often interact with those editions using Internet protocols of which they’ve never heard. Users of editions may not need to understand how the Internet works, and textual editors may not require comprehensive knowledge of how networks operate, but developers of digital editions that aim to offer more than a static Web archivedo need to understand the basics of network connectivity and the typical architecture of a Web application. On Day 5 the instructors will introduce the participants to network domains, ports, and protocols to deploy complex web-based digital editions.
+
+### Day 5: Don’t Panic: Documentation and error messages
+
+Error messages originate in a variety of places and the text they produce is not always easy for humanists to understand. Dealing with errors and error messages doesn’t require a degree in computer science, but it does require a knowledge of how to read and understand the message. On Day 5 the instructors will help the participants learn how find the location and nature of coding mistakes in seemingly inscrutable stack traces and other error reports.
