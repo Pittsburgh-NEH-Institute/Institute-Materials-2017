@@ -2,7 +2,7 @@
 
 ## # Week 2: Philcamp: Digital philology, creating a digital edition
 
-### Day 1: Modeling
+### Day 1: Modeling 
 
 On the first day of Week 2 we emphasize three foundational aspects of digital textual scholarship: _text as graph_ (TAG), _theory of edition_, and the _Gothenburg model_ of textual variance (GM). This day will also cover developing project specifications and defining goals and non-goals to avoid _scope-creep_.
 _Text as graph:_ The general framework we employ for discussing digital approaches to textual scholarship is text as graph (TAG), which allows the user to model arbitrary relationships among pieces of a text. In XML the information has to be stored in a hierarchical context, while with a graph model no such hierarchy is imposed (although the information may be structured hierarchically if one chooses, which means that the graph model is backwards compatible with the XML tree model). We employ TAG in the Institute to model structures that are important in documents whether or not they are isomorphic with an XML tree model. On Day 1 the instructors will introduce participants to modeling their own texts as graphs, and to understanding how the graph model enables them to ask questions of those texts.
