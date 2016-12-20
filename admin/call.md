@@ -61,7 +61,7 @@ _____
 1. McGann, Jerome, 2004. “Marking texts of many dimensions.” In Susan Schreibman, Raymond Siemens, and John Unsworth, eds. _A companion to Digital Humanities_. Oxford: Blackwell.
 1. Andrews, Tara L., 2012. “The third way: philology and critical edition in the digital age.” _Variants_ 10, pp. 61–76.
 1. Siemens, Raymond et al., 2012. “Toward modeling the social edition: An approach to understanding the electronic scholarly edition in the context of new and emerging social media.” _Literary and linguistic computing_, 27(4), pp. 445–61.
-1. Robinson, Peter, 2013. “Towards a theory of digital editions.” _Variants_ 10, pp.105–31.
+1. Robinson, Peter, 2012. “Towards a theory of digital editions.” _Variants_ 10, pp.105–31.
 1. Haentjens Dekker, Ronald, Dirk van Hulle, Gregor Middell, Vincent Neyt, Joris van Zundert, 2015. “Computer-supported collation of modern manuscripts: CollateX and the Beckett Digital Manuscript Project”, _Digital scholarship in the humanities_, 30(3), pp. 452–70.
 
 ___

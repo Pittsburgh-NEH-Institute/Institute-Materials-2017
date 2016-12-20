@@ -1,6 +1,6 @@
-# Week 2: Philcamp: Digital philology, creating a digital edition
+# Rationale
 
-## Rationale
+## Week 2: Philcamp: Digital philology, creating a digital edition
 
 Our experience teaching in TEI and other XML workshops has shown that learning nothing more than tagging may leave scholars staring at their angle brackets and wondering what to do next. For some a framework solution like TEI Tapas or TEI Simple provides an adequate next step, but digital humanists cannot build editions that break new methodological ground solely on the basis of templateoriented solutions prepared by others, and because tools and technologies come and go, learning to translate original digital thinking about editions into original implementations of those editions (instead of just “tooling up” on today’s applications and platforms) is necessary for sustainable training and education.
 
