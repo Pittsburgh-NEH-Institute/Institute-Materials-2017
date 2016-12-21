@@ -1,6 +1,6 @@
 # Topics
 
-## # Week 2: Philcamp: Digital philology, creating a digital edition
+## Week 2: Philcamp: Digital philology, creating a digital edition
 
 ### Day 1: Modeling 
 
