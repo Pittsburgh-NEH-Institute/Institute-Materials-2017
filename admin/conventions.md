@@ -1,8 +1,12 @@
-# Typographic conventions
+# Conventions, typographic and otherwise
 
 For use in the NEH Institute
 
-## General
+## Acknowledging the NEH
+
+I have created a boilerplate footer in our _includes_ subdirectory as _neh\_credit.md_, which links (absolute, so the path will not require modification) to the NEH logo (in our _images_ subdirectory). As far as I can tell, GitHub markdown does not support include files, so we have to copy and paste this explicitly into any page where it is to appear manually. At the moment I've included it only in the main _README.md_ file in the root directory of our repo, and I’ll inquire at the NEH about whether that meets their needs, or whether they require it to appear on every page.
+
+## General typography
 
 Except where specified otherwise below, follow the typographic and other formatting conventions at <http://chimera.labs.oreilly.com/books/1230000000969/ch03.html>.
 
