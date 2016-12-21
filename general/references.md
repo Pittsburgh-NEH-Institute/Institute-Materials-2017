@@ -22,8 +22,9 @@
 
 * Andrews, Tara L., 2012. “The third way: philology and critical edition in the digital age.” _Variants,_ 10, pp. 61–76.
 * Apollon, Daniel, Claire Bélisle, and Philippe Régnier, eds., 2014. _Digital critical editions: exploring the interweaving of traditional and digital textual scholarship._ Urbana-Champaign: U Illinois P.
+* Driscoll, Matthew James and Elena Pierazzo, eds. 2016. _Digital scholarly editing: theories and practices._ Cambridge: Open book publishers. <http://www.openbookpublishers.com/product/483/digital-scholarly-editing--theories-and-practices>
 * McGann, Jerome, 2004. “Marking texts of many dimensions.” In Susan Schreibman, Ray Siemens, and John Unsworth, eds. _A companion to Digital Humanities._ Oxford: Blackwell.
-* Pierazzo, Elena, 2015. _Digital scholarly editing: theories, models and methods._ Farnham: Ashgate.
+* Pierazzo, Elena, 2015. _Digital scholarly editing: theories, models and methods._ Aldershot: Ashgate.
 * Robinson, Peter, 2012. “Towards a theory of digital editions.” _Variants_, 10, pp. 105–31.
 * Sels, Lara and David J. Birnbaum 2015. “Editing the _Bdinski sbornik_ as a multilayered reality.” _Агиославика. Проблеми и подходи в изследването на Станиславовия чети-миней: доклади от едноименната конференция - 21 май 2013 г._ (_Hagioslavica. Issues and approaches in the study of the_ Stanislav Reading Menaion_: presentations from the conference of May 21, 2013.), ed. Diana Atanasova. Sofia: Kliment Oxridski University, pp. 184–99.
 * Siemens, Raymond et al., 2012. “Toward modeling the social edition: An approach to understanding the electronic scholarly edition in the context of new and emerging social media.” _Literary and linguistic computing_, 27(4), pp. 445–61.
