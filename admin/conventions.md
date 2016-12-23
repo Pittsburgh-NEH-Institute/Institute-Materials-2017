@@ -10,7 +10,15 @@ I have created a boilerplate footer in our _includes_ subdirectory as _neh\_cred
 
 Except where specified otherwise below, follow the typographic and other formatting conventions at <http://chimera.labs.oreilly.com/books/1230000000969/ch03.html>.
 
-## Apostrophes and quotation marks
+## Additions to O’Reilly typographic guidelines
+
+### Menu items or links to click
+
+An inline text link or the textual label of a menu item to be clicked by the user should be surrounded by curly double quotation marks. Example:
+
+Click on the link to “REST Acceptance Tests” in the footer. 
+
+### Apostrophes and quotation marks
 
 Apostrophes and quotation marks _in narrative text_ should be _curly_ (_typographic_) ones, and not straight. To enter opening and closing curly _double_ quotation marks in Mac OS, type Opt+[ for opening and Opt+Shift+[ for closing. To enter opening and closing curly _single_ quotation marks in Mac OS, type **`Opt+]`** for opening and **`Opt+Shift+]`** for closing. Example:
 
