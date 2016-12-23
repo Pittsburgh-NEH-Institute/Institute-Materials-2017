@@ -28,6 +28,9 @@ At this point the server is running. You can interact with it through the REST i
 ### Client
 
 * Install the client with `docker pull huygensing/alexandria-workshop-notebooks`. This takes a long time.
+* Start the client with `docker run -d -p${local_port}:8888 -v ${local_workdir}:/data/work huygensing/alexandria-workshop-notebooks`, where `local_workdir` is the Alexandria installation directory.
+* Navigate to the local port in a browser, which opens a Jupyter interface.
+
 
 ### Rerunning
 
