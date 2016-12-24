@@ -11,9 +11,9 @@ LMNL offers a data model (range algebra) and syntax. References from [the Lost a
 * [LMNL syntax](http://lmnl-markup.org/specs/archive/LMNL_syntax.xhtml)
 * [Liminal object model (LOM)](http://lmnl-markup.org/specs/archive/LOM.xhtml)
 
-The [CREOLE schema language](http://www.princexml.com/howcome/2007/xtech/papers/output/0077-30/index.xhtml) for LMNL has not been implemented. See also [Jeni’s comments](http://www.jenitennison.com/2007/05/16/xtech-creole-presentation-fallout.html).
+The CREOLE schema language for LMNL, which has not been implemented in production, is described in Jeni Tennison’s [Creole: validating overlapping markup](http://www.princexml.com/howcome/2007/xtech/papers/output/0077-30/index.xhtml). See also [her comments](http://www.jenitennison.com/2007/05/16/xtech-creole-presentation-fallout.html) about the discussion that followed the preceding presentation.
 
-[Luminescent](https://github.com/wendellpiez/Luminescent) implements a LMNL processing library as an XSLT 2.0 pipeline, using Apache Cocoon. The Luminescent GitHub repo includes sample literary texts with LMNL markup. For discussion see Wendell’s 2012 Balisage presentation: [Luminescent: parsing LMNL by XSLT upconversion](http://balisage.net/Proceedings/vol8/html/Piez01/BalisageVol8-Piez01.html), which also describes xLMNL, an XML-based representation of the LMNL data model.
+[Luminescent](https://github.com/wendellpiez/Luminescent) implements a LMNL processing library as an XSLT 2.0 pipeline, using Apache Cocoon. The Luminescent GitHub repo includes sample literary texts with LMNL markup. For discussion see Wendell Piez’s 2012 Balisage presentation: [Luminescent: parsing LMNL by XSLT upconversion](http://balisage.net/Proceedings/vol8/html/Piez01/BalisageVol8-Piez01.html), which also describes xLMNL, an XML-based representation of the LMNL data model.
 
 LMNL is not necessarily hierarchical. For a discussion of hierarchical issues see Wendell’s 2014 Balisage presentation: [Hierarchies within range space](http://balisage.net/Proceedings/vol13/html/Piez01/BalisageVol13-Piez01.html), with illustrations from _Frankenstein_ and sonnets. Appendix C includes examples of XQuery code that can be executed over a compiled xLMNL representation of a LMNL document.
 
