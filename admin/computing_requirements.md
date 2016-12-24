@@ -10,11 +10,12 @@ This guide describes the minimum operating system (OS) and infrastructure requir
 
 ## Windows
 
-* Windows users must be running a 64-bit version of Windows 10, 8, or 7. 
-	* **[Check your version]** If you can possibly upgrade to Windows 10, this would be a good time to do that.
-	* **[Check for 32 ~ 64 bit]** You must be running a 64-bit version of Windows. It is impossible to support some of the core Institute technologies on a 32-bit version of Windows.
-	* Windows 10 users should install the bash shell, following the instructions at <http://www.windowscentral.com/how-install-bash-shell-command-line-windows-10>. The Windows version of the bash shell works only in Windows 10.
-	* **[Checking for admin rights, and adding if missing]**
+Windows users must be running a 64-bit version of Windows 10, 8, or 7. 
+
+* **[Check your version]** If you can possibly upgrade to Windows 10, this would be a good time to do that.
+* **[Check for 32 ~ 64 bit]** You must be running a 64-bit version of Windows. It is impossible to support some of the core Institute technologies on a 32-bit version of Windows.
+* Windows 10 users should install the bash shell, following the instructions at <http://www.windowscentral.com/how-install-bash-shell-command-line-windows-10>. The Windows version of the bash shell works only in Windows 10.
+* **[Checking for admin rights, and adding if missing]**
 
 ## Apple
 
@@ -24,4 +25,4 @@ This guide describes the minimum operating system (OS) and infrastructure requir
 ## Linux
 
 * Linux distros must meet the version requirements for Docker, as described at <https://docs.docker.com/engine/installation/linux/>. 
-* * You can check for administrative rights by typing `sudo ls` and supplying your password when prompted. If you get a file listing of the current directory, you have administrative rights. If you get an error message, you don’t. **[Adding admin rights if you don’t have them]**
+* You can check for administrative rights by typing `sudo ls` and supplying your password when prompted. If you get a file listing of the current directory, you have administrative rights. If you get an error message, you don’t. **[Adding admin rights if you don’t have them]**

@@ -25,13 +25,21 @@ For first use you have to install (_pull_) the server and client containers. You
 
 At this point the server is running. You can interact with it through the REST interface or through a client, about which see below.
 
-### Client
+### Clients
+
+#### Notebook client
 
 * Install the client with `docker pull huygensing/alexandria-workshop-notebooks`. This takes a long time.
 * Start the client with `docker run -d -p${local_port}:8888 -v ${local_workdir}:/data/work huygensing/alexandria-workshop-notebooks`, where `local_workdir` is the Alexandria installation directory.
 * Navigate to the local port in a browser, which opens a Jupyter interface.
 
+**[Awaiting additional information in order to proceed]**
 
+#### Python client
+
+* Install the client by cloning the repo at <https://github.com/HuygensING/alexandria-python-client> and following the installation instructions.
+* For demo and testing purposes, clone the notebooks at <https://github.com/HuygensING/alexandria-workshop-notebooks>.
+* 
 ### Rerunning
 
 You can rerun a pulled container with the appropriate `docker run ${arguments}` command, but that doesn’t check for updates. To check for updates first, repeat the appropriate `docker pull ${arguments}` command. Updating pulls only changed files.
