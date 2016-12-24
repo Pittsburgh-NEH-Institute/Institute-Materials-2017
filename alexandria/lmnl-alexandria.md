@@ -44,3 +44,23 @@ LMNL and Alexandria both seek to overcome the single-hierarchy limitations of XM
 
 * Alexandria could incorporate a LMNL parser that could import LMNL with overlap already encoded and create the overlapping annotations as part of the import process.
 * Alexandria could incorporate a mechanism for validating LMNL, whether based on CREOLE or independent of it.
+
+## Questions to clarify
+
+### Hierarchy and flattening (with and without a schema)
+
+* The documents mention _hierarchical ~ non-hierarchical_ LMNL, as well as _flattened_ (is this different from _flat_?) LMNL, but those don’t seem to be defined and contrasted explicitly.
+* In the absence of a schema, is LMNL inherently flat (not flattened)? This has bearing on the relationship between the syntax and the data model, about which see below.
+* In the presence of schema, how is hierarchical ~ non-hierarchical represented?
+
+### Relationship between the syntax and the data model
+
+What parts of the serialization are informational and what parts are not? Details:
+
+* In XML: Serialization is not guaranteed always to produce the same result. You compare two XML documents not by comparing the serializations, but by parsing the serializations and comparing the trees. Variation in serialization output might involve the order of attributes, numerical character references ~ raw Unicode characters, single ~ double quoting of attribute values, and others.
+* In LMNL: When we flatten XML by converting start and end tags into Trojan markup, the order of the resulting milestones matters because hierarchical relationships (e.g, parent ~ child) have been translated into order relationships (e.g., earlier ~ later). Meanwhile, when two LMNL ranges start at the same point, the start tags are necessarily ordered in the serialization. How do we know when or whether that order is informational? If that depends on whether our LMNL is hierarchical or not, how do we determine that? Does it depend on the presence or absence of a (perhaps currently only hypothetical) schema?
+
+### Are ranges primitive or derived?
+
+Ranges can be expressed in terms of sets of nodes and edges. Sets are unordered by definition, and order in XML or LMNL (when conceived as a graph) is determined by implicit edges that define order and that have particular constraints (order must be complete, it can’t be ambiguous or contradictory, no cycles, etc.). In light of the preceding, in the LMNL data model, should ranges be defined explicitly in terms of sets and graphs (especially insofar as processing within a graph database, as in Alexandria, will need to be implemented in those terms)?
+
