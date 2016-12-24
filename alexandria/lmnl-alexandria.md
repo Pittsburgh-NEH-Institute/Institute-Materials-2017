@@ -40,7 +40,7 @@ As a graph database, Alexandria is not constrained by the XML tree model, and ca
 
 ## About LMNL and Alexandria
 
-LMNL and Alexandria both seek to overcome the single-hierarchy limitations of XML. LMNL offers a data model for conceptualizing overlap (not necessarily hierarchical) and a syntax for representing it, plus an implementation in Luminscent. Alexandria offers an opportunity for a second implementation, whether of original LMNL or of a derivative. Possible avenues for exploration:
+LMNL and Alexandria both seek to overcome the single-hierarchy limitations of XML. LMNL offers a data model for conceptualizing overlap (not necessarily hierarchical) and a syntax for representing it, plus an implementation in Luminscent. Alexandria already incorporates a graph-based data model and a graph-based processing model for text, which offers an opportunity for a second implementation, whether of original LMNL or of a derivative. Possible avenues for exploration:
 
 * Alexandria could incorporate a LMNL parser that could import LMNL with overlap already encoded and create the overlapping annotations as part of the import process.
 * Alexandria could incorporate a mechanism for validating LMNL, whether based on CREOLE or independent of it.
@@ -62,5 +62,5 @@ What parts of the serialization are informational and what parts are not? Detail
 
 ### Are ranges primitive or derived?
 
-Ranges can be expressed in terms of sets of nodes and edges. Sets are unordered by definition, and order in XML or LMNL (when conceived as a graph) is determined by implicit edges that define order and that have particular constraints (order must be complete, it can’t be ambiguous or contradictory, no cycles, etc.). In light of the preceding, in the LMNL data model, should ranges be defined explicitly in terms of sets and graphs (especially insofar as processing within a graph database, as in Alexandria, will need to be implemented in those terms)?
+Ranges can be expressed in terms of sets of nodes and edges. Sets are unordered by definition, and in Alexandria order is determined by edges of a particular type that connect text nodes and that have particular constraints (order must be complete, it can’t be ambiguous or contradictory, no cycles, etc.). In Alexandria, structures encoded in markup (such as ranges in LMNL or tree structure in XML) are represented by edges of a different type. In light of the preceding, in the LMNL data model, should ranges be defined explicitly in terms of sets and graphs, especially insofar as processing within a graph database, as in Alexandria, will need to be implemented in those terms?
 
