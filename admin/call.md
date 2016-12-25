@@ -65,5 +65,4 @@ _____
 1. Haentjens Dekker, Ronald, Dirk van Hulle, Gregor Middell, Vincent Neyt, Joris van Zundert, 2015. “Computer-supported collation of modern manuscripts: CollateX and the Beckett Digital Manuscript Project”, _Digital scholarship in the humanities_, 30(3), pp. 452–70.
 
 ___
-This announcement has been posted to Humanist,
-Digital Classicist (<http://www.digitalclassicist.org/>), Digital Medievalist (<https://digitalmedievalist.wordpress.com/>), TEI-L (<http://www.tei-c.org/Support/index.xml#tei-l>), WWP-Encoding (<http://listserv.neu.edu/cgi-bin/wa?A0=wwp-encoding>), and DHUF Digital Humanities Flanders (<dh_flanders@googlegroups.com>). Please circulate.
+This announcement has been posted to Humanist (<http://dhhumanist.org/>), Digital Classicist (<http://www.digitalclassicist.org/>), Digital Medievalist (<https://digitalmedievalist.wordpress.com/>), TEI-L (<http://www.tei-c.org/Support/index.xml#tei-l>), WWP-Encoding (<http://listserv.neu.edu/cgi-bin/wa?A0=wwp-encoding>), and DHUF Digital Humanities Flanders (<dh_flanders@googlegroups.com>). Please circulate.
