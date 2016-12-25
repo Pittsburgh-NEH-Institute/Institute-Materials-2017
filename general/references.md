@@ -29,6 +29,8 @@
 * Sels, Lara and David J. Birnbaum 2015. “Editing the _Bdinski sbornik_ as a multilayered reality.” _Агиославика. Проблеми и подходи в изследването на Станиславовия чети-миней: доклади от едноименната конференция - 21 май 2013 г._ (_Hagioslavica. Issues and approaches in the study of the_ Stanislav Reading Menaion: _presentations from the conference of May 21, 2013._), ed. Diana Atanasova. Sofia: Kliment Oxridski University, pp. 184–99.
 * Siemens, Raymond et al., 2012. “Toward modeling the social edition: An approach to understanding the electronic scholarly edition in the context of new and emerging social media.” _Literary and linguistic computing_, 27(4), pp. 445–61.
 
+See also the Modern language association (MLA) [Guidelines for editors of scholarly editions](https://www.mla.org/Resources/Research/Surveys-Reports-and-Other-Documents/Publishing-and-Scholarship/Reports-from-the-MLA-Committee-on-Scholarly-Editions/Guidelines-for-Editors-of-Scholarly-Editions) and [Annotated bibliography: key works in the theory of textual editing](https://www.mla.org/Resources/Research/Surveys-Reports-and-Other-Documents/Publishing-and-Scholarship/Reports-from-the-MLA-Committee-on-Scholarly-Editions/Annotated-Bibliography-Key-Works-in-the-Theory-of-Textual-Editing).
+
 ### Journals
 _Variants. The journal of the European Society for Textual Scholarship._ <http://www.brill.com/products/book/journal-european-society-textual-scholarship-0>
 
@@ -44,6 +46,11 @@ _Variants. The journal of the European Society for Textual Scholarship._ <http:/
 * Eide, Øyvind, 2014. “Sequence, tree and graph at the tip of your Java classes,” <http://dharchive.org/paper/DH2014/Paper-639.xml>
 * Ide, Nancy and Keith Suderman, 2007. “GrAF: A graph-based format for linguistic annotations.” _Proceedings of the Linguistic annotation workshop, held in conjunction with ACL 2007, Prague, June 28-29_, 1-8. <http://www.cs.vassar.edu/~ide/papers/LAW.pdf>
 * Marcoux, Yves, C. Michael Sperberg-McQueen, and Claus Huitfeldt, 2011. “Expressive power of markup languages and graph structures”. Presented at the DH 2011 Stanford University conference (<http://xtf-prod.stanford.edu/xtf/view?docId=tei/ab-390.xml;query=;brand=default>).
+
+### Reference
+
+Lexicon of scholarly editing. <http://uahost.uantwerpen.be/lse/> Includes [glossary](http://uahost.uantwerpen.be/lse/index.php/lexicon/) and [bibliography](http://uahost.uantwerpen.be/lse/index.php/bibliography/).
+Parvum lexicon stemmatologicum (PLS). “… scholarly digital resource providing explanations for technical terms related to stemmatology.” <https://wiki.hiit.fi/display/stemmatology/Parvum+lexicon+stemmatologicum>
 
 ## Software projects, tools, toolkits, guidelines and methods
 
