@@ -5,8 +5,8 @@
 ### Overview
 
 * Project planning
-* Text as graph (TAG)
 * Theory of edition
+* Text as graph (TAG)
 * Gothenburg model of textual variance (GM)
 
 ______
