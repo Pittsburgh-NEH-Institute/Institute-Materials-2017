@@ -8,8 +8,18 @@ Based on concepts and ideas behind the LMNL markup language and the Alexandria t
 
 Datamodel:  
 
-* Directed Acyclic Hypergraph  
+A text graph representing all the data contained in a LMNL document consists of both a directed acyclic graph (DAG) and a hypergraph (HG).
+The DAG contains all the annotation nodes, all the edges between them, and all the text nodes and the edges between them.
+The HG contains all the hyperedges between the text nodes and annotation nodes representing the many to many relation between them.
+I.e. a text node has zero or more annotations on it, while an annotation can have zero or more text nodes associated with it.
+An annotation can itself be annotated.
+
+* Directed Acyclic Graph  
  TODO: add description
+
+* Hypergraph
+ TODO: add description  
+ 
 * Annotation node   
  TODO: add description
 * Annotation edge  
