@@ -2,7 +2,7 @@ A graph based data and processing model for text
 
 Author: Ronald Haentjens Dekker  
 Date: 26-12-2016  
-Goal: Specification document meant as a guide line for implementations
+Goal: Specification document meant as a guide line for implementations  
 Status: WORK IN PROGRESS!   
 Based on concepts and ideas behind the LMNL markup language and the Alexandria text repository project.
 
@@ -30,7 +30,7 @@ Taken from Wendell's paper "Luminescent: parsing LMNL by XSLT upconversion"
   [source [date}1915{][title}The Housekeeper{]]
   [author
     [name}Robert Frost{]
-    [dates}1874-1963{]] }h
+    [dates}1874-1963{]] }
 [s}[l [n}144{n]}He manages to keep the upper hand{l]
 [l [n}145{n]}On his own farm.{s] [s}He's boss.{s] [s}But as to hens:{l]
 [l [n}146{n]}We fence our flowers in and the hens range.{l]{s]
@@ -39,19 +39,25 @@ Taken from Wendell's paper "Luminescent: parsing LMNL by XSLT upconversion"
 
 Conversion:  
 
+TODO: add "attribute" values as text nodes.  
+Goal: treat all textual concent the same on a conceptual level. Implementations can make various optimizations.
+
+ 
 Text nodes:  
 
-0. New line only text node
-1. "He manages to keep the upper hand"
-2. New line only text node
-2. "On his own farm"
-3. " " whitespace only text node
-4. "He's boss."
-5. " " whitespace only text node
-6. "But as to hens:" 
-7. New line only text node
-7. "We fence our flowers in and the hens range."
-8. New line only text node
+Note: ID's are assigned arbitrarly and are only used for the purpose of making references to the IDed node in this document.  
+
+0. ID: WS1; WS/New line only text node
+1. ID: TC1; "He manages to keep the upper hand"
+2. ID: WS2; WS/New line only text node
+2. ID: TC2; "On his own farm"
+3. ID: WS3; " " whitespace only text node
+4. ID: TC3; "He's boss."
+5. ID: WS4; " " whitespace only text node
+6. ID: TC4; "But as to hens:" 
+7. ID: WS5; New line only text node
+7. ID: TC5; "We fence our flowers in and the hens range."
+8. ID: WS6; New line only text node
 
 
 Annotation nodes:
@@ -80,8 +86,11 @@ Edges:
 2. Annotation edge to connect 2 and 3
 3. Annotation edge to connect 4 and 2
 4. TODO: lots of edges to add
-5. TODO: add hyperedges for text
 6. 
+
+TODO: add edges between text nodes to the record order of the text.
+TODO: add edges between nodes on annotations of the same annotation (annotations are order in LMNL)
+
 
 Example repeated here for clarity:
 
@@ -97,13 +106,18 @@ Example repeated here for clarity:
 {excerpt]
 ```
 
-Annotation -> Text hyperedges:
+Text -> annotation nodes hyperedges:
 
-1. HE connecting t1 with [excerpt, s1, l1].
-2. HE connecting t2 with [excerpt, s1, l2].
-3. HE connecting t4 with [excerpt, s2, l2].
-4. HE connecting t5 with [excerpt, l2]. (whitespace)
-4. HE connecting t6 with [excerpt, s3, l2].
-5. HE connecting t7 with [excerpt, s3, l3].
-6.  
+1. HE connecting WS1 with [excerpt].
+2. HE connecting TC1 with [excerpt, s1, l1].
+1. HE connecting WS2 with [excerpt, s1].
+2. HE connecting TC2 with [excerpt, s1, l2].
+3. HE connecting WS3 with [excerpt, l2].
+3. HE connecting TC3 with [excerpt, s2, l2].
+4. HE connecting WS4 with [excerpt, l2].
+4. HE connecting TC4 with [excerpt, s3, l2].
+4. HE connecting WS5 with [excerpt, s3].
+5. HE connecting TC5 with [excerpt, s3, l3].
+6. HE connecting WS6 with [excerpt].
+ 
 
