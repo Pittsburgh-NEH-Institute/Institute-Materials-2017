@@ -24,11 +24,13 @@ Mockup illustrating coordination of Slavonic, Greek, and English texts with inte
 
 Add description
 
+<!-- More visualization for analysis than for edition
 ## Russian verse
 
 <http://poetry.obdurodon.org>
 
 Select a poem from the samples listed in the lower half of the main page. Stressed vowels (not strong metrical positions) are red. In Meter column, X = stressed and O = unstressed (again, not strong and weak). The pipe represents a foot boundary and the double pipe (where relevant) a caesura. Parentheses indicate hypermetrical syllables. Rhyme is masculine (lowercase), feminine (uppercase), or dactylic (uppercase followed by prime). Stressed vowels are color coded to make patterns easier to discern. The line graph shows the percentage of time a particular syllabic position in a line is stressed over the course of the poem.
+-->
 
 ## StemmaWeb
 
