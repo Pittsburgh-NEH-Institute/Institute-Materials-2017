@@ -8,7 +8,7 @@ Based on concepts and ideas behind the LMNL markup language and the Alexandria t
 
 LMNL data model
 
-LMNL documents contain text. Text can have ranges on them. Ranges can overlap. Ranges can be annotated on either the start tag or the end tag. Annotations can contain text themselves, that can have ranges, that can have annotations etc. Annotations can be annotations. Annotations on a range are ordered. 
+LMNL documents contain text. Text can have ranges on them. Ranges can overlap. Ranges can be annotated on either the start tag or the end tag. Annotations can contain text themselves, that can have ranges, that can have annotations etc. Annotations can be annotated. Annotations on a range are ordered. 
 
 
 
@@ -16,9 +16,8 @@ Text Graph Datamodel:
 
 A text graph representing all the data contained in a LMNL document consists of both a directed acyclic graph (DAG) and a hypergraph (HG).
 The DAG contains all the range nodes, the annotation nodes, all the edges between them, and all the text nodes and the edges between them.
-The HG contains all the hyperedges between the text nodes and annotation nodes representing the many to many relation between them.
-I.e. a text node has zero or more annotations on it, while an annotation can have zero or more text nodes associated with it.
-An annotation can itself be annotated.
+The HG contains all the hyperedges between the text nodes and the range nodes representing the many to many relation between them.
+I.e. a text node has zero or more ranges on it, while a range can have zero or more text nodes associated with it. A range can be annotated. An annotation can itself be annotated.
 
 
 Definitions
@@ -42,6 +41,9 @@ Definitions
 * Hypergraph  
  TODO: add description  
  
+ Implementation detail: Property graph databases like Neo4J do not support hyperedges. However a hyperedge can be emulated by adding a note to the graph representing the edge and then adding all the members to it.
+ 
+ Implementation detail: A hypergraph can be represented by a biparte graph. In other words it can be represented by a biadjacency matrix, implemented as an array of bit arrays. 
  
 * Annotation edge  
  TODO: add description  
