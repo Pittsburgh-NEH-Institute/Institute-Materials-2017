@@ -34,6 +34,8 @@ At present, Alexandria incorporates the following characteristics:
 As a graph database, Alexandria is not constrained by the XML tree model, and can deal with overlap and other challenges to XML modeling in a more intuitive way than the workarounds now widely in use. Challenges to representing documents within the XML tree model include:
 
 * Multiple overlapping hierarchies. Example:
+	* Find all instances of _enjambment_, that is, line breaks in poetry that fall within a sentence, instead of coinciding with a sentence boundary.
+	* Find all instances of _caesura_, that is, a regular (or almost regular) coincidence of word boundary and foot boundary in every line of a poem.
 	* Find all paragraphs that begin on an even-numbered page that do not end on that same page.
 * Discontinuity. Example:
 	* Find all speeches by a particular character, counting “‘Hello,’ he said, ‘how are you?’” as a single speech.
