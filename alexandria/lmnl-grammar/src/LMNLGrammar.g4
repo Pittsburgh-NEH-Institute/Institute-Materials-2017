@@ -1,6 +1,7 @@
 // Grammar for the LMNL overlapping markup language format
 // @author: Ronald Haentjens Dekker
 // Question: Because of the overlapping annotations it is not possible to construct a parse tree?
+// Question: I wonder whether I have too many modes. Is a range and an annotation start really that different?
 // Implementation of Name, DIGIT and NameChar are taken from ANTL XML grammar
 
 
@@ -11,24 +12,44 @@ lexer grammar LMNLGrammar;
 
 
 // moves into range
-OPEN_RANGE        :   '['                     -> pushMode(INSIDE_RANGE) ;
-
+OPEN_RANGE        :   '['                     -> pushMode(INSIDE_RANGE_OPENER) ;
+TEXT              :   ~[{\\[]+ ;        // match any 16 bit char other than { (start close tag) and [ (start open tag)
+CLOSE_RANGE       :   '{'                     -> popMode, pushMode(INSIDE_RANGE_CLOSE) ;
 
 // ----------------- Everything INSIDE of a RANGE ---------------------
-mode INSIDE_RANGE;
+mode INSIDE_RANGE_OPENER;
 
-CLOSE_RANGE :   ']'                     -> popMode ;
-Name        :   NameStartChar NameChar* ;
-S           :   [ \t\r\n]               -> skip ;
-OPEN_ANNO   :   '['                     -> pushMode(INSIDE_ANNOTATION) ;
+CLOSE_RANGE_ANO :   ']'                     -> popMode ;
+Name            :   NameStartChar NameChar* ;
+S               :   [ \t\r\n]               -> skip ;
+OPEN_ANNO       :   '['                     -> pushMode(INSIDE_ANNOTATION_OPENER) ;
+CLOSE_RANGE_MARK:   '}'                     -> popMode ;
+
+// ------------------ Everything INSIDE of a ANNOTATION OPENER -----------
+// NOTE: We can have anonymous annotations!
+mode INSIDE_ANNOTATION_OPENER;
+
+Annotation_Name  :   NameStartChar NameChar* ;
+ANNO_S           :   [ \t\r\n]               -> skip ;
+OPEN_ANNO_IN_A   :   '['                     -> pushMode(INSIDE_ANNOTATION_OPENER) ;
+CLOSE_ANNO_OP    :   '}'                     -> popMode, pushMode(INSIDE_ANNO_TEXT) ;
+CLOSE_ANNO_MARK  :   ']'                     -> popMode ;
+
+// ------------------ Inside TEXT --------------------------------------
+mode INSIDE_ANNO_TEXT;
+ANNO_TEXT        :   ~[{\\[]+ ;        // match any 16 bit char other than { (start close tag) and [ (start open tag)
+CLOSE_ANNO       :   '{'                          -> popMode, pushMode(INSIDE_ANNOTATION_CLOSE) ;
 
 
-// ------------------ Everything INSIDE of a ANNOTATION ---------------
-mode INSIDE_ANNOTATION;
+// ----------------- Everything INSIDE of a ANNOTATION CLOSEr -------------
+mode INSIDE_ANNOTATION_CLOSE;
+Annotation_c_Name :   NameStartChar NameChar* ;
+CLOSE_ANNO_MARKER :   ']'                     -> popMode ;
 
-Annotation_Name        :   NameStartChar NameChar* ;
-
-
+// ----------------- Everything INSIDE of a RANGE CLOSEr -------------
+mode INSIDE_RANGE_CLOSE;
+Range_c_Name       :   NameStartChar NameChar* ;
+CLOSE_RANGE_MARKER :   ']'                     -> popMode ;
 
 
 // ----------------- lots of repeated stuff --------------------------
