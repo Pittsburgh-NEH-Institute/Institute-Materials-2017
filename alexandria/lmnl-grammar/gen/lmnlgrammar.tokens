@@ -1,4 +1,7 @@
-OPENTAG=1
-CLOSETAG=2
-'['=1
+OPEN_RANGE=1
+CLOSE_RANGE=2
+Name=3
+S=4
+OPEN_ANNO=5
+Annotation_Name=6
 ']'=2
