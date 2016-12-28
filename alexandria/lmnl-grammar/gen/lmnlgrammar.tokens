@@ -1,0 +1,4 @@
+OPENTAG=1
+CLOSETAG=2
+'['=1
+']'=2
