@@ -8,6 +8,7 @@ parser grammar LMNLParser;
 
 options { tokenVocab=LMNLGrammar; }
 
-document    :   TEXT;
+document    :   range | TEXT ;
 
+range :  OPEN_RANGE Name CLOSE_RANGE_MARK TEXT CLOSE_RANGE Range_c_Name CLOSE_RANGE_MARKER ;
 

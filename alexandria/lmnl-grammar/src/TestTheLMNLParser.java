@@ -1,22 +1,33 @@
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
+import org.junit.Ignore;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by Ronald Haentjens Dekker on 29/12/16.
  */
 public class TestTheLMNLParser {
 
+    @Test
+    public void testParserTextWithOneRange() {
+        String input = "[l}He manages to keep the upper hand{l]";
+        LMNLParser.DocumentContext documentContext = setupParserAndReturnParseTree(input);
+        String stringTree = documentContext.toStringTree();
+        assertEquals("([] ([4] [ l } He manages to keep the upper hand { l ]))", stringTree);
+    }
+
+    @Test
     public void testParserTextOnly() {
         String input = "He manages to keep the upper hand";
         LMNLParser.DocumentContext documentContext = setupParserAndReturnParseTree(input);
         String stringTree = documentContext.toStringTree();
-        System.out.println(stringTree);
-
-
+        assertEquals("([] He manages to keep the upper hand)", stringTree);
     }
 
-
-
+    @Ignore
+    @Test
     public void testParserComplexExample() {
         String input = "[excerpt\n" +
                 "  [source [date}1915{][title}The Housekeeper{]]\n" +
@@ -40,12 +51,4 @@ public class TestTheLMNLParser {
         LMNLParser.DocumentContext document = parser.document();
         return document;
     }
-
-
-    public static void main(String args[]) {
-        TestTheLMNLParser test = new TestTheLMNLParser();
-        test.testParserTextOnly();
-    }
-
-
 }
