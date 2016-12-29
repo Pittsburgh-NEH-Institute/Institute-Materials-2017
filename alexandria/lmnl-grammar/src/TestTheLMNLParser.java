@@ -11,11 +11,21 @@ import static org.junit.Assert.assertEquals;
 public class TestTheLMNLParser {
 
     @Test
+    public void testParserTextWithOneRangeWithOneAnnotation() {
+        String input = "[l [n}144{n]}He manages to keep the upper hand{l]";
+        LMNLParser.DocumentContext documentContext = setupParserAndReturnParseTree(input);
+        String stringTree = documentContext.toStringTree();
+        assertEquals("([] ([8] ([12 8] [ l ([20 12 8] [ n } 144 { n ]) }) He manages to keep the upper hand { l ]))", stringTree);
+    }
+
+
+
+    @Test
     public void testParserTextWithOneRange() {
         String input = "[l}He manages to keep the upper hand{l]";
         LMNLParser.DocumentContext documentContext = setupParserAndReturnParseTree(input);
         String stringTree = documentContext.toStringTree();
-        assertEquals("([] ([4] [ l } He manages to keep the upper hand { l ]))", stringTree);
+        assertEquals("([] ([8] ([12 8] [ l }) He manages to keep the upper hand { l ]))", stringTree);
     }
 
     @Test
