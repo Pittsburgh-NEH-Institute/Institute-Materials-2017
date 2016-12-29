@@ -14,7 +14,7 @@ lexer grammar LMNLGrammar;
 // moves into range
 OPEN_RANGE        :   '['                     -> pushMode(INSIDE_RANGE_OPENER) ;
 TEXT              :   ~[{\\[]+ ;        // match any 16 bit char other than { (start close tag) and [ (start open tag)
-CLOSE_RANGE       :   '{'                     -> popMode, pushMode(INSIDE_RANGE_CLOSE) ;
+CLOSE_RANGE       :   '{'                     -> pushMode(INSIDE_RANGE_CLOSE) ;
 
 // ----------------- Everything INSIDE of a RANGE ---------------------
 mode INSIDE_RANGE_OPENER;

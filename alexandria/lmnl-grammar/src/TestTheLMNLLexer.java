@@ -1,6 +1,7 @@
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
+import org.junit.Test;
 
 import java.util.List;
 
@@ -9,8 +10,14 @@ import java.util.List;
  */
 public class TestTheLMNLLexer {
 
-    public void test_lexer() {
+    @Test
+    public void testLexerTextWithOneRange() {
+        String input = "[l}He manages to keep the upper hand{l]";
+        setupLexer(input);
+    }
 
+    @Test
+    public void testLexerComplexExample() {
         String input = "[excerpt\n" +
                 "  [source [date}1915{][title}The Housekeeper{]]\n" +
                 "  [author\n" +
@@ -20,6 +27,10 @@ public class TestTheLMNLLexer {
                 "[l [n}145{n]}On his own farm.{s] [s}He's boss.{s] [s}But as to hens:{l]\n" +
                 "[l [n}146{n]}We fence our flowers in and the hens range.{l]{s]\n" +
                 "{excerpt]";
+        setupLexer(input);
+    }
+
+    private void setupLexer(String input) {
         LMNLGrammar lexer = new LMNLGrammar(new ANTLRInputStream(input));
 
         // This gets all the tokens at once, it does not stop for errors
@@ -33,14 +44,5 @@ public class TestTheLMNLLexer {
                 System.out.println(token + ": " + lexer.getRuleNames()[token.getType() - 1] + ": " + lexer.getModeNames()[lexer._mode]);
             }
         } while (token.getType() != Token.EOF);
-
-
     }
-
-    public static void main(String args[]) {
-        TestTheLMNLLexer test = new TestTheLMNLLexer();
-        test.test_lexer();
-    }
-
-
 }
