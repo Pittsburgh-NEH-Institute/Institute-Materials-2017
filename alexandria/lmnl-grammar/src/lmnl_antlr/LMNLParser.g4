@@ -11,8 +11,14 @@ options { tokenVocab=LMNLLexer; }
 
 document    :   range | TEXT ;
 
-range : range_opener  TEXT CLOSE_RANGE Range_c_Name CLOSE_RANGE_MARKER ;
+range : range_opener  TEXT   range_closer ;
 
-range_opener : OPEN_RANGE Name annotation? CLOSE_RANGE_MARK ;
+range_opener : BEGIN_OPEN_RANGE Name_Open_Range annotation? END_OPEN_RANGE;
 
-annotation : OPEN_ANNO Annotation_Name CLOSE_ANNO_OP ANNO_TEXT CLOSE_ANNO Annotation_c_Name CLOSE_ANNO_MARKER ;
+range_closer : BEGIN_CLOSE_RANGE Name_Close_Range END_CLOSE_RANGE ;
+
+annotation :  annotation_opener ANNO_TEXT annotation_closer ;
+
+annotation_opener : BEGIN_OPEN_ANNO Name_Open_Annotation END_OPEN_ANNO ;
+
+annotation_closer : BEGIN_CLOSE_ANNO Name_Close_Annotation END_CLOSE_ANNO ;
