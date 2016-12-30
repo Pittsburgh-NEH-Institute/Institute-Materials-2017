@@ -1,5 +1,6 @@
 package lmnl_importer;
 
+import data_model.Document;
 import lmnl_antlr.LMNLLexer;
 import lmnl_antlr.LMNLParser;
 import org.antlr.v4.runtime.ANTLRInputStream;
@@ -10,7 +11,7 @@ import org.antlr.v4.runtime.CommonTokenStream;
  */
 public class LMNLImporter {
 
-    public void importLMNL(String input) {
+    public Document importLMNL(String input) {
         LMNLLexer lexer = new LMNLLexer(new ANTLRInputStream(input));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         LMNLParser parser = new LMNLParser(tokens);
@@ -19,6 +20,8 @@ public class LMNLImporter {
         LMNLParser.DocumentContext document = parser.document();
         LMNLImporterVisitor v = new LMNLImporterVisitor();
         document.accept(v);
+        Document text = v.getResult();
+        return text;
     }
 
 }

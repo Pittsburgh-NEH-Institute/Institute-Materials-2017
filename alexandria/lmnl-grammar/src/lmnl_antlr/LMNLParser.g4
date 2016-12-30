@@ -11,9 +11,11 @@ options { tokenVocab=LMNLLexer; }
 
 document    :   range | TEXT ;
 
-range : range_opener  TEXT   range_closer ;
+range : range_opener  range_content   range_closer ;
 
 range_opener : BEGIN_OPEN_RANGE Name_Open_Range annotation? END_OPEN_RANGE;
+
+range_content : TEXT;
 
 range_closer : BEGIN_CLOSE_RANGE Name_Close_Range END_CLOSE_RANGE ;
 
