@@ -55,7 +55,7 @@ public class TestTheLMNLParser {
     }
 
     private LMNLParser.DocumentContext setupParserAndReturnParseTree(String input) {
-        LMNLGrammar lexer = new LMNLGrammar(new ANTLRInputStream(input));
+        LMNLLexer lexer = new LMNLLexer(new ANTLRInputStream(input));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         LMNLParser parser = new LMNLParser(tokens);
         parser.setBuildParseTree(true);

@@ -1,6 +1,6 @@
 package lmnl_importer;
 
-import lmnl_antlr.LMNLGrammar;
+import lmnl_antlr.LMNLLexer;
 import lmnl_antlr.LMNLParser;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -11,8 +11,7 @@ import org.antlr.v4.runtime.CommonTokenStream;
 public class LMNLImporter {
 
     public void importLMNL(String input) {
-        //TODO: Rename LMNLGrammar to LMNLLexer
-        LMNLGrammar lexer = new LMNLGrammar(new ANTLRInputStream(input));
+        LMNLLexer lexer = new LMNLLexer(new ANTLRInputStream(input));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         LMNLParser parser = new LMNLParser(tokens);
         parser.setBuildParseTree(true);

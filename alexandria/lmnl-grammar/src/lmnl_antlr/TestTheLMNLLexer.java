@@ -33,7 +33,7 @@ public class TestTheLMNLLexer {
     }
 
     private void setupLexer(String input) {
-        LMNLGrammar lexer = new LMNLGrammar(new ANTLRInputStream(input));
+        LMNLLexer lexer = new LMNLLexer(new ANTLRInputStream(input));
 
         // This gets all the tokens at once, it does not stop for errors
         // List<? extends Token> allTokens = grammar.getAllTokens();

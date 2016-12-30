@@ -1,11 +1,10 @@
 // Grammar for the LMNL overlapping markup language format
 // @author: Ronald Haentjens Dekker
-// Question: Because of the overlapping annotations it is not possible to construct a parse tree?
 // Question: I wonder whether I have too many modes. Is a range and an annotation start really that different?
 // Implementation of Name, DIGIT and NameChar are taken from ANTL XML grammar
 
 
-lexer grammar LMNLGrammar;
+lexer grammar LMNLLexer;
 
 // In the default mode we are outside a Range
 // we might expect text nodes here, but that is not yet implemented! [TODO]

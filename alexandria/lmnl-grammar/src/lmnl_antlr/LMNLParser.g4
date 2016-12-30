@@ -3,10 +3,11 @@
  *
  *
  */
-
+// Question: Because of the overlapping annotations it is not possible to construct a parse tree?
+// It seems it is.
 parser grammar LMNLParser;
 
-options { tokenVocab=LMNLGrammar; }
+options { tokenVocab=LMNLLexer; }
 
 document    :   range | TEXT ;
 
