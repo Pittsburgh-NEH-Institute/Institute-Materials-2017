@@ -33,7 +33,10 @@ The Institute will meet at the main (Oakland) campus of the University of Pittsb
 * Mike Kestemont (Department of Literature, University of Antwerp)
 * Leif-Jöran Olsson (Department of Swedish Language, University of Gothenburg)
 
-The instructors will be assisted by Gabrielle (Gabi) Keane (Senior Undergraduate Institute Assistant, University of Pittsburgh).
+The instructors will be assisted by:
+
+* Gabrielle (Gabi) Keane (Senior Undergraduate Institute Assistant, University of Pittsburgh)
+* Kaylen Sanders (Junior Undergraduate Institute Assistant, University of Pittsburgh)
 
 
 ## Details
