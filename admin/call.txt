@@ -1,3 +1,5 @@
+
+
 MAKE _YOUR_ EDITION: MODELS AND METHODS FOR DIGITAL TEXTUAL SCHOLARSHIP
 
 
@@ -73,8 +75,8 @@ assumptions about prior knowledge or skills.
     running Python programs from the command line, etc.).
 -   The second week allows participants to practice and advance their
     basic skills when they start combining digital textual scholarship
-    theory (e.g., McGann 2004[1], Andrews 2012[2], Siemens 2012[3], Robinson
-    2013[4], Haentjens et al. 2015[5]) with standard (e.g., XML, Python,
+    theory (e.g., McGann 20041, Andrews 20122, Siemens 20123, Robinson
+    20134, Haentjens et al. 20155) with standard (e.g., XML, Python,
     Jupyter Notebooks) and advanced digital technologies (e.g.,
     StemmaWeb, CollateX, Neo4j, Tinkerpop, eXist-db).
 -   By the end of the third week, participants will be able to
@@ -110,8 +112,12 @@ Instructors
 -   Leif-Jöran Olsson (Department of Swedish Language, University of
     Gothenburg)
 
-The instructors will be assisted by Gabrielle (Gabi) Keane (Senior
-Undergraduate Institute Assistant, University of Pittsburgh).
+The instructors will be assisted by:
+
+-   Gabrielle (Gabi) Keane (Senior Undergraduate Institute Assistant,
+    University of Pittsburgh)
+-   Kaylen Sanders (Junior Undergraduate Institute Assistant, University
+    of Pittsburgh)
 
 
 Details
