@@ -7,21 +7,14 @@ import java.util.List;
 /**
  * Created by Ronald Haentjens Dekker on 29/12/16.
  *
- * A document has zero or more text nodes.
+ * A document contains a Limen.
  *
  */
 public class Document {
-    private List<TextNode> textNodeList;
+    private final Limen value;
 
     public Document() {
-        this.textNodeList = new ArrayList<>();
+        this.value = new Limen();
     }
 
-    public void addTextNode(TextNode textNode) {
-        this.textNodeList.add(textNode);
-    }
-
-    public Iterator<TextNode> getTextNodeIterator() {
-        return this.textNodeList.iterator();
-    }
 }
