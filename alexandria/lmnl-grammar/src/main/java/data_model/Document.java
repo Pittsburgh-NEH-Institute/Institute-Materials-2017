@@ -17,4 +17,7 @@ public class Document {
         this.value = new Limen();
     }
 
+    public Limen value() {
+        return value;
+    }
 }

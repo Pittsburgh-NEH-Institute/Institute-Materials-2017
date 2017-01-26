@@ -11,16 +11,8 @@ public class LMNLImporter {
 
     public Document importLMNL(String input) {
         LMNLLexer lexer = new LMNLLexer(new ANTLRInputStream(input));
+        //TODO: build the data model using classes from the data_model package
         return null;
-        //        CommonTokenStream tokens = new CommonTokenStream(lexer);
-//        LMNLParser parser = new LMNLParser(tokens);
-//        parser.setBuildParseTree(true);
-//        // the method is called like the first rule in the parser grammar, in this case: document
-//        LMNLParser.DocumentContext document = parser.document();
-//        LMNLImporterVisitor v = new LMNLImporterVisitor();
-//        document.accept(v);
-//        Document text = v.getResult();
-//        return text;
     }
 
 }

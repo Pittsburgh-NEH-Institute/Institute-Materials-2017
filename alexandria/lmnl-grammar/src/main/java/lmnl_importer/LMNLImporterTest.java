@@ -1,6 +1,7 @@
 package lmnl_importer;
 
 import data_model.Document;
+import data_model.Limen;
 import data_model.TextNode;
 import data_model.TextRange;
 import org.junit.Test;
@@ -27,17 +28,20 @@ public class LMNLImporterTest {
         // - with one range on it
         // - with one annotation on it.
         Document expected = new Document();
+        Limen limen = expected.value();
         TextNode t1 = new TextNode("He manages to keep the upper hand");
-        t1.addTextRange(new TextRange("l"));
-        expected.addTextNode(t1);
+        TextRange r1 = new TextRange(limen, "l");
+        r1.addTextNode(t1);
+        limen.addTextRange(r1);
+        limen.addTextNode(t1);
 
         assertTrue(compareDocuments(expected, actual));
     }
 
     // I could use a matcher framework here
     private boolean compareDocuments(Document expected, Document actual) {
-        Iterator<TextNode> i1 = expected.getTextNodeIterator();
-        Iterator<TextNode> i2 = actual.getTextNodeIterator();
+        Iterator<TextNode> i1 = expected.value().getTextNodeIterator();
+        Iterator<TextNode> i2 = actual.value().getTextNodeIterator();
         boolean result = true;
         while (i1.hasNext() && result) {
             TextNode t1 = i1.next();
