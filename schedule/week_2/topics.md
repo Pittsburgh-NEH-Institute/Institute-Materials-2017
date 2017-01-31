@@ -34,6 +34,9 @@ Week 2, Day 5 develops a query functionality that lets the user express research
 
 Modern language association. “Guidelines for editors of scholarly editions”. Last revised 29 June 2011.
 https://www.mla.org/Resources/Research/Surveys-Reports-and-Other-Documents/Publishing-and-Scholarship/Reports-from-the-MLA-Committee-on-Scholarly-Editions/Guidelines-for-Editors-of-Scholarly-Editions
+Includes annotated bibliography by Dirk Van Hulle and others, also available separately at
+https://www.mla.org/Resources/Research/Surveys-Reports-and-Other-Documents/Publishing-and-Scholarship/Reports-from-the-MLA-Committee-on-Scholarly-Editions/Annotated-Bibliography-Key-Works-in-the-Theory-of-Textual-Editing.
+
 
 Sahle, Patrick, in collaboration with Georg Vogeler and the members of the IDE. 
 “Criteria for Reviewing Scholarly Digital Editions, version 1.1”. 
