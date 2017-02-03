@@ -37,6 +37,7 @@ https://www.mla.org/Resources/Research/Surveys-Reports-and-Other-Documents/Publi
 Includes annotated bibliography by Dirk Van Hulle and others, also available separately at
 https://www.mla.org/Resources/Research/Surveys-Reports-and-Other-Documents/Publishing-and-Scholarship/Reports-from-the-MLA-Committee-on-Scholarly-Editions/Annotated-Bibliography-Key-Works-in-the-Theory-of-Textual-Editing.
 
+_RIDE. A review journal for digital editions and resources._ http://ride.i-d-e.de/. 
 
 Sahle, Patrick, in collaboration with Georg Vogeler and the members of the IDE. 
 “Criteria for Reviewing Scholarly Digital Editions, version 1.1”. 
