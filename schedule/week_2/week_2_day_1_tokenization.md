@@ -1,12 +1,16 @@
 # Tokenization
 
+## Introduction
+
+Tokenization (the first of the five parts of the [Gothenburg model](http://wiki.tei-c.org/index.php/Textual_Variance#The_.E2.80.9CGothenburg_model.E2.80.9D:_A_modular_architecture_for_computer-aided_collation)) divides the texts to be collated into tokens, which are most commonly (but not obligatorily) words. Dividing continuous text into words feel intuitive as long as the text contains nothing but words, but text (at least, English-language text) also typically contains punctuation. By default, the [CollateX](https://pypi.python.org/pypi/collatex) collation toolkit considers punctuation to be its own token, which means that the witness readings “Hi!” and “Hi” will both contain a token that reads “Hi” (and the first witness will contain an additional token, which reads “!”). In this situation, that may be the behavior the user wants, since both witnesses contain what a human would recognize as the same word, and the difference involves only the presence vs absence of the exclamation mark.
+
 ## What’s easy and what’s hard
 
-Tokenization (the first of the five parts of the [Gothenburg model](http://wiki.tei-c.org/index.php/Textual_Variance#The_.E2.80.9CGothenburg_model.E2.80.9D:_A_modular_architecture_for_computer-aided_collation)) divides the texts to be collated into tokens, which are most commonly (but not obligatorily) words. Dividing continuous text into words feel intuitive as long as the text contains nothing but words, but text also typically contains punctuation. By default, the [CollateX](https://pypi.python.org/pypi/collatex) collation toolkit considers punctuation to be its own token, which means that the witness readings “Hi!” and “Hi” will both contain a token that reads “Hi” (and the first witness will contain an additional token, which reads “!”). In this situation, that’s the behavior the user probably wants, since both witnesses contain what a human would recognize as the same word.
+Tokenization may split on a separator that is not itself considered a token, such as the white space between words in English. Or it may split without an overt separator, such as the division of “Hi!” into two tokens described above, or the division into words of Chinese text, which does not use white-space separation, but where there are some words that are spelled with more than one character. Tokenization that divides a string into contiguous and tesselated substrings is common, but consider also tokenization into morphemes. Agglutinative structures like the normal English plural in “–s” or “–es” are relatively simple, but English strong plurals like “men” don’t present a lexical stem followed by a pluralizing ending, and in writing systems like Arabic and Hebrew, the vowels that represent grammatical information are typically interwoven with the consonants that represent a lexical root. (For more about these writing systems, and a tool for their segmentation, see <https://nlp.stanford.edu/software/segmenter.shtml>.)
 
-We’ll explore tokenization in more detail [tomorrow](week_2_day_2_plan.md), but here’s a brief introduction.
+We’ll explore tokenization in more detail [tomorrow](week_2_day_2_plan.md), but here’s a brief introduction, concentrating for the moment on English-language examples.
 
-## Issues with default tokenization
+## Issues with tokenization on white space
 
 ### English possessive constructions
 
