@@ -33,16 +33,16 @@ Week 2, Day 5 develops a query functionality that lets the user express research
 ## References
 
 Modern language association. “Guidelines for editors of scholarly editions”. Last revised 29 June 2011.
-https://www.mla.org/Resources/Research/Surveys-Reports-and-Other-Documents/Publishing-and-Scholarship/Reports-from-the-MLA-Committee-on-Scholarly-Editions/Guidelines-for-Editors-of-Scholarly-Editions
+<https://www.mla.org/Resources/Research/Surveys-Reports-and-Other-Documents/Publishing-and-Scholarship/Reports-from-the-MLA-Committee-on-Scholarly-Editions/Guidelines-for-Editors-of-Scholarly-Editions>.
 Includes annotated bibliography by Dirk Van Hulle and others, also available separately at
-https://www.mla.org/Resources/Research/Surveys-Reports-and-Other-Documents/Publishing-and-Scholarship/Reports-from-the-MLA-Committee-on-Scholarly-Editions/Annotated-Bibliography-Key-Works-in-the-Theory-of-Textual-Editing.
+<https://www.mla.org/Resources/Research/Surveys-Reports-and-Other-Documents/Publishing-and-Scholarship/Reports-from-the-MLA-Committee-on-Scholarly-Editions/Annotated-Bibliography-Key-Works-in-the-Theory-of-Textual-Editing>.
 
-_RIDE. A review journal for digital editions and resources._ http://ride.i-d-e.de/. 
+_RIDE. A review journal for digital editions and resources._ <http://ride.i-d-e.de/>
 
 Sahle, Patrick, in collaboration with Georg Vogeler and the members of the IDE. 
 “Criteria for Reviewing Scholarly Digital Editions, version 1.1”. 
-http://www.i-d-e.de/publikationen/weitereschriften/criteria-version-1-1/.
+<http://www.i-d-e.de/publikationen/weitereschriften/criteria-version-1-1/>
 
-Schmidt, Desmond. 2009. “Merging multi-version texts: a generic solution to the overlap problem.” Presented at Balisage: the markup conference 2009, Montréal, Canada, August 11–14, 2009. In _Proceedings of Balisage: the markup conference 2009._ Balisage series on markup technologies, 3. doi:10.4242/BalisageVol3.Schmidt01.
+Schmidt, Desmond. 2009. “Merging multi-version texts: a generic solution to the overlap problem.” Presented at Balisage: the markup conference 2009, Montréal, Canada, August 11–14, 2009. In _Proceedings of Balisage: the markup conference 2009._ Balisage series on markup technologies, 3. doi:10.4242/BalisageVol3.Schmidt01. <https://www.balisage.net/Proceedings/vol3/html/Schmidt01/BalisageVol3-Schmidt01.html>
 
-Sels, Lara and David J. Birnbaum 2015. “Editing the _Bdinski sbornik_ as a multilayered reality.” _Агиославика. Проблеми и подходи в изследването на Станиславовия чети-миней: доклади от едноименната конференция - 21 май 2013 г._ (_Hagioslavica. Issues and approaches in the study of the_ Stanislav Reading Menaion_: presentations from the conference of May 21, 2013.), ed. Diana Atanasova. Sofia: Kliment Oxridski University, pp. 184–99.
+Sels, Lara and David J. Birnbaum 2015. “Editing the _Bdinski sbornik_ as a multilayered reality.” _Агиославика. Проблеми и подходи в изследването на Станиславовия чети-миней: доклади от едноименната конференция - 21 май 2013 г._ (_Hagioslavica. Issues and approaches in the study of the_ Stanislav Reading Menaion_: presentations from the conference of May 21, 2013.), ed. Diana Atanasova. Sofia: Kliment Oxridski University, pp. 184–99. <https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/general/2014-01-14\_bdinski-sofia-paper.pdf>
