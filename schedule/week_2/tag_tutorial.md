@@ -10,6 +10,22 @@ It can be mostly theoretical, discussion oriented and some exercises.
 There are two ways to model text as a graph: use a markup language that allows overlap or modelling the layers in separate files (thus duplicating the textual content)
 
 
+H2. Introduction
+
+TAG is multiple things. It is a data model for text and an accompanining markup language. It allows for overlap to be modelled natively.
+
+the Markup fgile and the underlying graph are related.
+
+
+Very basic exmaple.
+
+
+
+
+H1. EXample
+
+
+
 Example we first start without markup:
 
 
@@ -73,6 +89,10 @@ We see that there a couple of phrases on the facsimile. Lets add tags to make th
 ```
 
 Notice how the line and phrase markup overlap each other and how that is not a problem in this markup language and in the conceptual model behind it. Again it is important to note that there is no hierarchical relation between the line and the phrase markup.
+
+NExt step would be adding tags for the voices.
+
+
 
 
   
