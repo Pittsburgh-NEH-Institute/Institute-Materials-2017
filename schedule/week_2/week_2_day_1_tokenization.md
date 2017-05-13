@@ -13,9 +13,9 @@ We’ll explore tokenization in more detail [tomorrow](week_2_day_2_plan.md), bu
 But is a word like “Peter’s” the same word as “Peter” for collation purposes? Because CollateX will regard the apostrophe as a separate token, “Peter’s” will be tokenized as three tokens: the name, the apostrophe, and the possessive. Here’s the default behavior:
 
 Siglum | 1 | 2 | 3 | 4 | 5 
----- | ---- | ---- | ---- | ---- | ---- | -----
-A | Peter | ' | s | cat | . |
-B | Peter | has | a | cat | . |
+---- | ---- | ---- | ---- | ---- | ---- 
+A | Peter | ' | s | cat | .
+B | Peter | has | a | cat | .
 
 
 For possessives that may or may not be acceptable behavior, but how about contractions like “didn’t” (how many tokens, and what are they?) or “A’dam” (short for “Amsterdam”, and logically one token)?
