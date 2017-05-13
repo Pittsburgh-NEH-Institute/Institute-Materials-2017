@@ -39,6 +39,15 @@ Characters (at least in English) are sequential, but that’s only partially tru
 
 Tokenizing some phrasal constructions into words might misrepresent the lexical makeup of a text. For example, “White House” has little to do with “white” or “house”, and a “bad actor” may or may not be a talentless thespian. If tokenization is to be used for lexico-semantic purposes, splitting naively on white space may misrepresent the meaning (and perhaps also the lexicon) of the text.
 
+### Tokenization outside the study of variation
+
+As the first of the five stages of GM, tokenization defines, at least initially, the level of granularity for the comparison of textual variants.   But outside the study of variation, tokenization may be important for:
+
+* lexical analysis (e.g., word frequencies)
+* other lexical statistics (e.g., [TF/IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf))
+* phrasal analysis (e.g., collocations, [KWIC](https://en.wikipedia.org/wiki/Key_Word_in_Context) concordances)
+* topic extraction (e.g., [LDA](https://www.quora.com/What-is-a-good-explanation-of-Latent-Dirichlet-Allocation); feel free to skip to the “layman’s explanation”)
+
 ### Other
 
 What are the tokenization challenges in your texts? Challenges may involve the writing system, the linguistic structure, or something at a higher level.
