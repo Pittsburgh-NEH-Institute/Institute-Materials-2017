@@ -56,6 +56,7 @@ Parvum lexicon stemmatologicum (PLS). “… scholarly digital resource providin
 
 * CollateX. Software for collating textual sources. <http://collatex.net>
 * DiXiT. Digital Scholarly Editions Initial Training Network. Convention 1 (<http://dixit.huygens.knaw.nl/>) and Convention 2 (<http://dixit.uni-koeln.de/programme/convention-2/>)
+* EVT. Edition visualization technology. <http://evt.labcd.unipi.it>
 * eXist-db. XML database. <http://exist-db.org>
 * Interedition. EU COST Action to promote the interoperability of the tools and methodology in the field of digital scholarly editing and research. <http://www.interedition.eu/>
 * PyStyl. Python package for stylometry. <https://github.com/mikekestemont/pystyl>
@@ -63,6 +64,7 @@ Parvum lexicon stemmatologicum (PLS). “… scholarly digital resource providin
 * Stylo. Suite of stylometric tools. <https://sites.google.com/site/computationalstylistics/>
 * TEI. Text Encoding Initiative. <http://tei-c.org>
 * Tree of Texts. Empirical investigations into recovering text history. <http://treeoftexts.arts.kuleuven.be>
+* VMR CRE. Virtual manuscript room collaborative research environment. <http://vmrcre.org>
 
 ## Digital edition projects
 
