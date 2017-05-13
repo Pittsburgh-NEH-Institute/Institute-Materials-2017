@@ -55,7 +55,7 @@ GM emerged from a 2009 symposium within the frameworks of the EU-funded research
 Time | Topic | Type
 ---- | ---- | ----
 4:00–4:15 | Overview | Presentation
-4:15–4:30 | Tokenization | Presentation
+4:15–4:30 | [Tokenization](week_2_day_1_tokenization.md) | Presentation
 4:30–4:45 | Normalization | Presentation
 4:45–5:00 | Alignment | Presentation
 5:00–5:15 | Analysis | Presentation
