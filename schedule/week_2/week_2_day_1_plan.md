@@ -37,8 +37,8 @@ Are you making an edition of a manuscript or of a text? What is the role of lang
 
 Time | Topic | Type
 ---- | ----  | ----
-11:00–11:20 (25) | Explore [edition terms and concepts](edition_terms_and_concepts.md) | Discussion
-11:00–11:50 (25) | It isn’t just words! Explore [visualization as edition](sample_visualizations.md) | Discussion
+11:00–11:20 (20) | Explore [edition terms and concepts](edition_terms_and_concepts.md) | Discussion
+11:20–11:50 (30) | It isn’t just words! Explore [visualization as edition](sample_visualizations.md) | Discussion
 11:50–12:10 (20) | Explore participant data in light of terms and concepts | Talk lab
 12:10–12:30 (20) | General discussion of Talk lab results | Discussion
 
