@@ -50,3 +50,14 @@ Time | Topic | Type
 
 ### 4:00–5:30 Gothenburg model of textual variance (GM)
 
+GM emerged from a 2009 symposium within the frameworks of the EU-funded research projects COST Action 32 and Interedition, the output of which was the modularization of the study of textual variance into stages: tokenization, normalization, alignment, analysis, and visualization. On Day 1 the instructors will introduce GM to the participants. We address all of its parts in greater detail during the rest of Week 2, with continued attention to visualization in Week 3.
+
+Time | Topic | Type
+---- | ---- | ----
+4:00–4:15 | Overview | Presentation
+4:15–4:30 | Tokenization | Presentation
+4:30–4:45 | Normalization | Presentation
+4:45–5:00 | Alignment | Presentation
+5:00–5:15 | Analysis | Presentation
+5:15–5:30 | Visualization | Presentation
+
