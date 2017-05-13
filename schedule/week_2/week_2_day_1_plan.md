@@ -25,9 +25,9 @@ ______
 Time | Topic | Type
 ---- | ----  | ----
 9:00–9:20 (20) | Overview of Week 2 | Presentation
-9:20–10:40 (1:20) | Explore [project planning questions](project_planning.md) | Discussion
-10:40–11:05 (25) | Apply project planning questions to your own project (individually or collaboratively) | Talk lab
-11:05–11:30 (25) | General discussion of Talk lab results | Discussion
+9:20–9:40 (20) | Explore [project planning questions](project_planning.md) | Discussion
+9:40–11:00 (1:20) | Apply project planning questions to your own project (individually or collaboratively) | Talk lab
+11:00–11:30 (30) | General discussion of Talk lab results | Discussion
 
 ### 10:30–11:00 Coffee break
 
