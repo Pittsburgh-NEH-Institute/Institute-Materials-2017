@@ -31,3 +31,7 @@ To print the string `"Hello, world"` in Python …
 Glosses (translations, interpretations) should be enclosed in single curly quotation marks. Example:
 
 … the use of the **`*`** character to mean ‘everything’ …
+
+### Lexical details
+
+_White space_ is two words in a nominal position (e.g., “White space should be normalized”) and hyphenated as a modifier (e.g., “White-space normalization is important”). It is never a single word.
