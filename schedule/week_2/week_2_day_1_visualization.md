@@ -4,11 +4,11 @@ The fifth and final stage of GM, visualization, refers not only to graphic visua
 
 ## _Apparatus criticus_
 
-<img src="../../../images/example-lbp-print-output.png" align="right"/>Critical textual editions on paper have traditionally represented variation in a critical apparatus, as at the bottom of the example (copied from <http://lombardpress.org/assets/images/example-lbp-print-output.png>). The footnoted _apparatus criticus_ (critical apparatus) produces reference numbers for the lines being described, followed by the reading in the main (copy) text, then a “]” delimiter, and the variant readings, together with sigla indicating where they are attested. This is a negative appartus, which means that unless it says otherwise, it asserts that the manuscripts to do not differ significantly from the copy text. The notes above the _apparatus criticus_ are the _apparatus fontium et locorum parallelorum_, which identifies textual sources and parallels.
+<img src="../../images/example-lbp-print-output.png" align="right"/>Critical textual editions on paper have traditionally represented variation in a critical apparatus, as at the bottom of the example (copied from <http://lombardpress.org/assets/images/example-lbp-print-output.png>). The footnoted _apparatus criticus_ (critical apparatus) produces reference numbers for the lines being described, followed by the reading in the main (copy) text, then a “]” delimiter, and the variant readings, together with sigla indicating where they are attested. This is a negative appartus, which means that unless it says otherwise, it asserts that the manuscripts to do not differ significantly from the copy text. The notes above the _apparatus criticus_ are the _apparatus fontium et locorum parallelorum_, which identifies textual sources and parallels.
 
 ## Interlinear collation
 
-<img src="../../../images/pvl_interlinear_3.5.png" align="right"/>An interlinear collation presents the full text of all of the witnesses, similarly to the way a conductor’s musical score provides, in parallel lines, the music played by all of the instruments in the orchestra. In this example, taken from <http://pvl.obdurodon.org/browser.xhtml>, the _paradosis_, the editors’ decision about the best reading (in this edition, a dynamic critical text that does not presume a “best witness”) is in red and annotated with the siglum “α”. A continuous reading text is rendered in the upper panel, while the lower panel shows a column-aligned table of variants token by token, retaining the original (diplomatic) orthography.
+<img src="../../images/pvl_interlinear_3.5.png" align="right"/>An interlinear collation presents the full text of all of the witnesses, similarly to the way a conductor’s musical score provides, in parallel lines, the music played by all of the instruments in the orchestra. In this example, taken from <http://pvl.obdurodon.org/browser.xhtml>, the _paradosis_, the editors’ decision about the best reading (in this edition, a dynamic critical text that does not presume a “best witness”) is in red and annotated with the siglum “α”. A continuous reading text is rendered in the upper panel, while the lower panel shows a column-aligned table of variants token by token, retaining the original (diplomatic) orthography.
 
 An interlinear collation obviously consumes more space than a critical apparatus (especially a negative critical apparatus) because it repeats text that is identical in different witnesses, although space is less of a concern with digital publication than with paper. One other limitation of an interlinear (essentially tabular) visualization is that there is no obvious natural way to represent transposition in a table.
 
@@ -29,11 +29,11 @@ CollateX output may be exported as [TEI parallel segmentation](http://www.tei-c.
 
 ## The variant graph and SVG
 
-<img src="../../../images/variant-graph-collatex.png" align="right">CollateX represents the variation it identifies during the analysis stage as a _variant graph_, which may be serialized as [SVG](http://tutorials.jenkov.com/svg/index.html) (with simple and more complete options). In the SVG example here, taken from the CollateX documentation at <https://collatex.net/doc/>, the graph proceeds from left to right, with tokens represented by labeled nodes and their order represented by labeled, directed edges. In this example, witnesses 2 and 3 have a reading of “sacra” that contrasts with “assorta” in witness 3, they then all agree on the reading “e”, and then diverge, and then they all end. 
+<img src="../../images/variant-graph-collatex.png" align="right">CollateX represents the variation it identifies during the analysis stage as a _variant graph_, which may be serialized as [SVG](http://tutorials.jenkov.com/svg/index.html) (with simple and more complete options). In the SVG example here, taken from the CollateX documentation at <https://collatex.net/doc/>, the graph proceeds from left to right, with tokens represented by labeled nodes and their order represented by labeled, directed edges. In this example, witnesses 2 and 3 have a reading of “sacra” that contrasts with “assorta” in witness 3, they then all agree on the reading “e”, and then diverge, and then they all end. 
 
 The variant graph may be difficult to read without practice, and it requires a lot of horizontal scrolling. On the other hand, it is the only visualization that is capable—at least in principle, since this functionality is not yet implemented—of representing transposition, which it could do with additional edges. The variant graph visualization is employed in [Stemmaweb](https://stemmaweb.net/), which is “a collection of tools for analysis of collated texts”.
 
-The TRAViz development team (<http://www.traviz.vizcovery.org/>) produces railway visualizations of variant graphs, such as the one below. <img src="../../../images/traviz_1.png" align="right"/>More recently they have proposed summary distant-reading graphic visualizations for long collations of large numbers of witnesses, such as the one below<img src="../../../images/traviz_2.png" align="right"/>, taken from <http://dh2015.org/abstracts/xml/JANICKE_Stefan_A_Distant_Reading_Visualization_fo/J_NICKE_Stefan_A_Distant_Reading_Visualization_for_Vari.html> (see that site for an explanation of the color coding and the interactive interface).
+The TRAViz development team (<http://www.traviz.vizcovery.org/>) produces railway visualizations of variant graphs, such as the one below. <img src="../../images/traviz_1.png" align="right"/>More recently they have proposed summary distant-reading graphic visualizations for long collations of large numbers of witnesses, such as the one below<img src="../../images/traviz_2.png" align="right"/>, taken from <http://dh2015.org/abstracts/xml/JANICKE_Stefan_A_Distant_Reading_Visualization_fo/J_NICKE_Stefan_A_Distant_Reading_Visualization_for_Vari.html> (see that site for an explanation of the color coding and the interactive interface).
 
 ## JSON
 
@@ -84,7 +84,7 @@ Visualization needn’t be constrained by the common output formats supported by
 
 ### Plectogram
 
-[Daniel the Prisoner: A virtual florilegium](http://zatochnik.obdurodon.org) uses a [plectogram](https://www.academia.edu/1018153/_Modelling_the_genealogy_of_Maksim_Greks_collection_types_the_Plectogram_as_visual_aid_in_reconstruction._In_Medieval_Russian_Culture_v._2_ed._by_Michael_S._Flier_and_Daniel_Rowland._Berkeley._Los_Angeles_London_Univ._of_California_Press_1994_p._107-133._Preliminary_version_presented_at_Workshop_on_Medieval_East_Slavic_Culture_University_of_California_Los_Angeles_June_2-7_1990_) as both an illustration of textual parallelism (not variation) and a navigational aid, as in the example below:<img src="../../../images/plectogram_daniil.png"/>
+[Daniel the Prisoner: A virtual florilegium](http://zatochnik.obdurodon.org) uses a [plectogram](https://www.academia.edu/1018153/_Modelling_the_genealogy_of_Maksim_Greks_collection_types_the_Plectogram_as_visual_aid_in_reconstruction._In_Medieval_Russian_Culture_v._2_ed._by_Michael_S._Flier_and_Daniel_Rowland._Berkeley._Los_Angeles_London_Univ._of_California_Press_1994_p._107-133._Preliminary_version_presented_at_Workshop_on_Medieval_East_Slavic_Culture_University_of_California_Los_Angeles_June_2-7_1990_) as both an illustration of textual parallelism (not variation) and a navigational aid, as in the example below:<img src="../../images/plectogram_daniil.png"/>
 
 ### Juxta
 
@@ -92,16 +92,16 @@ Visualization needn’t be constrained by the common output formats supported by
 
 #### Heatmap
 
-![Juxta heatmap](../../../images/juxta_heatmap_declaration.png)
+![Juxta heatmap](../../images/juxta_heatmap_declaration.png)
 
 #### Histogram
 
 The histogram provides a navigational interface for the heatmap.
 
-![Juxta histogram](../../../images/juxta_histogram_declaration.png)
+![Juxta histogram](../../images/juxta_histogram_declaration.png)
 
 #### Side by side
 
-![Juxta side-by-side](../../../images/juxta_side-by-side_declaration.png)
+![Juxta side-by-side](../../images/juxta_side-by-side_declaration.png)
 
 
