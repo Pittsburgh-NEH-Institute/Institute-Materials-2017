@@ -61,7 +61,7 @@ Time | Topic | Type
 4:00–4:15 | Overview | Presentation
 4:15–4:30 | [Tokenization](week_2_day_1_tokenization.md) | Presentation and discussion
 4:30–4:45 | [Normalization](week_2_day_1_normalization.md) | Presentation and discussion
-4:45–5:00 | Alignment | Presentation and discussion
+4:45–5:00 | [Alignment](week_2_day_1_alignment.md) | Presentation and discussion
 5:00–5:15 | Analysis | Presentation and discussion
 5:15–5:30 | Visualization | Presentation and discussion
 

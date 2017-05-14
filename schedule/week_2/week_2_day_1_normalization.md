@@ -32,6 +32,10 @@ Some editions will care about differences in punctuation, whether between varian
 
 “Three hundred”, “300”, “CCC”, and “400” are all different from one another, but not in the same way. Some editors will care whether a number is written in words or in digits, or in Arabic or Roman numerals, while others might consider that type of variation insignificant because it does not affect the fundamental meaning of the text. Should alternative lexical representations of the same numerical values be normalized?
 
+### Normalizing for pronunciation
+
+In a writing system with great orthographic instability, it may be desirable to normalize tokens by converting them to phonetic representations and comparing those, instead of comparing the written forms. Such normalizations may wish to take the information load of different parts of the token into consideration. For example, in some writing systems consonants have a higher information load than vowels because vowels are more variable, that is, there are more ways to spell a particular vowel sound than a particular consonsant sound, and there are fewer vowel letters than consonant letters. In languages where words are composed from lexical stems and grammatical endings, the beginning of the word may carry a heavier information load than the end because there are more lexemes than grammatical ending. Phonetic normalization may take information load into account, perhaps retaining only the pronunciation details that are most likely to differentiate meaning.
+
 ### Your turn!
 
 What are the normalization challenges in your texts? Which can be treated algorithmically? 
