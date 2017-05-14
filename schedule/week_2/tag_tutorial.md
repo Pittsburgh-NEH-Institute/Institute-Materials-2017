@@ -10,11 +10,27 @@ It can be mostly theoretical, discussion oriented and some exercises.
 There are two ways to model text as a graph: use a markup language that allows overlap or modelling the layers in separate files (thus duplicating the textual content)
 
 
-H2. Introduction
 
+OLD inspiration
 TAG is multiple things. It is a data model for text and an accompanining markup language. It allows for overlap to be modelled natively.
 
 the Markup fgile and the underlying graph are related.
+END OLD
+
+H2. Introduction
+
+Text as a graph (TAG) is a data model for text that supports markup, overlap as well as discontinuity.
+The markup files are read into memory and the graph is build.
+A graph consists of a set of nodes and edges. Edges connect the nodes to each other. A TAG is a property graph, which is a data structure where all of the edges and nodes are typed and can have properties attached to them.
+
+Lets look at an example.
+Given a file that contains the plain text "hello world". this will produce the graph as pictured in figure 1.
+The graph consists of just two nodes; one node of type Document and one node of type Text. The Document node is represented by the elipse. The Text node is represented by the  box with the rounded corners. 
+
+
+
+<img src="Images/tag_tutorial_propertygraph simple_example.gif">
+
 
 
 Very basic exmaple.
