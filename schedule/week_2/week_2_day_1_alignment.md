@@ -2,6 +2,11 @@
 
 As part of the collation of textual variants, alignment is the process of determining which tokens in one witness should be regarded as parallel to which tokens in another. Alignment thus presupposes [tokenization](week_2_day_1_tokenization.md). Furthermore, texts may be [normalized](week2_day_1_normalization.md) before alignment as a way of treating as equivalent readings that are not string-equal. Normalization may be implemented in the text itself, completely leveling differences that may have been present originally, or it may be performed on shadow copies of the tokens, which lets the alignment process treat different readings as equivalent without irretrievably erasing evidence of the differences.
 
+The image below and the accompanying description of it are taken from <https://wiki.tei-c.org/index.php/Textual_Variance>: 
+
+<img src="../../images/Collation_Aligner.png" style="float: right;"/>
+> Looking at an example, assume that we have three witnesses: the first is comprised of the token sequence (a, b, c, d), the second reads (a, c, d, b) and the third (b, c, d). A collator might align these three witnesses as depicted in a tabular fashion on the right. Each witness occupies a column, matching tokens are aligned in a row, necessary gap tokens as inserted during the alignment process are denoted via a hyphen. Depending from which perspective one interprets this alignment table, one can say for example that the (b) in the second row was ommitted in the second witness or it has been added in the first and the third. A similar statement can be made about (b) in the last row by just inverting the relationship of being added/ommitted.
+
 Some alignment decisions cannot be resolved unambiguously even by a human. Given the variants “It’s a big problem” and “It’s big, big problem”, there is no principled way to determine which of the “big” tokens in the second string should be regarded as corresponding to the single “big” token in the first string, and which should be regarded as having no counterpart.
 
 ## Scalability and presegmentation
