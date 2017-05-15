@@ -47,34 +47,36 @@ CollateX can serialize the result of alignment as a [JSON](http://www.json.org/)
 
  followed by its JSON serialization:
 
-	{'table': [[[{'n': 'The', 't': 'The '}],
-	   [{'n': 'brown', 't': 'brown '}],
-	   [{'n': 'fox', 't': 'fox '}],
-	   [{'n': 'jumps', 't': 'jumps '}],
-	   [{'n': 'over', 't': 'over '}],
-	   [{'n': 'the', 't': 'the '}],
-	   None,
-	   [{'n': 'dog', 't': 'dog'}],
-	   [{'n': '.', 't': '.'}]],
-	  [[{'n': 'The', 't': 'The '}],
-	   [{'n': 'brown', 't': 'brown '}],
-	   [{'n': 'fox', 't': 'fox '}],
-	   [{'n': 'jumps', 't': 'jumps '}],
-	   [{'n': 'over', 't': 'over '}],
-	   [{'n': 'the', 't': 'the '}],
-	   [{'n': 'lazy', 't': 'lazy '}],
-	   [{'n': 'dog', 't': 'dog'}],
-	   [{'n': '.', 't': '.'}]],
-	  [[{'n': 'The', 't': 'The '}],
-	   [{'n': 'gray', 't': 'gray '}],
-	   [{'n': 'wombat', 't': 'wombat '}],
-	   [{'n': 'jumps', 't': 'jumps '}],
-	   [{'n': 'over', 't': 'over '}],
-	   [{'n': 'the', 't': 'the '}],
-	   [{'n': 'lazy', 't': 'lazy '}],
-	   [{'n': 'dog', 't': 'dog'}],
-	   [{'n': '.', 't': '.'}]]],
-	 'witnesses': ['A', 'B', 'C']}
+```json
+{'table': [[[{'n': 'The', 't': 'The '}],
+   [{'n': 'brown', 't': 'brown '}],
+   [{'n': 'fox', 't': 'fox '}],
+   [{'n': 'jumps', 't': 'jumps '}],
+   [{'n': 'over', 't': 'over '}],
+   [{'n': 'the', 't': 'the '}],
+   None,
+   [{'n': 'dog', 't': 'dog'}],
+   [{'n': '.', 't': '.'}]],
+  [[{'n': 'The', 't': 'The '}],
+   [{'n': 'brown', 't': 'brown '}],
+   [{'n': 'fox', 't': 'fox '}],
+   [{'n': 'jumps', 't': 'jumps '}],
+   [{'n': 'over', 't': 'over '}],
+   [{'n': 'the', 't': 'the '}],
+   [{'n': 'lazy', 't': 'lazy '}],
+   [{'n': 'dog', 't': 'dog'}],
+   [{'n': '.', 't': '.'}]],
+  [[{'n': 'The', 't': 'The '}],
+   [{'n': 'gray', 't': 'gray '}],
+   [{'n': 'wombat', 't': 'wombat '}],
+   [{'n': 'jumps', 't': 'jumps '}],
+   [{'n': 'over', 't': 'over '}],
+   [{'n': 'the', 't': 'the '}],
+   [{'n': 'lazy', 't': 'lazy '}],
+   [{'n': 'dog', 't': 'dog'}],
+   [{'n': '.', 't': '.'}]]],
+ 'witnesses': ['A', 'B', 'C']}
+```
 
 Even if you are not familiar with JSON or with Python dictionaries, you can see that each token is represent by a “t” (literal token) and “n” (normalized) value, and tht normalization removes trailing space characters from the tokens, as described in our overview of [normalization](week_2_day_1_normalization.md). 
 
@@ -104,4 +106,6 @@ The histogram provides a navigational interface for the heatmap.
 
 ![Juxta side-by-side](../../images/juxta_side-by-side_declaration.png)
 
+## Your turn!
 
+What sorts of visualizations do you imagine using in your edition? 
