@@ -2,14 +2,9 @@
 
 ## Week 2: Philcamp: Digital philology, creating a digital edition
 
-### Overview
+### Day 1: Modeling
 
-* Project planning
-* Theory of edition
-* Text as graph (TAG)
-* Gothenburg model of textual variance (GM)
-
-______
+On the first day of Week 2 we emphasize three foundational aspects of digital textual scholarship: text as graph (TAG), theory of edition, and the Gothenburg model of textual variance (GM). This day will also cover developing project specifications and defining goals and non-goals to avoid scope-creep.
 
 ### Legend
 
@@ -24,7 +19,7 @@ ______
 
 Time | Topic | Type
 ---- | ----  | ----
-9:00–9:20 (20) | Overview of Week 2 | Presentation
+9:00–9:20 (20) | [Overview of Week 2](topics.md) | Presentation
 9:20–9:40 (20) | Explore [project planning questions](project_planning.md) | Discussion
 9:40–10:10 (30) | Apply project planning questions to your own project (individually or collaboratively) | Talk lab
 10:10–10:30 (30) | General discussion of Talk lab results | Discussion
@@ -54,7 +49,7 @@ GM emerged from a 2009 symposium within the frameworks of the EU-funded research
 
 One motivation for GM is that the high-level GM concepts are likely to be part of any study of textual variation, but the way they are understood and implemented may be informed in specific ways by the language, the text, and the research question. The modular structure is intended to make it possible to customize one part of the process without having to rewrite the others. In other words, GM is a _pipeline_ model, where the five stages happen in order, the output of each serves as the input to the next, and no stage has to know about the inner workings of any other.  
 
-On Day 1 the instructors will introduce GM to the participants. We address all of its parts in greater detail during the rest of Week 2, with continued attention to visualization in Week 3.
+On Day 1 the instructors will introduce GM to the participants. We will address all of its parts in greater detail during the rest of Week 2, with continued attention to visualization in Week 3.
 
 Time | Topic | Type
 ---- | ---- | ----
