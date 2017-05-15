@@ -10,6 +10,7 @@ Week 1 is dedicated to building up background knowledge of the computing environ
 - Understanding how the Internet works
 - Don’t panic: documentation and error messages
 - Python clinic: applying Python programming skills in a coding project (New -- not included in the [original proposal](topics.md))
+- Git and Github for collaborative code development (Also new)
 
 ### Class Schedule
 Rather than covering one topic per day as [originally planned](topics.md), Tara Andrews and Na-Rae Han, two leads for this week's curriculum, recommend that topics be broken up over the course of multiple days. In addition, the last session of the day will not introduce new material, and will instead be used for reviewing or applying the content learned earlier in the day. The “documentation and error messages” topic could be folded into them. A preliminary schedule thus far:
