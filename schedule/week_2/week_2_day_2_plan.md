@@ -20,9 +20,10 @@ Intro
 
 Time | Topic | Type
 ---- | ----  | ----
-9:00–9:30 (30) | Unicode and all that | Presentation
-9:30–10:00 (30) | Diplomatic and normalized transcription; OCR | Talk lab
-10:00–10:30 (30) | General discussion of Talk lab results | Discussion
+9:00–9:20 (20) | [Unicode and other character sets](unicode.md) | Presentation
+9:20–9:40 (20) | [Diplomatic and normalized transcription; OCR](transcriptions.md) | Presentation 
+9:40–10:10 (30)| Transcription and encoding issues in your editions | Talk lab
+10:10–10:30 (20) | General discussion of Talk lab results | Discussion
 
 ### 10:30–11:00 Coffee break
 
