@@ -18,8 +18,11 @@ Rather than covering one topic per day as [originally planned](topics.md), Tara 
 Time/Day	| Monday | Tuesday | Wednesday | Thursday | Friday
 --- | ------ | ------- | --------- | -------- | ------
 9:00–10:30 | Getting to know your OS: file and directory system | Regular expressions 1 | Regular expressions 2 | How Internet Works 1 | How Internet Works 2
+10:30–11:00|Coffee break|Coffee break|Coffee break|Coffee break|Coffee break
 11:00–12:30 | Command line 1 | Command line 2 | Command line 3 | Git 1 | Git 2 
+12:30–2:00|Lunch|Lunch|Lunch|Lunch|Lunch
 2:00–3:30 | Programs and files 1 | Programs and files 2 | -- | Python clinic 1 | Python clinic 2
+3:30–4:00|Coffee break|Coffee break|Coffee break|Coffee break|Coffee break
 4:00–5:30 | REVIEW (Documentation and error messages) | REVIEW | -- | REVIEW | --
 
 Note: It may be a good idea to split 1st day's 3 sessions into OS-specific subgroups -- a Windows group and a Mac group (including Linux folks). That way, people will learn to get around in their respective OS's comfortably before the two groups merge into one. 
