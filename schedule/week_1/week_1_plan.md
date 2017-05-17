@@ -22,7 +22,7 @@ Time\Day	| Monday | Tuesday | Wednesday | Thursday | Friday
 2pm - 3:30pm | Programs and files 1 | Programs and files 2 | -- | Python clinic 1 | Python clinic 2
 4pm - 5:30pm | REVIEW (Documentation and error messages) | REVIEW | -- | REVIEW | --
 
-Note: It’s a good idea to split earlier, more OS-centric sections (such as "Getting to know your OS" and "Programs and files 1") into a Windows group and a Mac group (including Linux folks). 
+Note: It may be a good idea to split 1st day's 3 sessions into OS-specific subgroups -- a Windows group and a Mac group (including Linux folks). That way, people will learn to get around in their respective OS's comfortably before the two groups merge into one. 
 
 ### Instructor Assignment
 - Tara L. Andrews (?)
@@ -31,4 +31,4 @@ Note: It’s a good idea to split earlier, more OS-centric sections (such as "Ge
 - Na-Rae Han (Python clinic 1 & 2, ?)
 - Leif-Jöran Olsson (?)
 
-There are 17 sections including Reviews, 19 if offering separate Windows and Mac tracks for two sections. Each instructor teaching three or four sections will provide enough coverage. 
+There are 17 sections including Reviews, 20 if offering separate Windows and Mac tracks for the 1st day's 3 topics. Each instructor teaching four sections will provide enough coverage. Perhaps each section should be headlined by a LEAD instructor and assisted by a SECONDARY instructor (at the minimum; more could be recruited as needed). 
