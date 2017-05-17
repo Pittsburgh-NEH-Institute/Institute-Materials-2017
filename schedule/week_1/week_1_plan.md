@@ -15,12 +15,12 @@ Week 1 is dedicated to building up background knowledge of the computing environ
 ### Class Schedule
 Rather than covering one topic per day as [originally planned](topics.md), Tara Andrews and Na-Rae Han, two leads for this week's curriculum, recommend that topics be broken up over the course of multiple days. In addition, the last session of the day will not introduce new material, and will instead be used for reviewing or applying the content learned earlier in the day. The “documentation and error messages” topic could be folded into them. A preliminary schedule thus far:
 
-Time\Day	| Monday | Tuesday | Wednesday | Thursday | Friday
+Time/Day	| Monday | Tuesday | Wednesday | Thursday | Friday
 --- | ------ | ------- | --------- | -------- | ------
-9am - 10:30am | Getting to know your OS: file and directory system | Regular expressions 1 | Regular expressions 2 | How Internet Works 1 | How Internet Works 2
-11am - 12:30pm | Command line 1 | Command line 2 | Command line 3 | Git 1 | Git 2 
-2pm - 3:30pm | Programs and files 1 | Programs and files 2 | -- | Python clinic 1 | Python clinic 2
-4pm - 5:30pm | REVIEW (Documentation and error messages) | REVIEW | -- | REVIEW | --
+9:00–10:30 | Getting to know your OS: file and directory system | Regular expressions 1 | Regular expressions 2 | How Internet Works 1 | How Internet Works 2
+11:00–12:30 | Command line 1 | Command line 2 | Command line 3 | Git 1 | Git 2 
+2:00–3:30 | Programs and files 1 | Programs and files 2 | -- | Python clinic 1 | Python clinic 2
+4:00–5:30 | REVIEW (Documentation and error messages) | REVIEW | -- | REVIEW | --
 
 Note: It may be a good idea to split 1st day's 3 sessions into OS-specific subgroups -- a Windows group and a Mac group (including Linux folks). That way, people will learn to get around in their respective OS's comfortably before the two groups merge into one. 
 
