@@ -25,7 +25,10 @@ Time/Day	| Monday | Tuesday | Wednesday | Thursday | Friday
 3:30–4:00|Coffee break|Coffee break| -- |Coffee break| --
 4:00–5:30 | Review (Documentation and error messages) | Review | -- | Review | --
 
-Note: We will split 1st day's 3 sessions into OS-specific subgroups -- a Windows group and a Mac group (including Linux folks). That way, people will learn to get around in their respective OS's comfortably before the two groups merge into one. 
+Note1: We will split 1st day's 3 sessions into OS-specific subgroups -- a Windows group and a Mac group (including Linux folks). That way, people will learn to get around in their respective OS's comfortably before the two groups merge into one. 
+
+Note2: From Tuesday through Friday, first 15 minutes will be spent on reviewing the previous day's contents. We will have students ask questions on what they found hard or confusing, etc. 
+
 
 ### Instructor Assignment
 - Tara L. Andrews (?)
