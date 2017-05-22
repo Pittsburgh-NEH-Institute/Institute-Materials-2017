@@ -21,17 +21,17 @@ Time/Day	| Monday | Tuesday | Wednesday | Thursday | Friday
 10:30–11:00|Coffee break|Coffee break|Coffee break|Coffee break|Coffee break
 11:00–12:30 | Command line 1 | Command line 2 | Command line 3 | Git 1 | Git 2 
 12:30–2:00|Lunch|Lunch|Lunch|Lunch|Lunch
-2:00–3:30 | Programs and files 1 | Programs and files 2 | -- | Python clinic 1 | Python clinic 2
-3:30–4:00|Coffee break|Coffee break|Coffee break|Coffee break|Coffee break
+2:00–3:30 | Programs and files 1 | Programs and files 2 | Python clinic 1| Python clinic 2 | Review & wrap-up
+3:30–4:00|Coffee break|Coffee break| -- |Coffee break| --
 4:00–5:30 | Review (Documentation and error messages) | Review | -- | Review | --
 
-Note: It may be a good idea to split 1st day's 3 sessions into OS-specific subgroups -- a Windows group and a Mac group (including Linux folks). That way, people will learn to get around in their respective OS's comfortably before the two groups merge into one. 
+Note: We will split 1st day's 3 sessions into OS-specific subgroups -- a Windows group and a Mac group (including Linux folks). That way, people will learn to get around in their respective OS's comfortably before the two groups merge into one. 
 
 ### Instructor Assignment
 - Tara L. Andrews (?)
 - David J. Birnbaum (?)
 - Ronald Haentjens Dekker (?)
-- Na-Rae Han (Python clinic 1 & 2, ?)
+- Na-Rae Han (Python clinic 1 & 2, Windows OS break-out sessions)
 - Leif-Jöran Olsson (?)
 
-There are 17 sections including Reviews, 20 if offering separate Windows and Mac tracks for the 1st day's 3 topics. Each instructor teaching four sections will provide enough coverage. Perhaps each section should be headlined by a LEAD instructor and assisted by a SECONDARY instructor (at the minimum; more could be recruited as needed). 
+There are 20 sections including 3 separate Windows and Mac tracks for the 1st day's 3 topics. Each instructor teaching four sections will provide enough coverage. Each section will be headlined by a LEAD instructor (who is in charge of leading class and drafting the course materials) and assisted by a SECONDARY instructor (tasked with reviewing and signing-off on course materials and also providing in-classroom assistance). All the other instructors, along with the TAs, are also expected to be present during all/most courses; they will hover and offer hands-on help to individual students.  
