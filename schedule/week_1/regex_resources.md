@@ -9,7 +9,7 @@
 
 ## Reference
 
-Mulberry Technologies [Regular Expressions in XSLT 2.0, XQuery 1.0 and XPath 2.0](http://www.mulberrytech.com/quickref/regex.pdf)
+* Mulberry Technologies [Regular Expressions in XSLT 2.0, XQuery 1.0 and XPath 2.0](http://www.mulberrytech.com/quickref/regex.pdf)
 
 ## Sandbox sites
 
