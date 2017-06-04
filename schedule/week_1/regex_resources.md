@@ -11,6 +11,7 @@
 	
 ## Reference
 
+* Python 3 [Regular Expression HOWTO](https://docs.python.org/3/howto/regex.html)
 * Mulberry Technologies [Regular Expressions in XSLT 2.0, XQuery 1.0 and XPath 2.0](http://www.mulberrytech.com/quickref/regex.pdf)
 
 ## Sandbox sites
