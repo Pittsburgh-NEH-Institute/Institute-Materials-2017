@@ -29,6 +29,9 @@ Note1: We will split 1st day's 3 sessions into OS-specific subgroups -- a Window
 
 Note2: From Tuesday through Friday, first 15 minutes will be spent on reviewing the previous day's contents. We will have students ask questions on what they found hard or confusing, etc. 
 
+### Resources
+
+* [Regular expressions](regex-resources.md)
 
 ### Instructor Assignment
 - Tara L. Andrews (?)

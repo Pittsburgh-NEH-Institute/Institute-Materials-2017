@@ -14,15 +14,16 @@ Manuscript materials must be digitized as character data for subsequent computat
 
 ______
 
-### 9:00–10:30 Transcription
+### 9:00–10:30 Transcription and markup, facsimile images
 
-Intro
+Digital editions typically include character-based transcriptions of primary sources, which requires the user to decide how to represent the (perhaps hand-written) original on a character level. Editions may also include facsimile images. In this session we explore issues pertaining to the transcription of original sources as character data. We refer only briefly to subsequent concerns, such as the use of markup (XML, often TEI) and facsimile images, although these are obviously important aspects of planning an edition.
 
 Time | Topic | Type
 ---- | ----  | ----
-9:00–9:20 (20) | [Unicode and other character sets](unicode.md) | Presentation
-9:20–9:40 (20) | [Diplomatic and normalized transcription; OCR](transcriptions.md) | Presentation 
-9:40–10:10 (30)| Transcription and encoding issues in your editions | Talk lab
+9:00–9:15 (15) | [Unicode and other character sets](unicode.md) | Presentation
+9:15–9:30 (15) | [Diplomatic and normalized transcription; OCR](transcription.md) | Presentation 
+9:30–9:45 (15) | Markup and images |
+9:45–10:10 (25) | Transcription and encoding issues in your editions | Talk lab
 10:10–10:30 (20) | General discussion of Talk lab results | Discussion
 
 ### 10:30–11:00 Coffee break
