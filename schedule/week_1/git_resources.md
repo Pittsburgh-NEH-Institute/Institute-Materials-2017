@@ -14,6 +14,7 @@ Although there are GUIs for Git, we use and recommend the Git command line, whic
 
 * [Got 15 minutes and want to learn Git?](https://try.github.io/levels/1/challenges/1)
 * Rebecca Parker’s [Git and GitHub at command line](http://newtfire.org/dh/explainGitShell.html)
+* Software Carpentry’s [Version Control with Git](http://swcarpentry.github.io/git-novice/)
 
 ## Reference
 
