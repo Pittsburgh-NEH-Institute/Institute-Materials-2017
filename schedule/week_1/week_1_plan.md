@@ -35,10 +35,10 @@ Note2: From Tuesday through Friday, first 15 minutes will be spent on reviewing 
 * [Regular expressions](regex_resources.md)
 
 ### Instructor Assignment
-- Tara L. Andrews (?)
-- David J. Birnbaum (?)
-- Ronald Haentjens Dekker (?)
+- Tara L. Andrews (Programs and files; How the Internet works)
+- David J. Birnbaum (Command line)
+- Ronald Haentjens Dekker (Git)
 - Na-Rae Han (Python clinic 1 & 2, Windows OS break-out sessions)
-- Leif-Jöran Olsson (?)
+- Leif-Jöran Olsson (Regex)
 
 There are 20 sections including 3 separate Windows and Mac tracks for the 1st day's 3 topics. Each instructor teaching four sections will provide enough coverage. Each section will be headlined by a LEAD instructor (who is in charge of leading class and drafting the course materials) and assisted by a SECONDARY instructor (tasked with reviewing and signing-off on course materials and also providing in-classroom assistance). All the other instructors, along with the TAs, are also expected to be present during all/most courses; they will hover and offer hands-on help to individual students.  
