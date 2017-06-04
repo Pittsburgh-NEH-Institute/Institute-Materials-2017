@@ -24,6 +24,6 @@ Develop and test regex in a browser at:
 
 ## Practice, just for fun
 
-* [Regex-matching Steve Jobs] (http://www.pitt.edu/~naraehan/ling1330/ex11.html)
+* [Regex-matching Steve Jobs](http://www.pitt.edu/~naraehan/ling1330/ex11.html)
 * [Regex Crossword](https://regexcrossword.com/)
 
