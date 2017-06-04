@@ -31,7 +31,7 @@ Note2: From Tuesday through Friday, first 15 minutes will be spent on reviewing 
 
 ### Resources
 
-* [Regular expressions](regex-resources.md)
+* [Regular expressions](regex_resources.md)
 
 ### Instructor Assignment
 - Tara L. Andrews (?)
