@@ -1,8 +1,15 @@
 # Regular expression resources
 
-## Tutorial and reference
+## Tutorial
 
-* [Regular-Expressions.info](http://www.regular-expressions.info/)
+* Regular-Expressions.info
+	* [Tutorial](http://www.regular-expressions.info/tutorial.html)
+	* [Quick Start](http://www.regular-expressions.info/quickstart.html)
+* [RegexOne](https://regexone.com/). Learn Regular Expressions with simple, interactive exercises.
+
+## Reference
+
+Mulberry Technologies [Regular Expressions in XSLT 2.0, XQuery 1.0 and XPath 2.0](http://www.mulberrytech.com/quickref/regex.pdf)
 
 ## Sandbox sites
 
