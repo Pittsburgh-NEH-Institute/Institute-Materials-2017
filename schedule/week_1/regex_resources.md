@@ -22,7 +22,8 @@ Develop and test regex in a browser at:
 * [Regex Pal](http://regexpal.com.s3-website-us-east-1.amazonaws.com/)
 * [Regex Tester](http://www.regextester.com/)
 
-## Just for fun
+## Practice, just for fun
 
+* [Regex-matching Steve Jobs] (http://www.pitt.edu/~naraehan/ling1330/ex11.html)
 * [Regex Crossword](https://regexcrossword.com/)
 
