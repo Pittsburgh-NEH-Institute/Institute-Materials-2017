@@ -31,9 +31,15 @@ Note2: From Tuesday through Friday, first 15 minutes will be spent on reviewing 
 
 ### Resources
 
+#### Basic resources
+
 * [Command line](command-line_resources.md)
 * [Git and GitHub](git_resources.md)
 * [Regular expressions](regex_resources.md)
+
+#### Advanced resources
+
+* [MacOS package managers](package_managers.md) (to install Unix-type utilities not already available in MacOS)
 
 ### Instructor Assignment
 - Tara L. Andrews (Programs and files; How the Internet works)
