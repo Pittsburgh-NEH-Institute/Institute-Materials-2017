@@ -50,7 +50,7 @@ The asterisk means “zero or more characters” and the question mark means “
 
 These lists are only brief reminders of the commands we use most often; they’ll help you find the command you need to perform a task, but they won’t tell you how it works. To get more information about a command, type `man command-name` (replacing “command-name” with the name of the command you are looking up). If your shell does not support `man` (Windows users), the contents of the man pages are easily found on line (e.g., at <https://linux.die.net/man/>).
 
-### Getting oriented
+### Get oriented
 
 Command | Mnemonic | What it does
 ---- | ---- | ----
@@ -89,7 +89,7 @@ Command | Mnemonic | Example | What it does
 
 Text editors commonly invoked from the command line include **nano**, **vim**, and **emacs**. **nano** is the easiest for new users (it displays prompts for common commands); most experienced users prefer the other two. To edit a file called “filename.txt” with vim, type `vim filename.txt`.
 
-### Creating and unpacking zip files
+### Create and unpack zip archive files
 
 Sets of files are often distributed as a single **zip archive** file.
 
