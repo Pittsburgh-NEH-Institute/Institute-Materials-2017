@@ -64,7 +64,7 @@ Command | Mnemonic | What it does
 Command | Mnemonic | Example | What it does
 ---- | ---- | ---- | ----
 `grep` | **g**lobal **r**egular **e**xpression **p**rint | `grep stuff *` | finds lines in files that contain “stuff”
-`less` | [none] | `less filename.txt` | pages through a “filename.txt”;<br/>use the space bar to page forward, type `q` to quit
+`less` | [none] | `less filename.txt` | pages through “filename.txt”;<br/>use the space bar to page forward, type `q` to quit
 `ls` | **l**i**s**t | `ls *.txt` | lists the files that match the pattern (or, with no argument, all files)
 
 ### Manipulate your files
@@ -73,7 +73,7 @@ Command | Mnemonic | Example | What it does
 ---- | ---- | ---- | ----
 `cp` | **c**o**p**y | `cp oldfile.txt newfile.txt` | copies “oldfile.txt” as “newfile.txt”
 `mv` | **m**o**v**e | `mv oldfile.txt newfile.txt` | _renames_ “oldfile.txt” as “newfile.txt”
-`mv` | **m**o**v**e | `mv *.txt oldfiles` | moves all text files into subdirectory called “oldfiles”
+`mv` | **m**o**v**e | `mv *.txt archive` | moves all text files into subdirectory called “archive”
 `rm` | **r**e**m**ove | `rm unwanted-file.txt` | deletes “unwanted-file.txt”
 
 There is no undelete, but you can retrieve the last committed version from GitHub.
