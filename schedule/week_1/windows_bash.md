@@ -1,5 +1,11 @@
 # Using bash on Windows
 
+## Git Bash (Windows 7 and above)
+
+[FILL ME IN]
+
+## Bash on Windows 10
+
 As part of “Ubuntu on Windows”, the Anniversary Edition of Windows 10 supports a real bash shell, with functionality similar to that available in bash on Linux. If you are running a version of Windows that supports the bash shell, we recommend using it instead of the older Windows PowerShell or cmd.exe. See <https://msdn.microsoft.com/en-us/commandline/wsl/faq> for Microsoft’s FAQ about Ubuntu on Windows.
 
 Windows normally installs itself on your C drive, and your home directory is located in **C:\Users\username** (replace “username” with your username, the one you use to log in when you boot your machine). Note that Windows natively uses backslashes to separate paths, and it specifies a drive letter, followed by a colon, as part of a full path.
