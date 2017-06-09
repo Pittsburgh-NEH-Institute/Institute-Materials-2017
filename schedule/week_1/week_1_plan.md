@@ -12,6 +12,10 @@ Week 1 is dedicated to building up background knowledge of the computing environ
 - Python clinic: applying Python programming skills in a coding project (New -- not included in the [original proposal](topics.md))
 - Git and Github for collaborative code development (Also new)
 
+### Before you arrive
+
+Install the software at our [Before you arrive](before_you_arrive.md) page.
+
 ### Class Schedule
 Rather than covering one topic per day as [originally planned](topics.md), Tara Andrews and Na-Rae Han, two leads for this week's curriculum, recommend that topics be broken up over the course of multiple days. In addition, the last session of the day will not introduce new material, and will instead be used for reviewing or applying the content learned earlier in the day. The “documentation and error messages” topic could be folded into them. A preliminary schedule thus far:
 
@@ -39,7 +43,7 @@ Note2: From Tuesday through Friday, first 15 minutes will be spent on reviewing 
 
 #### Advanced resources
 
-* [MacOS package managers](package_managers.md) (to install Unix-type utilities not already available in MacOS)
+* [Package managers](package_managers.md) (to install Unix-type utilities not already available in MacOS or Windows)
 
 ### Instructor Assignment
 - Tara L. Andrews (Programs and files; How the Internet works)
