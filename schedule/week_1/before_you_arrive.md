@@ -15,7 +15,7 @@ Before you arrive at the Institute, you will want to have installed the followin
 ## Mac users
 
 * **Xcode** is a suite of Mac development tools. You can install it from the command line by typing `xcode-select --install` or download it from <https://developer.apple.com/xcode/>. Allow a lot of time; it’s a large installation.
-* **Text editor**: You don’t want to write code in a word processor! Unless you are already adept in another text editor, we recommend [BBEdit](https://www.barebones.com/products/bbedit/) (which now incorporates the functionality of the same company’s earlier TextMate). Some users prefer [Atom](https://atom.io/). Popular commercial editors include [TextMate](https://macromates.com/), which enforces a license requirement, and  [SublimeText](https://www.sublimetext.com/), which has an honor-code license (unlimited free trial, but users are expected to register).
+* **Text editor**: You don’t want to write code in a word processor! Unless you are already adept in another text editor, we recommend [BBEdit](https://www.barebones.com/products/bbedit/) (which now incorporates the functionality of the same company’s earlier TextWrangler). Some users prefer [Atom](https://atom.io/). Popular commercial editors include [TextMate](https://macromates.com/), which enforces a license requirement, and  [SublimeText](https://www.sublimetext.com/), which has an honor-code license (unlimited free trial, but users are expected to register).
 
 ## Windows users
 
