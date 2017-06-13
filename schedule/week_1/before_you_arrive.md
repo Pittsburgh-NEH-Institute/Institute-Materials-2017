@@ -8,6 +8,7 @@ Before you arrive at the Institute, you will want to have installed the followin
 * **Python IDE**: [PyCharm](https://www.jetbrains.com/pycharm/). The Community Edition is free, but students and faculty can also obtain a [free license for the Professional Edition](https://www.jetbrains.com/student/). Don’t use the Academic version; the student/faculty licensing supersedes it. We’ll also use Jupyter Notebook, which is part of the Anaconda Python distribution, but PyCharm is better for complex projects.
 * **XML IDE**: [\<oXygen/\>](http://www.oxygenxml.com>). Can be used under a [free thirty-day trial license](https://www.oxygenxml.com/xml_editor/register.html) or [academic license](https://www.oxygenxml.com/buy_new_licenses_academic.html). \<oXygen/\> is a commercial product, but it’s sufficiently better than the free alternatives that we use and recommend it.
 * **Version control**: [Git](https://git-scm.com/downloads).
+* **Work folder**: Create a work folder for your Week 1 practice files. Unless you have an alternative preferred work space, we’d suggest putting it under your **Documents** folder. The name of your work folder must not contain any characters except letters, digits, underscores, hyphens, and periods (e.g., “neh” or “neh_institute” are okay; “neh institute”, with a space, is not).
 
 **Add this: Data from Software Carpentry shell course (for practice)**
 
