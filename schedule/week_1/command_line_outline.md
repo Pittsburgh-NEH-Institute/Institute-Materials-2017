@@ -7,6 +7,10 @@
 * **Etherpad:** We’ll create an [Etherpad](https://etherpad.net) where participants who wish to do so can take notes collaboratively. For a quick overview of Etherpad functionality see <http://write.flossmanuals.net/etherpad/introduction/>.
 ____
 
+## Monday, 9:00–11:30: Getting to know your OS: file and directory system
+
+[Add stuff here]
+
 ## Monday, 11:00–12:30: Command line 1
 
 ### Why and how do we use the shell?
