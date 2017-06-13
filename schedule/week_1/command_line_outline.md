@@ -48,23 +48,26 @@ ____
 * `rmdir`: remove empty directory
 * `rm -rf:` remove directory and its contents recursively (careful!)
 
-### Making things easier
+###Wildcards (“globbing”; annoyingly different from regex)
 
-* Wildcards (“globbing”; annoyingly different from regex)
-	* `*.xml ` (files ending in “.xml”)
-	* `*.x?l` (files ending in “.x” followed by any letter followed by “l”, e.g., XML [xml], XSLT [xsl], XProc [xpl] files)
-	* `*.x[ms]l` (files ending in “.x” followed by “m” or “s” followed by “l”, e.g., XML and XSLT files, but not XProc)
+* `*.xml ` (files ending in “.xml”)
+* `*.x?l` (files ending in “.x” followed by any letter followed by “l”, e.g., XML [xml], XSLT [xsl], XProc [xpl] files)
+* `*.x[ms]l` (files ending in “.x” followed by “m” or “s” followed by “l”, e.g., XML and XSLT files, but not XProc)
+
+### Enhanced history
+
 * `!!`: rerun the last command
 * `!$`: plug in the last word token from the last command
+* `!command`: rerun the most recent command that begins with the word after the exclamation mark (that is, replace ”command” with the name of the command). 
+
+### Getting around the file system
+
 * `cd -`: go back to the directory you came from
 * `cd` or `cd ~`: go to your home directory
 * `ctrl-r`: initiate history search
 * `..`: parent directory
 * `.`: current directory (Why might you need this?)
 * `~`: home directory
-
-### Getting around the directory stack
-
 * `pushd`
 * `popd`
 * `dirs -v` (verbose); `dirs -c` (clear)
