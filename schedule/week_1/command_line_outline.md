@@ -14,6 +14,7 @@ ____
 * The shell is a program that runs other programs.
 * We use the shell to interact with the computer on the command line (CLI ~ GUI).
 * The Unix philosophy is that you can _pipe_ together small commands, each of which does one thing well, to do something complex. You can’t do this in a GUI.
+* bash = ‘Bourne again shell’ (the original shell is sh; others include csh, ksh, tcsh, zsh). We use and recommend bash.
 * Learn the shell on a need-to-know basis. There are commands you’ll use every day, some you’ll use for special purposes (and you’ll look up how they work when you need them), and some that you’ll never need.
 
 ### Launching the shell
@@ -41,6 +42,7 @@ ____
 * `cp`: copy
 * `mv`: move and rename
 * `rm`: delete (careful!)
+* `touch`: update the date stamp of a file (create the file if it doesn’t already exist)
 
 ### Working with directories
 
@@ -68,11 +70,6 @@ ____
 * `..`: parent directory
 * `.`: current directory (Why might you need this?)
 * `~`: home directory
-* `pushd`
-* `popd`
-* `dirs -v` (verbose); `dirs -c` (clear)
-
-If there’s somewhere you go all the time, define an alias: `alias work='cd /Users/moe/work'`
 
 ### More useful commands
 
@@ -82,12 +79,14 @@ If there’s somewhere you go all the time, define an alias: `alias work='cd /Us
 * `uniq` (only on sorted input)
 * `head` (`-10`, or any other number)
 * `tail` (`-10`, or any other number)
+* `echo` (e.g., `echo $HOME`, `echo a*`)
 
 ### Reading from and writing to files
 
 * stdin, stdout, stderr
 * `<`: input from file
-* `>`: output to file
+* `>`: output to file (overwrites existing files with the same name)
+* `>>`: append to file (creates file if it doesn’t already exist)
 * `2>`: error messages to file (`2> /dev/null`)
 
 ### Sending data through pipelines
@@ -96,13 +95,6 @@ If there’s somewhere you go all the time, define an alias: `alias work='cd /Us
 * `history | tail`
 * `wc filename` ~ `wc < filename` ~ `cat filename | wc`
 * Why are there two backslashes in `history | grep \\.xml`?
-
-### Repeating things
-
-In the first example below `%` removes a matching string at the end of the filename. These commands make copies, but if you replace `cp` with `mv`, they rename files.
-
-* `for file in *.txt; do cp ${file%txt}bak; done` replace “.txt” extension with “.bak”
-* `for file in *.txt; do cp $file $file.bak; done` keep “.txt”, but add “.bak” after it
 
 ### Shell variables
 
@@ -130,6 +122,10 @@ In the first example below `%` removes a matching string at the end of the filen
 * Directories are files, too
 * `file`
 * /dev/null
+* Finding the filesystem location of a file from the MacOS finder or Windows explorer
+	* Mac: Drag the filename from a finder windows and drop it in a terminal window to paste the path to the file.
+	* Windows: ???
+	* Linux: ???
 
 ### Files can have more than one name and live in more than one place
 
@@ -142,6 +138,14 @@ In the first example below `%` removes a matching string at the end of the filen
 * user, group, other
 * `chown` (you probably can’t change ownership on shared systems and don’t need to do it on your own machine)
 * `chmod` (“644”, “664” for files; “755”, “775” for directories)
+
+### Getting around the directory stack
+
+* `pushd`
+* `popd`
+* `dirs -v` (verbose); `dirs -c` (clear)
+
+If there’s somewhere you go all the time, define an alias: `alias work='cd /Users/moe/work'`
 
 ### Character sets
 
@@ -199,12 +203,37 @@ Documentation and error messages
 * `-c`: count of matching lines
 * `-s`: silent mode (suppresses error messages)
 
+### Editing the command line
+
+* Up-arrow recalls the last command (or keep going, or go forward after you go back)
+* Ctrl+r and start typing seaches for substring matches in the history; keep typing Ctrl+r to cycle through the matches
+* Left- and right-arrow move through the line
+* Opt+click anywhere in the line (MacOS only)
+
 ## Tuesday, 2:00–3:30: Programs and files 2
+
+### Finding commands and files
+
+* `help` (lists all shell built-ins)
+* `which` (searches $PATH, one result [the one that will be executed if you type the command], not for shell built-ins)
+* `whereis` (searches standard locations, multiple results, not for shell built-ins)
+* `find / -name java -print 2> /dev/null` (finds all files named `java` starting at the file system root)
 
 ### Connecting to remote systems
 
 * Interactive command line: if available, use `ssh`, not `telnet`
 * File-transfer command line: if available, use `sftp`, not `ftp`
+
+### Repeating things
+
+In the first example below `%` removes a matching string at the end of the filename. These commands make copies, but if you replace `cp` with `mv`, they rename files.
+
+* `for file in *.txt; do cp ${file%txt}bak; done` replace “.txt” extension with “.bak”
+* `for file in *.txt; do cp $file $file.bak; done` keep “.txt”, but add “.bak” after it
+
+### Misc
+
+`diff`
 
 ## Tuesday, 4:00–5:30: Review
 
