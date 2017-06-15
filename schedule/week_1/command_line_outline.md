@@ -10,7 +10,7 @@ ____
 ## General
 
 * **Preliminaries:** If you haven’t done so already, complete preparation described at our [Before you arrive](before_you_arrive.md) page. 
-* **References:** Much of the content of these sessions is summarized at our [Command line quick reference](command-line_resources.md) page.* 
+* **References:** Much of the content of these sessions is summarized at our [Command line quick reference](command-line_resources.md) page.
 * **Etherpad:** We’ll create an [Etherpad](https://etherpad.net) where participants who wish to do so can take notes collaboratively. For a quick overview of Etherpad functionality see <http://write.flossmanuals.net/etherpad/introduction/>.
 ____
 
