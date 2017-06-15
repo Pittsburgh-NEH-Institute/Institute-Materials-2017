@@ -29,4 +29,4 @@ ____
 
 <sub>Any views, findings, conclusions, or recommendations expressed in materials developed for this project do not necessarily represent those of the National Endowment for the Humanities.</sub>
 
-Additional support and assistance was provided by the University of Pittsburgh Kenneth P. Dietrich School of Arts and Sciences, Computing Services and Systems Development (CSSD), the Faculty Research and Scholarship Program (FRSP), and the Joseph M. Katz School of Business EMBA Program.
+Additional support and assistance was provided by the University of Pittsburgh Kenneth P. Dietrich School of Arts and Sciences, Computing Services and Systems Development (CSSD), the Faculty Research and Scholarship Program (FRSP), and the Joseph M. Katz School of Business EMBA Program. We are grateful to [SyncroSoft](http://www.sync.ro/) for generously contributing complementary extended trial licenses for their [\<oXygen/\> XML editor](https://www.oxygenxml.com/) for the use of Institute participants.
