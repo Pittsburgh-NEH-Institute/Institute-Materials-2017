@@ -7,7 +7,7 @@ Digital humanists already have access to workshops and tutorials to help them le
 ## Instructors
 
 * Tara Andrews (Institute of History, University of Vienna)
-* David J. Birnbaum (Department of Slavic Languages and Literatures, University of Pittsburgh)
+* <a href="images/djb.jpg" target="_blank">David J. Birnbaum</a> (Department of Slavic Languages and Literatures, University of Pittsburgh)
 * Hugh Cayless (Duke Collaboratory for Classics Computing [DC3], Duke University)
 * Ronald Haentjens Dekker (Huygens Institute, Royal Netherlands Academy of Arts and Sciences)
 * Na-Rae Han (Department of Linguistics, University of Pittsburgh)
