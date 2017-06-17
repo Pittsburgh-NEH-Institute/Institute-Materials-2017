@@ -6,19 +6,24 @@ Digital humanists already have access to workshops and tutorials to help them le
 
 ## Instructors
 
-* Tara Andrews (Institute of History, University of Vienna)
-* <a href="images/djb.jpg" target="_blank">David J. Birnbaum</a> (Department of Slavic Languages and Literatures, University of Pittsburgh)
-* Hugh Cayless (Duke Collaboratory for Classics Computing [DC3], Duke University)
-* Ronald Haentjens Dekker (Huygens Institute, Royal Netherlands Academy of Arts and Sciences)
-* Na-Rae Han (Department of Linguistics, University of Pittsburgh)
-* Mike Kestemont (Department of Literature, University of Antwerp)
-* Leif-Jöran Olsson (Department of Swedish Language, University of Gothenburg)
+<table>
+<tr><td><img src="images/tla.jpg" width="200px" alt="[Andrews picture]"/></td><td>Tara Andrews (Institute of History, University of Vienna)</td></tr>
+<tr><td><img src="images/djb.jpg" width="200px" alt="[Birnbaum picture]"/></td><td>David J. Birnbaum (Department of Slavic Languages and Literatures, University of Pittsburgh)
+</td></tr>
+<tr><td><img src="images/hc.png" width="200px" alt="[Cayless picture]"/></td><td>Hugh Cayless (Duke Collaboratory for Classics Computing [DC3], Duke University)</td></tr>
+<tr><td>[placeholder]</td><td>Ronald Haentjens Dekker (Huygens Institute, Royal Netherlands Academy of Arts and Sciences)</td></tr>
+<tr><td><img src="images/nrh.jpeg" alt="[Han picture]" width="200px"/></td><td>Na-Rae Han (Department of Linguistics, University of Pittsburgh)</td></tr>
+<tr><td><img src="images/mk.jpg" width="200px" alt="[Kestemont picture]"></td><td>Mike Kestemont (Department of Literature, University of Antwerp)</td></tr>
+<tr><td><img src="images/ljo.jpg" width="200px" alt="[Olsson picture]"/></td><td>Leif-Jöran Olsson (Department of Swedish Language, University of Gothenburg)</td></tr>
+</table>
 
 The instructors will be assisted by:
 
-* Gabrielle (Gabi) Keane (Senior Undergraduate Institute Assistant, University of Pittsburgh)
-* Kaylen Sanders (Junior Undergraduate Institute Assistant, University of Pittsburgh)
-
+<table>
+<tr><td><img src="images/gak.jpg" width="200px" alt="[Keane picture]"/></td><td>Gabrielle (Gabi) Keane (Senior Undergraduate Institute Assistant, University of Pittsburgh)</td></tr>
+<tr><td><img src="images/ks.jpg" width="200px" alt="[Sanders image]"/></td><td>Kaylen Sanders (Junior Undergraduate Institute Assistant, University of Pittsburgh)</td></tr>
+</table>
+ 
 ## Additional information
 
 * [Call](admin/call.md) for applications
