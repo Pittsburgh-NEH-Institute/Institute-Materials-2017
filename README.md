@@ -1,3 +1,8 @@
+---
+layout: layout
+title: Make your edition
+---
+
 # Make _your_ edition: models and methods for digital textual scholarship
 
 ## Rationale
