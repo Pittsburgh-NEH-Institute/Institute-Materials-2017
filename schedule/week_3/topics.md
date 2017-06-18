@@ -8,6 +8,8 @@ This day builds on HTML and CSS from Week 1 and query explorations from Week 2, 
 
 ### Day 2: The edition (as|and) data
 
+**Note:** Need to swap at least part of Tuesday with Monday, because Mike Kestemont won't be available Tuesday; I'd like to get at least some of the publishing workflow stuff in front of them on Monday though, so we'll need to think about refactoring.
+
 Topics include embedding and extracting Linked Data in editions, modeling relationships between entities using RDF, and using XQuery to query, filter, and analyze the text as data (cf. Ramsay 2011<sup>1</sup>, Jockers 2013<sup>2</sup>). The querying, filtering, and analysis will establish a foundation for publishing an _API_ (application programming interface) on Day 4. Participants will gain experience thinking creatively about the graphical visualization of textual information and the results of analytical explorations. Mike Kestemont will contribute to the day’s activities by concentrating on the preparation of graphical views of statistical information for publication, and on their integration with text-oriented views of the same underlying data.
 
 ### Day 3: Book publishing
@@ -20,7 +22,7 @@ One of the cornerstones of innovative digital publication is what we have termed
 
 ### Day 5: Putting it all together: where and how to publish
 
-Digital editions must be made available to users, but many academic institutions are unfamiliar with hosting anything other that static Web pages, and many digital humanists lack meaningful experience with the stewardship, preservation, and maintenance issues that determine the accessibility and sustainability of the edition, and thus its scholarly impact. Topics to be covered include _Infrastructure as a service_ (IaaS, <https://en.wikipedia.org/wiki/Cloud_computing#Infrastructure_as_a_service_.28IaaS.29>), _Platform as a service_ (PaaS, <https://en.wikipedia.org/wiki/Platform_as_a_service>), _Software as a service_ (SaaS, <https://en.wikipedia.org/wiki/Software_as_a_service>), _containers_ (<https://en.wikipedia.org/wiki/Operating-system-level_virtualization>), and _cloud hosting_ (<http://www.interoute.com/what-cloud-hosting>). In this session, participants will learn how to make hosting decisions based on the needs of the edition.
+Digital editions must be made available to users, but many academic institutions are unfamiliar with hosting anything other than static Web pages, and many digital humanists lack meaningful experience with the stewardship, preservation, and maintenance issues that determine the accessibility and sustainability of the edition, and thus its scholarly impact. Topics to be covered include _Infrastructure as a service_ (IaaS, <https://en.wikipedia.org/wiki/Cloud_computing#Infrastructure_as_a_service_.28IaaS.29>), _Platform as a service_ (PaaS, <https://en.wikipedia.org/wiki/Platform_as_a_service>), _Software as a service_ (SaaS, <https://en.wikipedia.org/wiki/Software_as_a_service>), _containers_ (<https://en.wikipedia.org/wiki/Operating-system-level_virtualization>), and _cloud hosting_ (<http://www.interoute.com/what-cloud-hosting>). In this session, participants will learn how to make hosting decisions based on the needs of the edition.
 ____
 ## Notes
 
