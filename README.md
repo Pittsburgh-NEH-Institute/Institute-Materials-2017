@@ -1,3 +1,7 @@
+---
+permalink: /
+---
+
 # Make _your_ edition: models and methods for digital textual scholarship
 
 ## Rationale
