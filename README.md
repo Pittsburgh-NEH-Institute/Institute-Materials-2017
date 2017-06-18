@@ -11,21 +11,20 @@ Digital humanists already have access to workshops and tutorials to help them le
 ## Instructors
 
 <table>
-<tr><td><img src="images/tla.jpg" width="200px" alt="[Andrews picture]"/></td><td>Tara Andrews (Institute of History, University of Vienna)</td></tr>
-<tr><td><img src="images/djb.jpg" width="200px" alt="[Birnbaum picture]"/></td><td>David J. Birnbaum (Department of Slavic Languages and Literatures, University of Pittsburgh)
-</td></tr>
-<tr><td><img src="images/hc.png" width="200px" alt="[Cayless picture]"/></td><td>Hugh Cayless (Duke Collaboratory for Classics Computing [DC3], Duke University)</td></tr>
-<tr><td>[placeholder]</td><td>Ronald Haentjens Dekker (Huygens Institute, Royal Netherlands Academy of Arts and Sciences)</td></tr>
-<tr><td><img src="images/nrh.jpeg" alt="[Han picture]" width="200px"/></td><td>Na-Rae Han (Department of Linguistics, University of Pittsburgh)</td></tr>
-<tr><td><img src="images/mk.jpg" width="200px" alt="[Kestemont picture]"></td><td>Mike Kestemont (Department of Literature, University of Antwerp)</td></tr>
-<tr><td><img src="images/ljo.jpg" width="200px" alt="[Olsson picture]"/></td><td>Leif-Jöran Olsson (Department of Swedish Language, University of Gothenburg)</td></tr>
+<tr><td><img src="images/tla.jpg" width="200px" alt="[Andrews picture]"/></td><td>Tara Andrews<br/>Institute of History, University of Vienna</td></tr>
+<tr><td><img src="images/djb.jpg" width="200px" alt="[Birnbaum picture]"/></td><td>David J. Birnbaum<br/>Department of Slavic Languages and Literatures, University of Pittsburgh</td></tr>
+<tr><td><img src="images/hc.png" width="200px" alt="[Cayless picture]"/></td><td>Hugh Cayless<br/>Duke Collaboratory for Classics Computing (DC3), Duke University</td></tr>
+<tr><td>[placeholder]</td><td>Ronald Haentjens Dekker<br/>Huygens Institute, Royal Netherlands Academy of Arts and Sciences</td></tr>
+<tr><td><img src="images/nrh.jpeg" alt="[Han picture]" width="200px"/></td><td>Na-Rae Han<br/>Department of Linguistics, University of Pittsburgh</td></tr>
+<tr><td><img src="images/mk.jpg" width="200px" alt="[Kestemont picture]"></td><td>Mike Kestemont<br/>Department of Literature, University of Antwerp</td></tr>
+<tr><td><img src="images/ljo.jpg" width="200px" alt="[Olsson picture]"/></td><td>Leif-Jöran Olsson<br/>Department of Swedish Language, University of Gothenburg</td></tr>
 </table>
 
 The instructors will be assisted by:
 
 <table>
-<tr><td><img src="images/gak.jpg" width="200px" alt="[Keane picture]"/></td><td>Gabrielle (Gabi) Keane (Senior Undergraduate Institute Assistant, University of Pittsburgh)</td></tr>
-<tr><td><img src="images/ks.jpg" width="200px" alt="[Sanders image]"/></td><td>Kaylen Sanders (Junior Undergraduate Institute Assistant, University of Pittsburgh)</td></tr>
+<tr><td><img src="images/gak.jpg" width="200px" alt="[Keane picture]"/></td><td>Gabrielle (Gabi) Keane<br/>Senior Undergraduate Institute Assistant, University of Pittsburgh</td></tr>
+<tr><td><img src="images/ks.jpg" width="200px" alt="[Sanders image]"/></td><td>Kaylen Sanders<br/>Undergraduate Institute Assistant, University of Pittsburgh</td></tr>
 </table>
  
 ## Additional information
