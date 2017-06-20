@@ -12,7 +12,7 @@ Exercises are to modify code that's already there
 Three mornings (jet lag!)
 
 Day 1: Bag of words, text processing, text as tables, query the tables
-Day 2: Unsupervised learning, cluster analysis, PCA, , paleographic analysis)
+Day 2: Unsupervised learning, cluster analysis, PCA, paleographic analysis
 Day 3: Supervised learning, classification problems (authenticity critique)
 
 Provide intuition of how it works, e.g., in cluster analysis, how to calculate distance. 
