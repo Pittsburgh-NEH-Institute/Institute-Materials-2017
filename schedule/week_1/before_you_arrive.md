@@ -20,4 +20,4 @@ Before you arrive at the Institute, you will want to have installed the followin
 ## Windows users
 
 * **Text editor**: You don’t want to write code in a word processor! Unless you are already adept in another text editor, we recommend [Notepad++](https://notepad-plus-plus.org/). Some users prefer [Atom](http://blog.atom.io/2017/01/18/atom-on-windows.html). Popular commercial editors include [EditPad Pro](https://www.editpadpro.com/), which enforces a license requirement, and [SublimeText](https://www.sublimetext.com/2), which has an honor-code license (unlimited free trial, but users are expected to register).
-* **(Optional) Ubuntu on Windows**: [bash shell](https://msdn.microsoft.com/en-us/commandline/wsl/faq)
+* **(Optional) Ubuntu on Windows**: [bash shell](https://msdn.microsoft.com/en-us/commandline/wsl/faq) Available for [Windows 10, Anniversary Update or later](https://www.howtogeek.com/248177/whats-new-in-windows-10s-anniversary-update/). 
