@@ -1,0 +1,18 @@
+Kestemont
+
+Arr Wed, 07-19
+Teach Thu, 07-20, Fri, 07-21
+Teach Mon, 07-24
+Dep Tue, 07-25
+
+Jupyter Notebook
+Prepared Notebooks with commented code already present
+Exercises are to modify code that's already there
+
+Three mornings (jet lag!)
+
+Day 1: Bag of words, text processing, text as tables, query the tables
+Day 2: Unsupervised learning, cluster analysis, PCA, , paleographic analysis)
+Day 3: Supervised learning, classification problems (authenticity critique)
+
+Provide intuition of how it works, e.g., in cluster analysis, how to calculate distance. 
