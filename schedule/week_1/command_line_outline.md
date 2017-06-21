@@ -145,7 +145,7 @@ ____
 * `/dev/null`: the black hole of the file system
 * Finding the filesystem location of a file from the MacOS finder or Windows explorer
 	* Mac: Drag the filename from a finder windows and drop it in a terminal window to paste the path to the file. Or just view it by selecting the file and `cmd+i` (get info)
-	* Windows: ???
+	* Windows: See Mac directions.
 	* Linux: ???
 
 ### Files can have more than one name and live in more than one place
