@@ -16,7 +16,37 @@ Because Alexandria runs inside a Docker container, it comes as an operating-syst
 
 ### Install Alexandria
 
-Alexandria is available at <https://github.com/HuygensING/alexandria-workshop-notebooks>. Clone the repo and follow the instructions at <https://hub.docker.com/r/huygensing/alexandria-workshop-notebooks/>. Notes:
+You have to do the following only once:
+
+1. Install the Alexandria server with `docker pull huygensing/alexandria-server`.
+2. Install the Alexandria notebooks with `docker pull huygensing/alexandria-workshop-notebooks`.
+
+### Run Alexandria
+
+1. Launch the server by running the following command, but **first make the changes listed below it**:
+
+	`docker run -v /Users/djb/tmp/tmp:/home/alexandria/.alexandria -p2015:2015 huygensing/alexandria-server`
+
+	Make the following changes before running the command:
+	
+	1. Replace the part that reads “/Users/djb/tmp/tmp” with a directory on your own system that you want to use to save data when the database isn’t running (the technical term is to **persist** the database).
+	2. If your local port 2015 is already in use (unlikely, and if it is, you’ll get an error when you try to launch the Alexandria server), change the *first* instance of “2015” to another number (don’t use a number below 1024). Don’t change the second instance of “2015”.
+
+	When you start the server, the terminal remains open and provides feedback about the operation, which you can ignore. When you want to quit, return to the terminal and type `Ctrl+c`, which will kill the server process (= shut down the server).
+
+2. In a different terminal window, launch the Alexandria notebooks by running the following command, but **first make the changes listed below it**:
+
+	`docker run -d -p8888:8888 -v /Users/djb/tmp/tmp:/data/work huygensing/alexandria-workshop-notebooks`
+
+	Make the following changes before running hte command: 
+	
+	1. Replace the part that reads “/Users/djb/tmp/tmp” with whatever you used as a replacement when you launched the server.
+	2. If your port 8888 is already in use (you’ll get an error if it is), change the *first* instance of “8888” to another number (don’t use a number below 1024). Don’t change the second instance of “8888”.
+	3. Navigate in your web browser to `http://localhost:8888` (or whatever port you are using for the notebooks).
+	4. You will be prompted to paste in the login token. **[???]**
+
+
+Notes:
 
 1. You may have installed Python 3 as either `python` or `python3`. The instructions specify the latter, but Anaconda defaults to the former. Use whichever one works.
 1. If you are already using port 8888, change the port number in the launch command to something else.
