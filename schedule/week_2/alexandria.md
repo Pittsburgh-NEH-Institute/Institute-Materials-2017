@@ -16,10 +16,10 @@ Because Alexandria runs inside a Docker container, it comes as an operating-syst
 
 ### Install Alexandria
 
-Alexandria is available at <https://github.com/HuygensING/alexandria-workshop-notebooks>. There are two ways to install it, which have the same last step (“to run the Docker image”):
+Alexandria is available at <https://github.com/HuygensING/alexandria-workshop-notebooks>. Clone the repo and follow the instructions at <https://hub.docker.com/r/huygensing/alexandria-workshop-notebooks/>. Notes:
 
-1. **Either:** Clone the repo, `cd` into it, and follow the instructions at <https://hub.docker.com/r/huygensing/alexandria-workshop-notebooks/>. If you are already using port 8888, change the port number in the launch command to something else.
-2. **Or:** Run `docker pull huygensing/alexandria-workshop-notebooks` and then launch Alexandria as described at the page above.
+1. You may have installed Python 3 as either `python` or `python3`. The instructions specify the latter, but Anaconda defaults to the former. Use whichever one works.
+1. If you are already using port 8888, change the port number in the launch command to something else.
 
 ## Test your installation
 
