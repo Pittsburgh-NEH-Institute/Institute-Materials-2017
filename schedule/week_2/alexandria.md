@@ -6,20 +6,20 @@ Alexandria is a graph database and text repository that implements the Text As G
 
 ## Installing Alexandria
 
-## Install Docker
+### Install Docker
 
 [Docker](https://hub.docker.com/) is a *container*:
 
-> A container image is a lightweight, stand-alone, executable package of a piece of software that includes everything needed to run it: code, runtime, system tools, system libraries, settings. Available for both Linux and Windows based apps, containerized software will always run the same, regardless of the environment. Containers isolate software from its surroundings, for example differences between development and staging environments and help reduce conflicts between teams running different software on the same infrastructure. <https://www.docker.com/what-container>
+> A container image is a lightweight, stand-alone, executable package of a piece of software that includes everything needed to run it: code, runtime, system tools, system libraries, settings. Available for both Linux and Windows based apps, containerized software will always run the same, regardless of the environment. Containers isolate software from its surroundings, for example differences between development and staging environments and help reduce conflicts between teams running different software on the same infrastructure. [<https://www.docker.com/what-container>]
 
-Because Alexandria runs inside a Docker container, it comes as an operating-system-independent package that bundles Alexandria itself with all of its dependencies. This makes it easy to users to install and easy for developers to maintain and distribute.
+Because Alexandria runs inside a Docker container, it comes as an operating-system-independent package that bundles Alexandria itself with all of its dependencies. This makes it easy for users to install, and for developers to maintain and distribute.
 
-## Install Alexandria
+### Install Alexandria
 
 Alexandria is available at <https://github.com/HuygensING/alexandria-workshop-notebooks>. There are two ways to install it, which have the same last step (“to run the Docker image”):
 
-1. Clone the repo, `cd` into it, and follow the instructions at <https://hub.docker.com/r/huygensing/alexandria-workshop-notebooks/>. If you are already using port 8888, change the port number to something else on the launch command.
-2. Run `docker pull huygensing/alexandria-workshop-notebooks` and then launch Alexandria as described at the page above.
+1. **Either:** Clone the repo, `cd` into it, and follow the instructions at <https://hub.docker.com/r/huygensing/alexandria-workshop-notebooks/>. If you are already using port 8888, change the port number in the launch command to something else.
+2. **Or:** Run `docker pull huygensing/alexandria-workshop-notebooks` and then launch Alexandria as described at the page above.
 
 ## Test your installation
 
