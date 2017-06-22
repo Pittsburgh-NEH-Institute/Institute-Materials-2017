@@ -16,7 +16,12 @@ ____
 
 ## Monday, 9:00–11:30: Getting to know your OS: file and directory system
 
-[Add stuff here]
+[Address with windows users: why we used git bash and not cmd, the basics of cmd and why they need to know them, CRLF issues (may be something we should wait on, it's weirdly specific), and drive letters.]
+### Operating system conventions
+
+* EOL: CR LF (Windows), LF (Unix); `dos2unix`
+* Path separator: `\` (Windows non-bash), `/` (Unix)
+* Drive letter: `C:/Users` (Windows non-bash), `/c/Users` (Windows git bash), `/mnt/c/Users` (Ubuntu for Windows bash), `/Users` (Unix: no drive letter)
 
 ## Monday, 11:00–12:30: Command line 1
 
@@ -40,28 +45,28 @@ ____
 
 ### First commands
 
-* `cd`: change directory
-* `clear`: clear the screen
+* `cd`: change directory.  also `cd ..` and `cd ~`
 * `pwd`: print working directory (current location in filesystem)
 * `whoami`: print login id
+* `clear`: clear the screen
 
 ### Explore your files
 
 * `ls`: list files
-* `less`: page through file (space to go forward, `b` to go back, `q` to quit)
-* `grep`: global regular expression print (find lines that match a pattern)
+* `cat`: view files <!-- I worry about using this, but I feel like it's better than less.  If it seems too multipurpose for a first example, then perhaps less is simpler-->
 
 ### Making things easier
 
 * Command and filename completion with the Tab key
 * History with the arrow keys
-* RTFM with `man` (user manual)
+* RTFM with `man` (user manual) and git --help <!-- git \-\-help is the closest thing git bash has to a manual, and it really won't help if you're using git bash for things other than git-->
 
 ### Working with files
 
 * `cp`: copy
 * `mv`: move and rename
 * `rm`: delete (careful!)
+* `rm -i`: delete after asking permission
 * `touch`: update the date stamp of a file (create the file if it doesn’t already exist)
 
 ### Working with directories
@@ -70,18 +75,14 @@ ____
 * `rmdir`: remove empty directory
 * `rm -rf:` remove directory and its contents recursively (careful!)
 
-###Wildcards (“globbing”; annoyingly different from regex)
+
+###Wildcards (“globbing”; annoyingly different from regex) 
+<!-- this should probably make no mention of regex? At least until they know what that is? -->
 
 * `*.xml ` (files ending in “.xml”)
 * `*.x?l` (files ending in “.x” followed by any letter followed by “l”, e.g., XML [xml], XSLT [xsl], XProc [xpl] files)
 * `*.x[ms]l` (files ending in “.x” followed by “m” or “s” followed by “l”, e.g., XML and XSLT files, but not XProc)
 
-### Enhanced history
-
-* `!!`: rerun the last command
-* `!command`: rerun the most recent command that begins with the word after the exclamation mark (that is, replace ”command” with the name of the command). 
-* `!25`: rerun command #25 (get number with `history`; fine-tune as above for beginning of command, or with `history | grep stuff` to find all history items that include the string “stuff”)
-* `!$`: plug in the last word token from the last command
 
 ### Getting around the file system
 
@@ -96,11 +97,20 @@ ____
 
 * `wc` (`-l` lines, `-w` words, `-c` characters)
 * `cat` (you might have meant `less`)
+* `less` (shows the file, but only one screen of it)
 * `sort` (`-r` reverse, `-u` unique, `-g` numeric)
 * `uniq` (only on sorted input)
 * `head` (`-10`, or any other number)
 * `tail` (`-10`, or any other number)
 * `echo` (e.g., `echo $HOME`, `echo a*`)
+
+### Enhanced history
+
+* `!!`: rerun the last command
+* `!command`: rerun the most recent command that begins with the word after the exclamation mark (that is, replace ”command” with the name of the command). 
+* `!25`: rerun command #25 (get number with `history`; fine-tune as above for beginning of command, or with `history | grep stuff` to find all history items that include the string “stuff”)
+* `!$`: plug in the last word token from the last command
+<!-- end command line 1 lesson here?-->
 
 ### Reading from and writing to files
 
@@ -147,6 +157,12 @@ ____
 	* Mac: Drag the filename from a finder windows and drop it in a terminal window to paste the path to the file. Or just view it by selecting the file and `cmd+i` (get info)
 	* Windows: See Mac directions.
 	* Linux: ???
+)
+### Operating system conventions
+
+* EOL: CR LF (Windows), LF (Unix); `dos2unix`
+* Path separator: `\` (Windows non-bash), `/` (Unix)
+* Drive letter: `C:/Users` (Windows non-bash), `/c/Users` (Windows git bash), `/mnt/c/Users` (Ubuntu for Windows bash), `/Users` (Unix: no drive letter)
 
 ### Files can have more than one name and live in more than one place
 
@@ -174,12 +190,6 @@ If there’s somewhere you go all the time, define an alias: `alias work='cd /Us
 * `file oldfile.txt`: information about file, including character set for text files (if it says “ASCII”, it’s also UTF-8)
 * `iconv -f CP1251 -t UTF-8 oldfile.txt > newfile.txt`: convert `oldfile.txt` from CP1251 to UTF-8 and save result as `newfile.txt`
 * `hexdump -C -n1000 filename`: show hex and character values for first 1000 characters of `filename`. Omit the `-n` switch to see the entire file.
-
-### Operating system conventions
-
-* EOL: CR LF (Windows), LF (Unix); `dos2unix`
-* Path separator: `\` (Windows non-bash), `/` (Unix)
-* Drive letter: `C:/Users` (Windows non-bash), `/c/Users` (Windows git bash), `/mnt/c/Users` (Ubuntu for Windows bash), `/Users` (Unix: no drive letter)
 
 ### Aliases
 
@@ -378,3 +388,12 @@ Do we want to cover this?
 
 ____
 **Credit:** Command line, programs, and files tutorials used in the NEH Institute are derived from materials made available by [Software Carpentry](http://software-carpentry.org) under a [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). 
+
+
+[Items mentioning regex we may want to save for later in the week
+
+###Wildcards (“globbing”; annoyingly different from regex)
+
+* `*.xml ` (files ending in “.xml”)
+* `*.x?l` (files ending in “.x” followed by any letter followed by “l”, e.g., XML [xml], XSLT [xsl], XProc [xpl] files)
+* `*.x[ms]l` (files ending in “.x” followed by “m” or “s” followed by “l”, e.g., XML and XSLT files, but not XProc)]
