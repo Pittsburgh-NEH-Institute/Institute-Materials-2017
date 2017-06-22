@@ -21,7 +21,7 @@ You have to do the following only once:
 1. Install the Alexandria server with `docker pull huygensing/alexandria-server`.
 2. Install the Alexandria notebooks with `docker pull huygensing/alexandria-workshop-notebooks`.
 
-### Run Alexandria
+## Run Alexandria
 
 1. Launch the server by running the following command, but **first make the changes listed below it**:
 
@@ -43,13 +43,7 @@ You have to do the following only once:
 	1. Replace the part that reads “/Users/djb/tmp/tmp” with whatever you used as a replacement when you launched the server.
 	2. If your port 8888 is already in use (you’ll get an error if it is), change the *first* instance of “8888” to another number (don’t use a number below 1024). Don’t change the second instance of “8888”.
 	3. Navigate in your web browser to `http://localhost:8888` (or whatever port you are using for the notebooks).
-	4. You will be prompted to paste in the login token. **[???]**
-
-
-Notes:
-
-1. You may have installed Python 3 as either `python` or `python3`. The instructions specify the latter, but Anaconda defaults to the former. Use whichever one works.
-1. If you are already using port 8888, change the port number in the launch command to something else.
+	4. You will be prompted to paste in the login token. **[Doesn’t work, and `jupyter notebook list` shows no notebooks running]**
 
 ## Test your installation
 
