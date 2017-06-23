@@ -19,24 +19,57 @@ ____
 [Address with windows users: why we used git bash and not cmd, the basics of cmd and why they need to know them, CRLF issues (may be something we should wait on, it's weirdly specific), and drive letters.]
 ### Operating system conventions
 
-* EOL: CR LF (Windows), LF (Unix); `dos2unix`
-* Path separator: `\` (Windows non-bash), `/` (Unix)
-* Drive letter: `C:/Users` (Windows non-bash), `/c/Users` (Windows git bash), `/mnt/c/Users` (Ubuntu for Windows bash), `/Users` (Unix: no drive letter)
+### File system hierarchy 
+<!--10 mins-->
+* What are files?
+* What are directories/repositories/folders?  Thinking about why we call them folders: a folder and a piece of paper are the same, and can do some of the same things.  A folder can also hold pieces of paper.
+* What are programs?  Programs are files that can do something, but are still files nonetheless.  Take a piece of paper out of your folder, fold it into an airplane, and throw it.  It's still a piece of paper you can read from and write on, but it can fly.
+* Organization of file hierarchy, moving around using File Explorer
 
-## Monday, 11:00–12:30: Command line 1
+### Hidden files and filename extensions
+<!--15 mins-->
+* Show Hidden Files for Windows: Control Panel-Appearance and Personalization-File Explorer Options-View-Select 'Display the full path in the title bar' AND 'Show hidden files, folders, and drives'.
+* Show filename extensions for Windows: Open File Explorer, click the View tab at the top, select 'File name extensions' under the Show/hide tab.
+* Why are some files hidden? If you change something, however small, in some of these files, you can break your computer.  Be careful!
+* Case Sensitivity: Linux is case sensitive, meaning files with the same name but different capitalization are different files (ie finalpaper.txt is different than FinalPaper.txt).  Mac OS and Windows are case preserving, but by default not case sensitive.  This preference can be changed when configuring the filesystem, but certain programs will not run in a case sensitive environment.  
+
+### Moving through a filesystem
+<!--30 mins-->
+* Navigate up and down, with emphasis on the paths in the title bar.  We should clarify that Git Bash will use forward slashes rather than backslashes, and explain later when we introduce cmd why that's the case.\
+* Drive letter: `C:\Users` (Windows non-bash), `/c/Users` (Windows git bash), `/Users` (Unix: no drive letter).
+* Open a command line and begin using `cd`.  Explain that `cd` is essentially the same as selecting or clicking a folder.  `cd` into your home directory.
+* Use `ls` to show all the files in your home directory.  Compare that to what you now see in your home directory (or C drive "folder").
+* Then use `cd Documents` to move into your documents folder.  This is a relative path, as you've navigated relative to where you've started.  Explain what an absolute path looks like, and try running one.
 
 ### Why and how do we use the shell?
-
+<!--10 mins-->
 * The shell is a program that runs other programs.
 * We use the shell to interact with the computer on the command line (CLI ~ GUI).
 * The Unix philosophy is that you can _pipe_ together small commands, each of which does one thing well, to do something complex. You can’t do this in a GUI.
-* bash = ‘Bourne again shell’ (the original shell is sh; others include csh, ksh, tcsh, zsh). We use and recommend bash.
+* bash = ‘Bourne again shell’ (the original shell is sh; others include csh, ksh, tcsh, zsh). We use and recommend bash (Git Bash).  There are many different shells, some of which you end up downloading with program packages like Python.
 * Learn the shell on a need-to-know basis. There are commands you’ll use every day, some you’ll use for special purposes (and you’ll look up how they work when you need them), and some that you’ll never need.
 
 ### Launching the shell
+<!--5 mins-->
+<!--Once you've fixed command-line_resources.md, add that here-->
+
+### `cmd.exe` vs. Git Bash or other shells
+<!--2 mins-->
+* In the past, you may have used 'cmd.exe', Windows Powershell, or Bash on Ubuntu on Windows.  Though each has its own benefits and drawbacks, for the purposes of this course we will use Git Bash.
+
+### `ls` switches
+<!--15 mins-->
+* `ls -a`
+* `ls -l`
+* `ls -g`
+* `ls -t`
+* `ls -h`
+* `ls -ld`
+
+## Monday, 11:00–12:30: Command line 1
 
 ### Getting oriented
-
+<!--5 mins-->
 * When you see `$` (shell prompt): the shell is waiting for you to provide input
 * When you type `$`: you’re beginning to type a variable name (see below)
 * When you see `>` (shell continuation prompt): you’ve started entering multiple-line input, and the shell is waiting for the next line
@@ -44,24 +77,28 @@ ____
 * If you type a command and find yourself on a blank line with nothing happening: you typed an incomplete command, and should abort it with `ctrl+c`
 
 ### First commands
-
-* `cd`: change directory.  also `cd ..` and `cd ~`
+<!--15 mins-->
+* `cd`: change directory.  also `cd ..`, `cd ~`, <!--ADD SWITCHES and ARGUMENTS-->
 * `pwd`: print working directory (current location in filesystem)
 * `whoami`: print login id
 * `clear`: clear the screen
+* explain absolute vs. relative paths
 
 ### Explore your files
-
-* `ls`: list files
-* `cat`: view files <!-- I worry about using this, but I feel like it's better than less.  If it seems too multipurpose for a first example, then perhaps less is simpler-->
-* `grep`: searching the text of a file, but for first pass perhaps omit standard input
+<!--20 mins-->
+* `ls`: list files.  
+* Use `cd` to navigate to the Documents folder.
+* `echo`: echoes a string to standard out.  Using `echo`, create a file and redirect standard out to a file.
+* `cat`: view and create files.  Use cd, ls, and switches to navigate into Documents folder and create a file using `cat`.
+* `less`: see only one page of file 
+* `grep`: searching the text of a file, just with absolute file names.
 
 ### Making things easier
 
 * Command and filename completion with the Tab key
 * History with the arrow keys
 * RTFM with `man` (user manual) and git --help <!-- git \-\-help is the closest thing git bash has to a manual, and it really won't help if you're using git bash for things other than git-->
-
+* To turn off case sensitive tab completion, create a file called .inputrc in your home directory.  In the file, write echo 'set completion-ignore-case On' and save.  The next time you open your bash shell, you should be able to use tab completion without 
 ### Working with files
 
 * `cp`: copy
@@ -77,7 +114,7 @@ ____
 * `rm -rf:` remove directory and its contents recursively (careful!)
 
 
-###Wildcards (“globbing”; annoyingly different from regex) 
+### Wildcards (“globbing”; annoyingly different from regex) 
 <!-- this should probably make no mention of regex? At least until they know what that is? -->
 
 * `*.xml ` (files ending in “.xml”)
