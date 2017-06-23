@@ -83,4 +83,10 @@ Command | Description
 * Branch
 * Working directory
 * Fork (GitHub term)
+* Pull request (github term)
+
+
+Fork is remote repository on GitHub.
+Branch is a thing in a repository
+Git pull command is not exactly the same as a pull request on GitHub.
 
