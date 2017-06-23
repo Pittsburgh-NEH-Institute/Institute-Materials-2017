@@ -54,6 +54,7 @@ ____
 
 * `ls`: list files
 * `cat`: view files <!-- I worry about using this, but I feel like it's better than less.  If it seems too multipurpose for a first example, then perhaps less is simpler-->
+* `grep`: searching the text of a file, but for first pass perhaps omit standard input
 
 ### Making things easier
 
@@ -265,6 +266,35 @@ This is an exercise in running into problems and resolving them, not an exercise
 
 ## Tuesday, 11:00–12:30: Command line 2
 
+
+### Reading from and writing to files
+
+* stdin, stdout, stderr
+* `<`: input from file
+* `>`: output to file (overwrites existing files with the same name)
+* `>>`: append to file (creates file if it doesn’t already exist)
+* `2>`: error messages to file (`2> /dev/null`)
+
+### Sending data through pipelines
+
+* `|`
+* `history | tail`
+* `wc filename` ~ `wc < filename` ~ `cat filename | wc`
+* Why are there two backslashes in `history | grep \\.xml`?
+
+### Shell variables
+
+* `$HOME`
+* `$PATH`
+
+### Quotes and the shell
+
+* Quotes can get you out of a white-space pickle (`cat 'stupid filename with spaces'`)
+* Or you can “escape” the space by preceding it with a backslash (`cat stupid\ filename\ with\ spaces`)
+* Quotes or backslash also neutralizes other special characters (`cat 'download.txt(1)'` or `cat download.txt\(1\)`)
+* Single quotes are literal (`echo '$HOME'`)
+* Double quotes expand variables (`echo "$HOME"`)
+
 ### Useful command switches for `ls`
 
 * `-a`: include hidden files
@@ -275,46 +305,6 @@ This is an exercise in running into problems and resolving them, not an exercise
 * `-1`: single-column
 * `ls -d */`: list only directories
 
-### Advanced `grep`
-
-#### Useful command switches for `grep`
-
-* `-E`: extended regex (supports `{` metacharacter, wrap double quotes around regex)
-* `-w`: whole words (put phrases in single or double quotation marks)
-* `-i`: case insensitive
-* `-l`: filenames but not text
-* `-v` lines that don’t match
-* `-n`: line numbers
-* `-c`: count of matching lines
-* `-s`: silent mode (suppresses error messages)
-
-#### `grep` and regex
-
-`grep` searches for a _regex pattern_, and not just a string. so:
-
-* `grep ^To: *`: the line begins with the string “To” (a caret at the beginning of a regex means ‘match only at the beginning of a line’)
-* `grep ^.o *`: the second letter of the line is an “o” (a dot in regex matches any single character except a newline)
-* `grep ing$ *`: the line ends in “ing” (a dollar sign at the end of a regex means ‘match only at the end of a line’)
-
-#### `grep` complications
-
-* Variables (begin with a dollar sign) and regex metacharacters (e.g., asterisk) are resolved in double quotation marks and treated as literal strings in single quotation marks
-* Spaces: precede with a backslash or put the entire regex in quotation marks
-* Variables: put the entire regex in double quotation marks 
-* Quotes: single quotes are okay inside double quotes and vice versa
-* Hyphens: `grep -l stuff` looks like an incomplete attempt to search for the string “stuff” and return only the filenames—incomplete because you haven’t specified where to look. If you want to search a file called `stuff` for the string `-l`, use `--` to tell `grep` that nothing that follows is a switch: `grep -- -l stuff`. Otherwise anything that begins with a hypen will look like a switch.
-
-### Editing the command line
-
-* Up-arrow recalls the last command (or keep going, or go forward after you go back)
-* `ctrl+r` and start typing seaches for substring matches in the history; keep typing `ctrl+r` to cycle through the matches
-* `left-arrow` and `right-arrow` move the cursor through the line
-* `ctrl+a` go to the beginning of the line
-* `ctrl+e` go to the end of the line
-* `ctrl+u` erase everything from the cursor until the beginning of the line
-* `ctrl+c` abort whatever you’re doing and return to a new command line
-* `Opt+click` anywhere in the line to move the cursor (MacOS only)
-* Careful: `ctrl+d` exit the shell and close the terminal window
 
 ## Tuesday, 2:00–3:30: Programs and files 2
 
@@ -386,6 +376,46 @@ Do we want to cover this?
 
 ## Wednesday, 11:00–12:30: Command line 3
 
+### Advanced `grep`
+
+#### Useful command switches for `grep`
+
+* `-E`: extended regex (supports `{` metacharacter, wrap double quotes around regex)
+* `-w`: whole words (put phrases in single or double quotation marks)
+* `-i`: case insensitive
+* `-l`: filenames but not text
+* `-v` lines that don’t match
+* `-n`: line numbers
+* `-c`: count of matching lines
+* `-s`: silent mode (suppresses error messages)
+
+#### `grep` and regex
+
+`grep` searches for a _regex pattern_, and not just a string. so:
+
+* `grep ^To: *`: the line begins with the string “To” (a caret at the beginning of a regex means ‘match only at the beginning of a line’)
+* `grep ^.o *`: the second letter of the line is an “o” (a dot in regex matches any single character except a newline)
+* `grep ing$ *`: the line ends in “ing” (a dollar sign at the end of a regex means ‘match only at the end of a line’)
+
+#### `grep` complications
+
+* Variables (begin with a dollar sign) and regex metacharacters (e.g., asterisk) are resolved in double quotation marks and treated as literal strings in single quotation marks
+* Spaces: precede with a backslash or put the entire regex in quotation marks
+* Variables: put the entire regex in double quotation marks 
+* Quotes: single quotes are okay inside double quotes and vice versa
+* Hyphens: `grep -l stuff` looks like an incomplete attempt to search for the string “stuff” and return only the filenames—incomplete because you haven’t specified where to look. If you want to search a file called `stuff` for the string `-l`, use `--` to tell `grep` that nothing that follows is a switch: `grep -- -l stuff`. Otherwise anything that begins with a hypen will look like a switch.
+
+### Editing the command line
+
+* Up-arrow recalls the last command (or keep going, or go forward after you go back)
+* `ctrl+r` and start typing seaches for substring matches in the history; keep typing `ctrl+r` to cycle through the matches
+* `left-arrow` and `right-arrow` move the cursor through the line
+* `ctrl+a` go to the beginning of the line
+* `ctrl+e` go to the end of the line
+* `ctrl+u` erase everything from the cursor until the beginning of the line
+* `ctrl+c` abort whatever you’re doing and return to a new command line
+* `Opt+click` anywhere in the line to move the cursor (MacOS only)
+* Careful: `ctrl+d` exit the shell and close the terminal window
 ____
 **Credit:** Command line, programs, and files tutorials used in the NEH Institute are derived from materials made available by [Software Carpentry](http://software-carpentry.org) under a [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). 
 
