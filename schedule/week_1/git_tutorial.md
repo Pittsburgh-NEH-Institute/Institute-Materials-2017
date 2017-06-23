@@ -90,3 +90,19 @@ Fork is remote repository on GitHub.
 Branch is a thing in a repository
 Git pull command is not exactly the same as a pull request on GitHub.
 
+Synching
+Git remote show origin
+
+git add remote... upstream
+
+Set the origin to the original repository (on github; so clone the original repository)
+
+TO change existing origin:
+git remote add origin
+Error: already exist
+correct command: git remote set-url origin
+git branch --set-upstream-to=origin/master master
+
+git remote add myfork https://github.com/etc
+git push myfork master etc
+
