@@ -16,7 +16,7 @@ ____
 
 ## Monday, 9:00–11:30: Getting to know your OS: file and directory system
 
-[Address with windows users: why we used git bash and not cmd, the basics of cmd and why they need to know them, CRLF issues (may be something we should wait on, it's weirdly specific), and drive letters.]
+
 ### Operating system conventions
 
 ### File system hierarchy 
@@ -39,11 +39,11 @@ ____
 * Drive letter: `C:\Users` (Windows non-bash), `/c/Users` (Windows git bash), `/Users` (Unix: no drive letter).
 * Open a command line and begin using `cd`.  Explain that `cd` is essentially the same as selecting or clicking a folder.  `cd` into your home directory.
 * Use `ls` to show all the files in your home directory.  Compare that to what you now see in your home directory (or C drive "folder").
-* Then use `cd Documents` to move into your documents folder.  This is a relative path, as you've navigated relative to where you've started.  Explain what an absolute path looks like, and try running one.
+* Then use `cd Documents` to move into your documents folder.  This is a relative path, as you've navigated relative to where you've started.  Explain what an absolute path looks like, and try running one.  Then run a few relative paths.
 
 ### Why and how do we use the shell?
 <!--10 mins-->
-* The shell is a program that runs other programs.
+* The shell is a program that runs other programs.  Emphasize that the shell is still a program, which takes input and gives output.  The input is a command, though, so it seems as though we're doing something different.  In reality, using command line is no different than using any other program.
 * We use the shell to interact with the computer on the command line (CLI ~ GUI).
 * The Unix philosophy is that you can _pipe_ together small commands, each of which does one thing well, to do something complex. You can’t do this in a GUI.
 * bash = ‘Bourne again shell’ (the original shell is sh; others include csh, ksh, tcsh, zsh). We use and recommend bash (Git Bash).  There are many different shells, some of which you end up downloading with program packages like Python.
@@ -51,20 +51,22 @@ ____
 
 ### Launching the shell
 <!--5 mins-->
-<!--Once you've fixed command-line_resources.md, add that here-->
+* For Mac OS X: the **Terminal.app** that you will find in the Applications → Utilities folder. (Many Mac users prefer the third-party <https://www.iterm2.com/>.)
+* For Windows: Although **cmd.exe** is the traditional Windows shell, and you may even have used it previously, we recommend **bash**.  When you download Git, you'll also download **Git Bash**, the command line interface we recommend for this institute.
+* For Ubuntu Desktop (Unity): you can type Ctrl-Alt-T or you can type **Terminal** (without the quotation marks) into the Search box.
+
 
 ### `cmd.exe` vs. Git Bash or other shells
-<!--2 mins-->
+<!--5 mins--> 
 * In the past, you may have used 'cmd.exe', Windows Powershell, or Bash on Ubuntu on Windows.  Though each has its own benefits and drawbacks, for the purposes of this course we will use Git Bash.
 
 ### `ls` switches
-<!--15 mins-->
-* `ls -a`
-* `ls -l`
-* `ls -g`
-* `ls -t`
-* `ls -h`
-* `ls -ld`
+<!--10 mins-->
+* `ls -a`: do not hide filenames starting with .
+* `ls -l`: show enhanced file information, including date and time stamps and owner
+* `ls -g`: same as `-l`, but omits author.
+* `ls -t`: list in timestamp order
+* `ls --color`: if you're using Git Bash, your list will already be colorized, but for other shells this command colorizes output so filetypes and directories are different.
 
 ## Monday, 11:00–12:30: Command line 1
 
@@ -115,9 +117,8 @@ ____
 * `rm`: delete (careful!)
 * `rm -i`: delete after asking permission.  These two have been addressed already, but the `-i` switch makes deleting interative.  Before any file is deleted, the prompt asks you if you're sure, to which you can respond 'y' or 'n'.  Though this seems like it may be a pain, it's particularly useful combined with the recursive `-rf` switch, as it will go through a directory and ask about each file.
 
-
 ### Getting around the file system
-<!--3 mins-->
+<!--5 mins-->
 * `cd -`: go back to the directory you came from
 * `cd` or `cd ~`: go to your home directory
 * `ctrl+r`: initiate history search
@@ -137,7 +138,7 @@ ____
 * `echo` (e.g., `echo $HOME`, `echo a*`)
 
 ### Enhanced history
-<!--8 mins, this will be a good way to review/reflect/field qs-->
+<!--10 mins, this will be a good way to review/reflect/field qs-->
 * `!!`: rerun the last command
 * `!command`: rerun the most recent command that begins with the word after the exclamation mark (that is, replace ”command” with the name of the command). 
 * `!25`: rerun command #25 (get number with `history`; fine-tune as above for beginning of command, or with `history | grep stuff` to find all history items that include the string “stuff”)
@@ -146,13 +147,8 @@ ____
 
 ## Monday, 2:00–3:30: Programs and files 1
 
-### Hidden files
-
-* `ls -a`
-* alias and **.bash_profile**
-
 ### The hierarchical file system
-
+<!--5 mins (review)-->
 * `/`
 * Directories are files, too
 * `file`: filetype
@@ -163,40 +159,40 @@ ____
 	* Linux: ???
 )
 ### Operating system conventions
-
+<!--5 mins (review)-->
 * EOL: CR LF (Windows), LF (Unix); `dos2unix`
 * Path separator: `\` (Windows non-bash), `/` (Unix)
-* Drive letter: `C:/Users` (Windows non-bash), `/c/Users` (Windows git bash), `/mnt/c/Users` (Ubuntu for Windows bash), `/Users` (Unix: no drive letter)
+* Drive letter: `C:/Users` (Windows non-bash), `/c/Users` (Windows git bash), `/Users` (Unix: no drive letter)
 
 ### Files can have more than one name and live in more than one place
-
-* `ln plain_file_name link_name` (filenames and inodes)
+<!--10 mins-->
+* `ln plain_file_name link_name` (filenames and inodes).  Inodes introduce a little bit more complexity into our original idea of "what are files?"  The reason we can change filenames is that inodes store the location and attribute information, so a file can exist in multiple places with different names, so long as it links back to that inode number.  To view the inode numbers for your files, use `ls -i`.
 * `ln -s directory_name link_name`
+* Difference between hard links and sys links
 
 ### File ownership and permissions
-
+<!--5 mins-->
 * `ls -l`
 * user, group, other
 * `chown` (you probably can’t change ownership on shared systems and don’t need to do it on your own machine)
 * `chmod` (“644”, “664” for files; “755”, “775” for directories)
 
 ### Getting around the directory stack
-
+<1--15 mins, to explain what this is and why and how it's used-->
 * `pushd`
 * `popd`
-* `dirs -v` (verbose); `dirs -c` (clear)
+* `dirs -v` (verbose); `dirs -c` (clear
 
-If there’s somewhere you go all the time, define an alias: `alias work='cd /Users/moe/work'`
 
 ### Character sets
-
+<!--10 mins-->
 * Unicode, UTF-8, “legacy” character sets
 * `file oldfile.txt`: information about file, including character set for text files (if it says “ASCII”, it’s also UTF-8)
 * `iconv -f CP1251 -t UTF-8 oldfile.txt > newfile.txt`: convert `oldfile.txt` from CP1251 to UTF-8 and save result as `newfile.txt`
-* `hexdump -C -n1000 filename`: show hex and character values for first 1000 characters of `filename`. Omit the `-n` switch to see the entire file.
+* `hexdump -C -n1000 filename` or `xxd filename`: show hex and character values for first 1000 characters of `filename`. Omit the `-n` switch to see the entire file.
 
 ### Aliases
-
+<!--30 mins-->
 #### Why use aliases?
 
 * Shortcuts. `alias saxon='java -Xmx4g  -DentityExpansionLimit=500000 -jar /opt/saxon/saxon9he.jar'`: launch saxon by just typing its name
@@ -231,13 +227,14 @@ If there’s somewhere you go all the time, define an alias: `alias work='cd /Us
 ## Monday, 4:00–5:30: Review
 
 ### Close reading of error messages
-
+<!--5 mins-->
 * Making things go wrong on purpose
 * Errors without a message
 * Google is your friend! 
+* Complex answers on Stack Overflow can be adapted for smaller problems, but it takes some patience and troubleshooting.
 
 ### Documentation and man pages
-
+<!-- only 5 mins, as Windows users don't have a man page-->
 * Regular expression documentation: <https://www.gnu.org/software/findutils/manual/html\_node/find\_html/egrep-regular-expression-syntax.html>
 
 ### An exercise in reading a man page
@@ -246,14 +243,13 @@ If there’s somewhere you go all the time, define an alias: `alias work='cd /Us
 * Transferring the knowledge you've gained elsewhere 
 
 ### Review
-
+<!--20 mins-->
 * The command line, file paths, an assortment of useful commands
 * A very brief primer on the Internet
-* Regular expressions and complex search
 * How these things crop up in developer idiom
 
 ### Project: install Mallet <http://mallet.cs.umass.edu/index.php>
-
+<!--40 mins, with troubleshooting and some explanation of topic modeling-->
 Mallet is used for **topic modeling**, which you can learn about at <http://programminghistorian.org/lessons/topic-modeling-and-mallet>. For now, it’s an installation exercise, and not a lesson in topic modeling.
 
 1. download package and open it
@@ -266,20 +262,17 @@ Mallet is used for **topic modeling**, which you can learn about at <http://prog
 * if output is `Labels = sample-data/web/` (optionally with language suffixes like “de” or “en”, you’re done!
 
 This is an exercise in running into problems and resolving them, not an exercise in showing how skilled you are!
-
+<!--Stil missing twenty mins-->
 ## Tuesday, 11:00–12:30: Command line 2
 
 ### Wildcards (“globbing”; annoyingly different from regex) 
-<!-- this should probably make no mention of regex? At least until they know what that is? -->
-
-* `*.xml ` (files ending in “.xml”)
+<!--10 mins-->
+* `*.xml ` (files ending in “.xml”).  Ask the participants of times they think it might be useful to use globbing.  Now that they have some experience with regex, the idea of wildcards isn't foreign.  With which commands will you likely use wildcards?
 * `*.x?l` (files ending in “.x” followed by any letter followed by “l”, e.g., XML [xml], XSLT [xsl], XProc [xpl] files)
 * `*.x[ms]l` (files ending in “.x” followed by “m” or “s” followed by “l”, e.g., XML and XSLT files, but not XProc)
 
-
-
 ### Reading from and writing to files
-
+<!--10 mins, as half of this is just review-->
 * stdin, stdout, stderr
 * `<`: input from file
 * `>`: output to file (overwrites existing files with the same name)
@@ -287,19 +280,19 @@ This is an exercise in running into problems and resolving them, not an exercise
 * `2>`: error messages to file (`2> /dev/null`)
 
 ### Sending data through pipelines
-
+<!--30 mins, with pipelining activity-->
 * `|`
 * `history | tail`
 * `wc filename` ~ `wc < filename` ~ `cat filename | wc`
 * Why are there two backslashes in `history | grep \\.xml`?
 
 ### Shell variables
-
+<!--15 mins, explaining how these work, when and when not to use them-->
 * `$HOME`
 * `$PATH`
 
 ### Quotes and the shell
-
+<!--5 mins-->
 * Quotes can get you out of a white-space pickle (`cat 'stupid filename with spaces'`)
 * Or you can “escape” the space by preceding it with a backslash (`cat stupid\ filename\ with\ spaces`)
 * Quotes or backslash also neutralizes other special characters (`cat 'download.txt(1)'` or `cat download.txt\(1\)`)
@@ -307,7 +300,7 @@ This is an exercise in running into problems and resolving them, not an exercise
 * Double quotes expand variables (`echo "$HOME"`)
 
 ### Useful command switches for `ls`
-
+<!--review, should we scrap?-->
 * `-a`: include hidden files
 * `-f`: decorate filenames according to filetype
 * `-l`: long listing
@@ -316,7 +309,7 @@ This is an exercise in running into problems and resolving them, not an exercise
 * `-1`: single-column
 * `ls -d */`: list only directories
 
-
+<!--still missing almost 30 mins-->
 ## Tuesday, 2:00–3:30: Programs and files 2
 
 ### File formats
