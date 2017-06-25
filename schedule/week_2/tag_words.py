@@ -6,27 +6,8 @@ from xml.dom import pulldom
 import nltk
 
 
-# https://github.com/rhdekker/python_xml_pull_parser_example/blob/master/pull_parser_test.py
-class Stack(list):
-    def push(self, item):
-        self.append(item)
-
-    def peek(self):
-        return self[-1]
-
-
-class Word:
-    @staticmethod
-    def create(d: Document, text: str, pos: str):
-        word = d.createElement("word")
-        word.setAttribute("pos", pos)
-        word.setAttribute("lemma", lemmatize(text, pos))
-        t = d.createTextNode(text)
-        word.appendChild(t)
-        return word
-
-
-def create_word_element(d: Document, text:str, pos:str) -> Element:
+def create_word_element(d: Document, text: str, pos: str) -> Element:
+    """Create <word> element with POS and lemma attributes"""
     word = d.createElement("word")
     word.setAttribute("pos", pos)
     word.setAttribute("lemma", lemmatize(text, pos))
@@ -43,6 +24,7 @@ def get_wordnet_pos(treebank_tag: str) -> str:
 
 
 def lemmatize(text: str, pos: str) -> str:
+    """"""
     return nltk.stem.WordNetLemmatizer().lemmatize(text.lower(), get_wordnet_pos(pos))
 
 
@@ -50,25 +32,22 @@ def extract(input_xml) -> Document:
     """Process entire input XML document, firing on events"""
     # Initialize output as XML tree, stack of open elements
     d = Document()
-    open_elements = Stack()
-    open_elements.push(d)
+    current = d
     # Start pulling; it continues automatically
     doc = pulldom.parse(input_xml)
     for event, node in doc:
         if event == pulldom.START_ELEMENT:
-            open_elements.peek().appendChild(node)
-            open_elements.push(node)
+            current.appendChild(node)
+            current = node
         elif event == pulldom.END_ELEMENT:
-            open_elements.pop()
+            current = node.parentNode
         elif event == pulldom.CHARACTERS:
             # tokenize, pos-tag, create <word> as child of parent
             words = nltk.word_tokenize(node.toxml())
             tagged_words = nltk.pos_tag(words)
             for (text, pos) in tagged_words:
                 word = create_word_element(d, text, pos)
-                open_elements.peek().appendChild(word)
-        else:
-            continue
+                current.appendChild(word)
     return d
 
 
