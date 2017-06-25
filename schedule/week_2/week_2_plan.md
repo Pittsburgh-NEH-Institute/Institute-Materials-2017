@@ -28,7 +28,7 @@ ____
 
 ### Synopsis
 
-Week 2, Day 1 concentrates on modeling textual documents, with attention to alternative models and syntactic expressions. Outcome goals:
+Week 2, Day 1 concentrates on modeling textual documents, with attention to alternative models and syntactic expressions. **Outcome goals:**
 
 * Where data modeling belongs in the work flow
 * Markup as an expression of a data model
@@ -42,7 +42,7 @@ Week 2, Day 1 concentrates on modeling textual documents, with attention to alte
 * XML, LMNL (model, sawtooth syntax), GODDAG, TexMECS, TAG. How they're similar and different, and how they only *appear* to be similar and different
 * XML is the only system that is production ready today
 
-**Outcome goal:** How are *model*, *syntax*, and *markup semantics* similar and different? 
+**Outcome goals:** How are *model*, *syntax*, and *markup semantics* similar and different? 
 
 ### 11:00–12:30: Transcription with markup: XML
 
@@ -50,16 +50,17 @@ Week 2, Day 1 concentrates on modeling textual documents, with attention to alte
 * **Hands on:** Tag [“Ozymandias”](<ozymandias.txt>) in XML (e.g., lines, phrases, sentences, speakers, words, feet, syllables)
 * What’s hard in XML: overlap, discontinuity, containment vs dominance, white space tokenization, artificial hierarchy, scope of reference
 
-**Outcome goal:** How are documents like trees and how are they different? What is represented by the model (the XML tree), and what requires markup semantics (schema)?
+**Outcome goals:** How are documents like trees and how are they different? What is represented by the model (the XML tree), and what requires markup semantics (schema)?
 
 ### 2:00–3:30: XML as a tree
 
 * XPath as a way of navigating the tree
 * XPath path expressions: axes and node type selectors
 * **Hands on:** XPath navigation of [*Hamlet*](hamlet.xml) in \<oXygen/\> (**[add scavenger hunt tasks]**)
+* **Hands on:** XPath navigation of something with Trojan milestones (XPath `<<` operator)
 * What’s so bad about markup semantics, the application layer, and workarounds?
 
-**Outcome goal:** XML looks like a string (and it’s defined that way in the spec), but it’s really a tree.
+**Outcome goals:** XML looks like a string (and it’s defined that way in the spec), but it’s really a tree. This requires workarounds not only in the markup, but also in the query.
 
 ### 4:00-5:30: Transcription with markup: LMNL
 
@@ -68,7 +69,7 @@ Week 2, Day 1 concentrates on modeling textual documents, with attention to alte
 * What is Alexandria?
 * Visualization of LMNL in Alexandria (and other visualizations)
 
-**Outcome goal:** How do XML (tree) and LMNL (range) model “what text really is”? Why does it matter as long as the workarounds work?
+**Outcome goals:** How do XML (tree) and LMNL (range) model “what text really is”? Why does it matter as long as the workarounds work?
 
 ## Week 2, Day 2: Tuesday, July 18
 
