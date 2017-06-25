@@ -91,3 +91,10 @@ ENV/
 # Custom
 Tasks.md
 .DS_Store
+
+# PyCharm user information
+# User-specific stuff:
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
