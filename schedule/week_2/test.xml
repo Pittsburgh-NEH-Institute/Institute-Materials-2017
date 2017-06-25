@@ -1,5 +1,5 @@
 <root>
-    <p speaker="hamlet">Hamlet is a thane of Denmark.</p>
+    <p speaker="hamlet">Hamlet is a prince of Denmark.</p>
     <p speaker='ophelia'>Things end badly for Ophelia.</p>
     <p speaker="nobody">Julius Caesar does not appear in this play.</p>
 </root>

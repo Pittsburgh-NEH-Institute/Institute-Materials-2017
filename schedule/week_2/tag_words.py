@@ -7,7 +7,7 @@ import nltk
 
 
 def create_word_element(d: Document, text: str, pos: str) -> Element:
-    """Create <word> element with POS and lemma attributes"""
+    """Create <word> element with POS and lemma attributes."""
     word = d.createElement("word")
     word.setAttribute("pos", pos)
     word.setAttribute("lemma", lemmatize(text, pos))
@@ -17,20 +17,20 @@ def create_word_element(d: Document, text: str, pos: str) -> Element:
 
 
 def get_wordnet_pos(treebank_tag: str) -> str:
-    """Replace treebank POS tags with wordnet ones; default is noun"""
+    """Replace treebank POS tags with wordnet ones; default POS is noun."""
     pos_tags = {'J': nltk.corpus.reader.wordnet.ADJ, 'V': nltk.corpus.reader.wordnet.VERB,
                 'R': nltk.corpus.reader.wordnet.ADV}
     return pos_tags.get(treebank_tag[0], nltk.corpus.reader.wordnet.NOUN)
 
 
 def lemmatize(text: str, pos: str) -> str:
-    """"""
+    """Identify lemma for current word."""
     return nltk.stem.WordNetLemmatizer().lemmatize(text.lower(), get_wordnet_pos(pos))
 
 
 def extract(input_xml) -> Document:
-    """Process entire input XML document, firing on events"""
-    # Initialize output as XML tree, stack of open elements
+    """Process entire input XML document, firing on events."""
+    # Initialize output as XML document, point to most recent open node
     d = Document()
     current = d
     # Start pulling; it continues automatically
