@@ -4,6 +4,7 @@
 from xml.dom.minidom import Document
 from xml.dom import pulldom
 import nltk
+from typing import BinaryIO
 
 
 # https://github.com/rhdekker/python_xml_pull_parser_example/blob/master/pull_parser_test.py
@@ -15,26 +16,35 @@ class Stack(list):
         return self[-1]
 
 
+class Word:
+    @staticmethod
+    def create(d: Document, text: str, pos: str):
+        word = d.createElement("word")
+        word.setAttribute("pos", pos)
+        word.setAttribute("lemma", lemmatize(text, pos))
+        t = d.createTextNode(text)
+        word.appendChild(t)
+        return word
+
+
 # https://stackoverflow.com/questions/15586721/wordnet-lemmatization-and-pos-tagging-in-python
 def get_wordnet_pos(treebank_tag: str) -> str:
-    """Replace treebank POS tags with wordnet ones."""
+    """Replace treebank POS tags with wordnet ones; default is noun"""
     if treebank_tag.startswith('J'):
         return nltk.corpus.reader.wordnet.ADJ
     elif treebank_tag.startswith('V'):
         return nltk.corpus.reader.wordnet.VERB
-    elif treebank_tag.startswith('N'):
-        return nltk.corpus.reader.wordnet.NOUN
     elif treebank_tag.startswith('R'):
         return nltk.corpus.reader.wordnet.ADV
     else:
-        return 'n'
+        return nltk.corpus.reader.wordnet.NOUN
 
 
 def lemmatize(text: str, pos: str) -> str:
     return nltk.stem.WordNetLemmatizer().lemmatize(text.lower(), get_wordnet_pos(pos))
 
 
-def extract(input_xml):
+def extract(input_xml: BinaryIO) -> Document:
     """Process entire input XML document, firing on events"""
     # Initialize output as XML tree, stack of open elements
     d = Document()
@@ -49,16 +59,9 @@ def extract(input_xml):
         elif event == pulldom.END_ELEMENT:
             open_elements.pop()
         elif event == pulldom.CHARACTERS:
-            value = node.toxml()
-            words = nltk.word_tokenize(value)
-            pos_tagged = nltk.pos_tag(words)
-            for (text, pos) in pos_tagged:
-                word = d.createElement("word")
-                word.setAttribute("pos", pos)
-                word.setAttribute("lemma", lemmatize(text, pos))
-                t = d.createTextNode(text)
-                word.appendChild(t)
-                open_elements.peek().appendChild(word)
+            # tokenize, pos-tag, create <word> as child of parent
+            for (text, pos) in nltk.pos_tag(nltk.word_tokenize(node.toxml())):
+                open_elements.peek().appendChild(Word().create(d, text, pos))
         else:
             continue
     return d
