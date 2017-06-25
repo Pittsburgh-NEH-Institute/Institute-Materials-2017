@@ -85,45 +85,39 @@ ____
 * explain absolute vs. relative paths
 
 ### Explore your files
-<!--20 mins-->
+<!--25 mins-->
 * `ls`: list files.  
-* Use `cd` to navigate to the Documents folder.
-* `echo`: echoes a string to standard out.  Using `echo`, create a file and redirect standard out to a file.
-* `cat`: view and create files.  Use cd, ls, and switches to navigate into Documents folder and create a file using `cat`.
-* `less`: see only one page of file 
-* `grep`: searching the text of a file, just with absolute file names.
+* Use `cd` to navigate to your home directory, and then `ls -a` to show all files and directories, including hidden ones.  From there, use `cd Documents` to move into that directory. 
+* `echo`: echoes a string to standard out.  Using `echo`, write the string 'Hello world!' to the screen.  Remember that Bash is a program, it just happens to be a program you use to run other programs.  This means that you're constantly editing files while you use Bash: these are called Standard Input (stdin), Standard Output (stdout), and Standard Error (stderr).  You write input at the command line, the program processes your command, and any output is written to stdout.  If you run into an error, output is written to stderr, which prints to your screen the same way stdout does.  This means that you may purposely (or accidentally print to either).  For now, we'll just print to stdout, which is the default.
+* `touch`: create a file, or update its timestamp.  Use `touch sample.txt` to create a new plain text file in your Documents folder.
+* Redirecting from stdout:  Instead of printing your greeting, which you created with `echo 'Hello world!'` earlier, we can redirect it to a file  using a right angle bracket.  Type `echo 'Hello world!' > greeting.txt`.  Notice that nothing is printed to your screen. 
+* `cat`: view and combine files.  Now that we've written a file, we can view it using `cat`, which is short for "concatenate".  It has a multitude of uses, but for now we'll just use it to print the contents of our file to stdout.  `cat greeting.txt`.
+* `less`: see only one page of file. Another useful command for longer files, as it prints only one screen at a time. 
+* `grep`: searching the text of a file.  `grep` takes two arguments: the string you're searching for and the file you want to search in.  If you don't supply a file, it searches stdin.  Try using the command `grep "Hello" greeting.txt` (mind your capital letters!).  Notice that the entire contents of the file is written to stdout.  If you try searching for "hello" (or some other capitalization difference), you'll see nothing printed to stdout.  We use the `-i` switch to turn off case sensitivity.  The switch comes directly after the command, before any arguments.  Try `grep -i "hElLo WoRld" greeting.txt`.
 
 ### Making things easier
-
+<!--5 mins-->
 * Command and filename completion with the Tab key
 * History with the arrow keys
-* RTFM with `man` (user manual) and git --help <!-- git \-\-help is the closest thing git bash has to a manual, and it really won't help if you're using git bash for things other than git-->
-* To turn off case sensitive tab completion, create a file called .inputrc in your home directory.  In the file, write echo 'set completion-ignore-case On' and save.  The next time you open your bash shell, you should be able to use tab completion without 
-### Working with files
-
-* `cp`: copy
-* `mv`: move and rename
-* `rm`: delete (careful!)
-* `rm -i`: delete after asking permission
-* `touch`: update the date stamp of a file (create the file if it doesn’t already exist)
+* RTFM with `man` (user manual).  Windows users on Git Bash don't have this luxury, unfortunately.
+* To turn off case sensitive tab completion, create a file called .inputrc in your home directory (we recomend you do this in the GUI for now to avoid any confusion).  In the file, write `echo 'set completion-ignore-case On'` and save.  The next time you open your bash shell, you should be able to use tab completion without worrying whether your directory has capital letters.
 
 ### Working with directories
+<!--10 mins-->
+* `mkdir`: make directory.  Use `pwd` to make sure you're still in your Documents directory, then `ls -a` to see all the directories currently inside it.  We'll use `mkdir` to create a new folder called sample: `mkdir sample`.  Once you've done this, check to see it's there using `ls -a`.
+* `rmdir`: remove empty directory.  Now that we've created an empty directory, we can use `rmdir sample` to get rid of it.  Of course, we actually do want to have that directory, so make a new one called salutations: `mkdir salutations`.
+* `rm -rf:` remove directory and its contents recursively (careful!).  We won't use this one yet, as our directory has no files.  However, you should note that `rmdir` will only remove an empty directory, while this command will loop over the directory and remove its contents before removing the directory itself.  We caution you to be careful with it, as you can accidentally remove significant files or lose important work.
 
-* `mkdir`: make directory
-* `rmdir`: remove empty directory
-* `rm -rf:` remove directory and its contents recursively (careful!)
-
-
-### Wildcards (“globbing”; annoyingly different from regex) 
-<!-- this should probably make no mention of regex? At least until they know what that is? -->
-
-* `*.xml ` (files ending in “.xml”)
-* `*.x?l` (files ending in “.x” followed by any letter followed by “l”, e.g., XML [xml], XSLT [xsl], XProc [xpl] files)
-* `*.x[ms]l` (files ending in “.x” followed by “m” or “s” followed by “l”, e.g., XML and XSLT files, but not XProc)
+### Working with files
+<!--15 mins-->
+* `cp`: copy.  This copies a file to another location.  This command takes two arguments: the file or directory you're trying to copy, and the location to which you want to copy.  This can be an entirely new file name, and you don't have to create the file ahead of time.  You can accidentally overwrite data if you aren't careful about where you're copying to.  For now, we're going to copy our greeting file into our salutations directory using `cp greetings.txt ./Salutations`.  This creates a copy of the file inside the directory.  Notice that we use a `.` to show the current directory.  This is a relative path, meaning it is dependent upon the current context to know where we want to copy the file.  Use `ls` to look at your Documents directory.  greeting.txt is still there, unchanged.  Navigate into your Salutations directory and list its contents.  You have another greeting.txt file there as well, and if you echo it to stdout, you see it contains the same text as the original.  Note that you've just made a copy, not a link, so any changes you make to one will not be reflected in the other. 
+* `mv`: move and rename.  Within your Salutations directory, use the `rm` command to get rid of the file you just copied in (`rm greeting.txt`).  Then, move back into your Documents directory using `cd ..` and list all files.  greeting.txt is still there, but let's move it and change its name.  `mv` also takes two arguments: what you want to move, and where you want to move it to.  Again, you can accidentally overwrite data, as moving a file to a specific filename will simply write over that file.  To move our file, we'll use `mv greeting.txt ./Salutations/hello.txt`.  Take a look around those two directories to see what has changed.`
+* `rm`: delete (careful!)
+* `rm -i`: delete after asking permission.  These two have been addressed already, but the `-i` switch makes deleting interative.  Before any file is deleted, the prompt asks you if you're sure, to which you can respond 'y' or 'n'.  Though this seems like it may be a pain, it's particularly useful combined with the recursive `-rf` switch, as it will go through a directory and ask about each file.
 
 
 ### Getting around the file system
-
+<!--3 mins-->
 * `cd -`: go back to the directory you came from
 * `cd` or `cd ~`: go to your home directory
 * `ctrl+r`: initiate history search
@@ -132,7 +126,7 @@ ____
 * `~`: home directory
 
 ### More useful commands
-
+<!--5 mins, do an activity with one of them as they are review-->
 * `wc` (`-l` lines, `-w` words, `-c` characters)
 * `cat` (you might have meant `less`)
 * `less` (shows the file, but only one screen of it)
@@ -143,40 +137,12 @@ ____
 * `echo` (e.g., `echo $HOME`, `echo a*`)
 
 ### Enhanced history
-
+<!--8 mins, this will be a good way to review/reflect/field qs-->
 * `!!`: rerun the last command
 * `!command`: rerun the most recent command that begins with the word after the exclamation mark (that is, replace ”command” with the name of the command). 
 * `!25`: rerun command #25 (get number with `history`; fine-tune as above for beginning of command, or with `history | grep stuff` to find all history items that include the string “stuff”)
 * `!$`: plug in the last word token from the last command
-<!-- end command line 1 lesson here?-->
 
-### Reading from and writing to files
-
-* stdin, stdout, stderr
-* `<`: input from file
-* `>`: output to file (overwrites existing files with the same name)
-* `>>`: append to file (creates file if it doesn’t already exist)
-* `2>`: error messages to file (`2> /dev/null`)
-
-### Sending data through pipelines
-
-* `|`
-* `history | tail`
-* `wc filename` ~ `wc < filename` ~ `cat filename | wc`
-* Why are there two backslashes in `history | grep \\.xml`?
-
-### Shell variables
-
-* `$HOME`
-* `$PATH`
-
-### Quotes and the shell
-
-* Quotes can get you out of a white-space pickle (`cat 'stupid filename with spaces'`)
-* Or you can “escape” the space by preceding it with a backslash (`cat stupid\ filename\ with\ spaces`)
-* Quotes or backslash also neutralizes other special characters (`cat 'download.txt(1)'` or `cat download.txt\(1\)`)
-* Single quotes are literal (`echo '$HOME'`)
-* Double quotes expand variables (`echo "$HOME"`)
 
 ## Monday, 2:00–3:30: Programs and files 1
 
@@ -302,6 +268,14 @@ Mallet is used for **topic modeling**, which you can learn about at <http://prog
 This is an exercise in running into problems and resolving them, not an exercise in showing how skilled you are!
 
 ## Tuesday, 11:00–12:30: Command line 2
+
+### Wildcards (“globbing”; annoyingly different from regex) 
+<!-- this should probably make no mention of regex? At least until they know what that is? -->
+
+* `*.xml ` (files ending in “.xml”)
+* `*.x?l` (files ending in “.x” followed by any letter followed by “l”, e.g., XML [xml], XSLT [xsl], XProc [xpl] files)
+* `*.x[ms]l` (files ending in “.x” followed by “m” or “s” followed by “l”, e.g., XML and XSLT files, but not XProc)
+
 
 
 ### Reading from and writing to files
