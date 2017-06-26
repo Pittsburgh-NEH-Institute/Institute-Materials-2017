@@ -10,16 +10,22 @@ Before you arrive at the Institute, you will want to have installed the followin
 * **Version control**: [Git](https://git-scm.com/downloads). We’ll use the Git command line tools, so you don’t need to install a GUI.
 * **Work folder**: Create a work folder for your Week 1 practice files. Unless you have an alternative preferred work space, we’d suggest putting it under your **Documents** folder. The name of your work folder must not contain any characters except letters, digits, underscores, hyphens, and periods (e.g., “neh” or “neh_institute” are okay; “neh institute”, with a space, is not).
 
-**Add this: Data from Software Carpentry shell course (for practice)**
-
 
 ## Mac users
 
 * **Xcode** is a suite of Mac development tools. You can install it from the command line by typing `xcode-select --install` or download it from <https://developer.apple.com/xcode/>. Allow a lot of time; it’s a large installation.
 * **Text editor**: You don’t want to write code in a word processor! Unless you are already adept in another text editor, we recommend [BBEdit](https://www.barebones.com/products/bbedit/) (which now incorporates the functionality of the same company’s earlier TextWrangler). Install the [command-line BBEdit tools](http://www.barebones.com/support/bbedit/cmd-line-tools.html) separately. Some users prefer [Atom](https://atom.io/). Popular commercial editors include [TextMate](https://macromates.com/), which enforces a license requirement, and  [SublimeText](https://www.sublimetext.com/), which has an honor-code license (unlimited free trial, but users are expected to register).
+
 ## Windows users
 
 * **Text editor**: You don’t want to write code in a word processor! Unless you are already adept in another text editor, we recommend [Notepad++](https://notepad-plus-plus.org/). Some users prefer [Atom](http://blog.atom.io/2017/01/18/atom-on-windows.html). Popular commercial editors include [EditPad Pro](https://www.editpadpro.com/), which enforces a license requirement, and [SublimeText](https://www.sublimetext.com/2), which has an honor-code license (unlimited free trial, but users are expected to register).
+
+
+## Command Line Practice
+* While prior knowledge of command line is not required, we recommend [SW Carpentry's Tutorial on the Unix Shell](https://swcarpentry.github.io/shell-novice/) if you would like to familiarize yourself ahead of time.
+
+
+
 <!---
 * **(Optional) Ubuntu on Windows**: [bash shell and unix tools](https://msdn.microsoft.com/en-us/commandline/wsl/faq). Available on [Windows 10, Anniversary Update or later](https://www.howtogeek.com/248177/whats-new-in-windows-10s-anniversary-update/). 
 -->
