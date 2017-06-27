@@ -16,6 +16,7 @@ ____
 
 ## Monday, 9:00–10:30: Getting to know your OS: file and directory system
 
+[Verify that everyone’s Eduroam connections work]
 
 ### Operating system conventions
 
