@@ -17,6 +17,6 @@ The reception will take place on Friday, July 21 at 6:00 p.m. in the [Humanities
 
 ### From Bouqet Gardens to Merviss Hall
 
-<<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3036.5585602229207!2d-79.95641873508134!3d40.440772762101616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x8834f22828e6cf47%3A0xf87ad7d708e7458e!2sBouquet+Gardens%2C+South+Bouquet+Street%2C+Pittsburgh%2C+PA!3m2!1d40.4407449!2d-79.9551779!4m5!1s0x8834f22805963667%3A0x1cd8662079624d2e!2sMervis+Hall%2C+Pittsburgh%2C+PA!3m2!1d40.440793!2d-79.95328219999999!5e0!3m2!1sen!2sus!4v1498597729483" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>>
+<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3036.5585602229207!2d-79.95641873508134!3d40.440772762101616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x8834f22828e6cf47%3A0xf87ad7d708e7458e!2sBouquet+Gardens%2C+South+Bouquet+Street%2C+Pittsburgh%2C+PA!3m2!1d40.4407449!2d-79.9551779!4m5!1s0x8834f22805963667%3A0x1cd8662079624d2e!2sMervis+Hall%2C+Pittsburgh%2C+PA!3m2!1d40.440793!2d-79.95328219999999!5e0!3m2!1sen!2sus!4v1498597729483" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
