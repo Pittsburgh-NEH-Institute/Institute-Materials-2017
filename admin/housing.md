@@ -17,4 +17,5 @@ Kitchens are equipped with a refrigerator, stove, oven, and sink. Plates, cups, 
 
 ## Meals: Market Central
 
-The Institute provides three meals per day at [Market Central](https://www.pc.pitt.edu/dining/locations/marketCentral.php), which is just a [short walk from Bouquet Gardens](https://goo.gl/maps/P3QQiF76McM2). 
+The Institute provides three meals per day at [Market Central](https://www.pc.pitt.edu/dining/locations/marketCentral.php), which is just a short walk from Bouquet Gardens:
+<iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d3036.5068619357867!2d-79.95830583460328!3d40.441917279362286!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x8834f22828e6cf47%3A0xf87ad7d708e7458e!2sBouquet+Gardens%2C+300+S+Bouquet+St%2C+Pittsburgh%2C+PA+15213!3m2!1d40.4407449!2d-79.9551779!4m5!1s0x8834f229a58a9d69%3A0xac72f5b1315a0e7b!2sMarket+Central%2C+Fifth+Avenue%2C+Pittsburgh%2C+PA!3m2!1d40.4426296!2d-79.9563419!5e0!3m2!1sen!2sus!4v1498597911266" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
