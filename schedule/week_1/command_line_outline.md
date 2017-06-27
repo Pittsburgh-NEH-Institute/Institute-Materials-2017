@@ -16,7 +16,7 @@ ____
 
 ## Monday, 9:00–10:30: Getting to know your OS: file and directory system
 
-[Verify that everyone’s Eduroam connections work]
+[10 mins. Introductions, verify that everyone’s Eduroam connections work]
 
 ### Operating system conventions
 
@@ -136,14 +136,6 @@ ____
 * `head` (`-10`, or any other number)
 * `tail` (`-10`, or any other number)
 * `echo` (e.g., `echo $HOME`, `echo a*`)
-
-### Enhanced history
-[10 mins]
-<!--this will be a good way to review/reflect/field qs-->
-* `!!`: rerun the last command
-* `!command`: rerun the most recent command that begins with the word after the exclamation mark (that is, replace ”command” with the name of the command). 
-* `!25`: rerun command #25 (get number with `history`; fine-tune as above for beginning of command, or with `history | grep stuff` to find all history items that include the string “stuff”)
-* `!$`: plug in the last word token from the last command
 
 
 ## Monday, 2:00–3:30: Programs and files 1
@@ -269,6 +261,16 @@ This is an exercise in running into problems and resolving them, not an exercise
 <!--Stil missing twenty mins-->
 ## Tuesday, 11:00–12:30: Command line 2
 
+### Enhanced history
+[10 mins]
+<!--this will be a good way to review/reflect/field qs-->
+* `!!`: rerun the last command
+* `!command`: rerun the most recent command that begins with the word after the exclamation mark (that is, replace ”command” with the name of the command). 
+* `!25`: rerun command #25 (get number with `history`; fine-tune as above for beginning of command, or with `history | grep stuff` to find all history items that include the string “stuff”)
+* `!$`: plug in the last word token from the last command
+
+
+
 ### Wildcards (“globbing”; annoyingly different from regex) 
 [10 mins]
 <!--using forked week_1 subdirectory, use `grep` to explore files-->
@@ -316,7 +318,7 @@ This is an exercise in running into problems and resolving them, not an exercise
 * `-1`: single-column
 * `ls -d */`: list only directories
 
-<!--still missing 5 mins-->
+
 ## Tuesday, 2:00–3:30: Programs and files 2
 
 ### File formats
