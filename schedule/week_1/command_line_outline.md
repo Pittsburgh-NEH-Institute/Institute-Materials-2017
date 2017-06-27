@@ -42,10 +42,10 @@ ____
 
 ### Why and how do we use the shell?
 [10 mins]
-* The shell is a program that runs other programs.  Emphasize that the shell is still a program, which takes input and gives output.  The input is a command, though, so it seems as though we're doing something different.  In reality, using command line is no different than using any other program.
+* The shell is a program that runs other programs. <!--Emphasize that the shell is still a program, which takes input and gives output.  The input is a command, though, so it seems as though we're doing something different.  In reality, using command line is no different than using any other program.-->
 * We use the shell to interact with the computer on the command line (CLI ~ GUI).
 * The Unix philosophy is that you can _pipe_ together small commands, each of which does one thing well, to do something complex. You can’t do this in a GUI.
-* bash = ‘Bourne again shell’ (the original shell is sh; others include csh, ksh, tcsh, zsh). We use and recommend bash (Git Bash).  There are many different shells, some of which you end up downloading with program packages like Python.
+* bash = ‘Bourne again shell’ (the original shell is sh; others include csh, ksh, tcsh, zsh).<!--We use and recommend bash (Git Bash).  There are many different shells, some of which you end up downloading with program packages like Python.-->
 * Learn the shell on a need-to-know basis. There are commands you’ll use every day, some you’ll use for special purposes (and you’ll look up how they work when you need them), and some that you’ll never need.
 
 ### Launching the shell
@@ -65,7 +65,7 @@ ____
 * `ls -l`: show enhanced file information, including date and time stamps and owner
 * `ls -g`: same as `-l`, but omits author.
 * `ls -t`: list in timestamp order
-* `ls --color`: if you're using Git Bash, your list will already be colorized, but for other shells this command colorizes output so filetypes and directories are different.
+* `ls --color`: colored output for clarity. <!--If you’re using Git Bash, your list will already be colorized, but for other shells this command colorizes output so filetypes and directories are different.-->
 
 ## Monday, 11:00–12:30: Command line 1
 
@@ -79,22 +79,22 @@ ____
 
 ### First commands
 [15 mins]
-* `cd`: change directory.  also `cd ..`, `cd ~`, <!--ADD SWITCHES and ARGUMENTS-->
+* `cd`: change directory.  also `cd ..`, `cd ~`
 * `pwd`: print working directory (current location in filesystem)
 * `whoami`: print login id
 * `clear`: clear the screen
-* explain absolute vs. relative paths
+* absolute vs. relative paths
 
 ### Explore your files
 [25 mins]
-* `ls`: list files.  
-* Use `cd` to navigate to your home directory, and then `ls -a` to show all files and directories, including hidden ones.  From there, use `cd Documents` to move into that directory. 
-* `echo`: echoes a string to standard out.  Using `echo`, write the string 'Hello world!' to the screen.  Remember that Bash is a program, it just happens to be a program you use to run other programs.  This means that you're constantly editing files while you use Bash: these are called Standard Input (stdin), Standard Output (stdout), and Standard Error (stderr).  You write input at the command line, the program processes your command, and any output is written to stdout.  If you run into an error, output is written to stderr, which prints to your screen the same way stdout does.  This means that you may purposely (or accidentally print to either).  For now, we'll just print to stdout, which is the default.
-* `touch`: create a file, or update its timestamp.  Use `touch sample.txt` to create a new plain text file in your Documents folder.
-* Redirecting from stdout:  Instead of printing your greeting, which you created with `echo 'Hello world!'` earlier, we can redirect it to a file  using a right angle bracket.  Type `echo 'Hello world!' > greeting.txt`.  Notice that nothing is printed to your screen. 
-* `cat`: view and combine files.  Now that we've written a file, we can view it using `cat`, which is short for "concatenate".  It has a multitude of uses, but for now we'll just use it to print the contents of our file to stdout.  `cat greeting.txt`.
-* `less`: see only one page of file. Another useful command for longer files, as it prints only one screen at a time. 
-* `grep`: searching the text of a file.  `grep` takes two arguments: the string you're searching for and the file you want to search in.  If you don't supply a file, it searches stdin.  Try using the command `grep "Hello" greeting.txt` (mind your capital letters!).  Notice that the entire contents of the file is written to stdout.  If you try searching for "hello" (or some other capitalization difference), you'll see nothing printed to stdout.  We use the `-i` switch to turn off case sensitivity.  The switch comes directly after the command, before any arguments.  Try `grep -i "hElLo WoRld" greeting.txt`.
+* `ls`: list files.  <!--Use `cd` to navigate to your home directory, and then `ls -a` to show all files and directories, including hidden ones.  From there, use `cd Documents` to move into that directory.--> 
+* `echo`: echoes a string to standard out. <!--Using `echo`, write the string 'Hello world!' to the screen.-->
+* stdin, stdout, stderr.  <!--Remember that Bash is a program, it just happens to be a program you use to run other programs.  This means that you're constantly editing files while you use Bash: these are called Standard Input (stdin), Standard Output (stdout), and Standard Error (stderr).  You write input at the command line, the program processes your command, and any output is written to stdout.  If you run into an error, output is written to stderr, which prints to your screen the same way stdout does.  This means that you may purposely (or accidentally print to either).  For now, we'll just print to stdout, which is the default.-->
+* `touch`: create a file, or update its timestamp.<--Use `touch sample.txt` to create a new plain text file in your Documents folder.-->
+* Redirecting from stdout.<--Instead of printing your greeting, which you created with `echo 'Hello world!'` earlier, we can redirect it to a file  using a right angle bracket.  Type `echo 'Hello world!' > greeting.txt`.  Notice that nothing is printed to your screen.--> 
+* `cat`: view and combine files.<!--Now that we've written a file, we can view it using `cat`, which is short for "concatenate".  It has a multitude of uses, but for now we'll just use it to print the contents of our file to stdout.  `cat greeting.txt`.-->
+* `less`: see only one page of file.<!--Another useful command for longer files, as it prints only one screen at a time.--> 
+* `grep`: searching the text of a file.<!--`grep` takes two arguments: the string you're searching for and the file you want to search in.  If you don't supply a file, it searches stdin.  Try using the command `grep "Hello" greeting.txt` (mind your capital letters!).  Notice that the entire contents of the file is written to stdout.  If you try searching for "hello" (or some other capitalization difference), you'll see nothing printed to stdout.  We use the `-i` switch to turn off case sensitivity.  The switch comes directly after the command, before any arguments.  Try `grep -i "hElLo WoRld" greeting.txt`.-->
 
 ### Making things easier
 [5 mins]
@@ -105,16 +105,16 @@ ____
 
 ### Working with directories
 [10 mins]
-* `mkdir`: make directory.  Use `pwd` to make sure you're still in your Documents directory, then `ls -a` to see all the directories currently inside it.  We'll use `mkdir` to create a new folder called sample: `mkdir sample`.  Once you've done this, check to see it's there using `ls -a`.
-* `rmdir`: remove empty directory.  Now that we've created an empty directory, we can use `rmdir sample` to get rid of it.  Of course, we actually do want to have that directory, so make a new one called salutations: `mkdir salutations`.
-* `rm -rf:` remove directory and its contents recursively (careful!).  We won't use this one yet, as our directory has no files.  However, you should note that `rmdir` will only remove an empty directory, while this command will loop over the directory and remove its contents before removing the directory itself.  We caution you to be careful with it, as you can accidentally remove significant files or lose important work.
+* `mkdir`: make directory.<!--Use `pwd` to make sure you're still in your Documents directory, then `ls -a` to see all the directories currently inside it.  We'll use `mkdir` to create a new folder called sample: `mkdir sample`.  Once you've done this, check to see it's there using `ls -a`.-->
+* `rmdir`: remove empty directory.<!--Now that we've created an empty directory, we can use `rmdir sample` to get rid of it.  Of course, we actually do want to have that directory, so make a new one called salutations: `mkdir salutations`.-->
+* `rm -rf:` remove directory and its contents recursively (careful!).<!--We won't use this one yet, as our directory has no files.  However, you should note that `rmdir` will only remove an empty directory, while this command will loop over the directory and remove its contents before removing the directory itself.  We caution you to be careful with it, as you can accidentally remove significant files or lose important work.-->
 
 ### Working with files
 [15 mins]
-* `cp`: copy.  This copies a file to another location.  This command takes two arguments: the file or directory you're trying to copy, and the location to which you want to copy.  This can be an entirely new file name, and you don't have to create the file ahead of time.  You can accidentally overwrite data if you aren't careful about where you're copying to.  For now, we're going to copy our greeting file into our salutations directory using `cp greetings.txt ./Salutations`.  This creates a copy of the file inside the directory.  Notice that we use a `.` to show the current directory.  This is a relative path, meaning it is dependent upon the current context to know where we want to copy the file.  Use `ls` to look at your Documents directory.  greeting.txt is still there, unchanged.  Navigate into your Salutations directory and list its contents.  You have another greeting.txt file there as well, and if you echo it to stdout, you see it contains the same text as the original.  Note that you've just made a copy, not a link, so any changes you make to one will not be reflected in the other. 
-* `mv`: move and rename.  Within your Salutations directory, use the `rm` command to get rid of the file you just copied in (`rm greeting.txt`).  Then, move back into your Documents directory using `cd ..` and list all files.  greeting.txt is still there, but let's move it and change its name.  `mv` also takes two arguments: what you want to move, and where you want to move it to.  Again, you can accidentally overwrite data, as moving a file to a specific filename will simply write over that file.  To move our file, we'll use `mv greeting.txt ./Salutations/hello.txt`.  Take a look around those two directories to see what has changed.`
+* `cp`: copy.<!--This copies a file to another location.  This command takes two arguments: the file or directory you're trying to copy, and the location to which you want to copy.  This can be an entirely new file name, and you don't have to create the file ahead of time.  You can accidentally overwrite data if you aren't careful about where you're copying to.  For now, we're going to copy our greeting file into our salutations directory using `cp greetings.txt ./Salutations`.  This creates a copy of the file inside the directory.  Notice that we use a `.` to show the current directory.  This is a relative path, meaning it is dependent upon the current context to know where we want to copy the file.  Use `ls` to look at your Documents directory.  greeting.txt is still there, unchanged.  Navigate into your Salutations directory and list its contents.  You have another greeting.txt file there as well, and if you echo it to stdout, you see it contains the same text as the original.  Note that you've just made a copy, not a link, so any changes you make to one will not be reflected in the other.--> 
+* `mv`: move and rename.<!--Within your Salutations directory, use the `rm` command to get rid of the file you just copied in (`rm greeting.txt`).  Then, move back into your Documents directory using `cd ..` and list all files.  greeting.txt is still there, but let's move it and change its name.  `mv` also takes two arguments: what you want to move, and where you want to move it to.  Again, you can accidentally overwrite data, as moving a file to a specific filename will simply write over that file.  To move our file, we'll use `mv greeting.txt ./Salutations/hello.txt`.  Take a look around those two directories to see what has changed.-->
 * `rm`: delete (careful!)
-* `rm -i`: delete after asking permission.  These two have been addressed already, but the `-i` switch makes deleting interative.  Before any file is deleted, the prompt asks you if you're sure, to which you can respond 'y' or 'n'.  Though this seems like it may be a pain, it's particularly useful combined with the recursive `-rf` switch, as it will go through a directory and ask about each file.
+* `rm -i`: delete after asking permission.<!--These two have been addressed already, but the `-i` switch makes deleting interative.  Before any file is deleted, the prompt asks you if you're sure, to which you can respond 'y' or 'n'.  Though this seems like it may be a pain, it's particularly useful combined with the recursive `-rf` switch, as it will go through a directory and ask about each file.-->
 
 ### Getting around the file system
 [5 mins]
@@ -137,7 +137,8 @@ ____
 * `echo` (e.g., `echo $HOME`, `echo a*`)
 
 ### Enhanced history
-[10 mins, this will be a good way to review/reflect/field qs]
+[10 mins]
+<!--this will be a good way to review/reflect/field qs-->
 * `!!`: rerun the last command
 * `!command`: rerun the most recent command that begins with the word after the exclamation mark (that is, replace ”command” with the name of the command). 
 * `!25`: rerun command #25 (get number with `history`; fine-tune as above for beginning of command, or with `history | grep stuff` to find all history items that include the string “stuff”)
@@ -165,7 +166,7 @@ ____
 
 ### Files can have more than one name and live in more than one place
 [10 mins]
-* `ln plain_file_name link_name` (filenames and inodes).  <!--Inodes introduce a little bit more complexity into our original idea of "what are files?"  The reason we can change filenames is that inodes store the location and attribute information, so a file can exist in multiple places with different names, so long as it links back to that inode number.  To view the inode numbers for your files, use `ls -i`.-->
+* `ln plain_file_name link_name` (filenames and inodes).<!--Inodes introduce a little bit more complexity into our original idea of "what are files?"  The reason we can change filenames is that inodes store the location and attribute information, so a file can exist in multiple places with different names, so long as it links back to that inode number.  To view the inode numbers for your files, use `ls -i`.-->
 * `ln -s directory_name link_name`
 * Difference between hard links and sym links
 
@@ -177,7 +178,8 @@ ____
 * `chmod` (“644”, “664” for files; “755”, “775” for directories)
 
 ### Getting around the directory stack
-[15 mins, to explain what this is and why and how it's used]
+[15 mins]
+<!--to explain what this is and why and how it's used-->
 * review of `cd` and `cd -`
 * `pushd`
 * `popd`
@@ -202,9 +204,9 @@ ____
 
 #### Aliases and `.bash_profile`
 
-* Aliases you want to save go in ~/.bash_profile. Aliases declared on the command line disappear when you close the terminal window. 
-* After editing .bash_profile, run `source .bash_profile` to make the changes active in your current shell
-* To edit a file that begins with a dot, type `bbedit .bash_profile` (or `mate` if you’re using TextMate or `atom` if you’re using Atom), or open it from the MacOS Finder or Windows Explorer
+* Aliases you want to save go in ~/.bash\_profile. Aliases declared on the command line disappear when you close the terminal window. 
+* After editing .bash\_profile, run `source .bash\_profile` to make the changes active in your current shell
+* To edit a file that begins with a dot, type `bbedit .bash\_profile` (or `mate` if you’re using TextMate or `atom` if you’re using Atom), or open it from the MacOS Finder or Windows Explorer
 
 #### Alias details
 
