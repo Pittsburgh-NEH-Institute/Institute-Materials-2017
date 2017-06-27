@@ -1,9 +1,8 @@
-# Housing Details
+# Housing details
 
-## Arrival and Check-in
+## Arrival and check-in
 
-When you arrive at the University of Pittsburgh campus, you'll proceed to Panther Central, which is located in the lobby of [Litchfield Towers](http://www.tour.pitt.edu/tour/litchfield-towers). You can find information and maps in the separate Arrival document about how to get there. In Towers lobby, someone will be available to provide welcome information and your utility key card, and to show you to [Bouquet Gardens](http://www.tour.pitt.edu/tour/bouquet-gardens), where you’ll be staying. If your arrival time is delayed, please email, text, or call one of the undergraduate assistants, whose contact information is available in the Arrival document.
-
+When you arrive at the University of Pittsburgh campus, you'll proceed to Panther Central, which is located in the lobby of [Litchfield Towers](http://www.tour.pitt.edu/tour/litchfield-towers). You can find information and maps in the separate Arrival document about how to get there. In Towers lobby, someone will be available to provide welcome information and your utility key card, and to show you to [Bouquet Gardens](http://www.tour.pitt.edu/tour/bouquet-gardens), where you’ll be staying. If your arrival time is delayed, please email, text, or call one of the undergraduate assistants, whose contact information will be emailed to you.
 ## Lodging: Bouquet Gardens
 
 ### Location
