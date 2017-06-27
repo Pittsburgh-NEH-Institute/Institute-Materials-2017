@@ -14,7 +14,7 @@ ____
 * **Etherpad:** We’ll create an [Etherpad](https://etherpad.net) where participants who wish to do so can take notes collaboratively. For a quick overview of Etherpad functionality see <http://write.flossmanuals.net/etherpad/introduction/>.
 ____
 
-## Monday, 9:00–11:30: Getting to know your OS: file and directory system
+## Monday, 9:00–10:30: Getting to know your OS: file and directory system
 
 
 ### Operating system conventions
