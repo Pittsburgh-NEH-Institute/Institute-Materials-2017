@@ -44,36 +44,58 @@ Week 2, Day 1 concentrates on modeling textual documents, with attention to alte
 
 **Outcome goals:** How are *model*, *syntax*, and *markup semantics* similar and different? 
 
+**Optional reading:** **[Add rhd/djb Balisage paper]**
+
 ### 11:00–12:30: Transcription with markup: XML
 
 * XML as a tree (OHCO)
-* **Hands on:** Tag [“Ozymandias”](<ozymandias.txt>) in XML (e.g., lines, phrases, sentences, speakers, words, feet, syllables)
+* **Hands on:** Tag [“Ozymandias”](ozymandias.txt) in XML (e.g., lines, phrases, sentences, speakers, words, feet, syllables)
+* **Hands on:** Tag [“Mrs. Warren’s profession”](shaw.txt)
 * What’s hard in XML: overlap, discontinuity, containment vs dominance, white space tokenization, artificial hierarchy, scope of reference
 
 **Outcome goals:** How are documents like trees and how are they different? What is represented by the model (the XML tree), and what requires markup semantics (schema)?
+
+**Optional reading:**
+[“Refining our notion of what text really is: the problem of overlapping hierarchies”](http://cds.library.brown.edu/resources/stg/monographs/ohco.html)
 
 ### 2:00–3:30: XML as a tree
 
 * XPath as a way of navigating the tree
 * XPath path expressions: axes and node type selectors
 * **Hands on:** XPath navigation of [*Hamlet*](hamlet.xml) in \<oXygen/\> (**[add scavenger hunt tasks]**)
-* **Hands on:** XPath navigation of something with Trojan milestones (XPath `<<` operator)
+* **Hands on:** XPath navigation of Trojan milestones (XPath `is` operator)
 * What’s so bad about markup semantics, the application layer, and workarounds?
 
 **Outcome goals:** XML looks like a string (and it’s defined that way in the spec), but it’s really a tree. This requires workarounds not only in the markup, but also in the query.
+
+**Optional reading:** [“What can XPath do for me?”](http://dh.obdurodon.org/introduction-xpath.xhtml) 
 
 ### 4:00-5:30: Transcription with markup: LMNL
 
 * XML and LMNL sawtooth syntax only look alike, and LMNL isn’t just XML with overlap
 * **Hands on:** Tag [“Ozymandias”](ozymandias.txt) in LMNL
 * What is Alexandria?
-* Visualization of LMNL in Alexandria (and other visualizations)
+* Visualization of LMNL in Alexandria
+* **[Transformation of LMNL with Luminescent, if Luminescent is ready; requires installation of Calabash and Saxon?]**
 
 **Outcome goals:** How do XML (tree) and LMNL (range) model “what text really is”? Why does it matter as long as the workarounds work?
 
 ## Week 2, Day 2: Tuesday, July 18
 
-### 9:00–10:30
+### Synopsis
+
+Week 2, Day 2 introduces the [Gothenburg model of textual variation](gothenburg.md) (GM) with the goal of focusing on the modular and algorithmic aspects of textual criticism. **Outcome goals:**
+
+* A modular understanding of textual criticism
+* Modular approaches to designing and implementing an edition
+* The five components of GM: tokenization, normalization, alignment, analysis, visualization
+* The role of GM components outside the analysis of variation
+* Tokenization in Python and in XSLT
+* Normalization in Python and in XSLT
+
+### 9:00–10:30: The Gothenburg model of textual variation (GM)
+
+* [Introduction to the Gothenburg model of textual variation (GM)](gothenburg.md)
 
 **[The following isn’t the plan for 9:00–10:30; it’s just a holding pen for taks to be scheduled]**
 
