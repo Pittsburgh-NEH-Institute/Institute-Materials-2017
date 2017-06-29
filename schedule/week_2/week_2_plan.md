@@ -92,7 +92,7 @@ Week 2, Day 1 concentrates on modeling textual documents, with attention to alte
 
 #### Reading
 
-* [“What can XPath do for me?”](http://dh.obdurodon.org/introduction-xpath.xhtml) (optional
+* [“What can XPath do for me?”](http://dh.obdurodon.org/introduction-xpath.xhtml) (optional)
 
 ### 4:00-5:30: Transcription with markup: LMNL
 
