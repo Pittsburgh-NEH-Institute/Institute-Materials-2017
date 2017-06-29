@@ -6,6 +6,9 @@
 
 Week 2, Day 2 concentrates on ... 
 
+### Outcome goals
+* _[some text here]_
+
 ### Legend
 
 * **Presentation:** by instructors
@@ -58,7 +61,15 @@ ______
 * [_some text here_]
 * Gothenburg Model (GM) as an illustration of a computational pipeline
 
+#### Outcome goals
+* _[some text here]_
+
 ### 15:30-16:00: Coffee/Tea
 
 ### 16:00-17:30: Tokenization 1
+
+#### Topics and Activities
 * [_some text here_]
+
+#### Outcome goals
+* _[some text here]_

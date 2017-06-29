@@ -6,6 +6,9 @@
 
 Week 2, Day 4 concentrates on ... 
 
+### Outcome goals
+* _[some text here]_
+
 ### Legend
 
 * **Presentation:** by instructors
@@ -29,13 +32,24 @@ OR
 * Recap of the topics that have been discussed so far: tokenization, normalization, and collation in the framework of annotations (as each of these activities entails a form of annoation)
 * Envisioning your edition
 
+#### Outcome goals
+* _[some text here]_
 
 ### 10:30-11:00: Coffee/tea
 
+#### Outcome goals
+* Have more energy
+
 ### 11:00-12:30: Advanced Collation
+
+#### Topics and Activities
 * Collation with markup
 * Near-matching
 * Visualization of collation output **[as a bridge to day 5]**
+* **Hands-on**: ...
+
+#### Outcome goals
+* _[some text here]_
 
 ### 12:30-14:00: Lunch (on your own)
 
@@ -43,11 +57,17 @@ OR
 
 MK: Bag of words, text processing, text as tables, query the tables
 
+#### Outcome goals
+* _[some text here]_
+
 ### Coffee/Tea break
 
 ### 16:00-17:30: Text analytics 2
 
 MK: Bag of words, text processing, text as tables, query the tables (continued)
+
+#### Outcome goals
+* _[some text here]_
 
 
 

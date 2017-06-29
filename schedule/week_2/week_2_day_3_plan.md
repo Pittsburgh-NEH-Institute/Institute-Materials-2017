@@ -6,6 +6,9 @@
 
 Week 2, Day 3 concentrates on ... 
 
+### Outcome goals
+* _[some text here]_
+
 ### Legend
 
 * **Presentation:** by instructors
@@ -23,6 +26,9 @@ Week 2, Day 3 concentrates on ...
 	* Plain text normalization
 	* XML normalization (from XML to stream of normalized (word) tokens)
 
+#### Outcome goals
+* _[some text here]_
+
 ### 10:30-11:00: Coffee 
 
 ### 11:00-12:30: Collation 1
@@ -36,6 +42,9 @@ Week 2, Day 3 concentrates on ...
 	* creating witnesses
 	* output **[note: discuss visualization?]**
 
+#### Outcome goals
+* _[some text here]_
+
 ### 12:30-14:00: Lunch (you're on your own)
 
 ### 14:00-15:30: Advanced tokenization
@@ -46,6 +55,9 @@ Week 2, Day 3 concentrates on ...
 * Markup
 * Exercises
 
+#### Outcome goals
+* _[some text here]_
+
 ### 15:30-16:00: Coffee/tea
 
 ### 16:00-17:30: Advanced normalization
@@ -54,3 +66,6 @@ Week 2, Day 3 concentrates on ...
 * Normalization and markup
 * Linguistic tools
 * [etc.]
+
+#### Outcome goals
+* _[some text here]_

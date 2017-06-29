@@ -88,7 +88,7 @@ Time | Topic | Type
 * How are documents like trees and how are they different?
 * What is represented by the model alone (the XML tree), and what requires markup semantics (schema)?
 
-####Reading
+#### Reading
 
 * [“Refining our notion of what text really is: the problem of overlapping hierarchies”](http://cds.library.brown.edu/resources/stg/monographs/ohco.html) (optional)
 
