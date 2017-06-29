@@ -98,3 +98,5 @@ Tasks.md
 .idea/**/tasks.xml
 .idea/dictionaries
 
+# <oXygen/>
+*.xpr
