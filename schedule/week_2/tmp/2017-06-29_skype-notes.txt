@@ -1,0 +1,31 @@
+2017-06-29 Skype rhd, djb, eb
+
+Project planning starts with research questions (see the planning page)
+Restore first half of https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/tmp/week_2_day_1_plan.md to day 1
+
+"Nobody has ever made me look at my edition like this before"
+vs
+"I learned a lot of tricks, but there was no idea behind it"
+
+What they'll learn: project planning, computational pipelines
+
+High-level information that they'll take home and customize for their edition
+
+Adapt layout from old version
+
+We normalize in three places, not just stage 2. We need to be aware of computation to understand that we do near matching late for reasons of efficiency.
+
+"Information extraction" is really implicit extraction because we have to find the structures, but instead of pulling it out we tag it so that we can pull it out later. It's all about making the implicit explicit so that it will be machine-actionable.
+
+Annotation under normalization or markup?
+
+Action items:
+
+Ronald and Elli: Revise and update plan for week 2
+
+David: Tokenization, normalization activities; including materials from Amsterdam workshop
+Add <xsl:for-each-group> to XPath activity
+Visualization block
+
+Annotation in Day 4 as part of modeling, with reference to linguistic corpus / Excel perspective
+
