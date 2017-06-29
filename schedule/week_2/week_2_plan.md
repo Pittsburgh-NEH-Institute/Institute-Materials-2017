@@ -28,57 +28,85 @@ ____
 
 ### Synopsis
 
-Week 2, Day 1 concentrates on modeling textual documents, with attention to alternative models and syntactic expressions. **Outcome goals:**
+Week 2, Day 1 concentrates on modeling textual documents, with attention to alternative models and their syntactic expressions. 
 
+#### Outcome goals
+
+* The digital edition as a computational pipeline
 * Where data modeling belongs in the work flow
-* Markup as an expression of a data model
+* Markup as an expression of a data model; making the implicit explicit and machine-actionable
 * Model, syntax, and markup semantics
 * How XML copes with limitations of the tree as a document model
 * What’s so bad about work-arounds and relying on application-level semantics?
 
 ### 9:00–10:30: Model, syntax, and markup semantics
 
+#### Topics and activities
+
+* The digital edition as a computational pipeline
 * Model, syntax, and markup semantics
 * XML, LMNL (model, sawtooth syntax), GODDAG, TexMECS, TAG. How they're similar and different, and how they only *appear* to be similar and different
-* XML is the only system that is production ready today
+* XML is the only framework that is production ready today
 
-**Outcome goals:** How are *model*, *syntax*, and *markup semantics* similar and different? 
+#### Outcome goals
 
-**Optional reading:** **[Add rhd/djb Balisage paper]**
+* How can the elaboration of a digital edition be modularized?
+* How are *model*, *syntax*, and *markup semantics* similar and different? 
+
+#### Reading
+
+* **[Add rhd/djb Balisage paper]** (optional)
 
 ### 11:00–12:30: Transcription with markup: XML
 
-* XML as a tree (OHCO)
+#### Topics and activities
+
+* Making the implicit explicit with markup
+* XML as a tree (OHCO: “ordered hierarchy of content objects”)
 * **Hands on:** Tag [“Ozymandias”](ozymandias.txt) in XML (e.g., lines, phrases, sentences, speakers, words, feet, syllables)
-* **Hands on:** Tag [“Mrs. Warren’s profession”](shaw.txt)
 * What’s hard in XML: overlap, discontinuity, containment vs dominance, white space tokenization, artificial hierarchy, scope of reference
 
-**Outcome goals:** How are documents like trees and how are they different? What is represented by the model (the XML tree), and what requires markup semantics (schema)?
+#### Outcome goals
 
-**Optional reading:**
-[“Refining our notion of what text really is: the problem of overlapping hierarchies”](http://cds.library.brown.edu/resources/stg/monographs/ohco.html)
+* How are documents like trees and how are they different?
+* What is represented by the model alone (the XML tree), and what requires markup semantics (schema)?
+
+####Reading
+
+* [“Refining our notion of what text really is: the problem of overlapping hierarchies”](http://cds.library.brown.edu/resources/stg/monographs/ohco.html) (optional)
 
 ### 2:00–3:30: XML as a tree
 
+#### Topics and activities
+
 * XPath as a way of navigating the tree
 * XPath path expressions: axes and node type selectors
-* **Hands on:** XPath navigation of [*Hamlet*](hamlet.xml) in \<oXygen/\> (**[add scavenger hunt tasks]**)
-* **Hands on:** XPath navigation of Trojan milestones (XPath `is` operator)
+* **Hands on:** XPath navigation of [*Hamlet*](hamlet.xml) in \<oXygen/\> 
+* **Hands on:** XPath navigation of overlap in [“Ozymandias”](ozymandias.xml) (Trojan milestones, the XPath `is` operator)
 * What’s so bad about markup semantics, the application layer, and workarounds?
 
-**Outcome goals:** XML looks like a string (and it’s defined that way in the spec), but it’s really a tree. This requires workarounds not only in the markup, but also in the query.
+#### Outcome goals
 
-**Optional reading:** [“What can XPath do for me?”](http://dh.obdurodon.org/introduction-xpath.xhtml) 
+* XML looks like a string (and it’s defined that way in the spec), but it’s really a tree. This requires workarounds not only in the markup, but also in the query.
+
+#### Reading
+
+* [“What can XPath do for me?”](http://dh.obdurodon.org/introduction-xpath.xhtml) (optional
 
 ### 4:00-5:30: Transcription with markup: LMNL
+
+#### Topics and activities
 
 * XML and LMNL sawtooth syntax only look alike, and LMNL isn’t just XML with overlap
 * **Hands on:** Tag [“Ozymandias”](ozymandias.txt) in LMNL
 * What is Alexandria?
+* Validation of LMNL with Luminescent
 * Visualization of LMNL in Alexandria
-* **[Transformation of LMNL with Luminescent, if Luminescent is ready; requires installation of Calabash and Saxon?]**
 
-**Outcome goals:** How do XML (tree) and LMNL (range) model “what text really is”? Why does it matter as long as the workarounds work?
+#### Outcome goals
+
+* How do XML (tree) and LMNL (range) model “what text really is”? 
+* Why does it matter as long as the workarounds work?
 
 ## Week 2, Day 2: Tuesday, July 18
 
