@@ -168,3 +168,53 @@ Running the preceding XQuery against the XML of the poem creates the following o
    </lines>
 </results>
 ```
+
+### XSLT
+
+The XSLT `<xsl:for-each-group>` elements makes it possible to collect just the `<lb>` elements and the `text()` nodes and group them into lines:
+
+```xslt
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="3.0"
+  xpath-default-namespace="http://www.tei-c.org/ns/1.0">
+  <xsl:output method="xml" indent="yes"/>
+  <xsl:template match="/">
+    <xsl:apply-templates select="//text//p"/>
+  </xsl:template>
+  <xsl:template match="p">
+    <lines>
+      <xsl:for-each-group select="descendant::lb | descendant::text()"
+        group-starting-with="lb">
+        <xsl:if test="position() gt 1">
+          <line n="{count(preceding::lb) + 1}">
+            <xsl:value-of select="normalize-space(string-join((current-group())))"/>
+          </line>
+        </xsl:if>
+      </xsl:for-each-group>
+    </lines>
+  </xsl:template>
+</xsl:stylesheet>
+```
+
+This avoids the uncommon XPath `is` operator, but it requires attention to using the descendant axis (since text nodes and `<lb>` elements are not all children of `<p>`) and to skipping the first group (the white space `text()` node before the first `<lb>`). The output is:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<lines>
+   <line n="1">I met a traveller from an antique land,</line>
+   <line n="2">Who said —“Two vast and trunkless legs of stone</line>
+   <line n="3">Stand in the desart.... Near them, on the sand,</line>
+   <line n="4">Half sunk a shattered visage lies, whose frown,</line>
+   <line n="5">And wrinkled lip, and sneer of cold command,</line>
+   <line n="6">Tell that its sculptor well those passions read</line>
+   <line n="7">Which yet survive, stamped on these lifeless things,</line>
+   <line n="8">The hand that mocked them, and the heart that fed;</line>
+   <line n="9">And on the pedestal, these words appear:</line>
+   <line n="10">My name is Ozymandias, King of Kings,</line>
+   <line n="11">Look on my Works, ye Mighty, and despair!</line>
+   <line n="12">Nothing beside remains. Round the decay</line>
+   <line n="13">Of that colossal Wreck, boundless and bare</line>
+   <line n="14">The lone and level sands stretch far away.”</line>
+</lines>
+```
