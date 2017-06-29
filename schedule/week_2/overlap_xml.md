@@ -114,23 +114,8 @@ Running the preceding XQuery against the XML of the poem creates the following o
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <results>
-   <lines>
-      <line n="1">I met a traveller from an antique land,</line>
-      <line n="2">Who said —“Two vast and trunkless legs of stone</line>
-      <line n="3">Stand in the desart.... Near them, on the sand,</line>
-      <line n="4">Half sunk a shattered visage lies, whose frown,</line>
-      <line n="5">And wrinkled lip, and sneer of cold command,</line>
-      <line n="6">Tell that its sculptor well those passions read</line>
-      <line n="7">Which yet survive, stamped on these lifeless things,</line>
-      <line n="8">The hand that mocked them, and the heart that fed;</line>
-      <line n="9">And on the pedestal, these words appear:</line>
-      <line n="10">My name is Ozymandias, King of Kings,</line>
-      <line n="11">Look on my Works, ye Mighty, and despair!</line>
-      <line n="12">Nothing beside remains. Round the decay</line>
-      <line n="13">Of that colossal Wreck, boundless and bare</line>
-      <line n="14">The lone and level sands stretch far away.”</line>
-   </lines>
-   <phrases>
+  (: for $phr in //phr return $phr :)
+  <phrases>
       <phrase starts="1" ends="1">I met a traveller from an antique land,</phrase>
       <phrase starts="2" ends="2">Who said —</phrase>
       <phrase starts="2" ends="3">“Two vast and trunkless legs of stone | Stand in the desart.... </phrase>
@@ -155,11 +140,29 @@ Running the preceding XQuery against the XML of the poem creates the following o
       <phrase starts="12" ends="13">Round the decay | Of that colossal Wreck,</phrase>
       <phrase starts="13" ends="14">boundless and bare | The lone and level sands stretch far away.”</phrase>
    </phrases>
-   <enjambments>
+  (: for $enj in //phr[lb] return $enj :)
+  <enjambments>
       <enjambment spans="2 3">“Two vast and trunkless legs of stone | Stand in the desart.... </enjambment>
       <enjambment spans="6 7">Tell that its sculptor well those passions read | Which yet survive,</enjambment>
       <enjambment spans="12 13">Round the decay | Of that colossal Wreck,</enjambment>
       <enjambment spans="13 14">boundless and bare | The lone and level sands stretch far away.”</enjambment>
    </enjambments>
+  (: for $lb in //lb return string-join($lb/following::text()[preceding::lb[1] is $lb]) :)
+  <lines>
+      <line n="1">I met a traveller from an antique land,</line>
+      <line n="2">Who said —“Two vast and trunkless legs of stone</line>
+      <line n="3">Stand in the desart.... Near them, on the sand,</line>
+      <line n="4">Half sunk a shattered visage lies, whose frown,</line>
+      <line n="5">And wrinkled lip, and sneer of cold command,</line>
+      <line n="6">Tell that its sculptor well those passions read</line>
+      <line n="7">Which yet survive, stamped on these lifeless things,</line>
+      <line n="8">The hand that mocked them, and the heart that fed;</line>
+      <line n="9">And on the pedestal, these words appear:</line>
+      <line n="10">My name is Ozymandias, King of Kings,</line>
+      <line n="11">Look on my Works, ye Mighty, and despair!</line>
+      <line n="12">Nothing beside remains. Round the decay</line>
+      <line n="13">Of that colossal Wreck, boundless and bare</line>
+      <line n="14">The lone and level sands stretch far away.”</line>
+   </lines>
 </results>
 ```
