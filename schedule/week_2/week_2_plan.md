@@ -82,8 +82,9 @@ Week 2, Day 1 concentrates on modeling textual documents, with attention to alte
 * XPath as a way of navigating the tree
 * XPath path expressions: axes and node type selectors
 * **Hands on:** XPath navigation of [*Hamlet*](hamlet.xml) in \<oXygen/\> 
-* **Hands on:** XPath navigation of overlap in [“Ozymandias”](ozymandias.xml) (Trojan milestones, the XPath `is` operator)
+* **Hands on:** XPath navigation of overlap in [“Ozymandias”](ozymandias.xml)
 * What’s so bad about markup semantics, the application layer, and workarounds?
+* The [cost of workarounds during processing](overlap_xml.md)
 
 #### Outcome goals
 
@@ -112,7 +113,9 @@ Week 2, Day 1 concentrates on modeling textual documents, with attention to alte
 
 ### Synopsis
 
-Week 2, Day 2 introduces the [Gothenburg model of textual variation](gothenburg.md) (GM) with the goal of focusing on the modular and algorithmic aspects of textual criticism. **Outcome goals:**
+Week 2, Day 2 introduces the [Gothenburg model of textual variation](gothenburg.md) (GM) with the goal of focusing on the modular and algorithmic aspects of textual criticism. 
+
+#### Outcome goals
 
 * A modular understanding of textual criticism
 * Modular approaches to designing and implementing an edition
