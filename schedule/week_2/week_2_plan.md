@@ -12,13 +12,13 @@ ____
 
 Time/Day | Monday | Tuesday | Wednesday | Thursday | Friday
 --- | --- | --- | --- | --- | ---
-9:00–10:00 | Model, syntax, and markup semantics  | Modeling (transcriptions), Transcription, Markup 1 | Modeling (collation), Transcription, Markup 2 | Modeling (annotations), Transcription, Markup 3 | Modeling (queries and visualization), Markup, Annotation 
+9:00–10:00 | Project planning  | XML as tree (XPath) | Normalization 1 | Modeling, Annotations | Modeling (queries and visualization), Markup, Annotation 
 10:30–11:00 | Coffee break | Coffee break | Coffee break | Coffee break | Coffee break
-11:30–12:30 | Transcription with markup: XML | Markup, Tokenization 1 | Tokenization 2 | Annotation 1 | Queries 1
+11:30–12:30 | Theory of edition | Transcription, LMNL, TAG | Modeling, Collation | Collation 2 | Queries 1
 12:30–2:00 | Lunch | Lunch | Lunch | Lunch | Lunch
-2:00–3:30 | XML as a tree | Normalization | Collation | Text analytics 1 | Queries 2
+2:00–3:30 | Syntax and Semantics | Modeling, Computational Pipelines | Tokenization 2 | Text analytics 1 | Queries 2
 3:30–4:00 | Coffee break | Coffee break | Coffee break | Coffee break | Coffee break
-4:00–5:30 | Transcription with markup (LMNL, Alexandria) | Review | Collation | Review | Visualization, Review
+4:00–5:30 | Transcription XML | Tokenization 1 | Normalization 2 | Review | Visualization, Review
 
 Bumped to make room for Mike: Annotation 2 and review (Thursday); Queries 2, visualization, and review (Friday)
 
