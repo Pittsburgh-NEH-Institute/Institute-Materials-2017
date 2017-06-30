@@ -37,9 +37,9 @@ ______
 
 * [“What can XPath do for me?”](http://dh.obdurodon.org/introduction-xpath.xhtml) (optional)
 
-### 10:30-11:00: Coffee break
+### 10:30-11:00: Coffee
 
-### 11:00-12:30: Transcription with markup: LMNL
+### 11:00-12:30: Transcription with Markup: LMNL
 
 #### Topics and activities
 
