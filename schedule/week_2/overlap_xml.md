@@ -197,7 +197,7 @@ The XSLT `<xsl:for-each-group>` elements makes it possible to collect just the `
 </xsl:stylesheet>
 ```
 
-This avoids the uncommon XPath `is` operator, but it requires attention to using the descendant axis (since text nodes and `<lb>` elements are not all children of `<p>`) and to skipping the first group (the white space `text()` node before the first `<lb>`). The output is:
+This avoids the uncommon XPath `is` operator, but it requires attention to using the descendant axis (since `text()` nodes and `<lb>` elements are not all children of `<p>`) and to skipping the first group (the white space `text()` node before the first `<lb>`). The output is:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
