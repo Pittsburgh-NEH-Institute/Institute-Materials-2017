@@ -74,8 +74,9 @@ ______
 **[note: base this section partly on DB tutorial on XML processing]**
 
 #### Topics and Activities
-* [_some text here_]
+* NLTK
+* Tokenization in Python and in XSLT
 
 #### Outcome goals
-* Tokenization in Python and in XSLT
-* Normalization in Python and in XSLT
+* ***[some text here]***
+

@@ -26,14 +26,15 @@ Week 2, Day 4 concentrates on ...
 
 OR
 
-### 9:00-10:30: Modelling and Annotation
+### 9:00-10:30: Modeling: Annotations as Layers to the Text
 
 #### Topics and Activities
 * Recap of the topics that have been discussed so far: tokenization, normalization, and collation in the framework of annotations (as each of these activities entails a form of annoation)
 * Envisioning your edition
 
 #### Outcome goals
-* _[some text here]_
+* Understanding normalization as a form of adding layers of annotation to text
+
 
 ### 10:30-11:00: Coffee/tea
 

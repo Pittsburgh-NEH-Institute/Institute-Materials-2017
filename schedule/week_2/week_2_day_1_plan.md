@@ -13,6 +13,7 @@ The first day of Week 2 starts with defining research questions within the frame
 * Markup as an expression of a data model; making the implicit explicit and machine-actionable
 * Model, syntax, and markup semantics
 * Successful modeling reduces iterations of the document analysis → schema development → markup pipeline.
+* Community-driven (prescriptive) vs research-driven (descriptive) analysis; “how do I do this in X?” vs “how should I model this?”
 
 
 ### Legend
