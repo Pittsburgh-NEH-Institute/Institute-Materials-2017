@@ -45,6 +45,7 @@ Week 2, Day 3 expands upon the idea of digital editions as text processing pipel
 * Tokenization and normalization for collation purposes
 
 #### Outcome goals
+* Bringing together tokenization and normalization as individual pipeline steps and seeing how they can be implemented in the act of collation
 * Normalize, tokenize, and collate text
 * ***[some text here]***
 
