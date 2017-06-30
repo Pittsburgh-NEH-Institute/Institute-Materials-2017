@@ -1,0 +1,112 @@
+2017-06-30 Skype djb, rhd, eb
+
+Synopsis for each day (not slot), outcome for each slot (not day)
+Keep old format (including legend); apply everywhere
+Major break over lunch, so that each day has two coherent halves
+
+1/1
+
+Research questions are developed in first sessions and inform the rest of the Institute, since everything is research-based. Experienced consultants start from research question, then desired output/result, then model, then processing steps. Humanists often start from the model or processing. (Contrast to document analysis > schema development > tagging.)
+
+1/2
+
+Introduce visualization early for illustration, but it can also be a bridge to week 3. Should come back in different slots, recurringly, instead of making it its own entire block: early, collation (alignment table), Mike's sessions, etc.
+
+We need visualizations other than djb's, and currently we have only Stemmaweb. Elli will add some.
+
+1/3
+
+Move "computational pipeline" part, since it isn't otherwise part of the day's activities
+Plain text is also a model; this will recur later in the week, under processing; people's ideas of what plain text is and why it's valuable may be wrong or naive
+Too much talk by the instructors in this session; perhaps start exercise before coffee break
+
+1/4 
+
+XML as a tree hands-on exercise, emphasizing that some things are hard
+
+2/1
+
+Picking up where we left off, process the XML with XPath
+text as tree is not as natural as it may appear at first
+What does it mean to use work-arounds
+
+2/2
+
+For contrast, LMNL tagging exercise, validate with Luminescent, visualize with Alexandria
+Visualize with Luminescent?
+
+Taking stock: Thinking about editions; XML markup, limitations of XML, XPath to illustrate limitations, LMNL as alternative
+
+2/3
+
+New topic after lunch: processing. Know what you want to do and how to mark it up, at which point you need to process it. The computational pipeline enters here; it's a new concept for a lot of participants. 
+
+For many users, markup is based on document analysis without regard to processing; sometimes markup is there to support processing, and not just to represent semantics. GM is a possible pipeline, not the only one and not for all issues. Output of one stage is input into the next; how do we teach this? Processing plain text may involve storing interim parsing information in memory; an alternative is to make it explicit by writing it into markup and persisting it, and then operating on that. Should pipelining be more explicit in Unit 1? Consult with Tara? Mike (his Antwerp digital text analysis course?) Or is this just the overall organizing topic of all of week 2?
+
+2/4
+
+We start with tokenization in Python (NLTK), XSLT, merge content from Amsterdam (Python regex). Lesson about strengths and weaknesses of libraries, e.g., NLTK has language knowledge, which can't be mimicked with just regex. Also tokenization of tagged text in Python and with XML technologies. 
+
+3/1
+
+Normalization: a new step in the pipeline. Amsterdam workshop tutorials, also current djb Python/XML. Case folding, white space, Unicode, punctuation, POS or lemma (NLTK); regex is suitable for many things, but knowledge is required for others. Need to include hands on; type your own sentence into the notebook; combine normalizations.
+
+3/2
+
+We've introduced pipelines, plus two pipeline stages: tokenization and normalization. Pipeline stages are ordered, but we do normalization at least three times: during transcription (mentally), during the normalization stage, and, in CollateX, during analysis to deal with near matching (which would be too expensive computationally to implement at the normalization stage).
+
+Now introduce next pipeline stage: alignment. Variant graph and its visualization as alignment table and SVG. Main focus is not on just collation, so be brief. Good time to emphasize that visualization isn't the model, e.g., we can't represent transposition in the alignment table.
+
+3/3 
+
+New topic: Challenging textual phenomena, with TAG. No hands on.
+
+3/4
+
+General review: Modeling, processing pipelines, TAG. Tokenization and normalization as pipeline stages. Expand into timed outline.
+
+Review of tokenization: sentence and word in NLTK. Phrases vs lines in poetry. 
+
+4/1
+
+Annotations as layers on the text. Every step of the pipeline adds new information. In corpus linguistics it's typically done at the token level, but it could be at any level in TAG. Scholars don't think of text as a graph, but they think of layers more easily. Every pipeline stage adds information, and it has to be stored somewhere. They've already been doing this without thinking about it, and it should be made explicit. TAG is helpful here, but Alexandria won't be ready for doing this hands on. Can be done, alternatively, as stand-off.
+
+Adding information to tokens is layering of information; how best to present that? Each pipeline stage has an input and an output, and both have models. They could be different (e.g., variant graph) or extended (e.g., tokenization, normalization). This may be obvious or invisible. If you use XML or JSON in CollateX, everything is a tree, which can be treated as a linear sequence of tokens. TAG is more flexible: information doesn't have to be on a token, it can be discontinuous, etc.
+
+Give several examples of layers in different technologies. Spreadsheet is likely to come as a surprise. XML will be obvious, but it's limited by hierarchy.
+
+Use a spreadsheet for visualization? Linguistic corpus tool? Illustrates multi-level (and not necessarily hierarchical) tokenization.
+
+Talk lab with following discussion about layers that can be identified in user editions.
+
+This session needs more planning
+
+4/2
+
+Collation: near matching, GM analysis (post-processing). Near matching is very unlike exact matching computationally. Hands-on exercise; it's already in CollateX Python. Different measures of distance; human edit changes are not necessarily character-level. 
+
+4/2 and 4/4: Mike (coordinate with him?)
+
+5/1
+
+Use eXist for querying and visualization? Elastic search? eXist and XQuery? These will be in week 3. eXist as XML database in week 2; eXist as CMS in week 3? Install eXist on their own machines?
+
+5/2
+
+Visualization. Visualization decision? Image formats? How to produce a visualization? Interacting with SVG? D3? Refer back to Day 1 examples (in the context of modeling), but now in the context of the pipeline. Hands on: modify XQuery to change the output. Visualization is the output of a query. Word cloud bashing earlier in the week?
+
+General: Integrate critiques of exemplary editions? Perhaps use them where appropriate as illustrations, instead of making them a separate daily activity?
+
+Action items:
+
+David:
+
+Add "digital edition as workstation" somewhere
+Invert hierarchy on overlap processing page
+Add something about the complexity of the long horizontal axes to processing page
+Visualize LMNL poem with Luminescent?
+
+Elli:
+
+Add editions with innovative visualization not by djb to sample_visualizations.md page
+
