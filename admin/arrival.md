@@ -26,7 +26,7 @@ You should plan to arrive at Panther Central, but we recommend inputting “204 
 
 ## Arrival at Panther Central
 
-Panther Cental is the University of Pittsburgh’s information center regarding housing, services, and daily living. They are inside in the Litchfield Towers lobby, which is located at 3990 Fifth Ave, and they are open 24/7. One of the Institute assistants will be available to greet you, and we will send their contact information in a separate email. If your trip is delayed in any way, please contact them so that they will know when to expect you.
+Panther Cental is the University of Pittsburgh’s information center regarding housing, services, and daily living. They are inside the Litchfield Towers lobby, which is located at 3990 Fifth Ave, and they are open 24/7. One of the Institute assistants will be available to greet you, and we will send their contact information in a separate email. If your trip is delayed in any way, please contact them so that they will know when to expect you.
 
 <iframe src="https://www.google.com/maps/place/Litchfield+Towers/@40.4425768,-79.9588636,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f229a4813fd1:0xc31e99c1cd40a71e!8m2!3d40.4425727!4d-79.9566749" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
@@ -38,7 +38,7 @@ If you are driving, your parking pass for the [Posvar Hall](http://www.tour.pitt
 
 ### Weather
 
-Pittsburgh weather during July tends towards hot and muggy, with frequent thunderstorms. Temperatures average around 85° F (30° C). You’ll want to bring an umbrella, rain jacket, and comfortable walking shoes. Although it is not usually a tropical place, Pittsburgh in July requires sunscreen, water, and patience. Bouquet Gardens is air-conditioned, as are all buildings on campus.
+Pittsburgh weather during July tends to be hot and muggy, with frequent thunderstorms. Temperatures average around 85° F (30° C). You’ll want to bring an umbrella, rain jacket, and comfortable walking shoes. Although it is not usually a tropical place, Pittsburgh in July requires sunscreen, water, and patience. Bouquet Gardens is air-conditioned, as are all buildings on campus.
 
 ### Power adapters and technology
 
