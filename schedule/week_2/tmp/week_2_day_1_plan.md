@@ -6,6 +6,9 @@
 
 On the first day of Week 2 we emphasize three foundational aspects of digital textual scholarship: text as graph (TAG), theory of edition, and the Gothenburg model of textual variance (GM). This day will also cover developing project specifications and defining goals and non-goals to avoid scope-creep.
 
+### Outcome goals
+* _[some text here]_
+
 ### Legend
 
 * **Presentation:** by instructors
