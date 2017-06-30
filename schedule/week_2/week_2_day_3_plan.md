@@ -43,8 +43,6 @@ Week 2, Day 3 expands upon the idea of digital editions as text processing pipel
 	* variant graph as a model
 	* visualization of collation output
 * Tokenization and normalization for collation purposes
-	* near matching?
-	* collation with markup
 
 #### Outcome goals
 * Normalize, tokenize, and collate text
