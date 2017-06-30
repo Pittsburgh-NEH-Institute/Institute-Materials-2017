@@ -18,7 +18,7 @@ Uber and Lyft are ride-sharing services available via phone app.  Download eithe
 You should plan to arrive at Panther Central, but we recommend inputting "204 Brackenridge Hall" into your GPS or Mapquest for parking purposes.  You'll park in the quad and walk up the steps to Litchfield Towers, where you'll receive a parking pass to be used in the Posvar garage.  If you are arriving on Sunday, parking in the quad is free.  For Saturday arrivals, you will not be parked for more than 10 minutes, but we recommend having a spare quarter for the meter, just in case.
 
 ## Arrival at Panther Central
-Panther Cental is the University of Pittsburgh's information center regarding housing, services, and daily living.  They are located in Litchfield Towers lobby, which is located at 3990 Fifth Ave.  They are open 24/7.  One of the assistants will be available to greet you.  Their contact information will be made available in a separate email.  If your trip is delayed in anyway, please contact them so they can greet you.
+Panther Central is the University of Pittsburgh's information center regarding housing, services, and daily living.  They are located in Litchfield Towers lobby, which is located at 3990 Fifth Ave.  They are open 24/7.  One of the institute assistants will be available to greet you.  Their contact information will be made available in a separate email.  If your trip is delayed in anyway, please contact them so they can greet you.
 
 <iframe src="https://www.google.com/maps/place/Litchfield+Towers/@40.4425768,-79.9588636,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f229a4813fd1:0xc31e99c1cd40a71e!8m2!3d40.4425727!4d-79.9566749" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
@@ -29,7 +29,7 @@ If you are driving, your parking pass for Posvar's parking garage will be in you
 ## Preparing for your trip
 
 ### Weather
-Pittsburgh weather during July tends towards hot and muggy, with frequent thunderstorms.  Temperatures average around 85° F or 30° C.  You'll want to bring an umbrella, rain jacket, and comfortable walking shoes.  Though not usually a tropical place, Pittsburgh in July requires sunscreen, water, and patience.  Bouquet Gardens is air-conditioned, as are all buildings on campus.
+Pittsburgh weather during July tends to be hot and muggy, with frequent thunderstorms.  Temperatures average around 85° F or 30° C.  You'll want to bring an umbrella, rain jacket, and comfortable walking shoes.  Though not usually a tropical place, Pittsburgh in July requires sunscreen, water, and patience.  Bouquet Gardens is air-conditioned, as are all buildings on campus.
 
 ### Power adapters and technology
 Since power supplies and wall outlets vary throughout the world, please be sure to bring your own power adapter/converter.  Global converters are acceptable, but you can also purchase ones specifically for the [United States](https://www.power-plugs-sockets.com/united-states-of-america/).  We do not recommend bringing any foreign hairdryers, straighteners, or curling irons.
