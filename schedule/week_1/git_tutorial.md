@@ -4,7 +4,7 @@ Some introduction here
 
 Git is a content management system, but not in the usual way you would expect from well-known Content Management Systems (CMS) like Wordpress or Drupal, or well-known file-sharing systems like Dropbox or Box. For this reason, Git is called a *content tracker*.
 
-## Set your indentity
+## Set your identity
 
 When you start working with Git you need to set your identity. This identity will be used to track all the changes that you make to content in a repository. You only have to do this once on each machine that you use.
 
