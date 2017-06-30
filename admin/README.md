@@ -7,4 +7,4 @@ permalink: /admin/
 * [Arrival](arrival.md)
 * [Housing information](housing.md)
 * [Classroom schedule](room_schedule.md)
-* [Pittsburgh visitor's guide](things_to_do.md)
+* [Pittsburgh visitor’s guide](things_to_do.md)
