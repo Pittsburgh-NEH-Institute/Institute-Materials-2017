@@ -6,8 +6,6 @@
 
 Week 2, Day 5 concentrates on ... 
 
-### Outcome goals
-* _[some text here]_
 
 ### Legend
 
@@ -18,7 +16,7 @@ Week 2, Day 5 concentrates on ...
 
 -------
 
-### 9:00-10:30: Modeling, Queries, Visualization
+### 9:00-10:30: Modeling: Queries and Visualization
 
 #### Topics and Activities
 * [_some text here_]
