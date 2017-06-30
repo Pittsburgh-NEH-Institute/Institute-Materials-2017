@@ -4,11 +4,12 @@
 
 ### Synopsis
 
-Week 2, Day 2 concentrates on ... 
+Week 2, Day 2 introduces the idea of digital editions as  computational pipelines for text processing. The [Gothenburg model of textual variation](gothenburg.md) (GM) serves as an example of a computational pipeline from the perspective of textual criticism. **[expand]**
 
 ### Outcome goals
 * How XML copes with limitations of the tree as a document model
-* What’s so bad about work-arounds and relying on application-level semantics?
+* What’s so bad about work-arounds and relying on application-level semantics?  
+
 ### Legend
 
 * **Presentation:** by instructors
@@ -58,20 +59,19 @@ ______
 ### 12:30-14:00: Lunch (on your own)
 
 ### 14:00-15:30: Models and Computational Pipelines
-
-#### Synopsis
-Week 2, Day 2 introduces the [Gothenburg model of textual variation](gothenburg.md) (GM) as an example of a computational pipeline from the perspective of textual criticism.  
+  
 
 #### Outcome goals
-* Digital editions as computational pipelines for text processing
-* The five components of GM: tokenization, normalization, alignment, analysis, visualization
-* The role of GM components outside the analysis of variation
+
 * Conceptualizing digital editing as several steps or stadia, starting from one or several research questions and leading to an outcome
-* Understanding the GM as a computational pipeline —and not only for the study of variation 
+* The five components of GM: tokenization, normalization, alignment, analysis, visualization
+* Understanding the GM as a computational pipeline — not only for the study of textual variation 
 
 ### 15:30-16:00: Coffee/Tea
 
 ### 16:00-17:30: Tokenization 1
+
+**[note: base this section partly on DB tutorial on XML processing]**
 
 #### Topics and Activities
 * [_some text here_]

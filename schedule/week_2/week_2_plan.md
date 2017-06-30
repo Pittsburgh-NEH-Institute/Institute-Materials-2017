@@ -27,52 +27,6 @@ ____
 
 ## Week 2, Day 2: Tuesday, July 18
 
-### Synopsis
-
-Week 2, Day 2 introduces the [Gothenburg model of textual variation](gothenburg.md) (GM) as an example of a computational pipeline perspective textual criticism. 
-
-#### Outcome goals
-
-* Digital editions as computational pipelines
-* The five components of GM: tokenization, normalization, alignment, analysis, visualization
-* The role of GM components outside the analysis of variation
-* Tokenization in Python and in XSLT
-* Normalization in Python and in XSLT
-
-### 9:00–10:30: Introducing Text as Graph (TAG)
-
-#### Topics and activities 
-
-* Review of Week 2, day 1
-	* The digital edition as a computational pipeline
-	* Where data modeling belongs in the work flow
-	* Markup as an expression of a data model; making the implicit explicit and machine-actionable
-	* Model, syntax, and markup semantics
-	* How XML copes with limitations of the tree as a document model
-	* What’s so bad about work-arounds and relying on application-level semantics?
-* Research-driven annotation: 1) What are the inherent properties of the text, and 2) What do I need for my research? Research questions →  data model (including query facilities) →  markup/annotation.
-* Introduction to Text as Graph (TAG)
-* Modeling overlap and discontinuity in XML, LMNL, and TAG
-* Using a schema to bring markup semantics into the model at the application level
-* LMNL ranges and TAG sets: similarities and differences: Mrs. Warren’s profession as [plain text](shaw.txt), XML, LMNL, and in TAG
-
-#### Outcome goals
-
-* Fundamentals of TAG: hypergraph
-* Modeling discontinuity
-* **Community-driven** vs **research-driven** analysis; “how do I do this in X?” vs “how should I model this?” 
-
-### 11:00–12:30: The Gothenburg model of textual variation (GM)
-
-#### Topics and activities
-
-* Successful modeling reduces iterations of the document analysis → schema development → markup pipeline.
-* The [Gothenburg model of textual variation (GM)](gothenburg.md) as a computational pipeline
-
-#### Outcome goals
-
-* GM as a computational pipeline—and not only for the study of variation
-
 ### 2:00–3:30
 
 ### 4:00-5:30
