@@ -4,7 +4,16 @@
 
 ### Synopsis
 
-Week 2, Day 1 concentrates on modeling textual documents, with attention to alternative models and their syntactic expressions. This day will also cover developing project specifications and defining goals and non-goals to avoid scope-creep.
+The first day of Week 2 starts with defining research questions within the framework of project planning. We focus on developing project specifications, and defining goals and non-goals to avoid scope-creep. By investigating  computational and processing pipelines, we take on a modular approach to digital editing. The focus is on modeling textual documents, with attention to alternative models and their syntactic expressions. 
+
+#### Outcome goals
+
+* The digital edition as a computational pipeline
+* Where data modeling belongs in the work flow
+* Markup as an expression of a data model; making the implicit explicit and machine-actionable
+* Model, syntax, and markup semantics
+
+
 
 ### Legend
 
@@ -15,41 +24,29 @@ Week 2, Day 1 concentrates on modeling textual documents, with attention to alte
 
 ______
 
-### 9:00–10:30 Overview of Week 2 and planning your project
+### 9:00–10:30: Overview of Week 2 and planning your project
 
 Time | Topic | Type
 ---- | ----  | ----
-9:00–9:20 (20) | [Overview of Week 2](topics.md) | Presentation
-9:20–9:40 (20) | Explore [project planning questions](project_planning.md) | Discussion
-9:40–10:10 (30) | Apply project planning questions to your own project (individually or collaboratively) | Talk lab
-10:10–10:30 (30) | General discussion of Talk lab results | Discussion
+20 min | [Overview of Week 2](topics.md) | Presentation
+20 min | Explore [project planning questions](project_planning.md) | Discussion
+30 min | Apply project planning questions to your own project (individually or collaboratively) | Talk lab
+30 min | General discussion of Talk lab results | Discussion
 
-### 10:30–11:00 Coffee break
+### 10:30–11:00: Coffee break
 
-### 11:00–12:30 Theory of edition
+### 11:00–12:30: Theory of Edition
 
 Are you making an edition of a manuscript or of a text? What is the role of language and orthography in the edition? How will the text be presented? How can the user interact with the view? What will be the role of graphic visualization?
 
 Time | Topic | Type
 ---- | ----  | ----
-(20 min) | Explore [edition terms and concepts](edition_terms_and_concepts.md) | Discussion
-(30 min) | [It isn’t just words! Explore [visualization as edition](sample_visualizations.md) _NOTE: might move to different day_] | Discussion
-(20 min) | Explore participant data in light of terms and concepts | Talk lab
-(20 min) | General discussion of Talk lab results | Discussion
+20 min | Explore [edition terms and concepts](edition_terms_and_concepts.md) | Discussion
+30 min | [It isn’t just words! Explore [visualization as edition](sample_visualizations.md) _NOTE: might move to different day_] | Discussion
+20 min | Explore participant data in light of terms and concepts | Talk lab
+20 min | General discussion of Talk lab results | Discussion
 
 ### 12:30–14:00 Lunch (on your own)
-
-
-
---------
-#### Outcome goals
-
-* The digital edition as a computational pipeline
-* Where data modeling belongs in the work flow
-* Markup as an expression of a data model; making the implicit explicit and machine-actionable
-* Model, syntax, and markup semantics
-* How XML copes with limitations of the tree as a document model
-* What’s so bad about work-arounds and relying on application-level semantics?
 
 ### 14:00-15:30: Model, syntax, and markup semantics
 

@@ -7,8 +7,8 @@
 Week 2, Day 2 concentrates on ... 
 
 ### Outcome goals
-* _[some text here]_
-
+* How XML copes with limitations of the tree as a document model
+* What’s so bad about work-arounds and relying on application-level semantics?
 ### Legend
 
 * **Presentation:** by instructors
