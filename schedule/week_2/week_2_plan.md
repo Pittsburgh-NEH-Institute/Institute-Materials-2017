@@ -24,42 +24,6 @@ Bumped to make room for Mike: Annotation 2 and review (Thursday); Queries 2, vis
 
 ____
 
-## Week 2, Day 1: Monday, July 17
-
-### 2:00–3:30: XML as a tree
-
-#### Topics and activities
-
-* XPath as a way of navigating the tree
-* XPath path expressions: axes and node type selectors
-* **Hands on:** XPath navigation of [*Hamlet*](hamlet.xml) in \<oXygen/\> 
-* **Hands on:** XPath navigation of overlap in [“Ozymandias”](ozymandias.xml)
-* What’s so bad about markup semantics, the application layer, and workarounds?
-* The [cost of workarounds during processing](overlap_xml.md)
-
-#### Outcome goals
-
-* XML looks like a string (and it’s defined that way in the spec), but it’s really a tree. This requires workarounds not only in the markup, but also in the query.
-
-#### Reading
-
-* [“What can XPath do for me?”](http://dh.obdurodon.org/introduction-xpath.xhtml) (optional)
-
-### 4:00-5:30: Transcription with markup: LMNL
-
-#### Topics and activities
-
-* XML and LMNL sawtooth syntax only look alike, and LMNL isn’t just XML with overlap
-* **Hands on:** Tag [“Ozymandias”](ozymandias.txt) in LMNL
-* What is Alexandria?
-* Validation of LMNL with Luminescent
-* Visualization of LMNL in Alexandria
-
-#### Outcome goals
-
-* Looking at and working with non-XML markup expands our ways of thinking about text, and about the workarounds we need in XML
-* How do XML (tree) and LMNL (range) model “what text really is”? 
-* Why does it matter as long as the workarounds work?
 
 ## Week 2, Day 2: Tuesday, July 18
 

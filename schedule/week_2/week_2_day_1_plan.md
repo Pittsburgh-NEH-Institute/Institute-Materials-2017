@@ -12,7 +12,7 @@ The first day of Week 2 starts with defining research questions within the frame
 * Where data modeling belongs in the work flow
 * Markup as an expression of a data model; making the implicit explicit and machine-actionable
 * Model, syntax, and markup semantics
-
+* Successful modeling reduces iterations of the document analysis → schema development → markup pipeline.
 
 
 ### Legend

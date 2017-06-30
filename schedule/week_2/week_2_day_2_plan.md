@@ -57,12 +57,17 @@ ______
 
 ### 12:30-14:00: Lunch (on your own)
 
-### 14:00-15:30: Models, Computational Pipelines
-* [_some text here_]
-* Gothenburg Model (GM) as an illustration of a computational pipeline
+### 14:00-15:30: Models and Computational Pipelines
+
+#### Synopsis
+Week 2, Day 2 introduces the [Gothenburg model of textual variation](gothenburg.md) (GM) as an example of a computational pipeline from the perspective of textual criticism.  
 
 #### Outcome goals
-* _[some text here]_
+* Digital editions as computational pipelines for text processing
+* The five components of GM: tokenization, normalization, alignment, analysis, visualization
+* The role of GM components outside the analysis of variation
+* Conceptualizing digital editing as several steps or stadia, starting from one or several research questions and leading to an outcome
+* Understanding the GM as a computational pipeline —and not only for the study of variation 
 
 ### 15:30-16:00: Coffee/Tea
 
@@ -72,4 +77,5 @@ ______
 * [_some text here_]
 
 #### Outcome goals
-* _[some text here]_
+* Tokenization in Python and in XSLT
+* Normalization in Python and in XSLT
