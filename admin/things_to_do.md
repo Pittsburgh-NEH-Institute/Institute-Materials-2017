@@ -6,7 +6,7 @@ Pittsburgh is home to many great attractions. While you are not in the classroom
 
 While Pittsburgh’s LRT (light rail train) service may not serve most of the city, the bus system is well developed and easy to use. We recommend using Google Maps to help you navigate transport here. We also recommend purchasing a [Connect Card](http://www.connectcard.org/connectcard-locations.aspx), which will save you a few dollars if you’re planning on making multiple trips. You can purchase a Connect Card at United Check Cashing on Forbes Ave, which is just a [short walk from Bouquet Gardens](https://goo.gl/maps/S5o9wgsTmD92). 
 
-### [Bike the Burgh Tours](https://www.visitpittsburgh.com/listings/Bike-the-Burgh-Tours/8826/)
+## [Bike the Burgh Tours](https://www.visitpittsburgh.com/listings/Bike-the-Burgh-Tours/8826/)
 
 Want to see the city in a new way? Hop on a bike and take a tour of the town. Learn about the city’s history and culture while you cruise through the streets. Take a break and enjoy some lunch at a local restaurant. It’s a great way to work your mind and body at the same time!
 ## Oakland
