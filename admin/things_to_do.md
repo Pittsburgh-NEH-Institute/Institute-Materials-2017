@@ -37,4 +37,4 @@ Though a bit of a hike, North Side is a newly blossoming cultural hub.  Take in 
 
 ## Curiosities
 
-Of course, this list would be incomplete without the inimitable [Trundle Manor](http://www.trundlemanor.com/).  A roadside attraction and curiosity collection curated by Mr. Arm and Velda Von Minx.  Tours are reservation only, and its customary to donate $20 per person, though they also accept other donations as well.
+Of course, this list would be incomplete without the inimitable [Trundle Manor](http://www.trundlemanor.com/).  A roadside attraction and curiosity collection curated by Mr. Arm and Velda Von Minx.  Tours are reservation only, and its customary to donate $20 per person, though they also accept other donations as well.  Located in Swissvale, you will likely need to drive or take an Uber or Lyft to visit Trundle Manor, but it is well worth the trip.
