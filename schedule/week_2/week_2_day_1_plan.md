@@ -14,6 +14,7 @@ The first day of Week 2 starts with defining research questions within the frame
 * Model, syntax, and markup semantics
 * Successful modeling reduces iterations of the document analysis → schema development → markup pipeline.
 * Community-driven (prescriptive) vs research-driven (descriptive) analysis; “how do I do this in X?” vs “how should I model this?”
+* Think about and formulate research questions about your edition
 
 
 ### Legend
@@ -25,7 +26,7 @@ The first day of Week 2 starts with defining research questions within the frame
 
 ______
 
-### 9:00–10:30: Overview of Week 2 and planning your project
+### 9:00–10:30: Planning your project
 
 Time | Topic | Type
 ---- | ----  | ----
@@ -34,7 +35,7 @@ Time | Topic | Type
 30 min | Apply project planning questions to your own project (individually or collaboratively) | Talk lab
 30 min | General discussion of Talk lab results | Discussion
 
-### 10:30–11:00: Coffee break
+### 10:30–11:00: Coffee
 
 ### 11:00–12:30: Theory of Edition
 
@@ -53,7 +54,6 @@ Time | Topic | Type
 
 #### Topics and activities
 
-* The digital edition as a computational pipeline
 * Model, syntax, and markup semantics
 * XML, LMNL (model, sawtooth syntax), GODDAG, TexMECS, TAG. How they're similar and different, and how they only *appear* to be similar and different
 * XML is the only framework that is production ready today
@@ -72,7 +72,7 @@ Time | Topic | Type
 
 ### 15:30-16:00: Coffee / Tea
 
-### 16:00–17:30: Transcription with markup: XML
+### 16:00–17:30: Transcription with Markup: XML
 
 #### Topics and activities
 

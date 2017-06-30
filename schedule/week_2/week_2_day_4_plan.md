@@ -6,9 +6,6 @@
 
 Week 2, Day 4 concentrates on ... 
 
-### Outcome goals
-* _[some text here]_
-
 ### Legend
 
 * **Presentation:** by instructors
@@ -33,7 +30,7 @@ Week 2, Day 4 concentrates on ...
 * Understanding annotation as a form of adding layers to text
 * Varieties of layered editions
 
-### 10:30-11:00: Coffee/tea
+### 10:30-11:00: Coffee
 
 #### Outcome goals
 * Have more energy
@@ -58,7 +55,7 @@ MK: Bag of words, text processing, text as tables, query the tables
 #### Outcome goals
 * _[some text here]_
 
-### Coffee/Tea break
+### Coffee / Tea
 
 ### 16:00-17:30: Text analytics 2
 

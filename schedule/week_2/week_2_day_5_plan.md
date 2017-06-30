@@ -1,10 +1,10 @@
 # Week 2 - Day 5
 
-## Week 2, Day 4: Friday, July 21
+## Week 2, Day 5: Friday, July 21
 
 ### Synopsis
 
-Week 2, Day 5 concentrates on ... 
+Week 2, Day 5 concentrates on querying text and visualizations. **[add more text here]**
 
 
 ### Legend
@@ -44,7 +44,7 @@ MK: Unsupervised learning, cluster analysis, PCA, paleographic analysis
 #### Outcome goals
 * _[some text here]_
 
-### 15:30-16:00: Coffee/Tea
+### 15:30-16:00: Coffee / Tea
 
 ### 16:00-17:30: Text analytics 4
 
