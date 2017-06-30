@@ -102,8 +102,8 @@ Action items:
 David:
 
 Add "digital edition as workstation" somewhere
-Invert hierarchy on overlap processing page
-Add something about the complexity of the long horizontal axes to processing page
+Omit (too specialized): Invert hierarchy on overlap processing page
+Done: Add something about the complexity of the long horizontal axes to processing page
 Visualize LMNL poem with Luminescent?
 
 Elli:
