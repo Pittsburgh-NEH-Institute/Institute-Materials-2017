@@ -2,13 +2,13 @@
 
 ## Synopsis
 
-Scholars create digital editions to serve research purposes that may differ from project to project. The first day of Week 2 begins by exploring the relationship between defining research goals and project planning—which includes an awareness of non-goals to avoid scope-creep. By investigating the preparation of a digital edition in the context of computational and processing pipelines, we encourage a modular perspective on digital editing.
+Scholars create digital editions to serve research purposes that may differ from project to project. The first day of Week 2 begins by exploring the role in project planning of defining research goals (which includes defining *non-goals* in order to avoid *scope-creep*). From planning and research questions we move to modeling and structuring the digital edition workflow as a computational pipeline, encouraging a modular perspective on digital editing.
 
 ## Outcome goals
 
 * Don’t touch that keyboard! Planning the edition
 * Starting with research questions
-* Where data modeling belongs in the work flow
+* Where data modeling belongs in the workflow
 * Markup as an expression of a data model; making the implicit explicit and machine-actionable
 * The relationships among model, syntax, and markup semantics
 * How modeling reduces iterations of the document analysis → schema development → markup pipeline
@@ -25,14 +25,14 @@ ______
 
 ## 9:00–10:30: Planning your project
 
-There cannot be a single set of *best practice* recommendations for all digital editions because scholars create editions to meet different research goals, and they do under different working conditions. What’s the purpose of your edition, and what are the resources at your disposal and the constraints on your efforts?
+There cannot be a single set of *best practice* recommendations for all digital editions because scholars create editions to meet different research goals, and they do that under different working conditions. What’s the purpose of your edition, and what are the resources at your disposal and the constraints on your efforts?
 
 Time | Topic | Type
 ---- | ----  | ----
 20 min | [Overview of Week 2](topics.md) | Presentation
 20 min | Explore [project planning questions](project_planning.md) | Discussion
-30 min | Apply project planning questions to your own project (individually or collaboratively) | Talk lab
-30 min | General discussion of Talk lab results | Discussion
+25 min | Apply project planning questions to your own project (individually or collaboratively) | Talk lab
+25 min | General discussion of Talk lab results | Discussion
 
 ## 10:30–11:00: Coffee break
 
@@ -55,11 +55,10 @@ How can the elaboration of a digital edition be modularized? How are *model*, *s
 
 Time | Topic | Type
 ---- | ---- | ----
-15 min | Model, syntax, and markup semantics | Presentation
-20 min | Plain text as model and expression | Discussion
-15 min | XML as model and expression | Discussion
-20 min| Other models and their expressions: LMNL, GODDAG, TexMECS, TAG | Presentation
-20 min | XML and workarounds | Discussion
+20 min | Explore [model, syntax, and markup semantics](model_syntax_semantics.md) | Presentation
+25 min | Expore [plain text as model and expression](plain.md) | Discussion
+25 min | Explore [XML as model and expression](xml_model.md) | Discussion
+20 min| Explore [other models and their expressions: LMNL, GODDAG, TexMECS, TAG](other_models.md) | Presentation
 
 ## 3:30-4:00: Coffee break
 
