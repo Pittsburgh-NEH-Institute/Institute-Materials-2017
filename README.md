@@ -25,7 +25,7 @@ The instructors will be assisted by:
 <table>
 <tr><td><img src="images/gak.jpeg" width="200px" alt="[Keane picture]"/></td><td style="vertical-align: middle">Gabrielle (Gabi) Keane<br/>Senior Institute Assistant<br/>University of Pittsburgh</td></tr>
 <tr><td><img src="images/ekb.jpg" width="200px" alt="[Bennett picture]"/></td><td style="vertical-align: middle">Eleanor (Kyri) Bennett<br/>Institute Assistant<br/>University of Pittsburgh</td></tr>
-<tr><td><img src="images/ks.jpg" width="200px" alt="[Sanders image]"/></td><td style="vertical-align: middle">Kaylen Sanders<br/>Institute Assistant<br/>University of Pittsburgh</td></tr>
+<tr><td><img src="images/ks_cropped.png" width="200px" alt="[Sanders image]"/></td><td style="vertical-align: middle">Kaylen Sanders<br/>Institute Assistant<br/>University of Pittsburgh</td></tr>
 </table>
  
 ## Additional information
