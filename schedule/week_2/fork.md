@@ -1,6 +1,6 @@
 # Your Institute GitHub repository
 
-Files you use for Institute activities are located in our GtHub repository (*repo*), and in order to work with them, you’re going to create your own copy of the repo, called a *fork*. This page explains how to do that.
+Files you use for Institute activities are located in our GitHub repository (*repo*), and in order to work with them, you’re going to create your own copy of the repo, called a *fork*. This page explains how to do that.
 
 Git is a version control and general project management tool. GitHub is the social face of Git: you’ll use it to store your project files, share them with your project partners, keep track of revisions, and (typically) make them accessible to a broader community.
 
@@ -25,7 +25,7 @@ Create a GitHub account at <https://github.com/>.
 
 ## Set up your identity
 
-When you start working with Git on your local machine for the first time, you need to set your identity. Your identity is needed for you to be able to interact with your project project repository (*repo*). You only have to do this once on each machine that you use. To set up your identity, execute the commands below. Your name and email must match the ones you used when you created your GitHub account.
+When you start working with Git on your local machine for the first time, you need to set your identity, which makes it possible for you to interact with your project repository (*repo*) on GitHub. To set up your identity on your local machine, execute the commands below. Your name and email must match the ones you used when you created your GitHub account. You only have to do this once on each machine that you use. 
 
 ```sh
 git config --global user.name "John Doe"
@@ -56,7 +56,7 @@ Do all of your work on files in your local copy of your repo, synchronizing it w
 
 ## Telling your clone about the main Institute repo
 
-When you push to and pull from GitHub, you’re synchronizing the copy of the repo on your local machine with the one in your fork on GitHub. When you first created your fork, it was an exact copy of our repo, but it doesn’t automatically keep up with changes we make. In GitHub terminology, assuming you haven’t created other branches, your local repo is your local *master*, your fork on GitHub is *origin/master*, and our repo on GitHub is *upstream/master*. Your local copy knows about *origin/master* because that got configured automatically when you cloned your fork. But it doesn’t know about *upstream/master* until you tell it. You can do that by running the following command:
+When you push to and pull from GitHub, you’re synchronizing the copy of the repo on your local machine with the one in your fork on GitHub. When you first created your fork, it was an exact copy of our repo, but it doesn’t automatically keep up with changes we make. In GitHub terminology, assuming you haven’t created other branches, your local repo is your local *master*, your fork on GitHub is *origin/master*, and our repo on GitHub is *upstream/master*. Your local copy knows about *origin/master* because that got configured automatically when you cloned your fork, and that’s where you push and pull be default. But it doesn’t know about *upstream/master* until you tell it. You can do that by running the following command:
 
 ```sh
 git remote add upstream https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017.git
@@ -70,3 +70,7 @@ The meaning of the preceding command is explained at [Configuring a remote for a
 Once you’ve told your local clone about the upstream remote, you can fetch and merge from it any changes we may have made since you first created your fork. For instructions about how to do that, see [Syncing a fork](https://help.github.com/articles/syncing-a-fork/).
 
 Remember that you can’t push your local changes to our original repo because you don’t have write permission there. You can pull from both your GitHub fork (*origin/master*) and our repo (*upstream/master*), but you push only to your own repo (*origin/master*).
+
+## For more information
+
+For more information, see our [Git tutorial](../week_1/git_tutorial.md) and our list of links to [Git and GitHub resources](git_resources.md).
