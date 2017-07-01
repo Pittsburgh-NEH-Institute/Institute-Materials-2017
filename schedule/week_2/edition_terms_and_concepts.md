@@ -38,5 +38,5 @@ _____
 
 ## Readings (optional)
 
-* [_CCSG_] Brepols publishers. “Instructions and stylebook for the publication of texts in CCSG [_Corpus christianorum series graeca_].” <http://www.corpuschristianorum.org/series/pdf/CCSG_Guidelines.pdf>
-* Sels, Lara and David J. Birnbaum 2015. “Editing the _Bdinski sbornik_ as a multilayered reality.” _Агиославика. Проблеми и подходи в изследването на Станиславовия чети-миней: доклади от едноименната конференция - 21 май 2013 г._ (_Hagioslavica. Issues and approaches in the study of the_ Stanislav Reading Menaion: _presentations from the conference of May 21, 2013._), ed. Diana Atanasova. Sofia: Kliment Oxridski University, pp. 184–99.
+* [_CCSG_] Brepols publishers. [“Instructions and stylebook for the publication of texts in CCSG [_Corpus christianorum series graeca_].”](http://www.corpuschristianorum.org/series/pdf/CCSG_Guidelines.pdf)
+* Sels, Lara and David J. Birnbaum 2015. [“Editing the _Bdinski sbornik_ as a multilayered reality.”](../../general/2014-01-14_bdinski-sofia-paper.pdf) _Агиославика. Проблеми и подходи в изследването на Станиславовия чети-миней: доклади от едноименната конференция - 21 май 2013 г._ (_Hagioslavica. Issues and approaches in the study of the_ Stanislav Reading Menaion: _presentations from the conference of May 21, 2013._), ed. Diana Atanasova. Sofia: Kliment Oxridski University, pp. 184–99.
