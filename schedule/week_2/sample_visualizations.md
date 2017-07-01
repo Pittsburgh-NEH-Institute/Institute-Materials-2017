@@ -8,7 +8,7 @@ Comparative visualizations are designed to explore textual variation.
 
 ### Commentary on the Sentences by Petrus Plaoul
 
-<http://petrusplaoul.org/text/questions/plaoulcommentary>
+**URL:** <http://petrusplaoul.org/text/questions/plaoulcommentary>
 
 <img src="Images/petrus.png" width="99%" alt="[Daniel image]"/>
 
@@ -16,7 +16,7 @@ Materials for an eventual critical edition of the Sentences commentary of Peter 
 
 ### Daniel the Prisoner: A virtual florilegium
 
-<http://zatochnik.obdurodon.org/>
+**URL:** <http://zatochnik.obdurodon.org/>
 
 <img src="Images/zatochnik.png" width="99%" alt="[Daniel image]"/>
 
@@ -24,7 +24,7 @@ There are two main redactions or versions, the twelfth-century _Slovo Daniila Za
 
 ### Digenis Akritis: Lay of the Emir
 
-<http://digenis.obdurodon.org/emir.xhtml>
+**URL:** <http://digenis.obdurodon.org/emir.xhtml>
 
 <img src="Images/emir.png" width="99%" alt="[Daniel image]"/>
 
@@ -32,7 +32,7 @@ The seventeenth-century Slavonic text has been reordered to model a hypothetical
 
 ### The story of Mary, Abraham’s niece
 
-<http://bdinski.obdurodon.org/tmp/mockup-abraham-2.xhtml>
+**URL:** <http://bdinski.obdurodon.org/tmp/mockup-abraham-2.xhtml>
 
 <img src="Images/bdinski.png" width="99%" alt="[Daniel image]"/>
 
@@ -40,7 +40,7 @@ Mockup of a reading view that coordinates Slavonic, Greek, and English texts wit
 
 ### Repertorium workstation
 
-<http://repertorium.obdurodon.org/>
+**URL:** <http://repertorium.obdurodon.org/>
 
 <img src="Images/dendrogram.png" width="99%" alt="[Daniel image]"/>
 
@@ -50,7 +50,7 @@ The *Repertorium of Old Bulgarian literature and letters* is a metadata project 
 
 ### StemmaWeb
 
-<https://stemmaweb.net/stemmaweb/>
+**URL:** <https://stemmaweb.net/stemmaweb/>
 
 <img src="Images/stemmaweb.png" width="99%" alt="[Daniel image]"/>
 
@@ -62,7 +62,7 @@ Close reading visualizations are designed to explore structural and other proper
 
 ### Russian verse
 
-<http://poetry.obdurodon.org>
+**URL:** <http://poetry.obdurodon.org>
 
 <img src="Images/gippius.png" width="99%" alt="[Daniel image]"/>
 
