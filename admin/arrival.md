@@ -26,7 +26,7 @@ You should plan to arrive at Panther Central, but we recommend inputting “204 
 
 ## Arrival at Panther Central
 
-Panther Cental is the University of Pittsburgh’s information center regarding housing, services, and daily living. They are inside the Litchfield Towers lobby, which is located at 3990 Fifth Ave, and they are open 24/7. One of the Institute assistants will be available to greet you, and we will send their contact information in a separate email. If your trip is delayed in any way, please contact them so that they will know when to expect you.
+Panther Central is the University of Pittsburgh’s information center regarding housing, services, and daily living. They are inside the Litchfield Towers lobby, which is located at 3990 Fifth Ave, and they are open 24/7. One of the Institute assistants will be available to greet you, and we will send their contact information in a separate email. If your trip is delayed in any way, please contact them so that they will know when to expect you.
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12145.909023146369!2d-79.9566749!3d40.4425727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc31e99c1cd40a71e!2sLitchfield+Towers!5e0!3m2!1sen!2sus!4v1498886736965" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>Upon arrival, you will receive your welcome packet, pick up your utility card (which provides admission to your room), and (optionally) load your card with funds for laundry. One of the Institute assistants will then escort you to [Bouquet Gardens](https://www.studentaffairs.pitt.edu/drs/bouquet-gardens/), where you will be staying.
 
