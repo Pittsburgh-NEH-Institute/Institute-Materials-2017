@@ -6,6 +6,10 @@
 
 Week 2, Day 2 introduces the idea of digital editions as  computational pipelines for text processing. The [Gothenburg model of textual variation](gothenburg.md) (GM) serves as an example of a computational pipeline from the perspective of textual criticism. **[expand]**
 
+### [Outcome goals moved forward from Day 1]
+
+* Community-driven (prescriptive) vs research-driven (descriptive) analysis; “how do I do this in X?” vs “how should I model this?”
+* Modular development: the digital edition as a computational pipeline
 
 ### Legend
 
