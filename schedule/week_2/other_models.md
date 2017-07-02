@@ -18,7 +18,7 @@ For more information see Wendell Piez, [LMNL in miniature. An introduction.](htt
 
 A data structure for representing documents with overlapping structures, which permits children to have multiple parents. Consider the following minimalist poem:
 
-<img src="Images/Marcoux01-001.png" width="99%" alt="[GODDAG example]"/>
+<img src="Images/Marcoux01-001.png" alt="[GODDAG example]"/>
 
 Image from Yves Marcoux, [Graph characterization of overlap-only TexMECS and other overlapping markup formalisms](http://www.balisage.net/Proceedings/vol1/html/Marcoux01/BalisageVol1-Marcoux01.html). For more information see C. M. Sperberg-McQueen and Claus Huitfeldt, [GODDAG: A data structure for overlapping hierarchies](http://cmsmcq.com/2000/poddp2000.html).
 
