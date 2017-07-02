@@ -1,0 +1,10 @@
+p{
+    color: red;
+    font-weight: bold;
+}
+#redButton{
+    background-color: pink;
+}
+#greenButton{
+    background-color: lightgreen;
+}

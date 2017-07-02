@@ -446,13 +446,19 @@ This is an exercise in running into problems and resolving them, not an exercise
 
 ### Web technologies
 
-[30 mins]
+[60 mins]
 
 * HTML
 * CSS
 * JavaScript
-* PHP
-* CMS and framework
+* PHP, CMS and framework
+
+### Markdown
+
+[30 min]
+
+* [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [Pandoc](http://pandoc.org/)
 
 ### Connecting to remote systems
 
