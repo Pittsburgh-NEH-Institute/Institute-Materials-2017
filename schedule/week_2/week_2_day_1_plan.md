@@ -69,10 +69,10 @@ How are documents like trees and how are they different? What is represented by 
 Time | Topic | Type
 ---- | ---- | ----
 20 min | Create [your own fork of our Institute GitHub repository](fork.md) | Code lab
-15 min | XML as a tree (OHCO: “ordered hierarchy of content objects”) | Discussion
-10 min | Making the implicit explicit with markup | Presentation
+15 min | XML as a tree ([OHCO: “ordered hierarchy of content objects”](ohco.md)) | Discussion
+15 min | [Making the implicit explicit with markup](explicit.md) | Discussion
 25 min | Tag [“Ozymandias”](ozymandias.txt) in XML (e.g., lines, sentences, phrases, speakers, words, feet, syllables, stress) | Code lab
-20 min | What’s hard in XML: overlap, discontinuity, containment vs dominance, white space tokenization, artificial hierarchy, scope of reference | Discussion
+15 min | What’s hard in XML: overlap, discontinuity, containment vs dominance, white space tokenization, artificial hierarchy, scope of reference | Discussion
 
 
 ## Readings (optional)

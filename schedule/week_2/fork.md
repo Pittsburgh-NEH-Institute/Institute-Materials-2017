@@ -56,7 +56,7 @@ Do all of your work on files in your local copy of your repo, synchronizing it w
 
 ## Telling your clone about the main Institute repo
 
-When you push to and pull from GitHub, you’re synchronizing the copy of the repo on your local machine with the one in your fork on GitHub. When you first created your fork, it was an exact copy of our repo, but it doesn’t automatically keep up with changes we make. In GitHub terminology, assuming you haven’t created other branches, your local repo is your local *master*, your fork on GitHub is *origin/master*, and our repo on GitHub is *upstream/master*. Your local copy knows about *origin/master* because that got configured automatically when you cloned your fork, and that’s where you push and pull be default. But it doesn’t know about *upstream/master* until you tell it. You can do that by running the following command:
+When you push to and pull from GitHub, you’re synchronizing the copy of the repo on your local machine with the one in your fork on GitHub. When you first created your fork, it was an exact copy of our repo, but it doesn’t automatically keep up with changes we make. In GitHub terminology, assuming you haven’t created other branches, your local repo is your local *master*, your fork on GitHub is *origin/master*, and our repo on GitHub is *upstream/master*. Your local copy knows about *origin/master* because that got configured automatically when you cloned your fork, and that’s where you push and pull by default. But it doesn’t know about *upstream/master* until you tell it. You can do that by running the following command:
 
 ```sh
 git remote add upstream https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017.git
