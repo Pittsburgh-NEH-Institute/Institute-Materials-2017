@@ -20,7 +20,7 @@ Taxi service is available at the airport (same side as the 28X bus) and does not
 
 Uber and Lyft are ride-sharing services available via phone app. Download either app from the app store, input your information, and list “Thackeray Ave and Fifth Ave” as your destination. Fares vary with demand, but typically cost between $30 and $70 (not including gratuity). When you arrive, follow directions to Panther Central below.
 
-## Driving directions
+### Driving directions
 
 You should plan to arrive at Panther Central, but we recommend inputting “204 Brackenridge Hall” into your GPS or Mapquest for parking purposes. You’ll park in the quad and walk up the steps to Litchfield Towers, where you’ll receive a parking pass to be used in the Posvar garage. If you are arriving on Sunday, parking in the quad is free. For Saturday arrivals, you will not be parked for more than 10 minutes, but we recommend having a spare quarter for the meter, just in case.
 
