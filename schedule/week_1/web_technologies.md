@@ -26,7 +26,7 @@ HTML is a tag set controlled by a schema (rules for which tags are permitted in 
 * Lists (`<ul>` for bulleted lists, `<ol>` for numbered list). The only children allowed for these list are `<li>` (list item).
 * Tables. Not covered in this exercise.
 
-You’ll some of these in use shortly.
+You’ll use some of these shortly.
 
 ### Looking at HTML
 
