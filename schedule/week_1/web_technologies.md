@@ -37,7 +37,7 @@ You’ll use some of these shortly.
 
 ### Working with HTML
 
-* The only part of the HTML file displayed inside the browesr window is the part inside the `<body>` tags. Notice that we’ve used several of the element types described earlier.
+* The only part of the HTML file displayed inside the browser window is the part inside the `<body>` tags. Notice that we’ve used several of the element types described earlier.
 * Modify the text of the HTML file in \<oXygen/\>. You might add additional paragraphs (`<p>`) elements or headers (`<h1>` through `<h6>`). You can change the bulleted list to a numbered one by changing the wrapper from `<ul>` to `<ol>` (you need to change both the start and end tag, although if you change the start tag first, \<oXygen/\> will usually change the end tag automatically to match).
 * If you see a green square in the upper right corner of the editor windows, your HTML is valid. If not, it isn’t, and you need to fix it. For example, a `<p>` cannot contain another `<p>` because paragraphs in text are not normally nested inside one another. \<oXygen/\> will try to identify the location of the error and highlight it with a squiggly red line, although it sometimes isn’t able to tell because an error in one place could become apparent only lower in the document.
 * When you have a green square, save your document from within \<oXygen/\> and then reload it into the browser, observing the changes. 
