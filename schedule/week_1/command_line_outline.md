@@ -28,6 +28,7 @@ ____
 
 * **To show hidden files for Mac OS Sierra:** Open the Finder and hit `Cmd+Shift+.` (dot)
 * **To show hidden files for Mac OS El Capitan:** Execute `defaults write com.apple.finder AppleShowAllFiles YES` on the command line
+* **To show filename extensions for Mac OS:** Open the Finder and choose Preferences, click Advanced, and check the box next to "Show all filename extensions". 
 * **To show hidden files for Windows:** Control Panel → Appearance and Personalization → File Explorer Options → View → select “Display the full path in the title bar” *and* “Show hidden files, folders, and drives”.
 * **To show filename extensions for Windows:** Open File Explorer, click the View tab at the top, select “File name extensions” under the Show/hide tab.
 
