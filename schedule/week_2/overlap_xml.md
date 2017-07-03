@@ -52,7 +52,7 @@ This isn’t a problem in LMNL, though, because LMNL ranges, unlike XML elements
 
 ## Processing complications
 
-Overlap in XML is problematic not only during markup, buit also during processing. Processing elements tagged with wrappers (like `<phr>` in the XML above) is easy because the XPath target is a single element. Processing elements delimited by milestones (like `<lb>` above) is harder.
+Overlap in XML is problematic not only during markup, buit also during processing. Processing elements tagged with wrappers (like `<phr>` in the XML above) is easy because the XPath target is a single element. Processing elements delimited by milestones (like `<lb>` above) is harder. Try the following in the \<oXygen/\> XPath browser box.
 
 ### XPath
 
@@ -78,11 +78,11 @@ for $lb in //lb return string-join($lb/following::text()[preceding::lb[1] is $lb
 
 The preceding XPath expression finds of the `text()` nodes that follow each `<lb>` and filters them with a predicate that keeps only the ones whose first preceding `<lb>` is the one we’re processing at the moment. The predicate is complex, and because we’re returning multiple nodes on each pass through the loop (unlike the single `<phr>` elements returned in the earlier examples), we need to assemble the ones that belong to the same line, which we do with the `string-join()` function.
 
-Not only is the milestone workaround for overlapping hierarchies more complex for the human, but it is also more complex for the computer. Tree traversal is relatively quick, but the XPath long horizontal (`preceding::` and `following::`) axes are unable to take the same navigational advantage of the tree structure as the other axes. The consequences may not be noticeable if the data set is small, or if the processing environment uses indexing or internal optimizations to mitigate the effects, but, in general, traversing the long horizontal axes will not be as fast as other traversals.
+Not only is the milestone workaround for overlapping hierarchies more complex for the human during markup, but it is also more complex for the computer during search and retrieval. Tree traversal is relatively quick, but the XPath long horizontal (`preceding::` and `following::`) axes are unable to take the same navigational advantage of the tree structure as the other axes. The consequences may not be noticeable if the data set is small, or if the processing environment uses indexing or internal optimizations to mitigate the effects, but, in general, traversing the long horizontal axes will not be as fast as other traversals.
 
 ### XQuery
 
-Below is an XQuery script that outputs the information from the XPath expressions above as XML, enriched with additional markup:
+Below is an XQuery script that outputs the information from the XPath expressions above as XML, enriched with additional markup. The corresponding simple XPath expressions are given as XQuery comments, which are delimited by smiley faces: `(:` and `:)`.
 
 
 ```xquery
