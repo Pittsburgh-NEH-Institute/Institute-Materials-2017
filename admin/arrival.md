@@ -1,4 +1,4 @@
-# Arrival Instructions
+# Arrival instructions
 
 ## Getting from the airport to the University of Pittsburgh
 
