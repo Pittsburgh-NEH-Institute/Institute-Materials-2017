@@ -19,7 +19,11 @@ The text of the prompt is configurable, and by default it adapts to the machine 
 
 ## Tutorial
 
-We recommend Software Carpentry’s [Unix shell](http://swcarpentry.github.io/shell-novice/).
+* For a solid beginner-level introduction, we recommend Software Carpentry’s [Unix shell](http://swcarpentry.github.io/shell-novice/).
+* For a more comprehesive introduction, also suitable for beginners, we recommend William Shotts’s [The Linux Command Line](http://linuxcommand.org/tlcl.php). See also the same author’s:
+	* [Learning the shell](http://linuxcommand.org/lc3_learning_the_shell.php)
+	* [Writing shell scripts](http://linuxcommand.org/lc3_writing_shell_scripts.php)
+	* [Resources](http://linuxcommand.org/lc3_resources.php) portal
 
 ## Reference
 
