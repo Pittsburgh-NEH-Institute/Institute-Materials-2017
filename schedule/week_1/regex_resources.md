@@ -8,6 +8,7 @@
 * [RegexOne](https://regexone.com/). Learn Regular Expressions with simple, interactive exercises.
     * Interactive exercises (at the end of each lesson) are somewhat confusing. `.*` will produce a match for any string input, which is displayed as successful (check mark). 
     * The 9 "Practice Problems" are good. Scenarios useful in real life: matching email addresses, HTML, etc. 
+* Software Carpentry [Regular expressions tutorial](http://v4.software-carpentry.org/regexp/index.html)
 	
 ## Reference
 

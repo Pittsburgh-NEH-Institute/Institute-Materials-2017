@@ -514,8 +514,8 @@ In the first example below `%` removes a matching string at the end of the filen
 * `-w`: whole words (put phrases in single or double quotation marks)
 * `-i`: case insensitive
 * `-l`: filenames but not text
-* `-v` lines that don’t match
-* `-n`: line numbers
+* `-v`: lines that don’t match (“invert” the search)
+* `-n`: include line numbers in output
 * `-c`: count of matching lines
 * `-s`: silent mode (suppresses error messages)
 
