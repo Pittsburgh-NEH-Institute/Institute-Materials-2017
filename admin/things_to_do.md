@@ -35,6 +35,18 @@ With a strong [reputation](http://www.post-gazette.com/in-the-lead-2014-stories/
 
 Though a bit of a hike, the North Side is a newly blossoming cultural hub. Take in a [Pirates game at PNC Park](https://www.mlb.com/pirates), where even the cheapest seats afford you a great view of the city. Go a bit further into the North Side, where you’ll find the [National Aviary](https://www.aviary.org/). Just past the Aviary are the [Mexican War Streets](http://www.mexicanwarstreets.org/), a block of historic homes that have been decorated and converted in the last twenty years. The [Andy Warhol Museum](https://www.warhol.org/) holds the largest collection of Warhol’s art and archives in the world. The [Mattress Factory](www.mattress.org) is a contemporary art museum, installation lab, and artists’ residence known for its Yayoi Kusama and Greer Lankton installations. Just a block up the road lies a different type of installation: [Randyland](http://randy.land/). Part roadside attraction, part public garden, Randyland is home to artist Randy Gilson. After buying the property on a credit card in the nineties, Randy transformed his courtyard into a public art space and community garden, free to the public. We recommend driving or taking an Uber or Lyft to the North Side, as it requires a bus or train transfer.
 
+## Highland Park
+
+The highlight of this 380-acre park is the [Pittsburgh Zoo and PPG Aquarium] (http://pittsburghzoo.org/), 
+whose most recent addition to the family is a [newborn elephant calf] (http://pittsburghzoo.org/elephantblog).
+First opened in 1898 and home to over 400 species, the zoo has a long history of giving the public a chance 
+to see and learn about a wide array of animals. Stop by to catch a glimpse of some [white-bellied pangolins] (http://www.wpxi.com/news/top-stories/new-white-bellied-pangolins-now-at-pittsburgh-zoo-ppg-aquarium/524477271) 
+and immerse yourself in the natural world with the zoo's interactive exhibits. While you're in the neighborhood,
+consider exploring the rest of [Highland Park] (https://www.pittsburghparks.org/highland-park), which includes 
+two large water reservoirs, a bike track, walking trails, and a swimming pool. To get to this area of Pittsburgh, 
+you can take the 75 bus from Fifth at Bellefield. If you're interested in driving, free parking is available in 
+the zoo's main parking lot. 
+
 ## Curiosities
 
 Of course, this list would be incomplete without the inimitable [Trundle Manor](http://www.trundlemanor.com/), a roadside attraction and curiosity collection curated by Mr. Arm and Velda Von Minx. Tours are by reservation only, and it’s customary to donate $20 per person, though other donations are also welcome. Located in Swissvale, you will likely need to drive or take an Uber or Lyft to visit Trundle Manor, but it is well worth the trip.
