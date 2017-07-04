@@ -37,15 +37,15 @@ Though a bit of a hike, the North Side is a newly blossoming cultural hub. Take 
 
 ## Highland Park
 
-The highlight of this 380-acre park is the [Pittsburgh Zoo and PPG Aquarium] (http://pittsburghzoo.org/), 
-whose most recent addition to the family is a [newborn elephant calf] (http://pittsburghzoo.org/elephantblog).
-First opened in 1898 and home to over 400 species, the zoo has a long history of giving the public a chance 
-to see and learn about a wide array of animals. Stop by to catch a glimpse of some [white-bellied pangolins] (http://www.wpxi.com/news/top-stories/new-white-bellied-pangolins-now-at-pittsburgh-zoo-ppg-aquarium/524477271) 
-and immerse yourself in the natural world with the zoo's interactive exhibits. While you're in the neighborhood,
-consider exploring the rest of [Highland Park] (https://www.pittsburghparks.org/highland-park), which includes 
+The highlight of this 380-acre park is the [Pittsburgh Zoo and PPG Aquarium](http://pittsburghzoo.org/), 
+whose most recent addition to the family is a [newborn elephant calf](http://pittsburghzoo.org/elephantblog).
+First opened in 1898 and home to over 400 species, the Zoo has a long history of giving the public a chance 
+to see and learn about a wide array of animals. Stop by to catch a glimpse of some [white-bellied pangolins](http://www.wpxi.com/news/top-stories/new-white-bellied-pangolins-now-at-pittsburgh-zoo-ppg-aquarium/524477271) 
+and immerse yourself in the natural world with the Zoo's interactive exhibits. While you're in the neighborhood,
+consider exploring the rest of [Highland Park](https://www.pittsburghparks.org/highland-park), which includes 
 two large water reservoirs, a bike track, walking trails, and a swimming pool. To get to this area of Pittsburgh, 
 you can take the 75 bus from Fifth at Bellefield. If you're interested in driving, free parking is available in 
-the zoo's main parking lot. 
+the Zoo's main parking lot. 
 
 ## Curiosities
 
