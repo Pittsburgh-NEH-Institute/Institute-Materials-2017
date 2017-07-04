@@ -38,7 +38,7 @@ Overlapping hierarchy is a well-known challenge to OHCO for which many workaroun
 
 > Containment is a happenstance relationship between ranges while dominance is one that has a meaningful semantic. A page may happen to *contain* a stanza, but a poem dominates the *stanzas* that it contains.
 
-This statement does not deny the existence of overlapping hierarchies (for example, a book of poems might be said to dominate both a sequence of poems and a sequence of pages, each of which constitutes an independent hierarchy rooted in the book), but it does make it possible to treat containment as non-hierarchical (or, at least, as a different type of hierarchy) than dominance.
+This statement does not deny the existence of overlapping hierarchies (for example, a book of poems might be said to dominate both a sequence of poems and a sequence of pages, each of which constitutes an independent hierarchy rooted in the book), but it does make it possible to treat containment as non-hierarchical—or, at least, as a different type of hierarchy than dominance.
 
 ## Order
 
@@ -58,13 +58,13 @@ which in tree form would look like:
 
 <img src="Images/romeo_xml.png" alt="[Title hierarchy]"/>
 
-Here the `<name>` elements might reasonably be considered content objects, but representing them as such compromises the hierarchy, which is no longer a string of three words, but now a sequence of two `<name>` elements with a `text()` node between them, and the `text()` nodes that contain the text of the names are on a different hierarchical level. LMNL and TAG, which are not obligatorily hierarchical, can tag the names without pushing the three words onto two different hierarchical levels. Here’s the TAG hypergraph representation:
+Here the `<name>` elements might reasonably be considered content objects, but representing them as such compromises the hierarchy, which is no longer a string of three words, but now a sequence of two `<name>` elements with a `text()` node between them, and the `text()` nodes that contain the text of the names are on a different hierarchical level than the conjunction. LMNL and TAG, which are not obligatorily hierarchical, can tag the names without pushing the three words onto two different hierarchical levels. Here’s the TAG hypergraph representation:
 
 <img src="Images/romeo_hypergraph.png" alt="[Title hypergraph]"/>
 
 ## Conclusions
 
-It would be perverse to argue that text is not ordered, that it is not hierarchical, and that it does not consist of identifiable content objects, and the original 1990 OHCO paper compares the OHCO model favorably and correctly to alternatives that were in use at that time. But in the quarter century that has elapsed since that 1990, we now recognize that the challenges to OHCO go beyond overlapping hierarchies, and invite a more nuanced exploration of not just the “H”, but also the “O” and the “CO”.
+It would be perverse to argue that text is not ordered, that it is not hierarchical, and that it does not consist of identifiable content objects, and the original 1990 OHCO paper compares the OHCO model favorably and correctly to alternatives that were in use at that time. But in the quarter century that has elapsed since 1990, we now recognize that the challenges to OHCO go beyond overlapping hierarchies, and invite a more nuanced engagement not only with the “H”, but also with the “O” and the “CO” of OHCO.
 
 ## Works cited
 

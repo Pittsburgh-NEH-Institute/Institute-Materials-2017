@@ -66,7 +66,7 @@ Here is word cloud of the text:
 
 The data model we employ to represent the most frequent words is an ordered list, which may be serialized as either a table or a word cloud, two models that are governed by different syntactic rules. Note that they also have different expressive capabilities. For example, how are ties represented in the frequency table and the word cloud? How is the difference in representation determined by the different syntactic properties of the two serializations?
 
-Text of the Bliss copy of Abraham Lincoln’s Gettysburg Address is from <http://www.abrahamlincolnonline.org/lincoln/speeches/gettysburg.htm>. The frequency list was generated at <http://www.wordcounter.com/>, with stop words removed. The Word Cloud was generated at <https://www.jasondavies.com/wordcloud/> using default values. 
+[Text of the Bliss copy of Abraham Lincoln’s Gettysburg Address is from <http://www.abrahamlincolnonline.org/lincoln/speeches/gettysburg.htm>. The frequency list was generated at <http://www.wordcounter.com/>, with stop words removed. The Word Cloud was generated at <https://www.jasondavies.com/wordcloud/> using default values.]
 
 ## Markup semantics
 

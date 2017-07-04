@@ -6,9 +6,9 @@ Week 2, Day 2 introduces the idea of digital edition development as a computatio
 
 ## Outcome goals
 
-* Community-driven (prescriptive) vs research-driven (descriptive) analysis; “how do I represent this in system X?” vs “what do I think this is and how should I model it?”
+* Modeling and communities
 * Modular development: the digital edition as a computational pipeline
-* XML looks like a string (and it’s defined that way in the spec), but it’s really a tree. This requires workarounds not only in the markup, but also in the query.
+* XML looks like a string but it’s really a tree. What does this mean for markup and for querying?
 * How XML copes with limitations of the tree as a document model
 * What’s so bad about work-arounds and relying on application-level semantics?  
 
@@ -27,7 +27,7 @@ ______
 
 Time | Topic | Type
 ---- | ---- | ----
-15 min | Review of [Week 2, Day 1](week_2_day_1_plan.md) | Discussion
+15 min | Review of [Week 2, Day 1](week_2_day_1_plan.md)<br/>Modeling and communities | Discussion
 30 min | [XPath as a way of navigating the tree](xpath.md) (using [*Hamlet*](hamlet.xml) in \<oXygen/\>) | Code Lab
 20 min | XPath navigation of overlap in [“Ozymandias”](ozymandias.xml):<br/>Find 1) phrases, 2) enjambments, and 3) metrical lines| Code lab
 10 min | The [cost of workarounds during processing](overlap_xml.md) | Presentation
@@ -74,6 +74,10 @@ Time | Topic | Type
 
 ### Outcome goals
 * ***[some text here]***
+
+## Homework
+
+Please complete [Week 2, Day 2 feedback](week_2_day_2_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 2, Day 2 feedback”.
 
 ## Readings (optional)
 

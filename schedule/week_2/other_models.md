@@ -2,7 +2,7 @@
 
 ## LMNL: Layered Markup and Annotation Language
 
-Structure is expressed through *ranges* over *atoms* (typically textual characters). LMNL is a data model, intended to be able to represent *sawtooth* syntax.
+Structure is expressed through *ranges* over *atoms* (typically textual characters). LMNL is a data model, which can be represented with *sawtooth* syntax, but the data model is primary, and the syntax is just illustrative.
 
 ```
 [excerpt [source}The Housekeeper{] [author}Robert Frost{]}
@@ -16,7 +16,7 @@ For more information see Wendell Piez, [LMNL in miniature. An introduction.](htt
 
 ## GODDAG: General Ordered-Descendant Directed Acyclic Graph
 
-A data structure for representing documents with overlapping structures, which permits children to have multiple parents. Consider the following minimalist poem:
+GODDAG is a data model for representing documents with overlapping structures, which permits children to have multiple parents. Consider the following minimalist poem:
 
 <img src="Images/Marcoux01-001.png" alt="[GODDAG example]"/>
 
@@ -48,5 +48,9 @@ Example from Yves Marcoux, [Graph characterization of overlap-only TexMECS and o
 TAG is a data model based on a hypergraph. The following image illustrates how information about words, stress, lines, amd metrical feet might be represented for a minimal poem consisting of the single line “No longer mourn”.
 
 <img src="Images/feet.png" width="99%" alt="[TAG example]"/>
+
+Alexandria, an open source TAG application, visualizes this document as follows:
+
+<img src="Images/mourn_alexandria.png" width="99%" alt="[Alexandria example]"/>
 
 For more information see Ronald Haentjens Dekker and David J. Birnbaum, [It’s more than just overlap: Text As Graph”](), which is the source of the example. **[add link]**

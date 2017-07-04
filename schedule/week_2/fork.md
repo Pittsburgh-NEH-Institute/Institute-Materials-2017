@@ -1,4 +1,4 @@
-# Your Institute GitHub repository
+# Your own copy of the Institute GitHub repository
 
 Files you use for Institute activities are located in our GitHub repository (*repo*), and in order to work with them, you’re going to create your own copy of the repo, called a *fork*. This page explains how to do that.
 

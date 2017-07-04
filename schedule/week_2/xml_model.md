@@ -64,4 +64,4 @@ Style sheets can be used to format `i` elements, just like any other element can
 * [DocBook: The definitive guide](http://tdg.docbook.org/tdg/5.2/para.html)
 * [HTML5. A vocabulary and associated APIs for HTML and XHTML. 
 W3C Recommendation 28 October 2014](https://www.w3.org/TR/html5/)
-* [P5: Guidelines for Electronic Text Encoding and Interchange](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html)
+* [TEI P5: Guidelines for Electronic Text Encoding and Interchange](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html)
