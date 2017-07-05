@@ -25,7 +25,7 @@ ____
 [15 mins]
 
 #### Configuring your machine to show hidden files
-
+<!-- consolidate these -->
 * **To show hidden files for Mac OS Sierra:** Open the Finder and hit `Cmd+Shift+.` (dot)
 * **To show hidden files for Mac OS El Capitan:** Execute `defaults write com.apple.finder AppleShowAllFiles YES` on the command line
 * **To show filename extensions for Mac OS:** Open the Finder and choose Preferences, click Advanced, and check the box next to "Show all filename extensions". 
@@ -39,7 +39,9 @@ ____
 <!-- (This preference can be changed when configuring the filesystem, but certain programs will not run in a case sensitive environment, so it’s best to leave it alone). A case preserving file system will spell the filename as you type it, but if you create a different file with a name that differs only in capitalization, it will overwrite the first one. We recommend not creating filenames that differ only in capitalization even on Linux; not only is it potentially confusing, but you may be collaborating on a project with someone not on Linux. -->
 
 ### Moving through a filesystem
-
+<!-- Move the programs and files stuff in here, use cmd.exe -->
+<!-- where is home?  both in cmd and in gui-->
+<!-- language differences for gui and command line-->
 [30 mins]
 
 * Navigate up and down, with emphasis on the paths in the title bar.
@@ -193,7 +195,7 @@ Bash, your list will already be colorized, but for other shells this command col
 ## Monday, 2:00–3:30: Programs and files 1
 
 ### The hierarchical file system
-
+<!-- note about Python versions for Mac-->
 [5 mins (review)]
 
 * `/`
@@ -201,8 +203,8 @@ Bash, your list will already be colorized, but for other shells this command col
 * `file`: filetype
 * `/dev/null`: the black hole of the file system
 * Finding the filesystem location of a file from the MacOS finder or Windows explorer
-	* Mac: Drag the filename from a Finder windows and drop it in a terminal window to paste the path to the file. Or just view the filename by selecting the file and `cmd+i` (get info)
-	* Windows: See Mac directions.
+	* Mac: Drag the filename from a Finder windows and drop it in a terminal window to paste the path to the file. Or just view the filename by selecting the file and `cmd+i` (get info).
+	* Windows: Drag the filename from File Explorer and drop it in the terminal window to paste the path.
 	* Linux: ???
 
 ### Operating system conventions
