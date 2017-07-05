@@ -1,8 +1,8 @@
-# Visualization formats
+# Visualization file formats
 
 ## Image formats
 
-A *raster* image is a pixel-by-pixel representation of a visual image. Common raster formats include [TIFF](https://en.wikipedia.org/wiki/TIFF), [JPG](https://en.wikipedia.org/wiki/JPEG), [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics), and [GIF](https://en.wikipedia.org/wiki/GIF). Raster images are easy to create (at a certain level, they just copy the pixel pattern), and they’re the most common way of representing photographs (including manuscript facsimiles), screen shots, and images in general. Raster images look best at their original size or smaller; when they are expanded, the expansion doesn’t add pixels, which means that the pixels just grow fatter. A image that has become blocky, with visible stair steps instead of smooth diagonals, is described as *pixelated*.
+A *raster* image is a pixel-by-pixel representation of a visual image. Common raster formats include [TIFF](https://en.wikipedia.org/wiki/TIFF), [JPG](https://en.wikipedia.org/wiki/JPEG), [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics), and [GIF](https://en.wikipedia.org/wiki/GIF). Raster images are easy to create (at a certain level, they just copy the pixel pattern of the source), and they’re the most common way of representing photographs (including manuscript facsimiles), screen shots, and images in general. Raster images look best at their original size or smaller; when they are expanded, the expansion doesn’t add pixels, which means that the pixels just grow fatter. A image that has become blocky, with visible stair steps instead of smooth diagonals, is described as *pixelated*.
 
 A *vector* image describes the contours of the image. For example, where a raster image might describe a short diagonal as “color the pixels at positions 0,0; 1,1; 2,2; and 3,3” a vector image says “draw a line from 0,0 to 3,3”. Vector images are *scalable*; when you blow them up, they retain their smooth diagonals because they can create new pixels instead of just fattening the existing ones. The only vector format in broad use on the Web is [SVG](http://tutorials.jenkov.com/svg/index.html) (Scalable Vector Graphics). 
 
@@ -12,27 +12,27 @@ Unless you have good reason to do otherwise, use raster images for photographs, 
 
 ## Raster formats
 
-Raster file formats may be compressed, and the compression is either *lossless* (compression reduces the file size without throwing away information) or *lossy* (compression is achieved by throwing away infomation that is not less easily noticed by the human eye). All other things being equal, lossy compression (not surprisingly) typically produces smaller but less detailed images than lossless compression.
+Raster file formats may be compressed, and the compression is either *lossless* (compression reduces the file size without throwing away information) or *lossy* (compression is achieved by throwing away infomation that is not easily noticed by the human eye). All other things being equal, lossy compression (not surprisingly) typically produces smaller but less detailed images than lossless compression.
 
 The most common raster formats are:
 
 * **TIFF** (Tagged Image File Format). Common for archival use because it provides a high degree of fidelity. Uncommon for Web use because file sizes are typically larger than with other formats. Filename extensions are `.tif` or `.tiff`.
 * **JPG** (Joint Photographic Experts Group). Common for web use because of relatively small file size. The filesize is achieved with lossy compression that can be adjusted by the developer, and that, in the best cases, is not noticable by the viewer. No support for transparent backgrounds. Filename extensions are `.jpg` and `.jpeg`.
-* **PNG** (Portable Network Graphics). PNG24 is a very widely used lossless file format; PNG8 is limited to 256 colors. Supports transparent backgrounds. Filename extension is `.png`.
-* **GIF** (Graphics Interchange Format). Supports transparent backgrounds. Limited to 256 colors. Has largely been replaced by PNG. Filename extension is `.gif`.
+* **PNG** (Portable Network Graphics). PNG24 is a very widely used lossless file format; PNG8 is limited to 256 colors. Supports transparent backgrounds. Does not support standard EXIF metadata. Filename extension is `.png`.
+* **GIF** (Graphics Interchange Format). Limited to 256 colors. Supports transparent backgrounds. Does not support standard EXIF metadata. Has largely been replaced by PNG. Filename extension is `.gif`.
 
 For a comparison of raster format features, see [GIF, PNG, JPG or SVG. Which One To Use?](https://www.sitepoint.com/gif-png-jpg-which-one-to-use/).
  
 ## Conversion and the Imagemagick toolkit
 
-You can convert images from one format to another at the command line with the Imagemagick toolkit, located at <https://www.imagemagick.org/script/index.php>. The Imagemagick tools we use most often are:
+You can convert images from one format to another at the command line with the open source, platform independet Imagemagick toolkit, located at <https://www.imagemagick.org/script/index.php>. The Imagemagick tools we use most often are:
 
 * [identify](https://www.imagemagick.org/script/identify.php): get information about an image (more detailed than the `file` command, especially with the `-verbose` switch)
 * [convert](https://www.imagemagick.org/script/convert.php): change image type and format
 
-Common conversions are not only among basic formats (e.g., PNG vs JPG), but also size (horizontal and vertical pixel counts), color depth (fewer colors = smaller file, although the difference in appearance may be noticeable), and the declaration of a transparent (background) color (to make the image blend into a colored page background, instead of being framed by a (typically white) square.
+Common conversions are not only among basic formats (e.g., PNG vs JPG), but also size (horizontal and vertical pixel counts), color depth (fewer colors = smaller file, although the difference in appearance may be noticeable), and the declaration of a transparent (background) color (to make the image blend into a colored page background, instead of being framed by a [typically white] square).
 
-As a rule of thumb, blowing up raster images is not recommended because it will cause them to become pixelated. If you reduce the size of an excessively large image, a reasonable target is 1600px on the horizontal dimension. Dots per inch (dpi) and pixels per inch (ppi) are not meaningful. You can resize the way an image is rendered on a web page by setting the `@width` or `@height` attributes of the `<img>` element, but if your image is larger than it needs to be, reducing the image itself by transforming the file is a better strategy because smaller image files cause the web page to load more quickly. 
+As a rule of thumb, blowing up raster images is not recommended because it will cause them to become pixelated. If you reduce the size of an excessively large image, a reasonable target is 1600px on the horizontal dimension. Dots per inch (dpi) and pixels per inch (ppi) are not meaningful for web publication, but they do matter for print. You can resize the way an image is rendered on a web page by setting the `@width` or `@height` attributes of the `<img>` element, but if your image is larger than it needs to be, reducing the image itself by transforming the file is a better strategy because smaller image files enable the web page to load more quickly. 
 
 For more information about choosing a raster image format see Ilya Grigorik’s [Image optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization).
 
