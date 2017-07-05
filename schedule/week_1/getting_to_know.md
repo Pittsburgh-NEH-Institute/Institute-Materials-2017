@@ -15,24 +15,25 @@
 
 #### Configuring your machine to show hidden files
 <!-- consolidate these -->
-* **To show hidden files for Mac OS Sierra:** Open the Finder and hit `Cmd+Shift+.` (dot)
-* **To show hidden files for Mac OS El Capitan:** Execute `defaults write com.apple.finder AppleShowAllFiles YES` on the command line
-* **To show filename extensions for Mac OS:** Open the Finder and choose Preferences, click Advanced, and check the box next to "Show all filename extensions". 
-* **To show the root directory and the directory hierarchy in Finder in Mac OS**: do ...
-* **To show hidden files for Windows:** Control Panel → Appearance and Personalization → File Explorer Options → View → select “Display the full path in the title bar” *and* “Show hidden files, folders, and drives”.
-* **To show filename extensions for Windows:** Open File Explorer, click the View tab at the top, select “File name extensions” under the Show/hide tab.
+* Mac OS 
+	* **To show the root directory and the directory hierarchy in Finder in Mac OS**: do ...
+	* **To show hidden files for Mac OS Sierra:** Open the Finder and hit `Cmd+Shift+.` (dot)
+	* **To show hidden files for Mac OS El Capitan:** Execute `defaults write com.apple.finder AppleShowAllFiles YES` on the command line
+	* **To show filename extensions for Mac OS:** Open the Finder and choose Preferences, click Advanced, and check the box next to "Show all filename extensions". 
 
-### Environmental variables (aka system variables)
-* How to view system variables through Desktop GUI?
-* How to view system variables in a terminal?
-	* Windows (cmd): `set`
-	* Mac (bash): `printenv`
+* Windows
+	* **To show hidden files for Windows:** Control Panel → Appearance and Personalization → File Explorer Options → View → select “Display the full path in the title bar” *and* “Show hidden files, folders, and drives”.
+	* **To show filename extensions for Windows:** Open File Explorer, click the View tab at the top, select “File name extensions” under the Show/hide tab.
+
 
 #### About files
 
 * Why are some files hidden? <!--If you change something, however small, in some of these files, you can break your computer. Be careful!-->
 * **Case sensitive** vs **case preserving**: Linux is **case sensitive**, meaning files with the same name but different capitalization are different files (e.g., `finalpaper.txt` is different than `FinalPaper.txt`). Mac OS and Windows are **case preserving**, but not case sensitive.
 <!-- (This preference can be changed when configuring the filesystem, but certain programs will not run in a case sensitive environment, so it’s best to leave it alone). A case preserving file system will spell the filename as you type it, but if you create a different file with a name that differs only in capitalization, it will overwrite the first one. We recommend not creating filenames that differ only in capitalization even on Linux; not only is it potentially confusing, but you may be collaborating on a project with someone not on Linux. -->
+
+
+
 
 ### Moving through a filesystem
 <!-- Move the programs and files stuff in here, use cmd.exe -->
@@ -42,13 +43,14 @@
 
 * Navigate up and down, with emphasis on the paths in the title bar.
 <!-- We should clarify that Git Bash will use forward slashes rather than backslashes, and explain later when we introduce cmd why that's the case.-->
-* Drive letter: `/c/Users` (Windows git bash), `C:\Users` (Windows non-bash), `/Users` (Unix, including Mac OS: no drive letter).
+* Drive letter: `C:\Users` (Windows cmd), `/c/Users` (Windows git bash), `/Users` (Unix, including Mac OS: no drive letter).
 * `cd`: change directory
 <!--Open a command line and begin using `cd`. Explain that `cd` is essentially the same as selecting or clicking a folder. `cd` into your home directory.-->
-* `ls`: list all files
+* `dir`: list all files (Windows)
+* `ls`: list all files (Mac, bash)
 <!--Use `ls` to show all the files in your current (when you first open the terminal, home) directory. Compare that to what you now see in your home directory (or C drive "folder"). Then use `cd Documents` to move into your documents folder. This is a relative path, as you’ve navigated relative to where you’ve started. Explain what an absolute path looks like, and try running one. Then run a few relative paths.-->
 
-### Why and how do we use the shell?
+### What is the shell? Why and how do we use it?
 
 * The shell is a program that runs other programs.
 <!--Emphasize that the shell is still a program, which takes input and gives output. The input is a command, though, so it seems as though we’re doing something different. In reality, using command line is no different than using any other program.-->
@@ -62,12 +64,18 @@
 ### Launching the shell
 
 * For Mac OS X: the **Terminal.app** that you will find in the Applications → Utilities folder. (Many Mac users prefer the free third-party <https://www.iterm2.com/>.)
-* For Windows: Although **cmd.exe** is the traditional Windows shell, and you may even have used it previously, we recommend **bash**. When you download Git, you'll also download **Git bash**, the command line interface we use and recommend. (We do not recommend the Windows 10 “Ubuntu in Windows”.)
+* For Windows: **cmd.exe** is the native Windows shell, which we will use in this session. From a START menu, type in `cmd`. 
+(For later sessions, we will switch over to **bash**, which you downloaded and installed as part of Git. This is the command line interface we use and recommend.)
 * For Ubuntu Desktop (Unity): you can hit Ctrl-Alt-T or you can type `Terminal` into the Search box.
 
-
-### Windows shells (`cmd.exe`, Git bash, and others)
-
-* In the past, you may have used `cmd.exe`, Windows Powershell, or Bash on Ubuntu on Windows. Though each has its own benefits and drawbacks, for the purposes of this course we will use Git bash.
+### How to run program as an administrator
+* Windows: right click on a program icon (say, `Command Prompt`) and select "Run as administrator"
 
 
+### Environmental variables (aka system variables)
+* How to view system variables through Desktop GUI?
+	* Windows:
+	* Mac: 
+* How to view system variables in a terminal?
+	* Windows (cmd): `set`
+	* Mac (bash): `printenv`
