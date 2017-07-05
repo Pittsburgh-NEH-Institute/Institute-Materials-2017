@@ -27,7 +27,7 @@ __________
 [5 mins] 
 
 * In the past, you may have used `cmd.exe`, Windows Powershell, or Bash on Ubuntu on Windows. Though each has its own benefits and drawbacks, for the purposes of this course we will use Git bash.
-* Git bash is missing certain commands, including nano, sudo, and man.  Nano is a text editor; its Windows equivalent is Notepad, which you can run using `notepad myfile.txt`.  `sudo` is a command that allows you to change things as an admin and requires your credentials.  Any files or directories you create using `sudo` will not be available to you later.  This command is generally used to solve user generated errors when installing software, so use with caution.  `man` displays a command manual, and there is no equivalent in Git bash.
+* Git bash is missing certain commands, including `nano`, `sudo`, and `man`.  Nano is a text editor; its Windows equivalent is Notepad, which you can run using `notepad myfile.txt`.  `sudo` is a command that allows you to change things as an admin and requires your credentials.  Any files or directories you create using `sudo` will not be available to you later.  This command is generally used to solve user generated errors when installing software, so use with caution.  `man` displays a command manual, and there is no equivalent in Git bash.
 ## Getting oriented
 
 * When you see `$` (shell prompt): the shell is waiting for you to provide input
