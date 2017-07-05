@@ -63,13 +63,13 @@
 ### File/directory path in file explorer GUI vs. Terminal 
 * How to match up Destkop GUI's file path and file/directory path in terminal
 * Non-Enlglish OS may have translation/localization applied, but only on the GUI side! 
-	* In Spanish Windows, a user's Documents folder would appear as 'Usarios > jeremy > Documentos'
+	* In Spanish Windows, a user's Documents folder would appear in explorer as 'Usarios > jeremy > Documentos'
 	* The same folder will appear in command line as `C:\Users\jeremy\Documents`
 
 ### External drives and mounting
 How removable and external drives (such as a USB thumbdrive) are treated in GUI vs. terminal environment
 * In Windows, they are assigned a new drive letter: `d:\` `e:\` (cmd), `/d/` `/e/` (git bash)
-* In Mac OS, they are mounted underneath `\Volumes`
+* In Mac OS, they are mounted underneath `/Volumes`
  
 	
 ### How to run program as an administrator
@@ -77,7 +77,7 @@ How removable and external drives (such as a USB thumbdrive) are treated in GUI 
 
 
 ### Environmental variables (aka system variables)
-* How to view system variables through Desktop GUI?
+* How to view system variables through GUI?
 	* Windows:
 	* Mac: 
 * How to view system variables in a terminal?
