@@ -31,8 +31,26 @@
 * Why are some files hidden? <!--If you change something, however small, in some of these files, you can break your computer. Be careful!-->
 * **Case sensitive** vs **case preserving**: Linux is **case sensitive**, meaning files with the same name but different capitalization are different files (e.g., `finalpaper.txt` is different than `FinalPaper.txt`). Mac OS and Windows are **case preserving**, but not case sensitive.
 <!-- (This preference can be changed when configuring the filesystem, but certain programs will not run in a case sensitive environment, so it’s best to leave it alone). A case preserving file system will spell the filename as you type it, but if you create a different file with a name that differs only in capitalization, it will overwrite the first one. We recommend not creating filenames that differ only in capitalization even on Linux; not only is it potentially confusing, but you may be collaborating on a project with someone not on Linux. -->
+* **SPACE** in a file/directory names. Why it could be problematic? 
 
 
+### What is the shell? Why and how do we use it?
+
+* The shell is a program that runs other programs.
+<!--Emphasize that the shell is still a program, which takes input and gives output. The input is a command, though, so it seems as though we’re doing something different. In reality, using command line is no different than using any other program.-->
+* We use the shell to interact with the computer on the command line (CLI ~ GUI).
+* The Unix philosophy is that you can _pipe_ (chain) together small commands, each of which does one thing well, to do something complex. You can’t do this in a GUI.
+* bash = ‘Bourne again shell’ (the original Bourne shell is sh; others include csh, ksh, tcsh, zsh).
+<!--We use and recommend bash (Git Bash). There are many different shells, some of which you end up downloading with program packages like Python.-->
+* Learn the shell on a need-to-know basis.
+<!--There are commands you’ll use every day, some you’ll use for special purposes (and you’ll look up how they work when you need them), and some that you’ll never need.-->
+
+### Launching a terminal
+
+* For Mac OS X: the **Terminal.app** that you will find in the Applications → Utilities folder. (Many Mac users prefer the free third-party <https://www.iterm2.com/>.)
+* For Windows: the command prompt **cmd.exe** is the native Windows terminal, which we will use in this session. From a START menu, type in `cmd`. 
+(For later sessions, we will switch over to **bash**, which you downloaded and installed as part of Git. This is the command line interface we use and recommend.)
+* For Ubuntu Desktop (Unity): you can hit Ctrl-Alt-T or you can type `Terminal` into the Search box.
 
 
 ### Moving through a filesystem
@@ -50,26 +68,20 @@
 * `ls`: list all files (Mac, bash)
 <!--Use `ls` to show all the files in your current (when you first open the terminal, home) directory. Compare that to what you now see in your home directory (or C drive "folder"). Then use `cd Documents` to move into your documents folder. This is a relative path, as you’ve navigated relative to where you’ve started. Explain what an absolute path looks like, and try running one. Then run a few relative paths.-->
 
-### What is the shell? Why and how do we use it?
+### File/directory path in File explor GUI vs. Terminal 
+* How to match up Destkop GUI's file path and file/directory path in terminal
+* Non-Enlglish OS may have translation/localization applied, but only on the GUI side! 
+	* In Spanish Windows, a user's Documents folder would appear as 'Usarios > jeremy > Documentos'
+	* The same folder will appear in command line as `C:\Users\jeremy\Documents`
 
-* The shell is a program that runs other programs.
-<!--Emphasize that the shell is still a program, which takes input and gives output. The input is a command, though, so it seems as though we’re doing something different. In reality, using command line is no different than using any other program.-->
-* We use the shell to interact with the computer on the command line (CLI ~ GUI).
-* The Unix philosophy is that you can _pipe_ (chain) together small commands, each of which does one thing well, to do something complex. You can’t do this in a GUI.
-* bash = ‘Bourne again shell’ (the original Bourne shell is sh; others include csh, ksh, tcsh, zsh).
-<!--We use and recommend bash (Git Bash). There are many different shells, some of which you end up downloading with program packages like Python.-->
-* Learn the shell on a need-to-know basis.
-<!--There are commands you’ll use every day, some you’ll use for special purposes (and you’ll look up how they work when you need them), and some that you’ll never need.-->
-
-### Launching the shell
-
-* For Mac OS X: the **Terminal.app** that you will find in the Applications → Utilities folder. (Many Mac users prefer the free third-party <https://www.iterm2.com/>.)
-* For Windows: **cmd.exe** is the native Windows shell, which we will use in this session. From a START menu, type in `cmd`. 
-(For later sessions, we will switch over to **bash**, which you downloaded and installed as part of Git. This is the command line interface we use and recommend.)
-* For Ubuntu Desktop (Unity): you can hit Ctrl-Alt-T or you can type `Terminal` into the Search box.
-
+### External drives and mounting
+How removable and external drives are treated in Deskto GUI vs. terminal environment
+* In Windows, they are assigned a new drive letter: `d:\` `e:\` (cmd), `/d/` `/e/` (git bash)
+* In Mac OS, they are mounted underneath `\Volumes`
+ 
+	
 ### How to run program as an administrator
-* Windows: right click on a program icon (say, `Command Prompt`) and select "Run as administrator"
+* Windows: right click on a program icon (say, Command Prompt) and select "Run as administrator". 
 
 
 ### Environmental variables (aka system variables)
