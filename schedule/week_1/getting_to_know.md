@@ -36,8 +36,7 @@
 
 ### What is the shell? Why and how do we use it?
 
-* The shell is a program that runs other programs.
-<!--Emphasize that the shell is still a program, which takes input and gives output. The input is a command, though, so it seems as though we’re doing something different. In reality, using command line is no different than using any other program.-->
+* The shell is a program that runs other programs. <!--Emphasize that the shell is still a program, which takes input and gives output. The input is a command, though, so it seems as though we’re doing something different. In reality, using command line is no different than using any other program.-->
 * We use the shell to interact with the computer on the command line (CLI ~ GUI).
 * The Unix philosophy is that you can _pipe_ (chain) together small commands, each of which does one thing well, to do something complex. You can’t do this in a GUI.
 * bash = ‘Bourne again shell’ (the original Bourne shell is sh; others include csh, ksh, tcsh, zsh).
@@ -68,14 +67,14 @@
 * `ls`: list all files (Mac, bash)
 <!--Use `ls` to show all the files in your current (when you first open the terminal, home) directory. Compare that to what you now see in your home directory (or C drive "folder"). Then use `cd Documents` to move into your documents folder. This is a relative path, as you’ve navigated relative to where you’ve started. Explain what an absolute path looks like, and try running one. Then run a few relative paths.-->
 
-### File/directory path in File explor GUI vs. Terminal 
+### File/directory path in file explorer GUI vs. Terminal 
 * How to match up Destkop GUI's file path and file/directory path in terminal
 * Non-Enlglish OS may have translation/localization applied, but only on the GUI side! 
 	* In Spanish Windows, a user's Documents folder would appear as 'Usarios > jeremy > Documentos'
 	* The same folder will appear in command line as `C:\Users\jeremy\Documents`
 
 ### External drives and mounting
-How removable and external drives are treated in Deskto GUI vs. terminal environment
+How removable and external drives (such as a USB thumbdrive) are treated in GUI vs. terminal environment
 * In Windows, they are assigned a new drive letter: `d:\` `e:\` (cmd), `/d/` `/e/` (git bash)
 * In Mac OS, they are mounted underneath `\Volumes`
  
