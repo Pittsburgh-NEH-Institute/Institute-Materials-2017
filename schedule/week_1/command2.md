@@ -8,6 +8,18 @@
 * `!25`: rerun command #25 (get number with `history`; fine-tune as above for beginning of command, or with `history | grep stuff` to find all history items that include the string “stuff”)
 * `!$`: plug in the last word token from the last command
 
+## Editing the command line
+
+* Up-arrow recalls the last command (or keep going, or go forward after you go back)
+* `ctrl+r` and start typing seaches for substring matches in the history; keep typing `ctrl+r` to cycle through the matches
+* `left-arrow` and `right-arrow` move the cursor through the line
+* `ctrl+a` go to the beginning of the line
+* `ctrl+e` go to the end of the line
+* `ctrl+u` erase everything from the cursor until the beginning of the line
+* `ctrl+c` abort whatever you’re doing and return to a new command line
+* `Opt+click` anywhere in the line to move the cursor (MacOS only)
+* Careful: `ctrl+d` exit the shell and close the terminal window
+
 ## Wildcards (“globbing”; annoyingly different from regex) 
 
 <!--using forked week_1 subdirectory, use `grep` to explore files-->
