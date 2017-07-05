@@ -24,8 +24,7 @@
 
 <!--using forked week_1 subdirectory, use `grep` to explore files-->
 * [Fork](/Institute-Materials-2017/schedule/week_2/fork.md) our Git repo to your local machine
-* `*.xml ` (files ending in “.xml”)
-<!--Ask the participants of times they think it might be useful to use globbing. Now that they have some experience with regex, the idea of wildcards isn’t foreign. With which commands will you likely use wildcards?-->
+* `*.xml ` (files ending in “.xml”)<!--Ask the participants of times they think it might be useful to use globbing. Now that they have some experience with regex, the idea of wildcards isn’t foreign. With which commands will you likely use wildcards?-->
 * `*.x?l` (files ending in “.x” followed by any single letter followed by “l”, e.g., XML [xml], XSLT [xsl], XProc [xpl] files)
 * `*.x[ms]l` (files ending in “.x” followed by “m” or “s” followed by “l”, e.g., XML and XSLT files, but not XProc)
 
@@ -42,8 +41,7 @@
 * `|`
 * `history | tail`
 * `wc filename` ~ `wc < filename` ~ `cat filename | wc`
-* Why are there two backslashes in `history | grep \\.xml`?
-<!--SW Carpentry pipelining activity, adapted-->
+* Why are there two backslashes in `history | grep \\.xml`?<!--SW Carpentry pipelining activity, adapted-->
 ## Shell variables
 
 * `env | grep PATH`
@@ -58,8 +56,7 @@
 * Single quotes are literal (`echo ’$HOME’`)
 * Double quotes expand variables (`echo "$HOME"`)
 
-## Useful command switches for `ls`
-
+## Useful command switches for `ls` 
 <!-- review from command 1, should we scrap?-->
 
 * `-G`: colorize output
