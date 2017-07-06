@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-Scholars further develop their background knowledge of the computing environment. The second day of Week 1 starts off with an introduction to regular expressions. From there, we build upon the first day's overview of the command line and expand upon our understanding of programs and files, beginning to think about variables and data pipelines.  
+Scholars further develop their background knowledge of the computing environment. The second day of Week 1 starts off with an introduction to regular expressions. From there, we build upon the first day’s overview of the command line and expand upon our understanding of programs and files, beginning to think about variables and data pipelines.  
 
 ## Outcome goals
 
@@ -49,7 +49,7 @@ Time | Topic | Type
 
 ## 2:00-3:30: Programs and files 2
 
-We have a basic grasp of directory navigation, but what don't we know about `$PATH`? How does our environment affect our file processing? How can we use commands and variables to manipulate files more efficiently? 
+We have a basic grasp of directory navigation, but what don’t we know about `$PATH`? How does our environment affect our file processing? How can we use commands and variables to manipulate files more efficiently? 
 
 Time | Topic | Type
 ---- | ----  | ----

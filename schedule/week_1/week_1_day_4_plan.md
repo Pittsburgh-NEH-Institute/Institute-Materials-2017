@@ -1,4 +1,4 @@
- Week 1, Day 4: Thursday, July 13
+# Week 1, Day 4: Thursday, July 13
 
 ## Synopsis
 
@@ -49,7 +49,7 @@ Time | Topic | Type
 
 ## 2:00-3:30: [Python 2]('Python Clinic Day 2.ipynb')
 
-Now that we know where to find them and what they are, how can we manipulate and use programs for our benefit?
+After becoming comfortable with processing single documents using Python, they will learn to process a corpus using U.S. Presidential inaugural addresses with NLTK.
 
 Time | Topic | Type
 ---- | ---- | ----
