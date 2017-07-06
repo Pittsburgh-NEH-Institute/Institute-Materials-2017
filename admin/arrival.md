@@ -18,7 +18,7 @@ Taxi service is available at the airport (same side as the 28X bus) and does not
 
 ### Uber and Lyft
 
-Uber and Lyft are ride-sharing services available via phone app. Download either app from the app store, input your information, and list “Thackeray Ave and Fifth Ave” as your destination. Fares vary with demand, but typically cost between $30 and $70 (not including gratuity). When you arrive, follow directions to Panther Central below.
+Uber and Lyft are ride-sharing services available via phone app. Fun fact: the world's first [self-driving Uber cars](https://www.uber.com/cities/pittsburgh/self-driving-ubers/) are currently on the streets of Pittsburgh! Download either the Uber or Lyft app from the app store, input your information, and list “Thackeray Ave and Fifth Ave” as your destination. Fares vary with demand, but typically cost between $30 and $70 (not including gratuity). When you arrive, follow directions to Panther Central below. 
 
 ### Driving directions
 
