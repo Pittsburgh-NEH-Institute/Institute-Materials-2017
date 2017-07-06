@@ -1,8 +1,16 @@
-# Week 1, Day 2: Tuesday, July 11
+# Week 1, Day 3: Wednesday, July 12
 
 ## Synopsis
 
+Day three kicks off with a deeper look at regular expressions. We will discover how to refine regular expressions to achieve a broader scope of search patterns that can be tailored to specific research needs. Through enhanced understanding of the `grep` utility, day three melds our regex abilities with the command line, tying together what we have learned so far. Day three also introduces Python and covers the basics of its text processing capabilities. 
+
 ## Outcome goals
+
+* Creating regular expressions for more complicated search patterns
+* Using regex and the command line collaboratively
+* Where does `grep` fall short and how can we get around this
+* Facility with Python and NLTK
+* Processing a text file in Python
 
 ## Legend
 
@@ -13,19 +21,40 @@
 
 ______
 
-## 9:00–10:30:
+## 9:00–10:30: Regular expressions 2
 
-## 10:30–11:00:
+Placeholder
 
-## 11:00–12:30:
+Time | Topic | Type
+---- | ----  | ----
+
+
+## 10:30–11:00: Coffee break
+
+## 11:00–12:30: Command line 3
+
+With regular expressions under our belt, we are ready to learn advanced `grep` skills for the command line. We will explore how we can search for lines that match a pattern and how to navigate some of the common pitfalls of this utility.  
+
+Time | Topic | Type
+---- | ----  | ----
+10 min | What is `grep` | Presentation
+20 min | Useful `grep` command switches | Presentation
+15 min | `grep` and regex | Code lab
+20 min | `grep` complications | Presentation
+25 min | Shell scripting | Code lab
 
 ## 12:30–2:00 Lunch (on your own)
 
-## 2:00-3:30: Programs and files 2
+## 2:00-3:30: Python clinic 1
 
-## 3:30-4:00: Coffee break
+The first day of the Python clinic will examine text processing, starting with the very basics, in preparation for more complex textual analysis. We will discuss the Natural Language Toolkit and the role it plays in processing text files. Scholars will also gain familiarity with Jupyter Notebook.
 
-## 4:00–5:30: Review
+Time | Topic | Type
+---- | ----  | ----
+15 min | Data prep and Jupyter tips | Discussion
+30 min | Python basics | Presentation
+20 min | Using NLTK | Presentation
+25 min | Processing a single text file | Code lab
 
 ## Homework
 
