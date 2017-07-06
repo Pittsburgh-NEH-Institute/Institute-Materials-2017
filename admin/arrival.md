@@ -4,7 +4,7 @@
 
 ### 28X bus
 
-Taking a Port Authority bus from the airport is the cheapest option. The fare is $2.75 and exact change required. Pickup occurs [every 20-30 minutes](https://www.portauthority.org/PAAC/apps/maps/28x.pdf) from the ground transportation area of the airport at the baggage claim level (note that private car pickup is one side and bus, taxi, etc. on the other—you’ll want to be sure you’re on the correct side). Note that service stops at midnight and resumes at 5:30 a.m. Drivers will not assist with luggage and space may be limited, so plan accordingly. 
+Taking a Port Authority bus from the airport is the cheapest option. The fare is $2.75 and exact change required.  You must enter the bus at the front and pay as soon as you get on. Pickup occurs [every 20-30 minutes](https://www.portauthority.org/PAAC/apps/maps/28x.pdf) from the ground transportation area of the airport at the baggage claim level (note that private car pickup is one side and bus, taxi, etc. on the other—you’ll want to be sure you’re on the correct side). Note that service stops at midnight and resumes at 5:30 a.m. Drivers will not assist with luggage and space may be limited, so plan accordingly. 
 
 You should get off in the Oakland neighborhood of Pittsburgh, at the corner of Fifth Ave. and Bigelow Blvd. The trip, from pickup to dropoff, takes about one hour. From there, follow the walking directions listed below for Panther Central.
 
