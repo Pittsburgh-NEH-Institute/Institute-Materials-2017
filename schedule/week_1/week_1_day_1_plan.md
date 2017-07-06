@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-Welcome to the NEH "Make *your* edition" Institute: models and methods for digital textual scholarship.  The first week is a bootcamp for command line.  Day one begins by familiarizing you with your operating system.  We then move beyond the graphical user interface (GUI) and begin to use the command line, which allows greater power over the files, directories, and programs populating a filesystem.  Day one emphasizes 
+Welcome to the NEH "Make *your* edition" Institute: models and methods for digital textual scholarship.  The first week is a bootcamp for command line.  Day one begins by familiarizing you with your operating system.  We then move beyond the graphical user interface (GUI) and begin to use the command line, which allows greater power over the files, directories, and programs populating a filesystem.  Day one emphasizes knowledge of the computer as a tool for managing information.
 
 ## Outcome goals
 * Know your machine: Windows, Mac, and Linux users will all have different experiences and knowledge.  Sometimes (read: most of the time) solving a problem involves multiple solutions for varying operating systems
@@ -20,7 +20,7 @@ Welcome to the NEH "Make *your* edition" Institute: models and methods for digit
 
 ______
 
-## 9:00–10:30: Getting to know your OS
+## 9:00–10:30: [Getting to know your OS](getting_to_know.md)
 
 Windows and Mac users will split into breakout groups to maximize time.  Differences will be discussed, but emphasis lies with the individual's OS.  How does your OS both facilitate and inhibit your work now; how might that change?
 
@@ -33,7 +33,7 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: Command line 1
+## 11:00–12:30: [Command line 1](command1.md)
 
 What is a shell, how do we use it?  In breakout groups, we begin working at command line by navigating through our filesystems a step at a time.
 
@@ -46,8 +46,7 @@ Time | Topic | Type
 
 ## 12:30–2:00 Lunch (on your own)
 
-## 2:00-3:30: Programs and files 1
-
+## 2:00-3:30: [Programs and files 1](programs_and_files1.md)
 Now that we know where to find them and what they are, how can we manipulate and use programs for our benefit?
 
 Time | Topic | Type
