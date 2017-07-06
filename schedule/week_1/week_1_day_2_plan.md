@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-Scholars further develop their background knowledge of the computing environment. The second day of Week 1 starts off with an introduction to regular expressions. From there, we build upon the first day's overview of the command line and expand upon our understanding of programs and files. 
+Scholars further develop their background knowledge of the computing environment. The second day of Week 1 starts off with an introduction to regular expressions. From there, we build upon the first day's overview of the command line and expand upon our understanding of programs and files, beginning to think about variables and data pipelines.  
 
 ## Outcome goals
 
@@ -23,15 +23,20 @@ ______
 
 ## 9:00–10:30: Regular expressions 1
 
+What are regular expressions, and how can they improve our pattern-matching when dealing with an abundance of textual data?
+
 Time | Topic | Type
 ---- | ----  | ----
 15 min | Review of [previous day](week_1_day_1_plan.md) | Discussion
-25 min | Using [regular expressions](regex1.md) | Presentation
+15 min | Why use [regular expressions](regex1.md) | Presentation
+20 min | Creating search patterns | Code lab
 
 
 ## 10:30–11:00: Coffee break
 
 ## 11:00–12:30: Command line 2
+
+Now that we are familiar with the shell, we can edit within it and incorporate variables and quotes. In breakout groups, we will practice reading from and writing to files and sending data through pipelines.
 
 Time | Topic | Type
 ---- | ----  | ----
@@ -44,11 +49,22 @@ Time | Topic | Type
 
 ## 2:00-3:30: Programs and files 2
 
+We have a basic grasp of directory navigation, but what don't we know about `$PATH`? How does our environment affect our file processing? How can we use commands and variables to manipulate files more efficiently? 
+
+Time | Topic | Type
+---- | ----  | ----
+15 min | File formats | Presentation
+25 min | The environment and `$PATH` | Presentation
+20 min | How to find commands and files | Code lab
+20 min | Repeating things and variables | Code lab
+10 min | Miscellaneous commands | Presentation
 
 
 ## 3:30-4:00: Coffee break
 
 ## 4:00–5:30: Review
+
+A recap of regular expressions, working in the command line, and file manipulation. What topics would benefit from additional clarifcation? What are you confused about? What would you like to know more about?
 
 ## Homework
 
