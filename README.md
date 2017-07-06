@@ -32,7 +32,7 @@ The instructors will be assisted by:
 
 * [Call](admin/call.md) for applications
 * [Lightning talk](admin/lightning.md) from the NEH Office of Digital Humanities Project Directors Meeting, 2016-09-16
-* Follow us on Twitter [@makeyouredition](https://twitter.com/makeyouredition)
+* Follow us on Twitter: [@makeyouredition](https://twitter.com/makeyouredition), [#MakeYourEdition2017](https://twitter.com/hashtag/MakeYourEdition2017).
 
 ____
 <a href="https://www.neh.gov/" title="National Endowment for the Humanities"><img align="left" src="images/neh_logo_horizontal_rgb.jpg" alt="NEH" class="rpad"></a>_Make_ your _edition: models and methods for digital textual scholarship_ has been made possible in part by a major grant from the National Endowment for the Humanities: Exploring the human endeavor. Any views, findings, conclusions, or recommendations expressed in materials developed for this project do not necessarily represent those of the National Endowment for the Humanities.
