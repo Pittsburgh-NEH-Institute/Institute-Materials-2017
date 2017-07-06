@@ -4,13 +4,11 @@
 
 ### Day 1: Getting your edition online
 
-This day builds on HTML and CSS from Week 1 and query explorations from Week 2, Day 5. We will learn how to set up a simple publishing workflow using GitHub Pages, CSS, and Javascript. Participants will experiment with using their edition's data model directly in the browser to drive behaviors in their online edition.
+This day builds on HTML and CSS from Week 1 and query explorations from Week 2, Day 5. Mike Kestemont will contribute to the day’s activities by concentrating on the preparation of graphical views of statistical information for publication, and on their integration with text-oriented views of the same underlying data. We will learn how to set up a simple publishing workflow using GitHub Pages, CSS, and Javascript. 
 
 ### Day 2: The edition (as|and) data
 
-**Note:** Need to swap at least part of Tuesday with Monday, because Mike Kestemont won't be available Tuesday; I'd like to get at least some of the publishing workflow stuff in front of them on Monday though, so we'll need to think about refactoring.
-
-Topics include embedding and extracting Linked Data in editions, modeling relationships between entities using RDF, and using XQuery to query, filter, and analyze the text as data (cf. Ramsay 2011<sup>1</sup>, Jockers 2013<sup>2</sup>). The querying, filtering, and analysis will establish a foundation for publishing an _API_ (application programming interface) on Day 4. Participants will gain experience thinking creatively about the graphical visualization of textual information and the results of analytical explorations. Mike Kestemont will contribute to the day’s activities by concentrating on the preparation of graphical views of statistical information for publication, and on their integration with text-oriented views of the same underlying data.
+Participants will continue their exploration of techniques for publishing their edition, including how to use their edition's data model directly in the browser to drive behaviors in their online edition. New topics include embedding and extracting Linked Data in editions, modeling relationships between entities using RDF, and using XQuery to query, filter, and analyze the text as data (cf. Ramsay 2011<sup>1</sup>, Jockers 2013<sup>2</sup>). The querying, filtering, and analysis will establish a foundation for publishing an _API_ (application programming interface) on Day 4. Participants will gain experience thinking creatively about the graphical visualization of textual information and the results of analytical explorations. 
 
 ### Day 3: Book publishing
 
