@@ -19,7 +19,7 @@ Install the software at our [Before you arrive](before_you_arrive.md) page.
 ### Class Schedule
 Rather than covering one topic per day as [originally planned](topics.md), Tara Andrews and Na-Rae Han, two leads for this week's curriculum, recommend that topics be broken up over the course of multiple days. In addition, the last session of the day will not introduce new material, and will instead be used for reviewing or applying the content learned earlier in the day. The “documentation and error messages” topic could be folded into them. A preliminary schedule thus far:
 
-Time/Day	| Monday | Tuesday | Wednesday | Thursday | Friday
+Time/Day	| [Monday](week_1_day_1_plan.md) | [Tuesday](week_1_day_2_plan.md) | [Wednesday](week_1_day_3_plan.md) | [Thursday](week_1_day_4_plan.md) | [Friday](week_1_day_5_plan.md)
 --- | ------ | ------- | --------- | -------- | ------
 9:00–10:30 | Getting to know your OS: file and directory system | Regular expressions 1 | Regular expressions 2 | How Internet Works 1 | How Internet Works 2
 10:30–11:00|Coffee break|Coffee break|Coffee break|Coffee break|Coffee break
