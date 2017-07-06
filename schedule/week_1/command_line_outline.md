@@ -46,11 +46,14 @@ ____
 
 * Navigate up and down, with emphasis on the paths in the title bar.
 <!-- We should clarify that Git Bash will use forward slashes rather than backslashes, and explain later when we introduce cmd why that's the case.-->
-* Drive letter: `/c/Users` (Windows git bash), `C:\Users` (Windows non-bash), `/Users` (Unix, including Mac OS: no drive letter).
+* Drives and volumes
+** Windows has drive letters: `/c/Users` or e.g. `/e` for USB (Windows git bash), `C:\Users` or `E:\` (Windows non-bash)
+** Mac has no drive letters: `/Users` but it does have volumes: `/Volumes/Thumb\ Drive`.
 * `cd`: change directory
 <!--Open a command line and begin using `cd`. Explain that `cd` is essentially the same as selecting or clicking a folder. `cd` into your home directory.-->
 * `ls`: list all files
 <!--Use `ls` to show all the files in your current (when you first open the terminal, home) directory. Compare that to what you now see in your home directory (or C drive "folder"). Then use `cd Documents` to move into your documents folder. This is a relative path, as you’ve navigated relative to where you’ve started. Explain what an absolute path looks like, and try running one. Then run a few relative paths.-->
+
 
 ### Why and how do we use the shell?
 
@@ -142,6 +145,7 @@ Bash, your list will already be colorized, but for other shells this command col
 * Command history with the arrow keys
 * RTFM with `man` (user manual). Windows users on Git Bash don’t have this luxury, unfortunately; <https://ss64.com/bash/> doesn’t match the Git bash command inventory exactly, but it’s close.
 * To turn off case sensitive tab completion, create a file called `.inputrc` in your home directory (you can use any text editor). In the file, write `echo 'set completion-ignore-case On'` and save. The next time you open your bash shell, you should be able to use tab completion without thinking about capitalization.
+* Dragging a file from your filesystem Finder/Explorer window to the terminal!
 <!-- This helps you find things quickly when you have a small number of files, but it also generates a lot of false hits when you have many files. -->
 
 ### Working with directories
@@ -326,6 +330,8 @@ Bash, your list will already be colorized, but for other shells this command col
 
 Mallet is used for **topic modeling**, which you can learn about at <http://programminghistorian.org/lessons/topic-modeling-and-mallet>. For now, it’s an installation exercise, and not a lesson in topic modeling.
 
+<!-- Don't show this; the point is for them to follow the website instructions
+and ask for help when they need it!
 1. download package and open it
 1. `cd` to switch to home directory
 1. edit `.bash_profile` to set environment variable `$MALLET_HOME` (Windows users: use `%` instead of `$` on Windows old style) to point to the mallet-directory
@@ -336,7 +342,7 @@ Mallet is used for **topic modeling**, which you can learn about at <http://prog
 1. run the command again (don’t retype it; use your command history)
 * if output is `Labels = sample-data/web/` (optionally with language suffixes like “de” or “en”, you’re done!
 
-This is an exercise in running into problems and resolving them, not an exercise in showing how skilled you are!
+This is an exercise in running into problems and resolving them, not an exercise in showing how skilled you are! -->
 <!--Still missing twenty mins-->
 
 ## Tuesday, 11:00–12:30: Command line 2

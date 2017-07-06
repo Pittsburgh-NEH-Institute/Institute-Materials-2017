@@ -22,7 +22,7 @@ ______
 
 ## 9:00–10:30: [Getting to know your OS](getting_to_know.md)
 
-Windows and Mac users will split into breakout groups to maximize time.  Differences will be discussed, but emphasis lies with the individual's OS.  How does your OS both facilitate and inhibit your work now; how might that change?
+Windows and Mac users will split into breakout groups to maximize time.  Differences will be discussed, but emphasis lies with the individual’s OS.  How does your OS both facilitate and inhibit your work now; how might that change?
 
 Time | Topic | Type
 ---- | ----  | ----
