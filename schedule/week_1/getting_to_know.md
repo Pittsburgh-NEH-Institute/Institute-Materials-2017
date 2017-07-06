@@ -10,20 +10,19 @@
 * GUI file explorers and file hierarchy
 
 
-### Hidden files and filename extensions
+### Configuring your machine to show hidden files
+* **Mac OS:** 
+	* Mac OS Sierra: Open Finder and hit `Cmd+Shift+.`
+	* Mac OS El Capitan: Open the command line and execute `defaults write com.apple.finder AppleShowAllFiles YES`
+
+* **Windows:** Open the Control Panel, click Appearance and Personalization, click File Explorer Options, and click View. Then select “Display the full path in the title bar” *and* “Show hidden files, folders, and drives".
 
 
-#### Configuring your machine to show hidden files <!-- consolidate these -->
-* Mac OS 
-	* **To show the root directory and the directory hierarchy in Finder in Mac OS**: do ...
-	* **To show hidden files for Mac OS Sierra:** Open the Finder and hit `Cmd+Shift+.` (dot)
-	* **To show hidden files for Mac OS El Capitan:** Execute `defaults write com.apple.finder AppleShowAllFiles YES` on the command line
-	* **To show filename extensions for Mac OS:** Open the Finder and choose Preferences, click Advanced, and check the box next to "Show all filename extensions". 
+### Configuring your machine to show filename extensions
 
-* Windows
-	* **To show hidden files for Windows:** Control Panel → Appearance and Personalization → File Explorer Options → View → select “Display the full path in the title bar” *and* “Show hidden files, folders, and drives”.
-	* **To show filename extensions for Windows:** Open File Explorer, click the View tab at the top, select “File name extensions” under the Show/hide tab.
+* **Mac OS:** Open Finder and select Preferences, click Advanced, and check the box next to "Show all filename extensions".
 
+* **Windows:** Open File Explorer, click the View tab at the top, and select “File name extensions” under the Show/hide tab.
 
 #### About files
 
