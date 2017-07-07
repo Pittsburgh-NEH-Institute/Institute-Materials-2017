@@ -41,4 +41,4 @@ ____
 
 <a href="http://www.oxygenxml.com" title="Oxygen XML Editor"><img align="left" src="http://www.oxygenxml.com/img/resources/oxygen190x62.png" alt="Oxygen XML Editor" class="rpad"/></a>We are grateful to [SyncroSoft](http://www.sync.ro/) for generously contributing complimentary extended trial licenses for their [\<oXygen/\> XML editor](https://www.oxygenxml.com/) for the use of Institute participants.
 
-<a href="http://www.exist-db.org"><img align="left" src="images/existdb.gif" alt="eXist-db" class="rpad" width="156px"/></a> eXist-db is an open source native XML database and application platform. TEI Publisher is an open source product of <a href="http://www.existsolutions.com/">eXist Solutions</a>.
+<a href="http://www.exist-db.org"><img align="left" src="images/existdb.gif" alt="eXist-db" class="rpad" width="156px"/></a> eXist-db is an open source native XML database and application platform. <a href="http://teipublisher.com/">TEI Publisher</a> is an open source product of <a href="http://www.existsolutions.com/">eXist Solutions</a>.
