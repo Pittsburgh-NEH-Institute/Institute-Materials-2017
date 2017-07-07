@@ -20,7 +20,7 @@ Save and exit, which will bring you back to the command line.  Create another fi
 If you have any other aliases you'd like to add, write each one on a new line.  Save and exit your file, and then type **source .bashrc .bash\_profile** on the command line to make them available in your shell.  These aliases will be available in Bash on Ubuntu on Windows as well, which we detail below.
 
 
-## Bash on Windows 10
+<!--## Bash on Windows 10
 
 As part of “Ubuntu on Windows”, the Anniversary Edition of Windows 10 supports a real bash shell, with functionality similar to that available in bash on Linux. If you are running a version of Windows that supports the bash shell, we recommend using it instead of the older Windows PowerShell or cmd.exe. See <https://msdn.microsoft.com/en-us/commandline/wsl/faq> for Microsoft’s FAQ about Ubuntu on Windows.
 
@@ -38,4 +38,4 @@ Your home directory in bash is in:
 
 (with your own username). Unix is case-sensitive, so the “c” has to be lower case and “Users’ has to have an initial upper-case “U”.
 
-From your home directory, you can list the contents of your directory using the `ls` command. Inside your home directory you'll see directories like “Documents”, “Downloads”, and—if you’re a Dropbox user—“Dropbox”. To navigate into any of these, continue to use the change directory command `cd`.
+From your home directory, you can list the contents of your directory using the `ls` command. Inside your home directory you'll see directories like “Documents”, “Downloads”, and—if you’re a Dropbox user—“Dropbox”. To navigate into any of these, continue to use the change directory command `cd`.-->
