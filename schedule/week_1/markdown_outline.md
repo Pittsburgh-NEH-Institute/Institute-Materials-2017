@@ -47,7 +47,7 @@ Markdown has many *flavors*, or syntax variations, that introduce differences in
 * [many more](https://github.com/jgm/CommonMark/wiki/Markdown-Flavors)
 
 ## What is Pandoc?
-Pandoc is a way to convert a file from one form of markup to another. For example, you might have a text file written in Markdown format and want to convert it to LaTeX or HTML. Pandoc allows you to easily do this via the command line.
+Pandoc is a way to convert a file from one form of markup to another. For example, you might have a text file written in Markdown format and want to convert it to LaTeX, HTML, or a number of other formats. Pandoc allows you to easily do this via the command line.
 
 ## Installing Pandoc
 
@@ -73,7 +73,7 @@ In your terminal window, type:
 
 `pandoc --version`
 
-A message with info about your installed version of Pandoc should appear.
+If Pandoc is properly installed, a message with info about your installed version of Pandoc should appear.
 
 ### Create a subdirectory
 
@@ -98,7 +98,7 @@ Open a text editor where you can create a text file written in Markdown. Type:
 
 Save this text file as `test1.md` in your `pandoc-test` directory (`Documents/pandoc-test`). 
 
-In terminal, make sure that you are in the `pandoc-test` directory, and type `ls` to view all of the files. You should see the `test1.md` file that you just created.
+In terminal, make sure that you are in the `pandoc-test` directory, and type `ls` to view all of the files. You should see the `test1.md` file that you just created. Now we can try to convert this Markdown file to a different format.
 
 ####To HTML
 
