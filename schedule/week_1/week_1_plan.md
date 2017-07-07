@@ -20,7 +20,7 @@ Install the software at our [Before you arrive](before_you_arrive.md) page.
 
 Time/Day	| [Monday](week_1_day_1_plan.md) | [Tuesday](week_1_day_2_plan.md) | [Wednesday](week_1_day_3_plan.md) | [Thursday](week_1_day_4_plan.md) | [Friday](week_1_day_5_plan.md)
 --- | ------ | ------- | --------- | -------- | ------
-9:00–10:30 | Getting to know your OS: file and directory system | Regular expressions 1 | Regular expressions 2 | How the Internet works 1 | How the Internet works 2
+9:00–10:30 | Getting to know your OS | Regular expressions 1 | Regular expressions 2 | How the Internet works 1 | How the Internet works 2
 10:30–11:00|Coffee break|Coffee break|Coffee break|Coffee break|Coffee break
 11:00–12:30 | Command line 1 | Command line 2 | Command line 3 | Git 1 | Git 2 
 12:30–2:00|Lunch|Lunch|Lunch|Lunch|Lunch
