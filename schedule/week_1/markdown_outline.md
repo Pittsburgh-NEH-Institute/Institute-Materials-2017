@@ -45,3 +45,77 @@ Markdown has many *flavors*, or syntax variations, that introduce differences in
 * oXygen in-editor split screen
 * pandoc
 * [many more](https://github.com/jgm/CommonMark/wiki/Markdown-Flavors)
+
+## What is Pandoc?
+Pandoc is a way to convert a file from one form of markup to another. For example, you might have a text file written in Markdown format and want to convert it to LaTeX, HTML, or a number of other formats. Pandoc allows you to easily do this via the command line.
+
+## Installing Pandoc
+
+**Mac OS X**
+
+Use the Mac OS X package installer at Pandoc's [download page](https://github.com/jgm/pandoc/releases/tag/1.19.2.1). You'll also need to install LaTeX for PDF output. We recommend [MacTeX](https://tug.org/mactex/).
+
+**Windows**
+
+Use the Windows package installer at Pandoc's [download page](https://github.com/jgm/pandoc/releases/tag/1.19.2.1). You'll also need to install LaTeX for PDF output. We recommend [MiKTeX](https://miktex.org/).
+
+**Linux**
+
+Try checking your package manager, since Pandoc might already be in your respository. If it is not already there, try installing with `apt-get install haskell-platform`. You'll also need to install LaTeX for PDF output. We recommend [TeX Live](http://www.tug.org/texlive/), which can be installed through your package manager with `apt-get install texlive`.
+
+## Using Pandoc
+
+Pandoc has no graphic user interface, so you will need to open the command line to use it.
+
+### Check that Pandoc is installed
+
+In your terminal window, type:
+
+`pandoc --version`
+
+If Pandoc is properly installed, a message with info about your installed version of Pandoc should appear.
+
+### Create a subdirectory
+
+Navigate to your Documents directory. To create a subdirectory called `pandoc-test`, type:
+
+`mkdir pandoc-test`
+
+Then navigate to the `pandoc-test` directory. Type:
+
+`cd pandoc-test`
+
+### Convert a file
+
+Open a text editor where you can create a text file written in Markdown. Type:
+
+	Test!
+
+	This is a test of *pandoc*.
+
+	- list one
+	- list two
+
+Save this text file as `test1.md` in your `pandoc-test` directory (`Documents/pandoc-test`). 
+
+In terminal, make sure that you are in the `pandoc-test` directory, and type `ls` to view all of the files. You should see the `test1.md` file that you just created. Now we can try to convert this Markdown file to a different format.
+
+####To HTML
+
+`pandoc test1.md -s -o test1.html`
+
+####To LaTeX
+
+`pandoc test1.md -s -o test1.tex`
+
+####To a Word document
+
+`pandoc test1.md -s -o test1.docx`
+
+####To a PDF
+
+`pandoc test1.md -s -o test1.pdf`
+
+### Check that the file has been converted
+
+Type `ls` again. You should now see the newly converted file with the appropriate file extension. Try opening the file to see the converted version.
