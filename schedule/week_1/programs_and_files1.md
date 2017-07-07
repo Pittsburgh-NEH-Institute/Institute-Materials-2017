@@ -43,6 +43,7 @@
 ## Character sets
 
 * Unicode, UTF-8, “legacy” character sets
+* Windows' default encoding scheme is ANSI (aka Windows-1252 or variants). When saving text files (in Notepad or Notepad++), make sure to choose UTF-8 <[screenshot](images/programs_and_files1_ansi.png)>. 
 * `file oldfile.txt`: information about file, including character set for text files (if it says “ASCII”, it’s also UTF-8)
 * `iconv -f CP1251 -t UTF-8 oldfile.txt > newfile.txt`: convert `oldfile.txt` from CP1251 to UTF-8 and save result as `newfile.txt`
 * `hexdump -C -n1000 filename` or `xxd filename`: show hex and character values for first 1000 characters of `filename`. Omit the `-n` switch to see the entire file.
@@ -59,8 +60,10 @@
 ### Aliases and `.bash_profile`
 
 * Aliases you want to save go in ~/.bash\_profile. Aliases declared on the command line disappear when you close the terminal window. 
-* After editing .bash\_profile, run `source .bash_profile` to make the changes active in your current shell
-* To edit a file that begins with a dot, type `bbedit .bash_profile` (or `mate` if you’re using TextMate or `atom` if you’re using Atom), or open it from the MacOS Finder or Windows Explorer
+* If `.bash\_profile` does not exist, create it first: `touch .bash\_profile`, and then proceed to edit it.  
+* To edit a file that begins with a dot, type `bbedit .bash_profile` (or `mate` if you’re using TextMate or `notepad` if you’re using notepad), or open it from the MacOS Finder or Windows File Explorer. 
+* After editing .bash\_profile, run `source .bash_profile` to make the changes take effect in your current shell. 
+
 
 ### Alias details
 
