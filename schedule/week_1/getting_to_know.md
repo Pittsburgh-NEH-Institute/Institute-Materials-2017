@@ -43,7 +43,7 @@
 ### Launching a terminal
 
 * For Mac OS X: the **Terminal.app** that you will find in the Applications → Utilities folder. (Many Mac users prefer the free third-party <https://www.iterm2.com/>.)
-* For Windows: the Command Prompt **cmd.exe** is the native Windows console, which grew out of DOS.  We will be using it in this session. From a START menu, type in `cmd`. 
+* For Windows: the Command Prompt **cmd.exe** <[screenshot](images/getting_to_know_cmd.png)> is the native Windows console, which grew out of DOS.  We will be using it in this session. From a START menu, type in `cmd`. 
 (For later sessions and the remainder of this institute we will be using **bash shell** instead, which you downloaded and installed as part of Git. This is the command line interface we use and recommend.)
 * For Ubuntu Desktop (Unity): you can hit Ctrl-Alt-T or you can type `Terminal` into the Search box.
 
