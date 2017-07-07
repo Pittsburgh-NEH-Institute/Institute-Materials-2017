@@ -19,8 +19,9 @@ __________
 
 ## Windows shells (`cmd.exe`, Git bash, and others)
 
-* In the past, you may have used `cmd.exe` or Windows Powershell, both native to Windows. Though each has its own benefits and drawbacks, for the purposes of this course we will use Git bash.
-	* We do not recommend “Ubuntu Bash on Windows,” which is still in beta.
+* In the past, you may have used `cmd.exe` <[screenshot](images/getting_to_know_cmd.png)> or Windows Powershell <[screenshot](images/command1_powershell.png)>, both native to Windows. Though each has its own benefits and drawbacks, for the purposes of this course we will have everyone learn Git bash <[screenshot](images/command1_gitbash.png)>.
+	* You might have heard of [“Ubuntu Bash on Windows 10”](https://msdn.microsoft.com/en-us/commandline/wsl/about). We do not recommend it -- ask us why later! 
+	
 * Git bash is missing certain commands (that are included in regular bash): `nano`, `sudo`, and `man`.  
 	* Nano is a text editor; you can substitute Notepad, which you can run using `notepad myfile.txt`.  
 	* `sudo` is a command that allows you to change things as an admin and requires your credentials.  Any files or directories you create using `sudo` will not be available to you later.  This command is generally used to solve user generated errors when installing software, so use with caution.
