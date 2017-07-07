@@ -15,6 +15,12 @@ Each suite has four bedrooms, two bathrooms, and a shared kitchen. Participants 
 
 Kitchens are equipped with a refrigerator, stove, oven, and sink. Plates, cups, mugs, and flatware are not provided, nor are pots or pans. Because the Institute provide a full meal plan (see below), you will not need to do your own cooking, but if you wish to bring any cooking or eating utensils or small appliances (such as a coffee maker), you are welcome to do so. 
 
+### Library access
+You are able to access Pitt's database and library resources through Hillman Library, adjacent to the Cathedral of Learning.  Guest passes are available on a daily basis with photo ID, though keep in mind that only ten are issued per day.  Those instructors and participants with Pitt domain accounts are able to access Pitt's online resources anywhere on campus.
+
+## Safety
+Bouquet Gardens apartments are equipped with a security guard, two swipe entry, and pin-protected doors.  Pitt's campus police number is 412-624-2121, though 911 works for emergencies as well.  [Pitt's police department](http://www.police.pitt.edu/) is located at 3412 Forbes Ave, and the blue light emergency system is available on campus 24/7.  See Pitt's safety office [website](http://www.safety.pitt.edu/) for more information.
+
 ## Meals: Market Central
 
 The Institute provides three meals per day at [Market Central](https://www.pc.pitt.edu/dining/locations/marketCentral.php), which is just a short walk from Bouquet Gardens:
