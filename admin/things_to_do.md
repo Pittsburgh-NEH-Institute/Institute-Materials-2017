@@ -45,7 +45,13 @@ and immerse yourself in the natural world with the Zoo's interactive exhibits. W
 consider exploring the rest of [Highland Park](https://www.pittsburghparks.org/highland-park), which includes 
 two large water reservoirs, a bike track, walking trails, and a swimming pool. To get to this area of Pittsburgh, 
 you can take the 75 bus from Fifth at Bellefield. If you're interested in driving, free parking is available in 
-the Zoo's main parking lot. 
+the Zoo's main parking lot.
+
+## Station Square
+
+A hub of history, Pittsburgh's [Station Square](http://www.stationsquare.com/) was once the place to greet newly arrived passengers who had journeyed along the Pittsburgh and Lake Erie Railroad. Today, Station Square is a hotspot for dining and entertainment, and the remnants of its industrial past are intertwined with restaurants and specialty shops. Whether you're interested in Italian fare like [Buca Di Beppo](http://www.bucadibeppo.com/restaurants/pa/pittsburgh-station-square/) or a cornerstone of American dining like [Hard Rock Cafe](http://www.hardrock.com/cafes/pittsburgh/), it's likely that Station Square's [assortment of restaurants](http://www.stationsquare.com/info/restaurants) offers something that suits your tastes. 
+
+Want a bird's-eye view of Pittsburgh? From Station Square, you can access the [Duquesne Incline](http://duquesneincline.org/), where cable-powered cars allow visitors to ascend the bluffs that overlook the city. Open 365 days a year, the Duquesne Incline takes sightseers up to [Mount Washington](https://www.visitpittsburgh.com/about-pittsburgh/neighborhoods/mt-washington/) and offers a stunning, panoramic view of Pittsburgh's skyline. Getting to Station Square requires a brief transfer from bus to train. Take any 61 or 71 bus inbound from Bigelow and Fifth, and get off at Steel Plaza. Then take the T from the Steel Plaza Station to the Station Square Station. 
 
 ## Curiosities
 
