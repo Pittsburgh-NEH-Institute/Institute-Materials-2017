@@ -23,7 +23,7 @@ Day 4 begins with an expanded session on how the internet works.  Topics covered
 
 ______
 
-## 9:00–10:30: How the internet works 2
+## 9:00–10:30: How the Internet works 2
 
 
 Time | Topic | Type
@@ -48,9 +48,9 @@ Time | Topic | Type
 
 ## 12:30–2:00 Lunch (on your own)
 
-## 2:00-3:30: [Web Technologies](web_technologies.md)
+## 2:00-3:30: [Web technologies](web_technologies.md)
 
-In anticipation of later sessions, HTML, CSS, and Javascript will be reviewed in some detail.  Markdown, which is a simpler way to write and publish HTML, will be introduced, as it will often be used in Jupyter notebook.  Pandoc is a program for converting files between HTML, Markdown, and others. 
+This session introduces HTML, CSS, and JavaScript, which are the most fundamental technologies for publishing web pages. Markdown, a simplified way to create and publish HTML, is used both on GitHub and in Jupyter notebook. Pandoc is a program for converting file formats, including HTML, Markdown, and others. 
 
 Time | Topic | Type
 ---- | ---- | ----
@@ -58,13 +58,11 @@ Time | Topic | Type
 15 min | CSS | Code lab
 30 min | Javascript | Code lab
 15 min | Markdown | Code lab
-15 min | Pandoc install and run | Code lab/ Talk lab
+15 min | Pandoc install and run | Code lab / Talk lab
 
 ## 3:30-4:00: Coffee break
 
-## 4:00–5:30: Review
-
-Placeholder
+## 4:00–5:30: Review and wrap-up
 
 Time | Topic | Type
 ---- | ---- | ----
