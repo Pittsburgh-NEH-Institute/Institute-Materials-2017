@@ -62,12 +62,10 @@
 How removable and external drives (such as a USB thumbdrive) are treated in GUI vs. terminal environment
 * In Windows, they are assigned a new drive letter: `d:\` `e:\` (cmd), `/d/` `/e/` (git bash)
 * In Mac OS, they are mounted underneath `/Volumes`
- 
-	
+ 	
 ### How to run a program as an administrator
 * Windows: right click on a program icon (say, Command Prompt) and select "Run as administrator". 
-* Mac: `sudo` in command line, how to do this in GUI?
-
+* Mac: `sudo` in command line, but no equivalent method in GUI.  
 
 ### Environmental variables (aka system variables)
 * How to view system variables through GUI?
