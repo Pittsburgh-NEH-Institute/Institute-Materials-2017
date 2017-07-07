@@ -58,10 +58,6 @@ Time | Topic | Type
 
 ## 3:30-4:00: Coffee break
 
-## 4:00–5:30: Review
+## 4:00–5:30: Dealing with errors
 
-Placeholder
-
-Time | Topic | Type
----- | ---- | ----
 
