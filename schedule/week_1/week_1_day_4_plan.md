@@ -47,7 +47,7 @@ Time | Topic | Type
 
 ## 12:30–2:00 Lunch (on your own)
 
-## 2:00-3:30: [Python 2](Python%20Clinic%20Day%202.ipynb')
+## 2:00-3:30: [Python 2](Python%20Clinic%20Day%202.ipynb)
 
 After becoming comfortable with processing single documents using Python, they will learn to process a corpus using U.S. Presidential inaugural addresses with NLTK.
 
