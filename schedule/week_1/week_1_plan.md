@@ -26,7 +26,7 @@ Time/Day	| [Monday](week_1_day_1_plan.md) | [Tuesday](week_1_day_2_plan.md) | [W
 12:30–2:00|Lunch|Lunch|Lunch|Lunch|Lunch
 2:00–3:30 | Programs and files 1 | Programs and files 2 | Python clinic 1| Python clinic 2 | Web technologies
 3:30–4:00|Coffee break|Coffee break| Coffee break |Coffee break| Coffee break
-4:00–5:30 | Review (Documentation and error messages) | Review | Review | Review | Review and wrap-up
+4:00–5:30 | Documentation and error messages | Review | Review | Review | Review and wrap-up
 
 ## Resources
 
