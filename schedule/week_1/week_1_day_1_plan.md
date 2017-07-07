@@ -2,14 +2,14 @@
 
 ## Synopsis
 
-Welcome to the NEH "Make *your* edition" Institute: models and methods for digital textual scholarship.  The first week is a bootcamp for command line.  Day one begins by familiarizing you with your operating system.  We then move beyond the graphical user interface (GUI) and begin to use the command line, which allows greater power over the files, directories, and programs populating a filesystem.  Day one emphasizes knowledge of the computer as a tool for managing information.
+Welcome to the NEH “Make *your* edition” Institute: models and methods for digital textual scholarship. The first week is a bootcamp for operating on the command line and other baseline skills. Day one begins by familiarizing you with your operating system. We then move beyond the graphical user interface (GUI) and begin to use the command line, which allows greater control of the files, directories, and programs that populate a filesystem. Day one emphasizes knowledge of the computer as a tool for managing information.
 
 ## Outcome goals
-* Know your machine: Windows, Mac, and Linux users will all have different experiences and knowledge.  Sometimes (read: most of the time) solving a problem involves multiple solutions for varying operating systems
+* Know your machine: Windows, Mac, and Linux users will all have different experiences and knowledge. Sometimes (= much of the time) the steps toward solving a problem may depend on the operating system
 * What are files, directories, and programs
-* Directory navigation and simple file manipulation
+* Directory navigation and file manipulation
 * Creating and saving aliases
-* Reading error messages
+* Understanding and dealing with error messages
 
 ## Legend
 
@@ -22,11 +22,11 @@ ______
 
 ## 9:00–10:30: [Getting to know your OS](getting_to_know.md)
 
-Windows and Mac users will split into breakout groups to maximize time.  Differences will be discussed, but emphasis lies with the individual’s OS.  How does your OS both facilitate and inhibit your work now; how might that change?
+Windows and Mac users will split into breakout groups to maximize time. Differences will be discussed, but emphasis lies with the individual’s OS. How does your OS both facilitate and inhibit your work now; how might that change?
 
 Time | Topic | Type
----- | ----  | ----
-10 min | Brief introduction and tech support | Presentation
+---- | ---- | ----
+15 min | Introduction and technology setup | Presentation
 25 min | Your machine, your files | Talk lab
 25 min | Navigating through the filesystem | Code lab
 25 min | External drives, administration, and system variables | Presentation
@@ -35,10 +35,10 @@ Time | Topic | Type
 
 ## 11:00–12:30: [Command line 1](command1.md)
 
-What is a shell, how do we use it?  In breakout groups, we begin working at command line by navigating through our filesystems a step at a time.
+What is a shell? How do we use it? In breakout groups, we begin working at command line by navigating through our filesystems a step at a time.
 
 Time | Topic | Type
----- | ----  | ----
+---- | ---- | ----
 15 min | The shell | Presentation
 30 min | First commands | Code lab
 15 min | `ls` switches and simplifying your command line | Code lab
