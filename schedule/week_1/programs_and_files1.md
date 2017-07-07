@@ -60,7 +60,7 @@
 ### Aliases and `.bash_profile`
 
 * Aliases you want to save go in ~/.bash\_profile. Aliases declared on the command line disappear when you close the terminal window. 
-* If `.bash\_profile` does not exist, create it first: `touch .bash\_profile`, and then proceed to edit it.  
+* If .bash\_profile does not exist, create it first: `touch .bash_profile` (while in your home directory), and then proceed to edit it.  
 * To edit a file that begins with a dot, type `bbedit .bash_profile` (or `mate` if you’re using TextMate or `notepad` if you’re using notepad), or open it from the MacOS Finder or Windows File Explorer. 
 * After editing .bash\_profile, run `source .bash_profile` to make the changes take effect in your current shell. 
 
