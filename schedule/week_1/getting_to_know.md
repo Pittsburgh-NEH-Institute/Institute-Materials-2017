@@ -31,15 +31,6 @@
 * **SPACE** in a file/directory names. Why could it be problematic? 
 
 
-### What is the shell? Why and how do we use it?
-
-* The shell is a program that runs other programs, typically in a Unix environment. <!--Emphasize that the shell is still a program, which takes input and gives output. The input is a command, though, so it seems as though we’re doing something different. In reality, using command line is no different than using any other program.-->
-* We use the shell to interact with the computer on the command line (CLI ~ GUI).
-* The command-line-based window that runs a shell is called a *console* or a *terminal*. 
-* The Unix philosophy is that you can _pipe_ (chain) together small commands, each of which does one thing well, to do something complex. You can’t do this in a GUI.
-* bash = ‘Bourne again shell’ (the original Bourne shell is sh; others include csh, ksh, tcsh, zsh). <!--We use and recommend bash (Git Bash). There are many different shells, some of which you end up downloading with program packages like Python.-->
-* Learn the shell on a need-to-know basis. <!--There are commands you’ll use every day, some you’ll use for special purposes (and you’ll look up how they work when you need them), and some that you’ll never need.-->
-
 ### Launching a terminal
 
 * For Mac OS X: the **Terminal.app** that you will find in the Applications → Utilities folder. (Many Mac users prefer the free third-party <https://www.iterm2.com/>.)
