@@ -11,22 +11,23 @@ __________
 * Learn the shell on a need-to-know basis. <!--There are commands you’ll use every day, some you’ll use for special purposes (and you’ll look up how they work when you need them), and some that you’ll never need.-->
 
 
-## Launching the shell
+## Launching a terminal/console
 
 * For Mac OS X: the **Terminal.app** that you will find in the Applications → Utilities folder. (Many Mac users prefer the free third-party <https://www.iterm2.com/>.)
-* For Windows: Although **cmd.exe** is the native Windows command-line, we will be switching over to the **bash** shell. When you downloaded Git, you also downloaded **Git bash**, the command line interface. We will be using this as our shell for the rest of the institute. 
+* For Windows: We will be switching over to the **bash** shell. When you downloaded Git, you also downloaded **Git bash**, the command line interface. We will be using this as our shell for the rest of the institute. 
 * For Ubuntu Desktop (Unity): you can hit Ctrl-Alt-T or you can type `Terminal` into the Search box.
 
-## Windows shells (`cmd.exe`, Git bash, and others)
+## Git bash vs. Windows command-lines
 
-* In the past, you may have used `cmd.exe` <[screenshot](images/getting_to_know_cmd.png)> or Windows Powershell <[screenshot](images/command1_powershell.png)>, both native to Windows. Though each has its own benefits and drawbacks, for the purposes of this course we will have everyone learn Git bash <[screenshot](images/command1_gitbash.png)>.
+* In the past, you may have used `cmd.exe` <[screenshot](images/getting_to_know_cmd.png)> or Windows Powershell <[screenshot](images/command1_powershell.png)>, both native to Windows. Though each has its own benefits and drawbacks, for the purposes of this institute we will have everyone learn Git bash <[screenshot](images/command1_gitbash.png)>.
 	* You might have heard of [“Ubuntu Bash on Windows 10”](https://msdn.microsoft.com/en-us/commandline/wsl/about). We do not recommend it -- ask us why later! 
-	
+* Why is learning bash a good idea? 	
+* Git bash's filesystem adopts a Unix-like convention: it uses `/` for path separator, and absolute paths start with `/c/`, `/d/`, etc. (So, `/c/Users/narae` instead of `C:\Users\narae` in `cmd`.) 
 * Git bash is missing certain commands (that are included in regular bash): `nano`, `sudo`, and `man`.  
 	* Nano is a text editor; you can substitute Notepad, which you can run using `notepad myfile.txt`.  
 	* `sudo` is a command that allows you to change things as an admin and requires your credentials.  Any files or directories you create using `sudo` will not be available to you later.  This command is generally used to solve user generated errors when installing software, so use with caution.
 	* `man` displays a command manual, and there is no equivalent in Git bash. You will need to look up online at <https://ss64.com/bash/>. 
-* Certain Windows applications are meant to run within `cmd`, and those need to be launched through a command called `winpty`. For example, to run an interactive python session, you should execute `winpty python`. 
+* Git bash also requires the use of `winpty` when running certain Windows applications that are meant to run within `cmd`. For example, to run an interactive python session, you should execute `winpty python`. 
 
 ## Getting oriented
 
