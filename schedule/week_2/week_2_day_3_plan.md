@@ -49,7 +49,7 @@ Week 2, Day 3 expands upon the idea of digital editions as text processing pipel
 * Normalize, tokenize, and collate text
 * ***[some text here]***
 
-### 12:30-14:00: Lunch (on your own)
+### 12:30-14:00: Lunch
 
 ### 14:00-15:30: Challenging Textual Phenomena / Introducing Text as Graph (TAG)
 

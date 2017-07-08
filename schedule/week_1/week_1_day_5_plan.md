@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-Day 4 begins with an expanded session on how the internet works.  Topics covered include _____________ and _______________.  Git 2 covers how to resolve merge commits, along with how to use Git issues and the other site features.  Finally, a lesson on web technologies, including HTML, CSS, and Markdown will prepare participants for future sessions, as well as familiarize them with some common, useful tools.  
+Day 5 begins with an expanded session on how the Internet works.  Topics covered include _____________ and _______________.  Git 2 covers how to resolve merge commits, along with how to use Git issues and the other site features.  Finally, a lesson on web technologies, including HTML, CSS, and Markdown will prepare participants for future sessions, as well as familiarize them with some common, useful tools.  
 
 ## Outcome goals
 * [Internet goals here]
@@ -23,7 +23,7 @@ Day 4 begins with an expanded session on how the internet works.  Topics covered
 
 ______
 
-## 9:00–10:30: How the internet works 2
+## 9:00–10:30: How the Internet works 2
 
 
 Time | Topic | Type
@@ -46,11 +46,11 @@ Time | Topic | Type
 20 min | Social Git | Code lab
 20 min | Git review | Talk lab/ Discussion
 
-## 12:30–2:00 Lunch (on your own)
+## 12:30–2:00 Lunch
 
-## 2:00-3:30: [Web Technologies](web_technologies.md)
+## 2:00–3:30: [Web technologies](web_technologies.md)
 
-In anticipation of later sessions, HTML, CSS, and Javascript will be reviewed in some detail.  Markdown, which is a simpler way to write and publish HTML, will be introduced, as it will often be used in Jupyter notebook.  Pandoc is a program for converting files between HTML, Markdown, and others. 
+This session introduces HTML, CSS, and JavaScript, which are the most fundamental technologies for publishing web pages. Markdown, a simplified way to create and publish HTML, is used both on GitHub and in Jupyter notebook. Pandoc is a program for converting file formats, including HTML, Markdown, and others. 
 
 Time | Topic | Type
 ---- | ---- | ----
@@ -58,14 +58,18 @@ Time | Topic | Type
 15 min | CSS | Code lab
 30 min | Javascript | Code lab
 15 min | Markdown | Code lab
-15 min | Pandoc install and run | Code lab/ Talk lab
+15 min | Pandoc install and run | Code lab / Talk lab
 
-## 3:30-4:00: Coffee break
+## 3:30–4:00: Coffee break
 
-## 4:00–5:30: Review
+## 4:00–5:30: Review and wrap-up
 
-Placeholder
+## Homework
 
-Time | Topic | Type
----- | ---- | ----
+Please complete [Week 1, Day 5 feedback](week_1_day_5_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 1, Day 5 feedback”.
+
+<!--## Readings (optional)
+
+The following readings are mentioned in the individual activities for this day.-->
+
 

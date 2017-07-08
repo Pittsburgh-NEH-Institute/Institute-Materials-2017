@@ -46,7 +46,7 @@ Week 2, Day 4 concentrates on ...
 * Deeper discussion of the alignment step in the GM
 * An awareness of computation to understand that we do near-matching late (in the pipeline) for reasons of efficiency. 
 
-### 12:30-14:00: Lunch (on your own)
+### 12:30-14:00: Lunch
 
 ### 14:00-15:30: Text analytics 1
 

@@ -48,7 +48,7 @@ Time | Topic | Type
 30 min | Explore participant data in light of terms and concepts | Talk lab
 20 min | General discussion of Talk lab results | Discussion
 
-## 12:30–2:00 Lunch (on your own)
+## 12:30–2:00 Lunch
 
 ## 2:00-3:30: Model, syntax, and markup semantics
 

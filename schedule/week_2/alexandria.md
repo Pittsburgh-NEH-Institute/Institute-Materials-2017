@@ -1,50 +1,59 @@
-# Alexandria
+# Configuring Alexandria on your Mac (El Capitan or later)
 
-## About Alexandria and TAG
+1. Install Docker CE (community edition) for Mac from <https://store.docker.com/editions/community/docker-ce-desktop-mac>
 
-Alexandria is a graph database and text repository that implements the Text As Graph (TAG) model of text. You can read more about at **[add link to Balisage paper]**.
+2. Create a directory and copy the following file (which must be called `docker-compose.yml`) into it:
 
-## Installing Alexandria
+```
+version: '3'
+services:
+  # the alexandria server
+  alexandria:
+        image: huygensing/alexandria-markup-server:latest
+        ports:
+          - 8002:8080
+          - 8003:8081
+        environment:
+          - BASE_URI=http://docker.for.mac.localhost:8002
 
-### Install Docker
+  # the tex-util server, which can convert the LaTeX from the alexandria server to SVG)
+  latex:
+        image: huygensing/tex-util-server:latest
+        ports:
+          - 8000:8080
+          - 8001:8081
+        depends_on:
+          - alexandria
+        environment:
+          - BASE_URI= http://docker.for.mac.localhost:8000
 
-[Docker](https://hub.docker.com/) is a *container*:
+  # the relevant notebooks and python code to connect to the alexandria and latex services
+  notebook:
+        image: huygensing/alexandria-markup-notebook:latest
+        ports:
+          - 8888:8888
+        depends_on:
+          - latex
+          - alexandria
+        volumes:
+          # Your work notebooks will be stored here
+          - /Users/djb/docker:/work
+```
 
-> A container image is a lightweight, stand-alone, executable package of a piece of software that includes everything needed to run it: code, runtime, system tools, system libraries, settings. Available for both Linux and Windows based apps, containerized software will always run the same, regardless of the environment. Containers isolate software from its surroundings, for example differences between development and staging environments and help reduce conflicts between teams running different software on the same infrastructure. [<https://www.docker.com/what-container>]
+1. Change the last line to specify your own workspace by replacing the “djb” with your own userid. 
 
-Because Alexandria runs inside a Docker container, it comes as an operating-system-independent package that bundles Alexandria itself with all of its dependencies. This makes it easy for users to install, and for developers to maintain and distribute.
+2. Create a subdirectory called `docker` under your home.
 
-### Install Alexandria
+1. If you are using ports 8000, 8001, 8002, 8003, or 8888 on your machine for other purposes (you probably aren’t), you need to change the ports Alexandria uses. The only numbers you have to change are for the ports you are using, and only in the following two types of situations:
 
-You have to do the following only once:
+	1. The numbers after the colons in the lines that set a value for `BASE_URI`.
 
-1. Install the Alexandria server with `docker pull huygensing/alexandria-server`.
-2. Install the Alexandria notebooks with `docker pull huygensing/alexandria-workshop-notebooks`.
+	1. The numbers *before* the colons in the lines that have two port numbers separated by a colon. Do not change the numbers *after* the colons in these lines, even if you are using ports with those numbers for other purposes.
 
-## Run Alexandria
+1. In the directory where you saved `docker-compose.yml`, run:
 
-1. Launch the server by running the following command, but **first make the changes listed below it**:
+```
+docker-compose pull && docker-compose up
+```
 
-	`docker run -v /Users/djb/tmp/tmp:/home/alexandria/.alexandria -p2015:2015 huygensing/alexandria-server`
-
-	Make the following changes before running the command:
-	
-	1. Replace the part that reads “/Users/djb/tmp/tmp” with a directory on your own system that you want to use to save data when the database isn’t running (the technical term is to **persist** the database).
-	2. If your local port 2015 is already in use (unlikely, and if it is, you’ll get an error when you try to launch the Alexandria server), change the *first* instance of “2015” to another number (don’t use a number below 1024). Don’t change the second instance of “2015”.
-
-	When you start the server, the terminal remains open and provides feedback about the operation, which you can ignore. When you want to quit, return to the terminal and type `Ctrl+c`, which will kill the server process (= shut down the server).
-
-2. In a different terminal window, launch the Alexandria notebooks by running the following command, but **first make the changes listed below it**:
-
-	`docker run -d -p8888:8888 -v /Users/djb/tmp/tmp:/data/work huygensing/alexandria-workshop-notebooks`
-
-	Make the following changes before running hte command: 
-	
-	1. Replace the part that reads “/Users/djb/tmp/tmp” with whatever you used as a replacement when you launched the server.
-	2. If your port 8888 is already in use (you’ll get an error if it is), change the *first* instance of “8888” to another number (don’t use a number below 1024). Don’t change the second instance of “8888”.
-	3. Navigate in your web browser to `http://localhost:8888` (or whatever port you are using for the notebooks).
-	4. You will be prompted to paste in the login token. **[Doesn’t work, and `jupyter notebook list` shows no notebooks running]**
-
-## Test your installation
-
-Do something.
+1. In a web browser, navigate to <http://localhost:8888>. Click on “examples” and then on “markup-init.ipynb”. Run the notebook from the menu bar with “Cell” → “Run All”.

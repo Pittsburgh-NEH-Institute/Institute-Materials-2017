@@ -6,8 +6,8 @@
 * Directories are files, too
 * `file`: filetype
 * `/dev/null`: the black hole of the file system
-* Finding the filesystem location of a file from the MacOS finder or Windows explorer
-	* Mac: Drag the filename from a Finder windows and drop it in a terminal window to paste the path to the file. Or just view the filename by selecting the file and `cmd+i` (get info).
+* Finding the filesystem location of a file from the MacOS Finder or Windows Explorer
+	* Mac: Drag the filename from a Finder windows and drop it in a terminal window to paste the path to the file. Or just view the filename by selecting the file and `Cmd+i` (get info).
 	* Windows: Drag the filename from File Explorer and drop it in the terminal window to paste the path.
 	* Linux: ???
 
@@ -15,14 +15,14 @@
 
 * EOL: CR LF (Windows), LF (Unix); `dos2unix`; using the `file` command
 * Path separator: `\` (Windows non-bash), `/` (Unix)
-* Drive letter: `C:/Users` (Windows non-bash), `/c/Users` (Windows git bash), `/Users` (Unix: no drive letter)
+* Drive letter: `C:/Users` (Windows non-bash), `/c/Users` (Windows git `bash`), `/Users` (Unix: no drive letter)
 
 ## Files can have more than one name and live in more than one place
 
 
-* `ln plain_file_name link_name` (filenames and inodes).<!--Inodes introduce a little bit more complexity into our original idea of "what are files?" The reason we can change filenames is that inodes store the location and attribute information, so a file can exist in multiple places with different names, so long as it links back to that inode number. To view the inode numbers for your files, use `ls -i`.-->
+* `ln plain_file_name link_name` (filenames and inodes)<!--Inodes introduce a little bit more complexity into our original idea of "what are files?" The reason we can change filenames is that inodes store the location and attribute information, so a file can exist in multiple places with different names, so long as it links back to that inode number. To view the inode numbers for your files, use `ls -i`.-->
 * `ln -s directory_name link_name`
-* Difference between hard links and sym links
+* Difference between hard links and symbolic links
 
 ## File ownership and permissions
 
@@ -43,6 +43,7 @@
 ## Character sets
 
 * Unicode, UTF-8, “legacy” character sets
+* The Windows default encoding scheme is ANSI (aka Windows-1252 or variants). When saving text files (in Notepad or Notepad++), save as UTF-8 <[screenshot](images/programs_and_files1_ansi.png)>. 
 * `file oldfile.txt`: information about file, including character set for text files (if it says “ASCII”, it’s also UTF-8)
 * `iconv -f CP1251 -t UTF-8 oldfile.txt > newfile.txt`: convert `oldfile.txt` from CP1251 to UTF-8 and save result as `newfile.txt`
 * `hexdump -C -n1000 filename` or `xxd filename`: show hex and character values for first 1000 characters of `filename`. Omit the `-n` switch to see the entire file.
@@ -51,16 +52,18 @@
 
 ### Why use aliases?
 
-* Shortcuts. `alias saxon='java -Xmx4g -DentityExpansionLimit=500000 -jar /opt/saxon/saxon9he.jar'`: launch saxon by just typing its name
-* Redefine command. `alias grep='grep --color=auto'`: `grep` should always return colored output
-* Safety. `alias rm='rm -i'`: don’t delete files without asking for confirmation
-* Getting around. `alias doc="cd ~/Documents"`: take me to my Documents folder
+* **Shortcuts** `alias saxon='java -Xmx4g -DentityExpansionLimit=500000 -jar /opt/saxon/saxon9he.jar'`: launch saxon by just typing its name
+* **Redefine command** `alias grep='grep --color=auto'`: `grep` should always return colored output
+* **Safety** `alias rm='rm -i'`: don’t delete files without asking for confirmation
+* **Getting around** `alias doc="cd ~/Documents"`: take me to my Documents folder
 
 ### Aliases and `.bash_profile`
 
 * Aliases you want to save go in ~/.bash\_profile. Aliases declared on the command line disappear when you close the terminal window. 
-* After editing .bash\_profile, run `source .bash_profile` to make the changes active in your current shell
-* To edit a file that begins with a dot, type `bbedit .bash_profile` (or `mate` if you’re using TextMate or `atom` if you’re using Atom), or open it from the MacOS Finder or Windows Explorer
+* If .bash\_profile does not exist, create it first: `touch .bash_profile` (while in your home directory), and then edit it.  
+* To edit a file that begins with a dot, type `bbedit .bash_profile` (or `mate` if you’re using TextMate or `notepad` if you’re using notepad), or open it from the MacOS Finder or Windows File Explorer. 
+* After editing .bash\_profile, run `source .bash_profile` to make the changes take effect in your current shell. 
+
 
 ### Alias details
 

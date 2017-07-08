@@ -51,7 +51,7 @@ Time | Topic | Type
 * How do XML (tree) and LMNL (range) model “what text really is”? 
 * Why does it matter as long as the workarounds work?
 
-## 12:30-2:00: Lunch (on your own)
+## 12:30-2:00: Lunch
 
 ## 2:00-3:30: Models and computational pipelines
   
