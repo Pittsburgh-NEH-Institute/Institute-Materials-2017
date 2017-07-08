@@ -1,6 +1,6 @@
 # Week 2 plan
 
-Time/Day | [Monday](week_2_day_1_plan.md) | Tuesday | Wednesday | Thursday | Friday
+Time/Day | [Monday](week_2_day_1_plan.md) | [Tuesday](week_2_day_2_plan.md) | [Wednesday](week_2_day_3_plan.md) | [Thursday](week_2_day_4_plan.md) | [Friday](week_2_day_5_plan.md)
 --- | --- | --- | --- | --- | ---
 9:00–10:00 | Planning your project  | XML as tree (XPath) | Tokenization 2 | Collation 2 | Visualization
 10:30–11:00 | Coffee break | Coffee break | Coffee break | Coffee break | Coffee break
