@@ -52,8 +52,8 @@
 
 1. In the directory where you saved `docker-compose.yml`, run:
 
-```
-docker-compose pull && docker-compose up
-```
+	```
+	docker-compose pull && docker-compose up
+	```
 
 1. In a web browser, navigate to <http://localhost:8888>. Click on “examples” and then on “markup-init.ipynb”. Run the notebook from the menu bar with “Cell” → “Run All”.
