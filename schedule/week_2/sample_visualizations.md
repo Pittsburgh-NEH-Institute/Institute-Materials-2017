@@ -56,6 +56,56 @@ The *Repertorium of Old Bulgarian literature and letters* is a metadata project 
 
 StemmaWeb offers interactive visual tools for exploring and editing models of relationships within a textual tradition. See the [sample](https://stemmaweb.net/stemmaweb/relation/660ED478-0BC7-11E2-B8F4-3E7CDE76481A?) (click on the “Help/About” button for a guide to the interface) or start at the [main page](https://stemmaweb.net/stemmaweb/) and explore all of the features.
 
+### CATview
+
+**URL:** <http://catview.uzi.uni-halle.de/>  
+
+<img src="Images/CATview-1.png" width="99%" alt="[CATview-1 image]"/> 
+**add caption**
+
+CATview is developed by the working group on eHumanities of the Computer Science Institute of Martin Luther University Halle-Wittenberg **[add link]**. It makes it possible to view the textual variation at different degrees of granularity: from a macrolevel view (figure 1), where the witnesses are displayed horizontally with different rectangles representing a segment of text like a word, phrase, or paragraph.
+
+<img src="Images/CATview-2.png" width="99%" alt="[CATview-2 image]"/>
+**add caption**
+
+ Conversely, users can zoom in to see a more detailed view on the text (figure 2). Segments are aligned vertically (in columns); in figure 2 we see that some segments have a darker shade, which indicates the level of similarity.
+
+
+### TRAViz
+
+**URL:** <http://www.traviz.vizcovery.org/>
+
+<img src="Images/TRAViz.png" width="99%" alt="[TRAViz image]"/>  
+
+TRAViz is a set of JavaScript [packages] (https://github.com/stjaenicke/TRAViz) primarily intended to generate and visualize variant graphs, and it offers an elaborate variant graph visualization. Among other things, TRAViz lets users interact with the graph and adjust it to match their needs and interests.
+
+
+### Faust
+
+**URL:** <http://beta.faustedition.net/>  
+
+<img src="Images/Faust-1.png" width="99%" alt="[Faust-1 image]"/>  
+
+**[add caption]**  
+
+A comprehensive overview of the genesis of *Faust* by Johann Wolfgang von Goethe is presented in the form of interactive diagrams that show the writing process of the entire work. The diagram resembles a conventional genetic plan, but with each mouse-click readers/users can dive deeper into the texts of Faust: the work is first divided into *Faust I*, *Faust II*, and *Paralipomena* (figure 1 above). Clicking on one of the bars shows a further division into separate acts and scenes.  
+
+<img src="Images/Faust-2.png" width="99%" alt="[Faust-2 image]"/>  
+
+**[add caption]**
+
+The horizontal axis of the diagram in figure 2 above represents the verses of the base text; the vertical axis contains the different sigla representing either a version of the work or a paralipomenon (indicated by a siglum starting with a ‘P’). 
+
+### A prototype of Beckett's *L'Innomable* 
+
+**URL: [add]**  
+
+<img src="Images/bdmp-prototype.png" width="99%" alt="[Prototype L'Innomable image]"/>  
+
+The BDMP presents an additional, macrolevel perspective on the development of the work *L'Innomable* by visual juxtaposing the draft manuscript (consisting of two notebooks) and the base text (i.e., the first published text, in this case Editions de Minuit in 1953). One of the main intentions of the visualization is to make clear the relationship between the draft manuscript and the published text, and to visualize the temporal aspect of a text's genesis. It is a dynamic visualization: users can choose to have the sentences appear in the order they are arranged on the page of the manuscript - the writing order - or in the order they appear in the published text - the reading order.
+
+
+
 ## Close reading visualizations
 
 Close reading visualizations are designed to explore structural and other properties of individual texts.
@@ -66,5 +116,31 @@ Close reading visualizations are designed to explore structural and other proper
 
 <img src="Images/gippius.png" width="99%" alt="[Daniel image]"/>
 
-*Meter, rhythm, rhyme* is a project for exploring the history of Russian versification. Stressed vowels (not strong metrical positions) are red. In Meter column, X = stressed and O = unstressed (again, not strong and weak). The pipe represents a foot boundary and the double pipe (where relevant) a caesura. Parentheses indicate hypermetrical syllables. Rhyme is masculine (lowercase), feminine (uppercase), or dactylic (uppercase followed by prime). Stressed vowels are color coded to make patterns easier to discern. The line graph shows the percentage of times a particular syllabic position in a line is stressed over the course of the poem.
+*Meter, rhythm, rhyme* is a project for exploring the history of Russian versification. Stressed vowels (not strong metrical positions) are red. In Meter column, X = stressed and O = unstressed (again, not strong and weak). The pipe represents a foot boundary and the double pipe (where relevant) a caesura. Parentheses indicate hypermetrical syllables. Rhyme is masculine (lowercase), feminine (uppercase), or dactylic (uppercase followed by prime). Stressed vowels are color coded to make patterns easier to discern. The line graph shows the percentage of times a particular syllabic position in a line is stressed over the course of the poem.  
 
+### Beckett Digital Manuscript Project
+
+**URL:** <http://beckettarchive.org/>  
+
+<img src="Images/bdmp-table.png" width="99%" alt="[Stirrings Still/Sobresauts image]"/>
+
+For most philologists, an alignment table is a natural or familiar format to present interdocumentary variation. The collation result is presented in tabular format where witnesses are displayed vertically or horizontally. Each cell contains one or several tokens, and if a token has no match an empty cell is introduced (a ‘gap’) to visually align the surrounding tokens. As this example alignment table from the *Beckett Digital Manuscript Project (BDMP)* shows, it is possible to pass along and to visualize markup, which results in a more informative alignment table.  
+
+
+### Proust (prototype) 
+
+**URL: [add]**  
+
+<img src="Images/proust.png" width="99%" alt="[Proust prototype image]"/>
+
+Julie André and Elena Pierazzo created an animated prototype of an opening of one of Marcel Proust’s notebooks. The visualization is "ultra-diplomatic" in that it tries to mimic they lay out of the manuscript page as much as possible. A unit of text is defined by the moment when it was written, so units vary from one sentence to a few paragraphs. The visualization reproduces how the transcription of each separate unit is plotted on a certain zone of a document page. The transcription includes line breaks and mimics the distribution of the text over the page. 
+
+### Animated Variants
+
+**URL:** <http://individual.utoronto.ca/alangaley/visualizingvariation/animated.html/>  
+
+<img src="Images/animated-1.png" width="75%" alt="[Animated Variants 1 image]"/>
+
+<img src="Images/animated-2.png" width="75%" alt="[Animated Variants 2 image]"/>
+
+Though not a graph nor a diagram, Alan Galey's visualization tool ‘Animated Variants’ deserves special mention here. By using animated visualizations, Galey attempts to show that text is never in a fixed state. Textual variance is presented within a sentence in an active manner, by rotating variant words in a sentence. The tool makes a virtue of a text's ambiguity, and the point Galey want to make, is that no variant is fixed. In this example, its ambiguity is visualized by rotating the words ‘solid’ and ‘sullied’.
