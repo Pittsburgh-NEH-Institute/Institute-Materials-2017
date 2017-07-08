@@ -1,12 +1,12 @@
-# Week 2 - Day 3
+# Week 2, Day 3: Wednesday, July 19
 
-## Week 2, Day 3: Wednesday, July 19
-
-### Synopsis
+## Synopsis
 
 Week 2, Day 3 expands upon the idea of digital editions as text processing pipelines. After a short recap of day 2, we continue with the step normalization. We will show how these two pipeline stages prepare texts for automated collation. The process of automated collation is also discussed from a modeling perspective (GM). Participants learn that their research goals and questions influence the computational pipelines.
 
-### Legend
+## Outcome goals
+
+## Legend
 
 * **Presentation:** by instructors
 * **Discussion:** instructors and participants
@@ -15,9 +15,9 @@ Week 2, Day 3 expands upon the idea of digital editions as text processing pipel
 
 -------
 
-### 9:00-10:30: Normalization 1
+## 9:00–10:30: Normalization
 
-#### Topics and Activities
+### Topics and activities
 * Short recap of Day 2: computational pipelines / modeling / processing / tokenization
 * Basic normalization
 	* Plain text normalization: lower/upper casing, whitespace, UniCode, punctuation etc.
@@ -26,14 +26,14 @@ Week 2, Day 3 expands upon the idea of digital editions as text processing pipel
 	* Basic XML normalization: transforming XML to a stream of normalized (word) tokens
 * **Hands-on exercise: [NLTK; regular expressions]**
 
-#### Outcome goals
+### Outcome goals
 * Understanding the principles of basic text transformations like normalization and how they serve different objectives
 
-### 10:30-11:00: Coffee 
+## 10:30–11:00: Coffee break
 
-### 11:00-12:30: Modeling: Collation
+## 11:00–12:30: Collation
 
-#### Topics and Activities
+### Topics and Activities
 * Modeling and collation
 * Collation within editorial theory
 * Alignment (after tokenization/normalization in the GM)
@@ -44,16 +44,16 @@ Week 2, Day 3 expands upon the idea of digital editions as text processing pipel
 	* visualization of collation output
 * Tokenization and normalization for collation purposes
 
-#### Outcome goals
+### Outcome goals
 * Bringing together tokenization and normalization as individual pipeline steps and seeing how they can be implemented in the act of collation
 * Normalize, tokenize, and collate text
 * ***[some text here]***
 
-### 12:30-14:00: Lunch
+## 12:30–2:00: Lunch
 
-### 14:00-15:30: Challenging Textual Phenomena / Introducing Text as Graph (TAG)
+## 2:00–3:30: Challenging textual phenomena: Introducing Text as Graph (TAG)
 
-#### Topics and activities
+### Topics and activities
 
 * Markup as an expression of a data model; making the implicit explicit and machine-actionable
 * How XML copes with limitations of the tree as a document model
@@ -64,11 +64,16 @@ Week 2, Day 3 expands upon the idea of digital editions as text processing pipel
 * Using a schema to bring markup semantics into the model at the application level
 * LMNL ranges and TAG sets: similarities and differences: _Mrs. Warren’s profession_ as plain text, XML, LMNL, and in TAG
 
-#### Outcome goals
+### Outcome goals
 
 * Fundamentals of TAG: hypergraph
 * Modeling discontinuity
 
-### 15:30-16:00: Coffee/tea
+## 3:30–4:00: Coffee
 
-### 16:00-17:30: Review
+## 4:00–5:30: Review
+
+## Homework
+
+Please complete [Week 2, Day 3 feedback](week_2_day_3_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 2, Day 3 feedback”.
+
