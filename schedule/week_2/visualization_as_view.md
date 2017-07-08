@@ -18,7 +18,7 @@ The visualization you choose should match the story you want to tell. Here are t
 
 A bar chart easily relate a *categorical explanatory variable* to a *quantitative response variable*, as in the example below, which shows the number of volumes (the quantitative response variable) for each text type (the categorical explanatory variable) in a hypothetical collection):
 
-<img src="Images/volumesincollbar.png" "[Bar graph]"/>
+<img src="Images/volumesincollbar.png" alt="[Bar graph]"/>
 
 [The image is copied from [Principles of information visualization](http://www.themacroscope.org/?page_id=469), part of *The historican’s macroscope: big digital history*.]
 
