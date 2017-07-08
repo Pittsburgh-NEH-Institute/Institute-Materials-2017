@@ -4,41 +4,41 @@
 
 2. Create a directory and copy the following file (which must be called `docker-compose.yml`) into it:
 
-```
-version: '3'
-services:
-  # the alexandria server
-  alexandria:
-        image: huygensing/alexandria-markup-server:latest
-        ports:
-          - 8002:8080
-          - 8003:8081
-        environment:
-          - BASE_URI=http://docker.for.mac.localhost:8002
-
-  # the tex-util server, which can convert the LaTeX from the alexandria server to SVG)
-  latex:
-        image: huygensing/tex-util-server:latest
-        ports:
-          - 8000:8080
-          - 8001:8081
-        depends_on:
-          - alexandria
-        environment:
-          - BASE_URI= http://docker.for.mac.localhost:8000
-
-  # the relevant notebooks and python code to connect to the alexandria and latex services
-  notebook:
-        image: huygensing/alexandria-markup-notebook:latest
-        ports:
-          - 8888:8888
-        depends_on:
-          - latex
-          - alexandria
-        volumes:
-          # Your work notebooks will be stored here
-          - /Users/djb/docker:/work
-```
+	```
+	version: '3'
+	services:
+	  # the alexandria server
+	  alexandria:
+	        image: huygensing/alexandria-markup-server:latest
+	        ports:
+	          - 8002:8080
+	          - 8003:8081
+	        environment:
+	          - BASE_URI=http://docker.for.mac.localhost:8002
+	
+	  # the tex-util server, which can convert the LaTeX from the alexandria server to SVG)
+	  latex:
+	        image: huygensing/tex-util-server:latest
+	        ports:
+	          - 8000:8080
+	          - 8001:8081
+	        depends_on:
+	          - alexandria
+	        environment:
+	          - BASE_URI= http://docker.for.mac.localhost:8000
+	
+	  # the relevant notebooks and python code to connect to the alexandria and latex services
+	  notebook:
+	        image: huygensing/alexandria-markup-notebook:latest
+	        ports:
+	          - 8888:8888
+	        depends_on:
+	          - latex
+	          - alexandria
+	        volumes:
+	          # Your work notebooks will be stored here
+	          - /Users/djb/docker:/work
+	```
 
 1. Change the last line to specify your own workspace by replacing the “djb” with your own userid. 
 
