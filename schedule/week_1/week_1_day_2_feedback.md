@@ -8,4 +8,4 @@ For each outcome objective listed below, please respond “yes”, “somewhat�
 1. I understand how to find commands and files
 1. I understand how to read from and write to files from the command line
 
-Please feel free to add notes, explanations, or elaborations to any individual topic, or to the day as a whole.
+Please feel free to add notes, explanations, or elaborations to any individual topic, or to the day as a whole. You can email your response to Kaylen at kaylensanders@pitt.edu with the subject heading “Week 1, Day 2 feedback”.
