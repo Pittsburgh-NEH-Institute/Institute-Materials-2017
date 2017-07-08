@@ -19,15 +19,11 @@ During this tutorial we will be using the browser as well as a terminal window.
 
 To administer remote Git repositories we use the browser, while in the terminal we will do everything regarding the local Git repository.
 
-
-
-
-
 ## Create a new Github repository
 
 * Go to your browser
-* Go to github.com/
-* Login into your account
+* Go to <https://github.com/>
+* Log in to your account
 * In the upper-right corner of any page, click , and then click New repository.
 * In the Owner drop-down, select the account you wish to create the repository on.
 * Type a name for your repository, and an optional description.
