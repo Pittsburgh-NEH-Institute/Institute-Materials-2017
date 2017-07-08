@@ -51,13 +51,16 @@ Some of the special sequences beginning with `\` represent predefined sets of ch
 * a _string_, `\w` will match all the characters marked as letters in the Unicode data, or 
 * _bytes_, then this is equivalent to the class `[a-zA-Z0-9_]`. 
 
+
 | Special sequence | Matches | Restricted<sup>1</sup> equivalent to |
+|----------------- | ------- | ------------------------------------ |
 | `\d` | any _decimal digit_ | `[0-9]` |
 | `\D` | any _non-digit character_ | `[^0-9]` |
 | `\s` | any _whitespace character_ | `[ \t\n\r\f\v]` |
 | `\S` | any _non-whitespace character_ | `[^ \t\n\r\f\v]` |
-| `\w` | _alphanumeric character_ | `[a-zA-Z0-9_]` |
-| `\W` | _non-alphanumeric character_ | `[^a-zA-Z0-9_]` |
+| `\w` | any _alphanumeric character_ | `[a-zA-Z0-9_]` |
+| `\W` | any _non-alphanumeric character_ | `[^a-zA-Z0-9_]` |
+
 <sup>1</sup> With Python you can use the more restricted definition of e.g. `\w` in a string pattern by supplying the `re.ASCII` flag when compiling the regular expression. Otherwise the Unicode character categories are used and thus the sequence sets include a lot more characters.
 
 _Sequences_ can be included inside a _character class_. E.g. `[\s:;]` will match any whitespace character, a colon `:` or semicolon `;`.
