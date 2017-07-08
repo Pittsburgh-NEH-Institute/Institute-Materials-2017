@@ -5,7 +5,7 @@
 Welcome to the NEH “Make *your* edition” Institute: models and methods for digital textual scholarship. The first week is a bootcamp for operating on the command line and other baseline skills. Day one begins by familiarizing you with your operating system. We then move beyond the graphical user interface (GUI) and begin to use the command line, which allows greater control of the files, directories, and programs that populate a filesystem. Day one emphasizes knowledge of the computer as a tool for managing information.
 
 ## Outcome goals
-* Know your machine: Windows, Mac, and Linux users will all have different experiences and knowledge. Sometimes (= much of the time) the steps toward solving a problem may depend on the operating system
+* Know your machine: Windows, Mac, and Linux users will all have different experiences and knowledge. Sometimes (= much of the time) the steps toward completing a task or solving a problem may depend on the operating system
 * What are files, directories, and programs
 * Directory navigation and file manipulation
 * Creating and saving aliases
@@ -22,7 +22,7 @@ ______
 
 ## 9:00–10:30: [Getting to know your OS](getting_to_know.md)
 
-Windows and Mac users will split into breakout groups to maximize time. Differences will be discussed, but emphasis lies with the individual’s OS. How does your OS both facilitate and inhibit your work now; how might that change?
+Windows and Mac users will split into breakout groups so that participants can focus on how to work in their specific environments. How does your OS both facilitate and inhibit your work now, and how might that change?
 
 Time | Topic | Type
 ---- | ---- | ----
