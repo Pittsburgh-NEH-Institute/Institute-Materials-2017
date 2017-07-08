@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-Day three kicks off with a deeper look at regular expressions. We will discover how to refine regular expressions to achieve a broader scope of search patterns that can be tailored to specific research needs. Through enhanced understanding of the `grep` utility, day three melds our regex abilities with the command line, tying together what we have learned so far. Day three also introduces Python and covers the basics of its text processing capabilities. 
+Day three kicks off with a deeper look at refining regular expressions to tailor patterns to specific research needs. Day three introduces `grep`, which applies regex to operating on the command line. Day three also introduces Python and covers the basics of its text processing capabilities. 
 
 ## Outcome goals
 
@@ -23,17 +23,11 @@ ______
 
 ## 9:00–10:30: Regular expressions 2
 
-Placeholder
-
-Time | Topic | Type
----- | ----  | ----
-
-
 ## 10:30–11:00: Coffee break
 
 ## 11:00–12:30: Command line 3
 
-With regular expressions under our belt, we are ready to learn advanced `grep` skills for the command line. We will explore how we can search for lines that match a pattern and how to navigate some of the common pitfalls of this utility.  
+With regular expressions under our belt, we are ready to learn advanced `grep` skills for the command line. We will explore how we can search for lines that match a pattern and how to exploit advanced features (and work around complications) of this utility.  
 
 Time | Topic | Type
 ---- | ----  | ----
@@ -47,7 +41,7 @@ Time | Topic | Type
 
 ## 2:00-3:30: Python clinic 1
 
-The first day of the Python clinic will examine text processing, starting with the very basics, in preparation for more complex textual analysis. We will discuss the Natural Language Toolkit and the role it plays in processing text files. Scholars will also gain familiarity with Jupyter Notebook.
+The first day of the Python clinic will introduce the basics of text processing, in preparation for more complex textual analysis in the continuation of this unit. We will introduce and discuss the Natural Language Toolkit (NLTK) and the role it plays in processing text files. Participants will also gain familiarity with the Jupyter Notebook environment.
 
 Time | Topic | Type
 ---- | ----  | ----
@@ -58,4 +52,4 @@ Time | Topic | Type
 
 ## Homework
 
-We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 1, Day 3 feedback](week_1_day_3_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 1, Day 3 feedback”.
+Please complete [Week 1, Day 3 feedback](week_1_day_3_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 1, Day 3 feedback”.
