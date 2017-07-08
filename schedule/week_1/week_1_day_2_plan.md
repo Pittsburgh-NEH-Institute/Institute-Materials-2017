@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-Scholars further develop their background knowledge of the computing environment. The second day of Week 1 starts off with an introduction to regular expressions. From there, we build upon the first day’s overview of the command line and expand upon our understanding of programs and files, beginning to think about variables and data pipelines.  
+The second day of Week 1 starts with an introduction to regular expressions. From there, we build upon the first day’s overview of the command line and expand upon our understanding of programs and files, beginning to think about variables and data pipelines.  
 
 ## Outcome goals
 
@@ -47,7 +47,7 @@ Time | Topic | Type
 
 ## 12:30–2:00 Lunch (on your own)
 
-## 2:00-3:30: Programs and files 2
+## 2:00–3:30: Programs and files 2
 
 We have a basic grasp of directory navigation, but what don’t we know about `$PATH`? How does our environment affect our file processing? How can we use commands and variables to manipulate files more efficiently? 
 
@@ -60,7 +60,7 @@ Time | Topic | Type
 10 min | Miscellaneous commands | Presentation
 
 
-## 3:30-4:00: Coffee break
+## 3:30–4:00: Coffee break
 
 ## 4:00–5:30: Review
 
@@ -68,8 +68,8 @@ A recap of regular expressions, working in the command line, and file manipulati
 
 ## Homework
 
-We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 1, Day 2 feedback](week_1_day_2_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 1, Day 2 feedback”.
+Please complete [Week 1, Day 2 feedback](week_1_day_2_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 1, Day 2 feedback”.
 
-## Readings (optional)
+<!--## Readings (optional)
 
-The following readings are mentioned in the individual activities for this day.
+The following readings are mentioned in the individual activities for this day.-->
