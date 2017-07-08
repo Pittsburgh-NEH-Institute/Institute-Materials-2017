@@ -2,15 +2,14 @@
 
 ## Synopsis
 
-Day 4 begins with an introduction to how the Internet works, which will be important when we turn to publishing in Week 3. Version management system Git follows. All institute materials are hosted on Git, so it will seem familiar. However, Git is also a powerful tool for collaborative coding projects. Finally, another Python clinic on corpus processing, along with a bit of review, closes out the day. 
+Day 4 begins with an introduction to how the Internet works, a topic that will recur when we turn to publishing in Week 3. This day also introduces the version management system Git (which, among other things, hosts all materials for our Institute). We conclude with more advanced Python activities within Jupyter Notebook
 
 ## Outcome goals
-* [Internet goals here]
-* Why is a version control system useful?
-* Cloning a repo
-* Git workflow
+* Understand how communication over the Internet works
+* Understand why version control matters
+* Know how to clone a Git repo
+* Understand the Git workflow
 * Become comfortable with command line Git
-* Review single text processing
 * Process text corpora with Python
 
 ## Legend
@@ -36,14 +35,14 @@ Time | Topic | Type
 
 ## 11:00–12:30: [Git 1](git_tutorial.md)
 
-Git is a tool for managing, sharing, and creating content, particularly code. This tutorial aims to acclimate users to command line Git, which bypasses the GUI and allows more flexibility.
+Git is a tool for managing, sharing, and creating content, particularly code. This tutorial aims to acclimate users to command line Git, which bypasses the GUI and provides both more power and more flexibility.
 
 Time | Topic | Type
 ---- | ---- | ----
 15 min | What is git? | Presentation
-30 min | Setting identity and creating a repo | Code lab
+30 min | Setting your identity and creating a repo | Code lab
 30 min | Editing, adding, and commiting | Code lab
-15 min | Synching and Reverting | Code lab
+15 min | Synching and reverting | Code lab
 
 ## 12:30–2:00 Lunch
 
