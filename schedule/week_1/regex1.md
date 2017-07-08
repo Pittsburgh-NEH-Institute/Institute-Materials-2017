@@ -1,4 +1,4 @@
-#Regular Expressions
+# Regular Expressions
 
 _Regular expressions_ (called _REs_, _regexes_, _regexps_, _regex patterns_) are essentially a tiny, _highly specialized programming language_ embedded inside general purpose programming languages (Python, XQuery, javascript).
 Using this little _language_, you specify the _rules_ for the _set_ of possible _strings_ that you want to _match_:
@@ -20,17 +20,17 @@ A _RE language_ is relatively small and restricted, so not all possible string p
 
 In these cases, you may be better off writing code in the programming language, e.g. Python, to do the processing; Usually it is **slower** than an elaborate _RE_ but probably **a lot easier to understand**.
 
-##Simple patterns
+## Simple patterns
 We will start by learning about the _simplest possible REs_. Since _REs_ are used to operate on strings, we will begin with the most common task: _matching characters_.
 
-###Characters
+### Characters
 
 * Most letters and characters will simply match themselves.
 * Though some characters are special _metacharacters_, and do not match themselves: 
 ** They signal that some out-of-the-ordinary thing should be matched, or
 ** affect other portions of the _RE_ by repeating them or changing their meaning.
 
-####Metcharacters
+#### Metcharacters
 The complete list of metacharacters:
 ```
 . ^ $ * + ? { } [ ] \ | ( )
@@ -78,5 +78,5 @@ The first _metacharacter_ for _repeating_ things that we will look at is `*`. `*
 
 Another _repeating metacharacter_ is `+` which matches _one or more times_. This requires at least one occurrence compared to `*`.
 
-There are two more repeating _qualifiers_. The question mark character, `?`, matches either _once or zero times_. The most complicated repeated qualifier is `{m,n}`, where `m` and `n` are _decimal integers_. This _qualifier_ means there must be _at least_ `m` repetitions, and _at mos_ `n` repetitions.
+There are two more repeating _qualifiers_. The question mark character, `?`, matches either _once or zero times_. The most complicated repeated qualifier is `{m,n}`, where `m` and `n` are _decimal integers_. This _qualifier_ means there must be _at least_ `m` repetitions, and _at most_ `n` repetitions.
 
