@@ -2,7 +2,7 @@
 
 ## Text and image are both views of information
 
-Textual editions understandably foreground textual content, but at a higher level the text is a *representation* of information, and information may be represented in different ways. For example, a visual image, such as a chart or graph, is also a representation, and a graphic visualization may be considered a view of the document alongside the more obvious textual view. Graphic visualizations may sometimes offer a summary view of information that is so voluminous or complex that the words would interfere with the message. And graphic and textual views may also refer to one another, so that a graphic visualization may serve as a navigational resource for a textual view.
+Textual editions understandably foreground textual content, but at a higher level the text is also a *representation* of information, and information may be represented in different ways. For example, a visual image, such as a chart or graph, is also a representation, and a graphic visualization may be considered a view of the document alongside the more obvious textual view. Graphic visualizations can sometimes provide a summary view of information that is so voluminous or complex that the words would interfere with the message. And graphic and textual views may also refer to one another, so that a graphic visualization may serve not only as a representation of information in its own right, but also as a navigational entry into a textual view.
 
 ## Creating a visualization
 
@@ -16,7 +16,7 @@ The visualization you choose should match the story you want to tell. Here are t
 
 ### Bar chart
 
-A bar chart easily relate a *categorical explanatory variable* to a *quantitative response variable*, as in the example below, which shows the number of volumes (the quantitative response variable) for each text type (the categorical explanatory variable) in a hypothetical collection):
+A bar chart easily relates a *categorical explanatory variable* to a *quantitative response variable*, as in the example below, which shows the number of volumes (the quantitative response variable) for each text type (the categorical explanatory variable) in a hypothetical collection:
 
 <img src="Images/volumesincollbar.png" alt="[Bar graph]"/>
 
