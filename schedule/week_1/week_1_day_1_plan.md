@@ -35,7 +35,7 @@ Time | Topic | Type
 
 ## 11:00–12:30: [Command line 1](command1.md)
 
-What is a shell? How do we use it? In breakout groups, we begin working at command line by navigating through our filesystems a step at a time.
+What is a shell? How do we use it? In breakout groups, we begin working at the command line by navigating through our filesystems a step at a time.
 
 Time | Topic | Type
 ---- | ---- | ----
