@@ -20,9 +20,9 @@
 
 ## Configuring your machine to show filename extensions
 
-* **Mac OS:** Open Finder and select Preferences, click Advanced, and check the box next to "Show all filename extensions".
+* **Mac OS:** Open Finder and select Preferences, click “Advanced”, and check the box next to “Show all filename extensions”.
 
-* **Windows:** <[screenshot](images/getting_to_know_winconfig.png)> In the same "File Options" window as before, uncheck “Hide extensions for known file types” box.
+* **Windows:** <[screenshot](images/getting_to_know_winconfig.png)> In the same “File Options” window as before, uncheck “Hide extensions for known file types” box.
 
 ## About files
 
@@ -34,7 +34,7 @@
 ## Launching a terminal
 
 * For Mac OS X: the **Terminal.app** that you will find in the Applications → Utilities folder. (Many Mac users prefer the free third-party <https://www.iterm2.com/>.)
-* For Windows: the Command Prompt **cmd.exe** <[screenshot](images/getting_to_know_cmd.png)> is the native Windows console, which grew out of DOS.  We will be using it in this session. From a Start menu type in `cmd`. (For later sessions and the remainder of this institute we will be using the **bash shell** instead, which you downloaded and installed as part of Git. This is the command line interface we use and recommend.)
+* For Windows: the Command Prompt **cmd.exe** <[screenshot](images/getting_to_know_cmd.png)> is the native Windows console, which grew out of DOS.  We will be using it in this session. From a Start menu type in “cmd”. (For later sessions and the remainder of this institute we will be using the **bash shell** instead, which you downloaded and installed as part of Git. This is the command line interface we use and recommend.)
 * For Ubuntu Desktop (Unity): you can hit Ctrl-Alt-T or you can type `Terminal` into the Search box.
 
 ## Moving through a filesystem
@@ -42,15 +42,15 @@
 <!-- where is home?  both in cmd and in gui-->
 <!-- language differences for gui and command line-->
 
-* Navigate up and down, with emphasis on the paths in the title bar. <!-- We should clarify that Git Bash will use forward slashes rather than backslashes, and explain later when we introduce cmd why that's the case.-->
-* Drive letter: `C:\Users` (Windows `cmd`), `/c/Users` (Windows git `bash`), `/Users` (Unix, including Mac OS: no drive letter).
+* Navigate up and down, with emphasis on the paths in the title bar <!-- We should clarify that Git Bash will use forward slashes rather than backslashes, and explain later when we introduce cmd why that's the case.-->
+* Drive letter: `C:\Users` (Windows `cmd`), `/c/Users` (Windows Git `bash`), `/Users` (Unix, including Mac OS: no drive letter)
 * `cd`: change directory <!--Open a command line and begin using `cd`. Explain that `cd` is essentially the same as selecting or clicking a folder. `cd` into your home directory.-->
 * `dir`: list all files (Windows)
-* `ls`: list all files (Mac, bash) <!--Use `ls` to show all the files in your current (when you first open the terminal, home) directory. Compare that to what you now see in your home directory (or C drive "folder"). Then use `cd Documents` to move into your documents folder. This is a relative path, as you’ve navigated relative to where you’ve started. Explain what an absolute path looks like, and try running one. Then run a few relative paths.-->
+* `ls`: list all files (Mac, bash) <!--Use `ls` to show all the files in your current (when you first open the terminal, home) directory. Compare that to what you now see in your home directory (or C drive “folder”). Then use `cd Documents` to move into your documents folder. This is a relative path, as you’ve navigated relative to where you’ve started. Explain what an absolute path looks like, and try running one. Then run a few relative paths.-->
 
 ## File/directory path in file explorer GUI vs. shell 
 
-* How to match up the GUI file path with the file/directory path in the terminal
+* Matching the GUI file path with the file/directory path in the terminal
 * User-specific directories: where are your home directory, document folder, and desktop? What are their full file/directory paths? 
 * Non-English OS’s may have translation/localization applied, but only on the GUI side! 
 	* In Spanish Windows, a user’s Documents folder would appear in File Explorer as “Usarios > jeremy > Documentos”
@@ -60,12 +60,12 @@
 How removable and external drives (such as a USB thumbdrive) are treated in GUI vs. terminal environment
 
 * In Windows, they are assigned a new drive letter: `d:\` `e:\` (cmd), `/d/` `/e/` (git `bash`)
-* In Mac OS, they are mounted underneath `/Volumes`
+* In Mac OS, they are mounted underneath `/Volumes` when you plug them in. Unmount them by following the instructions at [Mount and unmount drives from the command line in Mac OS X](http://osxdaily.com/2013/05/13/mount-unmount-drives-from-the-command-line-in-mac-os-x/). 
  	
 ## How to run a program as an administrator
 
-* Windows: right click on a program icon (say, Command Prompt) and select “Run as administrator”. 
-* Mac: `sudo` on the command line; no equivalent method in GUI.  
+* Windows: right click on a program icon (say, Command Prompt) and select “Run as administrator”
+* Mac: precede the command with `sudo` on the command line; no equivalent method in GUI  
 
 ## Environment variables (aka system variables)
 
@@ -73,5 +73,5 @@ How removable and external drives (such as a USB thumbdrive) are treated in GUI 
 	* Windows (`cmd`): `set`
 	* Mac (`bash`): `printenv`
 * How to view system variables through a GUI
-	* Windows:
+	* Windows: ???
 	* Mac: Mac OS does not provide a GUI interface to the environment. Use the command line.
