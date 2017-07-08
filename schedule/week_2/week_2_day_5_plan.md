@@ -38,7 +38,7 @@ Week 2, Day 5 concentrates on querying text, on creating visualizations, and on 
 * Visualization as part of the text processing pipeline: making decisions, selecting formats, interacting with, and producing visualizations
 * Hands-on: a departure from Word Cloud
 
-### 12:30-14:00: Lunch (on your own)
+### 12:30-14:00: Lunch
 
 ### 14:00-15:30 Text analytics 3
 
