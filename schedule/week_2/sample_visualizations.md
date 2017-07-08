@@ -28,7 +28,7 @@ There are two main redactions or versions, the twelfth-century _Slovo Daniila Za
 
 <img src="Images/emir.png" width="99%" alt="[Daniel image]"/>
 
-The seventeenth-century Slavonic text has been reordered to model a hypothetical fourteenth-century Slavonic source that stands closer to the reconstructed Greek _common core_ of the tradition. In the full view of the *plectogram* at the top of the page, the Greek structure is on the bottom row, the reconstructed fourteenth-century Slavonic in the middle, and the extant seventeenth-century Slavonic at the top. Circled sections of the Greek were not continued in the Slavonic; other Greek sections are divided because their parts, which are adjacent in the fourteenth-century, were separated or otherwise rearranged by the seventeenth century. The flyout menu (upper right) toggles between Slavonic and English, and also toggles the visibility of the Greek and the seventeenth-century Slavonic (the fourteenth-century text, the focus of the edition, is always visible). An [about page](http://digenis.obdurodon.org/emir_about.xhtml) explaining the rationale of the edition is also accessible from the menu.
+The seventeenth-century Slavonic text has been reordered to model a hypothetical fourteenth-century Slavonic source that stands closer to the reconstructed Greek _common core_ of the tradition. In the full view of the *plectogram* at the top of the page, the Greek structure is on the bottom row, the reconstructed fourteenth-century Slavonic in the middle, and the extant seventeenth-century Slavonic at the top. Circled sections of the Greek were not continued in the Slavonic; other Greek sections are divided because their parts, which are adjacent in the fourteenth-century reconstruction, were separated or otherwise rearranged by the seventeenth century. The flyout menu (upper right) toggles between Slavonic and English, and also toggles the visibility of the Greek and the seventeenth-century Slavonic (the fourteenth-century text, the focus of the edition, is always visible). An [about page](http://digenis.obdurodon.org/emir_about.xhtml) explaining the rationale of the edition is also accessible from the menu.
 
 ### The story of Mary, Abraham’s niece
 
@@ -61,15 +61,10 @@ StemmaWeb offers interactive visual tools for exploring and editing models of re
 **URL:** <http://catview.uzi.uni-halle.de/>  
 
 <img src="Images/CATview-1.png" width="99%" alt="[CATview-1 image]"/> 
-**add caption**
-
-CATview is developed by the working group on eHumanities of the Computer Science Institute of Martin Luther University Halle-Wittenberg **[add link]**. It makes it possible to view the textual variation at different degrees of granularity: from a macrolevel view (figure 1), where the witnesses are displayed horizontally with different rectangles representing a segment of text like a word, phrase, or paragraph.
 
 <img src="Images/CATview-2.png" width="99%" alt="[CATview-2 image]"/>
-**add caption**
 
- Conversely, users can zoom in to see a more detailed view on the text (figure 2). Segments are aligned vertically (in columns); in figure 2 we see that some segments have a darker shade, which indicates the level of similarity.
-
+CATview was developed by the [working group on eHumanities of the Computer Science Institute of Martin Luther University Halle-Wittenberg](http://www.informatik.uni-halle.de/ti/forschung/ehumanities/) to visualize textual variation at different degrees of granularity. On a macrolevel view (the first image above), the witnesses are displayed horizontally with different rectangles representing a segment of text like a word, phrase, or paragraph, which allows the user to identify locations where text is present in some but not all witnesses. Alternatively (the second image above), users can zoom in for a closer look the text. Here segments are aligned vertically (in columns); darker shading indicates a greater degree of textual of similarity.
 
 ### TRAViz
 
@@ -77,8 +72,7 @@ CATview is developed by the working group on eHumanities of the Computer Science
 
 <img src="Images/TRAViz.png" width="99%" alt="[TRAViz image]"/>  
 
-TRAViz is a set of JavaScript [packages] (https://github.com/stjaenicke/TRAViz) primarily intended to generate and visualize variant graphs, and it offers an elaborate variant graph visualization. Among other things, TRAViz lets users interact with the graph and adjust it to match their needs and interests.
-
+TRAViz is a set of [JavaScript packages](https://github.com/stjaenicke/TRAViz) primarily intended to render variant graphs, and it offers an elaborate variant graph visualization. Among other things, TRAViz lets users interact with the graph and adjust it to match their needs and interests.
 
 ### Faust
 
@@ -86,25 +80,19 @@ TRAViz is a set of JavaScript [packages] (https://github.com/stjaenicke/TRAViz) 
 
 <img src="Images/Faust-1.png" width="99%" alt="[Faust-1 image]"/>  
 
-**[add caption]**  
-
-A comprehensive overview of the genesis of *Faust* by Johann Wolfgang von Goethe is presented in the form of interactive diagrams that show the writing process of the entire work. The diagram resembles a conventional genetic plan, but with each mouse-click readers/users can dive deeper into the texts of Faust: the work is first divided into *Faust I*, *Faust II*, and *Paralipomena* (figure 1 above). Clicking on one of the bars shows a further division into separate acts and scenes.  
-
 <img src="Images/Faust-2.png" width="99%" alt="[Faust-2 image]"/>  
 
-**[add caption]**
+A comprehensive overview of the genesis of *Faust* by Johann Wolfgang von Goethe is presented in the form of interactive diagrams that show the writing process of the entire work. The diagram resembles a conventional genetic plan, but with each mouse-click readers/users can dive more deeply into the texts of *Faust*: the work is first divided into *Faust I*, *Faust II*, and *Paralipomena* (first image above). Clicking on one of the bars shows a further division into separate acts and scenes. The horizontal axis of the second diagram represents the verses of the base text; the vertical axis contains the different sigla, representing either a version of the work or a paralipomenon (indicated by a siglum starting with a “P”). 
 
-The horizontal axis of the diagram in figure 2 above represents the verses of the base text; the vertical axis contains the different sigla representing either a version of the work or a paralipomenon (indicated by a siglum starting with a ‘P’). 
+### A prototype of Beckett's *L'Innommable* 
 
-### A prototype of Beckett's *L'Innomable* 
-
-**URL: [add]**  
+**URL:** <http://www.beckettarchive.org/writingsequenceofinnommable.jsp>
 
 <img src="Images/bdmp-prototype.png" width="99%" alt="[Prototype L'Innomable image]"/>  
 
-The BDMP presents an additional, macrolevel perspective on the development of the work *L'Innomable* by visual juxtaposing the draft manuscript (consisting of two notebooks) and the base text (i.e., the first published text, in this case Editions de Minuit in 1953). One of the main intentions of the visualization is to make clear the relationship between the draft manuscript and the published text, and to visualize the temporal aspect of a text's genesis. It is a dynamic visualization: users can choose to have the sentences appear in the order they are arranged on the page of the manuscript - the writing order - or in the order they appear in the published text - the reading order.
+The BDMP presents a macrolevel perspective on the development of the work *L’Innomable* by visually juxtaposing the draft manuscript (consisting of two notebooks) and the base text (i.e., the first published text, in this case Editions de Minuit in 1953). The visualization is intended to elucidate the relationship between the draft manuscript and the published text, and to visualize the temporal aspect of a text’s genesis. It is a dynamic visualization: users can choose to render the sentences as ordered on the page of the manuscript, that is, in the writing order, as they appear in the published text, i.e., the reading order.
 
-
+Access to some of the materials in the BDMP is restricted for reasons of copyright, but the URL above points to a page with links to freely accessible features.
 
 ## Close reading visualizations
 
@@ -120,27 +108,27 @@ Close reading visualizations are designed to explore structural and other proper
 
 ### Beckett Digital Manuscript Project
 
-**URL:** <http://beckettarchive.org/>  
+**URL:** <http://www.beckettarchive.org/>  
 
 <img src="Images/bdmp-table.png" width="99%" alt="[Stirrings Still/Sobresauts image]"/>
 
-For most philologists, an alignment table is a natural or familiar format to present interdocumentary variation. The collation result is presented in tabular format where witnesses are displayed vertically or horizontally. Each cell contains one or several tokens, and if a token has no match an empty cell is introduced (a ‘gap’) to visually align the surrounding tokens. As this example alignment table from the *Beckett Digital Manuscript Project (BDMP)* shows, it is possible to pass along and to visualize markup, which results in a more informative alignment table.  
+For most philologists, an alignment table is a natural or familiar format to present interdocumentary variation. The collation result is presented in tabular format where witnesses are displayed vertically or horizontally. Each cell contains one or several tokens, and if a token has no match an empty cell is introduced (a “gap”) to align the surrounding tokens visually. As this example alignment table from the *Beckett Digital Manuscript Project (BDMP)* shows, it is possible to pass along and to visualize markup (the deletions in Version 11), which results in a more informative alignment table.  
 
 
 ### Proust (prototype) 
 
-**URL: [add]**  
+**URL:** <http://research.cch.kcl.ac.uk/proust_prototype/>
 
 <img src="Images/proust.png" width="99%" alt="[Proust prototype image]"/>
 
-Julie André and Elena Pierazzo created an animated prototype of an opening of one of Marcel Proust’s notebooks. The visualization is "ultra-diplomatic" in that it tries to mimic they lay out of the manuscript page as much as possible. A unit of text is defined by the moment when it was written, so units vary from one sentence to a few paragraphs. The visualization reproduces how the transcription of each separate unit is plotted on a certain zone of a document page. The transcription includes line breaks and mimics the distribution of the text over the page. 
+Julie André and Elena Pierazzo created an animated prototype of an opening of one of Marcel Proust’s notebooks. The visualization is *ultra-diplomatic* in that it tries to replicate the layout of the manuscript page as closely as possible. A unit of text is defined by the moment when it was written, so units vary from one sentence to a few paragraphs. The visualization reproduces how the transcription of each separate unit is plotted on a zone of a document page. The transcription includes line breaks and mimics the distribution of the text over the page. 
 
 ### Animated Variants
 
-**URL:** <http://individual.utoronto.ca/alangaley/visualizingvariation/animated.html/>  
+**URL:** <http://individual.utoronto.ca/alangaley/visualizingvariation/animated.html>  
 
 <img src="Images/animated-1.png" width="75%" alt="[Animated Variants 1 image]"/>
 
 <img src="Images/animated-2.png" width="75%" alt="[Animated Variants 2 image]"/>
 
-Though not a graph nor a diagram, Alan Galey's visualization tool ‘Animated Variants’ deserves special mention here. By using animated visualizations, Galey attempts to show that text is never in a fixed state. Textual variance is presented within a sentence in an active manner, by rotating variant words in a sentence. The tool makes a virtue of a text's ambiguity, and the point Galey want to make, is that no variant is fixed. In this example, its ambiguity is visualized by rotating the words ‘solid’ and ‘sullied’.
+Though not a graph nor a diagram, Alan Galey's Animated Variants visualization tool deserves special mention here. Textual variance is represented within a sentence in an active manner, by switching among variant words in place. The tool makes a virtue of a text’s ambiguity, emphasizing Galey’s point that no variant is fixed. In this example, that ambiguity is expressed visually by changing among the words “solid”, “sallied”, and “sullied”.
