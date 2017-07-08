@@ -46,17 +46,17 @@ Time | Topic | Type
 
 ## 12:30–2:00 Lunch (on your own)
 
-## 2:00-3:30: [Programs and files 1](programs_and_files1.md)
-Now that we know where to find them and what they are, how can we manipulate and use programs for our benefit?
+## 2:00–3:30: [Programs and files 1](programs_and_files1.md)
+Now that we know where to find them and what they are, how can we manipulate and use files and dirctories for our benefit?
 
 Time | Topic | Type
 ---- | ---- | ----
 20 min | Heirarchical file system | Presentation
-25 min | Navigating the directory stack | Code lab/ Presentation
-10 min | Operating system conventions | Discussion
+30 min | Navigating the directory stack | Code lab
+15 min | Operating system conventions | Discussion
 25 min | Aliases | Code lab
 
-## 3:30-4:00: Coffee break
+## 3:30–4:00: Coffee break
 
 ## 4:00–5:30: Dealing with errors
 
