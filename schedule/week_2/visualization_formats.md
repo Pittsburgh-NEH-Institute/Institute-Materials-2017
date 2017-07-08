@@ -8,7 +8,7 @@ A *vector* image describes the contours of the image. For example, where a raste
 
 The size of raster image files depends ultimately on the number of pixels (although not in a linear way, since many image formats are compressed), so larger, more detailed images make for larger file sizes (and slower download times). The size of vector image files depends on their complexity; an instruction to draw a long line takes no more space than an instruction to draw a short line, but (although there are optimization simplifications here, too) each vector shape requires an additional instruction.
 
-Unless you have good reason to do otherwise, use raster images for photographs, including screen captures, which typically have a lot of detail and few regular geometric shapes. Use SVG for charts and graphs, which have less detail and more regular geometric shapes. Additionally, as is explained below, it is easier for users to interact with the parts of an SVG image than with parts of a raster image.
+Unless you have good reason to do otherwise, use raster images for photographs, including screen captures, which typically have a lot of detail, many colors or shades, and few regular geometric shapes. Use SVG for charts and graphs, which have less detail, fewer colors or shades, and more regular geometric shapes. Additionally, as is explained below, it is easier for users to interact with the parts of an SVG image than with parts of a raster image.
 
 ## Raster formats
 
@@ -18,14 +18,14 @@ The most common raster formats are:
 
 * **TIFF** (Tagged Image File Format). Common for archival use because it provides a high degree of fidelity. Uncommon for Web use because file sizes are typically larger than with other formats. Filename extensions are `.tif` or `.tiff`.
 * **JPG** (Joint Photographic Experts Group). Common for web use because of relatively small file size. The filesize is achieved with lossy compression that can be adjusted by the developer, and that, in the best cases, is not noticable by the viewer. No support for transparent backgrounds. Filename extensions are `.jpg` and `.jpeg`.
-* **PNG** (Portable Network Graphics). PNG24 is a very widely used lossless file format; PNG8 is limited to 256 colors. Supports transparent backgrounds. Does not support standard EXIF metadata. Filename extension is `.png`.
+* **PNG** (Portable Network Graphics). PNG24 is a widely used lossless file format; PNG8 is limited to 256 colors. Supports transparent backgrounds. Does not support standard EXIF metadata. Filename extension is `.png`.
 * **GIF** (Graphics Interchange Format). Limited to 256 colors. Supports transparent backgrounds. Does not support standard EXIF metadata. Has largely been replaced by PNG. Filename extension is `.gif`.
 
 For a comparison of raster format features, see [GIF, PNG, JPG or SVG. Which One To Use?](https://www.sitepoint.com/gif-png-jpg-which-one-to-use/).
  
 ## Conversion and the Imagemagick toolkit
 
-You can convert images from one format to another at the command line with the open source, platform independet Imagemagick toolkit, located at <https://www.imagemagick.org/script/index.php>. The Imagemagick tools we use most often are:
+You can convert images from one format to another at the command line with the open source, platform independent Imagemagick toolkit, located at <https://www.imagemagick.org/script/index.php>. The Imagemagick tools we use most often are:
 
 * [identify](https://www.imagemagick.org/script/identify.php): get information about an image (more detailed than the `file` command, especially with the `-verbose` switch)
 * [convert](https://www.imagemagick.org/script/convert.php): change image type and format
@@ -40,7 +40,7 @@ For more information about choosing a raster image format see Ilya Grigorik’s 
 
 SVG (Scalable Vector Graphics) is a [W3C standard](https://www.w3.org/TR/SVG11/) for vector images on the Web. The Mozilla Development Network [SVG portal](https://developer.mozilla.org/en-US/docs/Web/SVG) is a good source for reliable tutorial and reference information.
 
-As described above, vector images (at least for charts and graphs, which typically have a lot of simple geometric shapes) are usually smaller than raster images, and they are equally crisp at any resolution. That makes them uniquely suited to Web delivery, which may land on screens that range from old, low-resolution phones to modern, high-resolution desktops.
+As described above, vector images (at least for charts and graphs, which typically have a lot of simple geometric shapes) are usually smaller than raster images, and they are equally crisp at any resolution. That makes them uniquely suited to Web delivery, which may land on screens that range from old, small, low-resolution phones to modern, large, high-resolution desktops.
 
 ### SVG, DOM, and JavaScript
 
@@ -60,7 +60,7 @@ The most popular free, open source, platform independent image editing toolkit i
 
 ### SVG
 
-The most popular free, open source, platform independent SVG-editing tool is [Inkscape](https://inkscape.org/en/).
+The most popular free, open source, platform independent SVG editing tool is [Inkscape](https://inkscape.org/en/).
 
 ## Drawing graphs
 
