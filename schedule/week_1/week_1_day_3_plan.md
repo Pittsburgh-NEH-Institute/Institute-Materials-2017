@@ -43,7 +43,7 @@ Time | Topic | Type
 20 min | `grep` complications | Presentation
 25 min | Shell scripting | Code lab
 
-## 12:30–2:00 Lunch (on your own)
+## 12:30–2:00 Lunch
 
 ## 2:00-3:30: Python clinic 1
 

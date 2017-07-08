@@ -46,7 +46,7 @@ Time | Topic | Type
 20 min | Social Git | Code lab
 20 min | Git review | Talk lab/ Discussion
 
-## 12:30–2:00 Lunch (on your own)
+## 12:30–2:00 Lunch
 
 ## 2:00-3:30: [Web technologies](web_technologies.md)
 

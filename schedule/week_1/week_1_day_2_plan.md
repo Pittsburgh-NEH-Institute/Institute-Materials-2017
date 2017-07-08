@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-The second day of Week 1 starts with an introduction to regular expressions. From there, we build upon the first day’s overview of the command line and expand upon our understanding of programs and files, beginning to think about variables and data pipelines.  
+The second day of Week 1 starts with an introduction to regular expressions. From there, we build upon the first day’s overview of the command line and expand our understanding of programs and files, introducing the use of variables and data pipelines.  
 
 ## Outcome goals
 
@@ -45,7 +45,7 @@ Time | Topic | Type
 20 min | Variables and quotes in the shell | Code lab
 20 min | Even more `ls` switches | Code lab
 
-## 12:30–2:00 Lunch (on your own)
+## 12:30–2:00 Lunch
 
 ## 2:00–3:30: Programs and files 2
 

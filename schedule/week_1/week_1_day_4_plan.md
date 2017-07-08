@@ -45,7 +45,7 @@ Time | Topic | Type
 30 min | Editing, adding, and commiting | Code lab
 15 min | Synching and Reverting | Code lab
 
-## 12:30–2:00 Lunch (on your own)
+## 12:30–2:00 Lunch
 
 ## 2:00-3:30: [Python 2](Python%20Clinic%20Day%202.ipynb)
 

@@ -44,7 +44,7 @@ Time | Topic | Type
 15 min | `ls` switches and simplifying your command line | Code lab
 30 min | Working with files and directories | Code lab
 
-## 12:30–2:00 Lunch (on your own)
+## 12:30–2:00 Lunch
 
 ## 2:00–3:30: [Programs and files 1](programs_and_files1.md)
 Now that we know where to find them and what they are, how can we manipulate and use files and dirctories for our benefit?
