@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-Day 4 begins with an introduction to how the internet works, as we will build on those technologies in later sessions.  Version management system Git follows.  All institute materials are hosted on Git, so it will seem familiar.  However, Git is also a powerful tool for collaborative coding projects.  Finally, another Python clinic on corpus processing, along with a bit of review, closes out the day.  
+Day 4 begins with an introduction to how the Internet works, which will be important when we turn to publishing in Week 3. Version management system Git follows. All institute materials are hosted on Git, so it will seem familiar. However, Git is also a powerful tool for collaborative coding projects. Finally, another Python clinic on corpus processing, along with a bit of review, closes out the day. 
 
 ## Outcome goals
 * [Internet goals here]
@@ -26,7 +26,7 @@ ______
 
 
 Time | Topic | Type
----- | ----  | ----
+---- | ---- | ----
 10 min | Review | Discussion
 25 min | Placeholder | 
 25 min | Placeholder | 
@@ -36,10 +36,10 @@ Time | Topic | Type
 
 ## 11:00–12:30: [Git 1](git_tutorial.md)
 
-Git is a tool for managing, sharing, and creating content, particularly code.  This tutorial aims to acclimate users to command line Git, which bypasses the GUI and allows more flexibility.
+Git is a tool for managing, sharing, and creating content, particularly code. This tutorial aims to acclimate users to command line Git, which bypasses the GUI and allows more flexibility.
 
 Time | Topic | Type
----- | ----  | ----
+---- | ---- | ----
 15 min | What is git? | Presentation
 30 min | Setting identity and creating a repo | Code lab
 30 min | Editing, adding, and commiting | Code lab
@@ -47,7 +47,7 @@ Time | Topic | Type
 
 ## 12:30–2:00 Lunch
 
-## 2:00-3:30: [Python 2](Python%20Clinic%20Day%202.ipynb)
+## 2:00–3:30: [Python 2](Python%20Clinic%20Day%202.ipynb)
 
 After becoming comfortable with processing single documents using Python, they will learn to process a corpus using U.S. Presidential inaugural addresses with NLTK.
 
@@ -58,12 +58,14 @@ Time | Topic | Type
 10 min | Processing a corpus | Code lab
 25 min | Troubleshooting | Talk lab
 
-## 3:30-4:00: Coffee break
+## 3:30–4:00: Coffee break
 
 ## 4:00–5:30: Review
 
-Placeholder
+## Homework
 
-Time | Topic | Type
----- | ---- | ----
+Please complete [Week 1, Day 4 feedback](week_1_day_4_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 1, Day 4 feedback”.
 
+<!--## Readings (optional)
+
+The following readings are mentioned in the individual activities for this day.-->
