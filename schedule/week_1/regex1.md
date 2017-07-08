@@ -58,7 +58,7 @@ Some of the special sequences beginning with `\` represent predefined sets of ch
 | `\S` | any _non-whitespace character_ | `[^ \t\n\r\f\v]` |
 | `\w` | _alphanumeric character_ | `[a-zA-Z0-9_]` |
 | `\W` | _non-alphanumeric character_ | `[^a-zA-Z0-9_]` |
-<sup>1</sup>With Python you can use the more restricted definition of e.g. `\w` in a string pattern by supplying the `re.ASCII` flag when compiling the regular expression. Otherwise the Unicode character categories are used and thus the sequence sets include a lot more caracters.
+<sup>1</sup> With Python you can use the more restricted definition of e.g. `\w` in a string pattern by supplying the `re.ASCII` flag when compiling the regular expression. Otherwise the Unicode character categories are used and thus the sequence sets include a lot more characters.
 
 _Sequences_ can be included inside a _character class_. E.g. `[\s:;]` will match any whitespace character, a colon `:` or semicolon `;`.
 
