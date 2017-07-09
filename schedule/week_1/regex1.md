@@ -187,10 +187,8 @@ Since we introduced _precedence_ in the previous section we also want to be able
 
 | String | RE | Match |
 | --- | --- | --- |
-| word and phrase level | `word|phrase level` | Yes | 
-| walked up to the talking lamp post | `ed\b|ing\b` | Yes |  
-| rain | `\brain\b|` | Yes |
-| rain | `$r[ai]+n\b` | Yes |
+| word and phrase level | `word\|phrase level` | Yes | 
+| walked up to the talking lamp post | `ed\b\|ing\b` | Yes |  
 | word level and phrase level | `word\|phrase level` | Yes, but only _word_ and _phrase level_ |
 | word level and phrase level | `(word\|phrase) level` | Yes, both _word level_ and _phrase level_ |
 
