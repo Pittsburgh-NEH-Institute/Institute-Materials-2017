@@ -14,7 +14,7 @@ Digital humanists already have access to workshops and tutorials to help them le
 <tr><td><img src="images/tla.jpg" width="200px" alt="[Andrews picture]"/></td><td style="vertical-align: middle">Tara Andrews<br/>Institute of History<br/>University of Vienna</td></tr>
 <tr><td><img src="images/djb.jpg" width="200px" alt="[Birnbaum picture]"/></td><td style="vertical-align: middle">David J. Birnbaum<br/>Department of Slavic Languages and Literatures<br/>University of Pittsburgh</td></tr>
 <tr><td><img src="images/hc.png" width="200px" alt="[Cayless picture]"/></td><td style="vertical-align: middle">Hugh Cayless<br/>Duke Collaboratory for Classics Computing (DC3)<br/>Duke University</td></tr>
-<tr><td>[placeholder]</td><td style="vertical-align: middle">Ronald Haentjens Dekker<br/>Huygens Institute<br/>Royal Netherlands Academy of Arts and Sciences</td></tr>
+<tr><td>&#xa0;</td><td style="vertical-align: middle">Ronald Haentjens Dekker<br/>Huygens Institute<br/>Royal Netherlands Academy of Arts and Sciences</td></tr>
 <tr><td><img src="images/nrh.jpeg" alt="[Han picture]" width="200px"/></td><td style="vertical-align: middle">Na-Rae Han<br/>Department of Linguistics<br/>University of Pittsburgh</td></tr>
 <tr><td><img src="images/mk.jpg" width="200px" alt="[Kestemont picture]"></td><td style="vertical-align: middle">Mike Kestemont<br/>Department of Literature<br/>University of Antwerp</td></tr>
 <tr><td><img src="images/ljo.jpg" width="200px" alt="[Olsson picture]"/></td><td style="vertical-align: middle">Leif-Jöran Olsson<br/>Department of Swedish Language<br/>University of Gothenburg</td></tr>
