@@ -1,11 +1,12 @@
 # Regular Expressions
 
-_Regular expressions_ (called _REs_, _regexes_, _regexps_, _regex patterns_) are essentially a tiny, _highly specialized programming language_ embedded inside general purpose programming languages (Python, XQuery, javascript).
-Using this _language_, you specify the _rules_ for the _set_ of possible _strings_ that you want to _match_:
+_Regular expressions_ (called _REs_, _regexes_, _regexps_, _regex patterns_) are essentially a tiny, _highly specialized programming language_ embedded inside general purpose programming languages (Python, XQuery, javascript). Please note that there are differences in how all general purpose programming langugages implement thier RE language.
+When using a _RE language_, you specify the _rules_ for the _set_ of possible _strings_ that you want to _match_:
 * sentences in a language, 
 * e-mail addresses, 
 * TeX commands, or
 * anything you like.<sup>0</sup>
+
 <sup>0</sup> It does not replace a parser for XML or HTML since you can easily create invalid and non-wellformed markup.
 
 You can then ask questions such as:
@@ -127,8 +128,67 @@ The fourth and most complicated repeated qualifier is `{m,n}`, where `m` and `n`
 | appreciated | `p{2,2}` | Yes |  
 | rain | `[ai]{2,2}` | Yes |
 | rain | `[ai]{1,2}` | Yes |
-| complicated | `li[act]{3,}?ed` | Yes |
+| complicated | `li[act]{3,}ed` | Yes |
 
 If either `m` or `n` is omitted it becomes for e.g. `{3,}` _three or more_ and `{,3}` _up to three_ repetitions. 
 
 With this qualifier you can express all the single repeating qualifiers, e.g. `?` as `{0,1}` `+` as `{1,}`, and `*` as `{0,}` but the single versions are both easier on the eye and shorter to write.
+
+## Anchors
+Anchors match a position not characters. 
+
+### Metacharacter anchors
+
+| Metacharacter |  Matches at |
+| --- | --- |
+| `^` | the start of a string |
+| `$` | the end of a string |
+
+Most _RE engines_ have a _multi-line_ mode that makes _caret_ `^` match after any line break, and _dollar_sign_ `$` before any line break.
+
+| String | RE | Match |
+| --- | --- | --- |
+| complicated | `^comp` | Yes | 
+| appreciated | `ed$` | Yes |  
+| rain | `^rain$` | Yes |
+| rain | `$r[ai]+n$` | Yes |
+| complicated | `^comp.*ed$` | Yes |
+
+### Special sequence anchors
+
+| Special sequence |  Matches at |
+| --- | --- |
+| `\b` | a word boundary |
+| `\B` | not a word boundary |
+
+A word boundary is a position between a character that can be matched by the set of characters of `\w` and a character that cannot be matched by `\w`. `\b` also matches at the ends of the string if the first/last characters in the string are word characters. `\B` matches at every position where `\b` cannot match.
+
+| String | RE | Match |
+| --- | --- | --- |
+| complicated | `\bcomp` | Yes | 
+| appreciated | `\Bed\b` | Yes |  
+| rain | `\brain\b` | Yes |
+| rain | `$r[ai]+n\b` | Yes |
+| complicated | `\bcomp.+\b` | Yes |
+
+## Alternation
+
+_Alternation_ is the _RE_ equivalent of `or`. `word|weapon` matches _words_ in _About words and other mighty weapons_. Applied again the _RE alternation_ matches _weapons_. You can add as many alternatives as you want, e.g. `letter|syllable|word|phrase|sentence|paragraph`.
+
+_Alternation_ has the **lowest precedence** of all _RE operators_.
+
+## Grouping
+Since we introduced _precedence_ in the previous section we also want to be able to change the behaviour. This is what _grouping_ does.  
+| Metacharacter | Explanation |
+| --- | --- |
+| `(` | starts a group |
+| `)` | ends a group |
+
+| String | RE | Match |
+| --- | --- | --- |
+| word and phrase level | `word|phrase level` | Yes | 
+| walked up to the talking lamp post | `ed\b|ing\b` | Yes |  
+| rain | `\brain\b|` | Yes |
+| rain | `$r[ai]+n\b` | Yes |
+| word level and phrase level | `word|phrase level` | Yes, but only _word_ and _phrase level_ |
+| word level and phrase level | `(word|phrase) level` | Yes, both _word level_ and _phrase level_ |
