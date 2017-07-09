@@ -20,7 +20,7 @@ Welcome to the NEH “Make *your* edition” Institute: models and methods for d
 
 ______
 
-## 9:00–10:30: Getting to know your OS [Windows](getting_to_know_windows.md) [Mac](getting_to_know_windows_mac.md)
+## 9:00–10:30: Getting to know your OS ([Windows](getting_to_know_windows.md)) ([Mac](getting_to_know_windows_mac.md))
 
 Windows and Mac users will split into breakout groups so that participants can focus on how to work in their specific environments. How does your OS both facilitate and inhibit your work now, and how might that change?
 
@@ -33,16 +33,16 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: [Command line 1](command1.md)
+## 11:00–12:30: Command line 1 ([Windows](command1_windows.md)) (Mac: follow links below)
 
 What is a shell? How do we use it? In breakout groups, we begin working at the command line by navigating through our filesystems a step at a time.
 
 Time | Topic | Type
 ---- | ---- | ----
-15 min | The shell | Presentation
-30 min | First commands | Code lab
-15 min | `ls` switches and simplifying your command line | Code lab
-30 min | Working with files and directories | Code lab
+5 min | [Setup](http://swcarpentry.github.io/shell-novice/setup/) | Presentation
+25 min | [1. Introducing the Shell](http://swcarpentry.github.io/shell-novice/01-intro/) | Code lab
+30 min | [2. Navigating Files and Directories](http://swcarpentry.github.io/shell-novice/02-filedir/) | Code lab
+30 min | [3. Working with Files and Directories](http://swcarpentry.github.io/shell-novice/03-create/) | Code lab
 
 ## 12:30–2:00 Lunch
 
