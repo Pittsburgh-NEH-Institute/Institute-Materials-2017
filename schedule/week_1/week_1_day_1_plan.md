@@ -20,7 +20,7 @@ Welcome to the NEH “Make *your* edition” Institute: models and methods for d
 
 ______
 
-## 9:00–10:30: Getting to know your OS ([Windows](getting_to_know_windows.md)) ([Mac](getting_to_know_windows_mac.md))
+## 9:00–10:30: Getting to know your OS ([Windows](getting_to_know_windows.md)) ([Mac](getting_to_know_mac.md))
 
 Windows and Mac users will split into breakout groups so that participants can focus on how to work in their specific environments. How does your OS both facilitate and inhibit your work now, and how might that change?
 
