@@ -37,14 +37,20 @@ To administer remote Git repositories we use the browser, while in the terminal 
 
 
 
+Your repository will be located at `https://github.com/username/repositoryname`.
+
+
+
 
 
 ## Set your identity on your local machine
 
 When you start working with Git you need to set your identity. This identity will be used to track all the changes that you make to content in a repository. You only have to do this once on each machine that you use.
 
-* `git config --global user.name "John Doe"`
-* `git config --global user.email johndoe@example.com`
+Open a terminal window and type the following commands, replacing John Doe with your name:
+
+* `$ git config --global user.name "John Doe"`
+* `$ git config --global user.email johndoe@example.com`
 
 
 ## Working with repositories
@@ -53,10 +59,24 @@ Respositories are where you keep project files. To start working with Git you wi
 
 Command | Description
 ------- | -----------
-`git init` |   Create a new repository locally
 `git clone` |   Copy an existing repository from a remote location (for example GitHub)
+`git init` |   Create a new repository locally
 
-Now we need to get the remote repository that we just created 
+Now we need to get the remote repository that we just created.
+
+* Create a directory in your user directory called Workspace were we store all the cloned repositories.
+
+```bash
+$ cd ~
+$ mkdir Workspace
+$ cd Workspace
+```
+
+Now we clone the repository that we just made on Github to the local machine.
+
+```bash
+$ git clone https://github.com/username/repositoryname
+```
 
 ## Working directory
 
