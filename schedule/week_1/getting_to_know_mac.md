@@ -8,12 +8,16 @@
 * What are directories/repositories/folders? <!--Thinking about why we call them folders: a folder and a piece of paper are the same, and can do some of the same things. A folder can also hold pieces of paper.-->
 * What are programs? <!--Programs are files that can do something, but are still files nonetheless. Take a piece of paper out of your folder, fold it into an airplane, and throw it. It's still a piece of paper you can read from and write on, but it can fly.-->
 * GUI file explorers and file hierarchy
+* `/` as the center of the filesystem universe (exception: Windows)
+* Directories are a special kind of file
+* `/dev/null`: the black hole of the file system
+* Finding the filesystem location of a file from the MacOS Finder or Windows Explorer: Drag the filename from a Finder windows and drop it in a terminal window to paste the path to the file. Or just view the filename by selecting the file and `Cmd+i` (get info).
 
 
 ## Configuring your machine to show hidden files
 
-* Mac OS Sierra: Open Finder and hit `Cmd+Shift+.`
-* Mac OS El Capitan: Open the command line and execute `defaults write com.apple.finder AppleShowAllFiles YES`
+* Mac OS Sierra: Open Finder and hit `Cmd+Shift+.` Do the same thing to turn off hidden files.
+* Mac OS El Capitan: Open the command line and execute `defaults write com.apple.finder AppleShowAllFiles YES` (or `NO`); restart Finder whenever you change this
 
 
 ## Configuring your machine to show filename extensions
@@ -27,6 +31,14 @@
 * **Spaces** in a file and directory names. Why could these be problematic? 
 
 
+## File ownership and permissions
+
+* `ls -l`
+* user, group, other
+* `chown` (You probably can’t change ownership on shared systems and don’t need to do it on your own machine. This command is useful if you install something incorrectly.)
+* `chmod` (“644”, “664” for files; “755”, “775” for directories)
+
+
 ## Launching a terminal
 
 * The **Terminal.app** that you will find in the Applications → Utilities folder. (Many Mac users prefer the free third-party <https://www.iterm2.com/>.)
@@ -37,8 +49,7 @@
 <!-- where is home?  both in cmd and in gui-->
 <!-- language differences for gui and command line-->
 
-* Navigate up and down, with emphasis on the paths in the title bar <!-- We should clarify that Git Bash will use forward slashes rather than backslashes, and explain later when we introduce cmd why that's the case.-->
-* Drive letter: `/Users` (Unix, including Mac OS: no drive letter), `C:\Users` (Windows `cmd`)
+* Navigate up and down, with emphasis on the paths in the title bar 
 * `cd`: change directory <!--Open a command line and begin using `cd`. Explain that `cd` is essentially the same as selecting or clicking a folder. `cd` into your home directory.-->
 * `ls`: list all files  <!--Use `ls` to show all the files in your current (when you first open the terminal, home) directory. Compare that to what you now see in your home directory (or C drive “folder”). Then use `cd Documents` to move into your documents folder. This is a relative path, as you’ve navigated relative to where you’ve started. Explain what an absolute path looks like, and try running one. Then run a few relative paths.-->
 
@@ -46,7 +57,7 @@
 
 * Matching the GUI file path with the file/directory path in the terminal
 * User-specific directories: where are your home directory, document folder, and desktop? What are their full file/directory paths? 
-* Non-English OS’s may have translation/localization applied, but only on the GUI side! 
+* Non-English OS’s may have translation/localization applied, but only on the GUI side! Why is this?
 
 ## External drives and mounting
 How removable and external drives (such as a USB thumbdrive) are treated in GUI vs. terminal environment
@@ -55,12 +66,5 @@ How removable and external drives (such as a USB thumbdrive) are treated in GUI 
  	
 ## How to run a program as an administrator
 
-* Windows: right click on a program icon (say, Command Prompt) and select “Run as administrator”
-* Mac: precede the command with `sudo` on the command line; no equivalent method in GUI  
-
-## Environment variables (aka system variables)
-
-* How to view system variables in a terminal
-	* use `printenv`
-* How to view system variables through a GUI
-	* Mac OS does not provide a GUI interface to the environment. Use the command line.
+* The GUI will generally ask you if you need to do this
+* On the command line, precede the command with `sudo`.

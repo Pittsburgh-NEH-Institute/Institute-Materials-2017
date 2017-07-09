@@ -1,5 +1,17 @@
-# Command line 1
+# Command line 1 (Windows)
+* The three Command Line lessons are based on the wonderful [Software Carpentry's materials](http://swcarpentry.github.io/shell-novice/). 
+* **Windows users** will work through a **special breakout session** for Command Line 1 only. We will cover:
+  *  Setup [http://swcarpentry.github.io/shell-novice/setup/]
+  1. Introducing the Shell [http://swcarpentry.github.io/shell-novice/01-intro/]
+  1. Navigating Files and Directories [http://swcarpentry.github.io/shell-novice/02-filedir/]
+  1. Working with Files and Directories [http://swcarpentry.github.io/shell-novice/03-create/]
+	
+
 __________
+
+## Setup
+* Download the zip file from the Software Carpentry's [Setup page](http://swcarpentry.github.io/shell-novice/setup/). 
+
 
 ## What is the shell? Why and how do we use it?
 
@@ -13,9 +25,7 @@ __________
 
 ## Launching a terminal/console
 
-* For Mac OS X: the **Terminal.app** that you will find in the Applications → Utilities folder. (Many Mac users prefer the free third-party <https://www.iterm2.com/>.)
 * For Windows: We will be switching over to the **bash** shell. When you downloaded Git, you also downloaded **Git bash**, the command line interface. We will be using this as our shell for the rest of the institute. 
-* For Ubuntu Desktop (Unity): you can hit Ctrl-Alt-T or you can type `Terminal` into the Search box.
 
 ## Git bash vs. Windows command lines
 
@@ -37,71 +47,5 @@ __________
 * When you *type* `>`: you’re writing output into a file, instead of displaying it on the screen (see below)
 * If you type a command and find yourself on a blank line with nothing happening: you typed an incomplete command, and should abort it with `Ctrl+c`
 
-## First commands
-
-* `cd`: change directory. also `cd ..`, `cd ~`
-* `pwd`: print working directory (current location in filesystem)
-* `whoami`: print login id
-* `clear`: clear the screen (keyboard shortcut: `Ctrl+l` [that’s a lowercase “L”, not the digit “1”])
-* absolute vs. relative paths: absolute paths start from the root `/`, while relative paths start from the current working directory
-
-## Explore your files
-
-* `ls`: list files<!--Use `cd` to navigate to your home directory, and then `ls -a` to show all files and directories, including hidden ones. From there, use `cd Documents` to move into that directory.--> 
-* `echo`: write a string to stdout<!--Using `echo`, write the string ’Hello world!’ to the screen.-->
-* stdin, stdout, stderr<!--Remember that Bash is a program, it just happens to be a program you use to run other programs. This means that you’re constantly editing files while you use Bash: these are called Standard Input (stdin), Standard Output (stdout), and Standard Error (stderr). You write input at the command line, the program processes your command, and any output is written to stdout. If you run into an error, output is written to stderr, which prints to your screen the same way stdout does. This means that you may purposely (or accidentally print to either). For now, we’ll just print to stdout, which is the default.-->
-* `touch`: create a file, or update its timestamp <!--Use `touch sample.txt` to create a new plain text file in your Documents folder.-->
-* Redirecting stdout with `>`<!--Instead of printing your greeting, which you created with `echo ’Hello world!’` earlier, we can redirect it to a file using a right angle bracket. Type `echo ’Hello world!’ \> greeting.txt`. Notice that nothing is printed to your screen. --> 
-* `cat`: view and combine files<!--Now that we’ve written a file, we can view it using `cat`, which is short for ‘concatenate’. It has a multitude of uses, but for now we’ll just use it to print the contents of our file to stdout. `cat greeting.txt`.-->
-* `less`: display a file one page at a time<!--Another useful command for longer files, as it prints only one screen at a time.--> 
-* `grep`: find text inside files<!--`grep` takes two arguments: the regex (not just string) you’re searching for and the file you want to search in. If you don’t supply a file, it searches stdin. Try using the command `grep "Hello" greeting.txt` (mind your capital letters!). The entire contents of the file is written to stdout because `grep` returns the entire line that contains the search pattern, and this file has only one line. If you try searching for “hello” (or some other capitalization difference), you’ll see nothing printed to stdout. We use the `-i` switch to turn off case sensitivity. The switch comes directly after the command, before any arguments. Try `grep -i "hElLo WoRld" greeting.txt`.-->
-
-## `ls` switches
-
-* `ls -a`: include hidden files (filenames starting with “.”)
-* `ls -l`: show enhanced file information, including date and time stamps, owner and group, permissions
-* `ls -t`: list in timestamp order
-* `ls -G`: colored output<!--If you’re using Git Bash, your list will already be colorized, but for other shells this command colorizes output so filetypes and directories are different.-->
-
-These can be combined, e.g., `ls -alG` to include hidden files, more information, and colored output.
-
-## Making things easier
-
-* Command and filename completion with the `Tab` key
-* Command history with the arrow keys
-* RTFM with `man` (user manual). Windows users on Git `bash` don’t have this luxury, unfortunately; <https://ss64.com/bash/> doesn’t match the Git bash command inventory exactly, but it’s close.
-* To turn off case sensitive tab completion, create a file called `.inputrc` in your home directory (you can use any text editor). In the file, write `echo ’set completion-ignore-case On’` and save. The next time you open your `bash` shell, you should be able to use tab completion without thinking about capitalization. Why is this a good idea, and why is it also a bad one?<!-- This helps you find things quickly when you have a small number of files, but it also generates a lot of false hits when you have many files. -->
-
-## Working with files
-
-* `cp`: copy<!--This copies a file to another location. This command takes two arguments: the file or directory you’re trying to copy, and the location to which you want to copy. This can be an entirely new file name, and you don’t have to create the file ahead of time. You can accidentally overwrite data if you aren’t careful about where you’re copying to. For now, we’re going to copy our greeting file into our salutations directory using `cp greetings.txt ./Salutations`. This creates a copy of the file inside the directory. Notice that we use a `.` to show the current directory. This is a relative path, meaning it is dependent upon the current context to know where we want to copy the file. Use `ls` to look at your Documents directory. greeting.txt is still there, unchanged. Navigate into your Salutations directory and list its contents. You have another greeting.txt file there as well, and if you echo it to stdout, you see it contains the same text as the original. Note that you’ve just made a copy, not a link, so any changes you make to one will not be reflected in the other.--> 
-* `mv`: move, rename<!--Within your Salutations directory, use the `rm` command to get rid of the file you just copied in (`rm greeting.txt`). Then, move back into your Documents directory using `cd ..` and list all files. greeting.txt is still there, but let’s move it and change its name. `mv` also takes two arguments: what you want to move, and where you want to move it to. Again, you can accidentally overwrite data, as moving a file to a specific filename will simply write over that file. To move our file, we’ll use `mv greeting.txt ./Salutations/hello.txt`. Take a look around those two directories to see what has changed.-->
-* `rm`: delete (careful!)
-* `rm -i`: delete after asking permission<!--These two have been addressed already, but the `-i` switch makes deleting interative. Before any file is deleted, the prompt asks you if you’re sure, to which you can respond ’y’ or ’n’. Though this seems like it may be a pain, it’s particularly useful combined with the recursive `-rf` switch, as it will go through a directory and ask about each file.-->
-
-## Working with directories
-
-* `mkdir`: make directory<!--Use `pwd` to make sure you’re still in your Documents directory, then `ls -a` to see all the directories currently inside it. We’ll use `mkdir` to create a new folder called sample: `mkdir sample`. Once you’ve done this, check to see it’s there using `ls -a`.-->
-* `rmdir`: remove empty directory<!--Now that we’ve created an empty directory, we can use `rmdir sample` to get rid of it. Of course, we actually do want to have that directory, so make a new one called salutations: `mkdir salutations`.-->
-* `rm -rf:` remove directory and its contents recursively (careful!)<!--We won’t use this one yet, as our directory has no files. However, you should note that `rmdir` will only remove an empty directory, while this command will loop over the directory and remove its contents before removing the directory itself. We caution you to be careful with it, as you can accidentally remove significant files or lose important work.-->
-
-## Getting around the file system
-
-* `cd -`: go back to the directory you came from
-* `cd` or `cd ~`: go to your home directory
-* `Ctrl+r`: initiate command history search
-* `..`: parent directory
-* `.`: current directory (Why might you need this?)
-* `~`: home directory
-* `/`: file system root
-
-## More useful commands
-
-* `wc` (`-l` lines, `-w` words, `-c` characters)
-* `cat` (you might have meant `less`)
-* `less` (page through the file one screen at a time)
-* `sort` (`-r` reverse, `-u` unique, `-g` numeric)
-* `uniq` (only on sorted input)
-* `head` (`-10`, or any other number)
-* `tail` (`-10`, or any other number)
-* `echo` (e.g., `echo $HOME`, `echo a*`)
+## Files and directories
+* We will work from the Software Carpentry lessons. 
