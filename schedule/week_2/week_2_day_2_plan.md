@@ -2,15 +2,15 @@
 
 ## Synopsis
 
-Week 2, Day 2 introduces the idea of digital edition development as a computational pipeline for text processing. The [Gothenburg model of textual variation](gothenburg.md) (GM) serves as an example of a computational pipeline from the perspective of textual criticism. 
+The first half of Week 2, Day 2 continues the focus on document modeling from the previous day, with attention to three models of text: XML (text as tree), LMNL (text as ranges), and TAG (text as graph). The second half of the day introduces the idea of developing a digital edition as a computational pipeline. We illustrate the pipeline with the Gothenburg model of textual variation, and then begin to explore the first two stages of that model, tokenization and normalization. 
 
 ## Outcome goals
 
-* Modeling and communities
-* Modular development: the digital edition as a computational pipeline
+* Understanding modeling perspectives (tree, ranges, graph) and communities
 * XML looks like a string but it’s really a tree. What does this mean for markup and for querying?
-* How XML copes with limitations of the tree as a document model
-* What’s so bad about work-arounds and relying on application-level semantics?  
+* Modular development: thinking about digital edition development as a computational pipeline
+* Beginning to tokenize texts
+* Beginning to normalize texts
 
 ## Legend
 
@@ -39,46 +39,31 @@ Time | Topic | Type
 
 ### Topics and activities
 
-* XML and LMNL sawtooth syntax only look alike, and LMNL isn’t just XML with overlap
-* **Hands on:** Tag [“Ozymandias”](ozymandias.txt) in LMNL
-* What is Alexandria?
-* Validation of LMNL with Luminescent
-* Visualization of LMNL in Alexandria
-
-### Outcome goals
-
-* Looking at and working with non-XML markup expands our ways of thinking about text, and about the workarounds we need in XML
-* How do XML (tree) and LMNL (range) model “what text really is”? 
-* Why does it matter as long as the workarounds work?
+Time | Topic | Type
+---- | ---- | ----
+15 min | Introduction to the LMNL data model and sawtooth syntax | Presentation
+15 min | Tag [“Ozymandias”](ozymandias.txt) in LMNL | Code lab
+15 min | Introduction to TAG and Alexandria | Presentation
+15 min | Alexandria installation | Code lab
+15 min | Visualization of LMNL in Alexandria | Code lab
 
 ## 12:30-2:00: Lunch
 
-## 2:00-3:30: Models and computational pipelines
+## 2:00-3:30: Tokenization
   
-### Outcome goals
-
-* The digital edition as a computational pipeline
-* Conceptualizing digital editing as several steps or stadia, starting from one or several research questions and leading to an outcome
-* The five components of GM: tokenization, normalization, alignment, analysis, visualization
-* Understanding the GM as a computational pipeline — not only for the study of textual variation 
-
 ## 3:30-4:00: Coffee break
 
-## 4:00-5:30: Tokenization 1
-
-**[note: base this section partly on djb tutorial on XML processing]**
-
-### Topics and Activities
-* NLTK
-* Tokenization in Python and in XSLT
-
-### Outcome goals
-* ***[some text here]***
+## 4:00-5:30: Normalization
 
 ## Homework
 
 Please complete [Week 2, Day 2 feedback](week_2_day_2_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 2, Day 2 feedback”.
 
-## Readings (optional)
+## Readings and follow-up (optional)
 
 * [“What can XPath do for me?”](http://dh.obdurodon.org/introduction-xpath.xhtml)
+* You can check your LMNL for well-formedness with the following procedure:
+	2. Install [Calabash](http://xmlcalabash.com/), and XProc tool.
+	1. Clone [Luminescent](https://github.com/djbpitt/Luminescent), a LMNL processor.
+	2. Edit `LMNLwf-calabash.sh` in your Luminscent directory to point to your installation of Calabash.
+	3. Run `./LMNLwf-calabash.sh x.lmnl`, replacing the “x.lmnl” with the path to your LMNL file.

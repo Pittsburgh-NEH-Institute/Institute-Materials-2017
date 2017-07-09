@@ -2,7 +2,7 @@
 
 ## Text and image are both views of information
 
-Textual editions understandably foreground textual content, but at a higher level the text is a *representation* of information, and information may be represented in different ways. For example, a visual image, such as a chart or graph, is also a representation, and a graphic visualization may be considered a view of the document alongside the more obvious textual view. Graphic visualizations may sometimes offer a summary view of information that is so voluminous or complex that the words would interfere with the message. And graphic and textual views may also refer to one another, so that a graphic visualization may serve as a navigational resource for a textual view.
+Textual editions understandably foreground textual content, but at a higher level the text is a *representation* of information (which is an abstraction), and information may be represented in different ways. For example, a visual image, such as a chart or graph, is also a representation of information, and a graphic visualization may be considered a view of the document alongside the more obvious textual view. Graphic visualizations can also sometimes provide a summary view of information that is so voluminous or complex that the words would interfere with the message. And graphic and textual views may refer to one another, so that a graphic visualization may serve not only as a representation of information in its own right, but also as a navigational entry into a textual view.
 
 ## Creating a visualization
 
@@ -12,13 +12,13 @@ Photographic facsimiles are typically raster images, of which PNG and JPG are th
 
 If you ask many humanists to name the types of graphs and charts with which they are familiar, after pie charts and bar graphs and a few others they may run out of ideas. There are hundreds of graphs and charts in use, and they differ from one another both informationally (some can represent types of information that cannot be represented at all in some others) and from a perspective of aesthetics and usability.
 
-The visualization you choose should match the story you want to tell. Here are two visualization types that are designed to tell different types of stories:
+The visualization you choose should match the story you want to tell. Below we introduce two visualization types that are designed to tell different types of stories.
 
 ### Bar chart
 
-A bar chart easily relate a *categorical explanatory variable* to a *quantitative response variable*, as in the example below, which shows the number of volumes (the quantitative response variable) for each text type (the categorical explanatory variable) in a hypothetical collection):
+A bar chart easily relates a *categorical explanatory variable* to a *quantitative response variable*, as in the example below, which shows the number of volumes (the quantitative response variable) for each text type (the categorical explanatory variable) in a hypothetical collection:
 
-<img src="Images/volumesincollbar.png" "[Bar graph]"/>
+<img src="Images/volumesincollbar.png" alt="[Bar graph]"/>
 
 [The image is copied from [Principles of information visualization](http://www.themacroscope.org/?page_id=469), part of *The historican’s macroscope: big digital history*.]
 
@@ -52,6 +52,4 @@ applicable to humanities data
 
 ## Visualization libraries
 
-If you can write XSLT or XQuery or Python or other code to transform your XML to HTML for publication as text on the Web, you can use the same languages to transform your XML to SVG for publication as graphic visualization. SVG has limited support for animation, that is, for making the image respond to user actions, and for that reason most developers implement responsive animation in JavaScript. If you’re comfortable writing JavaScript, 
-
-**ADD STUFF HERE**
+If you can write XSLT or XQuery or Python or other code to transform your XML to HTML for publication as text on the Web, you can use the same languages to transform your XML to SVG for publication as graphic visualization. SVG has limited support for animation, that is, for making the image respond to user actions, and for that reason most developers implement responsive animation in JavaScript. A popular library and toolkit for visualization, and especially animated visualizations, is the open source [D3](https://d3js.org/) JavaScript library.
