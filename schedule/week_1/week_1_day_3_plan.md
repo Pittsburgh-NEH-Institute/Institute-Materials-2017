@@ -27,15 +27,11 @@ ______
 
 ## 11:00–12:30: Command line 3
 
-With regular expressions under our belt, we are ready to learn advanced `grep` skills for the command line. We will explore how we can search for lines that match a pattern and how to exploit advanced features (and work around complications) of this utility.  
+With regular expressions under our belt, we are ready to learn advanced `grep` skills for the command line. We will explore how we can search for lines that match a pattern and how to exploit advanced features (and work around complications) of this utility. We will also learn about the `find` command. 
 
 Time | Topic | Type
 ---- | ----  | ----
-10 min | What is `grep` | Presentation
-20 min | Useful `grep` command switches | Presentation
-15 min | `grep` and regex | Code lab
-20 min | `grep` complications | Presentation
-25 min | Shell scripting | Code lab
+90 min | [7. Finding Things ](http://swcarpentry.github.io/shell-novice/07-find/) | Code lab
 
 ## 12:30–2:00 Lunch
 
