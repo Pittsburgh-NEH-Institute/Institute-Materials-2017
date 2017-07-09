@@ -1,6 +1,6 @@
 # Overlap in XML
 
-The examples below illustrate that the XML prohibition against overlap not only distorts the markup, but also complicates processing. The point of the XPath and XQuery examples is not as much to analyze the advanced features needed to process milestone workarounds as to demonstrate that processing overlapping structures represented by milestone workarounds is harder than processing wrapper elements.
+The examples below illustrate that the XML prohibition against overlap not only distorts the markup, but also complicates processing. The point of the XPath and XQuery examples is not as much to analyze the advanced features needed to process milestone workarounds as to demonstrate that processing overlapping structures represented by milestone workarounds is harder than processing regular XML “container” elements.
 
 ## Markup complications
 
@@ -52,7 +52,7 @@ This isn’t a problem in LMNL, though, because LMNL ranges, unlike XML elements
 
 ## Processing complications
 
-Overlap in XML is problematic not only during markup, buit also during processing. Processing elements tagged with wrappers (like `<phr>` in the XML above) is easy because the XPath target is a single element. Processing elements delimited by milestones (like `<lb>` above) is harder. Try the following in the \<oXygen/\> XPath browser box.
+Overlap in XML is problematic not only during markup, but also during processing. Processing elements tagged with wrappers (like `<phr>` in the XML above) is easy because the XPath target is a single element. Processing elements delimited by milestones (like `<lb>` above) is harder. Try the following in the \<oXygen/\> XPath browser box.
 
 ### XPath
 
@@ -62,10 +62,22 @@ An XPath expression to find phrases is easy because `<phr>` elements have conten
 for $phr in //phr return $phr
 ```
 
+This can be simplified as:
+
+```xpath
+//phr
+```
+
 Likewise for emjambment, that is phrases that cross line boundaries, for the same reason:
 
 ```xpath
 for $enj in //phr[lb] return $enj
+```
+
+which can be simplified as:
+
+```xpath
+//phr[lb]
 ```
 
 Here we use a predicate to filter the phrases and keep only the ones that have line break children, but the XPath expression is still straightforward.
@@ -76,9 +88,9 @@ Finding lines, though, is more complicated:
 for $lb in //lb return string-join($lb/following::text()[preceding::lb[1] is $lb])
 ```
 
-The preceding XPath expression finds of the `text()` nodes that follow each `<lb>` and filters them with a predicate that keeps only the ones whose first preceding `<lb>` is the one we’re processing at the moment. The predicate is complex, and because we’re returning multiple nodes on each pass through the loop (unlike the single `<phr>` elements returned in the earlier examples), we need to assemble the ones that belong to the same line, which we do with the `string-join()` function.
+The preceding XPath expression (which cannot be expressed without the `for` clause) finds all of the `text()` nodes that follow each `<lb>` and filters them with a predicate that keeps only the ones whose first preceding `<lb>` is the one we’re processing at the moment. The predicate is complex, and because we’re returning multiple nodes on each pass through the loop (unlike the single `<phr>` elements returned in the earlier examples), we need to assemble the ones that belong to the same line, which we do with the `string-join()` function.
 
-Not only is the milestone workaround for overlapping hierarchies more complex for the human during markup, but it is also more complex for the computer during search and retrieval. Tree traversal is relatively quick, but the XPath long horizontal (`preceding::` and `following::`) axes are unable to take the same navigational advantage of the tree structure as the other axes. The consequences may not be noticeable if the data set is small, or if the processing environment uses indexing or internal optimizations to mitigate the effects, but, in general, traversing the long horizontal axes will not be as fast as other traversals.
+What the preceding shows is that not only is the milestone workaround for overlapping hierarchies more complex for the human during markup, but it is also more complex for the computer during search and retrieval. Tree traversal is relatively quick, but the XPath long horizontal (`preceding::` and `following::`) axes are unable to take the same navigational advantage of the tree structure as the other axes. The consequences may not be noticeable if the data set is small, or if the processing environment uses indexing or internal optimizations to mitigate the effects, but, in general, traversing the long horizontal axes will not be as fast as other traversals.
 
 ### XQuery
 
