@@ -50,7 +50,7 @@ Time | Topic | Type
 
 ## 12:30–2:00 Lunch
 
-## 2:00-3:30: Model, syntax, and markup semantics
+## 2:00–3:30: Model, syntax, and markup semantics
 
 How can the elaboration of a digital edition be modularized? How are *model*, *syntax*, and *markup semantics* similar and different?
 
@@ -61,7 +61,7 @@ Time | Topic | Type
 25 min | Explore [XML as model and expression](xml_model.md) | Discussion
 20 min| Explore [other models and their expressions: LMNL, GODDAG, TexMECS, TAG](other_models.md) | Presentation
 
-## 3:30-4:00: Coffee break
+## 3:30–4:00: Coffee break
 
 ## 4:00–5:30: Transcription with markup: XML
 
