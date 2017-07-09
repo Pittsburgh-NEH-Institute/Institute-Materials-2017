@@ -54,10 +54,9 @@ We have a basic grasp of directory navigation, but what don’t we know about `$
 
 Time | Topic | Type
 ---- | ----  | ----
-15 min | File formats | Presentation
-25 min | The environment and `$PATH` | Presentation
-20 min | How to find commands and files | Code lab
-20 min | Repeating things and variables | Code lab
+20 min | Variables and repeating things | Discussion
+30 min | The environment and `$PATH` | Presentation
+30 min | The locale and its effects | Code lab
 10 min | Miscellaneous commands | Presentation
 
 

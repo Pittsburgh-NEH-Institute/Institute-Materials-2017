@@ -51,10 +51,10 @@ Now that we know where to find them and what they are, how can we manipulate and
 
 Time | Topic | Type
 ---- | ---- | ----
-20 min | Heirarchical file system | Presentation
-30 min | Navigating the directory stack | Code lab
-15 min | Operating system conventions | Discussion
-25 min | Aliases | Code lab
+15 min | File types | Presentation
+30 min | Character sets, Unicode, and text editors | Code lab
+25 min | Operating system conventions | Code lab
+20 min | A shell is just a program | Code lab
 
 ## 3:30–4:00: Coffee break
 

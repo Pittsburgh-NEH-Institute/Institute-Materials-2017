@@ -29,6 +29,16 @@
 * How to change what you have on the command line: `iconv -f CP1251 -t UTF-8 oldfile.txt > newfile.txt`
 * How to get up close and personal with the bits: `xxd -l 1000 filename` or `xxd filename` for the whole file
 
+
+## Why we recommend text editors instead of word processors
+
+We will write a 'Hello World' script in Python, for demonstration purposes.
+
+* In Word or OpenOffice
+* In TextEdit on Mac (WordPad, alas, has got cleverer, but it's still pretty awkward to use...!)
+* Why don't these work?
+
+
 ## Operating system conventions everyone should know about
 
 * Line endings (EOL): 
@@ -45,23 +55,16 @@
   * Why you can't put `:` in a file name, and what happens if you try
 
 
-## Files can have more than one name and live in more than one place
+## Shells within shells
 
-
-* `ln plain_file_name link_name` (filenames and inodes)<!--Inodes introduce a little bit more complexity into our original idea of "what are files?" The reason we can change filenames is that inodes store the location and attribute information, so a file can exist in multiple places with different names, so long as it links back to that inode number. To view the inode numbers for your files, use `ls -i`.-->
-* `ln -s directory_name link_name`
-* Difference between hard links and symbolic links
-
-## File ownership and permissions
-
-* `ls -l`
-* user, group, other
-* `chown` (You probably can’t change ownership on shared systems and don’t need to do it on your own machine. This command is useful if you install something incorrectly.)
-* `chmod` (“644”, “664” for files; “755”, “775” for directories)
+* Bash is a shell, but there are other shells
+* Running `python` - different syntax, different commands
+* Running `telnet` - another different syntax, more different commands
+* Running `bash` within `bash` and process listing
 
 ## Getting around the directory stack
 
-<!--to explain what this is and why and how it's used-->
+<!-- to explain what this is and why and how it's used -->
 * review of `cd` and `cd -`
 * `pushd`
 * `popd`
