@@ -4,10 +4,12 @@
 ### Day 4:
 
 ### 9:00–10:30 The Edition and APIs
+ * Formats and protocols
+ * Security
 
 ### 10:30–11:00 Break
 
-### 11:00–12:30 Using APIS
+### 11:00–12:30 Using APIS in Your Edition
 
 ### 12:30–2:00 Lunch
 

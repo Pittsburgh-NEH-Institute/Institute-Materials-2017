@@ -10,12 +10,12 @@ The first day will introduce a workflow for putting your edition online during i
 
 ### 10:30–11:00 Break
 
-### 11:00–12:30 Introducing CETEIcean
+### 11:00–12:30 Introducing CETEIcean / Publishing on GitHub Pages
 
 ### 12:30–2:00 Lunch
 
-### 2:00–3:30 Publishing on GitHub pages
+### 2:00–3:30 Next steps: Customizing your edition with CSS and Javascript
 
 ### 3:30–4:00 Break
 
-### 4:00–5:30 Next steps: Customizing your edition with CSS and Javascript
+### 4:00–5:30 Web Publishing Frameworks: Django
