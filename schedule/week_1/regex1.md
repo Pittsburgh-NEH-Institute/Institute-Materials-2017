@@ -179,6 +179,7 @@ _Alternation_ has the **lowest precedence** of all _RE operators_.
 
 ## Grouping
 Since we introduced _precedence_ in the previous section we also want to be able to change the behaviour. This is what _grouping_ does.  
+
 | Metacharacter | Explanation |
 | --- | --- |
 | `(` | starts a group |
@@ -190,5 +191,6 @@ Since we introduced _precedence_ in the previous section we also want to be able
 | walked up to the talking lamp post | `ed\b|ing\b` | Yes |  
 | rain | `\brain\b|` | Yes |
 | rain | `$r[ai]+n\b` | Yes |
-| word level and phrase level | `word|phrase level` | Yes, but only _word_ and _phrase level_ |
-| word level and phrase level | `(word|phrase) level` | Yes, both _word level_ and _phrase level_ |
+| word level and phrase level | `word\|phrase level` | Yes, but only _word_ and _phrase level_ |
+| word level and phrase level | `(word\|phrase) level` | Yes, both _word level_ and _phrase level_ |
+
