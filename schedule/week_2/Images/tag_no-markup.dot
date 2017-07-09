@@ -1,0 +1,5 @@
+digraph G {
+	document[style=filled, fillcolor=beige]
+	text[label="Hello, World!", style="filled", fillcolor=pink, shape=rect]
+	document -> text
+}
