@@ -2,33 +2,44 @@
 
 [Introduction; verify that everyone’s Internet connections work]
 
+
 ## File system hierarchy 
 
 * What are files?
-* What are directories/repositories/folders? <!--Thinking about why we call them folders: a folder and a piece of paper are the same, and can do some of the same things. A folder can also hold pieces of paper.-->
+* What are directories/folders? <!--Thinking about why we call them folders: a folder and a piece of paper are the same, and can do some of the same things. A folder can also hold pieces of paper.-->
 * What are programs? <!--Programs are files that can do something, but are still files nonetheless. Take a piece of paper out of your folder, fold it into an airplane, and throw it. It's still a piece of paper you can read from and write on, but it can fly.-->
 * GUI file explorers and file hierarchy
 
 
-## Configuring your machine to show hidden files
-
-* <[screenshot](images/getting_to_know_winconfig.png)> In any File Explorer window, click on “View” tab, and then “Options” on the right to open the “Folder Options” window. In the “View” tab, check “Show hidden files, folders, and drives” and select “Display the full path in the title bar” (not essential, but recommended).
-
 
 ## Configuring your machine to show filename extensions
 
-* <[screenshot](images/getting_to_know_winconfig.png)> In the same “File Options” window as before, uncheck “Hide extensions for known file types” box.
+* <[screenshot](images/getting_to_know_winconfig.png)> In any File Explorer window, click on “View” tab, and then “Options” on the right to open the “Folder Options” window. 
+	* In the “View” tab, uncheck “Hide extensions for known file types” box.
+
+## Configuring your machine to show hidden files, and more
+
+* <[screenshot](images/getting_to_know_winconfig.png)> In the same “Folder Options” window as before, 
+	* Check “Show hidden files, folders, and drives”. 
+		* NOTE: Protected operating system files will still stay hidden.  
+	* Also check “Display the full path in the title bar” (not essential, but recommended).
+
 
 ## About files
 
 * Why are some files hidden? <!--If you change something, however small, in some of these files, you can break your computer. Be careful!-->
-* **Case sensitive** vs **case preserving**: Linux is **case sensitive**, meaning files with the same name but different capitalization are different files (e.g., `finalpaper.txt` is different than `FinalPaper.txt`). Mac OS and Windows are **case preserving**, but not case sensitive. <!-- (This preference can be changed when configuring the filesystem, but certain programs will not run in a case sensitive environment, so it’s best to leave it alone). A case preserving file system will spell the filename as you type it, but if you create a different file with a name that differs only in capitalization, it will overwrite the first one. We recommend not creating filenames that differ only in capitalization even on Linux; not only is it potentially confusing, but you may be collaborating on a project with someone not on Linux. -->
+* **Case sensitive** vs **case preserving**
+	* Linux is **case sensitive**, meaning files with the same name but different capitalization are different files (e.g., `finalpaper.txt` is different than `FinalPaper.txt`). 
+	* Mac OS and Windows are **case preserving**, but not case sensitive. <!-- (This preference can be changed when configuring the filesystem, but certain programs will not run in a case sensitive environment, so it’s best to leave it alone). A case preserving file system will spell the filename as you type it, but if you create a different file with a name that differs only in capitalization, it will overwrite the first one. We recommend not creating filenames that differ only in capitalization even on Linux; not only is it potentially confusing, but you may be collaborating on a project with someone not on Linux. -->
 * **Spaces** in a file and directory names. Why could these be problematic? 
 
 
 ## Launching a terminal
 
-* The Command Prompt **cmd.exe** <[screenshot](images/getting_to_know_cmd.png)> is the native Windows console, which grew out of DOS.  We will be using it in this session. From a Start menu type in “cmd”. (For later sessions and the remainder of this institute we will be using the **bash shell** instead, which you downloaded and installed as part of Git. This is the command line interface we use and recommend.)
+* The Command Prompt **cmd.exe** <[screenshot](images/getting_to_know_cmd.png)> is the native Windows console, which grew out of DOS.  We will be using it in this session. 
+	* How to launch: from the Start menu type in “cmd”. 
+	* NOTE: For later sessions and the remainder of this institute we will be using the **bash shell** instead, which you downloaded and installed as part of Git. This is the command line interface we use and recommend.
+
 
 ## Moving through a filesystem
 <!-- Move the programs and files stuff in here, use cmd.exe -->
@@ -42,7 +53,7 @@
 * `dir`: list all files
 
 
-## File/directory path in file explorer GUI vs. shell 
+## File/directory path in File Explorer GUI vs. cmd 
 
 * Matching the GUI file path with the file/directory path in the terminal
 * User-specific directories: where are your home directory, document folder, and desktop? What are their full file/directory paths? 
@@ -59,13 +70,14 @@ How removable and external drives (such as a USB thumbdrive) are treated in GUI 
  	
 ## How to run a program as an administrator
 
-* Windows: right click on a program icon (say, Command Prompt) and select “Run as administrator”
-* Mac: precede the command with `sudo` on the command line; no equivalent method in GUI  
+* Right click on a program icon (say, Command Prompt) and select “Run as administrator”. 
+	* **CAUTION!** You may accidentally break your system by removing essential files or directories.
+	* Use only when you have a good reason to; close program when done. 
+
 
 ## Environment variables (aka system variables)
 
-* How to view system variables in a terminal
-	* In `cmd`, type in: `set`
-* How to view system variables through a GUI
+* How to view environment variables through a GUI
 	* File Explorer -> Right click on 'This PC', select 'Properties' -> Advanced System Settings -> Environment Variables 
-
+* How to view environment variables in a terminal
+	* In `cmd`, type in: `set`
