@@ -41,10 +41,9 @@ Now that we are familiar with the shell, we can edit within it and incorporate v
 
 Time | Topic | Type
 ---- | ----  | ----
-25 min | Editing and history with [command line](command2.md) | Presentation
-25 min | File and data handling | Code lab
-20 min | Variables and quotes in the shell | Code lab
-20 min | Even more `ls` switches | Code lab
+50 min | [4. Pipes and Filters](http://swcarpentry.github.io/shell-novice/04-pipefilter/) | Code lab
+40 min | [5. Loops](http://swcarpentry.github.io/shell-novice/05-loop/) | Code lab
+
 
 ## 12:30–2:00 Lunch
 
@@ -54,10 +53,9 @@ We have a basic grasp of directory navigation, but what don’t we know about `$
 
 Time | Topic | Type
 ---- | ----  | ----
-15 min | File formats | Presentation
-25 min | The environment and `$PATH` | Presentation
-20 min | How to find commands and files | Code lab
-20 min | Repeating things and variables | Code lab
+20 min | Variables and repeating things | Discussion
+30 min | The environment and `$PATH` | Presentation
+30 min | The locale and its effects | Code lab
 10 min | Miscellaneous commands | Presentation
 
 

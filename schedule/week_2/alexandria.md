@@ -1,5 +1,7 @@
 # Configuring Alexandria on your Mac (El Capitan or later)
 
+Alexandria is a text repository and database that supports Text As Graph (TAG). We’ll use it in the Institute to gain perspective on modeling by exploring non-XML structured text representations.
+
 1. Install Docker CE (community edition) for Mac from <https://store.docker.com/editions/community/docker-ce-desktop-mac>
 
 2. Create a directory and copy the following file (which must be called `docker-compose.yml`) into it:
