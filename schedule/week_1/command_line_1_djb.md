@@ -1,10 +1,12 @@
-# Command line 1
+# Command line 1: Mac version
 ____
 
 ## General
 
 * **References:** Much of the content of these sessions is summarized at our [Command line quick reference](command-line_resources.md) page.
+* **Credit:** Our materials are based on the Software Carpentry [Unix Shell](http://swcarpentry.github.io/shell-novice/) course
 * **Etherpad:** We’ll create an [Etherpad](https://etherpad.net) where participants who wish to do so can take notes collaboratively. For a quick overview of Etherpad functionality see <http://write.flossmanuals.net/etherpad/introduction/>.
+* **Something to play with:** Follow the instructions at <http://swcarpentry.github.io/shell-novice/setup/> to copy some practice files.
 
 ## Why and how do we use the shell?
 
@@ -22,28 +24,27 @@ ____
 
 ## Looking around
 
-`cd` (no argument)
-`whoami`
-`pwd`
-`mycommand` (non-existent)
-`clear` (`Ctrl+l`)
+* `cd` (no argument)
+* `whoami`
+* `pwd`
+* `mycommand` (non-existent)
+* `clear` (`Ctrl+l`)
 
 Change to your home directory, look at it with pwd.
 
-`cd ~`
-`cd ..`
-`cd -`
-`cd; cd Desktop`
-`cd data-shell/data/s...` (tab completion)
-`cd /Users/djb/Desktop/data-shell/data` (absolute path)
+* `cd ~`
+* `cd ..`
+* `cd -`
+* `cd; cd Desktop`
+* `cd data-shell/data/s...` (tab completion)
+* `cd /Users/djb/Desktop/data-shell/data` (absolute path)
 
 Change to Desktop/data-shell
 
-ls -F
-ls -j (unsuppored)
-man ls
-ls
-ls data
+* `ls -F`
+* `ls -j` (unsuppored)
+* `man ls`
+* `ls data`
 
 Dragging a file from your filesystem Finder/Explorer window to the terminal
 
@@ -85,6 +86,8 @@ Dragging a file from your filesystem Finder/Explorer window to the terminal
 ## Working with directories
 
 * `mkdir`: make directory
+	* What’s a good name for a directory?
+	* What’s a good directory structure for a project?
 * `rmdir`: remove empty directory
 * `rm -rf:` remove directory and its contents recursively (careful!)
 
@@ -95,9 +98,14 @@ Dragging a file from your filesystem Finder/Explorer window to the terminal
 	* Copy multiple files 
 * `mv`: rename / move
 	* Rename a file
-	* Move a file to a different location
-* `rm`: delete (careful!)
+	* Move a file to a different location (optionally rename)
+* `rm`: delete (careful—deletion is forever!)
 * `rm -i`: delete after asking permission
+* Editing and saving files (in your editor of choice)
+	* Mac default is TextEdit
+	* Or install [BBEdit](https://www.barebones.com/products/bbedit/)
+	* Or use `vim` from the command line
+	* What’s a good filename?
 
 ## Getting around the file system
 
@@ -108,9 +116,17 @@ Dragging a file from your filesystem Finder/Explorer window to the terminal
 
 ### New
 
-* `ctrl+r`: initiate history search
+* `Ctrl+r`: initiate history search
 
-### More useful commands
+## Summary
+
+* `cp old new` copies a file.
+* `mkdir path` creates a new directory.
+* `mv old new` moves (renames) a file or directory.
+* `rm path` removes (deletes) a file.
+* Once something is deleted, it’s gone forever.
+
+## More useful commands
 
 * `wc` (`-l` lines, `-w` words, `-c` characters)
 * `cat` (you might have meant `less`)
