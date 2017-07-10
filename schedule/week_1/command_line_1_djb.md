@@ -54,6 +54,10 @@ Dragging a file from your filesystem Finder/Explorer window to the terminal
 * `ls -t`: list in timestamp order
 * `ls -G`: colored output
 * `ls -lh`: human readable file size
+* `ls -f`: decorate filenames according to filetype
+* `ls -d`: don’t recurse into directories
+* `ls -1`: single-column
+* `ls -d */`: list only directories
 
 ## History and completion
 
@@ -385,100 +389,6 @@ This is an exercise in running into problems and resolving them, not an exercise
 * `find / -name java -print 2> /dev/null`: find all files named `java` starting at the file system root, not for shell built-ins or aliases
 * `type`: includes shell built-ins and aliases!
 
-### Web technologies
-
-[60 mins]
-
-* HTML
-* CSS
-* JavaScript
-* PHP, CMS and framework
-
-### Markdown
-
-[30 min]
-
-* [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* [Pandoc](http://pandoc.org/)
-
-### Connecting to remote systems
-
-[5 mins]
-
-* Interactive command line: if available, use `ssh`, not `telnet`
-* File-transfer command line: if available, use `sftp`, not `ftp`
-
-### Repeating things and variables
-
-[20 mins]
-
-Declare a variable with just it’s name, but refer to it with a leading `$`. Example: `for file in *.txt; do wc -l $file; done`. The preceding declares a variable called `file`, which will be equal to all files in the current directory that end in “.txt” and then reports the number of lines in each. 
-
-In the first example below `%` removes a matching string at the end of the filename. These commands make copies, but if you replace `cp` with `mv`, they rename files.
-
-* `for file in *.txt; do cp ${file%txt}bak; done` replace “.txt” extension with “.bak”
-* `for file in *.txt; do cp $file $file.bak; done` keep “.txt”, but add “.bak” after it
-
-### Misc
-
-[5 mins]
-* `diff`
-* `locale`: view your locale
-
-## Tuesday, 4:00–5:30: Review
-
-### Text editors vs. word processors
-
-* What word processor files look like
-* What “non-programming” text editor files look like
-* What happens when you try to use one (hint: it isn’t good!)
-
-### There’s more than one shell
-
-* `bash`: “the shell”
-* `telnet`: open a command-line `telnet` session and show the `telnet>` shell prompt
-* `python`: open a command-line `python` session and show the `>>>` prompt
-* `bash` within `bash`: secondary shell prompt (e.g., `bash-3.2$)
-* `echo $SHLVL`: shell level
-* `bash` commands don’t work in non-bash shells
-* `help`: help information (including how to exit)
-* `ctrl-d`: quit the current shell and return to the one that launched it (typically bash)
-
-## Wednesday, 11:00–12:30: Command line 3
-
-### Advanced `grep`
-
-#### Useful command switches for `grep`
-
-* `-E`: extended regex (supports `{` metacharacter, wrap double quotes around regex)
-* `-w`: whole words (put phrases in single or double quotation marks)
-* `-i`: case insensitive
-* `-l`: filenames but not text
-* `-v`: lines that don’t match (“invert” the search)
-* `-n`: include line numbers in output
-* `-c`: count of matching lines
-* `-s`: silent mode (suppresses error messages)
-
-#### `grep` and regex
-
-`grep` searches for a _regex pattern_, and not just a string. so:
-
-* `grep ^To: *`: the line begins with the string “To” (a caret at the beginning of a regex means ‘match only at the beginning of a line’)
-* `grep ^.o *`: the second letter of the line is an “o” (a dot in regex matches any single character except a newline)
-* `grep ing$ *`: the line ends in “ing” (a dollar sign at the end of a regex means ‘match only at the end of a line’)
-
-#### `grep` complications
-
-* Variables (begin with a dollar sign) and regex metacharacters (e.g., asterisk) are resolved in double quotation marks and treated as literal strings in single quotation marks
-* Spaces: precede with a backslash or put the entire regex in quotation marks
-* Variables: put the entire regex in double quotation marks 
-* Quotes: single quotes are okay inside double quotes and vice versa
-* Hyphens: `grep -l stuff` looks like an incomplete attempt to search for the string “stuff” and return only the filenames—incomplete because you haven’t specified where to look. If you want to search a file called `stuff` for the string `-l`, use `--` to tell `grep` that nothing that follows is a switch: `grep -- -l stuff`. Otherwise anything that begins with a hypen will look like a switch.
-
-
-### Shell scripts
-
-* See SW Carpentry
 
 ### Editing the command line
 
