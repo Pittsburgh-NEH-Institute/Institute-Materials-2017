@@ -22,6 +22,8 @@ Since a _RE language_ is relatively small and restricted not all possible string
 
 In these cases, you may be better off writing code in the programming language, e.g. Python, to do the processing; Usually it is **slower** than an elaborate _RE_ but probably **a lot easier to understand**.
 
+Your best use would probably be to assert negative patterns, e.g. things you know are wrong.
+
 ## Simple patterns
 We will start by learning about the _simplest possible REs_. Since _REs_ are used to operate on strings, we will begin with the most common task: _matching characters_.
 
