@@ -65,9 +65,18 @@
 
 ## Wildcards (“globbing”; annoyingly different from regex) 
 
+### Examples
+
 * `*.xml ` (files ending in “.xml”)
 * `*.x?l` (files ending in “.x” followed by any single letter followed by “l”, e.g., XML [xml], XSLT [xsl], XProc [xpl] files)
 * `*.x[ms]l` (files ending in “.x” followed by “m” or “s” followed by “l”, e.g., XML and XSLT files, but not XProc)
+
+### Regex vs globbing
+
+* Regex: `*` and `?` are repetition indicators for the preceding item
+* Globbing: `*` and `?` are wildcards
+* Glob `*` = regex `.*`
+* Glob `?` = regex `.?`
 
 Practice with `ls` in data-shell/molecules
 
