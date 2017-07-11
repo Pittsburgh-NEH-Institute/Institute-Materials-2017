@@ -41,8 +41,9 @@ Now that we are familiar with the shell, we can edit within it and incorporate v
 
 Time | Topic | Type
 ---- | ----  | ----
-50 min | [4. Pipes and Filters](http://swcarpentry.github.io/shell-novice/04-pipefilter/) | Code lab
-40 min | [5. Loops](http://swcarpentry.github.io/shell-novice/05-loop/) | Code lab
+30 min | [3. Working with Files and Directories](http://swcarpentry.github.io/shell-novice/03-create/) | Code lab
+40 min | [4. Pipes and Filters](http://swcarpentry.github.io/shell-novice/04-pipefilter/) | Code lab
+20 min | [5. Loops](http://swcarpentry.github.io/shell-novice/05-loop/) | Code lab
 
 
 ## 12:30–2:00 Lunch
