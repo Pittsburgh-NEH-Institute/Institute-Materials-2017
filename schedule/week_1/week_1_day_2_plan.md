@@ -48,7 +48,7 @@ Time | Topic | Type
 
 ## 12:30–2:00 Lunch
 
-## 2:00–3:30: Programs and files 2
+## 2:00–3:30: [Programs and files 2](programs_and_files2.md)
 
 We have a basic grasp of directory navigation, but what don’t we know about `$PATH`? How does our environment affect our file processing? How can we use commands and variables to manipulate files more efficiently? 
 
