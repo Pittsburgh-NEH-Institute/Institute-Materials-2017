@@ -24,11 +24,6 @@ ____
 
 ## Looking around
 
-* `cd` (no argument)
-* `whoami`
-* `pwd`
-* `mycommand` (non-existent)
-* `clear` (`Ctrl+l`)
 
 Change to your home directory, look at it with pwd.
 
@@ -55,7 +50,7 @@ Dragging a file from your filesystem Finder/Explorer window to the terminal
 * `ls -t`: list in timestamp order
 * `ls -G`: colored output
 * `ls -lh`: human readable file size
-* `ls -f`: decorate filenames according to filetype
+* `ls -F`: decorate filenames according to filetype
 * `ls -d`: don’t recurse into directories
 * `ls -1`: single-column
 * `ls -d */`: list only directories
@@ -65,7 +60,7 @@ Dragging a file from your filesystem Finder/Explorer window to the terminal
 * Command and filename completion with the `Tab` key
 * Command history with the arrow keys
 
-## Interim summary
+## Summary
 
 * The file system is responsible for managing information on the disk.
 * Information is stored in files, which are stored in directories (folders).
