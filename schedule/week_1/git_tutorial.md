@@ -60,8 +60,7 @@ Open a terminal window and type the following commands, replacing John Doe with 
 
 ## Cloning remote repositories
 
-Now we need to transfer the remote repository that we just created to the local machine.
-There are two ways in Git to get a repository to the local machine, either create a new one or clone an existing remote repository. In this exercise we are going to clone the repository that we have just created on Github.
+To work with the repository we just created we need to transfer the data from the remote repository to the local machine. Copying a remote repository to the local machine is called cloning in Git. For completeness sake I also included in the table below the git command to create a new repository on the local machine. 
 
 Command | Description
 ------- | -----------
