@@ -121,5 +121,6 @@ In `data-shell/north-pacific-gyre/2012-07-03` (experimental results; imagine hun
 * `wc -l *.txt | sort -n | head -n 5` (one is too short; bad data)
 * `wc -l *.txt | sort -n | tail -n 5` (notice “Z”)
 * `ls *Z.txt`
-* `ls ([^AB].txt`
+* `ls *AB[].txt`
+* `ls *[^AB].txt`
 
