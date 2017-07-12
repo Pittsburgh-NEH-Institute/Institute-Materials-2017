@@ -8,6 +8,8 @@ _Alternation_ is the _RE_ equivalent of `or`. `word|weapon` matches _words_ in _
 
 _Alternation_ has the **lowest precedence** of all _RE operators_.
 
+Exercise: Find the preference for all types, e.g _concatenation_, _repetition_ and _alternation_.
+
 ## Grouping
 Since we introduced _precedence_ in the previous section we also want to be able to change the behaviour. This is one of the things _grouping_ does.  
 
@@ -23,7 +25,7 @@ Since we introduced _precedence_ in the previous section we also want to be able
 | word level and phrase level | `word\|phrase level` | Yes, but only _word_ and _phrase level_ |
 | word level and phrase level | `(word\|phrase) level` | Yes, both _word level_ and _phrase level_ |
 
-In addition to use the _grouping metachararacters_ to alter the precedence you can use it for back reference. Some RE implementations have named grouping references others just `\1', `\2` etcetera.
+In addition to use the _grouping metachararacters_ to alter the precedence you can use it for _back reference_. Some RE implementations have named grouping back references others just `\1', `\2` etcetera.
 
 Exercise: Check out how this is in `egrep`.   
  
