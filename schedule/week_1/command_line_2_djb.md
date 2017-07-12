@@ -94,12 +94,13 @@ Save file listings with `ls`, file contents with `cat`, or command-line text wit
 
 ### About filters
 
-* Filters are programs that accept input and produce output without human intervention. `less` is not a filter; `ls` is.
+* Filters are programs that accept input on stdin and produce output on stdout.
+* Stdin defaults to the keyboard and stdout defaults to the screen, but both can be redirected to or from a file or a pipe.
 * Filters can be chained together to form computational pipelines.
 
 ### First filters
 
-* `cat` (but not `less`) (one or more files)
+* `cat` (one or more files)
 * `wc` (`-l` lines, `-w` words, `-c` characters)
 
 Redirect input, contrast `wc file`, `wc < file`
@@ -112,8 +113,6 @@ Redirect input, contrast `wc file`, `wc < file`
 * `sort` (`-r` reverse, `-u` unique, `-n` numeric); numeric vs alphabetic sorting
 * `uniq` (only on sorted input)
 
-Numerical sorting
-
 ### Practice
 
 In `data-shell/north-pacific-gyre/2012-07-03` (experimental results; imagine hundreds of files):
@@ -124,7 +123,3 @@ In `data-shell/north-pacific-gyre/2012-07-03` (experimental results; imagine hun
 * `ls *Z.txt`
 * `ls ([^AB].txt`
 
-## For loops
-
-* Syntax, declaring and using variables, one-line vs many lines
-* `for file in *; do echo -n "$file: "; head -1 $file; done` (in `data-shell/molecules`)
