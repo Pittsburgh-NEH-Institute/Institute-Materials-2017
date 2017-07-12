@@ -37,11 +37,10 @@ Time | Topic | Type
 
 ## 11:00–12:30: [Command line 2](command_line_2_djb.md)
 
-The Software Carpentry activities associated with the Mac Command line 2 session are:
+The Software Carpentry activities associated with the Command line 2 session are:
 
 * [3. Working with Files and Directories](http://swcarpentry.github.io/shell-novice/03-create/)
 * [4. Pipes and Filters](http://swcarpentry.github.io/shell-novice/04-pipefilter/)
-* [5. Loops](http://swcarpentry.github.io/shell-novice/05-loop/)
 
 ## 12:30–2:00 Lunch
 

@@ -25,13 +25,14 @@ ______
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: Command line 3
+## 11:00–12:30: [Command line 3](command_line_3_djb.md)
 
 With regular expressions under our belt, we are ready to learn advanced `grep` skills for the command line. We will explore how we can search for lines that match a pattern and how to exploit advanced features (and work around complications) of this utility. We will also learn about the `find` command. 
 
-Time | Topic | Type
----- | ----  | ----
-90 min | [7. Finding Things ](http://swcarpentry.github.io/shell-novice/07-find/) | Code lab
+The Software Carpentry activities associated with the Command line 3 session are:
+
+* [5. Loops](http://swcarpentry.github.io/shell-novice/05-loop/)
+* [7. Finding Things ](http://swcarpentry.github.io/shell-novice/07-find/)
 
 ## 12:30–2:00 Lunch
 
