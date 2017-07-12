@@ -102,23 +102,27 @@ When you have a terminal window open, you are in what is called the *working dir
 * Use your favorite editor to edit files (and you can use different editors for different files in the same project)
 * PyCharm (for Python projects), \<oXygen/\> (for XML projects), vim, notepad++, BBEdit, etc.
 
-## Working with changes locally
+## Working with changes locally and tracking them
 
 ![Git commit](git_making_changes.gif)
 
 Command | Description 
 --------|-----------------
-`git status` | Show which files are modified locally
-`git add`  |   Add a file to change tracking 
-`git reset` |  Untrack a file 
+`git status` | Show which files are modified locally or new
+`git add`  |   Add a file to change tracking and stage  
+`git reset` |  Untrack a file or unstage 
 `git diff` |  Show changes
-`git commit` | Make changes permanent
 `git checkout` | Undo changes to a file (before commit)
-`git log`  | Show history of commits
 
 ## Committing changes
 
 `git commit -a` adds all changed files and commits the changes, that is, it combines `git add` with `git commit`. **But it only adds files that have changed, and not files that are completely new.** The only way to add a new file is with `git add`.
+
+Command | Description 
+--------|-----------------
+`git commit` | Make changes permanent
+`git log`  | Show history of commits
+
 
 vim is the default editor in Git (on all operating systems). When you type `git commit`, you are taken into vim to enter a _commit message_, where you record information about the commit. The most important vim commands are:
 
@@ -136,10 +140,17 @@ The use of the escape key in Vim, the `i` for insert mode, `:wq` and `:q!` to ca
 
 there is a difference between files and commits
 
-# Synching repositories
+# Syncing repositories
 
-* `git pull`
-* `git push`
+![Git syncing repositories](git_syncing.gif)
+
+Command | Description
+------- | -----------
+ `git remote` |
+ `git pull` |
+ `git push` | 
+ `git fetch` |
+ `git merge` |
 
 
 ## How to work with branches
