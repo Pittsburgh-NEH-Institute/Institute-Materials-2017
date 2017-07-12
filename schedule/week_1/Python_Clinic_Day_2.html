@@ -11778,7 +11778,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Python-clinic-day-2:-Corpus-processing">Python clinic day 2: Corpus processing<a class="anchor-link" href="#Python-clinic-day-2:-Corpus-processing">&#182;</a></h1><p>Na-Rae Han (<a href="mailto:naraehan@pitt.edu">naraehan@pitt.edu</a>), 2017-07-13, <a href="https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017">Pittsburgh NEH Institute “Make Your Edition”</a></p>
+<h1 id="Python-clinic-day-2:-Corpus-processing">Python clinic day 2: Corpus processing<a class="anchor-link" href="#Python-clinic-day-2:-Corpus-processing">&#182;</a></h1><p>Na-Rae Han (<a href="mailto:naraehan@pitt.edu">naraehan@pitt.edu</a>), 2017-07-13, <a href="https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/">Pittsburgh NEH Institute “Make Your Edition”</a></p>
 
 </div>
 </div>
@@ -11789,13 +11789,14 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Preparation">Preparation<a class="anchor-link" href="#Preparation">&#182;</a></h2><h3 id="Data">Data<a class="anchor-link" href="#Data">&#182;</a></h3><ul>
-<li>This tutorial is found in <a href="https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/tree/master/schedule/week_1">https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/tree/master/schedule/week_1</a></li>
+<li>This tutorial is found on <a href="https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_1/week_1_day_4_plan.html">https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_1/week_1_day_4_plan.html</a></li>
 <li>Download and unzip the “C-Span Inaugural Address Corpus”, available on NLTK’s corpora page: <a href="http://www.nltk.org/nltk_data/">http://www.nltk.org/nltk_data/</a></li>
 <li>Place the unzipped <code>inaugural</code> folder <strong>on your desktop</strong> </li>
 </ul>
 <h3 id="Jupyter-tips">Jupyter tips<a class="anchor-link" href="#Jupyter-tips">&#182;</a></h3><ul>
-<li><code>Shift+ENTER</code> to run cell, go to next cell</li>
+<li>Click <code>+</code> to create a new cell, ► to run </li>
 <li><code>Alt+ENTER</code> to run cell, create a new cell below</li>
+<li><code>Shift+ENTER</code> to run cell, go to next cell</li>
 </ul>
 <p>More on <a href="https://www.cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/">https://www.cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/</a></p>
 
@@ -11808,7 +11809,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Review">Review<a class="anchor-link" href="#Review">&#182;</a></h2><ul>
-<li>Let’s review <a href="Python Clinic Day 1.ipynb">what we learned yesterday</a>. </li>
+<li>Let’s review <a href="Python_Clinic_Day_1.html">what we learned yesterday</a>. </li>
 </ul>
 
 </div>
@@ -11869,7 +11870,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wtokens</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">wtxt</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Build a token list</span>
+<span class="n">wtokens</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">wtxt</span><span class="p">)</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">wtokens</span><span class="p">)</span>     <span class="c1"># Number of words in text</span>
 </pre></div>
 
@@ -11883,7 +11885,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Build a dictionary of frequency count</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Build a dictionary of word frequency count</span>
 <span class="n">wfreq</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FreqDist</span><span class="p">(</span><span class="n">wtokens</span><span class="p">)</span>
 <span class="n">wfreq</span><span class="p">[</span><span class="s1">&#39;the&#39;</span><span class="p">]</span>
 </pre></div>
@@ -12101,7 +12103,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># You can also specify individual file ID. First 50 words from Obama 2009:</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;2009-Obama.txt&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">50</span><span class="p">:])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;2009-Obama.txt&#39;</span><span class="p">)[</span><span class="mi">50</span><span class="p">:])</span>
 </pre></div>
 
 </div>
@@ -12162,7 +12164,10 @@ div#notebook {
 <h3 id="Trouble-shooting">Trouble shooting<a class="anchor-link" href="#Trouble-shooting">&#182;</a></h3><ul>
 <li>Unfortunately, 2005 Bush file produces a Unicode encoding error. </li>
 <li>Let's make a new text file from <a href="http://www.presidency.ucsb.edu/inaugurals.php">http://www.presidency.ucsb.edu/inaugurals.php</a></li>
-<li>Copy text and paste in Notepad (Windows) or BBEdit (Mac). Windows users: make sure to choose <strong>UTF-8</strong> encoding and not ANSI. </li>
+<li>Copy text and paste in Notepad/Notepad++ (Windows) or BBEdit (Mac). <ul>
+<li>Windows users: make sure to choose <strong>UTF-8</strong> encoding and not ANSI when saving. </li>
+</ul>
+</li>
 <li>The text files are locked; We will need to save, halt and then re-start the Python notebook. </li>
 </ul>
 
@@ -12197,6 +12202,23 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Your-turn">Your turn<a class="anchor-link" href="#Your-turn">&#182;</a></h3><p>Can you find out:</p>
+<ul>
+<li>Which speech contains the most # of sentences</li>
+<li>Are sentences getting longer or shorter over time? <ul>
+<li>&lt;-- Compute the average length of sentences. </li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">

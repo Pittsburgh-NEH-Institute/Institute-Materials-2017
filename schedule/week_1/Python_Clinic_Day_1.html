@@ -11778,7 +11778,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Python-clinic-day-1:-Text-processing">Python clinic day 1: Text processing<a class="anchor-link" href="#Python-clinic-day-1:-Text-processing">&#182;</a></h1><p>Na-Rae Han (<a href="mailto:naraehan@pitt.edu">naraehan@pitt.edu</a>), 2017-07-12, <a href="https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017">Pittsburgh NEH Institute “Make Your Edition”</a></p>
+<h1 id="Python-clinic-day-1:-Text-processing">Python clinic day 1: Text processing<a class="anchor-link" href="#Python-clinic-day-1:-Text-processing">&#182;</a></h1><p>Na-Rae Han (<a href="mailto:naraehan@pitt.edu">naraehan@pitt.edu</a>), 2017-07-12, <a href="https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/">Pittsburgh NEH Institute “Make Your Edition”</a></p>
 
 </div>
 </div>
@@ -11789,13 +11789,14 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Preparation">Preparation<a class="anchor-link" href="#Preparation">&#182;</a></h2><h3 id="Data">Data<a class="anchor-link" href="#Data">&#182;</a></h3><ul>
-<li>This tutorial is found in <a href="https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/tree/master/schedule/week_1">https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/tree/master/schedule/week_1</a></li>
+<li>This tutorial is found on <a href="https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_1/week_1_day_3_plan.html">https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_1/week_1_day_3_plan.html</a></li>
 <li>Download and unzip the “C-Span Inaugural Address Corpus”, available on NLTK’s corpora page: <a href="http://www.nltk.org/nltk_data/">http://www.nltk.org/nltk_data/</a></li>
 <li>Place the unzipped <code>inaugural</code> folder <strong>on your desktop</strong> </li>
 </ul>
 <h3 id="Jupyter-tips">Jupyter tips<a class="anchor-link" href="#Jupyter-tips">&#182;</a></h3><ul>
-<li><code>Shift+ENTER</code> to run cell, go to next cell</li>
+<li>Click <code>+</code> to create a new cell, ► to run </li>
 <li><code>Alt+ENTER</code> to run cell, create a new cell below</li>
+<li><code>Shift+ENTER</code> to run cell, go to next cell</li>
 </ul>
 <p>More on <a href="https://www.cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/">https://www.cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/</a></p>
 
@@ -11835,7 +11836,8 @@ div#notebook {
 <h3 id="Strings">Strings<a class="anchor-link" href="#Strings">&#182;</a></h3><ul>
 <li>String type objects are enclosed in quotation marks (" or ').</li>
 <li>+ is a concatenation operator.</li>
-<li>Below, <code>greet</code> is a variable name assigned to a string value; note <code>OUT[]:</code> and the absence of quotation marks.</li>
+<li>Below, <code>greet</code> is a variable name assigned to a string value. </li>
+<li>Here we are not explicitly printing out; instead, a string value is <em>returned</em>. </li>
 </ul>
 
 </div>
@@ -11863,7 +11865,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>String methods such as <code>.upper()</code>, <code>.lower()</code> transform a string. </li>
-<li>Unlike printing, the command <strong>returns</strong> a new string value. </li>
+<li>Rather than changing the original variable, the commands <em>return</em> a <em>new</em> string value. </li>
 </ul>
 
 </div>
@@ -11875,6 +11877,32 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">greet</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Some string methods return a boolean value (True/False) </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># try .isupper(), .isalnum(), .startswith(&#39;he&#39;)</span>
+<span class="s1">&#39;hello&#39;</span><span class="o">.</span><span class="n">islower</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -11912,6 +11940,31 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>in</code> tests substring-hood between two strings. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;he&#39;</span> <span class="ow">in</span> <span class="s1">&#39;hello&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Numbers">Numbers<a class="anchor-link" href="#Numbers">&#182;</a></h3><ul>
 <li>Integers and floats are written without quotes. </li>
 <li>You can use algebraic operations such as <code>+</code>, <code>-</code>, <code>*</code> and <code>/</code> with numbers. </li>
@@ -11928,7 +11981,7 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">num1</span> <span class="o">=</span> <span class="mi">5678</span>
 <span class="n">num2</span> <span class="o">=</span> <span class="mf">3.141592</span>
 <span class="n">result</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="s2">&quot;divided by&quot;</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="s2">&quot;is&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="s2">&quot;divided by&quot;</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="s2">&quot;is&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>  <span class="c1"># can print multiple things! </span>
 </pre></div>
 
 </div>
@@ -12150,9 +12203,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Using-NLTK">Using NLTK<a class="anchor-link" href="#Using-NLTK">&#182;</a></h2><ul>
-<li>NLTK (<a href="http://www.nltk.org/">Natural Language Toolkit</a>) is an external module; you can start using it after importing it. </li>
-<li><code>nltk.word_tokenize()</code> is a handy tokenizing function, one of hundreds available in NLTK.</li>
-<li><code>nltk.word_tokenize()</code> turns a text (a single string) into a list of word tokens (that is, a list of words, punctuation, etc.). </li>
+<li>NLTK (<a href="http://www.nltk.org/">Natural Language Toolkit</a>) is an external library; you must import it first. </li>
 </ul>
 
 </div>
@@ -12171,12 +12222,39 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Let's first download some data files. In the doanloader window, Models &gt; punkt &gt; Download. </li>
+<li>If server is overloaded, download <a href="http://www.pitt.edu/~naraehan/punkt.zip">this punkt.zip file</a> and unzip it as <code>~/nltk_data/tokenizers/punkt</code></li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">greet</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Tokenizing function: turns a text (a single string) into a list of word &amp; symbol tokens</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">greet</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12299,7 +12377,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Processing-a-single-text-file">Processing a single text file<a class="anchor-link" href="#Processing-a-single-text-file">&#182;</a></h2><h3 id="Reading-in-a-text-file">Reading in a text file<a class="anchor-link" href="#Reading-in-a-text-file">&#182;</a></h3><ul>
-<li><code>open(filename).read()</code> reads in the content of a text file as a single continuous string. </li>
+<li><code>open(filename).read()</code> opens a text file and reads in the content as a <em>single continuous string</em>. </li>
 </ul>
 
 </div>
@@ -12478,7 +12556,7 @@ div#notebook {
 </ul>
 </li>
 </ul>
-<p>All answered in <a href="Python Clinic Day 2.html">Python Clinic Day 2: Corpus Processing</a></p>
+<p>All answered in <a href="Python_Clinic_Day_2.html">Python Clinic Day 2: Corpus Processing</a></p>
 
 </div>
 </div>
