@@ -21,7 +21,7 @@ Day three kicks off with a deeper look at refining regular expressions to tailor
 
 ______
 
-## 9:00–10:30: Regular expressions 2
+## 9:00–10:30: [Regular expressions 2](regex2.md)
 
 ## 10:30–11:00: Coffee break
 
