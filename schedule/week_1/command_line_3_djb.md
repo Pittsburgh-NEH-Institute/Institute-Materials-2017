@@ -102,10 +102,29 @@ Notice the files with 0 hits are included. We’ll get rid of those shortly.
 
 #### Matching regex
 
-`grep` searches for a _regex pattern_, and not just a string. so:
+`grep` searches for a _regex pattern_, and not just a string. so, in `haiku.txt`:
 
 * Find lines with 'o' as the second letter
 * Find lines ending in 'ing'
+* Find geminate (doubled) letters (in this case, “ee” in “seen” and “ss” in “loss”).
+
+#### Greedy and non-greedy matching
+
+The task is to find all quoted text in data-shell/writing/data/LittleWomen.txt. Try:
+
+```bash
+grep -En --color '".*"' LittleWomen.txt
+```
+
+and scroll up to line 12378. What’s the problem? Regex matches are *greedy* by default; they prefer the longest possible match.
+
+To fix it, make the match non-greedy with:
+
+```bash
+grep -En --color '".*?"' LittleWomen.txt
+```
+
+That doesn’t fix all the problems, though. Scroll up to line 15624; what’s the problem there? (It can’t be fixed in `grep`, but there are regex contexts that can deal with it.)
 
 #### Inverting a search with `grep -v`
 
