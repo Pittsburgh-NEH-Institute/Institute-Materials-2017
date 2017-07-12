@@ -33,7 +33,7 @@
 * Add a new extension, e.g., `file1.txt` → `file1.txt.bak`
 * Change the extension, e.g., `file1.txt` → `file1.bak` 
 	* cp $file ${file/txt/bak}
-	* cp $file ${file%txt}.bak 
+	* cp $file ${file%.txt}.bak 
 
 For more information about substring removal, see <http://wiki.bash-hackers.org/syntax/pe#substring_removal> (including the section immediately below, subtitled “How the heck does that help to make my life easier?”).
 
