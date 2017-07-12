@@ -47,6 +47,10 @@ Time | Topic | Type
 20 min | Using NLTK | Presentation
 25 min | Processing a single text file | Code lab
 
+## 3:30–4:00 Coffee break
+
+## 4:00–5:30 Review
+
 ## Homework
 
 Please complete [Week 1, Day 3 feedback](week_1_day_3_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 1, Day 3 feedback”.
