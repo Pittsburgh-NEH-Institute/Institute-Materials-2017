@@ -8,9 +8,13 @@ Git is a distributed version management control system. [that means that...] In 
 
 In this tutorial, we will work both in the browser and in a terminal window. We use the browser to administer remote Git repositories; we work in the terminal for everything regarding the local Git repository.  
 
-**[NOTE: explain quickly the difference between Git and GitHub]**
+**[NOTE: explain quickly the difference between Git and GitHub]** Issue: fixed below:
+
+Git is a command line tool with which one can administer local and remote Git repositories, allowing you to version your files and share them easily with others within a project.
+
+Github is an online service that hosts Git repositories (public as well as private) and provides social network functionality to users. Users can add issues, construct a wiki, create tasks and create pull requests on the web-site. 
  
-What you needed to get started with Git:
+What you need to get started with Git:
 
 * a Github account
 * basic knowledge of the command line
@@ -46,7 +50,7 @@ Your repository will be located at `https://github.com/username/repositoryname`.
 
 ## Set your identity on your local machine
 
-When you start working with Git you need to set your identity. **[NOTE: explain what an "identity" is]** This identity will be used to track all the changes that you make to content in a repository. You only have to do this once on each machine that you use.
+When you start working with Git you need to set your identity. **[NOTE: explain what an "identity" is]**  Issue: Fixed, added extra sentence. Git tracks who changes what in each file. Therefore you need to identify yourself before you are able to make changes and commit them. This identity will be used to track all the changes that you make to content in a repository. You only have to do this once on each machine that you use.
 
 Open a terminal window and type the following commands, replacing John Doe with your name and the email-address with your own email address:
 
@@ -54,19 +58,18 @@ Open a terminal window and type the following commands, replacing John Doe with 
 * `$ git config --global user.email johndoe@example.com`
 
 
-## Working with repositories
+## Cloning remote repositories
 
-Respositories are where you keep project files. To start working with Git you will need a repository. **[NOTE: you mean a different repository than the one you have created above? If so, make explicit]**  
-**[Also: emphasize here the link with day 1 and day 2 about managing your file system and directories]**
+Now we need to transfer the remote repository that we just created to the local machine.
+There are two ways in Git to get a repository to the local machine, either create a new one or clone an existing remote repository. In this exercise we are going to clone the repository that we have just created on Github.
 
 Command | Description
 ------- | -----------
 `git clone` |   Copy an existing repository from a remote location (for example GitHub)
 `git init` |   Create a new repository locally
 
-**[NOTE: what are we doing here? Like, what do you advice the participants to do re: copying an existing repo or creating a new repo?]**
+**[NOTE: what are we doing here? Like, what do you advice the participants to do re: copying an existing repo or creating a new repo?]** Fixed: mentioned explicitly above, that we are going to clone an existing one.
 
-Now we need to get the remote repository that we just created.
 
 * Create a directory in your user directory called Workspace were we store all the cloned repositories.
 
@@ -78,9 +81,14 @@ $ cd Workspace
 
 Now we clone the repository that we just made on Github to the local machine.
 
+
 ```bash
 $ git clone https://github.com/username/repositoryname
 ```
+
+**[Also: emphasize here the link with day 1 and day 2 about managing your file system and directories]**
+
+
 
 **[NOTE: add some short summary about what we just did, perhaps an image/diagram here to make clear the situation with local repo's and remote repo's]**
 
