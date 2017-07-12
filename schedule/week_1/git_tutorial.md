@@ -91,6 +91,8 @@ $ git clone https://github.com/username/repositoryname
 
 **[NOTE: add some short summary about what we just did, perhaps an image/diagram here to make clear the situation with local repo's and remote repo's]**
 
+![Git clone](git_cloning.gif)
+
 ## Working directory
 
 When you have a terminal window open, you are in what is called the *working directory*. The complete repository, with all the changes that people have ever made, is present, but in the background. Information other than current versions of your files is outside your working directory, but you can reach it when you need it.
