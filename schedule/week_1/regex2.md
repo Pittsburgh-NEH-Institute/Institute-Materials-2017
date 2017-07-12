@@ -18,14 +18,17 @@ Since we introduced _precedence_ in the previous section we also want to be able
 | `(` | starts a group |
 | `)` | ends a group |
 
-| String | RE | Match |
-| --- | --- | --- |
-| word and phrase level | `word|phrase level` | Yes | 
-| walked up to the talking lamp post | `ed\b|ing\b` | Yes |  
-| word level and phrase level | `word|phrase level` | Yes, but only _word_ and _phrase level_ |
-| word level and phrase level | `(word|phrase) level` | Yes, both _word level_ and _phrase level_ |
+### Precedence examples
 
-In addition to use the _grouping metachararacters_ to alter the precedence you can use it for _back reference_. Some RE implementations have named grouping back references others just `\1', `\2` etcetera.
+<table>
+<tr><th>String</th><th>Pattern</th><th>Match?</th></tr>
+<tr><td> word and phrase level</td><td><code>word|phrase level</code></td><td>Yes, both <em>word</em> and <em>phrase level</em></td></tr>
+<tr><td>walked up to the talking lamp post</td><td><code>ed\b|ing\b</code></td><td>Yes, both <em>ed</em> at the end of <em>walked</em> and <em>ing</em> at the end of <em>talking</em></td></tr>
+<tr><td>word level and phrase level</td><td><code>word|phrase level</code></td><td>Yes, but only <em>word</em> and <em>phrase level</em> (not all of <em>word level</em>)</td></tr>
+<tr><td>word level and phrase level</td><td><code>(word|phrase) level</code></td><td>Yes, both <em>word level</em> and <em>phrase level</em></td></tr>
+</table>
+
+In addition to use the _grouping metachararacters_ to alter the precedence you can use it for _back reference_. Some RE implementations have named grouping back references others just `\1`, `\2` etcetera.
 
 Exercise: Check out how this is in `egrep`.   
  
