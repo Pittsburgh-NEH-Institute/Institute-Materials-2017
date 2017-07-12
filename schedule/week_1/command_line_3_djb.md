@@ -169,7 +169,7 @@ do
 done
 ```
 
-## `find`
+## Finding files with `find`
 
 `grep` finds lines that contain text. `find` finds files with *filenames* that match a string.
 
