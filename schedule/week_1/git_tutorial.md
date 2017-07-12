@@ -144,7 +144,8 @@ Command | Description
 --------|-----------------
 `git commit` | Make changes permanent
 `git log`  | Show history of commits
-
+`git reset HEAD~` | Undo the last commit, retain changes in the working directory
+`git reset HEAD~ --hard` | Undo the last commit, remove changes from the working directory
 
 vim is the default editor in Git (on all operating systems). When you type `git commit`, you are taken into vim to enter a _commit message_, where you record information about the commit. The most important vim commands are:
 
@@ -158,9 +159,11 @@ You type | What happens
 The use of the escape key in Vim, the `i` for insert mode, `:wq` and `:q!` to cancel 
 
 
-## How to revert files
+If you make a mistake with a commit (forgot to add new files, or messed up your commit message)
 
-there is a difference between files and commits
+`$ git reset HEAD~`
+
+Note that there is a difference between files and commits. A commit can consist (and usually does) of multiple files. Git tracks commits and content, not single files.
 
 # Syncing repositories
 
@@ -171,7 +174,7 @@ Command | Description
  `git pull` | Fetch the commits from a remote repository and merge them with the current working directory (i.e. does a fetch and a merge in one)
  `git push` | Push the commits from the local repository to a remote repository 
  `git fetch` | Fetch the commits from a remote repository into the local repository
- `git merge` | Merge the commits from the local repository with commits from a remote repository 
+ `git merge` | Merge the commits from the local repository with commits fetched from a remote repository (actually this works on branches; this will be explained in the git tutorial part 2)
 
 
 ## Terms learned
