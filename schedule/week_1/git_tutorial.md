@@ -4,7 +4,7 @@ Git is a content management system, but not in the usual way you might expect fr
 
 Git is one of the most used *version control systems* in the coding community. It is useful when working on coding projects, alone or in a group: it keeps track of each stage of the process, and allows you for instance to go back and restore to an earlier version.
 
-Git is a distributed version management control system. [that means that...] In this workshop, we are going to use *remote* repositories, which are located om a server on Github, as well as a *local* repository that is located on your own machine.
+Git is a distributed version management control system.  **[that means that...]** In this workshop, we are going to use *remote* repositories, which are located om a server on Github, as well as a *local* repository that is located on your own machine.
 
 In this tutorial, we will work both in the browser and in a terminal window. We use the browser to administer remote Git repositories; we work in the terminal for everything regarding the local Git repository.  
 
@@ -60,17 +60,20 @@ Open a terminal window and type the following commands, replacing John Doe with 
 
 ## Cloning remote repositories
 
+![Git clone](git_cloning.gif)
+
 To work with the repository we just created we need to transfer the data from the remote repository to the local machine. Copying a remote repository to the local machine is called cloning in Git. For completeness sake I also included in the table below the git command to create a new repository on the local machine. 
 
 Command | Description
 ------- | -----------
 `git clone` |   Copy an existing repository from a remote location (for example GitHub)
+`git remote` |  View and manage remote repositories
 `git init` |   Create a new repository locally
 
 **[NOTE: what are we doing here? Like, what do you advice the participants to do re: copying an existing repo or creating a new repo?]** Fixed: mentioned explicitly above, that we are going to clone an existing one.
 
 
-* Create a directory in your user directory called Workspace were we store all the cloned repositories.
+* Create a directory in your home directory called Workspace were we store all the cloned repositories.
 
 ```bash
 $ cd ~
@@ -83,7 +86,27 @@ Now we clone the repository that we just made on Github to the local machine.
 
 ```bash
 $ git clone https://github.com/username/repositoryname
+
+$ cd repositoryname
+$ ls -lisa
+
 ```
+
+There should be your files. 
+
+Now we run the git remote command to see whether the remote repository is correctly linked with the local repository.
+
+`$ git remote -v`
+
+Sample outcome:
+
+```bash
+origin	https://github.com/username/repositoryname (fetch)
+origin	https://github.com/username/repositoryname (push)
+```
+
+What *fetch* and *push* stand for we will get into later (under section syncing repositories)
+
 
 **[Also: emphasize here the link with day 1 and day 2 about managing your file system and directories]**
 
@@ -91,7 +114,6 @@ $ git clone https://github.com/username/repositoryname
 
 **[NOTE: add some short summary about what we just did, perhaps an image/diagram here to make clear the situation with local repo's and remote repo's]**
 
-![Git clone](git_cloning.gif)
 
 ## Working directory
 
@@ -146,7 +168,6 @@ there is a difference between files and commits
 
 Command | Description
 ------- | -----------
- `git remote` |
  `git pull` |
  `git push` | 
  `git fetch` |
