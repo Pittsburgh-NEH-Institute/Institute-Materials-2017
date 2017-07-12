@@ -168,54 +168,17 @@ there is a difference between files and commits
 
 Command | Description
 ------- | -----------
- `git pull` |
- `git push` | 
- `git fetch` |
- `git merge` |
+ `git pull` | Fetch the commits from a remote repository and merge them with the current working directory (i.e. does a fetch and a merge in one)
+ `git push` | Push the commits from the local repository to a remote repository 
+ `git fetch` | Fetch the commits from a remote repository into the local repository
+ `git merge` | Merge the commits from the local repository with commits from a remote repository 
 
 
-## How to work with branches
-
-Command | Description
---------|------------
-`git branch`   |
-`git checkout` |   Switch from one branch to another
-`git stash`    |   Temporarily move changed files out of the way
-
-
-## Terms
+## Terms learned
 
 * Repository
-* Branch
+* Clone / Origin
 * Working directory
-* Fork (GitHub term)
-* Pull request (GitHub term)
-
-
-Fork is a remote repository on GitHub.
-Branch is a thing in a repository
-The Git `pull` command is not the same as a *pull request* on GitHub.
-
-Synching
-
-`git remote show origin`
-
-`git add remote ... upstream`
-
-Set the origin to the original repository (on GitHub; so clone the original repository)
-
-To change existing origin: 
-
-This is wrong:
-
-	git remote add origin
-	Error: already exist
-
-This is correct:
-
-	git remote set-url origin
-	git branch --set-upstream-to=origin/master master
-
-`git remote add myfork https://github.com/etc`
-`git push myfork master` etc.
+* Commit
+* Push and pull
 
