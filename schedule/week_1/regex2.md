@@ -1,6 +1,6 @@
 # Regular Expressions 2
 
-Last session we covered _simple patterns_ and _repetition_. We also did some exercises on this using `egrep`. Today we firstly want to cover _alternation and _grouping_ before we continue using `egrep` with more andvanced expressions. Later on we will start compare `egrep`s REs to `python`. 
+Last session we covered _simple patterns_ and _repetition_. We also did some exercises on this using `egrep`. Today we firstly want to cover _alternation_ and _grouping_ before we continue using `egrep` with more andvanced expressions. Later on we will start compare `egrep`s REs to `python`. 
 
 ## Alternation
 
@@ -30,5 +30,6 @@ Exercise: Check out how this is in `egrep`.
 
 ## Comparing to Python
 Without going into actual Python programming we are going to see how the `egrep` REs compare to Python's:  
-[Regular expressions 101](https://regex101.com/)
+* [Regular expressions 101](https://regex101.com/)
+
 Make sure to tick Python in the _Flavour_ list to the left.
