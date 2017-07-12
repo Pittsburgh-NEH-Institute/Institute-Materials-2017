@@ -173,24 +173,3 @@ A word boundary is a position between a character that can be matched by the set
 | rain | `$r[ai]+n\b` | Yes |
 | complicated | `\bcomp.+\b` | Yes |
 
-## Alternation
-
-_Alternation_ is the _RE_ equivalent of `or`. `word|weapon` matches _words_ in _About words and other mighty weapons_. Applied again the _RE alternation_ matches _weapons_. You can add as many alternatives as you want, e.g. `letter|syllable|word|phrase|sentence|paragraph`.
-
-_Alternation_ has the **lowest precedence** of all _RE operators_.
-
-## Grouping
-Since we introduced _precedence_ in the previous section we also want to be able to change the behaviour. This is what _grouping_ does.  
-
-| Metacharacter | Explanation |
-| --- | --- |
-| `(` | starts a group |
-| `)` | ends a group |
-
-| String | RE | Match |
-| --- | --- | --- |
-| word and phrase level | `word\|phrase level` | Yes | 
-| walked up to the talking lamp post | `ed\b\|ing\b` | Yes |  
-| word level and phrase level | `word\|phrase level` | Yes, but only _word_ and _phrase level_ |
-| word level and phrase level | `(word\|phrase) level` | Yes, both _word level_ and _phrase level_ |
-
