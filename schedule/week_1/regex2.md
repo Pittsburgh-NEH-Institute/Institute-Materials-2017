@@ -20,10 +20,10 @@ Since we introduced _precedence_ in the previous section we also want to be able
 
 | String | RE | Match |
 | --- | --- | --- |
-| word and phrase level | `word\|phrase level` | Yes | 
-| walked up to the talking lamp post | `ed\b\|ing\b` | Yes |  
-| word level and phrase level | `word\|phrase level` | Yes, but only _word_ and _phrase level_ |
-| word level and phrase level | `(word\|phrase) level` | Yes, both _word level_ and _phrase level_ |
+| word and phrase level | `word|phrase level` | Yes | 
+| walked up to the talking lamp post | `ed\b|ing\b` | Yes |  
+| word level and phrase level | `word|phrase level` | Yes, but only _word_ and _phrase level_ |
+| word level and phrase level | `(word|phrase) level` | Yes, both _word level_ and _phrase level_ |
 
 In addition to use the _grouping metachararacters_ to alter the precedence you can use it for _back reference_. Some RE implementations have named grouping back references others just `\1', `\2` etcetera.
 
