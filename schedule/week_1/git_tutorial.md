@@ -104,6 +104,8 @@ When you have a terminal window open, you are in what is called the *working dir
 
 ## Working with changes locally
 
+![Git commit](git_making_changes.gif)
+
 Command | Description 
 --------|-----------------
 `git status` | Show which files are modified locally
@@ -111,6 +113,7 @@ Command | Description
 `git reset` |  Untrack a file 
 `git diff` |  Show changes
 `git commit` | Make changes permanent
+`git checkout` | Undo changes to a file (before commit)
 `git log`  | Show history of commits
 
 ## Committing changes
