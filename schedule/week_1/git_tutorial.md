@@ -4,11 +4,9 @@ Git is a content management system, but not in the usual way you might expect fr
 
 Git is one of the most used *version control systems* in the coding community. It is useful when working on coding projects, alone or in a group: it keeps track of each stage of the process, and allows you for instance to go back and restore to an earlier version.
 
-Git is a distributed version management control system.  **[that means that...]** In this workshop, we are going to use *remote* repositories, which are located om a server on Github, as well as a *local* repository that is located on your own machine.
+Git is a distributed version management control system. That means that every project member has a copy of the complete history of all the files in the project on their machine. Contrast this with centralized version control systems such as Subversion (SVN) were users only have the last version of a file on their system. In this workshop, we are going to use *remote* repositories, which are located om a server on Github, as well as a *local* repository that is located on your own machine.
 
 In this tutorial, we will work both in the browser and in a terminal window. We use the browser to administer remote Git repositories; we work in the terminal for everything regarding the local Git repository.  
-
-**[NOTE: explain quickly the difference between Git and GitHub]** Issue: fixed below:
 
 Git is a command line tool with which one can administer local and remote Git repositories, allowing you to version your files and share them easily with others within a project.
 
@@ -50,7 +48,7 @@ Your repository will be located at `https://github.com/username/repositoryname`.
 
 ## Set your identity on your local machine
 
-When you start working with Git you need to set your identity. **[NOTE: explain what an "identity" is]**  Issue: Fixed, added extra sentence. Git tracks who changes what in each file. Therefore you need to identify yourself before you are able to make changes and commit them. This identity will be used to track all the changes that you make to content in a repository. You only have to do this once on each machine that you use.
+When you start working with Git you need to set your identity. Git tracks who changes what in each file. Therefore you need to identify yourself before you are able to make changes and commit them. This identity will be used to track all the changes that you make to content in a repository. You only have to do this once on each machine that you use.
 
 Open a terminal window and type the following commands, replacing John Doe with your name and the email-address with your own email address:
 
@@ -69,9 +67,6 @@ Command | Description
 `git clone` |   Copy an existing repository from a remote location (for example GitHub)
 `git remote` |  View and manage remote repositories
 `git init` |   Create a new repository locally
-
-**[NOTE: what are we doing here? Like, what do you advice the participants to do re: copying an existing repo or creating a new repo?]** Fixed: mentioned explicitly above, that we are going to clone an existing one.
-
 
 * Create a directory in your home directory called Workspace were we store all the cloned repositories.
 
@@ -112,7 +107,6 @@ What *fetch* and *push* stand for we will get into later (under section syncing 
 
 
 
-**[NOTE: add some short summary about what we just did, perhaps an image/diagram here to make clear the situation with local repo's and remote repo's]**
 
 
 ## Working directory
