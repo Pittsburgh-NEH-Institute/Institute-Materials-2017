@@ -106,7 +106,6 @@ Notice the files with 0 hits are included. We’ll get rid of those shortly.
 
 * Find lines with 'o' as the second letter
 * Find lines ending in 'ing'
-* Find geminate (doubled) letters. In `haiku.txt`, find the “ee” in “seen” and the “ss” in “loss”. Hint: you’ll need to use a capture group (in parentheses) and a back-reference (`\1`).
 
 #### Inverting a search with `grep -v`
 
