@@ -20,9 +20,13 @@ What you need to get started with Git:
 If you don't have a Github account, create one here:
 <https://github.com>
 
-## General overview 
+## Preparation
 
-![](git_process_diagram.gif)
+![](git_repository_preparation.svg)
+
+## General workflow 
+
+![](git_process_diagram.svg)
 
 ## Create a new Github repository
 
@@ -40,6 +44,8 @@ If you don't have a Github account, create one here:
 	* You can create a CODEOWNERS file, which describes which individuals or teams own certain files in the repository.
 	* You can create a .gitignore file, which is a set of ignore rules.
 	* You can choose to add a software license for your project.
+
+		For this exercise at least choose to add a README file. You can choose to add a license if you like. 	
 * When you're finished, click Create repository.
 
 
