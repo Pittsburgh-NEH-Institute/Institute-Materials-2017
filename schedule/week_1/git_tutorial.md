@@ -141,6 +141,13 @@ Command | Description
 
 ## Committing changes
 
+Command | Description 
+--------|-----------------
+`git commit` | Make changes permanent
+`git log`  | Show history of commits
+`git reset HEAD~` | Undo the last commit, retain changes in the working directory
+`git reset HEAD~ --hard` | Undo the last commit, remove changes from the working directory
+
 `git commit -a` adds all changed files and commits the changes, that is, it combines `git add` with `git commit`. **But it only adds files that have changed, and not files that are completely new.** The only way to add a new file is with `git add`.
 
 For example:
@@ -150,12 +157,11 @@ $ git add .
 $ git commit -m "added a new feature some files changed"
 ```
 
-Command | Description 
---------|-----------------
-`git commit` | Make changes permanent
-`git log`  | Show history of commits
-`git reset HEAD~` | Undo the last commit, retain changes in the working directory
-`git reset HEAD~ --hard` | Undo the last commit, remove changes from the working directory
+If you make a mistake with a commit (forgot to add new files, or messed up your commit message)
+
+`$ git reset HEAD~`
+
+Note that there is a difference between files and commits. A commit can consist (and usually does) of multiple files. Git tracks commits and content, not single files.
 
 vim is the default editor in Git (on all operating systems). When you type `git commit`, you are taken into vim to enter a _commit message_, where you record information about the commit. The most important vim commands are:
 
@@ -168,12 +174,6 @@ You type | What happens
 
 The use of the escape key in Vim, the `i` for insert mode, `:wq` and `:q!` to cancel 
 
-
-If you make a mistake with a commit (forgot to add new files, or messed up your commit message)
-
-`$ git reset HEAD~`
-
-Note that there is a difference between files and commits. A commit can consist (and usually does) of multiple files. Git tracks commits and content, not single files.
 
 # Syncing repositories
 
