@@ -21,15 +21,15 @@ Day 4 begins with an introduction to how the Internet works, a topic that will r
 
 ______
 
-## 9:00–10:30: How the internet works
+## 9:00–10:30: [How the internet works](internet_1.md)
 
 
 Time | Topic | Type
 ---- | ---- | ----
-15 min | Review | Discussion
-25 min | Placeholder | 
-25 min | Placeholder | 
-25 min | Placeholder | 
+20 min | Hostnames and DNS | Discussion
+20 min | IP and Internet addresses | Discussion
+25 min | Network communication | Presentation
+25 min | Network protocols | Code lab
 
 ## 10:30–11:00: Coffee break
 
@@ -46,7 +46,7 @@ Time | Topic | Type
 
 ## 12:30–2:00 Lunch
 
-## 2:00–3:30: [Python clinic 2](Python_Clinic_Day_1.ipynb)
+## 2:00–3:30: [Python clinic 2](Python_Clinic_Day_1.html)
 
 After practicing first with processing single documents using Python, we move to processing a corpus (in this case, of U.S. Presidential inaugural addresses) with NLTK.
 

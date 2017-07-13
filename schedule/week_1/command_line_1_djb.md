@@ -24,11 +24,6 @@ ____
 
 ## Looking around
 
-* `cd` (no argument)
-* `whoami`
-* `pwd`
-* `mycommand` (non-existent)
-* `clear` (`Ctrl+l`)
 
 Change to your home directory, look at it with pwd.
 
@@ -55,7 +50,7 @@ Dragging a file from your filesystem Finder/Explorer window to the terminal
 * `ls -t`: list in timestamp order
 * `ls -G`: colored output
 * `ls -lh`: human readable file size
-* `ls -f`: decorate filenames according to filetype
+* `ls -F`: decorate filenames according to filetype
 * `ls -d`: don’t recurse into directories
 * `ls -1`: single-column
 * `ls -d */`: list only directories
@@ -65,7 +60,7 @@ Dragging a file from your filesystem Finder/Explorer window to the terminal
 * Command and filename completion with the `Tab` key
 * Command history with the arrow keys
 
-## Interim summary
+## Summary
 
 * The file system is responsible for managing information on the disk.
 * Information is stored in files, which are stored in directories (folders).
@@ -82,57 +77,3 @@ Dragging a file from your filesystem Finder/Explorer window to the terminal
 * `.` on its own means ‘the current directory’. Why would we need this?
 * Most filenames have conventional extensions: `.txt`, `.xml`, etc.
 * Most commands take options (flags) which begin with a `-`.
-
-## Working with directories
-
-* `mkdir`: make directory
-	* What’s a good name for a directory?
-	* What’s a good directory structure for a project?
-* `rmdir`: remove empty directory
-* `rm -rf:` remove directory and its contents recursively (careful!)
-
-## Working with files
-
-* `cp`: copy
-	* Copy a file
-	* Copy multiple files 
-* `mv`: rename / move
-	* Rename a file
-	* Move a file to a different location (optionally rename)
-* `rm`: delete (careful—deletion is forever!)
-* `rm -i`: delete after asking permission
-* Editing and saving files (in your editor of choice)
-	* Mac default is TextEdit
-	* Or install [BBEdit](https://www.barebones.com/products/bbedit/)
-	* Or use `vim` from the command line
-	* What’s a good filename?
-
-## Getting around the file system
-
-### Review
-
-* `cd -`: go back to the directory you came from
-* `cd` or `cd ~`: go to your home directory
-
-### New
-
-* `Ctrl+r`: initiate history search
-
-## Summary
-
-* `cp old new` copies a file.
-* `mkdir path` creates a new directory.
-* `mv old new` moves (renames) a file or directory.
-* `rm path` removes (deletes) a file.
-* Once something is deleted, it’s gone forever.
-
-## More useful commands
-
-* `wc` (`-l` lines, `-w` words, `-c` characters)
-* `cat` (you might have meant `less`)
-* `less` (shows the file, but only one screen of it)
-* `sort` (`-r` reverse, `-u` unique, `-g` numeric)
-* `uniq` (only on sorted input)
-* `head` (`-10`, or any other number)
-* `tail` (`-10`, or any other number)
-* `echo` (e.g., `echo $HOME`, `echo a*`)

@@ -23,15 +23,15 @@ Day 5 begins with an expanded session on how the Internet works.  Topics covered
 
 ______
 
-## 9:00–10:30: How the Internet works 2
+## 9:00–10:30: [How the Internet works 2](internet_2.md)
 
 
 Time | Topic | Type
 ---- | ----  | ----
 10 min | Review | Discussion
-25 min | Placeholder | 
-25 min | Placeholder | 
-25 min | Placeholder | 
+25 min | Security and SSL | Discussion
+25 min | The HTTP protocol | Code lab
+25 min | Any other business | Discussion
 
 ## 10:30–11:00: Coffee break
 

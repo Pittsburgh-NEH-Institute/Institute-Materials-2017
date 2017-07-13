@@ -21,21 +21,22 @@ Day three kicks off with a deeper look at refining regular expressions to tailor
 
 ______
 
-## 9:00–10:30: Regular expressions 2
+## 9:00–10:30: [Regular expressions 2](regex2.md)
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: Command line 3
+## 11:00–12:30: [Command line 3](command_line_3_djb.md)
 
 With regular expressions under our belt, we are ready to learn advanced `grep` skills for the command line. We will explore how we can search for lines that match a pattern and how to exploit advanced features (and work around complications) of this utility. We will also learn about the `find` command. 
 
-Time | Topic | Type
----- | ----  | ----
-90 min | [7. Finding Things ](http://swcarpentry.github.io/shell-novice/07-find/) | Code lab
+The Software Carpentry activities associated with the Command line 3 session are:
+
+* [5. Loops](http://swcarpentry.github.io/shell-novice/05-loop/)
+* [7. Finding Things ](http://swcarpentry.github.io/shell-novice/07-find/)
 
 ## 12:30–2:00 Lunch
 
-## 2:00-3:30: [Python clinic 1](Python_Clinic_Day_1.ipynb)
+## 2:00-3:30: [Python clinic 1](Python_Clinic_Day_1.html)
 
 The first day of the Python clinic will introduce the basics of text processing, in preparation for more complex textual analysis in the continuation of this unit. We will introduce and discuss the Natural Language Toolkit (NLTK) and the role it plays in processing text files. Participants will also gain familiarity with the Jupyter Notebook environment.
 
@@ -45,6 +46,10 @@ Time | Topic | Type
 30 min | Python basics | Presentation
 20 min | Using NLTK | Presentation
 25 min | Processing a single text file | Code lab
+
+## 3:30–4:00 Coffee break
+
+## 4:00–5:30 Review
 
 ## Homework
 

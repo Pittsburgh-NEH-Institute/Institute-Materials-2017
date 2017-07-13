@@ -35,19 +35,16 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: Command line 2
+## 11:00–12:30: [Command line 2](command_line_2_djb.md)
 
-Now that we are familiar with the shell, we can edit within it and incorporate variables and quotes. In breakout groups, we will practice reading from and writing to files and sending data through pipelines.
+The Software Carpentry activities associated with the Command line 2 session are:
 
-Time | Topic | Type
----- | ----  | ----
-50 min | [4. Pipes and Filters](http://swcarpentry.github.io/shell-novice/04-pipefilter/) | Code lab
-40 min | [5. Loops](http://swcarpentry.github.io/shell-novice/05-loop/) | Code lab
-
+* [3. Working with Files and Directories](http://swcarpentry.github.io/shell-novice/03-create/)
+* [4. Pipes and Filters](http://swcarpentry.github.io/shell-novice/04-pipefilter/)
 
 ## 12:30–2:00 Lunch
 
-## 2:00–3:30: Programs and files 2
+## 2:00–3:30: [Programs and files 2](programs_and_files2.md)
 
 We have a basic grasp of directory navigation, but what don’t we know about `$PATH`? How does our environment affect our file processing? How can we use commands and variables to manipulate files more efficiently? 
 

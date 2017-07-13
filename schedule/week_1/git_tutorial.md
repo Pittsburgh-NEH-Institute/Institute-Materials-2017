@@ -4,13 +4,15 @@ Git is a content management system, but not in the usual way you might expect fr
 
 Git is one of the most used *version control systems* in the coding community. It is useful when working on coding projects, alone or in a group: it keeps track of each stage of the process, and allows you for instance to go back and restore to an earlier version.
 
-Git is a distributed version management control system. [that means that...] In this workshop, we are going to use *remote* repositories, which are located om a server on Github, as well as a *local* repository that is located on your own machine.
+Git is a distributed version management control system. That means that every project member has a copy of the complete history of all the files in the project on their machine. Contrast this with centralized version control systems such as Subversion (SVN) were users only have the last version of a file on their system. In this workshop, we are going to use *remote* repositories, which are located om a server on Github, as well as a *local* repository that is located on your own machine.
 
 In this tutorial, we will work both in the browser and in a terminal window. We use the browser to administer remote Git repositories; we work in the terminal for everything regarding the local Git repository.  
 
-**[NOTE: explain quickly the difference between Git and GitHub]**
+Git is a command line tool with which one can administer local and remote Git repositories, allowing you to version your files and share them easily with others within a project.
+
+Github is an online service that hosts Git repositories (public as well as private) and provides social network functionality to users. Users can add issues, construct a wiki, create tasks and create pull requests on the web-site. 
  
-What you needed to get started with Git:
+What you need to get started with Git:
 
 * a Github account
 * basic knowledge of the command line
@@ -46,7 +48,7 @@ Your repository will be located at `https://github.com/username/repositoryname`.
 
 ## Set your identity on your local machine
 
-When you start working with Git you need to set your identity. **[NOTE: explain what an "identity" is]** This identity will be used to track all the changes that you make to content in a repository. You only have to do this once on each machine that you use.
+When you start working with Git you need to set your identity. Git tracks who changes what in each file. Therefore you need to identify yourself before you are able to make changes and commit them. This identity will be used to track all the changes that you make to content in a repository. You only have to do this once on each machine that you use.
 
 Open a terminal window and type the following commands, replacing John Doe with your name and the email-address with your own email address:
 
@@ -54,21 +56,19 @@ Open a terminal window and type the following commands, replacing John Doe with 
 * `$ git config --global user.email johndoe@example.com`
 
 
-## Working with repositories
+## Cloning remote repositories
 
-Respositories are where you keep project files. To start working with Git you will need a repository. **[NOTE: you mean a different repository than the one you have created above? If so, make explicit]**  
-**[Also: emphasize here the link with day 1 and day 2 about managing your file system and directories]**
+![Git clone](git_cloning.gif)
+
+To work with the repository we just created we need to transfer the data from the remote repository to the local machine. Copying a remote repository to the local machine is called cloning in Git. For completeness sake I also included in the table below the git command to create a new repository on the local machine. 
 
 Command | Description
 ------- | -----------
 `git clone` |   Copy an existing repository from a remote location (for example GitHub)
+`git remote` |  View and manage remote repositories
 `git init` |   Create a new repository locally
 
-**[NOTE: what are we doing here? Like, what do you advice the participants to do re: copying an existing repo or creating a new repo?]**
-
-Now we need to get the remote repository that we just created.
-
-* Create a directory in your user directory called Workspace were we store all the cloned repositories.
+* Create a directory in your home directory called Workspace were we store all the cloned repositories.
 
 ```bash
 $ cd ~
@@ -78,11 +78,36 @@ $ cd Workspace
 
 Now we clone the repository that we just made on Github to the local machine.
 
+
 ```bash
 $ git clone https://github.com/username/repositoryname
+
+$ cd repositoryname
+$ ls -lisa
+
 ```
 
-**[NOTE: add some short summary about what we just did, perhaps an image/diagram here to make clear the situation with local repo's and remote repo's]**
+There should be your files. 
+
+Now we run the git remote command to see whether the remote repository is correctly linked with the local repository.
+
+`$ git remote -v`
+
+Sample outcome:
+
+```bash
+origin	https://github.com/username/repositoryname (fetch)
+origin	https://github.com/username/repositoryname (push)
+```
+
+What *fetch* and *push* stand for we will get into later (under section syncing repositories)
+
+
+**[Also: emphasize here the link with day 1 and day 2 about managing your file system and directories]**
+
+
+
+
 
 ## Working directory
 
@@ -93,20 +118,28 @@ When you have a terminal window open, you are in what is called the *working dir
 * Use your favorite editor to edit files (and you can use different editors for different files in the same project)
 * PyCharm (for Python projects), \<oXygen/\> (for XML projects), vim, notepad++, BBEdit, etc.
 
-## Working with changes locally
+## Working with changes locally and tracking them
+
+![Git commit](git_making_changes.gif)
 
 Command | Description 
 --------|-----------------
-`git status` | Show which files are modified locally
-`git add`  |   Add a file to change tracking 
-`git reset` |  Untrack a file 
+`git status` | Show which files are modified locally or new
+`git add`  |   Add a file to change tracking and stage  
+`git reset` |  Untrack a file or unstage 
 `git diff` |  Show changes
-`git commit` | Make changes permanent
-`git log`  | Show history of commits
+`git checkout` | Undo changes to a file (before commit)
 
 ## Committing changes
 
 `git commit -a` adds all changed files and commits the changes, that is, it combines `git add` with `git commit`. **But it only adds files that have changed, and not files that are completely new.** The only way to add a new file is with `git add`.
+
+Command | Description 
+--------|-----------------
+`git commit` | Make changes permanent
+`git log`  | Show history of commits
+`git reset HEAD~` | Undo the last commit, retain changes in the working directory
+`git reset HEAD~ --hard` | Undo the last commit, remove changes from the working directory
 
 vim is the default editor in Git (on all operating systems). When you type `git commit`, you are taken into vim to enter a _commit message_, where you record information about the commit. The most important vim commands are:
 
@@ -120,58 +153,29 @@ You type | What happens
 The use of the escape key in Vim, the `i` for insert mode, `:wq` and `:q!` to cancel 
 
 
-## How to revert files
+If you make a mistake with a commit (forgot to add new files, or messed up your commit message)
 
-there is a difference between files and commits
+`$ git reset HEAD~`
 
-# Synching repositories
+Note that there is a difference between files and commits. A commit can consist (and usually does) of multiple files. Git tracks commits and content, not single files.
 
-* `git pull`
-* `git push`
+# Syncing repositories
 
-
-## How to work with branches
+![Git syncing repositories](git_syncing.gif)
 
 Command | Description
---------|------------
-`git branch`   |
-`git checkout` |   Switch from one branch to another
-`git stash`    |   Temporarily move changed files out of the way
+------- | -----------
+ `git pull` | Fetch the commits from a remote repository and merge them with the current working directory (i.e. does a fetch and a merge in one)
+ `git push` | Push the commits from the local repository to a remote repository 
+ `git fetch` | Fetch the commits from a remote repository into the local repository
+ `git merge` | Merge the commits from the local repository with commits fetched from a remote repository (actually this works on branches; this will be explained in the git tutorial part 2)
 
 
-## Terms
+## Terms learned
 
 * Repository
-* Branch
+* Clone / Origin
 * Working directory
-* Fork (GitHub term)
-* Pull request (GitHub term)
-
-
-Fork is a remote repository on GitHub.
-Branch is a thing in a repository
-The Git `pull` command is not the same as a *pull request* on GitHub.
-
-Synching
-
-`git remote show origin`
-
-`git add remote ... upstream`
-
-Set the origin to the original repository (on GitHub; so clone the original repository)
-
-To change existing origin: 
-
-This is wrong:
-
-	git remote add origin
-	Error: already exist
-
-This is correct:
-
-	git remote set-url origin
-	git branch --set-upstream-to=origin/master master
-
-`git remote add myfork https://github.com/etc`
-`git push myfork master` etc.
+* Commit
+* Push and pull
 
