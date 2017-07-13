@@ -20,6 +20,10 @@ What you need to get started with Git:
 If you don't have a Github account, create one here:
 <https://github.com>
 
+## General overview 
+
+![](git_process_diagram.gif)
+
 ## Create a new Github repository
 
 **[question: use images/screenshots here?]**
