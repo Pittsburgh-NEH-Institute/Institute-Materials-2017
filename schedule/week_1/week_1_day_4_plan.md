@@ -21,7 +21,7 @@ Day 4 begins with an introduction to how the Internet works, a topic that will r
 
 ______
 
-## 9:00–10:30: [How the internet works](internet_1.md)
+## 9:00–10:30: [How the internet works 1](internet_1.md)
 
 
 Time | Topic | Type
