@@ -30,8 +30,6 @@ If you don't have a Github account, create one here:
 
 ## Create a new Github repository
 
-**[question: use images/screenshots here?]**
-
 * Go to your browser
 * Go to <https://github.com/>
 * Log in to your account
@@ -45,7 +43,7 @@ If you don't have a Github account, create one here:
 	* You can create a .gitignore file, which is a set of ignore rules.
 	* You can choose to add a software license for your project.
 
-		For this exercise at least choose to add a README file. You can choose to add a license if you like. 	
+		For this exercise choose to at least add a README file. You can choose to add a license if you like. 	
 * When you're finished, click Create repository.
 
 
@@ -71,6 +69,8 @@ Open a terminal window and type the following commands, replacing John Doe with 
 ![Git clone](git_cloning.gif)
 
 To work with the repository we just created we need to transfer the data from the remote repository to the local machine. Copying a remote repository to the local machine is called cloning in Git. For completeness sake I also included in the table below the git command to create a new repository on the local machine. 
+
+Working with Git repositories is completely command line and file based, so the knowledge that you acquired about the command line and the file system over the past couple of days will come in very handy here.
 
 Command | Description
 ------- | -----------
@@ -113,7 +113,6 @@ origin	https://github.com/username/repositoryname (push)
 What *fetch* and *push* stand for we will get into later (under section syncing repositories)
 
 
-**[Also: emphasize here the link with day 1 and day 2 about managing your file system and directories]**
 
 
 
@@ -135,9 +134,9 @@ When you have a terminal window open, you are in what is called the *working dir
 Command | Description 
 --------|-----------------
 `git status` | Show which files are modified locally or new
-`git add`  |   Add a file to change tracking and stage  
-`git reset` |  Untrack a file or unstage 
 `git diff` |  Show changes
+`git add`  |   Add a file to change tracking and stage  
+`git reset HEAD` |  Untrack a file or unstage 
 `git checkout` | Undo changes to a file (before commit)
 
 ## Committing changes
