@@ -22,11 +22,11 @@ If you don't have a Github account, create one here:
 
 ## Preparation
 
-![](git_repository_preparation.svg)
+![](git_repository_preparation.gif)
 
 ## General workflow 
 
-![](git_process_diagram.svg)
+![](git_process_diagram.gif)
 
 ## Create a new Github repository
 
