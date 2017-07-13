@@ -143,6 +143,13 @@ Command | Description
 
 `git commit -a` adds all changed files and commits the changes, that is, it combines `git add` with `git commit`. **But it only adds files that have changed, and not files that are completely new.** The only way to add a new file is with `git add`.
 
+For example:
+
+```bash
+$ git add .
+$ git commit -m "added a new feature some files changed"
+```
+
 Command | Description 
 --------|-----------------
 `git commit` | Make changes permanent
