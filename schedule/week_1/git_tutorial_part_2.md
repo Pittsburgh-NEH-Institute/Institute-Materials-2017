@@ -40,6 +40,11 @@ upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
 
 ## How to work with branches
 
+What you think Git is:
+
+![Git branch simplified](git_branch_simplified.gif)
+
+
 Command | Description
 --------|------------
 `git branch -a`|   Show all the branches in your local repository
