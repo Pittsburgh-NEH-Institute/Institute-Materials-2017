@@ -54,6 +54,7 @@ You’ll use some of these shortly.
 p {font-weight: bold; color: red;}
 ```
 
+
 	embolds all `<p>` elements (since the selector value is `p`) in the document and colors them (since the property name is `color`) red (since the property value is “red”). Selectors can be fine-tuned to target elements only in specific contexts or with specific attributes; we’ll see a bit of that below.
 
 ### Looking at CSS
