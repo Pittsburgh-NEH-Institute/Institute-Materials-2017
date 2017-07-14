@@ -100,3 +100,6 @@ Tasks.md
 
 # <oXygen/>
 *.xpr
+
+# Not shared
+private/
