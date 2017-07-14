@@ -48,14 +48,7 @@ You’ll use some of these shortly.
 
 * HTML browsers have default styling built in for HTML, which the user can customize or override with CSS. 
 * CSS is typically defined in a separate file, which is associated with the HTML through a `<link>` element in the `<head>` of the HTML file. Storing the CSS outside the HTML page makes it easy to apply the same CSS to multiple files to achieve a consistent appearance.
-* CSS instructions consist of a *selector* (which identifies what type of element will be styled) followed by a set of rules enclosed in curly braces. Each rule consist of a *property* and a *value*, separated by a colon, and multiple rules are separated by semicolons. For example:
-
-	```css
-p {font-weight: bold; color: red;}
-```
-
-
-	embolds all `<p>` elements (since the selector value is `p`) in the document and colors them (since the property name is `color`) red (since the property value is “red”). Selectors can be fine-tuned to target elements only in specific contexts or with specific attributes; we’ll see a bit of that below.
+* CSS instructions consist of a *selector* (which identifies what type of element will be styled) followed by a set of rules enclosed in curly braces. Each rule consist of a *property* and a *value*, separated by a colon, and multiple rules are separated by semicolons. For example `css p {font-weight: bold; color: red;}` embolds all `<p>` elements (since the selector value is `p`) in the document and colors them (since the property name is `color`) red (since the property value is “red”). Selectors can be fine-tuned to target elements only in specific contexts or with specific attributes; we’ll see a bit of that below.
 
 ### Looking at CSS
 
