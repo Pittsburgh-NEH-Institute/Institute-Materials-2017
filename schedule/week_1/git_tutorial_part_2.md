@@ -1,12 +1,13 @@
-Git tutorial part 2
+# Git tutorial part 2
 
 
 ## Forking repositories
 
+![Git forking repositories](git_forking.gif)
+
 * On Github fork the NEH Institute repository
 * Clone you fork to your local machine
-* On your local machine add the original repository as
-* a second remote repository called upstream
+* On your local machine add the original repository as a second remote repository called upstream
 
 ## Making changes and submitting a pull request
 
@@ -20,8 +21,9 @@ Git tutorial part 2
 
 Command | Description
 --------|------------
-`git branch`   |
+`git branch`   |   Create a new branch based on the last of commit of the current branch
 `git checkout` |   Switch from one branch to another
+`git checkout -b` | Create a new branch and switch to it
 `git stash`    |   Temporarily move changed files out of the way
 `git stash apply` | Reapply changes that were stashed previously
 
