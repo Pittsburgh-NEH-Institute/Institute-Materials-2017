@@ -1,5 +1,8 @@
 # Git tutorial part 2
 
+## Using a central repository for a project
+
+![Git central repository](git_central_repo.gif)
 
 ## Forking repositories
 
@@ -48,6 +51,9 @@ Command | Description
 `git stash apply` | Reapply changes that were stashed previously
 
 ## How a merge works
+
+![Git syncing repositories](git_syncing.gif)
+
 
 Command | Description
 --------|------------
