@@ -5,25 +5,45 @@
 
 ![Git forking repositories](git_forking.gif)
 
-* On Github fork the NEH Institute repository
-* Clone you fork to your local machine
+* Log in to Github
+* On Github fork the NEH Institute Materials 2017 repository
+* Clone you fork to your local machine.
+In your Workspace directory in your home directory do:
+`$ git clone https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017`
 * On your local machine add the original repository as a second remote repository called upstream
 
-## Making changes and submitting a pull request
+
+```bash
+$ git remote -v
+origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+
+$ git remote add upstream https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017
+
+$ git remote -v
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
+```
+
+## Pull requests: making changes and submitting a pull request
 
 * Create changes
 * Track changes
 * Commit changes
-* Push commits
+* Push commits 
 * Create pull request on github 
 
 ## How to work with branches
 
 Command | Description
 --------|------------
-`git branch`   |   Create a new branch based on the last of commit of the current branch
-`git checkout` |   Switch from one branch to another
-`git checkout -b` | Create a new branch and switch to it
+`git branch -a`|   Show all the branches in your local repository
+`git branch -a -v` | Show all the branches and their last commits
+`git branch <name>`   |   Create a new branch based on the last of commit of the current branch
+`git checkout <name>` |   Switch from one branch to another
+`git checkout -b <name>` | Create a new branch and switch to it
 `git stash`    |   Temporarily move changed files out of the way
 `git stash apply` | Reapply changes that were stashed previously
 
@@ -38,7 +58,8 @@ Command | Description
 * If so, stash them or commit them
 * Check that you are in the right branch with `$ git status`.
 * If not do git checkout
-* Do `git merge <branch>`
+* Do `$ git merge <branch>`
+* `$ git push`
 
 ## How to resolve a merge conflict
 
@@ -47,43 +68,18 @@ Command | Description
 
 ## Notes
 
+* A fork is a remote repository on GitHub. 
+* Forking has to do with permissions.
 * Explain difference between a fork and a branch
-* Explain git status (ahead / behind origin/master)
+* A fork is not a branch, a fork is a repository, a branch is a series of commits.
+* Explain git status "ahead / behind origin/master" line
 * Explain difference between a pull and a fetch
-* 
-
-## Forking repositories on Github
-
-Note: has to do with permissions.
-
-A fork is not a branch.
+* The Git `pull` command is not the same as a *pull request* on GitHub.
 
 
 
 
 
-Syncing
-
-`git remote show origin`
-
-`git add remote ... upstream`
-
-Set the origin to the original repository (on GitHub; so clone the original repository)
-
-To change existing origin: 
-
-This is wrong:
-
-	git remote add origin
-	Error: already exist
-
-This is correct:
-
-	git remote set-url origin
-	git branch --set-upstream-to=origin/master master
-
-`git remote add myfork https://github.com/etc`
-`git push myfork master` etc.
 
 
 
@@ -91,12 +87,9 @@ This is correct:
 
 ## Terms learned part 2
 
-* Branch
 * Fork (GitHub term)
 * Pull request (GitHub term)
+* Branch
+* Merge, merge commit, merge conflict
 
-## Notes
 
-Fork is a remote repository on GitHub.
-Branch is a thing in a repository
-The Git `pull` command is not the same as a *pull request* on GitHub.
