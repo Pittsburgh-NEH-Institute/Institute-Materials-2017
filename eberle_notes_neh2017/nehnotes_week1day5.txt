@@ -1,0 +1,7 @@
+Day Four
+
+How the Internet works 2
+
+Set up of an SSH key
+
+Consider getting a password generator
