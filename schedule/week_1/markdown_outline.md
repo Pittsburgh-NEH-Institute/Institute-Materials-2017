@@ -7,7 +7,7 @@ Markdown is a simplified alternative to HTML for creating web pages. The rationa
 So what’s the downside? There are at least two:
 
 * Markdown is less powerful than HTML, which is to say that there are structures that can be modeled with HTML but not with Markdown. 
-* Markdown doesn’t have the sort of validation support that you get when you author HTML in a validating editor, such as \<oXygen/\>. Most errors in Markdown aren’t illegal; they just don’t do what you’re trying to accomplish. That makes it easier to do something wrong without noticing.
+* Markdown doesn’t have the sort of validation support that you get when you author HTML in a validating editor, such as \<oXygen/\>. Most errors in Markdown aren’t illegal; they just don’t do what you’re trying to accomplish. That makes it easier to do something wrong without noticing, or to not know where an error was made.
 
 Markdown is widely used on GitHub and in Jupyter Notebook, so you’ve already encountered it in both of those contexts in our Institute.
 
@@ -24,7 +24,7 @@ Markdown paragraphs are plain text separated by blank lines, and the instruction
 * h2: type `## My secondary title`
 * h3: type `### My tertiary title`
 
-The hash marks must begin at the start of a line, and you must have a space after the last hash mark,
+The hash marks must begin at the start of a line, and you must have a space after the last hash mark.
 
 ### Lists 
 An unordered list item uses the asterisk at the beginning of the line, like below:
@@ -101,12 +101,14 @@ for i in range(10):
 
 Markdown has many *flavors*, or syntax variations, for different Markdown processing contexts. This means that your Markdown may be rendered one way in your editor and a different way when you push it to GitHub and read it there. These differences are not generally significant, but the only way to be sure is to check. We use Github flavored Markdown (GFM) because we publish to a GitHub repo, but there are many [others](https://github.com/jgm/CommonMark/wiki/Markdown-Flavors).
 
+These syntax variations exist because of different implementations of the Markdown parser.  Markdown itself cannot be read as HTML, so when you upload a .md document to Github, the site is doing some extra work to essentially convert your document into valid HTML.  The parsers that do this all work a little bit differently, so those 'quirks' become different flavors of Markdown.
+
 ### Editing Markdown
 
-* \<oXygen/\> opens files that end in “.md” in a split-screen Markdown editor, with raw code on the left and rendered HTML on the right
+* \<oXygen/\> opens files that end in “.md” in a split-screen Markdown editor, with raw code on the left and rendered HTML on the right.  Note that pretty print is disabled in Markdown, so editing paragraphs longer than a few sentences becomes tedious.
 * [MacDown](https://macdown.uranusjr.com/) is a popular open source Markdown editor for MacOS, also with a split-screen interface.
 * There are [many more](https://github.com/jgm/CommonMark/wiki/Markdown-Flavors)!
-
+* Markdown can also be edited in any plain text editor, though you lose the automatic translation feature.
 ## What is Pandoc?
 
 [Pandoc](http://pandoc.org/) is a tool for converting a file from one format (including forms of markup) to another. For example, you might have a text file written in Markdown that you want to convert to LaTeX, HTML, or a number of other formats. Pandoc allows you to do this on the command line.
@@ -149,16 +151,9 @@ Then navigate to the `pandoc-test` directory by typing:
 
 ### Convert a file
 
-Open a text editor in which you can create a Markdown file. You can use a plain text editor, or an editing environment that incorporates Markdown support, such as \<oXygen/\>. Type the following Markdown:
+	npp test1.md
 
-	Test!
-
-	This is a test of *pandoc*.
-
-	- list one
-	- list two
-
-Save this text file as `test1.md` in your `pandoc-test` directory (probably `Documents/pandoc-test`). 
+Open a text editor from your current directory, creating a new file. You can use your default plain text editor, or an editing environment that incorporates Markdown support, such as \<oXygen/\>. Type your Markdown here.  No need for namespaces or headers right now.  Try to incorporate as many of Markdown syntax pieces as you can in a small space.  Save and exit.
 
 At a command line, make sure that you are in the `pandoc-test` directory, and then type `ls` to view all of the files. You should see the `test1.md` file that you just created. Now we can try to convert this Markdown file to a different format.
 
