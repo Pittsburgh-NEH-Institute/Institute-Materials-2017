@@ -20,9 +20,15 @@ What you need to get started with Git:
 If you don't have a Github account, create one here:
 <https://github.com>
 
-## Create a new Github repository
+## Preparation
 
-**[question: use images/screenshots here?]**
+![](git_repository_preparation.gif)
+
+## General workflow 
+
+![](git_process_diagram.gif)
+
+## Create a new Github repository
 
 * Go to your browser
 * Go to <https://github.com/>
@@ -36,6 +42,8 @@ If you don't have a Github account, create one here:
 	* You can create a CODEOWNERS file, which describes which individuals or teams own certain files in the repository.
 	* You can create a .gitignore file, which is a set of ignore rules.
 	* You can choose to add a software license for your project.
+
+		For this exercise choose to at least add a README file. You can choose to add a license if you like. 	
 * When you're finished, click Create repository.
 
 
@@ -61,6 +69,8 @@ Open a terminal window and type the following commands, replacing John Doe with 
 ![Git clone](git_cloning.gif)
 
 To work with the repository we just created we need to transfer the data from the remote repository to the local machine. Copying a remote repository to the local machine is called cloning in Git. For completeness sake I also included in the table below the git command to create a new repository on the local machine. 
+
+Working with Git repositories is completely command line and file based, so the knowledge that you acquired about the command line and the file system over the past couple of days will come in very handy here.
 
 Command | Description
 ------- | -----------
@@ -103,7 +113,6 @@ origin	https://github.com/username/repositoryname (push)
 What *fetch* and *push* stand for we will get into later (under section syncing repositories)
 
 
-**[Also: emphasize here the link with day 1 and day 2 about managing your file system and directories]**
 
 
 
@@ -125,14 +134,12 @@ When you have a terminal window open, you are in what is called the *working dir
 Command | Description 
 --------|-----------------
 `git status` | Show which files are modified locally or new
-`git add`  |   Add a file to change tracking and stage  
-`git reset` |  Untrack a file or unstage 
 `git diff` |  Show changes
+`git add`  |   Add a file to change tracking and stage  
+`git reset HEAD` |  Untrack a file or unstage 
 `git checkout` | Undo changes to a file (before commit)
 
 ## Committing changes
-
-`git commit -a` adds all changed files and commits the changes, that is, it combines `git add` with `git commit`. **But it only adds files that have changed, and not files that are completely new.** The only way to add a new file is with `git add`.
 
 Command | Description 
 --------|-----------------
@@ -140,6 +147,21 @@ Command | Description
 `git log`  | Show history of commits
 `git reset HEAD~` | Undo the last commit, retain changes in the working directory
 `git reset HEAD~ --hard` | Undo the last commit, remove changes from the working directory
+
+`git commit -a` adds all changed files and commits the changes, that is, it combines `git add` with `git commit`. **But it only adds files that have changed, and not files that are completely new.** The only way to add a new file is with `git add`.
+
+For example:
+
+```bash
+$ git add .
+$ git commit -m "added a new feature some files changed"
+```
+
+If you make a mistake with a commit (forgot to add new files, or messed up your commit message)
+
+`$ git reset HEAD~`
+
+Note that there is a difference between files and commits. A commit can consist (and usually does) of multiple files. Git tracks commits and content, not single files.
 
 vim is the default editor in Git (on all operating systems). When you type `git commit`, you are taken into vim to enter a _commit message_, where you record information about the commit. The most important vim commands are:
 
@@ -152,12 +174,6 @@ You type | What happens
 
 The use of the escape key in Vim, the `i` for insert mode, `:wq` and `:q!` to cancel 
 
-
-If you make a mistake with a commit (forgot to add new files, or messed up your commit message)
-
-`$ git reset HEAD~`
-
-Note that there is a difference between files and commits. A commit can consist (and usually does) of multiple files. Git tracks commits and content, not single files.
 
 # Syncing repositories
 

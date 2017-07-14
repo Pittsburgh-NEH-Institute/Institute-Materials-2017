@@ -2,10 +2,11 @@
 
 ## Synopsis
 
-Day 5 begins with an expanded session on how the Internet works.  Topics covered include _____________ and _______________.  Git 2 covers how to resolve merge commits, along with how to use Git issues and the other site features.  Finally, a lesson on web technologies, including HTML, CSS, and Markdown will prepare participants for future sessions, as well as familiarize them with some common, useful tools.  
+Day 5 begins with an expanded session on how the Internet works.  Topics covered include internet security and the nitty-gritty of HTTP.  Git 2 covers how to resolve merge commits, along with how to use Git issues and the other site features.  Finally, a lesson on web technologies, including HTML, CSS, and Markdown will prepare participants for future sessions, as well as familiarize them with some common, useful tools.  
 
 ## Outcome goals
-* [Internet goals here]
+* How does SSL help protect communication?
+* Understand the basics of HTTP requests and headers
 * What is a merge commit?
 * How to solve merge commits
 * Managing branches with Git
@@ -35,7 +36,7 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: [Git 2](git_tutorial.md)
+## 11:00–12:30: [Git 2](git_tutorial_part_2.md)
 
 Git commits can sometimes go awry, but there are commands that undo previous edits and can help save different versions, especially when working with multiple branches.  Github’s website has social and collaborative tools as well, though they are not available via the command line.
 

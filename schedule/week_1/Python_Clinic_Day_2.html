@@ -12032,7 +12032,8 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">long</span> <span class="o">=</span> <span class="p">[</span><span class="n">w</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">wfreq</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">13</span><span class="p">]</span> 
-<span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">long</span> <span class="p">:</span>
+<span class="c1"># sort long alphabetically using sorted()</span>
+<span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">long</span><span class="p">)</span> <span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">),</span> <span class="n">wfreq</span><span class="p">[</span><span class="n">w</span><span class="p">])</span>               <span class="c1"># long words tend to be less frequent</span>
 </pre></div>
 
@@ -12060,7 +12061,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="k">import</span> <span class="n">PlaintextCorpusReader</span>
-<span class="n">corpus_root</span> <span class="o">=</span> <span class="s1">&#39;C:/Users/narae/Desktop/inaugural&#39;</span>  <span class="c1"># Use your own userid; Mac users should omit C:</span>
+<span class="n">corpus_root</span> <span class="o">=</span> <span class="s1">&#39;C:/Users/Jane Eyre/Desktop/inaugural&#39;</span>  <span class="c1"># Use your own userid; Mac users should omit C:</span>
 <span class="n">inaug</span> <span class="o">=</span> <span class="n">PlaintextCorpusReader</span><span class="p">(</span><span class="n">corpus_root</span><span class="p">,</span> <span class="s1">&#39;.*txt&#39;</span><span class="p">)</span>  <span class="c1"># all files ending in &#39;txt&#39; </span>
 </pre></div>
 
@@ -12103,7 +12104,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># You can also specify individual file ID. First 50 words from Obama 2009:</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;2009-Obama.txt&#39;</span><span class="p">)[</span><span class="mi">50</span><span class="p">:])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;2009-Obama.txt&#39;</span><span class="p">)[:</span><span class="mi">50</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -12147,8 +12148,43 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># for-loop through file IDs and print out word count. </span>
+<span class="c1"># While looping, populate fid_avsent which holds avg sent lengths.</span>
+<span class="c1"># Break long line with \, specify tab separator. </span>
+<span class="n">fid_avsent</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">inaug</span><span class="o">.</span><span class="n">fileids</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="n">f</span><span class="p">)),</span> <span class="n">f</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="n">f</span><span class="p">)),</span> <span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">sents</span><span class="p">(</span><span class="n">f</span><span class="p">)),</span> \
+          <span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">sents</span><span class="p">(</span><span class="n">f</span><span class="p">)),</span> <span class="n">f</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">fid_avsent</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">sents</span><span class="p">(</span><span class="n">f</span><span class="p">)),</span> <span class="n">f</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Turn pretty print back on </span>
+<span class="o">%</span><span class="k">pprint</span>
+<span class="nb">sorted</span><span class="p">(</span><span class="n">fid_avsent</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># same thing, with list comprehension! </span>
+<span class="n">fid_avsent2</span> <span class="o">=</span> <span class="p">[(</span><span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">sents</span><span class="p">(</span><span class="n">f</span><span class="p">)),</span> <span class="n">f</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">inaug</span><span class="o">.</span><span class="n">fileids</span><span class="p">()]</span>
+<span class="nb">sorted</span><span class="p">(</span><span class="n">fid_avsent2</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12208,18 +12244,57 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Your-turn">Your turn<a class="anchor-link" href="#Your-turn">&#182;</a></h3><p>Can you find out:</p>
-<ul>
-<li>Which speech contains the most # of sentences</li>
-<li>Are sentences getting longer or shorter over time? <ul>
-<li>&lt;-- Compute the average length of sentences. </li>
-</ul>
-</li>
+<h2 id="Extra:-using-regular-expressions-for-tokenization">Extra: using regular expressions for tokenization<a class="anchor-link" href="#Extra:-using-regular-expressions-for-tokenization">&#182;</a></h2><ul>
+<li><code>re</code> is Python's regular expression module. Start by importing. </li>
+<li><code>re.findall</code> finds all substrings that match a pattern.</li>
+<li>For regular expression strings, use <code>r'...'</code> (rawstring) prefix. </li>
 </ul>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sent</span> <span class="o">=</span> <span class="s2">&quot;You haven&#39;t seen Star Wars...?&quot;</span>
+<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\w+&#39;</span><span class="p">,</span> <span class="n">sent</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">pprint</span>
+<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\w+&#39;</span><span class="p">,</span> <span class="n">wtxt</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
