@@ -1,5 +1,21 @@
 Git tutorial part 2
 
+
+## Forking repositories
+
+* On Github fork the NEH Institute repository
+* Clone you fork to your local machine
+* On your local machine add the original repository as
+* a second remote repository called upstream
+
+## Making changes and submitting a pull request
+
+* Create changes
+* Track changes
+* Commit changes
+* Push commits
+* Create pull request on github 
+
 ## How to work with branches
 
 Command | Description
@@ -7,12 +23,41 @@ Command | Description
 `git branch`   |
 `git checkout` |   Switch from one branch to another
 `git stash`    |   Temporarily move changed files out of the way
+`git stash apply` | Reapply changes that were stashed previously
+
+## How a merge works
+
+Command | Description
+--------|------------
+`git merge <branch>` | Merge commits from one branch into the other.
+`git merge --abort` | Abort a merge 
+
+* Make sure you do not have uncommitted changes.
+* If so, stash them or commit them
+* Check that you are in the right branch with `$ git status`.
+* If not do git checkout
+* Do `git merge <branch>`
+
+## How to resolve a merge conflict
+
+
+
+
+## Notes
+
+* Explain difference between a fork and a branch
+* Explain git status (ahead / behind origin/master)
+* Explain difference between a pull and a fetch
+* 
 
 ## Forking repositories on Github
 
 Note: has to do with permissions.
 
 A fork is not a branch.
+
+
+
 
 
 Syncing
