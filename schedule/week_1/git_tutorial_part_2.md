@@ -44,6 +44,11 @@ What you think Git is:
 
 ![Git branch simplified](git_branch_simplified.gif)
 
+What Git really is:
+
+![Git branch real life](git_branch_real_life.gif)
+
+
 
 Command | Description
 --------|------------
@@ -86,6 +91,7 @@ Command | Description
 * Explain git status "ahead / behind origin/master" line
 * Explain difference between a pull and a fetch
 * The Git `pull` command is not the same as a *pull request* on GitHub.
+* Git does not track empty directories or empty files.
 
 
 
