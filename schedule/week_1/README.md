@@ -7,6 +7,7 @@
 	* [Wednesday](week_1_day_3_plan.md)
 	* [Thursday](week_1_day_4_plan.md)
 	* [Friday](week_1_day_5_plan.md)
+	* [Saturday](week_1_day_6_plan.md)
 * Miscellaneous
 	* [Command line resources](command-line_resources.md) 
 	* [Git resources](git_resources.md)

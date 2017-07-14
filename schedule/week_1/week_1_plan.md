@@ -19,7 +19,7 @@ Install the software at our [Before you arrive](before_you_arrive.md) page.
 
 ## Class Schedule
 
-Time/Day	| [Monday](week_1_day_1_plan.md) | [Tuesday](week_1_day_2_plan.md) | [Wednesday](week_1_day_3_plan.md) | [Thursday](week_1_day_4_plan.md) | [Friday](week_1_day_5_plan.md)
+Time/Day	| [Monday](week_1_day_1_plan.md) | [Tuesday](week_1_day_2_plan.md) | [Wednesday](week_1_day_3_plan.md) | [Thursday](week_1_day_4_plan.md) | [Friday](week_1_day_5_plan.md) | [Saturday](week_1_day_6_plan.md)
 --- | ------ | ------- | --------- | -------- | ------
 9:00–10:30 | Getting to know your OS | Regular expressions 1 | Regular expressions 2 | How the Internet works 1 | How the Internet works 2
 10:30–11:00|Coffee break|Coffee break|Coffee break|Coffee break|Coffee break
