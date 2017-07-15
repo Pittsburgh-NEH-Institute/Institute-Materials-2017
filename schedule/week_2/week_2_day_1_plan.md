@@ -13,7 +13,7 @@ Scholars create digital editions to serve research purposes that may differ from
 * How modeling reduces iterations of the document analysis → schema development → markup pipeline
 * Reconciling community-driven (prescriptive) and research-driven (descriptive) analysis; “how do I do this in X?” vs “how should I model this?”
 * Modular development: the digital edition as a computational pipeline
-* Modeling in plain text and in XML
+* XML looks like a string but it’s really a tree. What does this mean for modeling, markup, and querying or processing?
 
 ## Legend
 
@@ -37,20 +37,7 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: Theory of edition
-
-Are you making an edition of a manuscript or of a text? What is the role of language and orthography in your edition? How will the text be presented? How will users interact with the views? What will be the role of graphic visualization?
-
-Time | Topic | Type
----- | ----  | ----
-20 min | Explore [edition terms and concepts](edition_terms_and_concepts.md) | Discussion
-20 min | It isn’t just words! [What story are you trying to tell?](sample_visualizations.md) | Discussion
-30 min | Explore participant data in light of terms and concepts | Talk lab
-20 min | General discussion of Talk lab results | Discussion
-
-## 12:30–2:00 Lunch
-
-## 2:00–3:30: Model, syntax, and markup semantics
+## 11:00–12:30: Model, syntax, and markup semantics
 
 How can the elaboration of a digital edition be modularized? How are *model*, *syntax*, and *markup semantics* similar and different?
 
@@ -61,9 +48,9 @@ Time | Topic | Type
 25 min | Explore [XML as model and expression](xml_model.md) | Discussion
 20 min| Explore [other models and their expressions: LMNL, GODDAG, TexMECS, TAG](other_models.md) | Presentation
 
-## 3:30–4:00: Coffee break
+## 12:30–2:00 Lunch
 
-## 4:00–5:30: Transcription with markup: XML
+## 2:00–3:30: Transcription with markup: XML
 
 How are documents like trees and how are they different? What is represented by the model alone (the XML tree), and what requires markup semantics (schema)? What’s hard in XML and how do we do it anyway?
 
@@ -74,6 +61,20 @@ Time | Topic | Type
 15 min | [Making the implicit explicit with markup](explicit.md) | Discussion
 25 min | Tag [“Ozymandias”](ozymandias.txt) in XML (e.g., lines, sentences, phrases, speakers, words, feet, syllables, stress) | Code lab
 15 min | [What’s hard in XML](xml_limitations.md) | Discussion
+
+## 3:30–4:00: Coffee break
+
+## 4:00–5:30: XML as a tree / XPath
+
+### Topics and activities
+
+Time | Topic | Type
+---- | ---- | ----
+10 min | Review of [Week 2, Day 1](week_2_day_1_plan.md)<br/>Modeling and communities | Discussion
+35 min | [XPath as a way of navigating the tree](xpath.md) (using [*Hamlet*](hamlet.xml) in \<oXygen/\>) | Code Lab
+20 min | XPath navigation of overlap in [“Ozymandias”](ozymandias.xml):<br/>Find 1) phrases, 2) enjambments, and 3) metrical lines| Code lab
+15 min | The [cost of workarounds during processing](overlap_xml.md) | Presentation
+10 min | What’s so bad about markup semantics, the application layer, and workarounds? | Discussion
 
 ## Homework
 

@@ -7,7 +7,6 @@ The first half of Week 2, Day 2 continues the focus on document modeling from th
 ## Outcome goals
 
 * Understanding modeling perspectives (tree, ranges, graph) and communities
-* XML looks like a string but it’s really a tree. What does this mean for markup and for querying?
 * Modular development: thinking about digital edition development as a computational pipeline
 * Beginning to tokenize texts
 * Beginning to normalize texts
@@ -21,17 +20,16 @@ The first half of Week 2, Day 2 continues the focus on document modeling from th
 
 ______
 
-## 9:00–10:30: XML as a tree / XPath
+## 9:00–10:30: Theory of edition
 
-### Topics and activities
+Are you making an edition of a manuscript or of a text? What is the role of language and orthography in your edition? How will the text be presented? How will users interact with the views? What will be the role of graphic visualization?
 
 Time | Topic | Type
----- | ---- | ----
-10 min | Review of [Week 2, Day 1](week_2_day_1_plan.md)<br/>Modeling and communities | Discussion
-35 min | [XPath as a way of navigating the tree](xpath.md) (using [*Hamlet*](hamlet.xml) in \<oXygen/\>) | Code Lab
-20 min | XPath navigation of overlap in [“Ozymandias”](ozymandias.xml):<br/>Find 1) phrases, 2) enjambments, and 3) metrical lines| Code lab
-15 min | The [cost of workarounds during processing](overlap_xml.md) | Presentation
-10 min | What’s so bad about markup semantics, the application layer, and workarounds? | Discussion
+---- | ----  | ----
+20 min | Explore [edition terms and concepts](edition_terms_and_concepts.md) | Discussion
+20 min | It isn’t just words! [What story are you trying to tell?](sample_visualizations.md) | Discussion
+30 min | Explore participant data in light of terms and concepts | Talk lab
+20 min | General discussion of Talk lab results | Discussion
 
 ## 10:30–11:00: Coffee break
 
