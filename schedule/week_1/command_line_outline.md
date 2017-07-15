@@ -279,6 +279,7 @@ Bash, your list will already be colorized, but for other shells this command col
 * `alias`: list all aliases
 * `type ll`: find out what `ll` is aliased to
 * Windows users: `alias python='winpty python.exe'`
+* To disable an alias temporarily, precede it with a backslash. E.g., if you have aliased `ls` to `ls -l`, you can run it with the original meaning as `\ls`.
 
 #### Sample alias declarations
 
