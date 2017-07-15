@@ -39,7 +39,7 @@ Don’t be this guy: “In Year 1 we’ll prepare our texts, in Year 2 we’ll p
 #### Limitations of stages
 
 * Don’t keep pursuing a dead end. E.g., if you do all your markup before you do any processing, what if you only then discover that you should have done it differently? Or that you need a RDBMS, and not markup at all?
-* Don’t fall victim to *scope creep*. Make frequent assessments from overview mode, and don’t get stuck in detail mode.
+* Don’t fall victim to *scope creep*. Make frequent assessments from overview mode, and don’t get stuck in detail mode. Pursue changes only when they’re realistic, and when you add something, omit something else to make room for it.
 
 #### Advantages of stages
 
