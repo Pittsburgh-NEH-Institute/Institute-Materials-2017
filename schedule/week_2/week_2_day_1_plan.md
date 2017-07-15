@@ -57,7 +57,7 @@ How can the elaboration of a digital edition be modularized? How are *model*, *s
 Time | Topic | Type
 ---- | ---- | ----
 20 min | Explore [model, syntax, and markup semantics](model_syntax_semantics.md) | Presentation
-25 min | Expore [plain text as model and expression](plain.md) | Discussion
+25 min | Explore [plain text as model and expression](plain.md) | Discussion
 25 min | Explore [XML as model and expression](xml_model.md) | Discussion
 20 min| Explore [other models and their expressions: LMNL, GODDAG, TexMECS, TAG](other_models.md) | Presentation
 
