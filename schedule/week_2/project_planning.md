@@ -10,7 +10,7 @@
 
 ## General: before you begin
 
-Outcome goals? Target audiences (*personae*)? Time and human resource constraints? Technical (e.g., format) or management (e.g., license, privacy) requirements imposed by funding agency or matrix project?
+Outcome goals? Target audiences (*personae*)? Time and human resource constraints? Technical (e.g., format) or management (e.g., license, privacy) requirements imposed by research context (funding agency, institutional policy, matrix project)?
 
 ## Data resources
 
