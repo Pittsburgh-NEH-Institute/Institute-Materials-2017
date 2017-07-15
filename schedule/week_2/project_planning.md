@@ -26,6 +26,26 @@ Outcome goals? Target audiences (*personae*)?
 
 * It’s your research, but scholarship happens in communities.
 
+## Stages
+
+### We know about stages from the markup process
+
+* Markup *stages* are really a markup *cycle*: *document analysis* → *schema development* → *markup*
+
+### Stages aren’t strictly sequential
+
+Don’t be this guy: “In Year 1 we’ll prepare our texts, in Year 2 we’ll process them, in Year 3 we’ll publish our results.” Why not?
+
+#### Limitations of stages
+
+* Don’t keep pursuing a dead end. E.g., if you do all your markup before you do any processing, what if you only then discover that you should have done it differently? Or that you need a RDBMS, and not markup at all?
+* Don’t fall victim to *scope creep*. Make frequent assessments from overview mode, and don’t get stuck in detail mode. Pursue changes only when they’re realistic, and when you add something, omit something else to make room for it.
+
+#### Advantages of stages
+
+* Where total time is fixed, stages keep you from expending all of your time on the early stages.
+* Where individual resources are time-constrained (e.g., the consultant is available only at certain times), plan for it.
+
 ## Data resources
 
 What are the data (or *capta*) and how will they be acquired or prepared?
