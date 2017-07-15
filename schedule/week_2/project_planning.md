@@ -32,7 +32,7 @@ Outcome goals? Target audiences (*personae*)?
 
 * Markup *stages* are really a markup *cycle*: *document analysis* → *schema development* → *markup*
 
-###Stages aren’t strictly sequential
+### Stages aren’t strictly sequential
 
 Don’t be this guy: “In Year 1 we’ll prepare our texts, in Year 2 we’ll process them, in Year 3 we’ll publish our results.” Why not?
 
