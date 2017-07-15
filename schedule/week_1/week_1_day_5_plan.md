@@ -29,7 +29,7 @@ ______
 
 Time | Topic | Type
 ---- | ----  | ----
-10 min | Review | Discussion
+15 min | Review | Discussion
 25 min | Security and SSL | Discussion
 25 min | The HTTP protocol | Code lab
 25 min | Any other business | Discussion
@@ -44,7 +44,7 @@ Time | Topic | Type
 ---- | ----  | ----
 20 min | Managing branches| Code lab
 20 min | Merge conflicts | Presentation
-20 min | Social Git | Code lab
+30 min | Social Git | Code lab
 20 min | Git review | Talk lab/ Discussion
 
 ## 12:30–2:00 Lunch
@@ -68,9 +68,3 @@ Time | Topic | Type
 ## Homework
 
 Please complete [Week 1, Day 5 feedback](week_1_day_5_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 1, Day 5 feedback”.
-
-<!--## Readings (optional)
-
-The following readings are mentioned in the individual activities for this day.-->
-
-
