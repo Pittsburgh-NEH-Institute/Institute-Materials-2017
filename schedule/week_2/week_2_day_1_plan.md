@@ -44,7 +44,7 @@ Are you making an edition of a manuscript or of a text? What is the role of lang
 Time | Topic | Type
 ---- | ----  | ----
 20 min | Explore [edition terms and concepts](edition_terms_and_concepts.md) | Discussion
-20 min | It isn’t just words! [Visualization as edition](sample_visualizations.md) | Discussion
+20 min | It isn’t just words! [What story are you trying to tell?](sample_visualizations.md) | Discussion
 30 min | Explore participant data in light of terms and concepts | Talk lab
 20 min | General discussion of Talk lab results | Discussion
 
