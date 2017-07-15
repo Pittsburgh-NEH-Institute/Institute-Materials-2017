@@ -23,7 +23,7 @@
 
 * Facsimile (image)
 * Diplomatic (transcription)
-* Example: [Shelley-Godwin Archive](http://shelleygodwinarchive.org/sc/oxford/frankenstein/volume/i/#/p2)
+* Genetic, e.g., [Shelley-Godwin Archive](http://shelleygodwinarchive.org/sc/oxford/frankenstein/volume/i/#/p2)
 
 ### Critical editions of texts
 
@@ -31,9 +31,9 @@
 
 * Example: [Rus′ primary chronicle](http://pvl.obdurodon.org/browser.xhtml)
 
-### Copy text with notes
+### Copy text with notes (apparatus)
 
-* Example: [St. Patrick’s *Confessio*](http://www.confessio.ie/etexts/confessio_latin#02))
+* Example: [St. Patrick’s *Confessio*](http://www.confessio.ie/etexts/confessio_latin#02)
 
 ### “Best witness” ~ dynamic critical text:
 
