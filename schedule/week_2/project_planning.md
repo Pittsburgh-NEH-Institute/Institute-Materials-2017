@@ -44,7 +44,7 @@ Don’t be this guy: “In Year 1 we’ll prepare our texts, in Year 2 we’ll p
 #### Advantages of stages
 
 * Where total time is fixed, stages keep you from expending all of your time on the early stages.
-* Where individual resources are time-constrained (e.g., he consultant is available only at certain times), plan for it.
+* Where individual resources are time-constrained (e.g., the consultant is available only at certain times), plan for it.
 
 ## Data resources
 
