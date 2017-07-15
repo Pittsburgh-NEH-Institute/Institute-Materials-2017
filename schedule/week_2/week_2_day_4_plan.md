@@ -15,7 +15,29 @@ Week 2, Day 4 concentrates on ...
 
 -------
 
-## 9:00–10:30: Modeling: annotations as layers to the text
+## 9:00–10:30: Text analytics 1
+
+MK: Bag of words, text processing, text as tables, query the tables
+
+### Outcome goals
+* _[some text here]_
+
+## 10:30–11:00: Coffee break
+
+### Outcome goals
+* Have more energy
+
+## 11:00–12:30: Text analytics 1 (cont.)
+
+MK: Bag of words, text processing, text as tables, query the tables (continued)
+
+#### Outcome goals
+* _[some text here]_
+
+
+## 12:30–2:00: Lunch
+
+## 2:00–3:30: Modeling: annotations as layers to the text
 
 ### Topics and Activities
 * Recap of the topics that have been discussed so far: tokenization, normalization, and collation from the point of view of annotations (as each of these activities entails a form of annotation)
@@ -29,12 +51,9 @@ Week 2, Day 4 concentrates on ...
 * Understanding annotation as a form of adding layers to text
 * Varieties of layered editions
 
-## 10:30–11:00: Coffee break
+## 3:30–4:00: Coffee break
 
-### Outcome goals
-* Have more energy
-
-## 11:00–12:30: Collation 2
+## 4:00–5:30: Collation 2
 
 ### Topics and Activities
 * Advanced collation
@@ -44,24 +63,4 @@ Week 2, Day 4 concentrates on ...
 ### Outcome goals
 * Deeper discussion of the alignment step in the GM
 * An awareness of computation to understand that we do near-matching late (in the pipeline) for reasons of efficiency. 
-
-## 12:30–2:00: Lunch
-
-## 2:00–3:30: Text analytics 1
-
-MK: Bag of words, text processing, text as tables, query the tables
-
-### Outcome goals
-* _[some text here]_
-
-## Coffee / Tea
-
-## 4:00–5:30: Text analytics 2
-
-MK: Bag of words, text processing, text as tables, query the tables (continued)
-
-#### Outcome goals
-* _[some text here]_
-
-
 
