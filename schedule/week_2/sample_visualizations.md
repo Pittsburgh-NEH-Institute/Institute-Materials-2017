@@ -1,4 +1,4 @@
-# Sample visualizations
+# What story are you trying to tell?
 
 The following digital projects incorporate original visual representations of the structure and contents of the documents. What stories do these visualizations tell?
 

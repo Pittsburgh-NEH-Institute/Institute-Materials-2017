@@ -30,8 +30,8 @@ There cannot be a single set of *best practice* recommendations for all digital 
 
 Time | Topic | Type
 ---- | ----  | ----
-20 min | [Overview of Week 2](topics.md) | Presentation
-20 min | Explore [project planning questions](project_planning.md) | Discussion
+10 min | [Overview of Week 2](topics.md) | Presentation
+30 min | Explore [project planning questions](project_planning.md) | Discussion
 25 min | Apply project planning questions to your own project (individually or collaboratively) | Talk lab
 25 min | General discussion of Talk lab results | Discussion
 
