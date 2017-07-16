@@ -9,9 +9,18 @@
                 avoid *scope-creep*). From planning and research questions we move to modeling and
                 structuring the digital edition workflow as a computational pipeline, encouraging a
                 modular perspective on digital editing.</syn>
-            <slot time="09:30:00">
-                <act time="">
-                    <desc/>
+            <slot time="09:00:00">
+                <desc>There cannot be a single set of *best practice* recommendations for all
+                    digital editions because scholars create editions to meet different research
+                    goals, and they do that under different working conditions. What’s the purpose
+                    of your edition, and what are the resources at your disposal and the constraints
+                    on your efforts?</desc>
+                <act time="10">
+                    <desc>Overview of Week 2</desc>
+                    <outcome/>
+                </act>
+                <act time="30">
+                    <desc>Explore project planning questions</desc>
                     <outcome/>
                 </act>
             </slot>
