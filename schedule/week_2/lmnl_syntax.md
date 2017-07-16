@@ -35,7 +35,7 @@ LMNL ranges may have *annotations*, which are roughly similar to XML attributes.
 [l [n}146{n]}We fence our flowers in and the hens range.{l]{s]
 ```
 
-In this case, annotations have the same types of delimiters as ranges, but annotations are stored inside the start (or, unlike with XML, end) tag. 
+Annotations have the same delimiters as ranges, but annotations are stored inside the start tag (or the end tag, but in this example the annotation is inside the start tag). For example, `[l [n}144{n]}` has a start tag `[l}` with an annotation `[n}144{n]` inside it.
 
 ## Markup and annotation on annotation text
 
@@ -57,3 +57,5 @@ LMNL annotation text, unlike the values of XML attributes, may be marked up. Her
     [name}[given}Robert{given] [family}Frost{family]{name]
     [date}1874-1963{date]] ]
 ```
+
+In this case there are two annotations on the `[excerpt}` range, and they are specified in the end tag. One provides information about the source (which itself has a source), and the other provides information about the author (for whom name and date information is given).
