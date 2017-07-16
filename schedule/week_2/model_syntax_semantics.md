@@ -28,7 +28,8 @@ RDF can be serialized in different ways. The following two examples are showing 
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF 
  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
- xmlns:c="https://www.example.com/rdf/corpus">
+ xmlns:c="https://www.example.com/rdf/corpus"
+ xml:lang="en">
   ...
   <rdf:Description rdf:about="https://www.example.com/rdf/corpus/gettysburg/lemma/nation">
     <c:lemma>nation</c:lemma>
@@ -113,8 +114,10 @@ RDF can be serialized in different ways. The following two examples are showing 
 ...
 }
 ```
+_Resource Description Framework_ (RDF) is a _framework_ for describing resources on the web. It is a part of the W3C's _Semantic Web_ Activity. RDF is designed to be read and understood by computers, not displayed to people. RDF is written in XML for easy _exchange_ between systems so it can still be read by people. It also has other serializations. RDF uses Web identifiers (_URIs_) to _identify_ resources. It describes them with _properties_ and _property values_.
 
-**[Add RDF explanation here]**
+It this case we are using the derived _properties_ (word/lemma frequencies) of the Gettysburg Address (_the resource_). In both serializations we see specific keywords which are not in the other serialization.   
+
 
 ### Alternative representations of a list
 
