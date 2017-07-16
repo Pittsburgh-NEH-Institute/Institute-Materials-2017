@@ -23,7 +23,7 @@ or in other ways, but it is still a list of three stooges.
 We use the terms *syntax* and *serialization* to refer to textual *expressions* of a model. Information structured according to a model may be *serialized* as textual characters that are governed by syntactic rules. For example (and we’ll return to this later today), the XML data model is a tree, but the textual serialization of XML is a string of characters that include angle brackets, with syntactic rules that govern the use of the angle brackets in a way that enables them to express the tree structure. Information being modeled may also be expressed graphically; technically this is not a serialization because the term *serialization* means ‘as a sequence (i.e., *series*) of characters’, but it is nonetheless an expression of an abstract model.
 
 ### Alternative serializations of RDF
-
+RDF can be serialized in different ways. The following two examples are showing one serialization in XML and the second in JSON-LD (JSON linked data): 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF 
@@ -69,6 +69,51 @@ We use the terms *syntax* and *serialization* to refer to textual *expressions* 
   ...
 </rdf:RDF>
 ```
+
+```json
+{
+  "@context": {
+    "@id": "https://www.example.com/rdf/corpus",
+    "type": "@id",
+    "label": "http://www.w3.org/2000/01/rdf-schema#label",
+    "@language": "en"
+    },
+  "@id": "https://www.example.com/rdf/corpus/gettysburg/lemma#nation",
+  "@type": "frequencies",
+  "lemma": "nation",
+  "frequency": 5,
+  "instances": { "@list": 
+     ["https://www.example.com/rdf/corpus/gettysburg#n017",
+      "https://www.example.com/rdf/corpus/gettysburg#n048",
+      "https://www.example.com/rdf/corpus/gettysburg#n052",
+      "https://www.example.com/rdf/corpus/gettysburg#n100",
+      "https://www.example.com/rdf/corpus/gettysburg#n289"]
+     },
+
+  "@id": "https://www.example.com/rdf/corpus/gettysburg/lemma#dedicated",
+  "@type": "frequencies",
+  "lemma": "dedicated",
+  "frequency": 4,
+  "instances": { "@list":
+     ["https://www.example.com/rdf/corpus/gettysburg#n024",
+      "https://www.example.com/rdf/corpus/gettysburg#n057",
+      "https://www.example.com/rdf/corpus/gettysburg#n208",
+      "https://www.example.com/rdf/corpus/gettysburg#n234"]
+     },
+
+  "@id": "https://www.example.com/rdf/corpus/gettysburg/lemma#people",
+  "@type": "frequencies",
+  "lemma": "people",
+  "frequency": 3,
+  "instances": { "@list": 
+     ["https://www.example.com/rdf/corpus/gettysburg#n309",
+      "https://www.example.com/rdf/corpus/gettysburg#n313",
+      "https://www.example.com/rdf/corpus/gettysburg#n317"]
+     }
+...
+}
+```
+
 **[Add RDF explanation here]**
 
 ### Alternative representations of a list
