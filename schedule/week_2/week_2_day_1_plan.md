@@ -90,7 +90,7 @@ The following readings are mentioned in the individual activities for this day.
 * [_CCSG_] Brepols publishers. [“Instructions and stylebook for the publication of texts in CCSG [_Corpus christianorum series graeca_].”](http://www.corpuschristianorum.org/series/pdf/CCSG_Guidelines.pdf)
 * DeRose, Steven J., David G. Durand, Elli Mylonas, and Allen H. Renear. [“What is text, really?”](http://www.cip.ifi.lmu.de/~langeh/test/1990%20-%20DeRose%20-%20What%20is%20Text,%20really%3F.pdf), *Journal of computing in higher education*, 1.2 (1990): 3–26. doi:10.1007/BF02941632.
 * [DocBook: The definitive guide](http://tdg.docbook.org/tdg/5.2/para.html)
-* Haentjens Dekker, Ronald and David J. Birnbaum. “It’s more than just overlap: Text As Graph”. **[add link]**
+* Haentjens Dekker, Ronald and David J. Birnbaum. [“It’s more than just overlap: Text As Graph”.](balisage-tag/Bal2017dekk0505.html) To be presented at Balisage: The Markup Conference 2017.
 * [HTML5. A vocabulary and associated APIs for HTML and XHTML. 
 W3C Recommendation 28 October 2014](https://www.w3.org/TR/html5/)
 * Renear, Allen, Elli Mylonas, and David Durand. [“Refining our notion of what text really is: the problem of overlapping hierarchies”.](http://cds.library.brown.edu/resources/stg/monographs/ohco.html)
