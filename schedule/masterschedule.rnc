@@ -1,0 +1,14 @@
+start = schedule
+schedule = element schedule {week+}
+num = attribute num {"2" | "3"}
+week = element week {day+, num}
+d = attribute d {"MON" | "TUES" | "WED" | "THURS" | "FRI" | "SAT"}
+day = element day {d, synopsis, slot+}
+synopsis = element syn {text}
+slot = element slot {activity, link?, outcome?, time}
+time = attribute time {xsd:time}
+activity = element act {desc, outcome, time }
+link = element link {text}
+outcome = element outcome {goal*}
+goal = element goal {text}
+desc = element desc {text}

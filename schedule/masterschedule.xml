@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="masterschedule.rnc" type="application/relax-ng-compact-syntax"?>
+<schedule>
+    <week num="2">
+        <day d="MON">
+            <syn>Scholars create digital editions to serve research purposes that may differ from
+                project to project. The first day of Week 2 begins by exploring the role in project
+                planning of defining research goals (which includes defining *non-goals* in order to
+                avoid *scope-creep*). From planning and research questions we move to modeling and
+                structuring the digital edition workflow as a computational pipeline, encouraging a
+                modular perspective on digital editing.</syn>
+            <slot time="09:30:00">
+                <act time="">
+                    <desc/>
+                    <outcome/>
+                </act>
+            </slot>
+        </day>
+        <day d="TUES">
+            <slot time="">
+                <act time="">
+                    <desc/>
+                    <outcome/>
+                </act>
+            </slot>
+        </day>
+        <day d="WED">
+            <slot time="">
+                <act time="">
+                    <desc/>
+                    <outcome/>
+                </act>
+            </slot>
+        </day>
+        <day d="THURS">
+            <slot time="">
+                <act time="">
+                    <desc/>
+                    <outcome/>
+                </act>
+            </slot>
+        </day>
+        <day d="FRI">
+            <slot time="">
+                <act time="">
+                    <desc/>
+                    <outcome/>
+                </act>
+            </slot>
+        </day>
+    </week>
+    <week num="3">
+        <day d="MON">
+            <slot time="">
+                <act time="">
+                    <desc/>
+                    <outcome/>
+                </act>
+            </slot>
+        </day>
+        <day d="TUES">
+            <slot time="">
+                <act time="">
+                    <desc/>
+                    <outcome/>
+                </act>
+            </slot>
+        </day>
+        <day d="WED">
+            <slot time="">
+                <act time="">
+                    <desc/>
+                    <outcome/>
+                </act>
+            </slot>
+        </day>
+        <day d="THURS">
+            <slot time="">
+                <act time="">
+                    <desc/>
+                    <outcome/>
+                </act>
+            </slot>
+        </day>
+        <day d="FRi">
+            <slot time="">
+                <act time="">
+                    <desc/>
+                    <outcome/>
+                </act>
+            </slot>
+        </day>
+    </week>
+</schedule>
