@@ -2,7 +2,8 @@
 <?xml-model href="masterschedule.rnc" type="application/relax-ng-compact-syntax"?>
 <schedule>
     <week num="2">
-        <day d="MON">
+        <day d="Monday">
+            <date>July 17</date>
             <syn>Scholars create digital editions to serve research purposes that may differ from
                 project to project. The first day of Week 2 begins by exploring the role in project
                 planning of defining research goals (which includes defining *non-goals* in order to
@@ -56,44 +57,409 @@
                     <link>plain.md</link>
                     <outcome/>
                 </act>
-                <desc/>
+                <act time="25">
+                    <desc>Explore XML as model and expression</desc>
+                    <link>xml_model.md</link>
+                    <outcome/>
+                </act>
+                <act time="20">
+                    <desc> Explore other models and their expressions: LMNL, GODDAG, TexMECS,
+                        TAG</desc>
+                    <link>other_models.md</link>
+                    <outcome/>
+                </act>
             </slot>
-        </day>
-        <day d="TUES">
-            <slot time="">
-                <act time="">
-                    <desc/>
+            <slot time="12:30:00">
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="02:00:00">
+                <desc>How are documents like trees and how are they different? What is represented
+                    by the model alone (the XML tree), and what requires markup semantics (schema)?
+                    What’s hard in XML and how do we do it anyway?</desc>
+                <act time="20">
+                    <desc>Create your own fork of our Institute GitHub repository</desc>
+                    <link>fork.md</link>
+                    <outcome/>
+                </act>
+                <act time="15">
+                    <desc>XML as a tree (OHCO: “ordered hierarchy of content objects”)</desc>
+                    <link>ohco.md</link>
+                    <outcome/>
+                </act>
+                <act time="15">
+                    <desc>Making the implicit explicit with markup</desc>
+                    <link>explicit.md</link>
+                    <outcome/>
+                </act>
+                <act time="25">
+                    <desc>Tag "Oxymandias" in XML (e.g., lines, sentences, phrases, speakers, words,
+                        feet, syllables, stress)</desc>
+                    <link>ozymandias.txt</link>
+                    <outcome/>
+                </act>
+                <act time="15">
+                    <desc>What's hard in XML</desc>
+                    <link>xml_limitations.md</link>
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="03:30:00">
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="04:00:00">
+                <act time="10">
+                    <desc>Review of Week 2, Day 1 Modeling and communities</desc>
+                    <link>week_2_day_1_plan.md</link>
+                </act>
+                <act time="35">
+                    <desc>XPath as a way of navigating the tree</desc>
+                    <link>xpath.md</link>
+                    <link>hamlet.xml</link>
+                    <outcome/>
+                </act>
+                <act time="20">
+                    <desc> XPath navigation of overlap in “Ozymandias”: Find 1) phrases, 2)
+                        enjambments, and 3) metrical lines</desc>
+                    <link>ozymandias.xml</link>
+                    <outcome/>
+                </act>
+                <act time="15">
+                    <desc>The cost of workarounds during processing</desc>
+                    <link>overlap_xml.md</link>
+                    <outcome/>
+                </act>
+                <act time="10">
+                    <desc>What’s so bad about markup semantics, the application layer, and
+                        workarounds?</desc>
                     <outcome/>
                 </act>
             </slot>
         </day>
-        <day d="WED">
-            <slot time="">
-                <act time="">
-                    <desc/>
+        <day d="Tuesday">
+            <date>July 18</date>
+            <syn>The first half of Week 2, Day 2 continues the focus on document modeling from the
+                previous day, with attention to three models of text: XML (text as tree), LMNL (text
+                as ranges), and TAG (text as graph). The second half of the day introduces the idea
+                of developing a digital edition as a computational pipeline. We illustrate the
+                pipeline with the Gothenburg model of textual variation, and then begin to explore
+                the first two stages of that model, tokenization and normalization.</syn>
+            <slot time="09:00:00">
+                <desc>Are you making an edition of a manuscript or of a text? What is the role of
+                    language and orthography in your edition? How will the text be presented? How
+                    will users interact with the views? What will be the role of graphic
+                    visualization?</desc>
+                <act time="20">
+                    <desc>Explore edition terms and concepts</desc>
+                    <link>edition_terms_and_concepts.md</link>
+                    <outcome/>
+                </act>
+                <act time="20">
+                    <desc>It isn’t just words! What story are you trying to tell?</desc>
+                    <link>sample_visualizations.md</link>
+                    <outcome/>
+                </act>
+                <act time="30">
+                    <desc>Explore participant data in light of terms and concepts</desc>
+                    <outcome/>
+                </act>
+                <act time="20">
+                    <desc>General discussion of Talk lab results</desc>
                     <outcome/>
                 </act>
             </slot>
-        </day>
-        <day d="THURS">
-            <slot time="">
-                <act time="">
-                    <desc/>
+            <slot time="10:30:00">
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <act time="20">
+                    <desc>Introduction to the LMNL data model and sawtooth syntax</desc>
+                    <link>lmnl_syntax.md</link>
+                    <outcome/>
+                </act>
+                <act time="20">
+                    <desc>Tag "Ozymandias" in LMNL</desc>
+                    <link>ozymandias.txt</link>
+                    <outcome/>
+                </act>
+                <act time="20">
+                    <desc>Introduction to TAG and Alexandria</desc>
+                    <outcome/>
+                </act>
+                <act time="20">
+                    <desc>Alexandria installation</desc>
+                    <link>alexandria.md</link>
+                    <outcome/>
+                </act>
+                <act time="20">
+                    <desc>Visualization of LMNL in Alexandria</desc>
                     <outcome/>
                 </act>
             </slot>
-        </day>
-        <day d="FRI">
-            <slot time="">
-                <act time="">
-                    <desc/>
+            <slot time="12:30:00">
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="02:00:00">
+                <desc>Tokenization</desc>
+                <outcome/>
+            </slot>
+            <slot time="03:30:00">
+                <act time="30">
+                    <desc>Coffee break</desc>
                     <outcome/>
                 </act>
+            </slot>
+            <slot time="04:00:00">
+                <desc>Normalization</desc>
+                <outcome/>
+            </slot>
+        </day>
+        <day d="Wednesday">
+            <date>July 19</date>
+            <syn>Week 2, Day 3 expands upon the idea of digital editions as text processing
+                pipelines. After a short recap of day 2, we continue with the step normalization. We
+                will show how these two pipeline stages prepare texts for automated collation. The
+                process of automated collation is also discussed from a modeling perspective (GM).
+                Participants learn that their research goals and questions influence the
+                computational pipelines.</syn>
+            <slot time="09:00:00">
+                <act time="">
+                    <desc>Review of Week 2, Day 2: computational pipelines, modeling, processing,
+                        and tokenization</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Basic normalization</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>NLTK</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Regular expressions</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Basic XML normalizationL transforming XML to a stream of normalized (word)
+                        tokens</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Hands-on exercise with NLTK and regular expressions</desc>
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <act time="">
+                    <desc>Modeling and collation</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Collation within editorial theory</desc>
+                </act>
+                <act time="">
+                    <desc>Collation practice</desc>
+                </act>
+                <act time="">
+                    <desc>Tokenization and normalization for collation purposes</desc>
+                </act>
+            </slot>
+            <slot time="12:30:00">
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="02:00:00">
+                <desc>Challenging textual phenomena: Introducing Text as Graph (TAG)</desc>
+            </slot>
+            <slot time="03:30:00">
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="04:00:00">
+                <desc>Review</desc>
+            </slot>
+        </day>
+        <day d="Thursday">
+            <date>July 20</date>
+            <syn>Week 2, Day 4 concentrates on ...</syn>
+            <slot time="09:00:00">
+                <desc>Text analytics 1</desc>
+                <act time="">
+                    <desc>Bag of words</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Text processing</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Text as tables</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Query the tables</desc>
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <desc>Bag of words, text processing, text as tables, query the tables (continued)
+                </desc>
+            </slot>
+            <slot time="12:30:00">
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="02:00:00">
+                <desc>Modeling: annotations as layers to the text</desc>
+                <act time="">
+                    <desc>Review of tokenization, normalization, and collation from the point of
+                        view of annotations</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Envisioning your edition as a layered model</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Existing models (e.g. computational linguistics)</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Hands-on: identify your own layers</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Hands-on: model your edition's pipeline</desc>
+                </act>
+                <outcome>
+                    <goal>Grasping the concept of modelling text as trees and graphs</goal>
+                    <goal>Understanding annotation as a form of adding layers to text</goal>
+                    <goal>Varieties of layered editions</goal>
+                </outcome>
+            </slot>
+            <slot time="03:30:00">
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="04:00:00">
+                <desc>Collation 2</desc>
+                <act time="">
+                    <desc>Advanced collation</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Near-matching - theory (as step in the computational pipeline)</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Hands-on: ...</desc>
+                    <outcome/>
+                </act>
+                <outcome>
+                    <goal>Deeper discussion of the alignment step in the GM</goal>
+                    <goal>An awareness of computation to understand that we do near-matching late
+                        (in the pipeline) for reasons of efficiency</goal>
+                </outcome>
+            </slot>
+        </day>
+        <day d="Friday">
+            <date>July 21</date>
+            <syn>Week 2, Day 5 concentrates on querying text, on creating visualizations, and on
+                presenting research outcomes to the end user. After desigining and implementing the
+                content of your edition, after adding layers of information to your model, we think
+                about how to query the information and how to present it to an audience. It means
+                that the content need to be made accessible in a way that does not require an end
+                user to code.</syn>
+            <slot time="09:00:00">
+                <desc>Text analytics 2</desc>
+                <act time="">
+                    <desc>Unsupervised learning</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Cluster analysis</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>PCA</desc>
+                    <outcome/>
+                </act>
+                <act time="">
+                    <desc>Paleographic analysis</desc>
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <desc>Unsupervised learning, cluster analysis, PCA, paleographic analysis
+                    (continued)</desc>
+                <outcome/>
+            </slot>
+            <slot time="12:30:00">
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="02:00:00">
+                <desc>Queries and XML</desc>
+                <act time="">
+                    <desc>Querying your text with XQuery in an eXist framework</desc>
+                    <outcome>
+                        <goal>Learning XQuery to ...</goal>
+                    </outcome>
+                </act>
+                <act time="">
+                    <desc>Using elastic search to index the content of your edition</desc>
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="03:30:00">
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="04:00:00">
+                <desc>Visualization as outcome</desc>
+                <act time="">
+                    <desc>Getting from layered annotations to (a specific) visualization</desc>
+                </act>
+                <outcome>
+                    <goal>Visualization as part of the text processing pipeline: making decisions,
+                        selecting formats, interacting with, and producing visualizations</goal>
+                    <goal>Hands-on: a departure from Word Cloud</goal>
+                </outcome>
             </slot>
         </day>
     </week>
     <week num="3">
-        <day d="MON">
+        <day d="Monday">
+            <date>July 24</date>
             <syn>The first day of Week 3 focuses on the ins and outs of getting your edition online.
                 We will introduce a workflow for putting the edition online during its development
                 and discuss how to iterating on it as you progress through the steps of digital
@@ -118,17 +484,18 @@
             <slot time="12:30:00">
                 <desc>Lunch</desc>
             </slot>
-            <slot time="2:00:00">
+            <slot time="02:00:00">
                 <desc>Customizing your edition with CSS and Javascript</desc>
             </slot>
-            <slot time="3:30:00">
+            <slot time="03:30:00">
                 <desc>Coffee break</desc>
             </slot>
-            <slot time="4:00:00">
+            <slot time="04:00:00">
                 <desc>Next steps: Beyond GitHub pages</desc>
             </slot>
         </day>
-        <day d="TUES">
+        <day d="Tuesday">
+            <date>July 25</date>
             <syn>The second day of Week 3 looks at how digital editions themselves may be treated as
                 data in various ways, as well as how data may be embedded within them.</syn>
             <slot time="09:00:00">
@@ -153,46 +520,117 @@
                 <desc>Plugging your edition into the graph</desc>
                 <act time="20">
                     <desc>Extracting and publishing RDF data</desc>
+                    <outcome/>
                 </act>
                 <act time="20">
                     <desc>RDF databases and SPARQL</desc>
+                    <outcome/>
                 </act>
             </slot>
             <slot time="12:30:00">
                 <desc>Lunch</desc>
             </slot>
-            <slot time="2:00:00">
+            <slot time="02:00:00">
                 <desc>XQuery</desc>
             </slot>
-            <slot time="3:30:00">
+            <slot time="03:30:00">
                 <desc>Coffee break</desc>
             </slot>
-            <slot time="4:00:00">
+            <slot time="04:00:00">
                 <desc>Data visualization</desc>
             </slot>
         </day>
-        <day d="WED">
-            <slot time="">
-                <act time="">
-                    <desc/>
-                    <outcome/>
+        <day d="Wednesday">
+            <date>July 26</date>
+            <syn></syn>
+            <slot time="09:00:00">
+                <desc/>
+            </slot>
+            <slot time="10:30:00">
+                <act time="30">
+                    <desc>Coffee break</desc>
                 </act>
             </slot>
-        </day>
-        <day d="THURS">
-            <slot time="">
-                <act time="">
-                    <desc/>
-                    <outcome/>
+            <slot time="11:00:00">
+                <desc></desc>
+            </slot>
+            <slot time="12:30:00">
+                <act time="90">
+                    <desc>Lunch</desc>
                 </act>
             </slot>
-        </day>
-        <day d="FRI">
-            <slot time="">
-                <act time="">
-                    <desc/>
-                    <outcome/>
+            <slot time="02:00:00">
+                <desc/>
+            </slot>
+            <slot time="03:30:00">
+                <act time="30">
+                    <desc>Coffee break</desc>
                 </act>
+            </slot>
+            <slot time="04:00:00">
+                <desc/>
+            </slot>
+        </day>
+        <day d="Thursday">
+            <date>July 27</date>
+            <syn></syn>
+            <slot time="09:00:00">
+                <desc/>
+            </slot>
+            <slot time="10:30:00">
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <desc></desc>
+            </slot>
+            <slot time="12:30:00">
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="02:00:00">
+                <desc/>
+            </slot>
+            <slot time="03:30:00">
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="04:00:00">
+                <desc/>
+            </slot>
+        </day>
+        <day d="Friday">
+            <date>July 28</date>
+            <syn></syn>
+            <slot time="09:00:00">
+                <desc/>
+            </slot>
+            <slot time="10:30:00">
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <desc></desc>
+            </slot>
+            <slot time="12:30:00">
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="02:00:00">
+                <desc/>
+            </slot>
+            <slot time="03:30:00">
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="04:00:00">
+                <desc/>
             </slot>
         </day>
     </week>
