@@ -2,7 +2,7 @@
 
 Time/Day | [Monday](week_2_day_1_plan.md) | [Tuesday](week_2_day_2_plan.md) | [Wednesday](week_2_day_3_plan.md) | [Thursday](week_2_day_4_plan.md) | [Friday](week_2_day_5_plan.md)
 --- | --- | --- | --- | --- | ---
-9:00–10:00 | Planning your project  | Theory of edition | Tokenization 2 | Text analytics 1: Bag of words | Text analytics 2: Supervised learning
+9:00–10:30 | Planning your project  | Theory of edition | Tokenization 2 | Text analytics 1: Bag of words | Text analytics 2: Supervised learning
 10:30–11:00 | Coffee break | Coffee break | Coffee break | Coffee break | Coffee break
 11:00–12:30 | Model, syntax, and semantics | Transcription: LMNL; TAG | Normalization 2 | Text analytics 1: Bag of words (cont.) | Text analytics 2: Supervised learning (cont.)
 12:30–2:00 | Lunch | Lunch | Lunch | Lunch | Lunch

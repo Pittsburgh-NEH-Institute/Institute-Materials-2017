@@ -23,7 +23,13 @@ or in other ways, but it is still a list of three stooges.
 We use the terms *syntax* and *serialization* to refer to textual *expressions* of a model. Information structured according to a model may be *serialized* as textual characters that are governed by syntactic rules. For example (and we’ll return to this later today), the XML data model is a tree, but the textual serialization of XML is a string of characters that include angle brackets, with syntactic rules that govern the use of the angle brackets in a way that enables them to express the tree structure. Information being modeled may also be expressed graphically; technically this is not a serialization because the term *serialization* means ‘as a sequence (i.e., *series*) of characters’, but it is nonetheless an expression of an abstract model.
 
 ### Alternative serializations of RDF
-RDF can be serialized in different ways. The following two examples are showing one serialization in XML and the second in JSON-LD (JSON linked data): 
+
+_Resource Description Framework_ (RDF) is a _framework_ for describing resources on the web. It is a part of the W3C's _Semantic Web_ Activity. RDF is designed to be read and understood by computers, not displayed to people. RDF is written in XML for easy _exchange_ between systems so it can still be read by people. It also has other serializations. RDF uses Web identifiers (_URIs_) to _identify_ resources. It describes them with _properties_ and _property values_.
+
+It this case we are using the derived _properties_ (word/lemma frequencies) of the Gettysburg Address (_the resource_).    
+
+RDF can be serialized in different ways. The following two examples are showing one serialization in XML and the second in JSON-LD (JSON linked data). In both serializations we see specific keywords which are not in the other serialization: 
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF 
@@ -114,9 +120,6 @@ RDF can be serialized in different ways. The following two examples are showing 
 ...
 }
 ```
-_Resource Description Framework_ (RDF) is a _framework_ for describing resources on the web. It is a part of the W3C's _Semantic Web_ Activity. RDF is designed to be read and understood by computers, not displayed to people. RDF is written in XML for easy _exchange_ between systems so it can still be read by people. It also has other serializations. RDF uses Web identifiers (_URIs_) to _identify_ resources. It describes them with _properties_ and _property values_.
-
-It this case we are using the derived _properties_ (word/lemma frequencies) of the Gettysburg Address (_the resource_). In both serializations we see specific keywords which are not in the other serialization.   
 
 
 ### Alternative representations of a list
