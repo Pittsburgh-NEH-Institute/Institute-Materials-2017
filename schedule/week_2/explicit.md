@@ -8,7 +8,7 @@ Consider the following sentence:
 Hamlet is a prince of Denmark.
 ```
 
-A speaker of English can identify the parts of speech of each word in this sentence, as well as the lemma (dictionary form), but that information is only implicit in the written text. A computational system that has linguistic knowledge of English, such as the Python [Natural Language Toolkit (NLTK)](http://www.nltk.org/) package, can determine the parts of speech and the lemmata, but insofar as that information is static, an edition that wishes to expose it might want to make an explicit part of the representation of the text, perhaps along the lines of:
+A speaker of English can identify the parts of speech of each word in this sentence, as well as the lemma (dictionary form), but that information is only implicit in the written text. A computational system that has linguistic knowledge of English, such as the Python [Natural Language Toolkit (NLTK)](http://www.nltk.org/) package, can determine the parts of speech and the lemmata, but an edition that wishes to expose it might want to make an explicit part of the representation of the text, perhaps along the lines of:
 
 ```xml
 <p>
@@ -26,7 +26,7 @@ One purposes of markup, then, can be understood as making the implicit explicit.
 
 ## Typography, layout, pseudo-markup; presentational and descriptive markup
 
-Sometimes information is already explicit, or, at least, partially so through typographic or layout conventions. For example, paragraphs begin on new lines and may begin with indentation or be preceded by extra vertical space (e.g., a blank line), titles may be centered and embolded, etc. These particular examples are typically unambiguous to human readers, but not all typographic conventions are. For example, printed text may use italics for emphasis, for foreign words, for book titles, and in other meanings, with the result that the meaning may have to be disambiguated by the reader on the basis of pragmatic knowledge. This is a classic argument for the advantage of descriptive markup over presentational markup: a presentational element like `<italic>` leaves the meaning of the italics implicit, while descriptive elements like `<emphasis>` or `<foreign>` or `<bookTitle>` make it explicit.
+Sometimes information is already explicit, or, at least, partially so, through typographic or layout conventions. For example, paragraphs begin on new lines and may begin with indentation or be preceded by extra vertical space (e.g., a blank line), titles may be centered and embolded, etc. These particular examples are typically unambiguous to human readers, but not all typographic conventions are. For example, printed text may use italics for emphasis, for foreign words, for book titles, and in other meanings, with the result that the meaning may have to be disambiguated by the reader on the basis of pragmatic knowledge. This is a classic argument for the advantage of descriptive markup over presentational markup: a presentational element like `<italic>` leaves the meaning of the italics implicit, while descriptive elements like `<emphasis>` or `<foreign>` or `<bookTitle>` make it explicit.
 
 ## White space as pseudo-markup
 
@@ -76,6 +76,10 @@ if we wish to divide the text into words, we cannot use the XPath `tokenize()` f
 * Replace white space characters in `text()` nodes with empty word-break elements (e.g., using `<xsl:analyze-string>`) and then use the newly introduced markup to find the words (e.g., with `<xsl:for-each-group>`) and tag them as elements with wrapper tags.
 
 In other words, either the real markup must be converted to pseudo-markup or the white space pseudo-markup must be converted to real markup. The reason one or the other of those accommodations is necessary is that white space word delimiters are pseudo-markup, although it often flies below the radar.
+
+On consequence of the pseudo-markup nature of white space is that it may also conceal overlap.
+
+**[resume here]**
  
 ## Sources
 
