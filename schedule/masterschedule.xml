@@ -60,19 +60,81 @@
     </week>
     <week num="3">
         <day d="MON">
-            <slot time="">
-                <act time="">
-                    <desc/>
+            <syn>The first day of Week 3 focuses on the ins and outs of getting your edition online.
+                We will introduce a workflow for putting the edition online during its development
+                and discuss how to iterating on it as you progress through the steps of digital
+                publication.</syn>
+            <slot time="09:00:00">
+                <desc>Introducing CETEIcean</desc>
+                <act time="10">
+                    <desc>Overview of Week 3</desc>
+                    <outcome/>
+                </act>
+                <act time="30">
+                    <desc>Explore project planning questions</desc>
                     <outcome/>
                 </act>
             </slot>
+            <slot time="10:30:00">
+                <desc>Coffee break</desc>
+            </slot>
+            <slot time="11:00:00">
+                <desc>Publishing on GitHub pages</desc>
+            </slot>
+            <slot time="12:30:00">
+                <desc>Lunch</desc>
+            </slot>
+            <slot time="2:00:00">
+                <desc>Customizing your edition with CSS and Javascript</desc>
+            </slot>
+            <slot time="3:30:00">
+                <desc>Coffee break</desc>
+            </slot>
+            <slot time="4:00:00">
+                <desc>Next steps: Beyond GitHub pages</desc>
+            </slot>
         </day>
         <day d="TUES">
-            <slot time="">
-                <act time="">
-                    <desc/>
+            <syn>The second day of Week 3 looks at how digital editions themselves may be treated as
+                data in various ways, as well as how data may be embedded within them.</syn>
+            <slot time="09:00:00">
+                <desc>Linked data principles</desc>
+                <act time="20">
+                    <desc>URIs as identifiers</desc>
                     <outcome/>
                 </act>
+                <act time="30">
+                    <desc>Modeling concepts and expressions</desc>
+                    <outcome/>
+                </act>
+                <act time="20">
+                    <desc>Choosing and using ontologies</desc>
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <desc>Coffee break</desc>
+            </slot>
+            <slot time="11:00:00">
+                <desc>Plugging your edition into the graph</desc>
+                <act time="20">
+                    <desc>Extracting and publishing RDF data</desc>
+                </act>
+                <act time="20">
+                    <desc>RDF databases and SPARQL</desc>
+                </act>
+            </slot>
+            <slot time="12:30:00">
+                <desc>Lunch</desc>
+            </slot>
+            <slot time="2:00:00">
+                <desc>XQuery</desc>
+            </slot>
+            <slot time="3:30:00">
+                <desc>Coffee break</desc>
+            </slot>
+            <slot time="4:00:00">
+                <desc>Data visualization</desc>
             </slot>
         </day>
         <day d="WED">
@@ -91,7 +153,7 @@
                 </act>
             </slot>
         </day>
-        <day d="FRi">
+        <day d="FRI">
             <slot time="">
                 <act time="">
                     <desc/>
