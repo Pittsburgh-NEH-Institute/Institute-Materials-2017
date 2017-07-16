@@ -13,7 +13,7 @@ Who said—“Two vast and trunkless legs of stone
 Stand in the desert. . . . Near them, on the sand,  
 Half sunk a shattered visage lies, whose frown, 
 
-The quotation that begins on the second line continues onto the third, crossing the line boundary, which creates an overlap situation that cannot be modeled by `<line>` and `<phrase>` elements, as in the example below, which is not well formed:
+The phrase that begins on the second line continues onto the third, crossing the line boundary, which creates an overlap situation that cannot be modeled by `<line>` and `<phrase>` elements, as in the example below, which is not well formed:
 
 ```xml
 <line><phrase>Who said —</phrase> <phrase>“Two vast and trunkless legs of stone</line>
@@ -35,7 +35,7 @@ Jeni Tennison writes:
 
 > Containment is a happenstance relationship between ranges while dominance is one that has a meaningful semantic. A page may happen to *contain* a stanza, but a poem *dominates* the stanzas that it contains.
 
-XML does not distinguish containment from dominance. Furthermore, if an entire paragraph consists of an entire quotation, in XML terms either the paragraph is a child of the quotation or vice versa. This means that not only does XML not distinguish containment from dominance, but it has no concept of coextensiveness other than a parent/child relationship that simultaneously and obligatorily expresses both containment and dominance.
+XML does not distinguish containment from dominance. Furthermore, if an entire paragraph consists of an entire quotation, in XML terms either the paragraph is a child of the quotation or vice versa. This means that not only does XML not distinguish containment from dominance, but it also has no concept of coextensiveness other than a parent/child relationship that simultaneously and obligatorily expresses both containment and dominance.
 
 ## White space tokenization
 
@@ -45,7 +45,19 @@ To a human, a line of poetry with metrically strong syllables tagged, along the 
 <line>Two v<stress>a</stress>st and tr<stress>u</stress>nkless l<stress>e</stress>gs of st<stress>o</stress>ne</line>
 ```
 
-is a sequence of seven words with markup on strong syllables. But there is no graceful way to tag the words individually using XML processing because the white space does not delimit items that have been modeled in a machine-actionable way as content objects.
+is a sequence of seven words with markup on strong syllables. But there is no graceful way to tag the words individually using XML processing because the white space does not delimit items that have been modeled in a machine-actionable way as content objects. From an XML perspective, the children of the `<line>` element are:
+
+Node type | Value
+---- | ----
+`text()` | Two v
+`element(stress)` | a
+`text()` | st and tr
+`element(stress)` | u
+`text()` | nkless l
+`element(stress)` | e
+`text()` | gs of st
+`element(stress)` | o
+`text()` | ne
 
 ## Artifactual hierarchy
 
