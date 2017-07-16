@@ -25,7 +25,32 @@ Excerpt from TEI edition of [“Ozymandias”](ozymandias.xml):
 </p>
 ```
 
+<<<<<<< f0dc51f3299435e427d52c8e9004a957e75d687b
 Phrases and lines overlap. We can’t make both of them containers, so instead of the standard TEI `<lg>` (line group) and `<l>` (line) [wrapper markup of lines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COVE), we've used [wrapper markup of phrases](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/AI.html#AILC) (`<phr>`) and tagged the beginnings of lines with empty `<lb/>` (‘line beginning’) milestones. We could, alternatively, have used regular wrapper tags for lines and milestones for phrases. What we can’t do, because of the XML prohibition against overlap, is use both `<l>` and `<phr>`—or, at least, unless we do some fancy joining with attribute pointers, which distorts what constitutes a line or a phrase.
+=======
+Phrases and lines overlap. We can’t make both of them containers, so instead of the standard TEI `<lg>` (line group) and `<l>` (line) [wrapper markup of lines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COVE), we've used [wrapper markup of phrases](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/AI.html#AILC) (`<phr>`) and tagged the beginnings of lines with empty (`<lb/>`) milestones (glossed as ‘line break’ in the [TEI guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lb.html), but more appropriately understood as ‘line beginning’). We could, alternatively, have used regular wrapper tags for lines and milestones for phrases. What we can’t do straightforwardly, because of the XML prohibition against overlap, is use both `<l>` and `<phr>` unless we do some fancy joining with attribute pointers, thus:
+
+```xml
+<p>
+  <l><phr>I met a traveller from an antique land,</phr></l>
+  <l><phr>Who said —</phr><phr xml:id="l2p2" next="#l3p1">“Two vast and trunkless legs of stone</phr></l>
+  <l><phr xml:id="l3p1" prev="#l2p2">Stand in the desart.... </phr><phr>Near them,</phr> <phr
+    xml:id="13p3" next="#14p1">on the sand,</phr></l>
+  <l><phr xml:id="l4p1" prev="#l3p1">Half sunk a shattered visage lies,</phr> <phr>whose frown,</phr></l>
+  <l><phr>And wrinkled lip,</phr> <phr>and sneer of cold command,</phr></l>
+  <l><phr xml:id="l6p1" next="#l7p1">Tell that its sculptor well those passions read</phr></l>
+  <l><phr xml:id="l7p1" prev="#l6p1">Which yet survive,</phr> <phr>stamped on these lifeless things,</phr></l>
+  <l><phr>The hand that mocked them,</phr> <phr>and the heart that fed;</phr></l>
+  <l><phr>And on the pedestal,</phr> <phr>these words appear:</phr></l>
+  <l><phr>My name is Ozymandias,</phr> <phr>King of Kings,</phr></l>
+  <l><phr>Look on my Works,</phr> <phr>ye Mighty,</phr> <phr>and despair!</phr></l>
+  <l><phr>Nothing beside remains.</phr> <phr xml:id="l12p2" next="#l13p1">Round the decay</phr></l>
+  <l><phr xml:id="l13p1" prev="#l12p2">Of that colossal Wreck,</phr> <phr xml:id="l13p3"
+    next="#l14p1">boundless and bare</phr></l>
+  <l><phr xml:id="l14p1" prev="#l13p3">The lone and level sands stretch far away.”</phr></l>
+</p>
+```
+>>>>>>> Added example with prev/next attrs.
 
 This isn’t a problem in LMNL, though, because LMNL ranges, unlike XML elements, are permitted to overlap:
 
