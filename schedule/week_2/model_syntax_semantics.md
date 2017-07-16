@@ -5,9 +5,9 @@
 A data model is an abstract understanding of structure, independently of its representation. For example, a list may be represented as bullet points:
 
 ```
-* Curly
-* Larry
-* Moe
+• Curly
+• Larry
+• Moe
 ```
 
 or as a comma-delimited string:
@@ -20,7 +20,7 @@ or in other ways, but it is still a list of three stooges.
 
 ## Syntax
 
-We use the terms *syntax* and *serialization* to refer to the expression of a model. Information structured according to a model may be *serialized* as textual characters that are governed by syntactic rules. Information may also be serialized in other ways, such as graphically. For example (and we’ll return to this later in this session), the XML data model is a tree, but the serialization of XML is a string of textual characters that include angle brackets, with syntactic rules that govern the use of the angle brackets in a way that enables them to express the tree structure.
+We use the terms *syntax* and *serialization* to refer to an *expression* of a model. Information structured according to a model may be *serialized* as textual characters that are governed by syntactic rules. Information may also be serialized in other ways, such as graphically. For example (and we’ll return to this later today), the XML data model is a tree, but the textual serialization of XML is a string of characters that include angle brackets, with syntactic rules that govern the use of the angle brackets in a way that enables them to express the tree structure.
 
 As was noted above, a list (in the case below, of the most frequent words in a document) is a textual representation that may be serialized in different ways. An ordered list (vertical and bulleted or horizontal and comma-separated) is one approach to serialization. Another is a word cloud, which represents the text of the words as characters, but their frequency is expressed not through vertical or horizontal linear order, as in a list, but through size and proximity to the center of the image.
 
