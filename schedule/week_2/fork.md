@@ -27,7 +27,7 @@ Create a GitHub account at <https://github.com/>.
 
 When you start working with Git on your local machine for the first time, you need to set your identity, which makes it possible for you to interact with your project repository (*repo*) on GitHub. To set up your identity on your local machine, execute the commands below. Your name and email must match the ones you used when you created your GitHub account. You only have to do this once on each machine that you use. 
 
-```sh
+```bash
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
@@ -40,11 +40,11 @@ The main repo for the Institute is at <https://github.com/Pittsburgh-NEH-Institu
 
 ## Clone your fork
 
-*Cloning* is the process of creating a local copy of a GitHub repo, and you’ll do your work in that local copy and then push your changes to your GitHub fork. You could have cloned the main Institute repo instead of forking it and then cloning your fork, but the advantage of cloning your own fork is that you can create or change files and push them to GitHub, which you can’t do with the main Institute repo because you don’t have write permission.
+*Cloning* is the process of creating a local copy of a GitHub repo, and you’ll do your work in that local copy and then push your changes to your GitHub fork. <!--You could have cloned the main Institute repo instead of forking it and then cloning your fork, but the advantage of cloning your own fork is that you can create or change files and push them to GitHub, which you can’t do with the main Institute repo because you don’t have write permission-->
 
 To clone your fork, navigate to it on GitHub and click on the green button on the right side labeled “Clone or download”. Copy the text in the little box that begins with “https”. Open a command line session on your local machine, navigate to the location where you want to create your local copy (you can use your Desktop if you don’t have an alternative preference), and type:
 
-```sh
+```bash
 git clone https://github.com/...
 ```
 
