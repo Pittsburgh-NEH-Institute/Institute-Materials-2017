@@ -18,7 +18,25 @@ Week 2, Day 5 concentrates on querying text, on creating visualizations, and on 
 
 -------
 
-## 9:00–10:30: Queries and XML
+## 9:00–10:30: Text analytics 2
+
+MK: Unsupervised learning, cluster analysis, PCA, paleographic analysis
+
+### Outcome goals
+* _[some text here]_
+
+## 10:30–11:00: Coffee break
+
+## 11:00–12:30: Text analytics 2 (cont.)
+
+MK: Unsupervised learning, cluster analysis, PCA, paleographic analysis (continued)
+
+### Outcome goals
+* _[some text here]_
+
+## 12:30–2:00: Lunch
+
+## 2:00–3:30: Queries and XML
 **[Note: consult with hc and ljo for overlap with week 3!]**  
 
 ### Topics and activities
@@ -28,9 +46,9 @@ Week 2, Day 5 concentrates on querying text, on creating visualizations, and on 
 ### Outcome goals
 * Learning XQuery to ...
 
-## 10:30–11:00: Coffee break
+## 3:30–4:00: Coffee break
 
-## 11:00–12:30: Visualization as outcome 
+## 4:00–5:30: Visualization as outcome 
 
 ### Topics and activities
 * Getting from layered annotations to (a specific) visualization
@@ -38,21 +56,3 @@ Week 2, Day 5 concentrates on querying text, on creating visualizations, and on 
 ### Outcome goals
 * Visualization as part of the text processing pipeline: making decisions, selecting formats, interacting with, and producing visualizations
 * Hands-on: a departure from Word Cloud
-
-## 12:30–2:00: Lunch
-
-## 2:00–3:30 Text analytics 3
-
-MK: Unsupervised learning, cluster analysis, PCA, paleographic analysis
-
-### Outcome goals
-* _[some text here]_
-
-## 3:30–4:00: Coffee breakx
-
-## 4:00–5:30: Text analytics 4
-
-MK: Unsupervised learning, cluster analysis, PCA, paleographic analysis (continued)
-
-### Outcome goals
-* _[some text here]_

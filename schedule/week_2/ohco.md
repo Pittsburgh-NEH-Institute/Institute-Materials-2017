@@ -2,7 +2,7 @@
 
 ## OHCO enthusiasm
 
-The origin of the OHCO (ordered hierarchy of content objects) thesis is commonly traced to DeRose, Durand, Mylonas, and Renear’s 1990 “What is text, really?”, which said that:
+The origin of the OHCO (ordered hierarchy of content objects) thesis is commonly traced to Steve DeRose, David Durand, Elli Mylonas, and Allen Renear’s 1990 “What is text, really?”, which said that:
 
 > … text is best represented as an ordered hierarchy of content objects (OHCO), because that is what text really is.
  
@@ -14,11 +14,11 @@ The authors defined the components of this acronym as follows:
 
 **Hierarchy:**
 
-> Most content objects are contained in larger content objects, such as subsections, sections, and chapters. In the above example, the paragraph contains two quotations, the second of which contains an emphatic element. Generally, smaller content objects do not cross the boundaries of larger ones; thus a paragraph will not begin in one chapter and end in the next. For this reasonm the structure of a document is a hierarchical one, like a tree of taxonomy.
+> Most content objects are contained in larger content objects, such as subsections, sections, and chapters. In the above example, the paragraph contains two quotations, the second of which contains an emphatic element. Generally, smaller content objects do not cross the boundaries of larger ones; thus a paragraph will not begin in one chapter and end in the next. For this reasonm the structure of a document is a hierarchical one, like a tree or taxonomy.
 
 **Ordered:**
 
-> Smaller content objects that occur within a larger one, such as the sections within a chapter, or the paragraphs, block quotes, and other objects within a section, occur in a certain order. This ordering is essential information, and must per part of any model of text structure.
+> Smaller content objects that occur within a larger one, such as the sections within a chapter, or the paragraphs, block quotes, and other objects within a section, occur in a certain order. This ordering is essential information, and must he part of any model of text structure.
 
 While the categories are defined in ontological terms, a large part of the article is about the engineering benefits of modeling text as OHCO, which is different from (and at least partially independent of) “what text really is”. The major section title for this portion of their article is “Advantages of OHCO-based text processing”, with subsections entitled “Advantages for authoring”, “Advantages for production”, and “Turning text into a database”. These arguments, which are all meritorious, do not contradict the ontological perspective, but they do suggest that arguments about what text really is in 1990 were about more than ontology.
 
@@ -42,7 +42,7 @@ This statement does not deny the existence of overlapping hierarchies (for examp
 
 ## Order
 
-Most of the challenges to OHCO have involved hierarchy, but order is also not an inalienable property of all textual objects. XML models documents as ordered trees of nodes, except that attributes on elements are not ordered, and neither are namespace nodes. But although element children in XML are ordered, the TEI `<choice>` element, for example, wraps child elements that have no logical mutual order, such as abbreviations and their expansions or errors and their corrections. The order of the child elements of `<choice>` is artifactual, and it distorts the ability of the model to represent what the text really is. Thus, two TEI documents that differ only in the order of the children of their `<choice>` elements are not deep equal, although those that differ only in the order of their attributes are—even though the order is not informational in either case. As far as we can tell, the reality is that to the extent that text is a tree (or set of trees), it is *partially* ordered, while XML is *fully* ordered. And although the order can be ignored during processing, that happens at the application layer and requires semantic information that is external to the XML model. In other words, order does not always model what text really is.
+Most of the challenges to OHCO have involved hierarchy, but order is also not an inalienable property of all textual objects. XML models documents as ordered trees of nodes, except that attributes on elements are not ordered, and neither are namespace nodes. But although element children in XML are ordered, the TEI `<choice>` element, for example, wraps child elements that have no logical mutual order, such as abbreviations and their expansions or errors and their corrections. The order of the child elements of `<choice>` is artifactual, and it distorts the ability of the model to represent what the text really is. More specifically, two TEI documents that differ only in the order of the children of their `<choice>` elements are not deep equal, although those that differ only in the order of their attributes are—even though the order is not informational in either case. As far as we can tell, the reality is that to the extent that text is a tree (or set of trees), it is *partially* ordered, while XML is *fully* ordered. And although the order can be ignored during processing, that happens at the application layer and requires semantic information that is external to the XML model. In other words, order does not always model what text really is.
 
 ## Content objects
 
@@ -58,17 +58,17 @@ which in tree form would look like:
 
 <img src="Images/romeo_xml.png" alt="[Title hierarchy]"/>
 
-Here the `<name>` elements might reasonably be considered content objects, but representing them as such compromises the hierarchy, which is no longer a string of three words, but now a sequence of two `<name>` elements with a `text()` node between them, and the `text()` nodes that contain the text of the names are on a different hierarchical level than the conjunction. LMNL and TAG, which are not obligatorily hierarchical, can tag the names without pushing the three words onto two different hierarchical levels. Here’s the TAG hypergraph representation:
+Here the `<name>` elements might reasonably be considered content objects, but representing them as such compromises the hierarchy, which is no longer a string of three words, but now a sequence of two `<name>` elements with a `text()` node between them, and the `text()` nodes that contain the text of the names are on a different hierarchical level than the conjunction. LMNL and TAG, which are not obligatorily hierarchical, can tag the names without pushing the three words onto two different hierarchical levels. Here is the TAG hypergraph representation:
 
 <img src="Images/romeo_hypergraph.png" alt="[Title hypergraph]"/>
 
 ## Conclusions
 
-It would be perverse to argue that text is not ordered, that it is not hierarchical, and that it does not consist of identifiable content objects, and the original 1990 OHCO paper compares the OHCO model favorably and correctly to alternatives that were in use at that time. But in the quarter century that has elapsed since 1990, we now recognize that the challenges to OHCO go beyond overlapping hierarchies, and invite a more nuanced engagement not only with the “H”, but also with the “O” and the “CO” of OHCO.
+It would be perverse to argue that text is not ordered, that it is not hierarchical, and that it does not consist of identifiable content objects, and the original 1990 OHCO paper compares the OHCO model favorably and correctly to alternatives that were in use at that time. But in the more than quarter century that has elapsed since 1990, we now recognize that the challenges to OHCO go beyond overlapping hierarchies, and invite a more nuanced engagement not only with the “H”, but also with the “O” and the “CO” of OHCO.
 
 ## Works cited
 
-Several of the arguments and illustrations above are taken from Ronald Haentjens Dekker and David J. Birnbaum, “It’s more than just overlap: Text As Graph”. **[add link]** Other sources cited above are:
+Several of the arguments and illustrations above are taken from Ronald Haentjens Dekker and David J. Birnbaum, [“It’s more than just overlap: Text As Graph”.](balisage-tag/Bal2017dekk0505.html) Other sources cited above are:
 
 Barnard, David, Ron Hayter, Maria Karababa, George Logan, and John McFadden. “SGML-based markup for literary texts: two problems and some solutions.” *Computers and the humanities*, Vol. 22, No. 4 (1988), pp. 265–76. <http://www.jstor.org/stable/30200136>.
 

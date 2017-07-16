@@ -64,7 +64,3 @@ Time | Topic | Type
 ## Homework
 
 Please complete [Week 1, Day 4 feedback](week_1_day_4_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 1, Day 4 feedback”.
-
-<!--## Readings (optional)
-
-The following readings are mentioned in the individual activities for this day.-->

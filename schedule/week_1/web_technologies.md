@@ -37,6 +37,30 @@ You’ll use some of these shortly.
 
 ### Working with HTML
 
+You should see something like the following in \<oXygen/\>:
+
+```html
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>HTML exercise 1</title>
+    </head>
+    <body>
+        <h1>HTML exercise 1</h1>
+        <h2>This is a level 2 header, or subheading</h2>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <ul>
+            <li>This is the first item in a list.</li>
+            <li>This is the second item in the same list.</li>
+        </ul>
+        <p>This is one last paragraph.</p>
+    </body>
+</html>
+```
+
+
 * The only part of the HTML file that is rendered inside the browser window is the part inside the `<body>` tags. Notice that we’ve used several of the element types described earlier.
 * Modify the text of the HTML file in \<oXygen/\>. You might add additional paragraphs (`<p>`) elements or headers (`<h1>` through `<h6>`). You can change the bulleted list to a numbered one by changing the wrapper from `<ul>` to `<ol>` (you need to change both the start and end tag, although if you change the start tag first, \<oXygen/\> will usually change the end tag automatically to match).
 * If you see a green square in the upper right corner of the editor windows, your HTML is valid. If not, it isn’t, and you need to fix it. For example, a `<p>` cannot contain another `<p>` because paragraphs in text are not normally nested inside one another. \<oXygen/\> will try to identify the location of the error and highlight it with a squiggly red line, although it sometimes isn’t able to tell because an error in one place could become apparent only elsewhere in the document.
@@ -52,10 +76,40 @@ You’ll use some of these shortly.
 
 ### Looking at CSS
 
-1. Open [schedule/week_1/web/web\_exercise\_2.html](web/web_exercise_2.html) in \<oXygen/\>.
+Open [schedule/week_1/web/web\_exercise\_2.html](web/web_exercise_2.html) in \<oXygen/\>. It should look something like:
+
+```html
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>HTML exercise 2</title>
+        <link rel="stylesheet" type="text/css" href="web_exercise_2.css"/>
+    </head>
+    <body>
+        <h1>HTML exercise 2</h1>
+        <h2>This is a level 2 header, or subheading</h2>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <ul>
+            <li>This is the first item in a list.</li>
+            <li>This is the second item in the same list.</li>
+        </ul>
+        <p>This is one last paragraph.</p>
+    </body>
+</html>
+```
+
 2. Notice that except for the filename and title, the only difference is that this file has added a `<link>` element in the `<head>`, which uses the `@href` attribute to point to the CSS file.
 3. Open the HTML file in a browser and notice that paragraphs are red and bold.
-4. Open [schedule/week_1/web/web\_exercise\_2.css](web/web_exercise_2.css) in \<oXygen/\> and notice that it implements the commands described above, which are responsible for the color and weight of the paragraphs.
+4. Open [schedule/week_1/web/web\_exercise\_2.css](web/web_exercise_2.css) in \<oXygen/\> and notice that it implements the commands described above, which are responsible for the color and weight of the paragraphs. Your CSS file should look something like:
+
+```css
+p{
+    color: red;
+    font-weight: bold;
+}
+```
 
 ### Working with CSS
 
@@ -72,17 +126,61 @@ You’ll use some of these shortly.
 
 ### The HTML and CSS behind our JavaScript
 
-1. Open [schedule/week_1/web/web\_exercise\_3.html](web/web_exercise_3.html) in \<oXygen/\>.
+Open [schedule/week_1/web/web\_exercise\_3.html](web/web_exercise_3.html) in \<oXygen/\>. It should look something like:
+
+```html
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>HTML exercise 3</title>
+        <link rel="stylesheet" type="text/css" href="web_exercise_3.css" />
+        <script type="text/javascript" src="web_exercise_3.js">/**/</script>
+    </head>
+    <body>
+        <h1>HTML exercise 3</h1>
+        <h2>This is a level 2 header, or subheading</h2>
+        <button type="button" value="red" id="redButton">Red</button>
+        <button type="button" value="green" id="greenButton">Green</button>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <ul>
+            <li>This is the first item in a list.</li>
+            <li>This is the second item in the same list.</li>
+        </ul>
+        <p>This is one last paragraph.</p>
+    </body>
+</html>
+```
+
 2. Notice that except for the filename and title, there are only two differences between this file and the last one. The first difference is that this file has added a `<script>` element in the `<head>`, which uses the `@src` attribute to point to the separate JavaScript file. The second is that we’ve created two `<button>` elements. The `@value` of the button is the text that it displays. As we’ll see below, the `@id` values let the CSS select the buttons separately, so that it can color them differently.
 3. Open the HTML file in a browser. Notice that the page looks the same as the one in the CSS exercise, except for the addition of the buttons.
-4. Open [schedule/week_1/web/web\_exercise\_3.css](web/web_exercise_3.css) in \<oXygen/\>. A CSS selector that begins with a hash mark matches the element in the document that has the text after the hash mark as an `@id` value. We use that feature to color the buttons differently. 
+
+Open [schedule/week_1/web/web\_exercise\_3.css](web/web_exercise_3.css) in \<oXygen/\>. It should look something like:
+
+```css
+p{
+    color: red;
+    font-weight: bold;
+}
+#redButton{
+    background-color: pink;
+}
+#greenButton{
+    background-color: lightgreen;
+}
+```
+
+1. A CSS selector that begins with a hash mark matches the element in the document that has the text after the hash mark as an `@id` value. We use that feature to color the buttons differently. 
 5. CSS supports “red” and “green” as colors, but it’s difficult to read black text against them because they’re dark, so we’ve chosen lighter alternatives. Change the background colors to “red” and “green”, reload the page in the browser, and notice the difference. We could, alternatively, have kept real red and green as backgrounds and changed the value of the `color` property (which controls the color of the foreground text) from the default “black” to something easier to read against a dark background.
 
 ### Interact with JavaScript
 
-* Click the red or green buttons in the web browser and see how the color of the paragraphs changes.
+Click the red or green buttons in the web browser and see how the color of the paragraphs changes.
 
 ### How the JavaScript works
+
+Open [schedule/week_1/web/web\_exercise\_3.js](web/web_exercise_3.js) in \<oXygen/\>. It should look something like:
 
 ```javascript
 window.addEventListener('DOMContentLoaded', init, false);

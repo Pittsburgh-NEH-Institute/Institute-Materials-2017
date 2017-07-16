@@ -1,6 +1,6 @@
-# Sample visualizations
+# What story are you trying to tell?
 
-The following digital projects incorporate original visual representations of the structure and contents of the documents.
+The following digital projects incorporate original visual representations of the structure and contents of the documents. What stories do these visualizations tell?
 
 ## Comparative visualizations
 
@@ -84,11 +84,11 @@ TRAViz is a set of [JavaScript packages](https://github.com/stjaenicke/TRAViz) p
 
 A comprehensive overview of the genesis of *Faust* by Johann Wolfgang von Goethe is presented in the form of interactive diagrams that show the writing process of the entire work. The diagram resembles a conventional genetic plan, but with each mouse-click readers/users can dive more deeply into the texts of *Faust*: the work is first divided into *Faust I*, *Faust II*, and *Paralipomena* (first image above). Clicking on one of the bars shows a further division into separate acts and scenes. The horizontal axis of the second diagram represents the verses of the base text; the vertical axis contains the different sigla, representing either a version of the work or a paralipomenon (indicated by a siglum starting with a “P”). 
 
-### A prototype of Beckett's *L'Innommable* 
+### A prototype of Beckett’s *L’Innommable* 
 
 **URL:** <http://www.beckettarchive.org/writingsequenceofinnommable.jsp>
 
-<img src="Images/bdmp-prototype.png" width="99%" alt="[Prototype L'Innomable image]"/>  
+<img src="Images/bdmp-prototype.png" width="99%" alt="[Prototype L’Innomable image]"/>  
 
 The BDMP presents a macrolevel perspective on the development of the work *L’Innomable* by visually juxtaposing the draft manuscript (consisting of two notebooks) and the base text (i.e., the first published text, in this case Editions de Minuit in 1953). The visualization is intended to elucidate the relationship between the draft manuscript and the published text, and to visualize the temporal aspect of a text’s genesis. It is a dynamic visualization: users can choose to render the sentences as ordered on the page of the manuscript, that is, in the writing order, as they appear in the published text, i.e., the reading order.
 
@@ -131,4 +131,4 @@ Julie André and Elena Pierazzo created an animated prototype of an opening of o
 
 <img src="Images/animated-2.png" width="75%" alt="[Animated Variants 2 image]"/>
 
-Though not a graph nor a diagram, Alan Galey's Animated Variants visualization tool deserves special mention here. Textual variance is represented within a sentence in an active manner, by switching among variant words in place. The tool makes a virtue of a text’s ambiguity, emphasizing Galey’s point that no variant is fixed. In this example, that ambiguity is expressed visually by changing among the words “solid”, “sallied”, and “sullied”.
+Though not a graph nor a diagram, Alan Galey’s Animated Variants visualization tool deserves special mention here. Textual variance is represented within a sentence in an active manner, by switching among variant words in place. The tool makes a virtue of a text’s ambiguity, emphasizing Galey’s point that no variant is fixed. In this example, that ambiguity is expressed visually by changing among the words “solid”, “sallied”, and “sullied”.

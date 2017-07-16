@@ -42,6 +42,7 @@
 * `mkdir`: make directory
 	* What’s a good name for a directory?
 	* What’s a good directory structure for a project?
+* `mkdir -p a/b/c`: create intermediate directories
 * `rmdir`: remove empty directory
 * `rm -rf:` remove directory and its contents recursively (careful!)
 

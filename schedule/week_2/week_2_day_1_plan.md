@@ -11,9 +11,9 @@ Scholars create digital editions to serve research purposes that may differ from
 * Markup as an expression of a data model; making the implicit explicit and machine-actionable
 * The relationships among model, syntax, and markup semantics
 * How modeling reduces iterations of the document analysis → schema development → markup pipeline
-* Community-driven (prescriptive) vs research-driven (descriptive) analysis
+* Reconciling community-driven (prescriptive) and research-driven (descriptive) analysis; “how do I do this in X?” vs “how should I model this?”
 * Modular development: the digital edition as a computational pipeline
-* Modeling in plain text and in XML
+* XML looks like a string but it’s really a tree. What does this mean for modeling, markup, and querying or processing?
 
 ## Legend
 
@@ -30,40 +30,27 @@ There cannot be a single set of *best practice* recommendations for all digital 
 
 Time | Topic | Type
 ---- | ----  | ----
-20 min | [Overview of Week 2](topics.md) | Presentation
-20 min | Explore [project planning questions](project_planning.md) | Discussion
+10 min | [Overview of Week 2](topics.md) | Presentation
+30 min | Explore [project planning questions](project_planning.md) | Discussion
 25 min | Apply project planning questions to your own project (individually or collaboratively) | Talk lab
 25 min | General discussion of Talk lab results | Discussion
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: Theory of edition
-
-Are you making an edition of a manuscript or of a text? What is the role of language and orthography in your edition? How will the text be presented? How will users interact with the views? What will be the role of graphic visualization?
-
-Time | Topic | Type
----- | ----  | ----
-20 min | Explore [edition terms and concepts](edition_terms_and_concepts.md) | Discussion
-20 min | It isn’t just words! [Visualization as edition](sample_visualizations.md) | Discussion
-30 min | Explore participant data in light of terms and concepts | Talk lab
-20 min | General discussion of Talk lab results | Discussion
-
-## 12:30–2:00 Lunch
-
-## 2:00–3:30: Model, syntax, and markup semantics
+## 11:00–12:30: Model, syntax, and markup semantics
 
 How can the elaboration of a digital edition be modularized? How are *model*, *syntax*, and *markup semantics* similar and different?
 
 Time | Topic | Type
 ---- | ---- | ----
 20 min | Explore [model, syntax, and markup semantics](model_syntax_semantics.md) | Presentation
-25 min | Expore [plain text as model and expression](plain.md) | Discussion
+25 min | Explore [plain text as model and expression](plain.md) | Discussion
 25 min | Explore [XML as model and expression](xml_model.md) | Discussion
 20 min| Explore [other models and their expressions: LMNL, GODDAG, TexMECS, TAG](other_models.md) | Presentation
 
-## 3:30–4:00: Coffee break
+## 12:30–2:00 Lunch
 
-## 4:00–5:30: Transcription with markup: XML
+## 2:00–3:30: Transcription with markup: XML
 
 How are documents like trees and how are they different? What is represented by the model alone (the XML tree), and what requires markup semantics (schema)? What’s hard in XML and how do we do it anyway?
 
@@ -74,6 +61,20 @@ Time | Topic | Type
 15 min | [Making the implicit explicit with markup](explicit.md) | Discussion
 25 min | Tag [“Ozymandias”](ozymandias.txt) in XML (e.g., lines, sentences, phrases, speakers, words, feet, syllables, stress) | Code lab
 15 min | [What’s hard in XML](xml_limitations.md) | Discussion
+
+## 3:30–4:00: Coffee break
+
+## 4:00–5:30: XML as a tree / XPath
+
+### Topics and activities
+
+Time | Topic | Type
+---- | ---- | ----
+10 min | Review of [Week 2, Day 1](week_2_day_1_plan.md)<br/>Modeling and communities | Discussion
+35 min | [XPath as a way of navigating the tree](xpath.md) (using [*Hamlet*](hamlet.xml) in \<oXygen/\>) | Code Lab
+20 min | XPath navigation of overlap in [“Ozymandias”](ozymandias.xml):<br/>Find 1) phrases, 2) enjambments, and 3) metrical lines| Code lab
+15 min | The [cost of workarounds during processing](overlap_xml.md) | Presentation
+10 min | What’s so bad about markup semantics, the application layer, and workarounds? | Discussion
 
 ## Homework
 
@@ -89,7 +90,7 @@ The following readings are mentioned in the individual activities for this day.
 * [_CCSG_] Brepols publishers. [“Instructions and stylebook for the publication of texts in CCSG [_Corpus christianorum series graeca_].”](http://www.corpuschristianorum.org/series/pdf/CCSG_Guidelines.pdf)
 * DeRose, Steven J., David G. Durand, Elli Mylonas, and Allen H. Renear. [“What is text, really?”](http://www.cip.ifi.lmu.de/~langeh/test/1990%20-%20DeRose%20-%20What%20is%20Text,%20really%3F.pdf), *Journal of computing in higher education*, 1.2 (1990): 3–26. doi:10.1007/BF02941632.
 * [DocBook: The definitive guide](http://tdg.docbook.org/tdg/5.2/para.html)
-* Haentjens Dekker, Ronald and David J. Birnbaum. “It’s more than just overlap: Text As Graph”. **[add link]**
+* Haentjens Dekker, Ronald and David J. Birnbaum. [“It’s more than just overlap: Text As Graph”.](balisage-tag/Bal2017dekk0505.html) To be presented at Balisage: The Markup Conference 2017.
 * [HTML5. A vocabulary and associated APIs for HTML and XHTML. 
 W3C Recommendation 28 October 2014](https://www.w3.org/TR/html5/)
 * Renear, Allen, Elli Mylonas, and David Durand. [“Refining our notion of what text really is: the problem of overlapping hierarchies”.](http://cds.library.brown.edu/resources/stg/monographs/ohco.html)

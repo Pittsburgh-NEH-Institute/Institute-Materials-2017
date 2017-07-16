@@ -2,8 +2,8 @@
 
 For each outcome objective listed below, please respond “yes”, “somewhat”, or “no”. 
 
-1. I understand how different types of edition design can facilitate different types of research.
-1. I understand how markup can make implicit features of my data explicit and machine-actionable.
+1. I understand how different types of research might require different types of editions.
+1. I understand the role of markup in making implicit features of my data explicit and machine-actionable.
 1. I understand the relationships among abstract model, markup syntax, and markup semantics.
 1. I am able to think about the development of a digital edition as a computational pipeline.
 1. I understand how plain text and XML represent (perhaps well, perhaps not as well) the information that inheres in my documents.

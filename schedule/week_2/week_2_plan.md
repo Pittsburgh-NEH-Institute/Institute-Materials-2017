@@ -2,13 +2,14 @@
 
 Time/Day | [Monday](week_2_day_1_plan.md) | [Tuesday](week_2_day_2_plan.md) | [Wednesday](week_2_day_3_plan.md) | [Thursday](week_2_day_4_plan.md) | [Friday](week_2_day_5_plan.md)
 --- | --- | --- | --- | --- | ---
-9:00–10:00 | Planning your project  | XML as tree (XPath) | Tokenization 2 | Collation 2 | Visualization
+9:00–10:00 | Planning your project  | Theory of edition | Tokenization 2 | Text analytics 1: Bag of words | Text analytics 2: Supervised learning
 10:30–11:00 | Coffee break | Coffee break | Coffee break | Coffee break | Coffee break
-11:30–12:30 | Theory of edition | Transcription: LMNL; TAG | Normalization 2 | Annotation and queries 1 | Annotation and queries 2
+11:00–12:30 | Model, syntax, and semantics | Transcription: LMNL; TAG | Normalization 2 | Text analytics 1: Bag of words (cont.) | Text analytics 2: Supervised learning (cont.)
 12:30–2:00 | Lunch | Lunch | Lunch | Lunch | Lunch
-2:00–3:30 | Model, syntax, and semantics | <!--Computational pipelines, -->Tokenization 1 | Collation 1 | Text analytics 1: Bag of words | Text analytics 2: Supervised learning
+2:00–3:30 | Transcription: XML | <!--Computational pipelines, -->Tokenization 1 | Collation 1 | Collation 2 | Visualization
 3:30–4:00 | Coffee break | Coffee break | Coffee break | Coffee break | Coffee break
-4:00–5:30 | Transcription: XML | Normalization 1 | Linked open data | Text analytics 1: Bag of words (cont.) | Text analytics 2: Supervised learning (cont.)
+4:00–5:30 | XML as tree (XPath) | Normalization 1 | Linked open data | Annotation and queries 1 | Annotation and queries 2
+
 <!--
 # By topic
 
