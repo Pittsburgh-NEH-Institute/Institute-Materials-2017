@@ -24,7 +24,52 @@ We use the terms *syntax* and *serialization* to refer to textual *expressions* 
 
 ### Alternative serializations of RDF
 
-**[Add RDF example and explanation here]**
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:c="https://www.example.com/rdf/corpus">
+  ...
+  <rdf:Description rdf:about="https://www.example.com/rdf/corpus/gettysburg/lemma/nation">
+    <c:lemma>nation</c:lemma>
+    <c:frequency>5</c:frequency>
+    <c:instances>
+      <rdf:Seq>
+	<rdf:li>https://www.example.com/rdf/corpus/gettysburg#n017</rdf:li>
+	<rdf:li>https://www.example.com/rdf/corpus/gettysburg#n048</rdf:li>
+	<rdf:li>https://www.example.com/rdf/corpus/gettysburg#n052</rdf:li>
+	<rdf:li>https://www.example.com/rdf/corpus/gettysburg#n100</rdf:li>
+	<rdf:li>https://www.example.com/rdf/corpus/gettysburg#n289</rdf:li>
+      </rdf:Seq>
+    </c:instances>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.example.com/rdf/corpus/gettysburg/lemma/dedicated">
+    <c:lemma>dedicated</c:lemma>
+    <c:frequency>4</c:frequency>
+    <c:instances>
+      <rdf:Seq>
+	<rdf:li>https://www.example.com/rdf/corpus/gettysburg#n024</rdf:li>
+	<rdf:li>https://www.example.com/rdf/corpus/gettysburg#n057</rdf:li>
+	<rdf:li>https://www.example.com/rdf/corpus/gettysburg#n208</rdf:li>
+	<rdf:li>https://www.example.com/rdf/corpus/gettysburg#n234</rdf:li>
+      </rdf:Seq>
+    </c:instances>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.example.com/rdf/corpus/gettysburg/lemma/people">
+    <c:lemma>people</c:lemma>
+    <c:frequency>3</c:frequency>
+    <c:instances>
+      <rdf:Seq>
+	<rdf:li>https://www.example.com/rdf/corpus/gettysburg#n309</rdf:li>
+	<rdf:li>https://www.example.com/rdf/corpus/gettysburg#n313</rdf:li>
+	<rdf:li>https://www.example.com/rdf/corpus/gettysburg#n317</rdf:li>
+      </rdf:Seq>
+    </c:instances>
+  </rdf:Description>
+  ...
+</rdf:RDF>
+```
+**[Add RDF explanation here]**
 
 ### Alternative representations of a list
 
