@@ -479,7 +479,9 @@
                 </act>
             </slot>
             <slot time="10:30:00">
-                <desc>Coffee break</desc>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
             </slot>
             <slot time="11:00:00">
                 <desc>Publishing on GitHub pages</desc>
@@ -491,7 +493,9 @@
                 <desc>Customizing your edition with CSS and Javascript</desc>
             </slot>
             <slot time="03:30:00">
-                <desc>Coffee break</desc>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
             </slot>
             <slot time="04:00:00">
                 <desc>Next steps: Beyond GitHub pages</desc>
@@ -517,7 +521,9 @@
                 </act>
             </slot>
             <slot time="10:30:00">
-                <desc>Coffee break</desc>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
             </slot>
             <slot time="11:00:00">
                 <desc>Plugging your edition into the graph</desc>
@@ -537,7 +543,9 @@
                 <desc>XQuery</desc>
             </slot>
             <slot time="03:30:00">
-                <desc>Coffee break</desc>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
             </slot>
             <slot time="04:00:00">
                 <desc>Data visualization</desc>
