@@ -1,11 +1,10 @@
-# Week 3, Day 1,
+# Week 3, Day 1: Monday, July 24
 The first day of Week 3 focuses on the ins and outs of getting your edition online. We will introduce a workflow for putting the edition online during its development and discuss how to iterating on it as you progress through the steps of digital publication.
-
-## 9:00-10:30
-<table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr><tr><td>Overview of Week 3</td><td>10</td><td></td></tr><tr><td>Explore project planning questions</td><td>30</td><td></td></tr></table>
-## 10:30-11:00: Coffee break
-<table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr><tr><td>Coffee break</td><td>30</td><td></td></tr></table>
-## 11:00-12:30
-<table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr></table>
-## 12:30-2:00: Lunch
-<table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr></table><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr></table><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr><tr><td>Coffee break</td><td>30</td><td></td></tr></table><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr></table>
+<td>09:00:00</td><td>Mike Kestemont: Unsupervised learning, cluster analysis, PCA, paleographic
+                    analysis (continued)</td><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr><tr><td>Overview of Week 3</td><td><a href=""></a></td><td>10</td><td></td></tr><tr><td>Explore project planning questions</td><td><a href=""></a></td><td>30</td><td></td></tr></table>
+<td>10:30:00</td><td></td><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr><tr><td>Coffee break</td><td>30</td><td></td></tr></table>
+<td>11:00:00</td><td>Introducing CETEIcean / Publishing on GitHub Pages</td><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr></table>
+<td>12:30:00</td><td></td><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr></table>
+<td>14:00:00</td><td>Next steps: Customizing your edition with CSS and Javascript</td><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr></table>
+<td>15:30:00</td><td></td><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr><tr><td>Coffee break</td><td>30</td><td></td></tr></table>
+<td>16:00:00</td><td>Web Publishing Frameworks: Django</td><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr></table>
