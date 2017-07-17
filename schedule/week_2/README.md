@@ -1,3 +1,9 @@
-Placeholder for week 2
+# Materials for Week 2
 
-[test](balisage-tag/Bal2017dekk0505.html)
+* [Weekly schedule](week_2_plan.md)
+* Daily schedules
+	* [Monday](week_2_day_1_plan.md)
+	* Tuesday
+	* Wednesday
+	* Thursday
+	* Friday

@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-Scholars create digital editions to serve research purposes that may differ from project to project. The first day of Week 2 begins by exploring the role in project planning of defining research goals (which includes defining *non-goals* in order to avoid *scope-creep*). From planning and research questions we move to modeling and structuring the digital edition workflow as a computational pipeline, encouraging a modular perspective on digital editing.
+Scholars create digital editions to serve research purposes that may differ from project to project. The first day of Week 2 begins by exploring the role in project planning of defining research goals (which includes defining *non-goals* in order to avoid *scope-creep*). From planning and research questions we move to modeling, and then to an exploration of XML markup and processing from a modeling perspective.
 
 ## Outcome goals
 
@@ -11,8 +11,6 @@ Scholars create digital editions to serve research purposes that may differ from
 * Markup as an expression of a data model; making the implicit explicit and machine-actionable
 * The relationships among model, syntax, and markup semantics
 * How modeling reduces iterations of the document analysis → schema development → markup pipeline
-* Reconciling community-driven (prescriptive) and research-driven (descriptive) analysis; “how do I do this in X?” vs “how should I model this?”
-* Modular development: the digital edition as a computational pipeline
 * XML looks like a string but it’s really a tree. What does this mean for modeling, markup, and querying or processing?
 
 ## Legend
@@ -30,7 +28,7 @@ There cannot be a single set of *best practice* recommendations for all digital 
 
 Time | Topic | Type
 ---- | ----  | ----
-10 min | [Overview of Week 2](topics.md) | Presentation
+10 min | Overview of Week 2 | Presentation
 30 min | Explore [project planning questions](project_planning.md) | Discussion
 25 min | Apply project planning questions to your own project (individually or collaboratively) | Talk lab
 25 min | General discussion of Talk lab results | Discussion
@@ -56,10 +54,10 @@ How are documents like trees and how are they different? What is represented by 
 
 Time | Topic | Type
 ---- | ---- | ----
-20 min | Create [your own fork of our Institute GitHub repository](fork.md) | Code lab
-15 min | XML as a tree ([OHCO: “ordered hierarchy of content objects”](ohco.md)) | Discussion
+10 min | Create [your own fork of our Institute GitHub repository](fork.md) | Code lab
+20 min | XML as a tree ([OHCO: “ordered hierarchy of content objects”](ohco.md)) | Discussion
 15 min | [Making the implicit explicit with markup](explicit.md) | Discussion
-25 min | Tag [“Ozymandias”](ozymandias.txt) in XML (e.g., lines, sentences, phrases, speakers, words, feet, syllables, stress) | Code lab
+30 min | Tag [“Ozymandias”](ozymandias.txt) in XML (e.g., lines, sentences, phrases, speakers, words, feet, syllables, stress) | Code lab
 15 min | [What’s hard in XML](xml_limitations.md) | Discussion
 
 ## 3:30–4:00: Coffee break
