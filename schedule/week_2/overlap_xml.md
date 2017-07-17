@@ -254,3 +254,27 @@ This avoids the uncommon XPath `is` operator, but it requires attention to using
    <line n="14">The lone and level sands stretch far away.”</line>
 </lines>
 ```
+____
+
+## About that other version
+
+The second XML version of the poem, which uses both `<l>` and `<phr>`, makes it easy to retrieve lines:
+
+```xpath
+for $l in //l return $l
+```
+
+which can be simplified to:
+
+```xpath
+//l
+```
+
+Retrieving phrases, including those spread over two lines, is more complex:
+
+```xpath
+for $p in //phr[not(@prev)] return 
+	string-join(($p, //phr[@xml:id = substring-after($p/@next, '#')]),' ')
+```
+
+Furthermore, this XPath-only strategy doesn’t work with phrases spread over more than two lines because XPath alone cannot check recursively to see whether the “next” part of the phrase has another “next” part after it, etc.
