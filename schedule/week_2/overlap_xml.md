@@ -373,3 +373,25 @@ When run against the poem, the output is:
    <phrase>boundless and bare The lone and level sands stretch far away.”</phrase>
 </results>
 ```
+
+The XSLT `<xsl:for-each-group>` element is a good choice for this task, and produces the same output as the preceding XQuery:
+
+```xslt
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:math="http://www.w3.org/2005/xpath-functions/math" exclude-result-prefixes="xs math"
+    version="3.0">
+    <xsl:output method="xml" indent="yes"/>
+    <xsl:template match="/">
+        <results>
+            <xsl:for-each-group select="//phr" group-starting-with="phr[not(@prev)]">
+                <result>
+                    <xsl:sequence select="normalize-space(string-join(current-group(),' '))"/>
+                </result>
+            </xsl:for-each-group>
+        </results>
+    </xsl:template>
+</xsl:stylesheet>
+
+```
