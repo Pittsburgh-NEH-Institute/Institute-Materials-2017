@@ -18,7 +18,7 @@
                     goals, and they do that under different working conditions. What’s the purpose
                     of your edition, and what are the resources at your disposal and the constraints
                     on your efforts?</desc>
-                <act time="10">
+                <act time="10" type="Presentation">
                     <desc>Overview of Week 2</desc>
                     <link>topics.md</link>
                     <outcome>
@@ -26,17 +26,17 @@
                             research questions</goal>
                     </outcome>
                 </act>
-                <act time="30">
+                <act time="30" type="Discussion">
                     <desc>Explore project planning questions</desc>
                     <link>project_planning.md</link>
                     <outcome/>
                 </act>
-                <act time="25">
+                <act time="25" type="Talk_lab">
                     <desc>Apply project planning questions to your own project (individually or
                         collaboratively)</desc>
                     <outcome/>
                 </act>
-                <act time="25">
+                <act time="25" type="Discussion">
                     <desc>General discussion of Talk lab results</desc>
                     <outcome/>
                 </act>
@@ -49,22 +49,22 @@
             <slot time="11:00:00">
                 <desc>How can the elaboration of a digital edition be modularized? How are *model*,
                     *syntax*, and *markup semantics* similar and different?</desc>
-                <act time="20">
+                <act time="20" type="Presentation">
                     <desc>Explore model, syntax, and markup semantics</desc>
                     <link>model_syntax_semantics</link>
                     <outcome/>
                 </act>
-                <act time="25">
+                <act time="25" type="Discussion">
                     <desc>Explore plain text as model and expression</desc>
                     <link>plain.md</link>
                     <outcome/>
                 </act>
-                <act time="25">
+                <act time="25" type="Discussion">
                     <desc>Explore XML as model and expression</desc>
                     <link>xml_model.md</link>
                     <outcome/>
                 </act>
-                <act time="20">
+                <act time="20" type="Presentation">
                     <desc> Explore other models and their expressions: LMNL, GODDAG, TexMECS,
                         TAG</desc>
                     <link>other_models.md</link>
@@ -80,28 +80,28 @@
                 <desc>How are documents like trees and how are they different? What is represented
                     by the model alone (the XML tree), and what requires markup semantics (schema)?
                     What’s hard in XML and how do we do it anyway?</desc>
-                <act time="20">
+                <act time="20" type="Code_lab">
                     <desc>Create your own fork of our Institute GitHub repository</desc>
                     <link>fork.md</link>
                     <outcome/>
                 </act>
-                <act time="15">
+                <act time="15" type="Discussion">
                     <desc>XML as a tree (OHCO: “ordered hierarchy of content objects”)</desc>
                     <link>ohco.md</link>
                     <outcome/>
                 </act>
-                <act time="15">
+                <act time="15" type="Discussion">
                     <desc>Making the implicit explicit with markup</desc>
                     <link>explicit.md</link>
                     <outcome/>
                 </act>
-                <act time="25">
+                <act time="25" type="Code_lab">
                     <desc>Tag "Oxymandias" in XML (e.g., lines, sentences, phrases, speakers, words,
                         feet, syllables, stress)</desc>
                     <link>ozymandias.txt</link>
                     <outcome/>
                 </act>
-                <act time="15">
+                <act time="15" type="Discussion">
                     <desc>What's hard in XML</desc>
                     <link>xml_limitations.md</link>
                     <outcome/>
@@ -113,28 +113,28 @@
                 </act>
             </slot>
             <slot time="04:00:00">
-                <act time="10">
+                <act time="10" type="Discussion">
                     <desc>Review of Week 2, Day 1 Modeling and communities</desc>
                     <link>week_2_day_1_plan.md</link>
                 </act>
-                <act time="35">
+                <act time="35" type="Code_lab">
                     <desc>XPath as a way of navigating the tree</desc>
                     <link>xpath.md</link>
                     <link>hamlet.xml</link>
                     <outcome/>
                 </act>
-                <act time="20">
+                <act time="20" type="Code_lab">
                     <desc> XPath navigation of overlap in “Ozymandias”: Find 1) phrases, 2)
                         enjambments, and 3) metrical lines</desc>
                     <link>ozymandias.xml</link>
                     <outcome/>
                 </act>
-                <act time="15">
+                <act time="15" type="Presentation">
                     <desc>The cost of workarounds during processing</desc>
                     <link>overlap_xml.md</link>
                     <outcome/>
                 </act>
-                <act time="10">
+                <act time="10" type="Discussion">
                     <desc>What’s so bad about markup semantics, the application layer, and
                         workarounds?</desc>
                     <outcome/>
@@ -154,21 +154,21 @@
                     language and orthography in your edition? How will the text be presented? How
                     will users interact with the views? What will be the role of graphic
                     visualization?</desc>
-                <act time="20">
+                <act time="20" type="Discussion">
                     <desc>Explore edition terms and concepts</desc>
                     <link>edition_terms_and_concepts.md</link>
                     <outcome/>
                 </act>
-                <act time="20">
+                <act time="20" type="Discussion">
                     <desc>It isn’t just words! What story are you trying to tell?</desc>
                     <link>sample_visualizations.md</link>
                     <outcome/>
                 </act>
-                <act time="30">
+                <act time="30" type="Talk_lab">
                     <desc>Explore participant data in light of terms and concepts</desc>
                     <outcome/>
                 </act>
-                <act time="20">
+                <act time="20" type="Discussion">
                     <desc>General discussion of Talk lab results</desc>
                     <outcome/>
                 </act>
@@ -179,26 +179,26 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <act time="20">
+                <act time="20" type="Presentation">
                     <desc>Introduction to the LMNL data model and sawtooth syntax</desc>
                     <link>lmnl_syntax.md</link>
                     <outcome/>
                 </act>
-                <act time="20">
+                <act time="20" type="Code_lab">
                     <desc>Tag "Ozymandias" in LMNL</desc>
                     <link>ozymandias.txt</link>
                     <outcome/>
                 </act>
-                <act time="20">
+                <act time="20" type="Presentation">
                     <desc>Introduction to TAG and Alexandria</desc>
                     <outcome/>
                 </act>
-                <act time="20">
+                <act time="20" type="Code_lab">
                     <desc>Alexandria installation</desc>
                     <link>alexandria.md</link>
                     <outcome/>
                 </act>
-                <act time="20">
+                <act time="20" type="Code_lab">
                     <desc>Visualization of LMNL in Alexandria</desc>
                     <outcome/>
                 </act>

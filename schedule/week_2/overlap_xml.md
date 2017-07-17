@@ -104,15 +104,16 @@ which can be simplified as:
 //phr[lb]
 ```
 
-For our Style 2 XML, we can simply look for `<phr>`s that have `@next`, but then we will have to join them to the ones with `@prev`:
+For our Style 2 XML, we can simply look for `<phr>`s that don't have `@prev`, but then we will have to join the split ones:
 
 ```xpath
-//phr[@next]
+for $p in //phr[not(@prev)] return
+	string-join(($p, //phr[@xml:id = substring-after($p/@next, '#')]),' ')
 ```
 
-does part of the job. Here we use a predicate to filter the phrases and keep only the ones that have line break children, but the XPath expression is still straightforward—we just have more work to do afterwards.
+does part of the job. Note that this XPath-only strategy doesn’t work with phrases spread over more than two lines because XPath alone cannot check recursively to see whether the “next” part of the phrase has another “next” part after it, etc.
 
-Finding lines, though, is more complicated for Style 1:
+Finding lines is more complicated for Style 1:
 
 ```xpath
 for $lb in //lb return string-join($lb/following::text()[preceding::lb[1] is $lb])
@@ -169,7 +170,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
   <phrases>{
     for $phr in //tei:phr[not(@prev)]
     let $p := if ($phr/@next) then
-      concat($phr/text() , ' | ', id(substring-after($phr/@next, '#'))/text())
+      string-join(($phr, $phr/following::tei:phr[@prev = concat('#',$phr/@xml:id)]), " | ")
       else
         $phr/text()
     let $startLine := $phr/parent::tei:l/count(preceding-sibling::tei:l) + 1
@@ -302,17 +303,6 @@ This avoids the uncommon XPath `is` operator, but it requires attention to using
    <line n="14">The lone and level sands stretch far away.”</line>
 </lines>
 ```
-____
-
-## About that other version
-
-The second XML version of the poem, which uses both `<l>` and `<phr>`, makes it easy to retrieve lines:
-
-```xpath
-for $l in //l return $l
-```
-
-which can be simplified to:
 
 ```xpath
 //l
