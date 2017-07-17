@@ -304,18 +304,9 @@ This avoids the uncommon XPath `is` operator, but it requires attention to using
 </lines>
 ```
 
-```xpath
-//l
-```
+We really don't need to do this for Style 2, as we already have lines. Stripping out the phrases would be a trivial exercise in XSLT.
 
-Retrieving phrases, including those spread over two lines, is more complex:
-
-```xpath
-for $p in //phr[not(@prev)] return
-	string-join(($p, //phr[@xml:id = substring-after($p/@next, '#')]),' ')
-```
-
-Furthermore, this XPath-only strategy doesn’t work with phrases spread over more than two lines because XPath alone cannot check recursively to see whether the “next” part of the phrase has another “next” part after it, etc. Here is an XQuery script that follows `@next` pointers:
+Returning to Style 2, the XPath-only strategy wouldn't work with phrases spread over more than two lines because XPath alone cannot check recursively to see whether the “next” part of the phrase has another “next” part after it, etc. Here is an XQuery script that follows `@next` pointers:
 
 ```xquery
 declare namespace djb="http://www.obdurodon.org";
@@ -332,6 +323,8 @@ declare function djb:processPhrase($nodes as element(phr)*, $input as element(ph
         <phrase>{djb:processPhrase((),$phrase)}</phrase>
 }</results>
 ```
+
+Notice the function starting in the second line. If the current element has a `@next` attribute, the function calls **itself** with the sequence of phrases it has accumulated so far, plus the next phrase element. If that element has a `@next`, the function is called again with that phrase added to the sequence and the following phrase, if the current phrase has a `@next` (or with an empty sequence otherwise). If the current phrase doesn't have a `@next`, then the function returns the list of accumulated phrases joined together with the input node (which may be empty). This pattern is called "recursion" and is a kind of programming superpower. It is used very often in processing lists, trees, or other data structures of indeterminate size.
 
 When run against the poem, the output is:
 
@@ -369,13 +362,14 @@ The XSLT `<xsl:for-each-group>` element is a good choice for this task, and prod
 ```xslt
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:t="http://www.tei-c.org/ns/1.0"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:math="http://www.w3.org/2005/xpath-functions/math" exclude-result-prefixes="xs math"
+    exclude-result-prefixes="xs t"
     version="3.0">
     <xsl:output method="xml" indent="yes"/>
     <xsl:template match="/">
         <results>
-            <xsl:for-each-group select="//phr" group-starting-with="phr[not(@prev)]">
+            <xsl:for-each-group select="//t:phr" group-starting-with="t:phr[not(@prev)]">
                 <result>
                     <xsl:sequence select="normalize-space(string-join(current-group(),' '))"/>
                 </result>
