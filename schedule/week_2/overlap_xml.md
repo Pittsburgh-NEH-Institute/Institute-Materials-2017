@@ -329,7 +329,7 @@ Furthermore, this XPath-only strategy doesn’t work with phrases spread over mo
 
 ```xquery
 declare namespace djb="http://www.obdurodon.org";
-declare function djb:processPhrase($nodes, $input) {
+declare function djb:processPhrase($nodes as element(phr)*, $input as element(phr)) as xs:string{
     if ($input/@next) then
         djb:processPhrase(($nodes, $input), root($input)//phr[@xml:id eq substring-after($input/@next, '#')])
     else
@@ -339,7 +339,7 @@ declare function djb:processPhrase($nodes, $input) {
     let $phrases := //phr[not(@prev)]
     for $phrase in $phrases
     return
-        <phrase>{djb:processPhrase('',$phrase)}</phrase>
+        <phrase>{djb:processPhrase((),$phrase)}</phrase>
 }</results>
 ```
 
