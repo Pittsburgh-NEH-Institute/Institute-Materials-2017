@@ -29,7 +29,7 @@
             <xsl:text>&lt;/tr></xsl:text>
             
             
-            
+           
                 <xsl:text>&lt;tr></xsl:text>
                 <xsl:apply-templates select="./slot"/>
                 <xsl:text>&lt;/tr></xsl:text>
@@ -40,13 +40,15 @@
     </xsl:template>
     
    
-        <xsl:template match="slot">
+      <xsl:template match="slot">
             <xsl:text>&lt;td></xsl:text>
             <xsl:apply-templates select="@time"/>
             <xsl:text>&lt;/td></xsl:text>
+          <xsl:for-each select="//day">
             <xsl:text>&lt;td></xsl:text>
-            <xsl:apply-templates select="./title"/>
+            <xsl:apply-templates select="/slot/title"/>
             <xsl:text>&lt;/td></xsl:text>
+          </xsl:for-each>
     </xsl:template>
         
         
@@ -61,7 +63,9 @@
             <xsl:value-of select="'# Week ' || ../@num || ', Day ' || position() || ': ' || ./@d || ', ' || ./date"/>
             <xsl:apply-templates select="syn" mode="daily"/>
 
-            <!--<xsl:if test="not(slot/act/desc = 'Coffee break')">-->
+            <!-- Trying to get the coffee and lunch break tables to go away
+                
+                <xsl:if test="not(slot/act/desc = 'Coffee break')">-->
                 <xsl:for-each select="slot">
                     <xsl:apply-templates select="."/>
 
@@ -93,7 +97,7 @@
         <xsl:value-of select="normalize-space(.)"/>
         <xsl:text>&#x0a;</xsl:text>
     </xsl:template>
-
+    <!-- creates and styles time headers -->
     <xsl:template match="slot" mode="daily">
         <xsl:if test="@time = '09:00:00'">
             <xsl:text>&#x0a;</xsl:text>
@@ -152,6 +156,7 @@
         <xsl:apply-templates/>
         <xsl:text>&lt;/td></xsl:text>
     </xsl:template>
+    <!-- creates links in table -->
     <xsl:template match="link" mode="daily">
         <xsl:text>&lt;td></xsl:text>
         <xsl:text>&lt;a href="</xsl:text>
