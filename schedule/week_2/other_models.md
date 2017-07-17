@@ -53,4 +53,4 @@ Alexandria, an open source TAG application, visualizes this document as follows:
 
 <img src="Images/mourn_alexandria.png" width="99%" alt="[Alexandria example]"/>
 
-For more information see Ronald Haentjens Dekker and David J. Birnbaum, [It’s more than just overlap: Text As Graph”](), which is the source of the example. **[add link]**
+For more information see Ronald Haentjens Dekker and David J. Birnbaum, [It’s more than just overlap: Text As Graph”](https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_2/balisage-tag/Bal2017dekk0505.html), which is the source of the example. 
