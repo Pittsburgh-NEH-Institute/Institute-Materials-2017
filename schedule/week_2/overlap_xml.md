@@ -170,7 +170,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
   <phrases>{
     for $phr in //tei:phr[not(@prev)]
     let $p := if ($phr/@next) then
-      concat($phr/text() , ' | ', id(substring-after($phr/@next, '#'))/text())
+      string-join(($phr, $phr/following::tei:phr[@prev = concat('#',$phr/@xml:id)]), " | ")
       else
         $phr/text()
     let $startLine := $phr/parent::tei:l/count(preceding-sibling::tei:l) + 1
@@ -304,55 +304,4 @@ This avoids the uncommon XPath `is` operator, but it requires attention to using
 </lines>
 ```
 
-<<<<<<< 2f051a03c4a7f1f0069c755106d5afe31a46b1eb
-Furthermore, this XPath-only strategy doesn’t work with phrases spread over more than two lines because XPath alone cannot check recursively to see whether the “next” part of the phrase has another “next” part after it, etc. Here is an XQuery script that follows `@next` pointers:
-
-```xquery
-declare namespace djb="http://www.obdurodon.org";
-declare function djb:processPhrase($nodes as element(phr)*, $input as element(phr)) as xs:string{
-    if ($input/@next) then
-        djb:processPhrase(($nodes, $input), root($input)//phr[@xml:id eq substring-after($input/@next, '#')])
-    else
-        normalize-space(string-join(($nodes, $input), ' '))
-};
-<results>{
-    let $phrases := //phr[not(@prev)]
-    for $phrase in $phrases
-    return
-        <phrase>{djb:processPhrase((),$phrase)}</phrase>
-}</results>
-```
-
-When run against the poem, the output is:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<results>
-   <phrase>I met a traveller from an antique land,</phrase>
-   <phrase>Who said —</phrase>
-   <phrase>“Two vast and trunkless legs of stone Stand in the desart....</phrase>
-   <phrase>Near them,</phrase>
-   <phrase>on the sand,</phrase>
-   <phrase>Half sunk a shattered visage lies,</phrase>
-   <phrase>whose frown,</phrase>
-   <phrase>And wrinkled lip,</phrase>
-   <phrase>and sneer of cold command,</phrase>
-   <phrase>Tell that its sculptor well those passions read Which yet survive,</phrase>
-   <phrase>stamped on these lifeless things,</phrase>
-   <phrase>The hand that mocked them,</phrase>
-   <phrase>and the heart that fed;</phrase>
-   <phrase>And on the pedestal,</phrase>
-   <phrase>these words appear:</phrase>
-   <phrase>My name is Ozymandias,</phrase>
-   <phrase>King of Kings,</phrase>
-   <phrase>Look on my Works,</phrase>
-   <phrase>ye Mighty,</phrase>
-   <phrase>and despair!</phrase>
-   <phrase>Nothing beside remains.</phrase>
-   <phrase>Round the decay Of that colossal Wreck,</phrase>
-   <phrase>boundless and bare The lone and level sands stretch far away.”</phrase>
-</results>
-```
-=======
 We really don't need to do this for Style 2, as we already have lines. Stripping out the phrases would be a trivial exercise in XSLT.
->>>>>>> Refactored a bit.
