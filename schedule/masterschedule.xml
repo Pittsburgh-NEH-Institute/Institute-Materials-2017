@@ -3,7 +3,7 @@
 <?xml-model href="masterschedule.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <schedule>
     <week num="2">
-        <!-- fixme! - Week title -->
+        <title/>
         <day d="Monday">
             <date>July 17</date>
             <syn>Scholars create digital editions to serve research purposes that may differ from
@@ -543,7 +543,7 @@
         </day>
     </week>
     <week num="3">
-        <!-- fixme! - Week title -->
+        <title/>
         <day d="Monday">
             <date>July 24</date>
             <syn>The first day of Week 3 focuses on the ins and outs of getting your edition online.
