@@ -31,9 +31,8 @@ Phrases and lines overlap. We can’t make both of them containers, so instead o
 <p>
   <l><phr>I met a traveller from an antique land,</phr></l>
   <l><phr>Who said —</phr><phr xml:id="l2p2" next="#l3p1">“Two vast and trunkless legs of stone</phr></l>
-  <l><phr xml:id="l3p1" prev="#l2p2">Stand in the desart.... </phr><phr>Near them,</phr> <phr
-    xml:id="13p3" next="#14p1">on the sand,</phr></l>
-  <l><phr xml:id="l4p1" prev="#l3p1">Half sunk a shattered visage lies,</phr> <phr>whose frown,</phr></l>
+  <l><phr xml:id="l3p1" prev="#l2p2">Stand in the desart.... </phr><phr>Near them,</phr> <phr>on the sand,</phr></l>
+  <l><phr>Half sunk a shattered visage lies,</phr> <phr>whose frown,</phr></l>
   <l><phr>And wrinkled lip,</phr> <phr>and sneer of cold command,</phr></l>
   <l><phr xml:id="l6p1" next="#l7p1">Tell that its sculptor well those passions read</phr></l>
   <l><phr xml:id="l7p1" prev="#l6p1">Which yet survive,</phr> <phr>stamped on these lifeless things,</phr></l>
@@ -48,7 +47,9 @@ Phrases and lines overlap. We can’t make both of them containers, so instead o
 </p>
 ```
 
-This isn’t a problem in LMNL, though, because LMNL ranges, unlike XML elements, are permitted to overlap:
+This version, though, means that phrases are tagged in two different ways not because they are intrinsically different kinds of content objects, but because of their interaction with the division of the poem into metrical lines. The use of pointers also moves the representation of enjambed phrases out of the XML tree model and into TEI markup semantics. That is, an XML parser doesn’t know that the separated pieces of an enjambed phrase are a single content object, and it is only on the application level that the semantics of the TEI `@prev` and `@next` attributes notify the processor that the pieces should be recombined.
+
+In comparison, the fact that lines and phrases may overlap isn’t a problem in LMNL because LMNL ranges, unlike XML elements, are permitted to overlap:
 
 ```
 [sonneteer [id}ozymandias{id]}
@@ -73,7 +74,7 @@ This isn’t a problem in LMNL, though, because LMNL ranges, unlike XML elements
 
 ## Processing complications
 
-Overlap in XML is problematic not only during markup, but also during processing. Processing elements tagged with wrappers (like `<phr>` in the XML above) is easy because the XPath target is a single element. Processing elements delimited by milestones (like `<lb>` above) is harder. Try the following in the \<oXygen/\> XPath browser box.
+Overlap in XML is problematic not only during markup, but also during processing. Processing elements tagged with wrappers (like `<phr>` in the XML above) is easy because the XPath target is a single element. Processing elements delimited by milestones (like `<lb>` above) is harder. Try the following in the \<oXygen/\> XPath browser box, using the first version above, the one with `<lb>` milestone tags.
 
 ### XPath
 
