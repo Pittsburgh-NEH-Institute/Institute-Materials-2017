@@ -26,14 +26,27 @@
             <xsl:apply-templates select="syn" mode="daily"/>
 
             <xsl:for-each select="slot">
-                <xsl:text>
-                    &lt;table>&lt;th>Time&lt;/th>&lt;th>Topic&lt;/th>&lt;th>Link&lt;/th>
-                </xsl:text>
+                <xsl:apply-templates select="."/>
+                
+                <xsl:text>&lt;table></xsl:text>
+                <xsl:text>&lt;tr></xsl:text>
+                <xsl:text>&lt;th>Topic&lt;/th></xsl:text>
+                <xsl:text>&lt;th>Link&lt;/th></xsl:text>
+                <xsl:text>&lt;th>Time&lt;/th></xsl:text>
+                <xsl:text>&lt;th>Type&lt;/th></xsl:text>
+                <xsl:text>&lt;/tr></xsl:text>
+
+
                 <xsl:for-each select="act">
-                    <xsl:text>&lt;tr>&lt;td></xsl:text><xsl:value-of select="@time"/><xsl:text>&lt;/td>&lt;/tr></xsl:text>
-                    <xsl:text>&lt;tr>&lt;td></xsl:text><xsl:value-of select="desc"/><xsl:text>&lt;/td>&lt;/tr></xsl:text>
-                    <xsl:text>&lt;tr>&lt;td></xsl:text><xsl:apply-templates select="link"/><xsl:text>&lt;/td>&lt;/tr></xsl:text>
+                <xsl:text>&lt;tr></xsl:text>
+                <xsl:apply-templates select="desc" mode="daily"/>
+                <xsl:apply-templates select="link" mode="daily"/>
+                <xsl:apply-templates select="." mode="daily"/>    
+                <xsl:text>&lt;/tr></xsl:text>
+                
                 </xsl:for-each>
+                <xsl:text>&lt;/table></xsl:text>
+                
             </xsl:for-each>
 
         </xsl:result-document>
@@ -41,10 +54,69 @@
     <xsl:template match="syn" mode="daily">
         <xsl:text>&#x0a;</xsl:text>
         <xsl:value-of select="normalize-space(.)"/>
+        <xsl:text>&#x0a;</xsl:text>
     </xsl:template>
-    <xsl:template match="/slot/act/link" mode="daily">
-       <xsl:text>&lt;</xsl:text><xsl:apply-templates/><xsl:text>></xsl:text> 
-    </xsl:template>
+    
+    <xsl:template match="slot">
+        <xsl:if test="@time='09:00:00'">
+            <xsl:text>&#x0a;</xsl:text>
+            <xsl:text>## 9:00-10:30</xsl:text>
+            <xsl:text>&#x0a;</xsl:text>
+        </xsl:if>
+        <xsl:if test="@time='10:30:00'">
+            <xsl:text>&#x0a;</xsl:text>
+            <xsl:text>## 10:30-11:00: Coffee break</xsl:text>
+            <xsl:text>&#x0a;</xsl:text>
+        </xsl:if>
+        <xsl:if test="@time='11:00:00'">
+            <xsl:text>&#x0a;</xsl:text>
+            <xsl:text>## 11:00-12:30</xsl:text>
+            <xsl:text>&#x0a;</xsl:text>
+        </xsl:if>
+        <xsl:if test="@time='12:30:00'">
+            <xsl:text>&#x0a;</xsl:text>
+            <xsl:text>## 12:30-2:00: Lunch</xsl:text>
+            <xsl:text>&#x0a;</xsl:text>
+        </xsl:if>
+        <xsl:if test="@time='14:00:00'">
+            <xsl:text>&#x0a;</xsl:text>
+            <xsl:text>## 2:00-3:30</xsl:text>
+            <xsl:text>&#x0a;</xsl:text>
+        </xsl:if>
+        <xsl:if test="@time='15:30:00'">
+            <xsl:text>&#x0a;</xsl:text>
+            <xsl:text>## 3:30-4:00: Coffee break</xsl:text>
+            <xsl:text>&#x0a;</xsl:text>
+        </xsl:if>
+        <xsl:if test="@time='16:00:00'">
+            <xsl:text>&#x0a;</xsl:text>
+            <xsl:text>## 4:00-5:30</xsl:text>
+            <xsl:text>&#x0a;</xsl:text>
+        </xsl:if>
         
+    </xsl:template>
+
+    <!-- creates the activity times in table  -->
+    <xsl:template match="act" mode="daily">
+        <xsl:text>&lt;td></xsl:text>
+        <xsl:apply-templates select="@time"/>
+        <xsl:text>&lt;/td></xsl:text>
+        <xsl:text>&lt;td></xsl:text>
+        <xsl:apply-templates select="@type"/>
+        <xsl:text>&lt;/td></xsl:text>
+    </xsl:template>
+    <!-- creates the descriptions in table-->
+    <xsl:template match="desc" mode="daily">
+        <xsl:text>&lt;td></xsl:text>
+        <xsl:apply-templates/>
+        <xsl:text>&lt;/td></xsl:text>
+    </xsl:template>
+    <xsl:template match="link" mode="daily">
+        <xsl:text>&lt;td></xsl:text>
+        <xsl:text>&lt;</xsl:text>
+        <xsl:apply-templates/>
+        <xsl:text>></xsl:text>
+        <xsl:text>&lt;/td></xsl:text>
+    </xsl:template>
 
 </xsl:stylesheet>

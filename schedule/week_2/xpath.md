@@ -25,10 +25,10 @@ This document is a TEI-encoded edition of a play. To navigate within an XML docu
 Path basics:
 
 * Paths are made up of path steps. Each one starts from the current location; where you end up becomes the new “current location” for the next step.
-* A slash within a path means “start from the immediately preceding path step”. If it specifies an axis, use that; otherwise the child axis is the default.
-* A double slash within a path means “look at the descendants of the immediately preceding path step”. It is also possible to navigate upward (to parents and higher ancestors), leftward (to preceding siblings or all preceding nodes), and rightward (to following siblings or all following nodes). 
+* A slash within a path means “start from the immediately preceding path step”. If it specifies an [axis](https://www.w3.org/TR/xpath-3/#axes), use that; otherwise the child axis is the default.
+* A double slash within a path means “look at the descendants of the immediately preceding path step”. It is also possible to navigate upward (to parents and higher ancestors), leftward (to preceding siblings or all preceding nodes), and rightward (to following siblings or all following nodes).
 * A slash (single or double) at the beginning of an XPath expression means “start at the document node”.
-* Because trees are fully connected, from any location in the tree there is at least one path to any other location or set of locations. 
+* Because trees are fully connected, from any location in the tree there is at least one path to any other location or set of locations.
 
 Sample paths:
 
@@ -61,7 +61,7 @@ What XPath would find all of the stage directions that are inside a metrical lin
 * Building on your answers to the preceding two questions, what XPath expression will find the speakers of all speeches that have more than 8 line subelements? Once you’ve found the speeches that have more than 8 lines, you can find the speakers of those speeches by just adding another path step, but you’ll get some duplication, since a single person may have more than one long speech. Your answer to this question should get rid of the duplicates, and return just a list of names of speakers without duplication. Hint: You’ll need to use the [`distinct-values()`](http://www.xsltfunctions.com/xsl/fn_distinct-values.html) function.
 * What are the XPaths to find speeches (`<sp>` elements) with more than 8 line (`<l>`) *child* elements and speeches with more than 8 *descendant* line elements? How do those results differ? If there are descendant line elements that are not children of a speech, what is their parent? If you don’t know the types of their parent elements in advance, what XPath expression will tell you?
 * What are the speeches (`<sp>` elements) that mention Ophielia by name? Hint: you’ll need to use the [`contains()`](http://www.xsltfunctions.com/xsl/fn_contains.html) function. Who are the distinct speakers of those speeches? How many distinct speakers are there?
-* What is the longest speech in the play? Hint: You’ll need to use the [`string-length()`](http://www.xsltfunctions.com/xsl/fn_string-length.html) function. 
+* What is the longest speech in the play? Hint: You’ll need to use the [`string-length()`](http://www.xsltfunctions.com/xsl/fn_string-length.html) function.
 * Just measuring speech length in the task above includes a bunch of spaces and newlines that are just padding. What’s the longest line after you get rid of distracting whitespace with the [`normalize-space()`](http://www.xsltfunctions.com/xsl/fn_normalize-space.html) function?
 * Given the preceding solution, how can you use that XPath expression to retrieve the longest `<sp>` itself? No fair checking the length and then writing a separate XPath that looks for that number. Your answer must find the longest speech without your knowing how long it is.
 

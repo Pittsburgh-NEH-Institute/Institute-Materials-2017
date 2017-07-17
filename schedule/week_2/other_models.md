@@ -49,8 +49,8 @@ TAG is a data model based on a hypergraph. The following image illustrates how i
 
 <img src="Images/feet.png" width="99%" alt="[TAG example]"/>
 
-Alexandria, an open source TAG application, visualizes this document as follows:
+Alexandria Markup, an open source TAG application, visualizes this document as follows:
 
-<img src="Images/mourn_alexandria.png" width="99%" alt="[Alexandria example]"/>
+<img src="Images/mourn_alexandria.png" width="99%" alt="[Alexandria Markup example]"/>
 
-For more information see Ronald Haentjens Dekker and David J. Birnbaum, [It’s more than just overlap: Text As Graph”](), which is the source of the example. **[add link]**
+For more information see Ronald Haentjens Dekker and David J. Birnbaum, [It’s more than just overlap: Text As Graph”](https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_2/balisage-tag/Bal2017dekk0505.html), which is the source of the example. 

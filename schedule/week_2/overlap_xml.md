@@ -305,3 +305,77 @@ This avoids the uncommon XPath `is` operator, but it requires attention to using
 ```
 
 We really don't need to do this for Style 2, as we already have lines. Stripping out the phrases would be a trivial exercise in XSLT.
+
+Returning to Style 2, the XPath-only strategy wouldn't work with phrases spread over more than two lines because XPath alone cannot check recursively to see whether the “next” part of the phrase has another “next” part after it, etc. Here is an XQuery script that follows `@next` pointers:
+
+```xquery
+declare namespace djb="http://www.obdurodon.org";
+declare function djb:processPhrase($nodes as element(phr)*, $input as element(phr)) as xs:string{
+    if ($input/@next) then
+        djb:processPhrase(($nodes, $input), root($input)//phr[@xml:id eq substring-after($input/@next, '#')])
+    else
+        normalize-space(string-join(($nodes, $input), ' '))
+};
+<results>{
+    let $phrases := //phr[not(@prev)]
+    for $phrase in $phrases
+    return
+        <phrase>{djb:processPhrase((),$phrase)}</phrase>
+}</results>
+```
+
+Notice the function starting in the second line. If the current element has a `@next` attribute, the function calls **itself** with the sequence of phrases it has accumulated so far, plus the next phrase element. If that element has a `@next`, the function is called again with that phrase added to the sequence and the following phrase, if the current phrase has a `@next` (or with an empty sequence otherwise). If the current phrase doesn't have a `@next`, then the function returns the list of accumulated phrases joined together with the input node (which may be empty). This pattern is called "recursion" and is a kind of programming superpower. It is used very often in processing lists, trees, or other data structures of indeterminate size.
+
+When run against the poem, the output is:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+   <phrase>I met a traveller from an antique land,</phrase>
+   <phrase>Who said —</phrase>
+   <phrase>“Two vast and trunkless legs of stone Stand in the desart....</phrase>
+   <phrase>Near them,</phrase>
+   <phrase>on the sand,</phrase>
+   <phrase>Half sunk a shattered visage lies,</phrase>
+   <phrase>whose frown,</phrase>
+   <phrase>And wrinkled lip,</phrase>
+   <phrase>and sneer of cold command,</phrase>
+   <phrase>Tell that its sculptor well those passions read Which yet survive,</phrase>
+   <phrase>stamped on these lifeless things,</phrase>
+   <phrase>The hand that mocked them,</phrase>
+   <phrase>and the heart that fed;</phrase>
+   <phrase>And on the pedestal,</phrase>
+   <phrase>these words appear:</phrase>
+   <phrase>My name is Ozymandias,</phrase>
+   <phrase>King of Kings,</phrase>
+   <phrase>Look on my Works,</phrase>
+   <phrase>ye Mighty,</phrase>
+   <phrase>and despair!</phrase>
+   <phrase>Nothing beside remains.</phrase>
+   <phrase>Round the decay Of that colossal Wreck,</phrase>
+   <phrase>boundless and bare The lone and level sands stretch far away.”</phrase>
+</results>
+```
+
+The XSLT `<xsl:for-each-group>` element is a good choice for this task, and produces the same output as the preceding XQuery:
+
+```xslt
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:t="http://www.tei-c.org/ns/1.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="xs t"
+    version="3.0">
+    <xsl:output method="xml" indent="yes"/>
+    <xsl:template match="/">
+        <results>
+            <xsl:for-each-group select="//t:phr" group-starting-with="t:phr[not(@prev)]">
+                <result>
+                    <xsl:sequence select="normalize-space(string-join(current-group(),' '))"/>
+                </result>
+            </xsl:for-each-group>
+        </results>
+    </xsl:template>
+</xsl:stylesheet>
+
+```

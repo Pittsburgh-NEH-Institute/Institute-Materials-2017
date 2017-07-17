@@ -35,6 +35,7 @@
                 <act time="25" type="Talk_lab">
                     <desc>Apply project planning questions to your own project (individually or
                         collaboratively)</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="25" type="Discussion">
@@ -47,6 +48,7 @@
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
+                <link/>
             </slot>
             <slot time="11:00:00">
                 <title>Model, syntax, and markup semantics</title>
@@ -78,10 +80,13 @@
                 <title/>
                 <act time="90">
                     <desc>Lunch</desc>
+                    <link/>
                 </act>
             </slot>
             <slot time="02:00:00">
                 <title>Transcription with markup: XML</title>
+              
+            <slot time="14:00:00">
                 <desc>How are documents like trees and how are they different? What is represented
                     by the model alone (the XML tree), and what requires markup semantics (schema)?
                     What’s hard in XML and how do we do it anyway?</desc>
@@ -114,12 +119,15 @@
             </slot>
             <slot time="03:30:00">
                 <title/>
+            <slot time="15:30:00">
                 <act time="30">
                     <desc>Coffee break</desc>
+                    <link/>
                 </act>
             </slot>
             <slot time="04:00:00">
                 <title>XML as a tree / XPath</title>
+            <slot time="16:00:00">
                 <act time="10" type="Discussion">
                     <desc>Review of Week 2, Day 1 Modeling and communities</desc>
                     <link>week_2_day_1_plan.md</link>
@@ -144,6 +152,7 @@
                 <act time="10" type="Discussion">
                     <desc>What’s so bad about markup semantics, the application layer, and
                         workarounds?</desc>
+                    <link/>
                     <outcome/>
                 </act>
             </slot>
@@ -174,10 +183,12 @@
                 </act>
                 <act time="30" type="Talk_lab">
                     <desc>Explore participant data in light of terms and concepts</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="20" type="Discussion">
                     <desc>General discussion of Talk lab results</desc>
+                    <link/>
                     <outcome/>
                 </act>
             </slot>
@@ -185,6 +196,7 @@
                 <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
+                    <link/>
                 </act>
             </slot>
             <slot time="11:00:00">
@@ -201,6 +213,7 @@
                 </act>
                 <act time="20" type="Presentation">
                     <desc>Introduction to TAG and Alexandria</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="20" type="Code_lab">
@@ -210,6 +223,7 @@
                 </act>
                 <act time="20" type="Code_lab">
                     <desc>Visualization of LMNL in Alexandria</desc>
+                    <link/>
                     <outcome/>
                 </act>
             </slot>
@@ -221,19 +235,25 @@
             </slot>
             <slot time="02:00:00">
                 <title>Tokenization</title>
+            <slot time="14:00:00">
                 <desc>Tokenization</desc>
+                <link/>
                 <outcome/>
             </slot>
             <slot time="03:30:00">
                 <title/>
+            <slot time="15:30:00">
                 <act time="30">
                     <desc>Coffee break</desc>
+                    <link/>
                     <outcome/>
                 </act>
             </slot>
             <slot time="04:00:00">
                 <title>Normalization</title>
+            <slot time="16:00:00">
                 <desc>Normalization</desc>
+                <link/>
                 <outcome/>
             </slot>
         </day>
@@ -250,27 +270,33 @@
                 <act time="">
                     <desc>Review of Week 2, Day 2: computational pipelines, modeling, processing,
                         and tokenization</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Basic normalization</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>NLTK</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Regular expressions</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Basic XML normalizationL transforming XML to a stream of normalized (word)
                         tokens</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Hands-on exercise with NLTK and regular expressions</desc>
+                    <link/>
                     <outcome/>
                 </act>
             </slot>
@@ -278,28 +304,34 @@
                 <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
+                    <link/>
                 </act>
             </slot>
             <slot time="11:00:00">
                 <title>Collation</title>
                 <act time="">
                     <desc>Modeling and collation</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Collation within editorial theory</desc>
+                    <link/>
                 </act>
                 <act time="">
                     <desc>Collation practice</desc>
+                    <link/>
                 </act>
                 <act time="">
                     <desc>Tokenization and normalization for collation purposes</desc>
+                    <link/>
                 </act>
             </slot>
             <slot time="12:30:00">
                 <title/>
                 <act time="90">
                     <desc>Lunch</desc>
+                    <link/>
                 </act>
             </slot>
             <slot time="02:00:00">
@@ -308,12 +340,17 @@
             </slot>
             <slot time="03:30:00">
                 <title/>
+            <slot time="14:00:00">
+                <desc>Challenging textual phenomena: Introducing Text as Graph (TAG)</desc>
+            </slot>
+            <slot time="15:30:00">
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="04:00:00">
                 <title>Review</title>
+            <slot time="16:00:00">
                 <desc>Review</desc>
             </slot>
         </day>
@@ -325,18 +362,22 @@
                 <desc>Text analytics 1</desc>
                 <act time="">
                     <desc>Bag of words</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Text processing</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Text as tables</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Query the tables</desc>
+                    <link/>
                     <outcome/>
                 </act>
             </slot>
@@ -350,6 +391,7 @@
                 <title>Text analytics 1 (cont.)</title>
                 <desc>Bag of words, text processing, text as tables, query the tables (continued)
                 </desc>
+                <link/>
             </slot>
             <slot time="12:30:00">
                 <title/>
@@ -359,26 +401,32 @@
             </slot>
             <slot time="02:00:00">
                 <title>Modeling: annotations as layers to the text</title>
+            <slot time="14:00:00">
                 <desc>Modeling: annotations as layers to the text</desc>
                 <act time="">
                     <desc>Review of tokenization, normalization, and collation from the point of
                         view of annotations</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Envisioning your edition as a layered model</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Existing models (e.g. computational linguistics)</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Hands-on: identify your own layers</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Hands-on: model your edition's pipeline</desc>
+                    <link/>
                 </act>
                 <outcome>
                     <goal>Grasping the concept of modelling text as trees and graphs</goal>
@@ -388,23 +436,28 @@
             </slot>
             <slot time="03:30:00">
                 <title/>
+            <slot time="15:30:00">
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="04:00:00">
                 <title>Collation 2</title>
+            <slot time="16:00:00">
                 <desc>Collation 2</desc>
                 <act time="">
                     <desc>Advanced collation</desc>
+                    <link></link>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Near-matching - theory (as step in the computational pipeline)</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Hands-on: ...</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <outcome>
@@ -425,20 +478,25 @@
             <slot time="09:00:00">
                 <title>Text analytics 2</title>
                 <desc>Text analytics 2</desc>
+                
                 <act time="">
                     <desc>Unsupervised learning</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Cluster analysis</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>PCA</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="">
                     <desc>Paleographic analysis</desc>
+                    <link/>
                     <outcome/>
                 </act>
             </slot>
@@ -446,12 +504,14 @@
                 <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
+                    <link/>
                 </act>
             </slot>
             <slot time="11:00:00">
                 <title>Text analytics 2 (cont.)</title>
                 <desc>Unsupervised learning, cluster analysis, PCA, paleographic analysis
                     (continued)</desc>
+                <link/>
                 <outcome/>
             </slot>
             <slot time="12:30:00">
@@ -462,29 +522,35 @@
             </slot>
             <slot time="02:00:00">
                 <title>Queries and XML</title>
+            <slot time="14:00:00">
                 <desc>Queries and XML</desc>
                 <act time="">
                     <desc>Querying your text with XQuery in an eXist framework</desc>
+                    <link/>
                     <outcome>
                         <goal>Learning XQuery to ...</goal>
                     </outcome>
                 </act>
                 <act time="">
                     <desc>Using elastic search to index the content of your edition</desc>
+                    <link/>
                     <outcome/>
                 </act>
             </slot>
             <slot time="03:30:00">
                 <title/>
+            <slot time="15:30:00">
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="04:00:00">
                 <title>Visualization as outcome</title>
+            <slot time="16:00:00">
                 <desc>Visualization as outcome</desc>
                 <act time="">
                     <desc>Getting from layered annotations to (a specific) visualization</desc>
+                    <link/>
                 </act>
                 <outcome>
                     <goal>Visualization as part of the text processing pipeline: making decisions,
@@ -508,10 +574,12 @@
                 <desc></desc>
                 <act time="10">
                     <desc>Overview of Week 3</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="30">
                     <desc>Explore project planning questions</desc>
+                    <link/>
                     <outcome/>
                 </act>
             </slot>
@@ -535,13 +603,19 @@
             </slot>
             <slot time="03:30:00">
                 <title/>
+            <slot time="14:00:00">
+                <desc>Customizing your edition with CSS and Javascript</desc>
+            </slot>
+            <slot time="15:30:00">
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="04:00:00">
                 <title>Web Publishing Frameworks: Django</title>
+            <slot time="16:00:00">
                 <desc>Next steps: Beyond GitHub pages</desc>
+                <link/>
             </slot>
         </day>
         <day d="Tuesday">
@@ -553,14 +627,17 @@
                 <desc>Linked data principles</desc>
                 <act time="20">
                     <desc>URIs as identifiers</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="30">
                     <desc>Modeling concepts and expressions</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="20">
                     <desc>Choosing and using ontologies</desc>
+                    <link/>
                     <outcome/>
                 </act>
             </slot>
@@ -575,29 +652,35 @@
                 <desc>Plugging your edition into the graph</desc>
                 <act time="20">
                     <desc>Extracting and publishing RDF data</desc>
+                    <link/>
                     <outcome/>
                 </act>
                 <act time="20">
                     <desc>RDF databases and SPARQL</desc>
+                    <link/>
                     <outcome/>
                 </act>
             </slot>
             <slot time="12:30:00">
                 <title/>
                 <desc>Lunch</desc>
+                
             </slot>
             <slot time="02:00:00">
                 <title>XQuery and eXist</title>
-                <desc>XQuery</desc>
+            <slot time="14:00:00">
+                <desc>XQuery</desc> 
             </slot>
             <slot time="03:30:00">
                 <title/>
+            <slot time="15:30:00">
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="04:00:00">
                 <title>Data visualization</title>
+            <slot time="16:00:00">
                 <desc>Data visualization</desc>
             </slot>
         </day>
@@ -630,12 +713,17 @@
             </slot>
             <slot time="03:30:00">
                 <title/>
+            <slot time="14:00:00">
+                <desc/>
+            </slot>
+            <slot time="15:30:00">
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="04:00:00">
                 <title/>
+            <slot time="16:00:00">
                 <desc/>
             </slot>
         </day>
@@ -668,12 +756,17 @@
             </slot>
             <slot time="03:30:00">
                 <title/>
+            <slot time="14:00:00">
+                <desc/>
+            </slot>
+            <slot time="15:30:00">
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="04:00:00">
                 <title>Licensing, archiving, and planning for the future</title>
+            <slot time="16:00:00">
                 <desc/>
             </slot>
         </day>
@@ -706,12 +799,17 @@
             </slot>
             <slot time="03:30:00">
                 <title/>
+            <slot time="14:00:00">
+                <desc/>
+            </slot>
+            <slot time="15:30:00">
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="04:00:00">
                 <title>Wrapping up: What have we learned?</title>
+            <slot time="16:00:00">
                 <desc/>
             </slot>
         </day>
