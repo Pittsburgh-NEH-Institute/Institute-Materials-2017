@@ -3,7 +3,7 @@
 <?xml-model href="masterschedule.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <schedule>
     <week num="2">
-      <!-- fixme! - Week title -->
+        <title>Philcamp: Digital philology, creating a digital edition</title>
         <day d="Monday">
             <date>July 17</date>
             <syn>Scholars create digital editions to serve research purposes that may differ from
@@ -13,6 +13,7 @@
                 structuring the digital edition workflow as a computational pipeline, encouraging a
                 modular perspective on digital editing.</syn>
             <slot time="09:00:00">
+                <title>Planning your project</title>
                 <desc>There cannot be a single set of *best practice* recommendations for all
                     digital editions because scholars create editions to meet different research
                     goals, and they do that under different working conditions. What’s the purpose
@@ -43,12 +44,14 @@
                 </act>
             </slot>
             <slot time="10:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
                 <link/>
             </slot>
             <slot time="11:00:00">
+                <title>Model, syntax, and markup semantics</title>
                 <desc>How can the elaboration of a digital edition be modularized? How are *model*,
                     *syntax*, and *markup semantics* similar and different?</desc>
                 <act time="20" type="Presentation">
@@ -74,12 +77,14 @@
                 </act>
             </slot>
             <slot time="12:30:00">
+                <title/>
                 <act time="90">
                     <desc>Lunch</desc>
                     <link/>
                 </act>
             </slot>
             <slot time="14:00:00">
+                <title>Transcription with markup: XML</title>
                 <desc>How are documents like trees and how are they different? What is represented
                     by the model alone (the XML tree), and what requires markup semantics (schema)?
                     What’s hard in XML and how do we do it anyway?</desc>
@@ -111,12 +116,14 @@
                 </act>
             </slot>
             <slot time="15:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                     <link/>
                 </act>
             </slot>
             <slot time="16:00:00">
+                <title>XML as a tree / XPath</title>
                 <act time="10" type="Discussion">
                     <desc>Review of Week 2, Day 1 Modeling and communities</desc>
                     <link>week_2_day_1_plan.md</link>
@@ -155,6 +162,7 @@
                 pipeline with the Gothenburg model of textual variation, and then begin to explore
                 the first two stages of that model, tokenization and normalization.</syn>
             <slot time="09:00:00">
+                <title>Theory of edition</title>
                 <desc>Are you making an edition of a manuscript or of a text? What is the role of
                     language and orthography in your edition? How will the text be presented? How
                     will users interact with the views? What will be the role of graphic
@@ -181,12 +189,14 @@
                 </act>
             </slot>
             <slot time="10:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                     <link/>
                 </act>
             </slot>
             <slot time="11:00:00">
+                <title>Transcription with markup: LMNL</title>
                 <act time="20" type="Presentation">
                     <desc>Introduction to the LMNL data model and sawtooth syntax</desc>
                     <link>lmnl_syntax.md</link>
@@ -214,16 +224,19 @@
                 </act>
             </slot>
             <slot time="12:30:00">
+                <title/>
                 <act time="90">
                     <desc>Lunch</desc>
                 </act>
             </slot>
             <slot time="14:00:00">
+                <title>Tokenization</title>
                 <desc>Tokenization</desc>
                 <link/>
                 <outcome/>
             </slot>
             <slot time="15:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                     <link/>
@@ -231,6 +244,7 @@
                 </act>
             </slot>
             <slot time="16:00:00">
+                <title>Normalization</title>
                 <desc>Normalization</desc>
                 <link/>
                 <outcome/>
@@ -245,6 +259,7 @@
                 Participants learn that their research goals and questions influence the
                 computational pipelines.</syn>
             <slot time="09:00:00">
+                <title>Normalization</title>
                 <act time="">
                     <desc>Review of Week 2, Day 2: computational pipelines, modeling, processing,
                         and tokenization</desc>
@@ -279,12 +294,14 @@
                 </act>
             </slot>
             <slot time="10:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                     <link/>
                 </act>
             </slot>
             <slot time="11:00:00">
+                <title>Collation</title>
                 <act time="">
                     <desc>Modeling and collation</desc>
                     <link/>
@@ -304,20 +321,24 @@
                 </act>
             </slot>
             <slot time="12:30:00">
+                <title/>
                 <act time="90">
                     <desc>Lunch</desc>
                     <link/>
                 </act>
             </slot>
             <slot time="14:00:00">
+                <title>Challenging textual phenomena: Introducing Text as Graph (TAG)</title>
                 <desc>Challenging textual phenomena: Introducing Text as Graph (TAG)</desc>
             </slot>
             <slot time="15:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
-            <slot time="16:00:00">
+            <slot time="04:00:00">
+                <title>Review</title>
                 <desc>Review</desc>
             </slot>
         </day>
@@ -325,6 +346,7 @@
             <date>July 20</date>
             <syn>Week 2, Day 4 concentrates on ...</syn>
             <slot time="09:00:00">
+                <title>Text analytics 1</title>
                 <desc>Text analytics 1</desc>
                 <act time="">
                     <desc>Bag of words</desc>
@@ -348,21 +370,25 @@
                 </act>
             </slot>
             <slot time="10:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="11:00:00">
+                <title>Text analytics 1 (cont.)</title>
                 <desc>Bag of words, text processing, text as tables, query the tables (continued)
                 </desc>
                 <link/>
             </slot>
             <slot time="12:30:00">
+                <title/>
                 <act time="90">
                     <desc>Lunch</desc>
                 </act>
             </slot>
             <slot time="14:00:00">
+                <title>Modeling: annotations as layers to the text</title>
                 <desc>Modeling: annotations as layers to the text</desc>
                 <act time="">
                     <desc>Review of tokenization, normalization, and collation from the point of
@@ -396,11 +422,13 @@
                 </outcome>
             </slot>
             <slot time="15:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="16:00:00">
+                <title>Collation 2</title>
                 <desc>Collation 2</desc>
                 <act time="">
                     <desc>Advanced collation</desc>
@@ -433,6 +461,7 @@
                 that the content need to be made accessible in a way that does not require an end
                 user to code.</syn>
             <slot time="09:00:00">
+                <title>Text analytics 2</title>
                 <desc>Text analytics 2</desc>
                 
                 <act time="">
@@ -457,23 +486,27 @@
                 </act>
             </slot>
             <slot time="10:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                     <link/>
                 </act>
             </slot>
             <slot time="11:00:00">
+                <title>Text analytics 2 (cont.)</title>
                 <desc>Unsupervised learning, cluster analysis, PCA, paleographic analysis
                     (continued)</desc>
                 <link/>
                 <outcome/>
             </slot>
             <slot time="12:30:00">
+                <title/>
                 <act time="90">
                     <desc>Lunch</desc>
                 </act>
             </slot>
             <slot time="14:00:00">
+                <title>Queries and XML</title>
                 <desc>Queries and XML</desc>
                 <act time="">
                     <desc>Querying your text with XQuery in an eXist framework</desc>
@@ -489,11 +522,13 @@
                 </act>
             </slot>
             <slot time="15:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="16:00:00">
+                <title>Visualization as outcome</title>
                 <desc>Visualization as outcome</desc>
                 <act time="">
                     <desc>Getting from layered annotations to (a specific) visualization</desc>
@@ -508,7 +543,7 @@
         </day>
     </week>
     <week num="3">
-      <!-- fixme! - Week title -->
+        <title>Pubcamp: Expressing the edition, digital publication</title>
         <day d="Monday">
             <date>July 24</date>
             <syn>The first day of Week 3 focuses on the ins and outs of getting your edition online.
@@ -516,7 +551,9 @@
                 and discuss how to iterating on it as you progress through the steps of digital
                 publication.</syn>
             <slot time="09:00:00">
-                <desc>Introducing CETEIcean</desc>
+                <title>Mike Kestemont: Unsupervised learning, cluster analysis, PCA, paleographic
+                    analysis (continued)</title>
+                <desc></desc>
                 <act time="10">
                     <desc>Overview of Week 3</desc>
                     <link/>
@@ -529,25 +566,31 @@
                 </act>
             </slot>
             <slot time="10:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="11:00:00">
+                <title>Introducing CETEIcean / Publishing on GitHub Pages</title>
                 <desc>Publishing on GitHub pages</desc>
             </slot>
             <slot time="12:30:00">
+                <title/>
                 <desc>Lunch</desc>
             </slot>
             <slot time="14:00:00">
+                <title>Next steps: Customizing your edition with CSS and Javascript</title>
                 <desc>Customizing your edition with CSS and Javascript</desc>
             </slot>
             <slot time="15:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="16:00:00">
+                <title>Web Publishing Frameworks: Django</title>
                 <desc>Next steps: Beyond GitHub pages</desc>
                 <link/>
             </slot>
@@ -557,6 +600,7 @@
             <syn>The second day of Week 3 looks at how digital editions themselves may be treated as
                 data in various ways, as well as how data may be embedded within them.</syn>
             <slot time="09:00:00">
+                <title>LOD and Editions</title>
                 <desc>Linked data principles</desc>
                 <act time="20">
                     <desc>URIs as identifiers</desc>
@@ -575,11 +619,13 @@
                 </act>
             </slot>
             <slot time="10:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="11:00:00">
+                <title>Plugging your edition into the graph</title>
                 <desc>Plugging your edition into the graph</desc>
                 <act time="20">
                     <desc>Extracting and publishing RDF data</desc>
@@ -593,112 +639,136 @@
                 </act>
             </slot>
             <slot time="12:30:00">
+                <title/>
                 <desc>Lunch</desc>
                 
             </slot>
             <slot time="14:00:00">
-                <desc>XQuery</desc>
-                
+                <title>XQuery and eXist</title>
+                <desc>XQuery</desc> 
             </slot>
             <slot time="15:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="16:00:00">
+                <title>Data visualization</title>
                 <desc>Data visualization</desc>
             </slot>
         </day>
         <day d="Wednesday">
             <date>July 26</date>
-            <syn></syn>
+            <syn/>
             <slot time="09:00:00">
+                <title>Getting to know and use the TEI stylesheets</title>
                 <desc/>
             </slot>
             <slot time="10:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="11:00:00">
-                <desc></desc>
+                <title>TEI Publisher</title>
+                <desc/>
             </slot>
             <slot time="12:30:00">
+                <title/>
                 <act time="90">
                     <desc>Lunch</desc>
                 </act>
             </slot>
             <slot time="14:00:00">
+                <title/>
                 <desc/>
             </slot>
             <slot time="15:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="16:00:00">
+                <title/>
                 <desc/>
             </slot>
         </day>
         <day d="Thursday">
             <date>July 27</date>
-            <syn></syn>
+            <syn/>
             <slot time="09:00:00">
+                <title>The edition and APIs</title>
                 <desc/>
             </slot>
             <slot time="10:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="11:00:00">
-                <desc></desc>
+                <title>Using APIs in your edition</title>
+                <desc/>
             </slot>
             <slot time="12:30:00">
+                <title/>
                 <act time="90">
                     <desc>Lunch</desc>
                 </act>
             </slot>
             <slot time="14:00:00">
+                <title>Building your own API</title>
                 <desc/>
             </slot>
             <slot time="15:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="16:00:00">
+                <title>Licensing, archiving, and planning for the future</title>
                 <desc/>
             </slot>
         </day>
         <day d="Friday">
             <date>July 28</date>
-            <syn></syn>
+            <syn/>
             <slot time="09:00:00">
+                <title>Publishing strategies</title>
                 <desc/>
             </slot>
             <slot time="10:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="11:00:00">
-                <desc></desc>
+                <title>Sustainability</title>
+                <desc/>
             </slot>
             <slot time="12:30:00">
+                <title/>
                 <act time="90">
                     <desc>Lunch</desc>
                 </act>
             </slot>
             <slot time="14:00:00">
+                <title/>
                 <desc/>
             </slot>
             <slot time="15:30:00">
+                <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="16:00:00">
+                <title>Wrapping up: What have we learned?</title>
                 <desc/>
             </slot>
         </day>
