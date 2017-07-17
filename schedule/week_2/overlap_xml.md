@@ -90,6 +90,8 @@ This can be simplified as:
 //phr
 ```
 
+If we want to do the same thing for the XML using @prev and @next, then we probably can't just use XPath, as we have to put together the pieces.
+
 Likewise for emjambment, that is phrases that cross line boundaries, for the same reason:
 
 ```xpath
@@ -102,15 +104,27 @@ which can be simplified as:
 //phr[lb]
 ```
 
-Here we use a predicate to filter the phrases and keep only the ones that have line break children, but the XPath expression is still straightforward.
+For our Style 2 XML, we can simply look for `<phr>`s that have `@next`, but then we will have to join them to the ones with `@prev`:
 
-Finding lines, though, is more complicated:
+```xpath
+//phr[@next]
+```
+
+does part of the job. Here we use a predicate to filter the phrases and keep only the ones that have line break children, but the XPath expression is still straightforward—we just have more work to do afterwards.
+
+Finding lines, though, is more complicated for Style 1:
 
 ```xpath
 for $lb in //lb return string-join($lb/following::text()[preceding::lb[1] is $lb])
 ```
 
 The preceding XPath expression (which cannot be expressed without the `for` clause) finds all of the `text()` nodes that follow each `<lb>` and filters them with a predicate that keeps only the ones whose first preceding `<lb>` is the one we’re processing at the moment. The predicate is complex, and because we’re returning multiple nodes on each pass through the loop (unlike the single `<phr>` elements returned in the earlier examples), we need to assemble the ones that belong to the same line, which we do with the `string-join()` function.
+
+Whereas, for Style 2, it's trivial:
+
+```xpath
+//l
+```
 
 What the preceding shows is that not only is the milestone workaround for overlapping hierarchies more complex for the human during markup, but it is also more complex for the computer during search and retrieval. Tree traversal is relatively quick, but the XPath long horizontal (`preceding::` and `following::`) axes are unable to take the same navigational advantage of the tree structure as the other axes. The consequences may not be noticeable if the data set is small, or if the processing environment uses indexing or internal optimizations to mitigate the effects, but, in general, traversing the long horizontal axes will not be as fast as other traversals.
 
@@ -146,6 +160,40 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
   </lines>
 </results>
 ```
+
+We could write a similar XQuery producing the same results for Style 2:
+
+```xquery
+declare namespace tei = "http://www.tei-c.org/ns/1.0";
+<results>
+  <phrases>{
+    for $phr in //tei:phr[not(@prev)]
+    let $p := if ($phr/@next) then
+      concat($phr/text() , ' | ', id(substring-after($phr/@next, '#'))/text())
+      else
+        $phr/text()
+    let $startLine := $phr/parent::tei:l/count(preceding-sibling::tei:l) + 1
+    let $endLine := if ($phr/@next)
+      then id(substring-after($phr/@next, '#'))/parent::tei:l/count(preceding-sibling::tei:l) + 1
+      else $phr/parent::tei:l/count(preceding-sibling::tei:l) + 1
+    return
+      <phrase starts="{$startLine}" ends="{$endLine}">{$p}</phrase>
+  }</phrases>
+  <enjambments>{
+    for $phr in //tei:phr[@next]
+    let $lpos := $phr/parent::tei:l/count(preceding-sibling::tei:l) + 1
+    return
+      <enjambment spans="{$lpos, $lpos+1}">{concat($phr/text(), " | ", $phr/following::tei:phr[1]/text())}</enjambment>
+  }</enjambments>
+  <lines>{
+    for $l at $pos in //tei:l
+    return
+      <line n="{$pos}">{string-join($l//text())}</line>
+  }</lines>
+</results>
+```
+
+Notice that the tradeoff we make in Style 1 vs. Style 2 is in either making lines harder to process, or having to resolve phrases. We can make either one work.
 
 Running the preceding XQuery against the XML of the poem creates the following output:
 
@@ -273,7 +321,7 @@ which can be simplified to:
 Retrieving phrases, including those spread over two lines, is more complex:
 
 ```xpath
-for $p in //phr[not(@prev)] return 
+for $p in //phr[not(@prev)] return
 	string-join(($p, //phr[@xml:id = substring-after($p/@next, '#')]),' ')
 ```
 
