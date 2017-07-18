@@ -103,3 +103,6 @@ Tasks.md
 
 # Not shared
 private/
+
+# Graphviz
+Digraph.gv*
