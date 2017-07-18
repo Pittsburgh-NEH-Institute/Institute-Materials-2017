@@ -72,7 +72,7 @@ Time | Topic | Type
 
 ### Before we start
 
-1. Navigate to your fork of our Institute repo and run `git pull upstream remote`.
+1. Navigate to your fork of our Institute repo and run `git pull upstream master`.
 2. Start Jupyter notebook either from the Anaconda launcher or by navigating to your home directory and typing `jupyter notebook`.
 3. Within the main Jupyter notebook web page, navigate to schedule/week_2 in your fork of our repo and open `Normalization.ipynb`, `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and `Integrating_XML_with_Python.ipynb`.
 
