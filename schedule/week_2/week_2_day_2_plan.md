@@ -33,11 +33,12 @@ ______
 
 Time | Topic | Type
 ---- | ---- | ----
-20 min | [Introduction to the LMNL data model and sawtooth syntax](lmnl_syntax.md) | Presentation
+10 min | Review of [week 2, day 1](week_2_day_1_plan.md) | Discussion
+10 min | [Introduction to the LMNL data model and sawtooth syntax](lmnl_syntax.md) | Presentation
 20 min | Tag [“Ozymandias”](ozymandias.txt) in LMNL | Code lab
 20 min | Introduction to TAG and Alexandria | Presentation
-20 min | [Alexandria installation](alexandria.md) | Code lab
-20 min | Visualization of LMNL in Alexandria | Code lab
+15 min | [Alexandria installation](alexandria.md) | Code lab
+15 min | Visualization of LMNL in Alexandria | Code lab
 
 ## 10:30–11:00: Coffee break
 
