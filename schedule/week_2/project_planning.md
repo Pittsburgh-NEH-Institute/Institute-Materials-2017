@@ -1,4 +1,4 @@
-# Projecting planning
+# Project planning
 
 ## Overview 
 
@@ -10,7 +10,7 @@
 
 ## General: before you begin
 
-### Start from the outcome and work backward
+### Start from the outcome of your research goals and work backward
 
 #### Don’t confuse what with how
 

@@ -25,9 +25,31 @@ Excerpt from TEI edition of [“Ozymandias”](ozymandias.xml):
 </p>
 ```
 
-Phrases and lines overlap. We can’t make both of them containers, so instead of the standard TEI `<lg>` (line group) and `<l>` (line) [wrapper markup of lines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COVE), we've used [wrapper markup of phrases](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/AI.html#AILC) (`<phr>`) and tagged the beginnings of lines with empty (`<lb/>`) milestones (glossed as ‘line break’ in the [TEI guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lb.html), but more appropriately understood as ‘line beginning’). We could, alternatively, have used regular wrapper tags for lines and milestones for phrases. What we can’t do, because of the XML prohibition against overlap, is use both `<l>` and `<phr>`—or, at least, unless we do some fancy joining with attribute pointers, which distorts what constitutes a line or a phrase.
+Phrases and lines overlap. We can’t make both of them containers, so instead of the standard TEI `<lg>` (line group) and `<l>` (line) [wrapper markup of lines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COVE), we've used [wrapper markup of phrases](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/AI.html#AILC) (`<phr>`) and tagged the beginnings of lines with empty `<lb/>` (line beginning) milestones, but more appropriately understood as ‘line beginning’). We could, alternatively, have used regular wrapper tags for lines and milestones for phrases. What we can’t do straightforwardly, because of the XML prohibition against overlap, is use both `<l>` and `<phr>` unless we do some joining with attribute pointers, thus:
 
-This isn’t a problem in LMNL, though, because LMNL ranges, unlike XML elements, are permitted to overlap:
+```xml
+<p>
+  <l><phr>I met a traveller from an antique land,</phr></l>
+  <l><phr>Who said —</phr><phr xml:id="l2p2" next="#l3p1">“Two vast and trunkless legs of stone</phr></l>
+  <l><phr xml:id="l3p1" prev="#l2p2">Stand in the desart.... </phr><phr>Near them,</phr> <phr>on the sand,</phr></l>
+  <l><phr>Half sunk a shattered visage lies,</phr> <phr>whose frown,</phr></l>
+  <l><phr>And wrinkled lip,</phr> <phr>and sneer of cold command,</phr></l>
+  <l><phr xml:id="l6p1" next="#l7p1">Tell that its sculptor well those passions read</phr></l>
+  <l><phr xml:id="l7p1" prev="#l6p1">Which yet survive,</phr> <phr>stamped on these lifeless things,</phr></l>
+  <l><phr>The hand that mocked them,</phr> <phr>and the heart that fed;</phr></l>
+  <l><phr>And on the pedestal,</phr> <phr>these words appear:</phr></l>
+  <l><phr>My name is Ozymandias,</phr> <phr>King of Kings,</phr></l>
+  <l><phr>Look on my Works,</phr> <phr>ye Mighty,</phr> <phr>and despair!</phr></l>
+  <l><phr>Nothing beside remains.</phr> <phr xml:id="l12p2" next="#l13p1">Round the decay</phr></l>
+  <l><phr xml:id="l13p1" prev="#l12p2">Of that colossal Wreck,</phr> <phr xml:id="l13p3"
+    next="#l14p1">boundless and bare</phr></l>
+  <l><phr xml:id="l14p1" prev="#l13p3">The lone and level sands stretch far away.”</phr></l>
+</p>
+```
+
+This version, though, means that phrases are tagged in two different ways not because they are intrinsically different kinds of content objects, but because of their interaction with the division of the poem into metrical lines. The use of pointers also moves the representation of enjambed phrases out of the XML tree model and into TEI markup semantics. That is, an XML parser doesn’t know that the separated pieces of an enjambed phrase are a single content object, and it is only on the application level that the semantics of the TEI `@prev` and `@next` attributes notify the processor that the pieces should be recombined.
+
+In comparison, the fact that lines and phrases may overlap isn’t a problem in LMNL because LMNL ranges, unlike XML elements, are permitted to overlap:
 
 ```
 [sonneteer [id}ozymandias{id]}
@@ -52,7 +74,7 @@ This isn’t a problem in LMNL, though, because LMNL ranges, unlike XML elements
 
 ## Processing complications
 
-Overlap in XML is problematic not only during markup, but also during processing. Processing elements tagged with wrappers (like `<phr>` in the XML above) is easy because the XPath target is a single element. Processing elements delimited by milestones (like `<lb>` above) is harder. Try the following in the \<oXygen/\> XPath browser box.
+Overlap in XML is problematic not only during markup, but also during processing. Processing elements tagged with wrappers (like `<phr>` in the XML above) is easy because the XPath target is a single element. Processing elements delimited by milestones (like `<lb>` above) is harder. Try the following in the \<oXygen/\> XPath browser box, using the first version above, the one with `<lb>` milestone tags.
 
 ### XPath
 
@@ -68,6 +90,8 @@ This can be simplified as:
 //phr
 ```
 
+If we want to do the same thing for the XML using @prev and @next, then we probably can't just use XPath, as we have to put together the pieces.
+
 Likewise for emjambment, that is phrases that cross line boundaries, for the same reason:
 
 ```xpath
@@ -80,15 +104,28 @@ which can be simplified as:
 //phr[lb]
 ```
 
-Here we use a predicate to filter the phrases and keep only the ones that have line break children, but the XPath expression is still straightforward.
+For our Style 2 XML, we can simply look for `<phr>`s that don't have `@prev`, but then we will have to join the split ones:
 
-Finding lines, though, is more complicated:
+```xpath
+for $p in //phr[not(@prev)] return
+	string-join(($p, //phr[@xml:id = substring-after($p/@next, '#')]),' ')
+```
+
+does part of the job. Note that this XPath-only strategy doesn’t work with phrases spread over more than two lines because XPath alone cannot check recursively to see whether the “next” part of the phrase has another “next” part after it, etc.
+
+Finding lines is more complicated for Style 1:
 
 ```xpath
 for $lb in //lb return string-join($lb/following::text()[preceding::lb[1] is $lb])
 ```
 
 The preceding XPath expression (which cannot be expressed without the `for` clause) finds all of the `text()` nodes that follow each `<lb>` and filters them with a predicate that keeps only the ones whose first preceding `<lb>` is the one we’re processing at the moment. The predicate is complex, and because we’re returning multiple nodes on each pass through the loop (unlike the single `<phr>` elements returned in the earlier examples), we need to assemble the ones that belong to the same line, which we do with the `string-join()` function.
+
+Whereas, for Style 2, it's trivial:
+
+```xpath
+//l
+```
 
 What the preceding shows is that not only is the milestone workaround for overlapping hierarchies more complex for the human during markup, but it is also more complex for the computer during search and retrieval. Tree traversal is relatively quick, but the XPath long horizontal (`preceding::` and `following::`) axes are unable to take the same navigational advantage of the tree structure as the other axes. The consequences may not be noticeable if the data set is small, or if the processing environment uses indexing or internal optimizations to mitigate the effects, but, in general, traversing the long horizontal axes will not be as fast as other traversals.
 
@@ -124,6 +161,40 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
   </lines>
 </results>
 ```
+
+We could write a similar XQuery producing the same results for Style 2:
+
+```xquery
+declare namespace tei = "http://www.tei-c.org/ns/1.0";
+<results>
+  <phrases>{
+    for $phr in //tei:phr[not(@prev)]
+    let $p := if ($phr/@next) then
+      string-join(($phr, $phr/following::tei:phr[@prev = concat('#',$phr/@xml:id)]), " | ")
+      else
+        $phr/text()
+    let $startLine := $phr/parent::tei:l/count(preceding-sibling::tei:l) + 1
+    let $endLine := if ($phr/@next)
+      then id(substring-after($phr/@next, '#'))/parent::tei:l/count(preceding-sibling::tei:l) + 1
+      else $phr/parent::tei:l/count(preceding-sibling::tei:l) + 1
+    return
+      <phrase starts="{$startLine}" ends="{$endLine}">{$p}</phrase>
+  }</phrases>
+  <enjambments>{
+    for $phr in //tei:phr[@next]
+    let $lpos := $phr/parent::tei:l/count(preceding-sibling::tei:l) + 1
+    return
+      <enjambment spans="{$lpos, $lpos+1}">{concat($phr/text(), " | ", $phr/following::tei:phr[1]/text())}</enjambment>
+  }</enjambments>
+  <lines>{
+    for $l at $pos in //tei:l
+    return
+      <line n="{$pos}">{string-join($l//text())}</line>
+  }</lines>
+</results>
+```
+
+Notice that the tradeoff we make in Style 1 vs. Style 2 is in either making lines harder to process, or having to resolve phrases. We can make either one work.
 
 Running the preceding XQuery against the XML of the poem creates the following output:
 
@@ -231,4 +302,80 @@ This avoids the uncommon XPath `is` operator, but it requires attention to using
    <line n="13">Of that colossal Wreck, boundless and bare</line>
    <line n="14">The lone and level sands stretch far away.”</line>
 </lines>
+```
+
+We really don't need to do this for Style 2, as we already have lines. Stripping out the phrases would be a trivial exercise in XSLT.
+
+Returning to Style 2, the XPath-only strategy wouldn't work with phrases spread over more than two lines because XPath alone cannot check recursively to see whether the “next” part of the phrase has another “next” part after it, etc. Here is an XQuery script that follows `@next` pointers:
+
+```xquery
+declare namespace djb="http://www.obdurodon.org";
+declare function djb:processPhrase($nodes as element(phr)*, $input as element(phr)) as xs:string{
+    if ($input/@next) then
+        djb:processPhrase(($nodes, $input), root($input)//phr[@xml:id eq substring-after($input/@next, '#')])
+    else
+        normalize-space(string-join(($nodes, $input), ' '))
+};
+<results>{
+    let $phrases := //phr[not(@prev)]
+    for $phrase in $phrases
+    return
+        <phrase>{djb:processPhrase((),$phrase)}</phrase>
+}</results>
+```
+
+Notice the function starting in the second line. If the current element has a `@next` attribute, the function calls **itself** with the sequence of phrases it has accumulated so far, plus the next phrase element. If that element has a `@next`, the function is called again with that phrase added to the sequence and the following phrase, if the current phrase has a `@next` (or with an empty sequence otherwise). If the current phrase doesn't have a `@next`, then the function returns the list of accumulated phrases joined together with the input node (which may be empty). This pattern is called "recursion" and is a kind of programming superpower. It is used very often in processing lists, trees, or other data structures of indeterminate size.
+
+When run against the poem, the output is:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+   <phrase>I met a traveller from an antique land,</phrase>
+   <phrase>Who said —</phrase>
+   <phrase>“Two vast and trunkless legs of stone Stand in the desart....</phrase>
+   <phrase>Near them,</phrase>
+   <phrase>on the sand,</phrase>
+   <phrase>Half sunk a shattered visage lies,</phrase>
+   <phrase>whose frown,</phrase>
+   <phrase>And wrinkled lip,</phrase>
+   <phrase>and sneer of cold command,</phrase>
+   <phrase>Tell that its sculptor well those passions read Which yet survive,</phrase>
+   <phrase>stamped on these lifeless things,</phrase>
+   <phrase>The hand that mocked them,</phrase>
+   <phrase>and the heart that fed;</phrase>
+   <phrase>And on the pedestal,</phrase>
+   <phrase>these words appear:</phrase>
+   <phrase>My name is Ozymandias,</phrase>
+   <phrase>King of Kings,</phrase>
+   <phrase>Look on my Works,</phrase>
+   <phrase>ye Mighty,</phrase>
+   <phrase>and despair!</phrase>
+   <phrase>Nothing beside remains.</phrase>
+   <phrase>Round the decay Of that colossal Wreck,</phrase>
+   <phrase>boundless and bare The lone and level sands stretch far away.”</phrase>
+</results>
+```
+
+The XSLT `<xsl:for-each-group>` element is a good choice for this task, and produces the same output as the preceding XQuery:
+
+```xslt
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:t="http://www.tei-c.org/ns/1.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="xs t"
+    version="3.0">
+    <xsl:output method="xml" indent="yes"/>
+    <xsl:template match="/">
+        <results>
+            <xsl:for-each-group select="//t:phr" group-starting-with="t:phr[not(@prev)]">
+                <result>
+                    <xsl:sequence select="normalize-space(string-join(current-group(),' '))"/>
+                </result>
+            </xsl:for-each-group>
+        </results>
+    </xsl:template>
+</xsl:stylesheet>
+
 ```

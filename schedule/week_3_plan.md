@@ -1,0 +1,1 @@
+# Week 3 plan: Pubcamp: Expressing the edition, digital publication<table><tr><th>Times</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th></tr><tr></tr></table>

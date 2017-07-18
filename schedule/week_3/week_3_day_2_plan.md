@@ -6,10 +6,7 @@
 
 Digital editions themselves may be treated as data in various ways, and they may embed data within them.
 
-### 9:00–10:30 Linked Data principles
- * URIs as identifiers
- * Modeling concepts and expressions
- * Choosing and using ontologies
+### 9:00–10:30 LOD and Editions
 
 ### 10:30–11:00 Break
 
@@ -19,8 +16,8 @@ Digital editions themselves may be treated as data in various ways, and they may
 
 ### 12:30–2:00 Lunch
 
-### 2:00–3:30 XQuery
+### 2:00–3:30 XQuery and eXist
 
 ### 3:30–4:00 Break
 
-### 4:00–4:30 Data Visualization
+### 4:00–5:30 Data Visualization

@@ -2,7 +2,13 @@
 
 ## Synopsis
 
-The first half of Week 2, Day 2 continues the focus on document modeling from the previous day, with attention to three models of text: XML (text as tree), LMNL (text as ranges), and TAG (text as graph). The second half of the day introduces the idea of developing a digital edition as a computational pipeline. We illustrate the pipeline with the Gothenburg model of textual variation, and then begin to explore the first two stages of that model, tokenization and normalization. 
+The first half of Week 2, Day 2 begins by contextualizing the XML and XPath tasks from the preceding day, and then introduces LMNL and TAG as alternative data models. The morning continues with a collaborative exploration of theorizing an edition, and especially of theorizing its development as a computational pipeline. The second half of the day continues the theme of the computational pipeline, which we illustrate with the Gothenburg model of textual variation, and we then practice with the first two stages of that model, tokenization and normalization. 
+
+## Installations
+
+* Java SE installation: <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
+* Docker (we’ll do this together in session 1)
+* Optional: Calabash and Luminescent (instructions at the bottom of this document)
 
 ## Outcome goals
 
@@ -20,7 +26,23 @@ The first half of Week 2, Day 2 continues the focus on document modeling from th
 
 ______
 
-## 9:00–10:30: Theory of edition
+
+## 9:00–10:30: Transcription with markup: LMNL
+
+### Topics and activities
+
+Time | Topic | Type
+---- | ---- | ----
+10 min | Review of [week 2, day 1](week_2_day_1_plan.md) | Discussion
+10 min | [Introduction to the LMNL data model and sawtooth syntax](lmnl_syntax.md) | Presentation
+20 min | Tag [“Ozymandias”](ozymandias.txt) in LMNL | Code lab
+20 min | Introduction to TAG and Alexandria | Presentation
+15 min | [Alexandria installation](alexandria.md) | Code lab
+15 min | Visualization of LMNL in Alexandria | Code lab
+
+## 10:30–11:00: Coffee break
+
+## 11:00–12:30: Theory of edition
 
 Are you making an edition of a manuscript or of a text? What is the role of language and orthography in your edition? How will the text be presented? How will users interact with the views? What will be the role of graphic visualization?
 
@@ -31,23 +53,18 @@ Time | Topic | Type
 30 min | Explore participant data in light of terms and concepts | Talk lab
 20 min | General discussion of Talk lab results | Discussion
 
-## 10:30–11:00: Coffee break
-
-## 11:00–12:30: Transcription with markup: LMNL
-
-### Topics and activities
-
-Time | Topic | Type
----- | ---- | ----
-20 min | [Introduction to the LMNL data model and sawtooth syntax](lmnl_syntax.md) | Presentation
-20 min | Tag [“Ozymandias”](ozymandias.txt) in LMNL | Code lab
-20 min | Introduction to TAG and Alexandria | Presentation
-20 min | [Alexandria installation](alexandria.md) | Code lab
-20 min | Visualization of LMNL in Alexandria | Code lab
-
 ## 12:30–2:00: Lunch
 
 ## 2:00–3:30: Tokenization
+
+When you have transcribed your text and are ready to process it (this could mean making a collation, or making a word cloud, or doing some experiements with stylometrics, or many other things), you will need to transform the text into a list of words. Conceptually this doesn't seem like a big deal, but many pitfalls can lie within...
+
+Time | Topic | Type
+---- | ----- | ----
+20 min | Intro and setup | Discussion, Code lab
+30 min | Tokenizing plain text | Code lab
+30 min | Tokenizing XML | Code lab
+20 min | Further challenges in tokenization | Discussion
   
 ## 3:30–4:00: Coffee break
 

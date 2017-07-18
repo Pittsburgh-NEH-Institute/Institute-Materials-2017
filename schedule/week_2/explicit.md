@@ -77,10 +77,22 @@ if we wish to divide the text into words, we cannot use the XPath `tokenize()` f
 
 In other words, either the real markup must be converted to pseudo-markup or the white space pseudo-markup must be converted to real markup. The reason one or the other of those accommodations is necessary is that white space word delimiters are pseudo-markup, although it often flies below the radar.
 
-On consequence of the pseudo-markup nature of white space is that it may also conceal overlap.
+One consequence of the pseudo-markup nature of white space is that it may also conceal overlap, which can frustrate with the tokenization strategies above. Here is a hypothetical XML excerpt with a deletion that begins in the middle of a word, representing an emendation of “… French cheeses and British biscuits.” to “… French cheese.”:
 
-**[resume here]**
- 
+```xml
+<excerpt>… French cheese<del>s and British biscuits</del>.</excerpt>
+```
+
+If we tokenize on white space in this case, the result would not be well formed. The `<del>` start tag will be bounded by the start and end tags of one word (`<w>cheese<del>s</w>`), and the corresponding `</del>` end tag will be bounded by the start and end tags of a different word (`<w>biscuits</del></w>`). We could work around this by treating the emendation as two independent deletions, i.e.:
+
+```xml
+<excerpt>… French cheese<del>s</del><del> and British biscuits</del>.</excerpt>
+```
+
+but this would distort the modeling in situations where our editorial judgment is that there was a single act of deletion.
+
+In this situation, tagging the words makes the overlap a syntactic problem, but the overlap was always present, except that it was masked initially because the white space between words was pseudo-markup.
+
 ## Sources
 
 The *scriptio continua* example is from David Barnard, Ron Hayter, Maria Karababa, George Logan, and John McFadden, “SGML-based markup for literary texts: two problems and some solutions.” *Computers and the humanities*, Vol. 22, No. 4 (1988), pp. 265–76. <http://www.jstor.org/stable/30200136>. White space as pseudo-markup is discussed in the section headed “Tokenizing mixed content” in David J. Birnbaum and Elise Thorsen, “Markup and meter: Using XML tools to teach a computer to think about versification.” Presented at Balisage: The Markup Conference 2015, Washington, DC, August 11-14, 2015. In *Proceedings of Balisage: The Markup Conference 2015.* Balisage Series on Markup Technologies, vol. 15 (2015). DOI: 10.4242/BalisageVol15.Birnbaum01. <https://www.balisage.net/Proceedings/vol15/html/Birnbaum01/BalisageVol15-Birnbaum01.html>

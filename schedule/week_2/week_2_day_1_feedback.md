@@ -1,11 +1,7 @@
 # Week 2, Day 1 feedback
 
-For each outcome objective listed below, please respond “yes”, “somewhat”, or “no”. 
-
-1. I understand how different types of research might require different types of editions.
-1. I understand the role of markup in making implicit features of my data explicit and machine-actionable.
-1. I understand the relationships among abstract model, markup syntax, and markup semantics.
-1. I am able to think about the development of a digital edition as a computational pipeline.
-1. I understand how plain text and XML represent (perhaps well, perhaps not as well) the information that inheres in my documents.
+1. What excited you most about what we did today?
+2. What did you find most challenging of what we did today?
+3. What topic addressed today is most likely to influence your future work?
 
 Please feel free to add notes, explanations, or elaborations to any individual topic, or to the day as a whole. You can email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 2, Day 1 feedback”.
