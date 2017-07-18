@@ -70,15 +70,30 @@ Time | Topic | Type
 
 ## 4:00–5:30: Normalization
 
+### Before we start
+
+1. Navigate to your fork of our Institute repo and run `git pull upstream remote`.
+2. Start Jupyter notebook either from the Anaconda launcher or by navigating to your home directory and typing `jupyter notebook`.
+3. Within the main Jupyter notebook web page, navigate to schedule/week_2 in your fork of our repo and open `Normalization.ipynb`, `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and `Integrating_XML_with_Python.ipynb`.
+
+Time | Topic | Type
+---- | ---- | ----
+30 min | About normalization (`Normalization.ipynb` notebook) | Code lab
+10 min | Unicode normalization (`Unicode-normalization.ipynb` notebook) | Presentation
+20 min | Normalization examples (`Normalization_examples.ipynb` notebook) | Presentation
+30 min | Normalizing XML input (`Integrating_XML_with_Python.ipynb` notebook) | Code lab
+
 ## Homework
 
 Please complete [Week 2, Day 2 feedback](week_2_day_2_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 2, Day 2 feedback”.
 
-## Reading (optional)
+## Unicode tools
 
-* [“What can XPath do for me?”](http://dh.obdurodon.org/introduction-xpath.xhtml)
+* Richard Ishida’s [Unicode code converter](https://r12a.github.io/apps/conversion/)
+* `xxd` (command line utility)
+* [Unicode checker](http://earthlingsoft.net/UnicodeChecker/) (Mac OS only; sorry!)
 
-## Follow-up optional
+## LMNL follow-up (optional)
 
 You can check your LMNL for well-formedness with the following procedure:
 
