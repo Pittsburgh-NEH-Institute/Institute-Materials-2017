@@ -161,7 +161,7 @@
                 of developing a digital edition as a computational pipeline. We illustrate the
                 pipeline with the Gothenburg model of textual variation, and then begin to explore
                 the first two stages of that model, tokenization and normalization.
-Java SE installation: <http://www.oracle.com/technetwork/java/javase/downloads/index.html></syn>
+Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Choose Java SE for your operating system</a></syn>
             <slot time="09:00:00">
                 <title>Theory of edition</title>
                 <desc>Are you making an edition of a manuscript or of a text? What is the role of
