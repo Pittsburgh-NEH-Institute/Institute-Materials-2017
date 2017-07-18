@@ -28,15 +28,16 @@
             
             <xsl:text>Time | Monday | Tuesday | Wednesday | Thursday | Friday&#x0a;</xsl:text>
             <xsl:text>---- | ---- | ---- | ---- | ---- | ----  &#x0a;</xsl:text>
-            <xsl:apply-templates select="day/slot"/>
+            <xsl:apply-templates select="day[1]/slot"/>
             
             
         </xsl:result-document>
         
     </xsl:template>
     <xsl:template match="slot">
+        <xsl:variable name="slotContents" as="xs:string" select="normalize-space(string-join(//slot[@time eq current()/@time and ancestor::week/@num eq current()/ancestor::week/@num]/title,' | '))"/>
         <xsl:value-of
-            select="djb:timeRange(@time, sum(act/@time)) || title[@day='Monday']"/>
+            select="djb:timeRange(@time, sum(act/@time)) || ' |', $slotContents, '&#x0a;'"/>
         <!--<xsl:value-of select="string-join(../slot/title, ' | ')"/>-->
     </xsl:template>
     
