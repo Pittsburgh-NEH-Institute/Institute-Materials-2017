@@ -3,6 +3,7 @@
 ## Synopsis
 
 The first half of Week 2, Day 2 continues the focus on document modeling from the previous day, with attention to three models of text: XML (text as tree), LMNL (text as ranges), and TAG (text as graph). The second half of the day introduces the idea of developing a digital edition as a computational pipeline. We illustrate the pipeline with the Gothenburg model of textual variation, and then begin to explore the first two stages of that model, tokenization and normalization. 
+Java SE installation: <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
 
 ## Outcome goals
 
