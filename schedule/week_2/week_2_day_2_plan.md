@@ -55,7 +55,7 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: Tokenization
+## 2:00–3:30: [Tokenization](Tokenization.ipynb)
 
 When you have transcribed your text and are ready to process it (this could mean making a collation, or making a word cloud, or doing some experiements with stylometrics, or many other things), you will need to transform the text into a list of words. Conceptually this doesn't seem like a big deal, but many pitfalls can lie within...
 
@@ -72,7 +72,7 @@ Time | Topic | Type
 
 ### Before we start
 
-1. Navigate to your fork of our Institute repo and run `git pull upstream remote`.
+1. Navigate to your fork of our Institute repo and run `git pull upstream master`.
 2. Start Jupyter notebook either from the Anaconda launcher or by navigating to your home directory and typing `jupyter notebook`.
 3. Within the main Jupyter notebook web page, navigate to schedule/week_2 in your fork of our repo and open `Normalization.ipynb`, `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and `Integrating_XML_with_Python.ipynb`.
 
