@@ -83,6 +83,7 @@ We’ll end each day with a request for feedback, based on a general version of 
 The following readings are mentioned in the individual activities for this day.
 
 * Barnard, David, Ron Hayter, Maria Karababa, George Logan, and John McFadden. [“SGML-based markup for literary texts: two problems and some solutions.”](http://www.jstor.org/stable/30200136) *Computers and the humanities*, Vol. 22, No. 4 (1988), pp. 265–76.
+* Birnbaum, David J. [“What can XPath do for me?”](http://dh.obdurodon.org/introduction-xpath.xhtml).
 * Birnbaum, David J. [What is XML and why should humanists care? An even gentler introduction to XML](http://dh.obdurodon.org/what-is-xml.xhtml).
 * Birnbaum, David J. and Elise Thorsen, [“Markup and meter: Using XML tools to teach a computer to think about versification.”](https://www.balisage.net/Proceedings/vol15/html/Birnbaum01/BalisageVol15-Birnbaum01.html) Presented at Balisage: The Markup Conference 2015, Washington, DC, August 11-14, 2015. In *Proceedings of Balisage: The Markup Conference 2015*. Balisage Series on Markup Technologies, vol. 15 (2015). DOI: 10.4242/BalisageVol15.Birnbaum01.
 * Cayless, Hugh ["Graphs, Trees, and Streams: the TEI Data Model"](http://blogs.library.duke.edu/dcthree/2013/08/26/graphs-trees-and-streams-the-tei-data-model/). Blog post (2013).
