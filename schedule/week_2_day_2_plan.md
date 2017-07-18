@@ -1,9 +1,50 @@
 # Week 2, Day 2: Tuesday, July 18
+
 The first half of Week 2, Day 2 continues the focus on document modeling from the previous day, with attention to three models of text: XML (text as tree), LMNL (text as ranges), and TAG (text as graph). The second half of the day introduces the idea of developing a digital edition as a computational pipeline. We illustrate the pipeline with the Gothenburg model of textual variation, and then begin to explore the first two stages of that model, tokenization and normalization.
-<td>09:00:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr><tr><td>Explore edition terms and concepts</td><td><a href="edition_terms_and_concepts.md">edition_terms_and_concepts.md</a></td><td>20</td><td>Discussion</td></tr><tr><td>It isn’t just words! What story are you trying to tell?</td><td><a href="sample_visualizations.md">sample_visualizations.md</a></td><td>20</td><td>Discussion</td></tr><tr><td>Explore participant data in light of terms and concepts</td><td><a href=""></a></td><td>30</td><td>Talk_lab</td></tr><tr><td>General discussion of Talk lab results</td><td><a href=""></a></td><td>20</td><td>Discussion</td></tr></table>
-<td>10:30:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr><tr><td>Coffee break</td><td><a href=""></a></td><td>30</td><td></td></tr></table>
-<td>11:00:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr><tr><td>Introduction to the LMNL data model and sawtooth syntax</td><td><a href="lmnl_syntax.md">lmnl_syntax.md</a></td><td>20</td><td>Presentation</td></tr><tr><td>Tag "Ozymandias" in LMNL</td><td><a href="ozymandias.txt">ozymandias.txt</a></td><td>20</td><td>Code_lab</td></tr><tr><td>Introduction to TAG and Alexandria</td><td><a href=""></a></td><td>20</td><td>Presentation</td></tr><tr><td>Alexandria installation</td><td><a href="alexandria.md">alexandria.md</a></td><td>20</td><td>Code_lab</td></tr><tr><td>Visualization of LMNL in Alexandria</td><td><a href=""></a></td><td>20</td><td>Code_lab</td></tr></table>
-<td>12:30:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr><tr><td>Lunch</td><td>90</td><td></td></tr></table>
-<td>14:00:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr></table>
-<td>15:30:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr><tr><td>Coffee break</td><td><a href=""></a></td><td>30</td><td></td></tr></table>
-<td>16:00:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><table><tr><th>Topic</th><th>Link</th><th>Time</th><th>Type</th></tr></table>
+
+## 9:00–10:30: Theory of edition
+
+Are you making an edition of a manuscript or of a text? What is the role of language and orthography in your edition? How will the text be presented? How will users interact with the views? What will be the role of graphic visualization?
+
+Time | Topic | Type
+---- | ---- | ---- 
+20 min | Explore edition terms and concepts | Discussion
+20 min | It isn’t just words! What story are you trying to tell? | Discussion
+30 min | Explore participant data in light of terms and concepts | Talk lab
+20 min | General discussion of Talk lab results | Discussion
+## 10:30–11:00: 
+
+Time | Topic | Type
+---- | ---- | ---- 
+30 min | Coffee break | 
+## 11:00–12:40: Transcription with markup: LMNL
+
+Time | Topic | Type
+---- | ---- | ---- 
+20 min | Introduction to the LMNL data model and sawtooth syntax | Presentation
+20 min | Tag "Ozymandias" in LMNL | Code lab
+20 min | Introduction to TAG and Alexandria | Presentation
+20 min | Alexandria installation | Code lab
+20 min | Visualization of LMNL in Alexandria | Code lab
+## 12:30–2:00: 
+
+Time | Topic | Type
+---- | ---- | ---- 
+90 min | Lunch | 
+## 2:00–2:00: Tokenization
+
+Tokenization
+
+Time | Topic | Type
+---- | ---- | ---- 
+## 3:30–4:00: 
+
+Time | Topic | Type
+---- | ---- | ---- 
+30 min | Coffee break | 
+## 4:00–4:00: Normalization
+
+Normalization
+
+Time | Topic | Type
+---- | ---- | ---- 
