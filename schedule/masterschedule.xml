@@ -70,6 +70,9 @@
                         TAG](other_models.md)</desc>
                     <outcome/>
                 </act>
+                <outcome>
+                    <goal>Where data modeling belongs in the workflow</goal>
+                </outcome>
             </slot>
             <slot time="12:30:00">
                 <title>Lunch</title>
@@ -104,6 +107,11 @@
                     <desc>[What's hard in XML](xml_limitations.md)</desc>
                     <outcome/>
                 </act>
+                <outcome>
+                    <goal>Markup as an expression of a data model; making the implicit explicit and
+                        machine-actionable</goal>
+                    <goal>The relationships among model, syntax, and markup semantics</goal>
+                </outcome>
             </slot>
             <slot time="15:30:00">
                 <title>Coffee break</title>
@@ -130,15 +138,19 @@
                 </act>
                 <act time="15" type="Presentation">
                     <desc>The [cost of workarounds during processing](overlap_xml.md)</desc>
-
                     <outcome/>
                 </act>
                 <act time="10" type="Discussion">
                     <desc>What’s so bad about markup semantics, the application layer, and
                         workarounds?</desc>
-
                     <outcome/>
                 </act>
+                <outcome>
+                    <goal>How modeling reduces iterations of the document analysis → schema
+                        development → markup pipeline</goal>
+                    <goal>XML looks like a string but it’s really a tree. What does this mean for
+                        modeling, markup, and querying or processing?</goal>
+                </outcome>
             </slot>
         </day>
         <day d="Tuesday">
@@ -183,7 +195,6 @@
                 <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
-
                 </act>
             </slot>
             <slot time="11:00:00">
@@ -207,9 +218,14 @@
                 </act>
                 <act time="20" type="Discussion">
                     <desc>General discussion of Talk lab results</desc>
-
                     <outcome/>
                 </act>
+                <outcome>
+                    <goal>Understanding modeling perspectives (tree, ranges, graph) and
+                        communities</goal>
+                    <goal>Modular development: thinking about digital edition development as a
+                        computational pipeline</goal>
+                </outcome>
             </slot>
             <slot time="12:30:00">
                 <title>Lunch</title>
@@ -232,22 +248,25 @@
                 <act time="20" type="Discussion">
                     <desc>Further challenges in tokenization</desc>
                 </act>
+                <outcome>
+                    <goal>Beginning to tokenize texts</goal>
+                </outcome>
             </slot>
             <slot time="15:30:00">
                 <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
-                    <outcome/>
                 </act>
             </slot>
             <slot time="16:00:00">
                 <title>Normalization</title>
-                <desc>Before we start: 1. Navigate to your fork of our Institute repo and run `git pull upstream
-                    remote`. 2. Start Jupyter notebook either from the Anaconda launcher or by
-                    navigating to your home directory and typing `jupyter notebook`. 3. Within the
-                    main Jupyter notebook web page, navigate to schedule/week_2 in your fork of our
-                    repo and open `Normalization.ipynb`, `Unicode-normalization.ipynb`,
-                    `Normalization_examples.ipynb`, and `Integrating_XML_with_Python.ipynb`.</desc>
+                <desc>Before we start: 1. Navigate to your fork of our Institute repo and run `git
+                    pull upstream remote`. 2. Start Jupyter notebook either from the Anaconda
+                    launcher or by navigating to your home directory and typing `jupyter notebook`.
+                    3. Within the main Jupyter notebook web page, navigate to schedule/week_2 in
+                    your fork of our repo and open `Normalization.ipynb`,
+                    `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and
+                    `Integrating_XML_with_Python.ipynb`.</desc>
                 <act time="30" type="Code_lab">
                     <desc>About normalization (`Normalization.ipynb` notebook)</desc>
                     <outcome/>
@@ -262,6 +281,9 @@
                     <desc>Normalizing XML input (`Integrating_XML_with_Python.ipynb`
                         notebook)</desc>
                 </act>
+                <outcome>
+                    <goal>Beginning to normalize texts</goal>
+                </outcome>
             </slot>
         </day>
         <day d="Wednesday">
@@ -296,7 +318,7 @@
                     <outcome/>
                 </act>
                 <act time="0">
-                    <desc>Basic XML normalizationL transforming XML to a stream of normalized (word)
+                    <desc>Basic XML normalization: transforming XML to a stream of normalized (word)
                         tokens</desc>
 
                     <outcome/>
@@ -306,6 +328,10 @@
 
                     <outcome/>
                 </act>
+                <outcome>
+                    <goal>Understanding the principles of basic text transformations like
+                        normalization and how they serve different objectives</goal>
+                </outcome>
             </slot>
             <slot time="10:30:00">
                 <title>Coffee break</title>
@@ -333,6 +359,11 @@
                     <desc>Tokenization and normalization for collation purposes</desc>
 
                 </act>
+                <outcome>
+                    <goal>Bringing together tokenization and normalization as individual pipeline
+                        steps and seeing how they can be implemented in the act of collation</goal>
+                    <goal>Normalize, tokenize, and collate text</goal>
+                </outcome>
             </slot>
             <slot time="12:30:00">
                 <title>Lunch</title>
@@ -346,6 +377,10 @@
                 <act time="0">
                     <desc>Challenging textual phenomena: Introducing Text as Graph (TAG)</desc>
                 </act>
+                <outcome>
+                    <goal>Fundamentals of TAG: hypergraph</goal>
+                    <goal>Modeling discontinuity</goal>
+                </outcome>
             </slot>
             <slot time="15:30:00">
                 <title>Coffee break</title>
@@ -353,7 +388,7 @@
                     <desc>Coffee break</desc>
                 </act>
             </slot>
-            <slot time="04:00:00">
+            <slot time="16:00:00">
                 <title>Review</title>
                 <act time="0">
                     <desc>Review</desc>
