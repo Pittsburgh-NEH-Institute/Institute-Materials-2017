@@ -1,8 +1,12 @@
-# Configuring Alexandria on your Mac (El Capitan or later)
+# Configuring Alexandria
 
 Alexandria is a text repository and database that supports Text As Graph (TAG). We’ll use it in the Institute to gain perspective on modeling by exploring non-XML structured text representations.
 
-1. Install Docker CE (community edition) for Mac from <https://store.docker.com/editions/community/docker-ce-desktop-mac>
+1. Install Docker
+* _Mac (El Capitan or later)_: Docker CE (community edition) for Mac from <https://store.docker.com/editions/community/docker-ce-desktop-mac>
+* _Windows 10 Professional or Enterprise_: Docker CE for Windows <https://docs.docker.com/docker-for-windows/install/>
+* _Windows 10 Personal, Windows 8, Windows 7_: This installs Docker CE into a GNU/Linux system in a VirtualBox <https://www.docker.com/products/docker-toolbox>
+* _GNU/Linux_: Install Docker via your package manager.
 
 2. Create a directory and copy the following file (which must be called `docker-compose.yml`) into it:
 
@@ -42,7 +46,7 @@ Alexandria is a text repository and database that supports Text As Graph (TAG). 
 	          - /Users/djb/docker:/work
 	```
 
-1. Change the last line to specify your own workspace by replacing the “djb” with your own userid. 
+1. Change the last line to specify your own workspace by replacing the “djb” with your own userid. If not on Mac also change the two occurrences of “docker.for.mac.localhost“ to the ip address of your Docker. 
 
 2. Create a subdirectory called `docker` under your home.
 
@@ -58,4 +62,4 @@ Alexandria is a text repository and database that supports Text As Graph (TAG). 
 	docker-compose pull && docker-compose up
 	```
 
-1. In a web browser, navigate to <http://localhost:8888>. Click on “examples” and then on “markup-init.ipynb”. Run the notebook from the menu bar with “Cell” → “Run All”.
+1. In a web browser, navigate to either <http://localhost:8888> or <http://ipaddress.of.your.docker:8888>. Click on “examples” and then on “markup-init.ipynb”. Run the notebook from the menu bar with “Cell” → “Run All”.
