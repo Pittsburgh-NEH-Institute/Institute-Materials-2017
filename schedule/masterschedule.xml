@@ -27,7 +27,7 @@
                     </outcome>
                 </act>
                 <act time="30" type="Discussion">
-                    <desc>[Explore project planning questions](project_planning.md)</desc>
+                    <desc>Explore [project planning questions](project_planning.md)</desc>
                     <outcome/>
                 </act>
                 <act time="25" type="Talk_lab">
@@ -53,24 +53,20 @@
                 <desc>How can the elaboration of a digital edition be modularized? How are *model*,
                     *syntax*, and *markup semantics* similar and different?</desc>
                 <act time="20" type="Presentation">
-                    <title/>
-                    <desc>[Explore model, syntax, and markup
+                    <desc>Explore [model, syntax, and markup
                         semantics](model_syntax_semantics.md)</desc>
                     <outcome/>
                 </act>
                 <act time="25" type="Discussion">
-                    <title/>
-                    <desc>[Explore plain text as model and expression](plain.md)</desc>
+                    <desc>Explore [plain text as model and expression](plain.md)</desc>
                     <outcome/>
                 </act>
                 <act time="25" type="Discussion">
-                    <title/>
-                    <desc>[Explore XML as model and expression](xml_model.md)</desc>
+                    <desc>Explore [XML as model and expression](xml_model.md)</desc>
                     <outcome/>
                 </act>
                 <act time="20" type="Presentation">
-                    <title/>
-                    <desc>[Explore other models and their expressions: LMNL, GODDAG, TexMECS,
+                    <desc>Explore [other models and their expressions: LMNL, GODDAG, TexMECS,
                         TAG](other_models.md)</desc>
                     <outcome/>
                 </act>
@@ -86,29 +82,25 @@
                 <desc>How are documents like trees and how are they different? What is represented
                     by the model alone (the XML tree), and what requires markup semantics (schema)?
                     What’s hard in XML and how do we do it anyway?</desc>
-                <act time="20" type="Code_lab">
-                    <desc>[Create your own fork of our Institute GitHub repository](fork.md)</desc>
+                <act time="10" type="Code_lab">
+                    <desc>Create [your own fork of our Institute GitHub repository](fork.md)</desc>
+                    <outcome/>
+                </act>
+                <act time="20" type="Discussion">
+                    <desc>XML as a tree ([OHCO: “ordered hierarchy of content
+                        objects”])(ohco.md)</desc>
                     <outcome/>
                 </act>
                 <act time="15" type="Discussion">
-                    <title/>
-                    <desc>XML as a tree [(OHCO: “ordered hierarchy of content
-                        objects”)](ohco.md)</desc>
-                    <outcome/>
-                </act>
-                <act time="15" type="Discussion">
-                    <title/>
                     <desc>[Making the implicit explicit with markup](explicit.md)</desc>
                     <outcome/>
                 </act>
-                <act time="25" type="Code_lab">
-                    <title/>
-                    <desc>Tag "[Oxymandias](ozymandias.txt)" in XML (e.g., lines, sentences,
+                <act time="30" type="Code_lab">
+                    <desc>Tag ["Oxymandias"](ozymandias.txt) in XML (e.g., lines, sentences,
                         phrases, speakers, words, feet, syllables, stress)</desc>
                     <outcome/>
                 </act>
                 <act time="15" type="Discussion">
-                    <title/>
                     <desc>[What's hard in XML](xml_limitations.md)</desc>
                     <outcome/>
                 </act>
@@ -123,20 +115,21 @@
             <slot time="16:00:00">
                 <title>XML as a tree / XPath</title>
                 <act time="10" type="Discussion">
-                    <desc>[Review of Week 2, Day 1](week_2_day_1_plan.md), Modeling and
+                    <desc>Review of [Week 2, Day 1](week_2_day_1_plan.md), Modeling and
                         communities</desc>
                 </act>
                 <act time="35" type="Code_lab">
-                    <desc>[XPath](xpath.md) as a way of navigating [the tree](hamlet.xml)</desc>
+                    <desc>[XPath as a way of navigating the tree](xpath.md) (using
+                        [Hamlet](hamlet.xml))</desc>
                     <outcome/>
                 </act>
                 <act time="20" type="Code_lab">
-                    <desc> XPath navigation of overlap in “[Ozymandias](ozymandias.xml)”: Find 1)
+                    <desc> XPath navigation of overlap in ["Ozymandias"](ozymandias.xml): Find 1)
                         phrases, 2) enjambments, and 3) metrical lines</desc>
                     <outcome/>
                 </act>
                 <act time="15" type="Presentation">
-                    <desc>[The cost of workarounds during processing](overlap_xml.md)</desc>
+                    <desc>The [cost of workarounds during processing](overlap_xml.md)</desc>
 
                     <outcome/>
                 </act>
@@ -160,28 +153,29 @@
                 &lt;"http://www.oracle.com/technetwork/java/javase/downloads/index.html">. Choose
                 Java SE for your operating system</syn>
             <slot time="09:00:00">
-                <title>Theory of edition</title>
-                <desc>Are you making an edition of a manuscript or of a text? What is the role of
-                    language and orthography in your edition? How will the text be presented? How
-                    will users interact with the views? What will be the role of graphic
-                    visualization?</desc>
-                <act time="20" type="Discussion">
-                    <desc>[Explore edition terms and concepts](edition_terms_and_concepts.md)</desc>
+                <title>Transcription with markup: LMNL</title>
+                <act time="10" type="Discussion">
+                    <desc>Review of [week 2, day 1](week_2_day_1_plan.md)</desc>
                     <outcome/>
                 </act>
-                <act time="20" type="Discussion">
-                    <desc>It isn’t just words! [What story are you trying to
-                        tell?](sample_visualizations.md)</desc>
+                <act time="10" type="Presentation">
+                    <desc>[Introduction to the LMNL data model and sawtooth
+                        syntax](lmnl_syntax.md)</desc>
+                </act>
+                <act time="20" type="Code_lab">
+                    <desc>Tag "[Ozymandias](ozymandias.txt)" in LMNL</desc>
                     <outcome/>
                 </act>
-                <act time="30" type="Talk_lab">
-                    <desc>Explore participant data in light of terms and concepts</desc>
-
+                <act time="20" type="Presentation">
+                    <desc>Introduction to TAG and Alexandria</desc>
                     <outcome/>
                 </act>
-                <act time="20" type="Discussion">
-                    <desc>General discussion of Talk lab results</desc>
-
+                <act time="15" type="Code_lab">
+                    <desc>[Alexandria installation](alexandria.md)</desc>
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Visualization of LMNL in Alexandria</desc>
                     <outcome/>
                 </act>
             </slot>
@@ -193,28 +187,26 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>Transcription with markup: LMNL</title>
-                <act time="20" type="Presentation">
-                    <desc>Introduction to the [LMNL data model](lmnl_syntax.md) and sawtooth
-                        syntax</desc>
-
+                <title>Theory of edition</title>
+                <desc>Are you making an edition of a manuscript or of a text? What is the role of
+                    language and orthography in your edition? How will the text be presented? How
+                    will users interact with the views? What will be the role of graphic
+                    visualization?</desc>
+                <act time="20" type="Discussion">
+                    <desc>Explore [edition terms and concepts](edition_terms_and_concepts.md)</desc>
                     <outcome/>
                 </act>
-                <act time="20" type="Code_lab">
-                    <desc>Tag "[Ozymandias](ozymandias.txt)" in LMNL</desc>
+                <act time="20" type="Discussion">
+                    <desc>It isn’t just words! [What story are you trying to
+                        tell?](sample_visualizations.md)</desc>
                     <outcome/>
                 </act>
-                <act time="20" type="Presentation">
-                    <desc>Introduction to TAG and Alexandria</desc>
-
+                <act time="30" type="Talk_lab">
+                    <desc>Explore participant data in light of terms and concepts</desc>
                     <outcome/>
                 </act>
-                <act time="20" type="Code_lab">
-                    <desc>[Alexandria installation](alexandria.md)</desc>
-                    <outcome/>
-                </act>
-                <act time="20" type="Code_lab">
-                    <desc>Visualization of LMNL in Alexandria</desc>
+                <act time="20" type="Discussion">
+                    <desc>General discussion of Talk lab results</desc>
 
                     <outcome/>
                 </act>
@@ -227,27 +219,48 @@
             </slot>
             <slot time="14:00:00">
                 <title>Tokenization</title>
-                <act time="0">
-                    <desc>Tokenization</desc>
-
+                <act time="10" type="Discussion">
+                    <desc>Intro and setup</desc>
                     <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Tokenizing plain text</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Tokenizing XML</desc>
+                </act>
+                <act time="20" type="Discussion">
+                    <desc>Further challenges in tokenization</desc>
                 </act>
             </slot>
             <slot time="15:30:00">
                 <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
-
                     <outcome/>
                 </act>
             </slot>
             <slot time="16:00:00">
                 <title>Normalization</title>
-                <act time="0">
-                    <title>Normalization</title>
-                    <desc>Normalization</desc>
-
+                <desc>Before we start: 1. Navigate to your fork of our Institute repo and run `git pull upstream
+                    remote`. 2. Start Jupyter notebook either from the Anaconda launcher or by
+                    navigating to your home directory and typing `jupyter notebook`. 3. Within the
+                    main Jupyter notebook web page, navigate to schedule/week_2 in your fork of our
+                    repo and open `Normalization.ipynb`, `Unicode-normalization.ipynb`,
+                    `Normalization_examples.ipynb`, and `Integrating_XML_with_Python.ipynb`.</desc>
+                <act time="30" type="Code_lab">
+                    <desc>About normalization (`Normalization.ipynb` notebook)</desc>
                     <outcome/>
+                </act>
+                <act time="10" type="Presentation">
+                    <desc>Unicode normalization (`Unicode-normalization.ipynb` notebook)</desc>
+                </act>
+                <act time="20" type="Presentation">
+                    <desc>Normalization examples (`Normalization_examples.ipynb` notebook)</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Normalizing XML input (`Integrating_XML_with_Python.ipynb`
+                        notebook)</desc>
                 </act>
             </slot>
         </day>
@@ -343,7 +356,6 @@
             <slot time="04:00:00">
                 <title>Review</title>
                 <act time="0">
-                    <title>Review</title>
                     <desc>Review</desc>
                 </act>
             </slot>
@@ -384,7 +396,6 @@
             <slot time="11:00:00">
                 <title>Text analytics 1 (cont.)</title>
                 <act time="0">
-                    <title>Text analytics 1 (cont.)</title>
                     <desc>Bag of words, text processing, text as tables, query the tables
                         (continued) </desc>
                 </act>
@@ -503,7 +514,6 @@
             <slot time="11:00:00">
                 <title>Text analytics 2 (cont.)</title>
                 <act time="0">
-                    <title>Text analytics 2 (cont.)</title>
                     <desc>Unsupervised learning, cluster analysis, PCA, paleographic analysis
                         (continued)</desc>
 
@@ -585,7 +595,6 @@
             <slot time="11:00:00">
                 <title>Introducing CETEIcean / Publishing on GitHub Pages</title>
                 <act time="0">
-                    <title>Introducing CETEIcean / Publishing on GitHub Pages</title>
                     <desc>Publishing on GitHub pages</desc>
                 </act>
             </slot>
@@ -598,7 +607,6 @@
             <slot time="14:00:00">
                 <title>Next steps: Customizing your edition with CSS and Javascript</title>
                 <act time="0">
-                    <title>Next steps: Customizing your edition with CSS and Javascript</title>
                     <desc>Customizing your edition with CSS and Javascript</desc>
                 </act>
             </slot>
@@ -611,7 +619,6 @@
             <slot time="16:00:00">
                 <title>Web Publishing Frameworks: Django</title>
                 <act time="0">
-                    <title>Web Publishing Frameworks: Django</title>
                     <desc>Next steps: Beyond GitHub pages</desc>
                 </act>
 
@@ -670,7 +677,6 @@
             <slot time="14:00:00">
                 <title>XQuery and eXist</title>
                 <act time="0">
-                    <title>XQuery and eXist</title>
                     <desc>XQuery</desc>
                 </act>
             </slot>
@@ -683,7 +689,6 @@
             <slot time="16:00:00">
                 <title>Data visualization</title>
                 <act time="0">
-                    <title>Data visualization</title>
                     <desc>Data visualization</desc>
                 </act>
             </slot>
