@@ -56,6 +56,15 @@ Time | Topic | Type
 ## 12:30–2:00: Lunch
 
 ## 2:00–3:30: Tokenization
+
+When you have transcribed your text and are ready to process it (this could mean making a collation, or making a word cloud, or doing some experiements with stylometrics, or many other things), you will need to transform the text into a list of words. Conceptually this doesn't seem like a big deal, but many pitfalls can lie within...
+
+Time | Topic | Type
+---- | ----- | ----
+20 min | Intro and setup | Discussion, Code lab
+30 min | Tokenizing plain text | Code lab
+30 min | Tokenizing XML | Code lab
+20 min | Further challenges in tokenization | Discussion
   
 ## 3:30–4:00: Coffee break
 
