@@ -103,7 +103,7 @@
                 </act>
                 <act time="25" type="Code_lab">
                     <title/>
-                    <desc>Tag ["Oxymandias"](ozymandias.txt) in XML (e.g., lines, sentences,
+                    <desc>Tag "[Oxymandias](ozymandias.txt)" in XML (e.g., lines, sentences,
                         phrases, speakers, words, feet, syllables, stress)</desc>
                     <outcome/>
                 </act>
@@ -123,8 +123,8 @@
             <slot time="16:00:00">
                 <title>XML as a tree / XPath</title>
                 <act time="10" type="Discussion">
-                    <desc>[Review of Week 2, Day 1 Modeling and
-                        communities](week_2_day_1_plan.md)</desc>
+                    <desc>[Review of Week 2, Day 1](week_2_day_1_plan.md), Modeling and
+                        communities</desc>
                 </act>
                 <act time="35" type="Code_lab">
                     <desc>[XPath](xpath.md) as a way of navigating [the tree](hamlet.xml)</desc>
@@ -156,8 +156,9 @@
                 of developing a digital edition as a computational pipeline. We illustrate the
                 pipeline with the Gothenburg model of textual variation, and then begin to explore
                 the first two stages of that model, tokenization and normalization. Java SE
-                installation: &lt;"http://www.oracle.com/technetwork/java/javase/downloads/index.html">.  Choose
-                    Java SE for your operating system</syn>
+                installation:
+                &lt;"http://www.oracle.com/technetwork/java/javase/downloads/index.html">. Choose
+                Java SE for your operating system</syn>
             <slot time="09:00:00">
                 <title>Theory of edition</title>
                 <desc>Are you making an edition of a manuscript or of a text? What is the role of
@@ -169,7 +170,8 @@
                     <outcome/>
                 </act>
                 <act time="20" type="Discussion">
-                    <desc>[It isn’t just words! What story are you trying to tell?](sample_visualizations.md)</desc>
+                    <desc>It isn’t just words! [What story are you trying to
+                        tell?](sample_visualizations.md)</desc>
                     <outcome/>
                 </act>
                 <act time="30" type="Talk_lab">
@@ -184,7 +186,7 @@
                 </act>
             </slot>
             <slot time="10:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
 
@@ -218,20 +220,21 @@
                 </act>
             </slot>
             <slot time="12:30:00">
-                <title/>
+                <title>Lunch</title>
                 <act time="90">
                     <desc>Lunch</desc>
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>Tokenization</title>  
-               <act time="0">
-                <desc>Tokenization</desc>
+                <title>Tokenization</title>
+                <act time="0">
+                    <desc>Tokenization</desc>
 
-                <outcome/></act>
+                    <outcome/>
+                </act>
             </slot>
             <slot time="15:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
 
@@ -239,12 +242,13 @@
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title/>
+                <title>Normalization</title>
                 <act time="0">
                     <title>Normalization</title>
-                <desc>Normalization</desc>
+                    <desc>Normalization</desc>
 
-                <outcome/></act>
+                    <outcome/>
+                </act>
             </slot>
         </day>
         <day d="Wednesday">
@@ -291,7 +295,7 @@
                 </act>
             </slot>
             <slot time="10:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
 
@@ -318,7 +322,7 @@
                 </act>
             </slot>
             <slot time="12:30:00">
-                <title/>
+                <title>Lunch</title>
                 <act time="90">
                     <desc>Lunch</desc>
 
@@ -326,18 +330,22 @@
             </slot>
             <slot time="14:00:00">
                 <title>Challenging textual phenomena: Introducing Text as Graph (TAG)</title>
-                <act time="0"><desc>Challenging textual phenomena: Introducing Text as Graph (TAG)</desc></act>
+                <act time="0">
+                    <desc>Challenging textual phenomena: Introducing Text as Graph (TAG)</desc>
+                </act>
             </slot>
             <slot time="15:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="04:00:00">
-                <title/>
-                <act time="0"><title>Review</title>
-                <desc>Review</desc></act>
+                <title>Review</title>
+                <act time="0">
+                    <title>Review</title>
+                    <desc>Review</desc>
+                </act>
             </slot>
         </day>
         <day d="Thursday">
@@ -368,20 +376,22 @@
                 </act>
             </slot>
             <slot time="10:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title/>
+                <title>Text analytics 1 (cont.)</title>
                 <act time="0">
                     <title>Text analytics 1 (cont.)</title>
-                <desc>Bag of words, text processing, text as tables, query the tables (continued) </desc></act>
+                    <desc>Bag of words, text processing, text as tables, query the tables
+                        (continued) </desc>
+                </act>
 
             </slot>
             <slot time="12:30:00">
-                <title/>
+                <title>Lunch</title>
                 <act time="90">
                     <desc>Lunch</desc>
                 </act>
@@ -421,7 +431,7 @@
                 </outcome>
             </slot>
             <slot time="15:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
@@ -484,22 +494,24 @@
                 </act>
             </slot>
             <slot time="10:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
 
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title/>
-                <act time="0"><title>Text analytics 2 (cont.)</title>
-                <desc>Unsupervised learning, cluster analysis, PCA, paleographic analysis
-                    (continued)</desc>
+                <title>Text analytics 2 (cont.)</title>
+                <act time="0">
+                    <title>Text analytics 2 (cont.)</title>
+                    <desc>Unsupervised learning, cluster analysis, PCA, paleographic analysis
+                        (continued)</desc>
 
-                <outcome/></act>
+                    <outcome/>
+                </act>
             </slot>
             <slot time="12:30:00">
-                <title/>
+                <title>Lunch</title>
                 <act time="90">
                     <desc>Lunch</desc>
                 </act>
@@ -521,7 +533,7 @@
                 </act>
             </slot>
             <slot time="15:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
@@ -565,37 +577,43 @@
                 </act>
             </slot>
             <slot time="10:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title/>
-                <act time="0"><title>Introducing CETEIcean / Publishing on GitHub Pages</title>
-                <desc>Publishing on GitHub pages</desc></act>
+                <title>Introducing CETEIcean / Publishing on GitHub Pages</title>
+                <act time="0">
+                    <title>Introducing CETEIcean / Publishing on GitHub Pages</title>
+                    <desc>Publishing on GitHub pages</desc>
+                </act>
             </slot>
             <slot time="12:30:00">
-                <title/>
+                <title>Lunch</title>
                 <act time="0">
-                    <title>Lunch</title>
-                <desc>Lunch</desc></act>
+                    <desc>Lunch</desc>
+                </act>
             </slot>
             <slot time="14:00:00">
-                <title/>
-                <act time="0"><title>Next steps: Customizing your edition with CSS and Javascript</title>
-                <desc>Customizing your edition with CSS and Javascript</desc></act>
+                <title>Next steps: Customizing your edition with CSS and Javascript</title>
+                <act time="0">
+                    <title>Next steps: Customizing your edition with CSS and Javascript</title>
+                    <desc>Customizing your edition with CSS and Javascript</desc>
+                </act>
             </slot>
             <slot time="15:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title/>
-                <act time="0"><title>Web Publishing Frameworks: Django</title>
-                <desc>Next steps: Beyond GitHub pages</desc></act>
+                <title>Web Publishing Frameworks: Django</title>
+                <act time="0">
+                    <title>Web Publishing Frameworks: Django</title>
+                    <desc>Next steps: Beyond GitHub pages</desc>
+                </act>
 
             </slot>
         </day>
@@ -623,7 +641,7 @@
                 </act>
             </slot>
             <slot time="10:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
@@ -644,25 +662,30 @@
             </slot>
             <slot time="12:30:00">
                 <title>Lunch</title>
-                <act time="90"><title/>
-                <desc>Lunch</desc></act>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
 
             </slot>
             <slot time="14:00:00">
-                <title/>
-                <act time="0"><title>XQuery and eXist</title>
-                <desc>XQuery</desc></act>
+                <title>XQuery and eXist</title>
+                <act time="0">
+                    <title>XQuery and eXist</title>
+                    <desc>XQuery</desc>
+                </act>
             </slot>
             <slot time="15:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title/>
-                <act time="0"><title>Data visualization</title>
-                <desc>Data visualization</desc></act>
+                <title>Data visualization</title>
+                <act time="0">
+                    <title>Data visualization</title>
+                    <desc>Data visualization</desc>
+                </act>
             </slot>
         </day>
         <day d="Wednesday">
@@ -671,37 +694,44 @@
             <slot time="09:00:00">
                 <title>Getting to know and use the TEI stylesheets</title>
                 <act time="0">
-                <desc/></act>
+                    <desc/>
+                </act>
             </slot>
             <slot time="10:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="11:00:00">
                 <title>TEI Publisher</title>
-                <act time="0"><desc/></act>
+                <act time="0">
+                    <desc/>
+                </act>
             </slot>
             <slot time="12:30:00">
-                <title/>
+                <title>Lunch</title>
                 <act time="90">
                     <desc>Lunch</desc>
                 </act>
             </slot>
             <slot time="14:00:00">
                 <title/>
-                <act time="0"><desc/></act>
+                <act time="0">
+                    <desc/>
+                </act>
             </slot>
             <slot time="15:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="16:00:00">
                 <title/>
-                <act time="0"><desc/></act>
+                <act time="0">
+                    <desc/>
+                </act>
             </slot>
         </day>
         <day d="Thursday">
@@ -709,37 +739,45 @@
             <syn/>
             <slot time="09:00:00">
                 <title>The edition and APIs</title>
-                <act time="0"><desc/></act>
+                <act time="0">
+                    <desc/>
+                </act>
             </slot>
             <slot time="10:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="11:00:00">
                 <title>Using APIs in your edition</title>
-                <act time="0"><desc/></act>
+                <act time="0">
+                    <desc/>
+                </act>
             </slot>
             <slot time="12:30:00">
-                <title/>
+                <title>Lunch</title>
                 <act time="90">
                     <desc>Lunch</desc>
                 </act>
             </slot>
             <slot time="14:00:00">
                 <title>Building your own API</title>
-                <act time="0"><desc/></act>
+                <act time="0">
+                    <desc/>
+                </act>
             </slot>
             <slot time="15:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="16:00:00">
                 <title>Licensing, archiving, and planning for the future</title>
-                <act time="0"><desc/></act>
+                <act time="0">
+                    <desc/>
+                </act>
             </slot>
         </day>
         <day d="Friday">
@@ -747,37 +785,45 @@
             <syn/>
             <slot time="09:00:00">
                 <title>Publishing strategies</title>
-                <act time="0"><desc/></act>
+                <act time="0">
+                    <desc/>
+                </act>
             </slot>
             <slot time="10:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="11:00:00">
                 <title>Sustainability</title>
-                <act time="0"><desc/></act>
+                <act time="0">
+                    <desc/>
+                </act>
             </slot>
             <slot time="12:30:00">
-                <title/>
+                <title>Lunch</title>
                 <act time="90">
                     <desc>Lunch</desc>
                 </act>
             </slot>
             <slot time="14:00:00">
                 <title/>
-                <act time="0"><desc/></act>
+                <act time="0">
+                    <desc/>
+                </act>
             </slot>
             <slot time="15:30:00">
-                <title/>
+                <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
             </slot>
             <slot time="16:00:00">
                 <title>Wrapping up: What have we learned?</title>
-                <act time="0"><desc/></act>
+                <act time="0">
+                    <desc/>
+                </act>
             </slot>
         </day>
     </week>
