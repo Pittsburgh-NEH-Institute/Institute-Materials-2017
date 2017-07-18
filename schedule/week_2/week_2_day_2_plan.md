@@ -2,8 +2,13 @@
 
 ## Synopsis
 
-The first half of Week 2, Day 2 begins by contextualizing the XML and XPath tasks the day before, and then introduces LMNL and TAG as alternative data models.  The second half of the day introduces the idea of developing a digital edition as a computational pipeline. We illustrate the pipeline with the Gothenburg model of textual variation, and then begin to explore the first two stages of that model, tokenization and normalization. 
-Java SE installation: <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
+The first half of Week 2, Day 2 begins by contextualizing the XML and XPath tasks from the preceding day, and then introduces LMNL and TAG as alternative data models. The morning continues with a collaborative exploration of theorizing an edition, and especially of theorizing its development as a computational pipeline. The second half of the day continues the theme of the computational pipeline, which we illustrate with the Gothenburg model of textual variation, and we then practice with the first two stages of that model, tokenization and normalization. 
+
+## Installations
+
+* Java SE installation: <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
+* Docker (we’ll do this together in session 1)
+* Optional: Calabash and Luminescent (instructions at the bottom of this document)
 
 ## Outcome goals
 
