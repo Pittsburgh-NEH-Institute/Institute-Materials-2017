@@ -20,22 +20,20 @@
                     of your edition, and what are the resources at your disposal and the constraints
                     on your efforts?</desc>
                 <act time="10" type="Presentation">
-                    <desc>Overview of Week 2</desc>
-                    <link>topics.md</link>
+                    <desc>[Overview of Week 2](topics.md)</desc>
                     <outcome>
                         <goal>Don’t touch that keyboard! Planning *your* edition: starting with
                             research questions</goal>
                     </outcome>
                 </act>
                 <act time="30" type="Discussion">
-                    <desc>Explore project planning questions</desc>
-                    <link>project_planning.md</link>
+                    <desc>[Explore project planning questions](project_planning.md)</desc>
                     <outcome/>
                 </act>
                 <act time="25" type="Talk_lab">
                     <desc>Apply project planning questions to your own project (individually or
                         collaboratively)</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
                 <act time="25" type="Discussion">
@@ -48,31 +46,32 @@
                 <act time="30">
                     <desc>Coffee break</desc>
                 </act>
-                <link/>
+
             </slot>
             <slot time="11:00:00">
                 <title>Model, syntax, and markup semantics</title>
                 <desc>How can the elaboration of a digital edition be modularized? How are *model*,
                     *syntax*, and *markup semantics* similar and different?</desc>
                 <act time="20" type="Presentation">
-                    <desc>Explore model, syntax, and markup semantics</desc>
-                    <link>model_syntax_semantics</link>
+                    <title/>
+                    <desc>[Explore model, syntax, and markup
+                        semantics](model_syntax_semantics.md)</desc>
                     <outcome/>
                 </act>
                 <act time="25" type="Discussion">
-                    <desc>Explore plain text as model and expression</desc>
-                    <link>plain.md</link>
+                    <title/>
+                    <desc>[Explore plain text as model and expression](plain.md)</desc>
                     <outcome/>
                 </act>
                 <act time="25" type="Discussion">
-                    <desc>Explore XML as model and expression</desc>
-                    <link>xml_model.md</link>
+                    <title/>
+                    <desc>[Explore XML as model and expression](xml_model.md)</desc>
                     <outcome/>
                 </act>
                 <act time="20" type="Presentation">
-                    <desc> Explore other models and their expressions: LMNL, GODDAG, TexMECS,
-                        TAG</desc>
-                    <link>other_models.md</link>
+                    <title/>
+                    <desc>[Explore other models and their expressions: LMNL, GODDAG, TexMECS,
+                        TAG](other_models.md)</desc>
                     <outcome/>
                 </act>
             </slot>
@@ -80,7 +79,6 @@
                 <title>Lunch</title>
                 <act time="90">
                     <desc>Lunch</desc>
-                    <link/>
                 </act>
             </slot>
             <slot time="14:00:00">
@@ -89,29 +87,29 @@
                     by the model alone (the XML tree), and what requires markup semantics (schema)?
                     What’s hard in XML and how do we do it anyway?</desc>
                 <act time="20" type="Code_lab">
-                    <desc>Create your own fork of our Institute GitHub repository</desc>
-                    <link>fork.md</link>
+                    <desc>[Create your own fork of our Institute GitHub repository](fork.md)</desc>
                     <outcome/>
                 </act>
                 <act time="15" type="Discussion">
-                    <desc>XML as a tree (OHCO: “ordered hierarchy of content objects”)</desc>
-                    <link>ohco.md</link>
+                    <title/>
+                    <desc>XML as a tree [(OHCO: “ordered hierarchy of content
+                        objects”)](ohco.md)</desc>
                     <outcome/>
                 </act>
                 <act time="15" type="Discussion">
-                    <desc>Making the implicit explicit with markup</desc>
-                    <link>explicit.md</link>
+                    <title/>
+                    <desc>[Making the implicit explicit with markup](explicit.md)</desc>
                     <outcome/>
                 </act>
                 <act time="25" type="Code_lab">
-                    <desc>Tag "Oxymandias" in XML (e.g., lines, sentences, phrases, speakers, words,
-                        feet, syllables, stress)</desc>
-                    <link>ozymandias.txt</link>
+                    <title/>
+                    <desc>Tag ["Oxymandias"](ozymandias.txt) in XML (e.g., lines, sentences,
+                        phrases, speakers, words, feet, syllables, stress)</desc>
                     <outcome/>
                 </act>
                 <act time="15" type="Discussion">
-                    <desc>What's hard in XML</desc>
-                    <link>xml_limitations.md</link>
+                    <title/>
+                    <desc>[What's hard in XML](xml_limitations.md)</desc>
                     <outcome/>
                 </act>
             </slot>
@@ -119,36 +117,33 @@
                 <title>Coffee break</title>
                 <act time="30">
                     <desc>Coffee break</desc>
-                    <link/>
+
                 </act>
             </slot>
             <slot time="16:00:00">
                 <title>XML as a tree / XPath</title>
                 <act time="10" type="Discussion">
-                    <desc>Review of Week 2, Day 1 Modeling and communities</desc>
-                    <link>week_2_day_1_plan.md</link>
+                    <desc>[Review of Week 2, Day 1 Modeling and
+                        communities](week_2_day_1_plan.md)</desc>
                 </act>
                 <act time="35" type="Code_lab">
-                    <desc>XPath as a way of navigating the tree</desc>
-                    <link>xpath.md</link>
-                    <link>hamlet.xml</link>
+                    <desc>[XPath](xpath.md) as a way of navigating [the tree](hamlet.xml)</desc>
                     <outcome/>
                 </act>
                 <act time="20" type="Code_lab">
-                    <desc> XPath navigation of overlap in “Ozymandias”: Find 1) phrases, 2)
-                        enjambments, and 3) metrical lines</desc>
-                    <link>ozymandias.xml</link>
+                    <desc> XPath navigation of overlap in “[Ozymandias](ozymandias.xml)”: Find 1)
+                        phrases, 2) enjambments, and 3) metrical lines</desc>
                     <outcome/>
                 </act>
                 <act time="15" type="Presentation">
-                    <desc>The cost of workarounds during processing</desc>
-                    <link>overlap_xml.md</link>
+                    <desc>[The cost of workarounds during processing](overlap_xml.md)</desc>
+
                     <outcome/>
                 </act>
                 <act time="10" type="Discussion">
                     <desc>What’s so bad about markup semantics, the application layer, and
                         workarounds?</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
             </slot>
@@ -160,8 +155,9 @@
                 as ranges), and TAG (text as graph). The second half of the day introduces the idea
                 of developing a digital edition as a computational pipeline. We illustrate the
                 pipeline with the Gothenburg model of textual variation, and then begin to explore
-                the first two stages of that model, tokenization and normalization.
-Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Choose Java SE for your operating system</a></syn>
+                the first two stages of that model, tokenization and normalization. Java SE
+                installation: &lt;"http://www.oracle.com/technetwork/java/javase/downloads/index.html">.  Choose
+                    Java SE for your operating system</syn>
             <slot time="09:00:00">
                 <title>Theory of edition</title>
                 <desc>Are you making an edition of a manuscript or of a text? What is the role of
@@ -169,23 +165,21 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
                     will users interact with the views? What will be the role of graphic
                     visualization?</desc>
                 <act time="20" type="Discussion">
-                    <desc>Explore edition terms and concepts</desc>
-                    <link>edition_terms_and_concepts.md</link>
+                    <desc>[Explore edition terms and concepts](edition_terms_and_concepts.md)</desc>
                     <outcome/>
                 </act>
                 <act time="20" type="Discussion">
-                    <desc>It isn’t just words! What story are you trying to tell?</desc>
-                    <link>sample_visualizations.md</link>
+                    <desc>[It isn’t just words! What story are you trying to tell?](sample_visualizations.md)</desc>
                     <outcome/>
                 </act>
                 <act time="30" type="Talk_lab">
                     <desc>Explore participant data in light of terms and concepts</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
                 <act time="20" type="Discussion">
                     <desc>General discussion of Talk lab results</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
             </slot>
@@ -193,34 +187,33 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
                 <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
-                    <link/>
+
                 </act>
             </slot>
             <slot time="11:00:00">
                 <title>Transcription with markup: LMNL</title>
                 <act time="20" type="Presentation">
-                    <desc>Introduction to the LMNL data model and sawtooth syntax</desc>
-                    <link>lmnl_syntax.md</link>
+                    <desc>Introduction to the [LMNL data model](lmnl_syntax.md) and sawtooth
+                        syntax</desc>
+
                     <outcome/>
                 </act>
                 <act time="20" type="Code_lab">
-                    <desc>Tag "Ozymandias" in LMNL</desc>
-                    <link>ozymandias.txt</link>
+                    <desc>Tag "[Ozymandias](ozymandias.txt)" in LMNL</desc>
                     <outcome/>
                 </act>
                 <act time="20" type="Presentation">
                     <desc>Introduction to TAG and Alexandria</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
                 <act time="20" type="Code_lab">
-                    <desc>Alexandria installation</desc>
-                    <link>alexandria.md</link>
+                    <desc>[Alexandria installation](alexandria.md)</desc>
                     <outcome/>
                 </act>
                 <act time="20" type="Code_lab">
                     <desc>Visualization of LMNL in Alexandria</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
             </slot>
@@ -231,24 +224,27 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>Tokenization</title>
+                <title>Tokenization</title>  
+               <act time="0">
                 <desc>Tokenization</desc>
-                <link/>
-                <outcome/>
+
+                <outcome/></act>
             </slot>
             <slot time="15:30:00">
                 <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title>Normalization</title>
+                <title/>
+                <act time="0">
+                    <title>Normalization</title>
                 <desc>Normalization</desc>
-                <link/>
-                <outcome/>
+
+                <outcome/></act>
             </slot>
         </day>
         <day d="Wednesday">
@@ -261,36 +257,36 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
                 computational pipelines.</syn>
             <slot time="09:00:00">
                 <title>Normalization</title>
-                <act time="">
+                <act time="0">
                     <desc>Review of Week 2, Day 2: computational pipelines, modeling, processing,
                         and tokenization</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Basic normalization</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>NLTK</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Regular expressions</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Basic XML normalizationL transforming XML to a stream of normalized (word)
                         tokens</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Hands-on exercise with NLTK and regular expressions</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
             </slot>
@@ -298,39 +294,39 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
                 <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
-                    <link/>
+
                 </act>
             </slot>
             <slot time="11:00:00">
                 <title>Collation</title>
-                <act time="">
+                <act time="0">
                     <desc>Modeling and collation</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Collation within editorial theory</desc>
-                    <link/>
+
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Collation practice</desc>
-                    <link/>
+
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Tokenization and normalization for collation purposes</desc>
-                    <link/>
+
                 </act>
             </slot>
             <slot time="12:30:00">
                 <title/>
                 <act time="90">
                     <desc>Lunch</desc>
-                    <link/>
+
                 </act>
             </slot>
             <slot time="14:00:00">
                 <title>Challenging textual phenomena: Introducing Text as Graph (TAG)</title>
-                <desc>Challenging textual phenomena: Introducing Text as Graph (TAG)</desc>
+                <act time="0"><desc>Challenging textual phenomena: Introducing Text as Graph (TAG)</desc></act>
             </slot>
             <slot time="15:30:00">
                 <title/>
@@ -339,8 +335,9 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
                 </act>
             </slot>
             <slot time="04:00:00">
-                <title>Review</title>
-                <desc>Review</desc>
+                <title/>
+                <act time="0"><title>Review</title>
+                <desc>Review</desc></act>
             </slot>
         </day>
         <day d="Thursday">
@@ -349,24 +346,24 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             <slot time="09:00:00">
                 <title>Text analytics 1</title>
                 <desc>Text analytics 1</desc>
-                <act time="">
+                <act time="0">
                     <desc>Bag of words</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Text processing</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Text as tables</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Query the tables</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
             </slot>
@@ -377,10 +374,11 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>Text analytics 1 (cont.)</title>
-                <desc>Bag of words, text processing, text as tables, query the tables (continued)
-                </desc>
-                <link/>
+                <title/>
+                <act time="0">
+                    <title>Text analytics 1 (cont.)</title>
+                <desc>Bag of words, text processing, text as tables, query the tables (continued) </desc></act>
+
             </slot>
             <slot time="12:30:00">
                 <title/>
@@ -391,30 +389,30 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             <slot time="14:00:00">
                 <title>Modeling: annotations as layers to the text</title>
                 <desc>Modeling: annotations as layers to the text</desc>
-                <act time="">
+                <act time="0">
                     <desc>Review of tokenization, normalization, and collation from the point of
                         view of annotations</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Envisioning your edition as a layered model</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Existing models (e.g. computational linguistics)</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Hands-on: identify your own layers</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Hands-on: model your edition's pipeline</desc>
-                    <link/>
+
                 </act>
                 <outcome>
                     <goal>Grasping the concept of modelling text as trees and graphs</goal>
@@ -431,19 +429,18 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             <slot time="16:00:00">
                 <title>Collation 2</title>
                 <desc>Collation 2</desc>
-                <act time="">
+                <act time="0">
                     <desc>Advanced collation</desc>
-                    <link></link>
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Near-matching - theory (as step in the computational pipeline)</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Hands-on: ...</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
                 <outcome>
@@ -464,25 +461,25 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             <slot time="09:00:00">
                 <title>Text analytics 2</title>
                 <desc>Text analytics 2</desc>
-                
-                <act time="">
+
+                <act time="0">
                     <desc>Unsupervised learning</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Cluster analysis</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>PCA</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Paleographic analysis</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
             </slot>
@@ -490,15 +487,16 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
                 <title/>
                 <act time="30">
                     <desc>Coffee break</desc>
-                    <link/>
+
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>Text analytics 2 (cont.)</title>
+                <title/>
+                <act time="0"><title>Text analytics 2 (cont.)</title>
                 <desc>Unsupervised learning, cluster analysis, PCA, paleographic analysis
                     (continued)</desc>
-                <link/>
-                <outcome/>
+
+                <outcome/></act>
             </slot>
             <slot time="12:30:00">
                 <title/>
@@ -509,16 +507,16 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             <slot time="14:00:00">
                 <title>Queries and XML</title>
                 <desc>Queries and XML</desc>
-                <act time="">
+                <act time="0">
                     <desc>Querying your text with XQuery in an eXist framework</desc>
-                    <link/>
+
                     <outcome>
                         <goal>Learning XQuery to ...</goal>
                     </outcome>
                 </act>
-                <act time="">
+                <act time="0">
                     <desc>Using elastic search to index the content of your edition</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
             </slot>
@@ -531,9 +529,9 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             <slot time="16:00:00">
                 <title>Visualization as outcome</title>
                 <desc>Visualization as outcome</desc>
-                <act time="">
+                <act time="0">
                     <desc>Getting from layered annotations to (a specific) visualization</desc>
-                    <link/>
+
                 </act>
                 <outcome>
                     <goal>Visualization as part of the text processing pipeline: making decisions,
@@ -554,15 +552,15 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             <slot time="09:00:00">
                 <title>Mike Kestemont: Unsupervised learning, cluster analysis, PCA, paleographic
                     analysis (continued)</title>
-                <desc></desc>
+                <desc/>
                 <act time="10">
                     <desc>Overview of Week 3</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
                 <act time="30">
                     <desc>Explore project planning questions</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
             </slot>
@@ -573,16 +571,20 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>Introducing CETEIcean / Publishing on GitHub Pages</title>
-                <desc>Publishing on GitHub pages</desc>
+                <title/>
+                <act time="0"><title>Introducing CETEIcean / Publishing on GitHub Pages</title>
+                <desc>Publishing on GitHub pages</desc></act>
             </slot>
             <slot time="12:30:00">
                 <title/>
-                <desc>Lunch</desc>
+                <act time="0">
+                    <title>Lunch</title>
+                <desc>Lunch</desc></act>
             </slot>
             <slot time="14:00:00">
-                <title>Next steps: Customizing your edition with CSS and Javascript</title>
-                <desc>Customizing your edition with CSS and Javascript</desc>
+                <title/>
+                <act time="0"><title>Next steps: Customizing your edition with CSS and Javascript</title>
+                <desc>Customizing your edition with CSS and Javascript</desc></act>
             </slot>
             <slot time="15:30:00">
                 <title/>
@@ -591,9 +593,10 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title>Web Publishing Frameworks: Django</title>
-                <desc>Next steps: Beyond GitHub pages</desc>
-                <link/>
+                <title/>
+                <act time="0"><title>Web Publishing Frameworks: Django</title>
+                <desc>Next steps: Beyond GitHub pages</desc></act>
+
             </slot>
         </day>
         <day d="Tuesday">
@@ -605,17 +608,17 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
                 <desc>Linked data principles</desc>
                 <act time="20">
                     <desc>URIs as identifiers</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
                 <act time="30">
                     <desc>Modeling concepts and expressions</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
                 <act time="20">
                     <desc>Choosing and using ontologies</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
             </slot>
@@ -630,23 +633,25 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
                 <desc>Plugging your edition into the graph</desc>
                 <act time="20">
                     <desc>Extracting and publishing RDF data</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
                 <act time="20">
                     <desc>RDF databases and SPARQL</desc>
-                    <link/>
+
                     <outcome/>
                 </act>
             </slot>
             <slot time="12:30:00">
-                <title/>
-                <desc>Lunch</desc>
-                
+                <title>Lunch</title>
+                <act time="90"><title/>
+                <desc>Lunch</desc></act>
+
             </slot>
             <slot time="14:00:00">
-                <title>XQuery and eXist</title>
-                <desc>XQuery</desc> 
+                <title/>
+                <act time="0"><title>XQuery and eXist</title>
+                <desc>XQuery</desc></act>
             </slot>
             <slot time="15:30:00">
                 <title/>
@@ -655,8 +660,9 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title>Data visualization</title>
-                <desc>Data visualization</desc>
+                <title/>
+                <act time="0"><title>Data visualization</title>
+                <desc>Data visualization</desc></act>
             </slot>
         </day>
         <day d="Wednesday">
@@ -664,7 +670,8 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             <syn/>
             <slot time="09:00:00">
                 <title>Getting to know and use the TEI stylesheets</title>
-                <desc/>
+                <act time="0">
+                <desc/></act>
             </slot>
             <slot time="10:30:00">
                 <title/>
@@ -674,7 +681,7 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             </slot>
             <slot time="11:00:00">
                 <title>TEI Publisher</title>
-                <desc/>
+                <act time="0"><desc/></act>
             </slot>
             <slot time="12:30:00">
                 <title/>
@@ -684,7 +691,7 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             </slot>
             <slot time="14:00:00">
                 <title/>
-                <desc/>
+                <act time="0"><desc/></act>
             </slot>
             <slot time="15:30:00">
                 <title/>
@@ -694,7 +701,7 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             </slot>
             <slot time="16:00:00">
                 <title/>
-                <desc/>
+                <act time="0"><desc/></act>
             </slot>
         </day>
         <day d="Thursday">
@@ -702,7 +709,7 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             <syn/>
             <slot time="09:00:00">
                 <title>The edition and APIs</title>
-                <desc/>
+                <act time="0"><desc/></act>
             </slot>
             <slot time="10:30:00">
                 <title/>
@@ -712,7 +719,7 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             </slot>
             <slot time="11:00:00">
                 <title>Using APIs in your edition</title>
-                <desc/>
+                <act time="0"><desc/></act>
             </slot>
             <slot time="12:30:00">
                 <title/>
@@ -722,7 +729,7 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             </slot>
             <slot time="14:00:00">
                 <title>Building your own API</title>
-                <desc/>
+                <act time="0"><desc/></act>
             </slot>
             <slot time="15:30:00">
                 <title/>
@@ -732,7 +739,7 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             </slot>
             <slot time="16:00:00">
                 <title>Licensing, archiving, and planning for the future</title>
-                <desc/>
+                <act time="0"><desc/></act>
             </slot>
         </day>
         <day d="Friday">
@@ -740,7 +747,7 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             <syn/>
             <slot time="09:00:00">
                 <title>Publishing strategies</title>
-                <desc/>
+                <act time="0"><desc/></act>
             </slot>
             <slot time="10:30:00">
                 <title/>
@@ -750,7 +757,7 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             </slot>
             <slot time="11:00:00">
                 <title>Sustainability</title>
-                <desc/>
+                <act time="0"><desc/></act>
             </slot>
             <slot time="12:30:00">
                 <title/>
@@ -760,7 +767,7 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             </slot>
             <slot time="14:00:00">
                 <title/>
-                <desc/>
+                <act time="0"><desc/></act>
             </slot>
             <slot time="15:30:00">
                 <title/>
@@ -770,7 +777,7 @@ Java SE installation: <a href="http://www.oracle.com/technetwork/java/javase/dow
             </slot>
             <slot time="16:00:00">
                 <title>Wrapping up: What have we learned?</title>
-                <desc/>
+                <act time="0"><desc/></act>
             </slot>
         </day>
     </week>

@@ -26,7 +26,7 @@
         <xsl:result-document method="text" omit-xml-declaration="yes" href="{$filename}">
             <xsl:value-of select="'# Week ' || @num || ' plan: ' || ./title"/>
 
-            <xsl:text>&lt;table></xsl:text>
+            <!--<xsl:text>&lt;table></xsl:text>
             <xsl:text>&lt;tr></xsl:text>
             <xsl:text>&lt;th>Times&lt;/th></xsl:text>
             <xsl:text>&lt;th>Monday&lt;/th></xsl:text>
@@ -40,7 +40,7 @@
             <xsl:apply-templates select="./slot"/>
             <xsl:text>&lt;/tr></xsl:text>
 
-            <xsl:text>&lt;/table></xsl:text>
+            <xsl:text>&lt;/table></xsl:text>-->
         </xsl:result-document>
     </xsl:template>
     <xsl:template match="slot">
@@ -64,33 +64,17 @@
         <xsl:result-document method="text" omit-xml-declaration="yes" href="{$filename}">
             <xsl:value-of
                 select="'# Week ' || ../@num || ', Day ' || position() || ': ' || @d || ', ' || date || '&#x0a;'"/>
+            
+<!-- synopsis -->
+            <xsl:text>&#x0a;## Synopsis&#x0a;</xsl:text>
             <xsl:apply-templates select="syn" mode="daily"/>
+<!-- outcome goals -->            
+            <xsl:text>## Outcome goals&#x0a;&#x0a;</xsl:text>
+            <xsl:apply-templates select="./slot//outcome" mode="daily"/>
+
+<!-- tables for slots -->
             <xsl:apply-templates select="slot" mode="daily"/>
-            <!--            <xsl:for-each select="slot">
-                <xsl:value-of select="'## ' || djb:timeRange(@time, sum(act/@time)) || '&#x0a;&#x0a;'"/>
-                <xsl:apply-templates select="."/>
-
-                <xsl:text>&lt;table></xsl:text>
-                <xsl:text>&lt;tr></xsl:text>
-                <xsl:text>&lt;th>Topic&lt;/th></xsl:text>
-                <xsl:text>&lt;th>Link&lt;/th></xsl:text>
-                <xsl:text>&lt;th>Time&lt;/th></xsl:text>
-                <xsl:text>&lt;th>Type&lt;/th></xsl:text>
-                <xsl:text>&lt;/tr></xsl:text>
-
-
-                <xsl:for-each select="act">
-                    <xsl:text>&lt;tr></xsl:text>
-                    <xsl:apply-templates select="desc" mode="daily"/>
-                    <xsl:apply-templates select="link" mode="daily"/>
-                    <xsl:apply-templates select="." mode="daily"/>
-                    <xsl:text>&lt;/tr></xsl:text>
-
-                </xsl:for-each>
-                <xsl:text>&lt;/table>&#x0a;</xsl:text>
-
-            </xsl:for-each>
--->
+            
         </xsl:result-document>
     </xsl:template>
     <xsl:template match="syn" mode="daily">
@@ -109,6 +93,7 @@
             <xsl:text>Time | Topic | Type&#x0a;</xsl:text>
             <xsl:text>---- | ---- | ---- &#x0a;</xsl:text>
             <xsl:apply-templates select="act" mode="daily"/>
+            <xsl:text>&#x0a;</xsl:text>
         </xsl:if>
     </xsl:template>
 
@@ -122,15 +107,11 @@
         <xsl:apply-templates/>
         <xsl:text>&lt;/td></xsl:text>
     </xsl:template>
-    <!-- creates links in table -->
-    <xsl:template match="link" mode="daily">
-        <xsl:text>&lt;td></xsl:text>
-        <xsl:text>&lt;a href="</xsl:text>
-        <xsl:apply-templates/>
-        <xsl:text>"></xsl:text>
-        <xsl:apply-templates/>
-        <xsl:text>&lt;/a></xsl:text>
-        <xsl:text>&lt;/td></xsl:text>
+    <!-- creates list of goals -->
+    <xsl:template match="outcome" mode="daily">
+        <xsl:if test="goal">
+        <xsl:text>* </xsl:text><xsl:apply-templates select="normalize-space(.)"/><xsl:text>&#x0a;&#x0a;</xsl:text>
+        </xsl:if>
     </xsl:template>
 
 
