@@ -22,7 +22,7 @@ Alexandria is a text repository and database that supports Text As Graph (TAG). 
 	          - 8003:8081
 	        environment:
 	          - BASE_URI=http://docker.for.mac.localhost:8002
-	
+
 	  # the tex-util server, which can convert the LaTeX from the alexandria server to SVG)
 	  latex:
 	        image: huygensing/tex-util-server:latest
@@ -33,7 +33,7 @@ Alexandria is a text repository and database that supports Text As Graph (TAG). 
 	          - alexandria
 	        environment:
 	          - BASE_URI= http://docker.for.mac.localhost:8000
-	
+
 	  # the relevant notebooks and python code to connect to the alexandria and latex services
 	  notebook:
 	        image: huygensing/alexandria-markup-notebook:latest
