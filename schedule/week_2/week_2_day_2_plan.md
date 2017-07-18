@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-The first half of Week 2, Day 2 continues the focus on document modeling from the previous day, with attention to three models of text: XML (text as tree), LMNL (text as ranges), and TAG (text as graph). The second half of the day introduces the idea of developing a digital edition as a computational pipeline. We illustrate the pipeline with the Gothenburg model of textual variation, and then begin to explore the first two stages of that model, tokenization and normalization. 
+The first half of Week 2, Day 2 begins by contextualizing the XML and XPath tasks the day before, and then introduces LMNL and TAG as alternative data models.  The second half of the day introduces the idea of developing a digital edition as a computational pipeline. We illustrate the pipeline with the Gothenburg model of textual variation, and then begin to explore the first two stages of that model, tokenization and normalization. 
 Java SE installation: <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
 
 ## Outcome goals
@@ -21,20 +21,8 @@ Java SE installation: <http://www.oracle.com/technetwork/java/javase/downloads/i
 
 ______
 
-## 9:00–10:30: Theory of edition
 
-Are you making an edition of a manuscript or of a text? What is the role of language and orthography in your edition? How will the text be presented? How will users interact with the views? What will be the role of graphic visualization?
-
-Time | Topic | Type
----- | ----  | ----
-20 min | Explore [edition terms and concepts](edition_terms_and_concepts.md) | Discussion
-20 min | It isn’t just words! [What story are you trying to tell?](sample_visualizations.md) | Discussion
-30 min | Explore participant data in light of terms and concepts | Talk lab
-20 min | General discussion of Talk lab results | Discussion
-
-## 10:30–11:00: Coffee break
-
-## 11:00–12:30: Transcription with markup: LMNL
+## 9:00–10:30: Transcription with markup: LMNL
 
 ### Topics and activities
 
@@ -45,6 +33,19 @@ Time | Topic | Type
 20 min | Introduction to TAG and Alexandria | Presentation
 20 min | [Alexandria installation](alexandria.md) | Code lab
 20 min | Visualization of LMNL in Alexandria | Code lab
+
+## 10:30–11:00: Coffee break
+
+## 11:00–12:30: Theory of edition
+
+Are you making an edition of a manuscript or of a text? What is the role of language and orthography in your edition? How will the text be presented? How will users interact with the views? What will be the role of graphic visualization?
+
+Time | Topic | Type
+---- | ----  | ----
+20 min | Explore [edition terms and concepts](edition_terms_and_concepts.md) | Discussion
+20 min | It isn’t just words! [What story are you trying to tell?](sample_visualizations.md) | Discussion
+30 min | Explore participant data in light of terms and concepts | Talk lab
+20 min | General discussion of Talk lab results | Discussion
 
 ## 12:30–2:00: Lunch
 
