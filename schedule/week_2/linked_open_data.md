@@ -57,19 +57,19 @@ Pelagios focuses on linking distributed resources around geographic locations
 
 ### Some examples:
 
-Dublin Core—basic metadata
+Dublin Core—basic metadata <http://dublincore.org/documents/dcmi-terms/>
  * `dcterms: <http://purl.org/dc/terms/>`
 
-CiTO—citation typing
+CiTO—citation typing <http://www.sparontologies.net/ontologies/cito/source.html>
  * `cito: <http://purl.org/spar/cito/>`
 
-FOAF—Friend of a friend, linking people and web stuff
+FOAF—Friend of a friend, linking people and web stuff <http://xmlns.com/foaf/spec/>
  * `foaf: <http://xmlns.com/foaf/0.1/>`
 
-SKOS—making taxonomies
+SKOS—making taxonomies <https://www.w3.org/2004/02/skos/>
  * `skos: <http://www.w3.org/2004/02/skos/core#>`
 
-LAWD—I got angry and made my own
+LAWD—I got angry and made my own <https://github.com/lawdi/LAWD>
  * `lawd: <http://lawd.info/ontology/>`
 
 ## Discussion: How are your things related? (20 minutes)
