@@ -86,3 +86,5 @@ Nomisma: <http://nomisma.org/sparql>
 The British Museum: <http://collection.britishmuseum.org/sparql>
 
 ### Wrap up. Don't overdo it!
+
+<http://blogs.library.duke.edu/dcthree/2013/07/27/the-trouble-with-triples/>
