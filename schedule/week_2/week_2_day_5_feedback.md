@@ -1,7 +1,5 @@
 # Week 2, Day 5 feedback
 
-For each outcome objective listed below, please respond “yes”, “somewhat”, or “no”. 
-
 1. What excited you most about what we did today?
 2. What did you find most challenging of what we did today?
 3. What topic addressed today is most likely to influence your future work? 
