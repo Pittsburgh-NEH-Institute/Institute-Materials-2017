@@ -26,7 +26,10 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ----- | ----
-0 min | TBD | TBD
+20 min | Near matching (open `Near_matching.ipynb` in Jupyter) | Code lab
+20 min | [Normalization and Soundex](2014-09-15_varna-collation.pptx.pdf) | Presentation
+20 min | Integrating normalization with tokenization (open `Integrating_tokenization_and_normalization.ipynb` in Jupyter) | Code lab
+30 min | Normalize your text: mini-hackathon | Code lab
 
 ## 12:30–2:00: Lunch
 
@@ -34,11 +37,11 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-0 min | Modeling and collation | 
-0 min | Collation within editorial theory | 
-0 min | Collation practice | 
-0 min | Tokenization and normalization for collation purposes | 
-0 min | Challenging textual phenomena: Introducing Text as Graph (TAG) | 
+10 min | Modeling and collation | Presentation
+10 min | Collation within editorial theory | Presentation
+25 min | Collation practice | Code lab
+25 min | Tokenization and normalization for collation purposes | Code lab
+20 min | Challenging textual phenomena: Introducing Text as Graph (TAG) | Presentation
 
 ## 3:30–4:00: Coffee break
 
