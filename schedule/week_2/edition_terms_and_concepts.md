@@ -22,7 +22,7 @@
 ### Editions of manuscripts
 
 * Facsimile (image)
-* Diplomatic (transcription)
+* Diplomatic (transcription), e.g. [IOSPE](http://iospe.kcl.ac.uk/5.5.html)
 * Genetic, e.g., [Shelley-Godwin Archive](http://shelleygodwinarchive.org/sc/oxford/frankenstein/volume/i/#/p2)
 
 ### Critical editions of texts
@@ -34,6 +34,10 @@
 ### Copy text with notes (apparatus)
 
 * Example: [St. Patrick’s *Confessio*](http://www.confessio.ie/etexts/confessio_latin#02)
+
+### Digital Repertory
+
+* Example: [Catullus Online](http://www.catullusonline.org/CatullusOnline/index.php?dir=poems&w_apparatus=1&showall=1)
 
 ### “Best witness” ~ dynamic critical text:
 
@@ -63,6 +67,6 @@ _____
 
 ## Readings (optional)
 
-* Andrews, Tara. 2012. [“The third way: philology and critical edition in the digital age”](https://www.academia.edu/2510270/The_Third_Way_Philology_and_Critical_Edition_in_the_Digital_Age) _Variants_ 10. 
+* Andrews, Tara. 2012. [“The third way: philology and critical edition in the digital age”](https://www.academia.edu/2510270/The_Third_Way_Philology_and_Critical_Edition_in_the_Digital_Age) _Variants_ 10.
 * [_CCSG_] Brepols publishers. [“Instructions and stylebook for the publication of texts in CCSG [_Corpus christianorum series graeca_].”](http://www.corpuschristianorum.org/series/pdf/CCSG_Guidelines.pdf)
 * Sels, Lara and David J. Birnbaum 2015. [“Editing the _Bdinski sbornik_ as a multilayered reality.”](../../general/2014-01-14_bdinski-sofia-paper.pdf) _Агиославика. Проблеми и подходи в изследването на Станиславовия чети-миней: доклади от едноименната конференция - 21 май 2013 г._ (_Hagioslavica. Issues and approaches in the study of the_ Stanislav Reading Menaion: _presentations from the conference of May 21, 2013._), ed. Diana Atanasova. Sofia: Kliment Oxridski University, pp. 184–99.
