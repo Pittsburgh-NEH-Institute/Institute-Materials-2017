@@ -77,9 +77,9 @@ LAWD—I got angry and made my own <https://github.com/lawdi/LAWD>
 ## RDF, SPARQL
  * Formats: N3, Turtle, RDF/XML
  * Try the following in the terminal:
-  * `curl -L -H "Accept: text/n3" "http://papyri.info/ddbdp/p.fay;;110/source`
-  * `curl -L -H "Accept: application/rdf+xml" "http://papyri.info/ddbdp/p.fay;;110/source`
-  * and, just to compare: ``curl -L -H "Accept: text/turtle" "http://papyri.info/ddbdp/p.fay;;110/source``
+  * `curl -L -H "Accept: text/n3" "http://papyri.info/ddbdp/p.fay;;110/source"`
+  * `curl -L -H "Accept: application/rdf+xml" "http://papyri.info/ddbdp/p.fay;;110/source"`
+  * and, just to compare: ``curl -L -H "Accept: text/turtle" "http://papyri.info/ddbdp/p.fay;;110/source"`
 
 ### SPARQL Endpoints:
 Nomisma: <http://nomisma.org/sparql>
