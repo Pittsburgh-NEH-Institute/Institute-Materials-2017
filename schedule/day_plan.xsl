@@ -23,10 +23,12 @@
     <!-- Templates for weekly plans -->
     <xsl:template match="week">
         <xsl:variable name="filename" as="xs:string" select="'week_' || @num || '_plan.md'"/>
+        
+            select="'week_' || ../@num || '_day_' || position() || '_plan.md'"/>
         <xsl:result-document method="text" omit-xml-declaration="yes" href="{$filename}">
             <xsl:value-of select="'# Week ' || @num || ' plan: ' || ./title || '&#x0a;' || '&#x0a;'"/>
             
-            <xsl:text>Time | Monday | Tuesday | Wednesday | Thursday | Friday&#x0a;</xsl:text>
+            <xsl:text>Time | </xsl:text><xsl:apply-templates select="day"/><xsl:text>&#x0a;</xsl:text>
             <xsl:text>---- | ---- | ---- | ---- | ---- | ----  &#x0a;</xsl:text>
             <xsl:apply-templates select="day[1]/slot"/>
             
@@ -34,8 +36,16 @@
         </xsl:result-document>
         
     </xsl:template>
+    <xsl:template match="day">
+        <xsl:variable name="linkname" as="xs:string" select="'week_' || ../@num || '_day_' || position() || '_plan.md'"/>
+        <xsl:variable name="daynames" as="xs:string" select="normalize-space(concat(' [', @d, '](', $linkname, ')', ' | ' ))"/>
+        <xsl:value-of select="$daynames"/>
+        
+    </xsl:template>
     <xsl:template match="slot">
+        
         <xsl:variable name="slotContents" as="xs:string" select="normalize-space(string-join(//slot[@time eq current()/@time and ancestor::week/@num eq current()/ancestor::week/@num]/title,' | '))"/>
+ 
         <xsl:value-of
             select="djb:timeRange(@time, sum(act/@time)) || ' |', $slotContents, '&#x0a;'"/>
         <!--<xsl:value-of select="string-join(../slot/title, ' | ')"/>-->
