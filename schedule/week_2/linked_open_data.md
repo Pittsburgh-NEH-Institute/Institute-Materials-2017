@@ -84,3 +84,5 @@ LAWD—I got angry and made my own
 ### SPARQL Endpoints:
 Nomisma: <http://nomisma.org/sparql>
 The British Museum: <http://collection.britishmuseum.org/sparql>
+
+### Wrap up. Don't overdo it!
