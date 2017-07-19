@@ -5,8 +5,8 @@ Alexandria is a text repository and database that supports Text As Graph (TAG). 
 1. Install Docker
 	* _Mac (Yosemite 10.10.3 or later)_: Docker CE (community edition) for Mac from <https://store.docker.com/editions/community/docker-ce-desktop-mac>
 	* _Mac (Older than Yosemite 10.10.3)_: Docker toolbox for Mac <https://download.docker.com/mac/stable/DockerToolbox.pkg>
-	* _Windows 10 Professional or Enterprise_: Docker CE for Windows <https://docs.docker.com/docker-for-windows/install/>
-	* _Windows 10 Personal, Windows 8, Windows 7_: This installs Docker CE into a GNU/Linux system in a VirtualBox <https://www.docker.com/products/docker-toolbox>
+	* _Windows 10 Professional or Enterprise_: Docker CE for Windows <https://docs.docker.com/docker-for-windows/install/>. **Please note that Hyper-V *should only be enabled* which Docker does for you at installation time. It is probably that you do not have _Virtualization_ enabled in your BIOS if there is an error about this. In BIOS it could be named _VT-X_/_AMD-v_ or simply _Virtualization_. 
+	* _Windows 10 Home, Windows 8, Windows 7_: This installs Docker CE into a GNU/Linux system in a VirtualBox <https://docs.docker.com/toolbox/toolbox_install_windows> (direct link <https://download.docker.com/win/stable/DockerToolbox.exe>)
 	* _GNU/Linux_: Install Docker via your package manager.
 
 2. Create a directory and copy the following file (which must be called `docker-compose.yml`) into it:
