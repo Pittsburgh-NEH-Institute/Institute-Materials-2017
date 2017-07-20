@@ -29,6 +29,15 @@ MK: Bag of words, text processing, text as tables, query the tables (continued)
 
 ## 3:00–4:30: Collation
 
+Time | Activity | Type
+---- | ---- | ----
+15 min | Install Collatex (`collatex_installation.ipynb`) | Code lab
+15 min | The CollateX interface (`collation/1_collate-plain-text.ipynb`) | Code lab
+10 min | Collatex output options (`collation/3_collate-plain-text.ipynb`) | Code lab
+20 min | Collation outside Jupyter (`collation/3_collate-plain-text.ipynb`) | Code lab
+30 min | Customizing tokenization and normalization (`Integrating_tokenization_and_normalization.ipynb`) | Code lab
+
+
 ## 3:30–4:00: Coffee break
 
 ## 4:00–5:30: Modeling: exploring the model with XQuery
