@@ -91,6 +91,7 @@ ENV/
 # Custom
 Tasks.md
 .DS_Store
+__MACOSX/
 
 # PyCharm user information
 # User-specific stuff:
