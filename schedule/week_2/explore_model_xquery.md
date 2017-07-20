@@ -3,11 +3,11 @@ We have previously seen different ways to represent our models.
 We have a set of xml documents:
 
 
-* <test.xml>
-* <test1.xml>
-* <ozymandias.xml>
-* <ozymandias_2.xml>
-* <hamlet.xml>
+* [test.xml](test.xml)
+* [test1.xml](test1.xml)
+* [ozymandias.xml](ozymandias.xml)
+* [ozymandias_2.xml](ozymandias_2.xml)
+* [hamlet.xml](hamlet.xml)
 
 We will explore them with XQuery in eXist-db. [eXist-db.org homepage](http://exist-db.org/exist/apps/homepage/index.html)
 Direct download: <https://bintray.com/existdb/releases/exist/3.3.0/view>
