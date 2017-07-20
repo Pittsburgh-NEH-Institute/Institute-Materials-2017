@@ -1,6 +1,6 @@
 # Week 2 plan
 
-Time/Day | [Monday](week_2_day_1_plan.md) | [Tuesday](week_2_day_2_plan.md) | [Wednesday](week_2_day_3_plan.md) | Thursday | Friday
+Time/Day | [Monday](week_2_day_1_plan.md) | [Tuesday](week_2_day_2_plan.md) | [Wednesday](week_2_day_3_plan.md) | [Thursday](week_2_day_4_plan.md) | [Friday](week_2_day_5_plan.md)
 --- | --- | --- | --- | --- | ---
 9:00–10:30 | Planning your project  | Theory of edition | Tokenization 2 | Text analytics 1: Bag of words | Text analytics 2: Supervised learning
 10:30–11:00 | Coffee break | Coffee break | Coffee break | Coffee break | Coffee break
