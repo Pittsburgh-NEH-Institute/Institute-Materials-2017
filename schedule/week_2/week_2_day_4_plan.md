@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-Week 2, Day 4 concentrates on ...
+At the beginning of Week 2, Day 4, Mike Kestemont introduces text analytics with Python, concentrating on *bag of words* methods. In the afternoon we continue our earlier examination of collation and then begin to explore documents using XQuery within the eXist XML database.
 
 ## Outcome goals
 
