@@ -19,27 +19,21 @@ Week 2, Day 4 concentrates on ...
 
 MK: Bag of words, text processing, text as tables, query the tables
 
-### Outcome goals
-* _[some text here]_
-
 ## 10:30–11:00: Coffee break
-
-### Outcome goals
-* Have more energy
 
 ## 11:00–12:30: Text analytics 1 (cont.)
 
 MK: Bag of words, text processing, text as tables, query the tables (continued)
 
-#### Outcome goals
-* _[some text here]_
-
-
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: Modeling: annotations as layers to the text
+## 3:00–4:30: Collation
 
-### Topics and Activities
+## 3:30–4:00: Coffee break
+
+## 4:00–5:30: Modeling: exploring the model with XQuery
+
+<!-- ### Topics and Activities
 * Recap of the topics that have been discussed so far: tokenization, normalization, and collation from the point of view of annotations (as each of these activities entails a form of annotation)
 * Envisioning your edition as a layered model
 * Existing models (e.g. computational linguitics) 
@@ -50,17 +44,5 @@ MK: Bag of words, text processing, text as tables, query the tables (continued)
 * Grasping the concept of modelling text as trees and graphs
 * Understanding annotation as a form of adding layers to text
 * Varieties of layered editions
-
-## 3:30–4:00: Coffee break
-
-## 4:00–5:30: Collation 2
-
-### Topics and Activities
-* Advanced collation
-* Near-matching - theory (as step in the computational pipeline) 
-* **Hands-on**: ...
-
-### Outcome goals
-* Deeper discussion of the alignment step in the GM
-* An awareness of computation to understand that we do near-matching late (in the pipeline) for reasons of efficiency. 
+* -->
 
