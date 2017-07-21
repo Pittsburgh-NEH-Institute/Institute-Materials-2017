@@ -17,6 +17,7 @@ return $xml//text()
 ```
 
 We went through:
+
 * Variable assignment `set $result := "a string"`
 * Implicit and explicit return, e.g. `0` vs `return $result` 
 * Function call `collection("/db/neh-2017")`, `starts-with(., "a")`
@@ -86,6 +87,7 @@ If you are new to XQuery these functions might be good to learn from the beginni
 * maps
 * arrays
 * string constructors
+
 ```xquery
 query version "3.1";
 
