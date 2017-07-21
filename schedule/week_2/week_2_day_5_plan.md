@@ -2,12 +2,7 @@
 
 ## Synopsis
 
-Week 2, Day 5 concentrates on querying text, on creating visualizations, and on presenting research outcomes to the end user. After desigining and implementing the content of your edition, after adding layers of information to your model, we think about how to query the information and how to present it to an audience. It means that the content need to be made accessible in a way that does not require an end user to code. 
-**[add more text here?]**
-
-## Outcome goals
-
-**[Add stuff]**
+Week 2, Day 5 concentrates on querying text, on creating visualizations, and on presenting research outcomes to the end user. After desigining and implementing the content of your edition, after adding layers of information to your model, we think about how to query the information and how to present it to an audience. It means that the content need to be made accessible in a way that does not require an end user to code. We conclude with a general review and an opportunity to catch up on topics we were not able to see to completion earlier in the week.
 
 ## Legend
 
@@ -22,17 +17,11 @@ Week 2, Day 5 concentrates on querying text, on creating visualizations, and on 
 
 MK: Unsupervised learning, cluster analysis, PCA, paleographic analysis
 
-### Outcome goals
-* _[some text here]_
-
 ## 10:30–11:00: Coffee break
 
 ## 11:00–12:30: Text analytics 2 (cont.)
 
 MK: Unsupervised learning, cluster analysis, PCA, paleographic analysis (continued)
-
-### Outcome goals
-* _[some text here]_
 
 ## 12:30–2:00: Lunch
 
@@ -40,19 +29,10 @@ MK: Unsupervised learning, cluster analysis, PCA, paleographic analysis (continu
 **[Note: consult with hc and ljo for overlap with week 3!]**  
 
 ### Topics and activities
-* Querying your text with XQuery in an eXist **[or an oXygen?]**  framework
+* Querying your text with XQuery in an eXist (or \<oXygen\>)  framework
 * Using elastic search to index the content of your edition
-
-### Outcome goals
-* Learning XQuery to ...
 
 ## 3:30–4:00: Coffee break
 
-## 4:00–5:30: Visualization as outcome 
+## 4:00–5:30: General review
 
-### Topics and activities
-* Getting from layered annotations to (a specific) visualization
-
-### Outcome goals
-* Visualization as part of the text processing pipeline: making decisions, selecting formats, interacting with, and producing visualizations
-* Hands-on: a departure from Word Cloud
