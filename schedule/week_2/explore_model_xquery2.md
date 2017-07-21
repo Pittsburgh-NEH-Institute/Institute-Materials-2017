@@ -79,3 +79,61 @@ Returns:
 ```
 
 (<http://localhost:8080/exist/apps/fundocs/index.html>)
+
+
+### XQuery 3(.1) features
+If you are new to XQuery these functions might be good to learn from the beginning:
+* maps
+* arrays
+* string constructors
+```xquery
+query version "3.1";
+
+(: Maps :)
+let $map-empty := map { } (: empty map :)
+let $map-two-entries := map { 'boolskt': true(), 'sequence': (<a>a</a>, <b>b</b>) }  (: map with two entries :)
+let $map-ten-entries := 
+map:merge(                                  (: map with ten entries :)
+  for $i in 1 to 10
+  return map { $i: 'value ' || $i }
+)
+let $map-put := map:put($map-empty, "put", $map-two-entries?sequence)
+let $map-neh := map { 'vad': 'NEH-Instutute', 'when': 2017, 'where': 'Pittsburgh' }
+
+(:  Arrays :)
+let $array-empty := [] (: empty array :)
+let $array-one-member := [ (1, 2) ]    (: array with single member :)
+let $array-two-members := array { ('ett', 'två'), 'tre' }  (: array with two members :)
+let $array-three-members := array { 1 to 2, 'TRE' }  (: array with three members :)
+(: array:size() :)
+(: Arrow operator :)
+let $seq-three-items := ('ett', 'två', 'tre' )
+
+(: String constructors :)
+let $string-constr := ``["A new way to 'create' strings."]``
+let $string-constr-var := ``["A ne w way to use variables in, `{$seq-three-items}`, strings."]``
+return 
+    (
+        <map>{$map-two-entries?boolskt}</map>,
+        <map>{$map-two-entries?sequence}</map>,
+        <map>{$map-ten-entries?5}</map>,
+        <map>{$map-ten-entries?((1, 3))}</map>,
+        <map>{$map-ten-entries?*}</map>,
+        <map>{$map-put?put}</map>,
+        <map>{$map-neh?('what')}</map>,
+        <map>{$map-neh?where}</map>,
+        <map>{$map-neh?var[. = 'Pittsburgh']}</map>,
+        <array>{$array-empty}</array>,
+        <array>{try { $array-one-member(2) } catch err:FOAY0001 { "Expected error: index greater than actual size" } }</array>,
+        <array>{$array-two-members(2)}</array>, 
+        <array>{$array-three-members?2}</array>, 
+        <array>{$array-three-members(3)}</array>,
+        <array>{reverse($array-three-members)}</array>, 
+        <array>{$array-three-members?*}</array>,
+        <arrow>{$seq-three-items => count()}</arrow>,
+        <arrow>{$seq-three-items => string-join("-") => upper-case()}</arrow>,
+        <array>{for $i in 'NEH-Institute' => string-to-codepoints() return $i}</array>,
+        <string-constr>{$string-constr}</string-constr>,
+        <string-constr>{$string-constr-var}</string-constr>
+    )[6]
+```
