@@ -16,7 +16,8 @@ eXist-db 3.3.0 requires Java SE 1.8, so if you did not install it earlier this w
 
 To our help we are going to use eXide the integrated development environment (IDE) of eXist-db. 
 After you installed eXist-db you find its IDE here: <http://localhost:8080/exist/apps/eXide/index.html>
-You have all function help and documentation available locally inside the database <http://localhost:8080/exist/apps/fundocs/index.html) but also on our demo server: <http://demo.exist-db.org/exist/apps/fundocs/index.html>. You can also run eXide on our demoserver if you just want to follow along without any installation right now.
+
+You have all function help and documentation available locally inside the database <http://localhost:8080/exist/apps/fundocs/index.html>. You can also check the documentation out in our demo server: <http://demo.exist-db.org/exist/apps/fundocs/index.html>. You can also run eXide and use interactive tutorials on our demo server any time you like.
 
 When in the IDE we explore some similarities and differences of XQuery compared to the previously learned languages, e.g. Python, Bash shell scripting and XPath. 
 
