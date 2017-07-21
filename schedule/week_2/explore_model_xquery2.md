@@ -4,7 +4,7 @@
 One of the goals are to use XQuery to begin explore your own data. Especially to get the model features you gathered in the LOD session. General goal to get more familiar with XQuery.
 
 ## Recap
-This is query where we left off yesterday:
+This is the query which we were evaulating when we left off yesterday:
 
 ```xquery
 xquery version "3.1";
@@ -34,7 +34,7 @@ We went through:
 * Looking up things in the function documentation, explicit functions or browse whole module. <http://localhost:8080/exist/apps/fundocs/index.html>
 
 ### Previous session 
-If you missed yesterdays session:
+If you missed yesterday's session:
 * [Exploring the model with XQuery, part 1](explore_model_xquery.md)
 
 ### Don't forget 
@@ -42,7 +42,7 @@ If you missed yesterdays session:
 * In the result area you can page forward and backwards with the double arrows showing if your result set is larger than your page size.
 
 ## XQuery, continued
-### Use a secific document (adapt your collection path, e.g. `/db/hamlet.xml`):
+### Use a specific document (adapt your collection path, e.g. `/db/hamlet.xml`):
 ```xquery
 xquery version "3.1";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
@@ -62,7 +62,9 @@ return
 contains
                             
 contains($source-string as xs:string?, $substring as xs:string?) as xs:boolean
+```
 
+```
 Returns an xs:boolean indicating whether or not the value of $source-string contains (at the beginning, at the end, or anywhere within) at least one sequence of collation units that provides a minimal match to the collation units in the value of $substring, according to the default collation.
 
 Parameters:
