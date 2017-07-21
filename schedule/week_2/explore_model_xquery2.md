@@ -64,8 +64,12 @@ contains
 contains($source-string as xs:string?, $substring as xs:string?) as xs:boolean
 ```
 
-```
-Returns an xs:boolean indicating whether or not the value of $source-string contains (at the beginning, at the end, or anywhere within) at least one sequence of collation units that provides a minimal match to the collation units in the value of $substring, according to the default collation.
+``` 
+Returns an xs:boolean indicating whether or not the value of
+$source-string contains (at the beginning, at the end, or anywhere
+within) at least one sequence of collation units that provides a
+minimal match to the collation units in the value of $substring,
+according to the default collation.
 
 Parameters:
     $source-string? 	The source-string
