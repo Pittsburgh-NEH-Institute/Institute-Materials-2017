@@ -233,3 +233,26 @@ Olsson <ljo@fripost.org> Date: Fri Jul 21 19:59:04 2017 +0200
     Adding 3.1 features
 
 ```
+```bash
+ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git branch show-merge-issues 
+ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git br -a
+* master
+  show-merge-issues
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/schedule
+```
+
+```bash
+ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git co show-merge-issues
+M	schedule/week_2/explore_model_xquery2.md
+Växlade till grenen "show-merge-issues"
+
+ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git br -a
+  master
+* show-merge-issues
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/schedule
+
+```
