@@ -234,8 +234,48 @@ Olsson <ljo@fripost.org> Date: Fri Jul 21 19:59:04 2017 +0200
 
 ```
 
+```bash
+ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git branch show-merge-issues 
+ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git br -a
+* master
+  show-merge-issues
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/schedule
+```
+
+```bash
+ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git co show-merge-issues
+M	schedule/week_2/explore_model_xquery2.md
+Växlade till grenen "show-merge-issues"
+
+ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git br -a
+  master
+* show-merge-issues
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/schedule
+
+```
+
+* Make some changes ...
+
+* Switch back to master
+
+```bash
 ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git co master
-Växlade till grenen "master"
-Din gren är à jour med "origin/master".
- 
-* In old master ...
+error: Dina lokala ändringar av följande filer skulle skrivas över av utcheckning:
+	schedule/week_2/explore_model_xquery2.md
+Checka in dina ändringar eller använd "stash" innan du byter gren.
+Avbryter
+
+ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git br -a
+  master
+* show-merge-issues
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/schedule
+
+```
+
+So still on show-merge-issues branch ...
