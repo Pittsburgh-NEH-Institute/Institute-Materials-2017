@@ -25,7 +25,7 @@ We went through:
 * Dynamically created sequences:
  - (1 to 5), 
  - `($result)`, especially with positional predicates `($result)[last()]`,
- - `("a", "b", "c", "d")[1+2]` -> 3 since 1+3 is evaluated to 3
+ - `("a", "b", "c", "d")[1+2]` -> 3 since 1+2 is evaluated to 3
  - Empty sequence `()`
 * Dynamically created xml `let $xml := <result><b>no bss</b>another word starting with a {$result}</result>` 
 * Using dynamic content in dynamically created xml, `{$result}`
