@@ -205,7 +205,7 @@ Merge made by the 'recursive' strategy.
  1 file changed, 2 insertions(+)
 ```
 
-```bash
+```git
 ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git log schedule/week_2/explore_model_xquery2.md
 :
 commit 7070aebd53a03fb68efb938b044f64de722a84f8 (HEAD ->
@@ -233,3 +233,9 @@ Olsson <ljo@fripost.org> Date: Fri Jul 21 19:59:04 2017 +0200
     Adding 3.1 features
 
 ```
+
+ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git co master
+Växlade till grenen "master"
+Din gren är à jour med "origin/master".
+ 
+* In old master ...
