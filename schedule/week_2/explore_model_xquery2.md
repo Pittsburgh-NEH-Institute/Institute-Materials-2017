@@ -137,3 +137,45 @@ return
         <string-constr>{$string-constr-var}</string-constr>
     )[6]
 ```
+
+### Functions
+local is a special namespace prefix 
+
+```xquery
+xquery version "3.1";
+
+declare namespace tei="http://www.tei-c.org/ns/1.0";
+
+declare function local:gen-uuid($prefix as xs:string?) as xs:string {
+concat($prefix, if (empty($prefix)) then "" else "-", util:uuid())
+};
+
+
+declare function local:add-uid-attributes-to-fragment($item as item())
+ as item() {
+  typeswitch($item)
+    case document-node() return
+        for $child in $item/node()
+        return local:add-uid-attributes-to-fragment($child)
+    case element() return
+      element {node-name($item)} {
+        $item/@*,
+        if ($item[not(@uid)]) then attribute {"uid"} {local:gen-uuid(name($item))} else (),
+        for $child in $item/node()
+        return local:add-uid-attributes-to-fragment($child)
+      }
+    default return $item
+};
+
+let $data-collection := collection("/db/neh-2017")
+let $result := "a string"
+let $xml := <result><b val="b"> no bss</b> another word starting with a {$result}</result>
+
+return local:add-uid-attributes-to-fragment($xml)
+```
+
+Gives 
+```xml
+<result uid="result-613a47fa-a524-456f-bec8-c89dbadde67d">
+  <b val="b" uid="b-0238e7cc-55e6-4f2d-825f-9d7fb2d68f63"> no bss</b> another word starting with a a string</result>
+```
