@@ -36,3 +36,5 @@ MK: Unsupervised learning, cluster analysis, PCA, paleographic analysis (continu
 
 ## 4:00–5:30: General review
 
+We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 2, Day 5 feedback](week_2_day_5_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 2, Day 5 feedback”.
+
