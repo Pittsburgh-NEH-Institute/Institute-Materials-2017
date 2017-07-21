@@ -40,7 +40,7 @@ Time | Activity | Type
 
 ## 3:30–4:00: Coffee break
 
-## 4:00–5:30: Modeling: exploring the model with XQuery
+## 4:00–5:30: [Modeling: exploring the model with XQuery](explore_model_xquery.md)
 
 <!-- ### Topics and Activities
 * Recap of the topics that have been discussed so far: tokenization, normalization, and collation from the point of view of annotations (as each of these activities entails a form of annotation)
