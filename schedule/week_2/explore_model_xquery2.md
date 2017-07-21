@@ -256,3 +256,25 @@ ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git br -a
   remotes/origin/schedule
 
 ```
+
+* Make some changes ...
+
+* Switch back to master
+
+```bash
+ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git co master
+error: Dina lokala ändringar av följande filer skulle skrivas över av utcheckning:
+	schedule/week_2/explore_model_xquery2.md
+Checka in dina ändringar eller använd "stash" innan du byter gren.
+Avbryter
+
+ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git br -a
+  master
+* show-merge-issues
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/schedule
+
+```
+
+So still on show-merge-issues branch ...
