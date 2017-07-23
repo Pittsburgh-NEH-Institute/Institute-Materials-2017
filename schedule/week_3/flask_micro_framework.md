@@ -69,9 +69,7 @@ if __name__ == '__main__':
 ### Dynamic data with templates 
 The render_template() function can take more arguments than only the template name.
 ```python
-...
-    render_template("index-dyn.html", title="template index.html", header="index.html", paragraph="...") 
-...
+ render_template("index-dyn.html", title="template index.html", header="index.html", paragraph="...") 
 ```
 
 This is used in the template `index-dyn.html`:
@@ -89,7 +87,7 @@ This is used in the template `index-dyn.html`:
 See [flask-index-template-dyn.py](flask-index-template-dyn.py) and [templates/index-dyn.html](templates/index-dyn.html) in the repo.
 
 #### Using a Python dictionary in the template 
-Instead of passing in all single variables to the `render_template` function you can use a Python dictionary. You access the keys in the template by putting the dictionary variable name and the key togeter with a period, e.g. `dict.title` 
+Instead of passing in all single variables to the `render_template` function you can use a Python dictionary. You access the keys in the template by putting the dictionary variable name and the key together with a period, e.g. `dict.title` 
 See [flask-index-template-dyn-dict.py](flask-index-template-dyn.py) and [templates/index-dyn.html](templates/index-dyn-dict.html) in the repo.
 
 ## Error handling
