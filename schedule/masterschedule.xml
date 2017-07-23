@@ -664,7 +664,7 @@
             <slot time="16:00:00">
                 <title>Web Publishing Frameworks: Flask</title>
                 <act time="25">
-                    <desc>Next steps: Beyond GitHub pages</desc>
+                    <desc>Next steps: Beyond GitHub Pages — Flask ](flask_micro_framework.md)</desc>
                 </act>
                 <act time="40">
                     <desc>Hands on Flask</desc>
