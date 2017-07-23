@@ -5,6 +5,9 @@ Scholars create digital editions to serve research purposes that may differ from
 
 ## Outcome goals
 * Don’t touch that keyboard! Planning *your* edition: starting with research questions
+* Where data modeling belongs in the workflow
+* Markup as an expression of a data model; making the implicit explicit and machine-actionable The relationships among model, syntax, and markup semantics
+* How modeling reduces iterations of the document analysis → schema development → markup pipeline XML looks like a string but it’s really a tree. What does this mean for modeling, markup, and querying or processing?
 ## Legend
 
 * **Presentation:** by instructors

@@ -28,7 +28,7 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–2:00: 
+## 2:00–2:00: Deployment and further coding if needed
 
 Time | Topic | Type
 ---- | ---- | ---- 
