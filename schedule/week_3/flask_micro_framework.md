@@ -88,6 +88,10 @@ This is used in the template `index-dyn.html`:
 ```
 See [flask-index-template-dyn.py](flask-index-template-dyn.py) and [templates/index-dyn.html](templates/index-dyn.html) in the repo.
 
+#### Using a Python dictionary in the template 
+Instead of passing in all single variables to the `render_template` function you can use a Python dictionary. You access the keys in the template by putting the dictionary variable name and the key togeter with a period, e.g. `dict.title` 
+See [flask-index-template-dyn-dict.py](flask-index-template-dyn.py) and [templates/index-dyn.html](templates/index-dyn-dict.html) in the repo.
+
 ## Error handling
 When creating applications it is important to manage _forseen errors_ as well as _unforseen errors_ and _exceptions_.
 In the previous Python sessions of the institute we have not been doing this much since we were focusing on other parts of the coding. But this week it will be needed for publishing your edition.
