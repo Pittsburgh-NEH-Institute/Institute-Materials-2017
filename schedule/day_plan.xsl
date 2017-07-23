@@ -20,8 +20,8 @@
 
     <xsl:template match="/">
         <!-- Create weekly and then daily schedules -->
-        <xsl:apply-templates select="week"/>
-        <xsl:apply-templates select="week" mode="daily"/>
+        <xsl:apply-templates select="//week"/>
+        <xsl:apply-templates select="//week" mode="daily"/>
     </xsl:template>
 
     <!-- Templates for weekly plans -->
@@ -84,11 +84,11 @@
             <xsl:apply-templates select="slot" mode="daily"/>
             <!-- feedback -->
             <xsl:text>We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [</xsl:text>
-            <xsl:value-of select="'# Week ' || ../@num || ', Day ' || position()"/>
+            <xsl:value-of select="'Week ' || ../@num || ', Day ' || position()"/>
             <xsl:text> feedback](</xsl:text>
             <xsl:value-of select="$feedbackname"/>
             <xsl:text>) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “</xsl:text>
-            <xsl:value-of select="'# Week ' || ../@num || ', Day ' || position()"/>
+            <xsl:value-of select="'Week ' || ../@num || ', Day ' || position()"/>
             <xsl:text> feedback”.</xsl:text>
 
         </xsl:result-document>

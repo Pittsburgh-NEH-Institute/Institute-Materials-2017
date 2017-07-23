@@ -66,4 +66,4 @@ Time | Topic | Type
 15 min | The [cost of workarounds during processing](overlap_xml.md) | Presentation
 10 min | What’s so bad about markup semantics, the application layer, and workarounds? | Discussion
 
-We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [# Week 2, Day 1 feedback](week_2_day_1_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “# Week 2, Day 1 feedback”.
+We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 2, Day 1 feedback](week_2_day_1_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 2, Day 1 feedback”.

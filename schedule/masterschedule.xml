@@ -607,17 +607,14 @@
                 and discuss how to iterating on it as you progress through the steps of digital
                 publication.</syn>
             <slot time="09:00:00">
-                <title>Mike Kestemont: Unsupervised learning, cluster analysis, PCA, paleographic
-                    analysis (continued)</title>
+                <title>Mike Kestemont: Bag-of-words models in Python (`numpy`, `scipy`)</title>
                 <desc/>
-                <act time="10">
+                <act time="5" type="Presentation">
                     <desc>Overview of Week 3</desc>
-
                     <outcome/>
                 </act>
-                <act time="30">
-                    <desc></desc>
-
+                <act time="85" type="Code_lab">
+                    <desc>Bag-of-words models in Python (`numpy`, `scipy`)</desc>
                     <outcome/>
                 </act>
             </slot>
@@ -628,10 +625,9 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>Mike Kestemont: Unsupervised learning, cluster analysis, PCA, paleographic
-                    analysis (continued)</title>
-                <act time="0">
-                    <desc></desc>
+                <title>Mike Kestemont: Stylometry and machine learning in Python (`sklearn`)</title>
+                <act time="90" type="Code_lab">
+                    <desc>Stylometry and machine learning in Python (`sklearn`)</desc>
                 </act>
             </slot>
             <slot time="12:30:00">
@@ -664,7 +660,8 @@
             <slot time="16:00:00">
                 <title>Web Publishing Frameworks: Flask</title>
                 <act time="25">
-                    <desc>[Next steps: Beyond GitHub Pages — Flask ](flask_micro_framework.md)</desc>
+                    <desc>[Next steps: Beyond GitHub Pages — Flask
+                        ](flask_micro_framework.md)</desc>
                 </act>
                 <act time="40">
                     <desc>Hands on Flask</desc>
@@ -840,7 +837,8 @@
                     <desc>Intro to lightning talks</desc>
                 </act>
                 <act time="89">
-                    <desc>Project slam, max 10 minutes per project, no discussion, switch on signal</desc>
+                    <desc>Project slam, max 10 minutes per project, no discussion, switch on
+                        signal</desc>
                 </act>
             </slot>
             <slot time="15:30:00">
@@ -874,7 +872,7 @@
             <slot time="09:00:00">
                 <title>The edition and APIs</title>
                 <act time="0">
-                    <desc></desc>
+                    <desc/>
                 </act>
             </slot>
             <slot time="10:30:00">
@@ -886,7 +884,7 @@
             <slot time="11:00:00">
                 <title>Using APIs in your edition</title>
                 <act time="0">
-                    <desc></desc>
+                    <desc/>
                 </act>
             </slot>
             <slot time="12:30:00">
@@ -898,7 +896,7 @@
             <slot time="14:00:00">
                 <title>Building your own API</title>
                 <act time="0">
-                    <desc></desc>
+                    <desc/>
                 </act>
             </slot>
             <slot time="15:30:00">
@@ -982,7 +980,7 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title></title>
+                <title/>
                 <act time="0">
                     <desc/>
                 </act>
