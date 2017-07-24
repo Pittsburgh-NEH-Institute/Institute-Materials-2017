@@ -156,6 +156,6 @@ d = '''This division by zero was not expected — this error is not correctable 
 try:
    z = x/y
 except ZeroDivisionError as e:
-   e.args += (d,) # tuple so cannot direcly concatenate stringvalue 'd' 
+   e.args += (d,) # tuple so cannot directly concatenate stringvalue 'd' 
    raise
-´´´
+```
