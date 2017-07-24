@@ -42,7 +42,7 @@ You need to include it in your python header:
 from flask import render_template
 ```
 
-If we put a file named index.html into the `templates` direcory with the following contents:
+If we put a file named index.html into the `templates` directory with the following contents:
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -88,7 +88,7 @@ See [flask-index-template-dyn.py](flask-index-template-dyn.py) and [templates/in
 
 #### Using a Python dictionary in the template 
 Instead of passing in all single variables to the `render_template` function you can use a Python dictionary. You access the keys in the template by putting the dictionary variable name and the key together with a period, e.g. `dict.title` 
-See [flask-index-template-dyn-dict.py](flask-index-template-dyn.py) and [templates/index-dyn.html](templates/index-dyn-dict.html) in the repo.
+See [flask-index-template-dyn-dict.py](flask-index-template-dyn-dict.py) and [templates/index-dyn.html](templates/index-dyn-dict.html) in the repo.
 
 ## Error handling
 When creating applications it is important to manage _forseen errors_ as well as _unforseen errors_ and _exceptions_.
