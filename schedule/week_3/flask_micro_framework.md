@@ -39,7 +39,7 @@ So with this small amount of code you have actually brought up a simple web serv
 Then Jinja templating engine is available in Python. There is a convention to put the templates in a subdirectory called `templates`.
 You need to include it in your python header:
 ```python
-from flask inport render_template
+from flask import render_template
 ```
 
 If we put a file named index.html into the `templates` direcory with the following contents:
