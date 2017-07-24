@@ -133,7 +133,7 @@ So by passing the request parameter we can now set the header to any string valu
 See [flask-request.py](flask-request.py).
 
 ### Avoid dividing by zero
-Python have _Exceptions_. Then can be handled sometimes _catching_ them  withing _try blocks_ might be enough, but not always. In this case  we can handle `ZeroDivisionError` to say something about if we can continue or not. If we do not handle it but let Python _throw_ the error it would break the application execution and potentially cause inconsistency or at least giving you unhappy users.
+Python have _Exceptions_. They can be handled. Sometimes _catching_ them  withing _try blocks_ might be enough, but not always. In this case  we can handle `ZeroDivisionError` to say something about if we can continue or not. If we do not handle it but let Python _throw_ the error it would break the application execution and potentially cause inconsistency or at least giving you unhappy users.
 
 ```python
 (x,y) = (5,0)
