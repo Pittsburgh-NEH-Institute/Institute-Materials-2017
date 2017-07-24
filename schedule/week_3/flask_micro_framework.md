@@ -94,3 +94,40 @@ See [flask-index-template-dyn-dict.py](flask-index-template-dyn.py) and [templat
 When creating applications it is important to manage _forseen errors_ as well as _unforseen errors_ and _exceptions_.
 In the previous Python sessions of the institute we have not been doing this much since we were focusing on other parts of the coding. But this week it will be needed for publishing your edition.
 
+### Default values
+To make your application more _robust_ you should use default values to avoid errors. We are also introducing _request parameters_. In this case we use the default request method _GET_ to pass our parameter `header` and its value to the server for retrieval. By convention _GET_ shoud only be used for retrieval and not update the state in the server application. This way you can dynamically pass parameters from the _client_ e.g. the web browser or any HTTP capable library. The other methods are _POST_, _PUT_, and _DELETE_.
+
+```python
+from flask import Flask
+from flask import render_template
+from flask import request
+
+defaults = { 'title': 'dynamic request header index.html' ,
+             'header': 'Default "header" is used. Give request parameter header with a value to change it.',
+             'paragraph': 'This is index.html with dynamic contents in response to a request for / (ROOT) in flask-request.py'
+}
+
+app = Flask(__name__)
+@app.route("/")
+def get_my_index():
+    header = get_request_value_with_fallback('header')
+    values = {'title': defaults['title'] ,
+        'header': header,
+        'paragraph': defaults['paragraph'] 
+}
+    return render_template("index-dyn-dict.html", dict=values)
+
+def get_request_value_with_fallback(key):
+    if request.args.get(key):
+        return request.args.get(key)
+    return defaults[key]
+
+if __name__ == '__main__':
+    app.run(port=5000, debug=True)
+```
+So by passing the request parameter 
+```bash
+ http://localhost:5000/?header=My%20header
+```
+ 
+See [flask-request.py](flask-request.py).
