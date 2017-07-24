@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Review: an electronic transcription</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Published as an example for the CETEIcean project.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>No source: born digital.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+        <rendition scheme="css" xml:id="italic">font-style: italic;</rendition>
+        <rendition scheme="css" selector="title">text-decoration: underline;</rendition>
+      </tagsDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Review</head>
+      <p>
+        <title xml:id="foo" xml:lang="de">Die Leiden des jungen Werther</title>
+        <note place="foot">by <name>Goethe</name></note>
+        is an <emph>exceptionally</emph>
+        good example of a book full of <term rendition="#italic">Weltschmerz</term>.
+        Here is some <add>added</add> text.</p>
+      <p>Here is a pointer: <ptr target="https://github.com/TEIC/CETEIcean"/>.
+    And here is a <ref target="https://github.com/TEIC">ref</ref>. But
+    <ref target="addBehaviorTest.html">here</ref> is a relative link.</p>
+    <p><egXML xmlns="http://www.tei-c.org/ns/Examples"><fuzzbuckets>egXML test</fuzzbuckets></egXML></p>
+    </body>
+  </text>
+</TEI>

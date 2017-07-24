@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/pitt.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/CETEI.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    var c = new CETEI();
+    c.addBehaviors({"handlers":{
+    "supplied": ["[","]"],
+    "lb": ["<br>"]
+    }});
+	c.getHTML5('p.fay.110.xml', function(data) {
+        document.getElementsByTagName("body")[0].appendChild(data);
+      });
+    </script>
+    <title>P.Fay 110</title>
+  </head>
+  <body>
+  </body>
+</html>
