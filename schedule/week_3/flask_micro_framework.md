@@ -144,6 +144,8 @@ except ZeroDivisionError:
 # Depending on if we can recover or not: do what is needed to nicely exit or take receovery actions
 ```
 
+See [error-handling-divide-by-zero.py](error-handling-divide-by-zero.py).
+
 If you find it unrecoverable you might want to modify the exception and retrow it with `raise`:
 
 ```python
@@ -159,6 +161,8 @@ except ZeroDivisionError as e:
    e.args += (d,) # tuple so cannot directly concatenate stringvalue 'd' 
    raise
 ```
+
+See [error-handling-divide-by-zero-raise.py](error-handling-divide-by-zero-raise.py).
 
 ### Check your values
 If you are doing API calls you also need to make sure that you handle connection errors and recovery from that e.g. retries. Bur first of all you need to handle the exceptions on connection. in this case the exception is namespaced e.g. it is from the urllib2 library.
@@ -187,6 +191,8 @@ try:
 except urllib2.URLError:
    print "Connection refused. Please check the URL and port"
 ```
+
+See [error-handling-url-not-found.py](error-handling-url-not-found.py).
 
 Exercise: There are of course many other errors and exceptions you would like handle in this still rather simple script. Wich ones could you come up with? 
 
