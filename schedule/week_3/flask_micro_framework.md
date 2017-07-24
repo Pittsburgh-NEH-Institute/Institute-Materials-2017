@@ -95,7 +95,7 @@ When creating applications it is important to manage _forseen errors_ as well as
 In the previous Python sessions of the institute we have not been doing this much since we were focusing on other parts of the coding. But this week it will be needed for publishing your edition.
 
 ### Default values
-To make your application more _robust_ you should use default values to avoid errors. We are also introducing _request parameters_. In this case we use the default request method _GET_ to pass our parameter `header` and its value to the server for retrieval. By convention _GET_ shoud only be used for retrieval and not update the state in the server application. This way you can dynamically pass parameters from the _client_ e.g. the web browser or any HTTP capable library. The other methods are _POST_, _PUT_, and _DELETE_.
+To make your application more _robust_ you should use default values to avoid errors. We are also introducing _request parameters_. In this case we use the default request method _GET_ to pass our parameter `header` and its value to the server for retrieval. By convention _GET_ should only be used for retrieval and not update the state in the server application. This way you can dynamically pass parameters from the _client_ e.g. the web browser or any HTTP capable library. The other methods are _POST_, _PUT_, and _DELETE_.
 
 ```python
 from flask import Flask
@@ -125,9 +125,21 @@ def get_request_value_with_fallback(key):
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
 ```
-So by passing the request parameter 
+So by passing the request parameter we can now set the header to any string value. In this case `My header`: 
 ```bash
  http://localhost:5000/?header=My%20header
 ```
  
 See [flask-request.py](flask-request.py).
+
+### Avoid dividing by zero
+Python have _Exceptions_. Then can be handled sometimes _catching_ them  withing _try blocks_ might be enough, but not always. In this case  we can handle `ZeroDivisionError` to say something about if we can continue or not. If we do not handle it but let Python _throw_ the error it would break the application execution and potentially cause inconsistency or at least giving you unhappy users.
+
+```python
+(x,y) = (5,0)
+try:
+   z = x/y
+except ZeroDivisionError:
+   print "divide by zero. We need to recover. Maybe ask the user for a better value."
+# Depending on if we can recover or not: do what is needed to nicely exit or take receovery actions
+```
