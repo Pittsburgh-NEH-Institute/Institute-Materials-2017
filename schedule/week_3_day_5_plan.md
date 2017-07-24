@@ -28,7 +28,7 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–2:00: 
+## 2:00–2:00: Deployment and further coding if needed
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -42,4 +42,4 @@ Time | Topic | Type
 ---- | ---- | ---- 
 0 min |  | 
 
-We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [# Week 3, Day 5 feedback](week_3_day_5_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “# Week 3, Day 5 feedback”.
+We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 3, Day 5 feedback](week_3_day_5_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 3, Day 5 feedback”.

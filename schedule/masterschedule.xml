@@ -607,17 +607,14 @@
                 and discuss how to iterating on it as you progress through the steps of digital
                 publication.</syn>
             <slot time="09:00:00">
-                <title>Mike Kestemont: Unsupervised learning, cluster analysis, PCA, paleographic
-                    analysis (continued)</title>
+                <title>Mike Kestemont: Bag-of-words models in Python (`numpy`, `scipy`)</title>
                 <desc/>
-                <act time="10">
+                <act time="5" type="Presentation">
                     <desc>Overview of Week 3</desc>
-
                     <outcome/>
                 </act>
-                <act time="30">
-                    <desc>Explore project planning questions</desc>
-
+                <act time="85" type="Code_lab">
+                    <desc>Bag-of-words models in Python (`numpy`, `scipy`)</desc>
                     <outcome/>
                 </act>
             </slot>
@@ -628,9 +625,9 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>Introducing CETEIcean / Publishing on GitHub Pages</title>
-                <act time="0">
-                    <desc>Publishing on GitHub pages</desc>
+                <title>Mike Kestemont: Stylometry and machine learning in Python (`sklearn`)</title>
+                <act time="90" type="Code_lab">
+                    <desc>Stylometry and machine learning in Python (`sklearn`)</desc>
                 </act>
             </slot>
             <slot time="12:30:00">
@@ -640,9 +637,18 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>Next steps: Customizing your edition with CSS and Javascript</title>
-                <act time="0">
-                    <desc>Customizing your edition with CSS and Javascript</desc>
+                <title>Introducing CETEIcean / Publishing on GitHub Pages</title>
+                <act time="25">
+                    <desc>Introducing CETEIcean / Publishing on GitHub Pages</desc>
+                </act>
+                <act time="20">
+                    <desc>Hands on</desc>
+                </act>
+                <act time="25">
+                    <desc>Next steps: Customizing your edition with CSS and Javascript</desc>
+                </act>
+                <act time="20">
+                    <desc>Hands on</desc>
                 </act>
             </slot>
             <slot time="15:30:00">
@@ -652,11 +658,17 @@
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title>Web Publishing Frameworks: Django</title>
-                <act time="0">
-                    <desc>Next steps: Beyond GitHub pages</desc>
+                <title>Web Publishing Frameworks: Flask</title>
+                <act time="25">
+                    <desc>[Next steps: Beyond GitHub Pages — Flask
+                        ](flask_micro_framework.md)</desc>
                 </act>
-
+                <act time="40">
+                    <desc>Hands on Flask</desc>
+                </act>
+                <act time="25">
+                    <desc>Review</desc>
+                </act>
             </slot>
         </day>
         <day d="Tuesday">
@@ -666,18 +678,33 @@
             <slot time="09:00:00">
                 <title>LOD and Editions</title>
                 <desc>Linked data principles</desc>
-                <act time="20">
+                <act time="10">
                     <desc>URIs as identifiers</desc>
 
                     <outcome/>
                 </act>
-                <act time="30">
+                <act time="10">
+                    <desc>Hands on URIs as identifiers</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15">
                     <desc>Modeling concepts and expressions</desc>
 
                     <outcome/>
                 </act>
-                <act time="20">
+                <act time="15">
+                    <desc>Hands on Modeling concepts and expressions</desc>
+
+                    <outcome/>
+                </act>
+                <act time="10">
                     <desc>Choosing and using ontologies</desc>
+
+                    <outcome/>
+                </act>
+                <act time="10">
+                    <desc>Hands on Choosing and using ontologies</desc>
 
                     <outcome/>
                 </act>
@@ -691,13 +718,23 @@
             <slot time="11:00:00">
                 <title>Plugging your edition into the graph</title>
                 <desc>Plugging your edition into the graph</desc>
-                <act time="20">
+                <act time="10">
                     <desc>Extracting and publishing RDF data</desc>
 
                     <outcome/>
                 </act>
-                <act time="20">
+                <act time="10">
+                    <desc>Hands on Extracting and publishing RDF data</desc>
+
+                    <outcome/>
+                </act>
+                <act time="10">
                     <desc>RDF databases and SPARQL</desc>
+
+                    <outcome/>
+                </act>
+                <act time="10">
+                    <desc>Hands on RDF databases and SPARQL</desc>
 
                     <outcome/>
                 </act>
@@ -711,8 +748,17 @@
             </slot>
             <slot time="14:00:00">
                 <title>XQuery and eXist</title>
-                <act time="0">
-                    <desc>XQuery</desc>
+                <act time="15">
+                    <desc>XQuery 3</desc>
+                </act>
+                <act time="30">
+                    <desc>Hands on XQuery 3</desc>
+                </act>
+                <act time="15">
+                    <desc>Web apps in eXist</desc>
+                </act>
+                <act time="30">
+                    <desc>Hands on Web apps in eXist</desc>
                 </act>
             </slot>
             <slot time="15:30:00">
@@ -723,8 +769,20 @@
             </slot>
             <slot time="16:00:00">
                 <title>Data visualization</title>
-                <act time="0">
-                    <desc>Data visualization</desc>
+                <act time="15">
+                    <desc>Data visualization 1</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on Data visualization 1</desc>
+                </act>
+                <act time="15">
+                    <desc>Data visualization 2</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on Data visualization 2</desc>
+                </act>
+                <act time="30">
+                    <desc>Review</desc>
                 </act>
             </slot>
         </day>
@@ -733,8 +791,17 @@
             <syn/>
             <slot time="09:00:00">
                 <title>Getting to know and use the TEI stylesheets</title>
-                <act time="0">
+                <act time="15">
                     <desc/>
+                </act>
+                <act time="30">
+                    <desc>Hands on TEI stylesheets</desc>
+                </act>
+                <act time="15">
+                    <desc>TEI stylesheets 2</desc>
+                </act>
+                <act time="30">
+                    <desc>Hands on TEI stylesheets 2</desc>
                 </act>
             </slot>
             <slot time="10:30:00">
@@ -745,8 +812,17 @@
             </slot>
             <slot time="11:00:00">
                 <title>TEI Publisher</title>
-                <act time="0">
-                    <desc/>
+                <act time="15">
+                    <desc>eXist Solution's TEI Publisher</desc>
+                </act>
+                <act time="30">
+                    <desc>Hands on TEI Publisher 1</desc>
+                </act>
+                <act time="15">
+                    <desc>TEI Publisher 2</desc>
+                </act>
+                <act time="30">
+                    <desc>Hands on TEI Publisher 2</desc>
                 </act>
             </slot>
             <slot time="12:30:00">
@@ -756,9 +832,13 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title/>
-                <act time="0">
-                    <desc/>
+                <title>Lighning talks</title>
+                <act time="1">
+                    <desc>Intro to lightning talks</desc>
+                </act>
+                <act time="89">
+                    <desc>Project slam, max 10 minutes per project, no discussion, switch on
+                        signal</desc>
                 </act>
             </slot>
             <slot time="15:30:00">
@@ -768,9 +848,21 @@
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title/>
-                <act time="0">
-                    <desc/>
+                <title>TAG and Alexandria: models and visualizations</title>
+                <act time="10">
+                    <desc>TAG as model</desc>
+                </act>
+                <act time="20">
+                    <desc>Hands on TAG as model</desc>
+                </act>
+                <act time="10">
+                    <desc>Alexandria as model and visualization</desc>
+                </act>
+                <act time="30">
+                    <desc>Hands on Alexandria as model and visualization</desc>
+                </act>
+                <act time="20">
+                    <desc>Review</desc>
                 </act>
             </slot>
         </day>
@@ -815,8 +907,14 @@
             </slot>
             <slot time="16:00:00">
                 <title>Licensing, archiving, and planning for the future</title>
-                <act time="0">
-                    <desc/>
+                <act time="30">
+                    <desc>Licensing, archiving, and planning for the future</desc>
+                </act>
+                <act time="10">
+                    <desc>Hands on Licensing, archiving, and planning for the future</desc>
+                </act>
+                <act time="30">
+                    <desc>Review</desc>
                 </act>
             </slot>
         </day>
@@ -848,7 +946,7 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title/>
+                <title>Deployment and further coding if needed</title>
                 <act time="0">
                     <desc/>
                 </act>
@@ -862,6 +960,28 @@
             <slot time="16:00:00">
                 <title>Wrapping up: What have we learned?</title>
                 <act time="0">
+                    <desc/>
+                </act>
+            </slot>
+        </day>
+        <day d="Saturday">
+            <date>July 29</date>
+            <syn>Half day for philosphy and pedagogy of the Insitute</syn>
+            <slot time="09:00:00">
+                <title>Rationale and design of the Institute</title>
+                <act time="90">
+                    <desc/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>Rationale and design of the Institute (continued)</title>
+                <act time="90">
                     <desc/>
                 </act>
             </slot>

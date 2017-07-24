@@ -4,6 +4,9 @@
 The first half of Week 2, Day 2 continues the focus on document modeling from the previous day, with attention to three models of text: XML (text as tree), LMNL (text as ranges), and TAG (text as graph). The second half of the day introduces the idea of developing a digital edition as a computational pipeline. We illustrate the pipeline with the Gothenburg model of textual variation, and then begin to explore the first two stages of that model, tokenization and normalization. Java SE installation: <"http://www.oracle.com/technetwork/java/javase/downloads/index.html">. Choose Java SE for your operating system
 
 ## Outcome goals
+* Understanding modeling perspectives (tree, ranges, graph) and communities Modular development: thinking about digital edition development as a computational pipeline
+* Beginning to tokenize texts
+* Beginning to normalize texts
 ## Legend
 
 * **Presentation:** by instructors
@@ -60,4 +63,4 @@ Time | Topic | Type
 20 min | Normalization examples (`Normalization_examples.ipynb` notebook) | Presentation
 30 min | Normalizing XML input (`Integrating_XML_with_Python.ipynb` notebook) | Code lab
 
-We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [# Week 2, Day 2 feedback](week_2_day_2_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “# Week 2, Day 2 feedback”.
+We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 2, Day 2 feedback](week_2_day_2_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 2, Day 2 feedback”.

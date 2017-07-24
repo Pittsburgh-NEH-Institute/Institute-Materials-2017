@@ -3,54 +3,56 @@
     xmlns:math="http://www.w3.org/2005/xpath-functions/math" exclude-result-prefixes="xs math"
     version="3.0">
     <xsl:output method="text" omit-xml-declaration="yes"/>
-    
+
     <xsl:function name="djb:timeRange" as="xs:string">
+        <!--
+            Parameters: $startTime as xs:time, $duration as xs:double
+            Returns: hyphenated time range as xs:string
+        -->
         <xsl:param name="startTime" as="xs:time"/>
         <xsl:param name="duration" as="xs:double"/>
-        <!--xs:time('09:00:00') + xs:duration(xs:dayTimeDuration('PT1H30M'))-->
         <xsl:variable name="end-time" as="xs:string"
             select="
-            format-time($startTime + xs:duration(xs:dayTimeDuration(concat('PT', $duration, 'M'))), '[h]:[m01]')
-            "/>
+                format-time($startTime + xs:duration(xs:dayTimeDuration(concat('PT', $duration, 'M'))), '[h]:[m01]')
+                "/>
         <xsl:sequence select="format-time($startTime, '[h]:[m01]') || '–' || $end-time"/>
     </xsl:function>
-    
+
     <xsl:template match="/">
-        <xsl:apply-templates/>
-        <xsl:apply-templates mode="daily"/>
+        <!-- Create weekly and then daily schedules -->
+        <xsl:apply-templates select="//week"/>
+        <xsl:apply-templates select="//week" mode="daily"/>
     </xsl:template>
-    
+
     <!-- Templates for weekly plans -->
     <xsl:template match="week">
         <xsl:variable name="filename" as="xs:string" select="'week_' || @num || '_plan.md'"/>
-        
-            select="'week_' || ../@num || '_day_' || position() || '_plan.md'"/>
         <xsl:result-document method="text" omit-xml-declaration="yes" href="{$filename}">
             <xsl:value-of select="'# Week ' || @num || ' plan: ' || ./title || '&#x0a;' || '&#x0a;'"/>
-            
-            <xsl:text>Time | </xsl:text><xsl:apply-templates select="day"/><xsl:text>&#x0a;</xsl:text>
-            <xsl:text>---- | ---- | ---- | ---- | ---- | ----  &#x0a;</xsl:text>
+            <xsl:text>Time | </xsl:text>
+            <xsl:apply-templates select="day"/>
+            <xsl:text>&#x0a;----</xsl:text>
+            <xsl:for-each select="day">
+                <xsl:text> | ----</xsl:text>
+            </xsl:for-each>
+            <xsl:text>&#x0a;</xsl:text>
             <xsl:apply-templates select="day[1]/slot"/>
-            
-            
         </xsl:result-document>
-        
     </xsl:template>
     <xsl:template match="day">
-        <xsl:variable name="linkname" as="xs:string" select="'week_' || ../@num || '_day_' || position() || '_plan.md'"/>
-        <xsl:variable name="daynames" as="xs:string" select="normalize-space(concat(' [', @d, '](', $linkname, ')', ' | ' ))"/>
+        <xsl:variable name="linkname" as="xs:string"
+            select="'week_' || ../@num || '_day_' || position() || '_plan.md'"/>
+        <xsl:variable name="daynames" as="xs:string"
+            select="normalize-space(concat(' [', @d, '](', $linkname, ')', ' | '))"/>
         <xsl:value-of select="$daynames"/>
-        
     </xsl:template>
     <xsl:template match="slot">
-        
-        <xsl:variable name="slotContents" as="xs:string" select="normalize-space(string-join(//slot[@time eq current()/@time and ancestor::week/@num eq current()/ancestor::week/@num]/title,' | '))"/>
- 
-        <xsl:value-of
-            select="djb:timeRange(@time, sum(act/@time)) || ' |', $slotContents, '&#x0a;'"/>
-        <!--<xsl:value-of select="string-join(../slot/title, ' | ')"/>-->
+        <xsl:variable name="slotContents" as="xs:string"
+            select="normalize-space(string-join(//slot[@time eq current()/@time and ancestor::week/@num eq current()/ancestor::week/@num]/title, ' | '))"/>
+        <xsl:value-of select="djb:timeRange(@time, sum(act/@time)) || ' |', $slotContents, '&#x0a;'"
+        />
     </xsl:template>
-    
+
     <!-- Templates for daily plans -->
     <xsl:template match="week" mode="daily">
         <xsl:apply-templates mode="daily" select="day"/>
@@ -63,7 +65,7 @@
         <xsl:result-document method="text" omit-xml-declaration="yes" href="{$filename}">
             <xsl:value-of
                 select="'# Week ' || ../@num || ', Day ' || position() || ': ' || @d || ', ' || date || '&#x0a;'"/>
-            
+
             <!-- synopsis -->
             <xsl:text>## Synopsis&#x0a;</xsl:text>
             <xsl:apply-templates select="syn" mode="daily"/>
@@ -77,14 +79,18 @@
 * **Discussion:** instructors and participants
 * **Talk lab:** participants discuss or plan in small groups
 * **Code lab:** participants code alone or in small groups&#x0a;&#x0a;* * *&#x0a;</xsl:text>
-            
+
             <!-- tables for slots -->
             <xsl:apply-templates select="slot" mode="daily"/>
             <!-- feedback -->
-            <xsl:text>We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [</xsl:text><xsl:value-of
-                select="'# Week ' || ../@num || ', Day ' || position()"/><xsl:text> feedback](</xsl:text><xsl:value-of select="$feedbackname"/><xsl:text>) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “</xsl:text><xsl:value-of
-                    select="'# Week ' || ../@num || ', Day ' || position()"/><xsl:text> feedback”.</xsl:text>
-            
+            <xsl:text>We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [</xsl:text>
+            <xsl:value-of select="'Week ' || ../@num || ', Day ' || position()"/>
+            <xsl:text> feedback](</xsl:text>
+            <xsl:value-of select="$feedbackname"/>
+            <xsl:text>) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “</xsl:text>
+            <xsl:value-of select="'Week ' || ../@num || ', Day ' || position()"/>
+            <xsl:text> feedback”.</xsl:text>
+
         </xsl:result-document>
     </xsl:template>
     <xsl:template match="syn" mode="daily">
@@ -92,7 +98,7 @@
         <xsl:value-of select="normalize-space(.)"/>
         <xsl:text>&#x0a;&#x0a;</xsl:text>
     </xsl:template>
-    <!-- creates and styles time headers -->
+    <!-- create and styles time headers -->
     <xsl:template match="slot" mode="daily">
         <xsl:value-of
             select="'## ' || djb:timeRange(@time, sum(act/@time)) || ': ' || title || '&#x0a;&#x0a;'"/>
@@ -106,14 +112,13 @@
             <xsl:text>&#x0a;</xsl:text>
         </xsl:if>
     </xsl:template>
-    
-    <!-- creates the activity times in table  -->
+    <!-- create the activity times in table  -->
     <xsl:template match="act" mode="daily">
         <xsl:value-of
             select="@time || ' min | ' || normalize-space(desc) || ' | ' || translate(@type, '_', ' ') || '&#x0a;'"
         />
     </xsl:template>
-    <!-- creates list of goals -->
+    <!-- create list of goals -->
     <xsl:template match="outcome" mode="daily">
         <xsl:if test="goal">
             <xsl:text>* </xsl:text>
@@ -121,6 +126,4 @@
             <xsl:text>&#x0a;</xsl:text>
         </xsl:if>
     </xsl:template>
-    
-    
 </xsl:stylesheet>

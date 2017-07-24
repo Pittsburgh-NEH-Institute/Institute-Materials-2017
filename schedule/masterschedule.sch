@@ -4,7 +4,7 @@
     xmlns="http://purl.oclc.org/dsdl/schematron">
     <pattern>
         <rule context="slot">
-            <assert test="sum(act/@time/number()) eq 30 or sum(act/@time/number()) eq 90"> The sum
+            <assert test="sum(act/@time/number()) eq 30 or sum(act/@time/number()) eq 90" role="warn"> The sum
                 of the activity durations must be equal to either 30 or 90 minutes.
             </assert>
         </rule>
