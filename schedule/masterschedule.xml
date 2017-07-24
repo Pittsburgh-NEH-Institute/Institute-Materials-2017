@@ -966,10 +966,10 @@
         </day>
         <day d="Saturday">
             <date>July 29</date>
-            <syn>Half day for philosphy and pedagogy of Insitute</syn>
+            <syn>Half day for philosphy and pedagogy of the Insitute</syn>
             <slot time="09:00:00">
-                <title>Pedagogy for making your institute</title>
-                <act time="0">
+                <title>Rationale and design of the Institute</title>
+                <act time="90">
                     <desc/>
                 </act>
             </slot>
@@ -980,8 +980,8 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title/>
-                <act time="0">
+                <title>Rationale and design of the Institute (continued)</title>
+                <act time="90">
                     <desc/>
                 </act>
             </slot>
