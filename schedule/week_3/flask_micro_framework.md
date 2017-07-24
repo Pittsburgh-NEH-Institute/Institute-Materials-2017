@@ -39,10 +39,10 @@ So with this small amount of code you have actually brought up a simple web serv
 Then Jinja templating engine is available in Python. There is a convention to put the templates in a subdirectory called `templates`.
 You need to include it in your python header:
 ```python
-from flask inport render_template
+from flask import render_template
 ```
 
-If we put a file named index.html into the `templates` direcory with the following contents:
+If we put a file named index.html into the `templates` directory with the following contents:
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -88,9 +88,113 @@ See [flask-index-template-dyn.py](flask-index-template-dyn.py) and [templates/in
 
 #### Using a Python dictionary in the template 
 Instead of passing in all single variables to the `render_template` function you can use a Python dictionary. You access the keys in the template by putting the dictionary variable name and the key together with a period, e.g. `dict.title` 
-See [flask-index-template-dyn-dict.py](flask-index-template-dyn.py) and [templates/index-dyn.html](templates/index-dyn-dict.html) in the repo.
+See [flask-index-template-dyn-dict.py](flask-index-template-dyn-dict.py) and [templates/index-dyn.html](templates/index-dyn-dict.html) in the repo.
 
 ## Error handling
 When creating applications it is important to manage _forseen errors_ as well as _unforseen errors_ and _exceptions_.
 In the previous Python sessions of the institute we have not been doing this much since we were focusing on other parts of the coding. But this week it will be needed for publishing your edition.
 
+### Default values
+To make your application more _robust_ you should use default values to avoid errors. We are also introducing _request parameters_. In this case we use the default request method _GET_ to pass our parameter `header` and its value to the server for retrieval. By convention _GET_ should only be used for retrieval and not update the state in the server application. This way you can dynamically pass parameters from the _client_ e.g. the web browser or any HTTP capable library. The other methods are _POST_, _PUT_, and _DELETE_.
+
+```python
+from flask import Flask
+from flask import render_template
+from flask import request
+
+defaults = { 'title': 'dynamic request header index.html' ,
+             'header': 'Default "header" is used. Give request parameter header with a value to change it.',
+             'paragraph': 'This is index.html with dynamic contents in response to a request for / (ROOT) in flask-request.py'
+}
+
+app = Flask(__name__)
+@app.route("/")
+def get_my_index():
+    header = get_request_value_with_fallback('header')
+    values = {'title': defaults['title'] ,
+        'header': header,
+        'paragraph': defaults['paragraph'] 
+}
+    return render_template("index-dyn-dict.html", dict=values)
+
+def get_request_value_with_fallback(key):
+    if request.args.get(key):
+        return request.args.get(key)
+    return defaults[key]
+
+if __name__ == '__main__':
+    app.run(port=5000, debug=True)
+```
+So by passing the request parameter we can now set the header to any string value. In this case `My header`: 
+```bash
+ http://localhost:5000/?header=My%20header
+```
+ 
+See [flask-request.py](flask-request.py).
+
+### Avoid dividing by zero
+Python have _Exceptions_. They can be handled. Sometimes _catching_ them  withing _try blocks_ might be enough, but not always. In this case  we can handle `ZeroDivisionError` to say something about if we can continue or not. If we do not handle it but let Python _throw_ the error it would break the application execution and potentially cause inconsistency or at least giving you unhappy users.
+
+```python
+(x,y) = (5,0)
+try:
+   z = x/y
+except ZeroDivisionError:
+   print "divide by zero. We need to recover. Maybe ask the user for a better value."
+# Depending on if we can recover or not: do what is needed to nicely exit or take receovery actions
+```
+
+See [error-handling-divide-by-zero.py](error-handling-divide-by-zero.py).
+
+If you find it unrecoverable you might want to modify the exception and retrow it with `raise`:
+
+```python
+# -*- coding: utf-8 -*-
+
+d = '''This division by zero was not expected — this error is not correctable by you.
+    It is an application error. If you contact the project at ... 
+    we can fix it so that others do not need to experience this in the future.'''
+(x,y) = (5,0)
+try:
+   z = x/y
+except ZeroDivisionError as e:
+   e.args += (d,) # tuple so cannot directly concatenate stringvalue 'd' 
+   raise
+```
+
+See [error-handling-divide-by-zero-raise.py](error-handling-divide-by-zero-raise.py).
+
+### Check your values
+If you are doing API calls you also need to make sure that you handle connection errors and recovery from that e.g. retries. Bur first of all you need to handle the exceptions on connection. in this case the exception is namespaced e.g. it is from the urllib2 library.
+
+```python
+import json
+import urllib
+import urllib2
+
+urlbase = "http://localhost:8091/exist/rest/db/karp/karp-stats.xql?op=feat-stats&do-feat-values=true&use-current=true&json=true&resurs={}"
+
+def get_data(resource):
+    query = urllib.quote(resource)
+    url = urlbase.format(query)
+    data = urllib2.urlopen(url).read()
+    parsed = json.loads(data)
+    info = None
+    if parsed.get('resource'):
+        info = {'description': parsed['resource'][0]['description'],
+                   'name': parsed['resource'][0]['name']
+                   }
+    return info
+
+try: 
+   get_data("dalin")
+except urllib2.URLError:
+   print "Connection refused. Please check the URL and port"
+```
+
+See [error-handling-url-not-found.py](error-handling-url-not-found.py).
+
+Exercise: There are of course many other errors and exceptions you would like handle in this still rather simple script. Wich ones could you come up with? 
+
+### Validation
+Every app running in a web browser should have validation of values from forms validated both on client and server side.
