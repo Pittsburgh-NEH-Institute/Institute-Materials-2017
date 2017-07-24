@@ -143,3 +143,19 @@ except ZeroDivisionError:
    print "divide by zero. We need to recover. Maybe ask the user for a better value."
 # Depending on if we can recover or not: do what is needed to nicely exit or take receovery actions
 ```
+
+If you find it unrecoverable you might want to modify the exception and retrow it with `raise`:
+
+```python
+# -*- coding: utf-8 -*-
+
+d = '''This division by zero was not expected — this error is not correctable by you.
+    It is an application error. If you contact the project at ... 
+    we can fix it so that others do not need to experience this in the future.'''
+(x,y) = (5,0)
+try:
+   z = x/y
+except ZeroDivisionError as e:
+   e.args += (d,) # tuple so cannot direcly concatenate stringvalue 'd' 
+   raise
+´´´
