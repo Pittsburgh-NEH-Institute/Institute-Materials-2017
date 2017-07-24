@@ -159,3 +159,36 @@ except ZeroDivisionError as e:
    e.args += (d,) # tuple so cannot directly concatenate stringvalue 'd' 
    raise
 ```
+
+### Check your values
+If you are doing API calls you also need to make sure that you handle connection errors and recovery from that e.g. retries. Bur first of all you need to handle the exceptions on connection. in this case the exception is namespaced e.g. it is from the urllib2 library.
+
+```python
+import json
+import urllib
+import urllib2
+
+urlbase = "http://localhost:8091/exist/rest/db/karp/karp-stats.xql?op=feat-stats&do-feat-values=true&use-current=true&json=true&resurs={}"
+
+def get_data(resource):
+    query = urllib.quote(resource)
+    url = urlbase.format(query)
+    data = urllib2.urlopen(url).read()
+    parsed = json.loads(data)
+    info = None
+    if parsed.get('resource'):
+        info = {'description': parsed['resource'][0]['description'],
+                   'name': parsed['resource'][0]['name']
+                   }
+    return info
+
+try: 
+   get_data("dalin")
+except urllib2.URLError:
+   print "Connection refused. Please check the URL and port"
+```
+
+Exercise: There are of course many other errors and exceptions you would like handle in this still rather simple script. Wich ones could you come up with? 
+
+### Validation
+Every app running in a web browser should have validation of values from forms validated both on client and server side.
