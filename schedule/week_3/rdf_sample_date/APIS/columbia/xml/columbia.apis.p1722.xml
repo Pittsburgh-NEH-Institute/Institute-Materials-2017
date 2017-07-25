@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+           <title>Contract</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="controlNo">(NNC)p1722</idno>
+           <idno type="apisid">columbia.apis.p1722</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                 <idno type="invNo">Col. inv. 522</idno>
+               </msIdentifier>
+               <msContents>
+                 <summary>Contract: one party is Arpokras son of Herodes son of Herodion. The whole preserved text is occupied with the physical description of the parties</summary>
+                 <msItemStruct>
+                     <note type="general">Round hand, fairly clear and without many ligatures</note>
+                     <note type="general">42 lines; broken on both sides</note>
+                     <note type="general">Darkened papyrus</note>
+                     <note type="general">Opening dating formula from the reign of Marcus Aurelius and Commodus.</note>
+                     <note type="local_note">Registered to David M. Ratzan until July 1, 2016.  If after this date, please direct inquiries to the Columbia Rare Book and Manuscript Library.</note>
+                     <textLang mainLang="grc">Greek</textLang>
+                 </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                       <support>1 papyrus fragment; 9.1 x 23 cm.</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                    <origDate notBefore="0176" notAfter="0180">176-180 CE</origDate>
+                  </origin>
+                  <provenance>
+                    <p>Purchased by Columbia University through H.I. Bell, in 1930; no. I.12 in Bell's inventory</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">In Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+              <term>Papyri</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+         </div>
+      </body>
+   </text>
+</TEI>

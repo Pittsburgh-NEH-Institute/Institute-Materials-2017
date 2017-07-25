@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Return [30 January 28 AD]</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="apisid">columbia.apis.p352</idno>
+            <idno type="controlNo">(NNC)aaa3528</idno>
+            <idno type="HGV">16294</idno>
+            <idno type="TM">16294</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <idno type="invNo">Oxy. 352 descriptum</idno>
+               </msIdentifier>
+               <msContents>
+                  <summary>Return for five sheep and goats pastured near the village of Teis in the toparchy of Thmoisepho</summary>
+                  <msItemStruct>
+                     <note type="general">Written along the fibers; back blank</note>
+                     <note type="general">15 lines; broken except lower right</note>
+                     <note type="general">The hand is a clear semi-cursive</note>
+                     <note type="general">Signed in a second hand</note>
+                     <textLang mainLang="grc">In Greek</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 papyrus fragment; 4.5 x 13.5 cm</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate when="0028">28 CE</origDate>
+                  </origin>
+                  <provenance>
+                     <p>Given to Columbia University by the Egypt Exploration Society, 1901</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">In Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+               <term>Return</term>
+               <term type="genre_form">Papyri</term>
+               <term type="genre_form">Papyri</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+            <listBibl>
+               <bibl>P.Oxy II 352 <note>Republished Aegyptus 64 (1984) pp.55-57 (=SB XVI 12762)</note>
+               </bibl>
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>

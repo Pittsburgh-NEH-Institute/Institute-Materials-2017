@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Memorandum?</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="apisid">columbia.apis.3630</idno>
+            <idno type="controlNo">(NNC)3630</idno>
+            <idno type="ddbdp">p.worp.57.</idno>
+            <idno type="HGV">115584</idno>
+            <idno type="TM">115584</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <idno type="invNo">O.Col.inv. 3630</idno>
+               </msIdentifier>
+               <msContents>
+                  <summary>Possible memorandum.</summary>
+                  <msItemStruct>
+                     <note type="general">5 lines of writing</note>
+                     <note type="general">Letters mostly separated</note>
+                     <textLang mainLang="grc">Greek</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 clay ostracon, 5.3 x 5.5 cm. Back blank, complete</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate notBefore="0001">I-IInd c. A.D.?</origDate>
+                     <origPlace>Upper Egypt</origPlace>
+                  </origin>
+                  <provenance>
+                     <p>purchased in 1935 by Prof. N. Lewis presumably in Luxor or Aswan. Given to Columbia University in 2007</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+               <term type="genre_form">Ostraca</term>
+               <term type="genre_form">Ostraca</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+            <listBibl>
+               <bibl>P.Worp 57</bibl>
+               <bibl type="ddbdp">P.Worp:57:</bibl>
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>

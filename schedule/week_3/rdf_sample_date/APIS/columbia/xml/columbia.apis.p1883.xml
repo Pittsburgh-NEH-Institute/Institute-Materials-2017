@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+           <title>Letter?</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="controlNo">(NNC)p1883</idno>
+           <idno type="apisid">columbia.apis.p1883</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                 <idno type="invNo">Col. inv. 767</idno>
+               </msIdentifier>
+               <msContents>
+                 <summary>Probably a letter</summary>
+                 <msItemStruct>
+                     <note type="general">Broken at least on 2 sides; 3 lines along the fibers</note>
+                     <note type="general">Glued to cardboard.</note>
+                     <note type="local_note">Registered to Lajos Berkes until 12/31/19. If after this date, please email the Columbia Rare Book and Manuscript Library at rbml@library.columbia.edu.</note>
+                     <textLang mainLang="grc">Greek</textLang>
+                 </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                       <support>1 papyrus fragment; 28 x 7 cm.</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                    <origDate notBefore="0500" notAfter="0599">[VI AD]</origDate>
+                  </origin>
+                  <provenance>
+                    <p>Acquired from the Metropolitan Museum of Art. MMA 90.5.969</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">In Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+              <term>Papyri</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Receipt [Pachon 22, year 3 of Euergetes]</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="apisid">columbia.apis.p400</idno>
+            <idno type="controlNo">(NNC)aaa3576</idno>
+            <idno type="HGV">4583</idno>
+            <idno type="TM">4583</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <idno type="invNo">Hib. 141</idno>
+               </msIdentifier>
+               <msContents>
+                  <summary>Receipt for 15 dr. 3 obols, paid to Nikolaus and Stotoetis by Petosiris, agent of Taembes, for beer tax for the month of Pachon.  At the end is the signature of Dorion and a line of demotic</summary>
+                  <msItemStruct>
+                     <note type="general">Written across the fibers; on the verso, few traces of text and plaster and decoration from mummy cartonnage</note>
+                     <note type="general">10 lines; complete</note>
+                     <note type="general">The hand is a small, rapid cursive</note>
+                     <note type="local_note">Suit student</note>
+                     <textLang mainLang="grc">In Greek</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 papyrus fragment; 6.7 x 11.6 cm</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate when="-0244">244 BCE</origDate>
+                  </origin>
+                  <provenance>
+                     <p>Given to Columbia University by the Egypt Exploration Society, 1907</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">In Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+               <term type="genre_form">Papyri</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+            <listBibl>
+               <bibl>P.Hib. I 141 Descriptum</bibl>
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>

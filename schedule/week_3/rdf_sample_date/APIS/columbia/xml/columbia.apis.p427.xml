@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Documentary text [I/II AD?]</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="apisid">columbia.apis.p427</idno>
+            <idno type="controlNo">(NNC)aaa3603</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <idno type="invNo">Col. inv. 34a</idno>
+               </msIdentifier>
+               <msContents>
+                  <msItemStruct>
+                     <note type="general">Written along the fibers; on the verso, faint traces of 1 line of text</note>
+                     <note type="general">7 lines of text; broken top, bottom and left</note>
+                     <note type="general">The papyrus has been folded and there are breaks along the fold lines resulting in the loss of some text</note>
+                     <note type="general">The papyrus is dark brown and the ink faded and difficult to read</note>
+                     <note type="local_note">Show Roger</note>
+                     <textLang mainLang="grc">In Greek</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 papyrus fragment; 12 x 8.5 cm</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate notBefore="0001" notAfter="0199">1 CE – 199 CE</origDate>
+                  </origin>
+                  <provenance>
+                     <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in July 1923; not found in Bell's inventory</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">In Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+               <term type="genre_form">Papyri</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+  <facsimile>
+    <surfaceGrp>
+      <surface type="recto">
+        <graphic url="http://papyri.info/images/0f/columbia.apis.p427a.f.0.600"/>
+        <graphic url="http://papyri.info/images/f0/columbia.apis.p427.f.0.600"/>
+      </surface>
+      <surface type="verso">
+        <graphic url="http://papyri.info/images/6e/columbia.apis.p427a.b.0.600"/>
+        <graphic url="http://papyri.info/images/04/columbia.apis.p427.b.0.600"/>
+      </surface>
+    </surfaceGrp>
+  </facsimile>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+            <listBibl>
+               <bibl>Written in a large clear hand</bibl>
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>

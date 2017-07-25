@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter [VI AD]</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="apisid">columbia.apis.p1922</idno>
+            <idno type="controlNo">(NNC)aaa5010</idno>
+            <idno type="ddbdp">p.col.11.302</idno>
+            <idno type="ddb-perseus-style">0094;11;302</idno>
+            <idno type="ddb-hybrid">p.col;11;302</idno>
+            <idno type="HGV">38395</idno>
+            <idno type="TM">38395</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <idno type="invNo">Col. inv. 167</idno>
+               </msIdentifier>
+               <msContents>
+                  <summary>Letter concerning a bishop about some interaction between the higher civil and ecclesiastical authorities</summary>
+                  <msItemStruct>
+                     <note type="general">7 lines on the recto; traces on the verso</note>
+                     <note type="general">Fluent cursive hand</note>
+                     <note type="general">A phrase in the text seems to refer to a company of soldiers</note>
+                     <textLang mainLang="grc">In Greek</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 papyrus fragment ; 32 x 17.2 cm</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate notBefore="0500" notAfter="0599">500 CE – 599 CE</origDate>
+                  </origin>
+                  <provenance>
+                     <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in 1924; no.  80 in Bell</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">In Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+               <term>Christian letter</term>
+               <term type="genre_form">Papyri</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="translation">
+            <ab>Arriving in the city of the Alexandrians, I learned that the most pious bishop had sailed away to Pelusium; therefore, will your Magnificence, with your customary grace (?), knowing the force of the decree, order that he be reminded with the others . . . . . from the Thebaid to find the matter ready, so that I too as usual may thank your magnificence and so that the dedicated men, as usual, may also themselves proclaim your greatness.</ab>
+         </div>
+         <div type="bibliography" subtype="citations">
+            <listBibl>
+               <bibl>P.Col. XI 302 <note>Plate 10 in P.Col. XI; for interpretation see BL XI p. 66</note>
+               </bibl>
+               <bibl type="ddbdp">P.Col.:11:302</bibl>
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>

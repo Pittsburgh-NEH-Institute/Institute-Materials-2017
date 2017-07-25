@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Receipts [between 342 and 347 AD]</title>
+            <author>Aurelius Ouranios, son of Theodoros, collector</author>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="apisid">columbia.apis.p188</idno>
+            <idno type="controlNo">(NNC)aaa1275</idno>
+            <idno type="ddbdp">p.col.7.150</idno>
+            <idno type="ddb-perseus-style">0094;7;150</idno>
+            <idno type="ddb-hybrid">p.col;7;150</idno>
+            <idno type="HGV">10504</idno>
+            <idno type="TM">10504</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <idno type="invNo">Col.inv. 308</idno>
+               </msIdentifier>
+               <msContents>
+                  <summary>Receipts for deliveries in kind given to two sons of Isidoros, Sokrates and Papaeis</summary>
+                  <msItemStruct>
+                     <note type="general">Written along the fibers; the back is blank; P.Col. 7.190 is pasted on the right side</note>
+                     <note type="general">65 lines of writing by 9 different hands</note>
+                     <note type="general">In the margins between cols. I and II, and II and III there are holes where the string which tied the roll ran</note>
+                     <textLang mainLang="grc">In Greek</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>3papyrus pieces from a roll ; 38 x 25; 38 x 25; 5 x 21.3 cm</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate notBefore="0342" notAfter="0347">342 CE – 347 CE</origDate>
+                     <persName type="asn">Aurelius Ammonios, son of Apion</persName>
+                     <persName type="asn">Kyrillos, collector</persName>
+                  </origin>
+                  <provenance>
+                     <p>Purchased by Columbia University from Dr. Kondilios through H.I. Bell in July 1925; no. 134 in Bell</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">In Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+               <term>Sokrates, -- son of Isidoros</term>
+               <term>Papaeis, -- son of Isidoros</term>
+               <term>Apphys, -- sitologos</term>
+               <term>Aurelius Palemon, -- sitologos</term>
+               <term>Aurelius Abok, -- sitologos</term>
+               <term>Heron, -- sitologos</term>
+               <term>Receipts for deliveries in kind; consortia called "pittakia"</term>
+               <term type="genre_form">Papyri</term>
+               <term type="genre_form">Papyri</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+  <facsimile>
+    <surfaceGrp n="A">
+      <surface type="recto">
+        <graphic url="http://papyri.info/images/8a/columbia.apis.p188a.f.0.600"/>
+        <graphic url="http://papyri.info/images/84/columbia.apis.p188.f.0-0.600"/>
+        <graphic url="http://papyri.info/images/da/columbia.apis.p188.f.0-1.600"/>
+        <graphic url="http://papyri.info/images/ed/columbia.apis.p188.f.1-0.600"/>
+        <graphic url="http://papyri.info/images/2b/columbia.apis.p188.f.1-1.600"/>
+      </surface>
+    </surfaceGrp>
+    <surfaceGrp n="B">
+      <surface type="recto">
+        <graphic url="http://papyri.info/images/df/columbia.apis.p188b.f.0.600"/>
+        <graphic url="http://papyri.info/images/a4/columbia.apis.p188.f.2-0.600"/>
+        <graphic url="http://papyri.info/images/7b/columbia.apis.p188.f.2-1.600"/>
+        <graphic url="http://papyri.info/images/f4/columbia.apis.p188.f.3-0.600"/>
+        <graphic url="http://papyri.info/images/81/columbia.apis.p188.f.3-1.600"/>
+      </surface>
+    </surfaceGrp>
+    <surfaceGrp n="C">
+      <surface type="recto">
+        <graphic url="http://papyri.info/images/36/columbia.apis.p188c.f.0.600"/>
+        <graphic url="http://papyri.info/images/7d/columbia.apis.p188.f.4-0.600"/>
+      </surface>
+    </surfaceGrp>
+  </facsimile>
+   <text>
+      <body>
+         <div type="translation">
+            <ab>Column II</ab>
+         </div>
+         <div type="bibliography" subtype="citations">
+            <listBibl>
+               <bibl>P.Col. VII 150 <note>Plate, P.Col. VII, Microfiche 1. In lines 11-12 the date is July 342, BL 7 p. 41.</note>
+               </bibl>
+               <bibl type="ddbdp">P.Col.:7:150</bibl>
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>

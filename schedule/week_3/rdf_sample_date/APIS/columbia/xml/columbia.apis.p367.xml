@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+           <title>Homer, Iliad 1.273-297, 318-342</title>
+           <author>Homer</author>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="controlNo">(NNC)aaa3543</idno>
+           <idno type="apisid">columbia.apis.p367</idno>
+           <idno type="TM">60866</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                 <idno type="invNo">Oxy. 538</idno>
+               </msIdentifier>
+               <msContents>
+                 <summary>Iliad i. 273-297 (across fibers on recto); Iliad i. 318-342 (along fibers on verso)</summary>
+                 <msItemStruct>
+                     <note type="general">Upper part of a leaf from a book, each col. originally held 45 lines of text.  Likely a school text.</note>
+                     <note type="general">Written in small, upright, bilinear uncials, with serifs; a formal mixed hand or severe style</note>
+                     <note type="general">Lectional signs: accents, apostrophe, breathings, stops, and a paragraphus</note>
+                     <note type="general">Lots of lectional signs in two hands: accents, apostrophe, breathings, diaereses, stops, marginal additions, deletions, and a paragraphos.</note>
+                     <textLang mainLang="grc">Greek</textLang>
+                 </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                       <support>1 papyrus fragment; 10.8 x 10 cm</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                    <origDate notBefore="0175" notAfter="0275">Late II - III CE</origDate>
+                  </origin>
+                  <provenance>
+                    <p>Given to Columbia University by the Egypt Exploration Society, 1907</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">In Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+              <term>Homer</term>
+              <term>Papyri</term>
+              <term>Papyri</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+            <listBibl>
+              <bibl>P.Oxy. III 538 Descriptum; S. Boland, BASP 48 (2011): 15-20.  <note>MP(3) 595; LDAB 1994; Allen 61; West 61.</note>
+               </bibl>
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>

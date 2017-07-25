@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>receipt [VIII century]</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="apisid">columbia.apis.18</idno>
+            <idno type="controlNo">(NNC)aaa5098</idno>
+            <idno type="HGV">75019</idno>
+            <idno type="TM">75019</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <idno type="invNo">O.Col.inv. 18 (acc. 1.19)</idno>
+               </msIdentifier>
+               <msContents>
+                  <summary>tax receipt with partial date; formula of agreement in the back</summary>
+                  <msItemStruct>
+                     <note type="general">complete; 5 lines on the front and 2 on the back</note>
+                     <note type="general">ligatured hand, sometimes a little faded</note>
+                     <note type="local_note">Assigned to N. Salem 7/1/2005</note>
+                     <textLang mainLang="grc">in Greek</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 ostracon ; tan clay ; 10 x 6.5 cm</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate notBefore="0700" notAfter="0790">700 CE – 790 CE</origDate>
+                  </origin>
+                  <provenance>
+                     <p>from Medinet Habu?  Gift of H.E. Winlock in 1924 to the Metropolitan Museum, MMA inv. 24.6.37.  Sold to Columbia University in 1958</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">in Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+               <term type="genre_form">Ostraca</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+            <listBibl>
+               <bibl>O.Minor. E 6</bibl>
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>

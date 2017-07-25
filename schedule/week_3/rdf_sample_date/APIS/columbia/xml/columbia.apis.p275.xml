@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter [IV-V AD]</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="apisid">columbia.apis.p275</idno>
+            <idno type="controlNo">(NNC)aaa1199</idno>
+            <idno type="ddbdp">p.col.8.240</idno>
+            <idno type="ddb-perseus-style">0094;8;240</idno>
+            <idno type="ddb-hybrid">p.col;8;240</idno>
+            <idno type="HGV">32870</idno>
+            <idno type="TM">32870</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <idno type="invNo">Col.inv. 474</idno>
+               </msIdentifier>
+               <msContents>
+                  <summary>Business letter sent to a superior about some workshops and objects which seem to be part of their furnishing</summary>
+                  <msItemStruct>
+                     <note type="general">Written on the front across the fibers; the writing continues on the back, along the fibers, flipping over the papyrus</note>
+                     <note type="general">24 lines of writing on the front; 8 lines on the back, in a very poor state of preservation</note>
+                     <note type="general">The hand is very large and uneven</note>
+                     <note type="general">Many rare words appear</note>
+                     <textLang mainLang="grc">In Greek</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1papyrus fragment ; 17.5 x 27.5 cm</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate notBefore="0350" notAfter="0450">350 CE – 450 CE</origDate>
+                  </origin>
+                  <provenance>
+                     <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in 1926-1927; no. 28 in Bell's inventory</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">In Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+               <term>Letter; workshops and their furnishings</term>
+               <term type="genre_form">Papyri</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+            <listBibl>
+               <bibl>P.Col. VIII 240 <note>Plate in P.Col. VIII</note>
+               </bibl>
+               <bibl type="ddbdp">P.Col.:8:240</bibl>
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="apisid">columbia.apis.3633</idno>
+            <idno type="controlNo">(NNC)3633</idno>
+            <idno type="ddbdp">p.worp.54.</idno>
+            <idno type="HGV">115582</idno>
+            <idno type="TM">115582</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <idno type="invNo">O.Col.inv. 3633</idno>
+               </msIdentifier>
+               <msContents>
+                  <summary>letter to a brother</summary>
+                  <msItemStruct>
+                     <note type="general">Early, capable hand with some Ptolemaic features.</note>
+                     <note type="general">Broken at left and perhaps below; large top margin</note>
+                     <textLang mainLang="grc">Greek</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 clay ostracon, 12 lines, back blank; 8.6 x 10.4 cm</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate notBefore="0001" notAfter="0099">Ist. c. A.D.</origDate>
+                     <origPlace>Thebes?</origPlace>
+                  </origin>
+                  <provenance>
+                     <p>Purchased by Prof. N. Lewis in Luxor, 31 January  1935. Given to Columbia University in 2007.</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+               <term type="genre_form">Ostraca</term>
+               <term type="genre_form">Letter</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+            <listBibl>
+               <bibl>P. Worp 54</bibl>
+               <bibl type="ddbdp">P.Worp:54:</bibl>
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>

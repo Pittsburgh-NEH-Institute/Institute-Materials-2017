@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Documentary text</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="apisid">columbia.apis.p2053</idno>
+            <idno type="controlNo">(NNC)p2053</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <idno type="invNo">Col.inv. 711</idno>
+               </msIdentifier>
+               <msContents>
+                  <summary>Promissory note: someone promises to pay cash, one quarter dinar, to Yuhanna?; signed "with his writing" on bottom, the name perhaps is preserved under dirt at bottom right</summary>
+                  <msItemStruct>
+                     <note type="general">On one side 9 lines of writing plus one written in the margin; on the other pen trials</note>
+                     <note type="general">Complete but for damage upper left and lower right corners</note>
+                     <note type="general">Glassed</note>
+                     <textLang mainLang="ar-Arab">In Arabic</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 papyrus ; 20.5 x 15 cm.</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate notBefore="0815" notAfter="0915">[3rd cent. AH]</origDate>
+                  </origin>
+                  <provenance>
+                     <p>Purchased by Prof. Jeffery in Egypt in 1946, Lot no. 28</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="ar-Arab">In Arabic</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+               <term>Document of security</term>
+               <term type="genre_form">Papyri</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+            <p>No citations.</p>
+         </div>
+      </body>
+   </text>
+</TEI>
