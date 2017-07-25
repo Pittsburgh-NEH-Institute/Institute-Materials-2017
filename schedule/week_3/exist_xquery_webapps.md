@@ -57,7 +57,8 @@ Updates to collection.xconf apply automatically to all newly stored documents. T
 Sample index configuration (collection.xconf):
 ```xml
 <collection xmlns="http://exist-db.org/collection-config/1.0">
-    <index xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema-datatypes">
+    <index xmlns:tei="http://www.tei-c.org/ns/1.0" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema-datatypes">
         <lucene>
             <analyzer class="org.apache.lucene.analysis.standard.StandardAnalyzer"/>
             <analyzer id="ws" class="org.apache.lucene.analysis.core.WhitespaceAnalyzer"/>
@@ -90,13 +91,13 @@ NB: Make sure the namespaces are defined correctly otherwise it won't work.
 
 If you define an index with a specific type, all values in the indexed collections have to be valid instances of this type.
 The operand has to match the defined index type:
-* `//a[b = 99]` – correct type, `xs:integer` index used!
-* `//a[b = “99”]` – wrong type, no index used!
+* `//a[b = 99]` – correct type, `xs:integer` index is used.
+* `//a[b = “99”]` – wrong type, index not used (you can force this though in main configuration file _conf.xml_).
 
 All collections in the query context need to have the same index defined otherwise it will not be used:
 ```xquery
-collection(“/db/<project>”)//tei:date[@when = 1866]
-collection(“/db”)//tei:date[@when = 1866]
+collection(“/db/<project>”)//tei:date[@when = 1886]
+collection(“/db”)//tei:date[@when = 1886]
 ```
 
 ### Lucene full-text index
@@ -116,8 +117,8 @@ collection(“/db”)//tei:date[@when = 1866]
 ft:query($nodes as node()*, $query as item()) node()*
 ```
 Requires a Lucene index on the collections in context.
-The query, either as
-* Lucene query string
+The query expressed as either:
+* Lucene query string, or
 * an XML fragment defining the Lucene query
 
 Term example:
@@ -137,13 +138,13 @@ $data-collection//tei:p[ft:query(.,<query><wildcard>ha*</wildcard></query>)]
 
 Lucene query string example:
 ```
-Wildcards: geograph*, geographer?
-Multiple terms: native chinese
-Phrase: “native chinese”~10
-Fuzzy: geographer~
-Required: +buddhist +chinese
-Excluded: buddhist -chinese
-Boost: buddhist^10 chinese
+Wildcards: photograph*, photographer?
+Multiple terms: native burmese
+Phrase: “native burmese”~10
+Fuzzy: photographer~
+Required: +buddhist +burmese
+Excluded: buddhist -burmese
+Boost: buddhist^10 burmese
 And: "caspian sea" AND tibet
 Not: "caspian sea" NOT tibet
 ```
@@ -225,11 +226,11 @@ _EXPath_ is an effort to standardize XQuery extension modules across implementat
 * Self-contained, modular applications
 * Foundation for component reuse
 * Simplifies development process
-* Simple deployment via dashboard
+* Simple deployment via eXist-db's [`dashboard`](http://localhost:8080/exist/apps/dashboard/index.html#
 
-`eXide` supports app development and generates app structure and puts your provided metadata in place. In eXide `Application->New application`.
+[`eXide`](http://localhost:8080/exist/apps/eXide/index.html#) supports app development and generates app structure and puts your provided metadata in place. In eXide `Application->New application`.
 
-Choose a name. You willfind it under `/db/apps/`. The collection structure is:
+Choose a name, fill in metadata, done. You will find it under `/db/apps/`. The collection structure is:
 * `modules/` - (Everything XQuery)
 * `templates/` - (Page templates used by html-files)
 * `resouces/` - (images, css, javascript) 
