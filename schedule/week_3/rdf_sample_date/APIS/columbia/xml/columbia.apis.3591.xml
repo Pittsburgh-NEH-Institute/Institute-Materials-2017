@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+           <title>Hymn</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="controlNo">(NNC)2154</idno>
+           <idno type="apisid">columbia.apis.3591</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                 <idno type="invNo">O.Col.inv. 3591</idno>
+               </msIdentifier>
+               <msContents>
+                  <msItemStruct>
+                    <note type="general">21 lines of writing are preserved but the top lines are very fragmentary</note>
+                    <note type="general">large literary hand bent to the right, the same of other ostraca from cell A, the work of a professional writer</note>
+                    <note type="local_note">Reserved to Papathomas/Vergados until 7/1/2016.  If after this date, please direct inquiries to the Columbia Rare Book and Manuscript Library.</note>
+                    <textLang mainLang="grc">Greek</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                       <support>ribbed ostracon; 20 x 26 cm.</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                    <origDate notBefore="0500" notAfter="0690">VI-VII century</origDate>
+                    <origPlace>Thebes, Monastery of Epiphanius (cell A). </origPlace>
+                  </origin>
+                  <provenance>
+                    <p>Property of the Metropolitan Museum in New York; sold to Columbia University in 1961. Acc. No. 68.3.586, probably MMA 14.1.201.</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">in Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+         </div>
+      </body>
+   </text>
+</TEI>

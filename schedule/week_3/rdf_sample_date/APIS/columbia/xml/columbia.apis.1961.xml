@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>receipt [I century, years of Tiberius, 14-37 AD]</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="apisid">columbia.apis.1961</idno>
+            <idno type="controlNo">(NNC)aaa2507</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <idno type="invNo">O.Col.inv. 1961 (acc.68.3.519)</idno>
+               </msIdentifier>
+               <msContents>
+                  <summary>tax receipt in letter form</summary>
+                  <msItemStruct>
+                     <note type="general">5 lines of writing on the front, back blank</note>
+                     <note type="general">almost complete</note>
+                     <note type="general">hand with letters almost all separated</note>
+                     <note type="general">the second half of the ostracon is faded in parts</note>
+                     <textLang mainLang="grc">in Greek</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 ostracon ; red clay ; 9.4x8.4cm</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate notBefore="0014" notAfter="0037">14 CE – 37 CE</origDate>
+                  </origin>
+                  <provenance>
+                     <p>from Thebes, Monastery of Epiphanius.  Property of the Metropolitan Museum, sold to Columbia University in 1961</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">in Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+               <term type="genre_form">Ostraca</term>
+               <term type="genre_form">Papyri</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+            <p>No citations.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

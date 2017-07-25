@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+           <title>Exercise [VI-VII century]</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="controlNo">(NNC)aaa0703</idno>
+           <idno type="apisid">columbia.apis.535</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                 <idno type="invNo">O.Col.inv. 535</idno>
+               </msIdentifier>
+               <msContents>
+                 <summary>writing exercise repeating a letter of the alphabet over and over</summary>
+                 <msItemStruct>
+                     <note type="general">writing on the front, back blank</note>
+                     <note type="general">probably incomplete</note>
+                     <note type="general">Acc. 64.2.354</note>
+                     <note type="local_note">Registered to R. Cribiore and J. Cromwell until 6.1.2017. If after this date, please direct inquiries to the Columbia Rare Book and Manuscript Library.</note>
+                     <textLang mainLang="ar">Arabic</textLang>
+                 </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                       <support>1 ostracon ; limestone ; 10 x 11 cm</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                    <origDate notBefore="0500" notAfter="0690">500 CE – 690 CE</origDate>
+                  </origin>
+                  <provenance>
+                    <p>from Thebes, Deir el Bahri, excavated by the Metropolitan Museum in 1926-29, Burton photo M10C  17.  Formerly property of the Metropolitan Museum, sold to Columbia University in 1958.</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="ar-Arab">in Arabic</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+              <term>Ostraca</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+         </div>
+      </body>
+   </text>
+</TEI>

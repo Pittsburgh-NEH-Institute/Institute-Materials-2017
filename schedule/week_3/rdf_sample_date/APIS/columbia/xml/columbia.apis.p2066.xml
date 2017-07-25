@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Documentary texts</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="apisid">columbia.apis.p2066</idno>
+            <idno type="controlNo">(NNC)p2066</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <idno type="invNo">Col.inv. 723</idno>
+               </msIdentifier>
+               <msContents>
+                  <summary>The text on the side with 13 lines represents administrative orders</summary>
+                  <msItemStruct>
+                     <note type="general">Original document with 13 lines is from the center of the page, top and bottom intact.</note>
+                     <note type="general">23 lines from a later document with wide left margin and written in a good hand</note>
+                     <note type="general">The papyrus is tattered and full of holes</note>
+                     <note type="general">At most first 1 or 2 words of some lines are legible</note>
+                     <note type="general">Glassed</note>
+                     <textLang mainLang="ar-Arab">In Arabic</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 papyrus fragment ; 9.5 x 28 cm.</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate notBefore="0718" notAfter="0815">[2nd cent. AH]</origDate>
+                  </origin>
+                  <provenance>
+                     <p>Purchased by Prof. Jeffery in Egypt in 1946, Lot no. 31</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="ar-Arab">In Arabic</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+               <term type="genre_form">Papyri</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+            <p>No citations.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

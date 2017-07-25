@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Account</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="apisid">columbia.apis.p340</idno>
+            <idno type="controlNo">(NNC)p340</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <idno type="invNo">Col.inv. 544.1-332</idno>
+               </msIdentifier>
+               <msContents>
+                  <summary>Account of military garments from the Hermopolite nome; the figures must have been collected in cash equivalents; in each entry: totals of 5 types of garments for each pagus, a total of all garment type, and a village-by-village listing of contributions</summary>
+                  <msItemStruct>
+                     <note type="general">Codex with 5 entire sheets intact</note>
+                     <note type="general">The text was probably written at one time by a neat and consistent hand with some flourishes</note>
+                     <note type="general">On seven pages there are marginalia</note>
+                     <textLang mainLang="grc">In Greek</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 papyrus codex, 20 pages, ca. 15 x 25 cm. per leaf</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate>324-25 or 325-26</origDate>
+                  </origin>
+                  <provenance>
+                     <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in 1932; lot III in Bell</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">In Greek</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+  <facsimile>
+    <surfaceGrp n="A">
+      <surface type="recto">
+        <graphic url="http://papyri.info/images/2c/columbia.apis.p340a.f.0.300"/>
+        <graphic url="http://papyri.info/images/7a/columbia.apis.p340.f.0-0.600"/>
+        <graphic url="http://papyri.info/images/a3/columbia.apis.p340.f.1-0.600"/>
+        <graphic url="http://papyri.info/images/e5/columbia.apis.p340.f.2-0.600"/>
+      </surface>
+      <surface type="verso">
+        <graphic url="http://papyri.info/images/5c/columbia.apis.p340a.b.0.300"/>
+        <graphic url="http://papyri.info/images/d0/columbia.apis.p340.b.0-0.600"/>
+        <graphic url="http://papyri.info/images/8c/columbia.apis.p340.b.1-0.600"/>
+        <graphic url="http://papyri.info/images/5a/columbia.apis.p340.b.2-0.600"/>
+      </surface>
+    </surfaceGrp>
+    <surfaceGrp n="B">
+      <surface type="recto">
+        <graphic url="http://papyri.info/images/e4/columbia.apis.p340b.f.0.300"/>
+        <graphic url="http://papyri.info/images/96/columbia.apis.p340.f.0-2.600"/>
+        <graphic url="http://papyri.info/images/34/columbia.apis.p340.f.1-2.600"/>
+        <graphic url="http://papyri.info/images/09/columbia.apis.p340.f.2-2.600"/>
+        <graphic url="http://papyri.info/images/37/columbia.apis.p340.f.3-2.600"/>
+      </surface>
+      <surface type="verso">
+        <graphic url="http://papyri.info/images/11/columbia.apis.p340b.b.0.300"/>
+        <graphic url="http://papyri.info/images/8f/columbia.apis.p340.b.0-2.600"/>
+        <graphic url="http://papyri.info/images/73/columbia.apis.p340.b.1-2.600"/>
+        <graphic url="http://papyri.info/images/d6/columbia.apis.p340.b.2-2.600"/>
+        <graphic url="http://papyri.info/images/4a/columbia.apis.p340.b.3-2.600"/>
+      </surface>
+    </surfaceGrp>
+    <surfaceGrp n="C">
+      <surface type="recto">
+        <graphic url="http://papyri.info/images/df/columbia.apis.p340.f.0-1.600"/>
+        <graphic url="http://papyri.info/images/33/columbia.apis.p340.f.1-1.600"/>
+        <graphic url="http://papyri.info/images/2f/columbia.apis.p340.f.2-1.600"/>
+        <graphic url="http://papyri.info/images/79/columbia.apis.p340.f.3-1.600"/>
+      </surface>
+      <surface type="verso">
+        <graphic url="http://papyri.info/images/85/columbia.apis.p340c.b.0.300"/>
+        <graphic url="http://papyri.info/images/ff/columbia.apis.p340.b.0-1.600"/>
+        <graphic url="http://papyri.info/images/90/columbia.apis.p340.b.1-1.600"/>
+        <graphic url="http://papyri.info/images/f5/columbia.apis.p340.b.2-1.600"/>
+        <graphic url="http://papyri.info/images/73/columbia.apis.p340.b.3-1.600"/>
+      </surface>
+    </surfaceGrp>
+  </facsimile>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+            <listBibl>
+               <bibl>P.Col. IX 247</bibl>
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>

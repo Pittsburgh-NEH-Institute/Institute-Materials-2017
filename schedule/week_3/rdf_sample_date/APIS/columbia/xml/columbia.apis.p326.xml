@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Reports [134-135 AD]</title>
+            <author>Heron, son of Neilos, tax collector</author>
+         </titleStmt>
+         <publicationStmt>
+            <authority>APIS</authority>
+            <idno type="apisid">columbia.apis.p326</idno>
+            <idno type="controlNo">(NNC)aaa1139</idno>
+            <idno type="ddbdp">p.col.2.1</idno>
+            <idno type="HGV">10444</idno>
+            <idno type="TM">10444</idno>
+            <idno type="HGV">10445</idno>
+            <idno type="TM">10445</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <idno type="invNo">Col.inv. 1,9 and 1,3</idno>
+               </msIdentifier>
+               <msContents>
+                  <summary>Reports of payments collected by the collectors of money taxes of Thedelphia; the taxes are the poll tax and "other distributed taxes" (merismoi); the payments are listed by names following the order of the taxpayers as they came and made the payments</summary>
+                  <msItemStruct>
+                     <note type="general">Written along the fibers; on the back P.Col. V 1 verso 1a, 1b</note>
+                     <note type="general">Check markings precede the names of those who paid the poll tax, indicating that the payments were transferred to the bank ledger</note>
+                     <note type="general">The text does not represent the day-book of the collectors, but was copied from the day-book</note>
+                     <note type="general">A considerable portion of the roll is lost between the two fragments</note>
+                     <note type="general">In 24 cases the same man appears in both fragments</note>
+                     <note type="general">In 1a there are 8 cols. written probably by the same, small and practiced hand, even though the insertions are made in smaller letters; col. 1: 27 lines; col. 2: 22 lines; col. 3 21lines; col. 4: 28 lines; col. 5: 33 lines; col. 6: 32: col. 7: 32; col. 8: 32. In 1b there are scanty remains of 2 cols. plus 4 cols.: col. 3: 3 lines; col. 4: 27 lines; col. 5: 30 lines; c ol. 6: 29 lines</note>
+                     <textLang mainLang="grc">In Greek</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>3papyri ; 38 x 20.5 and 50 x 20.5 + 53.8 x 20.5 cm</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate notBefore="0134" notAfter="0135">134 CE – 135 CE</origDate>
+                     <persName type="asn">Heron, son of Akes, tax collector</persName>
+                  </origin>
+                  <provenance>
+                     <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in July 1923; no. 1, (Lot II) in Bell's inventory</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">In Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#apis">
+               <term>Taxation</term>
+               <term type="genre_form">Papyri</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+  <facsimile>
+    <surfaceGrp n="A">
+      <surface type="recto">
+        <graphic url="http://papyri.info/images/bc/columbia.apis.p326a.f.0.600"/>
+        <graphic url="http://papyri.info/images/7a/columbia.apis.p326.f.0-0.600"/>
+        <graphic url="http://papyri.info/images/93/columbia.apis.p326.f.1-0.600"/>
+      </surface>
+    </surfaceGrp>
+    <surfaceGrp n="B">
+      <surface type="recto">
+        <graphic url="http://papyri.info/images/49/columbia.apis.p326b.f.0.600"/>
+        <graphic url="http://papyri.info/images/d6/columbia.apis.p326.f.0-1.600"/>
+        <graphic url="http://papyri.info/images/de/columbia.apis.p326.f.1-1.600"/>
+      </surface>
+    </surfaceGrp>
+    <surfaceGrp n="C">
+      <surface type="recto">
+        <graphic url="http://papyri.info/images/76/columbia.apis.p326c.f.0.300"/>
+        <graphic url="http://papyri.info/images/fc/columbia.apis.p326.f.1-2.600"/>
+      </surface>
+    </surfaceGrp>
+  </facsimile>
+   <text>
+      <body>
+         <div type="bibliography" subtype="citations">
+            <listBibl>
+               <bibl>P.Col. II 1 recto 1a-1b <note>About the people cf. P.Stras. IX 827-830, and 846 and 849; Wilcken, Archiv 10 (1932) 271; corrections to col. 1.5 in BL II p. 45; cf. BGU IX p. 7 about col. 3.3 and 10; 1a col. 2.3 and 7.5 and 1b 3.6, 12 and 5.14 reprinted in CPJ III 489b; corrections to 1a col. 4.16 and 1b col. 6.21 in BL VII p. 39; correction to 1b col. 3.27 in BL VIII p. 87; correction to 1a col. 4.26 in BL IX p. 59</note>
+               </bibl>
+               <bibl type="ddbdp">P.Col.:2:1</bibl>
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>
