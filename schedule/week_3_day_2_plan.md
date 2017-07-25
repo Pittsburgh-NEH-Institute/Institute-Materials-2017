@@ -38,7 +38,7 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: XQuery and eXist
+## 2:00–3:30: [XQuery and eXist](exist_xquery_webapps.md)
 
 Time | Topic | Type
 ---- | ---- | ---- 
