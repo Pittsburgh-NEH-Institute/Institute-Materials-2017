@@ -34,12 +34,12 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: Lighning talks
+## 2:00–3:30: Lightning talks 1
 
 Time | Topic | Type
 ---- | ---- | ---- 
 1 min | Intro to lightning talks | 
-89 min | Project slam, max 10 minutes per project, no discussion, switch on signal | 
+89 min | Project slam 1, max 10 minutes per project, no discussion, switch on signal | 
 
 ## 3:30–4:00: Coffee break
 
