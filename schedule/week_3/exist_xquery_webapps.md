@@ -1,5 +1,7 @@
 # eXist-db XQuery 3 and webapps
 
+We continue with XQuery and get into how to create webapps in eXist-db.
+
 ## httpclient example 1
 ```xquery
 xquery version "3.0";
