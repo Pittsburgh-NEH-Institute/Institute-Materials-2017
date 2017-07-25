@@ -1,13 +1,16 @@
 import json
-import urllib
-import urllib2
+import urllib.error
+import urllib.parse
+import urllib.request
 
 urlbase = "http://localhost:8091/exist/rest/db/karp/karp-stats.xql?op=feat-stats&do-feat-values=true&use-current=true&json=true&resurs={}"
 
 def get_data(resource):
-    query = urllib.quote(resource)
+    query = urllib.parse.quote(resource)
     url = urlbase.format(query)
-    data = urllib2.urlopen(url).read()
+    request = urllib.request.Request(url)
+    with urllib.request.urlopen(request) as response: 
+        data = response.read().decode('utf-8')
     parsed = json.loads(data)
     info = None
     if parsed.get('resource'):
@@ -18,5 +21,5 @@ def get_data(resource):
 
 try: 
    get_data("dalin")
-except urllib2.URLError:
-   print "Connection refused. Please check the URL and port"
+except urllib.error.URLError:
+   print("Connection refused. Please check the URL and port")
