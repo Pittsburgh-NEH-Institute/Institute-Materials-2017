@@ -726,20 +726,19 @@
                 <act time="90">
                     <desc>Lunch</desc>
                 </act>
-
             </slot>
             <slot time="14:00:00">
                 <title>XQuery and eXist</title>
-                <act time="15">
+                <act time="15" type="Presentation">
                     <desc>XQuery 3</desc>
                 </act>
-                <act time="30">
+                <act time="30" type="Code_lab">
                     <desc>Hands on XQuery 3</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Presentation">
                     <desc>Web apps in eXist</desc>
                 </act>
-                <act time="30">
+                <act time="30" type="Code_lab">
                     <desc>Hands on Web apps in eXist</desc>
                 </act>
             </slot>
@@ -776,7 +775,7 @@
                     <desc>Hands on Choosing and using ontologies</desc>
                     <outcome/>
                 </act>
-                <act time="15">
+                <act time="15" type="Discussion">
                     <desc>Review</desc>
                 </act>
             </slot>

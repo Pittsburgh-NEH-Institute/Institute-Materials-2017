@@ -42,10 +42,10 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-15 min | XQuery 3 | 
-30 min | Hands on XQuery 3 | 
-15 min | Web apps in eXist | 
-30 min | Hands on Web apps in eXist | 
+15 min | XQuery 3 | Presentation
+30 min | Hands on XQuery 3 | Code lab
+15 min | Web apps in eXist | Presentation
+30 min | Hands on Web apps in eXist | Code lab
 
 ## 3:30–4:00: Coffee break
 
@@ -61,6 +61,6 @@ Time | Topic | Type
 15 min | Hands on Modeling concepts and expressions | Code lab
 10 min | Choosing and using ontologies | Presentation
 10 min | Hands on Choosing and using ontologies | Code lab
-15 min | Review | 
+15 min | Review | Discussion
 
 We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 3, Day 2 feedback](week_3_day_2_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 3, Day 2 feedback”.
