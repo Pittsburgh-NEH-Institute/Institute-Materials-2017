@@ -33,14 +33,16 @@ ord,
 ```
 
 ## FLWOR
+_FLWOR_ is a mnemonic accronym for _for_, _let_, _where_, _order by_, _return. 
+
 
 ## Index configuration
 Types of indexes:
-*Structural: element + attribute occurrences
-* Range: node values (used with =, <, >, contains, matches …)
-* N-gram: node values (ngram:contains)
+* Structural: element + attribute occurrences
+* Range: node values (used with `=, <, >, contains, matches …`)
+* N-gram: node values (`ngram:contains`)
 * Lucene: tokenized text
-* xml:id: use with fn:id (created automatically)
+* `xml:id`: use with `fn:id` (created automatically)
 * Other: geospatial, sort, rdf-sparql ...
 
 Location of configuration files:
