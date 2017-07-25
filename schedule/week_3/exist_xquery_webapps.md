@@ -226,9 +226,9 @@ _EXPath_ is an effort to standardize XQuery extension modules across implementat
 * Self-contained, modular applications
 * Foundation for component reuse
 * Simplifies development process
-* Simple deployment via eXist-db's [`dashboard`](http://localhost:8080/exist/apps/dashboard/index.html#
+* Simple deployment via eXist-db's [`dashboard`](http://localhost:8080/exist/apps/dashboard/index.html)
 
-[`eXide`](http://localhost:8080/exist/apps/eXide/index.html#) supports app development and generates app structure and puts your provided metadata in place. In eXide `Application->New application`.
+[`eXide`](http://localhost:8080/exist/apps/eXide/index.html) supports app development and generates app structure and puts your provided metadata in place. In eXide `Application->New application`.
 
 Choose a name, fill in metadata, done. You will find it under `/db/apps/`. The collection structure is:
 * `modules/` - (Everything XQuery)
