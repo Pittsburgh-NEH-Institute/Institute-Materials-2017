@@ -678,24 +678,20 @@
             <slot time="09:00:00">
                 <title>Bringing it all together</title>
                 <desc>Practically and conceptually</desc>
-                <act time="15">
+                <act time="15" type="Presentation">
                     <desc>Practically</desc>
-
                     <outcome/>
                 </act>
-                <act time="30">
+                <act time="30" type="Code_lab">
                     <desc>Hands on practically</desc>
-
                     <outcome/>
                 </act>
-                <act time="15">
+                <act time="15" type="Presentation">
                     <desc>Conceptually</desc>
-
                     <outcome/>
                 </act>
-                <act time="30">
+                <act time="30" type="Code_lab">
                     <desc>Hands on conceptually</desc>
-
                     <outcome/>
                 </act>
             </slot>
@@ -708,24 +704,20 @@
             <slot time="11:00:00">
                 <title>Plugging your edition into the graph</title>
                 <desc>Plugging your edition into the graph</desc>
-                <act time="10">
+                <act time="15" type="Presentation">
                     <desc>Extracting and publishing RDF data</desc>
-
                     <outcome/>
                 </act>
-                <act time="10">
+                <act time="30" type="Code_lab">
                     <desc>Hands on Extracting and publishing RDF data</desc>
-
                     <outcome/>
                 </act>
-                <act time="10">
+                <act time="15" type="Presentation">
                     <desc>RDF databases and SPARQL</desc>
-
                     <outcome/>
                 </act>
-                <act time="10">
+                <act time="30" type="Code_lab">
                     <desc>Hands on RDF databases and SPARQL</desc>
-
                     <outcome/>
                 </act>
             </slot>
@@ -760,42 +752,36 @@
             <slot time="16:00:00">
                 <title>LOD and Editions</title>
                 <desc>Linked data principles</desc>
-                <act time="10">
+                <act time="10" type="Presentation">
                     <desc>URIs as identifiers</desc>
-
                     <outcome/>
                 </act>
-                <act time="10">
+                <act time="15" type="Code_lab">
                     <desc>Hands on URIs as identifiers</desc>
-
                     <outcome/>
                 </act>
-                <act time="15">
+                <act time="15" type="Presentation">
                     <desc>Modeling concepts and expressions</desc>
-
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Hands on Modeling concepts and expressions</desc>
+                    <outcome/>
+                </act>
+                <act time="10" type="Presentation">
+                    <desc>Choosing and using ontologies</desc>
+                    <outcome/>
+                </act>
+                <act time="10" type="Code_lab">
+                    <desc>Hands on Choosing and using ontologies</desc>
                     <outcome/>
                 </act>
                 <act time="15">
-                    <desc>Hands on Modeling concepts and expressions</desc>
-
-                    <outcome/>
-                </act>
-                <act time="10">
-                    <desc>Choosing and using ontologies</desc>
-
-                    <outcome/>
-                </act>
-                <act time="10">
-                    <desc>Hands on Choosing and using ontologies</desc>
-
-                    <outcome/>
-                </act>
-                <act time="30">
                     <desc>Review</desc>
                 </act>
             </slot>
         </day>
-<!--
+        <!--
                 <title>Data visualization</title>
                 <act time="15">
                     <desc>Data visualization 1</desc>

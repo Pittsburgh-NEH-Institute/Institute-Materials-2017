@@ -4,9 +4,10 @@
     xmlns="http://purl.oclc.org/dsdl/schematron">
     <pattern>
         <rule context="slot">
-            <assert test="sum(act/@time/number()) eq 30 or sum(act/@time/number()) eq 90" role="warn"> The sum
-                of the activity durations must be equal to either 30 or 90 minutes.
-            </assert>
+            <let name="actual_time" value="sum(act/@time/number())"/>
+            <assert test="$actual_time eq 30 or $actual_time eq 90" role="warn"> The sum
+                of the activity durations must be equal either 30 or 90 minutes. Actual time is
+                    <value-of select="$actual_time"/>.</assert>
         </rule>
     </pattern>
 </sch:schema>
