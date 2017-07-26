@@ -728,9 +728,10 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>XQuery and eXist</title>
+                <title>[XQuery and eXist](exist_xquery_webapps.md)</title>
                 <act time="15" type="Presentation">
                     <desc>XQuery 3</desc>
+                    <!-- exist_xquery_webapps.md -->
                 </act>
                 <act time="30" type="Code_lab">
                     <desc>Hands on XQuery 3</desc>
@@ -821,43 +822,6 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>TEI Publisher</title>
-                <act time="15">
-                    <desc>eXist Solution's TEI Publisher</desc>
-                </act>
-                <act time="30">
-                    <desc>Hands on TEI Publisher 1</desc>
-                </act>
-                <act time="15">
-                    <desc>TEI Publisher 2</desc>
-                </act>
-                <act time="30">
-                    <desc>Hands on TEI Publisher 2</desc>
-                </act>
-            </slot>
-            <slot time="12:30:00">
-                <title>Lunch</title>
-                <act time="90">
-                    <desc>Lunch</desc>
-                </act>
-            </slot>
-            <slot time="14:00:00">
-                <title>Lightning talks 1</title>
-                <act time="1">
-                    <desc>Intro to lightning talks</desc>
-                </act>
-                <act time="89">
-                    <desc>Project slam 1, max 10 minutes per project, no discussion, switch on
-                        signal</desc>
-                </act>
-            </slot>
-            <slot time="15:30:00">
-                <title>Coffee break</title>
-                <act time="30">
-                    <desc>Coffee break</desc>
-                </act>
-            </slot>
-            <slot time="16:00:00">
                 <title>TAG and Alexandria: models and visualizations</title>
                 <act time="10">
                     <desc>TAG as model</desc>
@@ -875,10 +839,61 @@
                     <desc>Review</desc>
                 </act>
             </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>Lightning talks 1</title>
+                <act time="1">
+                    <desc>Intro to lightning talks</desc>
+                </act>
+                <act time="89">
+                  <desc>Project slam 1, max 10 minutes per project, no discussion, switch on
+                  signal</desc>
+                </act>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Lightning talks 2</title>
+                <act time="45">
+                    <desc>Project slam 2, max 10 minutes per project, no discussion, switch on
+		    signal</desc>
+                </act>
+                <act time="25">
+                    <desc>Around the table reflections</desc>
+                </act>
+                <act time="20">
+                    <desc>Review</desc>
+                </act>
+            </slot>
         </day>
         <day d="Thursday">
             <date>July 27</date>
             <syn/>
+<!--            <slot time="11:00:00">
+                <title>TEI Publisher</title>
+                <act time="15">
+                    <desc>eXist Solution's TEI Publisher</desc>
+                </act>
+                <act time="30">
+                    <desc>Hands on TEI Publisher 1</desc>
+                </act>
+                <act time="15">
+                    <desc>TEI Publisher 2</desc>
+                </act>
+                <act time="30">
+                    <desc>Hands on TEI Publisher 2</desc>
+                </act>
+            </slot>
+-->
             <slot time="09:00:00">
                 <title>The edition and APIs</title>
                 <act time="0">
