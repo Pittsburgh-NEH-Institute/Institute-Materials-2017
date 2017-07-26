@@ -822,18 +822,21 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>TEI Publisher</title>
-                <act time="15">
-                    <desc>eXist Solution's TEI Publisher</desc>
+                <title>TAG and Alexandria: models and visualizations</title>
+                <act time="10">
+                    <desc>TAG as model</desc>
+                </act>
+                <act time="20">
+                    <desc>Hands on TAG as model</desc>
+                </act>
+                <act time="10">
+                    <desc>Alexandria as model and visualization</desc>
                 </act>
                 <act time="30">
-                    <desc>Hands on TEI Publisher 1</desc>
+                    <desc>Hands on Alexandria as model and visualization</desc>
                 </act>
-                <act time="15">
-                    <desc>TEI Publisher 2</desc>
-                </act>
-                <act time="30">
-                    <desc>Hands on TEI Publisher 2</desc>
+                <act time="20">
+                    <desc>Review</desc>
                 </act>
             </slot>
             <slot time="12:30:00">
@@ -880,6 +883,22 @@
         <day d="Thursday">
             <date>July 27</date>
             <syn/>
+<!--            <slot time="11:00:00">
+                <title>TEI Publisher</title>
+                <act time="15">
+                    <desc>eXist Solution's TEI Publisher</desc>
+                </act>
+                <act time="30">
+                    <desc>Hands on TEI Publisher 1</desc>
+                </act>
+                <act time="15">
+                    <desc>TEI Publisher 2</desc>
+                </act>
+                <act time="30">
+                    <desc>Hands on TEI Publisher 2</desc>
+                </act>
+            </slot>
+-->
             <slot time="09:00:00">
                 <title>The edition and APIs</title>
                 <act time="0">
