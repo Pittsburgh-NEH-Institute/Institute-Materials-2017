@@ -802,16 +802,16 @@
             <syn/>
             <slot time="09:00:00">
                 <title>Getting to know and use the TEI stylesheets</title>
-                <act time="15">
-                    <desc/>
+                <act time="15" type="Code_lab">
+                    <desc>[Setup](XSLT.md)</desc>
                 </act>
-                <act time="30">
+                <act time="30" type="Code_lab">
                     <desc>Hands on TEI stylesheets</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Presentation">
                     <desc>TEI stylesheets 2</desc>
                 </act>
-                <act time="30">
+                <act time="30" type="Code_lab">
                     <desc>Hands on TEI stylesheets 2</desc>
                 </act>
             </slot>
@@ -823,19 +823,19 @@
             </slot>
             <slot time="11:00:00">
                 <title>TAG and Alexandria: models and visualizations</title>
-                <act time="10">
+                <act time="10" type="Presentation">
                     <desc>TAG as model</desc>
                 </act>
-                <act time="20">
+                <act time="20" type="Code_lab">
                     <desc>Hands on TAG as model</desc>
                 </act>
-                <act time="10">
+                <act time="10" type="Presentation">
                     <desc>Alexandria as model and visualization</desc>
                 </act>
-                <act time="30">
+                <act time="30" type="Code_lab">
                     <desc>Hands on Alexandria as model and visualization</desc>
                 </act>
-                <act time="20">
+                <act time="20" type="Discussion">
                     <desc>Review</desc>
                 </act>
             </slot>
@@ -847,10 +847,10 @@
             </slot>
             <slot time="14:00:00">
                 <title>Lightning talks 1</title>
-                <act time="1">
+                <act time="1" type="Presentation">
                     <desc>Intro to lightning talks</desc>
                 </act>
-                <act time="89">
+                <act time="89" type="Talk_lab">
                   <desc>Project slam 1, max 10 minutes per project, no discussion, switch on
                   signal</desc>
                 </act>
@@ -863,14 +863,14 @@
             </slot>
             <slot time="16:00:00">
                 <title>Lightning talks 2</title>
-                <act time="45">
+                <act time="45" type="Talk_lab">
                     <desc>Project slam 2, max 10 minutes per project, no discussion, switch on
 		    signal</desc>
                 </act>
-                <act time="25">
+                <act time="25" type="Presentation">
                     <desc>Around the table reflections</desc>
                 </act>
-                <act time="20">
+                <act time="20" type="Discussion">
                     <desc>Review</desc>
                 </act>
             </slot>
