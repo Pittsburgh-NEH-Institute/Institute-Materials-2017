@@ -63,4 +63,7 @@ Alexandria is a text repository and database that supports Text As Graph (TAG). 
 	docker-compose pull && docker-compose up
 	```
 
-1. In a web browser, navigate to either <http://localhost:8888> or <http://ipaddress.of.your.docker:8888> (This is an ip address starting with either 192. or 172. E.g. 172.17.0.1). Click on “examples” and then on “markup-init.ipynb”. Run the notebook from the menu bar with “Cell” → “Run All”.
+1. In a web browser, navigate to either <http://localhost:8888> or <http://ipaddress.of.your.docker:8888> (This is an ip address starting with either 192. or 172. E.g. 172.17.0.1).
+1. Click on the “examples” directory and then on the notebook “markup-init.ipynb”. 
+1. If required also *change* the ip/host address to that of your docker as above in the *first cell* of the notebook.
+1. Run the notebook from the menu bar with “Cell” → “Run All”.
