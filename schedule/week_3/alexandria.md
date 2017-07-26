@@ -21,7 +21,7 @@ Alexandria is a text repository and database that supports Text As Graph (TAG). 
 	          - 8002:8080
 	          - 8003:8081
 	        environment:
-	          - BASE_URI=http://docker.for.mac.localhost:8002
+	          - BASE_URI=http://localhost:8002
 
 	  # the tex-util server, which can convert the LaTeX from the alexandria server to SVG)
 	  latex:
@@ -32,7 +32,7 @@ Alexandria is a text repository and database that supports Text As Graph (TAG). 
 	        depends_on:
 	          - alexandria
 	        environment:
-	          - BASE_URI= http://docker.for.mac.localhost:8000
+	          - BASE_URI= http://localhost:8000
 
 	  # the relevant notebooks and python code to connect to the alexandria and latex services
 	  notebook:
@@ -65,5 +65,6 @@ Alexandria is a text repository and database that supports Text As Graph (TAG). 
 
 1. In a web browser, navigate to either <http://localhost:8888> or <http://ipaddress.of.your.docker:8888> (This is an ip address starting with either 192. or 172. E.g. 172.17.0.1).
 1. Click on the “examples” directory and then on the notebook “markup-init.ipynb”. 
-1. If required also *change* the ip/host address to that of your docker as above in the *first cell* of the notebook.
+1. When on a Mac and running Docker CE change the server_url and latex_server in the *first cell* of the notebook to "http://docker.for.mac.localhost:8002" and "http://docker.for.mac.localhost:8000/" respectively.
+1. When not on Docker CE and on Docker Toolbox instead if required also *change* the ip/host address to that of your docker as above in the *first cell* of the notebook.
 1. Run the notebook from the menu bar with “Cell” → “Run All”.
