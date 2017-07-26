@@ -1,11 +1,11 @@
 # Week 2, Day 4: Thursday, July 20
-
 ## Synopsis
 
-At the beginning of Week 2, Day 4, Mike Kestemont introduces text analytics with Python, concentrating on *bag of words* methods. In the afternoon we continue our earlier examination of collation and then begin to explore documents using XQuery within the eXist XML database.
+Week 2, Day 4 concentrates on ...
 
 ## Outcome goals
-
+* Grasping the concept of modelling text as trees and graphs Understanding annotation as a form of adding layers to text Varieties of layered editions
+* Deeper discussion of the alignment step in the GM An awareness of computation to understand that we do near-matching late (in the pipeline) for reasons of efficiency
 ## Legend
 
 * **Presentation:** by instructors
@@ -13,46 +13,50 @@ At the beginning of Week 2, Day 4, Mike Kestemont introduces text analytics with
 * **Talk lab:** participants discuss or plan in small groups
 * **Code lab:** participants code alone or in small groups
 
--------
+* * *
+## 9:00–9:00: Text analytics 1
 
-## 9:00–10:30: Text analytics 1
+Text analytics 1
 
-MK: Bag of words, text processing, text as tables, query the tables
+Time | Topic | Type
+---- | ---- | ---- 
+0 min | Bag of words | 
+0 min | Text processing | 
+0 min | Text as tables | 
+0 min | Query the tables | 
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: Text analytics 1 (cont.)
+## 11:00–11:00: Text analytics 1 (cont.)
 
-MK: Bag of words, text processing, text as tables, query the tables (continued)
+Time | Topic | Type
+---- | ---- | ---- 
+0 min | Bag of words, text processing, text as tables, query the tables (continued) | 
 
 ## 12:30–2:00: Lunch
 
-## 3:00–4:30: Collation
+## 2:00–2:00: Modeling: annotations as layers to the text
 
-Time | Activity | Type
----- | ---- | ----
-15 min | Install Collatex (`collatex_installation.ipynb`) | Code lab
-15 min | The CollateX interface (`collation/1_collate-plain-text.ipynb`) | Code lab
-10 min | Collatex output options (`collation/3_collate-plain-text.ipynb`) | Code lab
-20 min | Collation outside Jupyter (`collation/3_collate-plain-text.ipynb`) | Code lab
-30 min | Customizing tokenization and normalization (`Integrating_tokenization_and_normalization.ipynb`) | Code lab
+Modeling: annotations as layers to the text
 
+Time | Topic | Type
+---- | ---- | ---- 
+0 min | Review of tokenization, normalization, and collation from the point of view of annotations | 
+0 min | Envisioning your edition as a layered model | 
+0 min | Existing models (e.g. computational linguistics) | 
+0 min | Hands-on: identify your own layers | 
+0 min | Hands-on: model your edition's pipeline | 
 
 ## 3:30–4:00: Coffee break
 
-## 4:00–5:30: [Modeling: exploring the model with XQuery](explore_model_xquery.md)
+## 4:00–4:00: Collation 2
 
-<!-- ### Topics and Activities
-* Recap of the topics that have been discussed so far: tokenization, normalization, and collation from the point of view of annotations (as each of these activities entails a form of annotation)
-* Envisioning your edition as a layered model
-* Existing models (e.g. computational linguitics) 
-* Hands-on: identify your own layers
-* Hands-on: model your edition's pipeline
+Collation 2
 
-### Outcome goals
-* Grasping the concept of modelling text as trees and graphs
-* Understanding annotation as a form of adding layers to text
-* Varieties of layered editions
-* -->
+Time | Topic | Type
+---- | ---- | ---- 
+0 min | Advanced collation | 
+0 min | Near-matching - theory (as step in the computational pipeline) | 
+0 min | Hands-on: ... | 
 
 We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 2, Day 4 feedback](week_2_day_4_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 2, Day 4 feedback”.
