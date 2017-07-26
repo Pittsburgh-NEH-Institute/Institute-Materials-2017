@@ -23,14 +23,15 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: TEI Publisher
+## 11:00–12:30: TAG and Alexandria: models and visualizations
 
 Time | Topic | Type
 ---- | ---- | ---- 
-15 min | eXist Solution's TEI Publisher | 
-30 min | Hands on TEI Publisher 1 | 
-15 min | TEI Publisher 2 | 
-30 min | Hands on TEI Publisher 2 | 
+10 min | TAG as model | 
+20 min | Hands on TAG as model | 
+10 min | Alexandria as model and visualization | 
+30 min | Hands on Alexandria as model and visualization | 
+20 min | Review | 
 
 ## 12:30–2:00: Lunch
 
@@ -43,14 +44,12 @@ Time | Topic | Type
 
 ## 3:30–4:00: Coffee break
 
-## 4:00–5:30: TAG and Alexandria: models and visualizations
+## 4:00–5:30: Lightning talks 2
 
 Time | Topic | Type
 ---- | ---- | ---- 
-10 min | TAG as model | 
-20 min | Hands on TAG as model | 
-10 min | Alexandria as model and visualization | 
-30 min | Hands on Alexandria as model and visualization | 
+45 min | Project slam 2, max 10 minutes per project, no discussion, switch on signal | 
+25 min | Around the table reflections | 
 20 min | Review | 
 
 We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 3, Day 3 feedback](week_3_day_3_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 3, Day 3 feedback”.
