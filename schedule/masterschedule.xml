@@ -851,8 +851,8 @@
                     <desc>Intro to lightning talks</desc>
                 </act>
                 <act time="89">
-                    <desc>Project slam 1, max 10 minutes per project, no discussion, switch on
-                        signal</desc>
+                  <desc>Project slam 1, max 10 minutes per project, no discussion, switch on
+                  signal</desc>
                 </act>
             </slot>
             <slot time="15:30:00">
@@ -862,18 +862,13 @@
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title>TAG and Alexandria: models and visualizations</title>
-                <act time="10">
-                    <desc>TAG as model</desc>
+                <title>Lightning talks 2</title>
+                <act time="45">
+                    <desc>Project slam 2, max 10 minutes per project, no discussion, switch on
+		    signal</desc>
                 </act>
-                <act time="20">
-                    <desc>Hands on TAG as model</desc>
-                </act>
-                <act time="10">
-                    <desc>Alexandria as model and visualization</desc>
-                </act>
-                <act time="30">
-                    <desc>Hands on Alexandria as model and visualization</desc>
+                <act time="25">
+                    <desc>Around the table reflections</desc>
                 </act>
                 <act time="20">
                     <desc>Review</desc>
