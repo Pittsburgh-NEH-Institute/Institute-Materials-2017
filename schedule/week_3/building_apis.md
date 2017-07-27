@@ -36,10 +36,12 @@ One is the base template [template.html](templates/template.html) with the follo
 &lt;/html&gt;
 </pre>
 
-We see three template blocks `{% block header %}` `{% block content %}` `{% block footer %}`.
+We see three template blocks <code>{% block header %}</code> <code>{% block content %}</code> <code>{% block footer %}</code>.
+
 In the second new template [resource.html](templates/resource.html) we put some minor logic for including _resources_ into the template: 
-```html
-<?xml version="1.0" encoding="utf-8"?>
+
+<pre>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
 {% extends 'template.html' %}
 {% block content %}
     {% if resource_name == 'resource1' %}
@@ -56,12 +58,14 @@ In the second new template [resource.html](templates/resource.html) we put some 
         {% include 'form1.html' %}
     {% endif %}
 {% endblock %}
-```
+</pre>
+
 It also uses directive `{% extends 'template.html' %}` to connect the block `{% block content %}` to the one in _template.html_.
 
 Some of the files are also included. (Not the missing one though :)). In that case we use additional directive to the include `{% include 'missing1.html' ignore missing %}` otherwise the request would fail.
 
 To continue on the example from Flask intro the new templates could be used like this:
+
 ```python
 from flask import Flask
 from flask import render_template
@@ -99,6 +103,7 @@ def get_request_value_with_fallback(key):
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
 ``` 
+
 See [flask-request-get-resource.py](flask-request-get-resource.py).
 
 We added a couple of new decorators `@app.route("/resource/<resource_name>")`, `@app.route("/resource/<resource_name>/value/<value>")`. Like we saw in the previous session. `<resource_name>` and `<name>` are variables in the decorator that will be passed to the function it decorates.
