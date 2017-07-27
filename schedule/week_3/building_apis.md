@@ -21,7 +21,7 @@ One is the base template [template.html](templates/template.html) with the follo
     &#123;% block head %&#125;
     &lt;link rel="stylesheet" href="style.css" /&gt;
     &lt;title&gt;&#123;% block title %&#125;&#123;% endblock %&#125; - Base template page&lt;/title&gt;
-    {% endblock %}
+    &#123;% endblock %&#125;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;div class="container"&gt;
