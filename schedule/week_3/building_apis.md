@@ -36,7 +36,7 @@ One is the base template [template.html](templates/template.html) with the follo
 </html>
 ```
 
-We see three template blocks `{% block header %}` `{% block content %}` `{% block footer %}`.
+We see three template blocks `{% block head %}` `{% block content %}` `{% block footer %}`.
 
 In the second new template [resource.html](templates/resource.html) we put some minor logic for including _resources_ into the template: 
 
