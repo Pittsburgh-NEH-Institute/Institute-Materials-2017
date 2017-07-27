@@ -16,10 +16,10 @@
 
 Time | Topic | Type
 ---- | ---- | ---- 
-30 min | Intro APIs | 
-15 min | Hands on intro APIs | 
-20 min | API creation talk lab | 
-25 min | API creation best practices | 
+30 min | Intro APIs | Presentation
+15 min | Hands on intro APIs | Code lab
+20 min | API creation talk lab | Talk lab
+25 min | API creation best practices | Presentation
 
 ## 10:30–11:00: Coffee break
 
@@ -27,12 +27,12 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-15 min | Verbs and parameters | 
-15 min | Navigation and filtering | 
-15 min | Hands on navigation and filtering | 
-15 min | Internal and external services, documentation | 
-15 min | Hands on internal and external service, documentation | 
-15 min | Show your API | 
+15 min | Verbs and parameters | Presentation
+15 min | Navigation and filtering | Presentation
+15 min | Hands on navigation and filtering | Code lab
+15 min | Internal and external services, documentation | Presentation
+15 min | Hands on internal and external service, documentation | Presentation
+15 min | Show your API | Talk lab
 
 ## 12:30–2:00: Lunch
 
@@ -40,12 +40,12 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-15 min | Flask verbs and parameters | 
-15 min | Navigation and filtering | 
-15 min | Hands on navigation and filtering | 
-15 min | Hands on internal and external services | 
-15 min | Hands on documentation | 
-15 min | Try your neighbours API | 
+15 min | Flask verbs and parameters | Presentation
+15 min | Navigation and filtering | Presentation
+15 min | Hands on navigation and filtering | Code lab
+15 min | Hands on internal and external services | Code lab
+15 min | Hands on documentation | Code lab
+15 min | Try your neighbours API | Code lab
 
 ## 3:30–4:00: Coffee break
 
@@ -53,18 +53,18 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-30 min | Licensing, archiving, and planning for the future | 
-20 min | Hands on Licensing, archiving, and planning for the future | 
-10 min | Priorities | 
-30 min | Review | 
+30 min | Licensing, archiving, and planning for the future | Presentation
+20 min | Hands on Licensing, archiving, and planning for the future | Talk lab
+10 min | Priorities | Presentation
+30 min | Review | Talk lab
 
 ## 7:00–9:00: Leif-Jöran: eXist-db workshop
 
 Time | Topic | Type
 ---- | ---- | ---- 
-30 min | XQuery | 
-30 min | Individual services | 
-30 min | Webapps | 
-30 min | Wrap-up/review | 
+30 min | XQuery | Code lab
+30 min | Individual services | Code lab
+30 min | Webapps | Code lab
+30 min | Wrap-up/review | Talk lab
 
 We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 3, Day 4 feedback](week_3_day_4_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 3, Day 4 feedback”.
