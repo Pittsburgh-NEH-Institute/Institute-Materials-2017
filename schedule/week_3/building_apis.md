@@ -13,35 +13,35 @@ We added a few more templates and resources in the [templates directory](templat
 
 One is the base template [template.html](templates/template.html) with the following contents:
 
-<pre>
-&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
-  &lt;head&gt;
-    {:q% block head %}
-    &lt;link rel="stylesheet" href="style.css" /&gt;
-    &lt;title&gt;{% block title %}{% endblock %} - Base template page&lt;/title&gt;
+```html
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    {% block head %}
+    <link rel="stylesheet" href="style.css" />
+    <title>{% block title %}{% endblock %} - Base template page</title>
     {% endblock %}
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;div class="container"&gt;
+  </head>
+  <body>
+    <div class="container">
       {% block content %}
       {% endblock %}
-    &lt;/div&gt;
-    &lt;div id="footer"&gt;
+    </div>
+    <div id="footer">
       {% block footer %}
-      &copy; Copyright 2017 by &lt;a href="http://makeyouredition.net/"&gt;Make your edition&lt;/a&gt;.
+      &copy; Copyright 2017 by <a href="http://makeyouredition.net/">Make your edition</a>.
       {% endblock %}
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+    </div>
+  </body>
+</html>
+```
 
-We see three template blocks <code>{% block header %}</code> <code>{% block content %}</code> <code>{% block footer %}</code>.
+We see three template blocks `{% block header %}` `{% block content %}` `{% block footer %}`.
 
 In the second new template [resource.html](templates/resource.html) we put some minor logic for including _resources_ into the template: 
 
-<pre>
-&lt;?xml version="1.0" encoding="utf-8"?&gt;
+```html
+?xml version="1.0" encoding="utf-8"?&gt;
 {% extends 'template.html' %}
 {% block content %}
     {% if resource_name == 'resource1' %}
@@ -58,7 +58,7 @@ In the second new template [resource.html](templates/resource.html) we put some 
         {% include 'form1.html' %}
     {% endif %}
 {% endblock %}
-</pre>
+```
 
 It also uses directive `{% extends 'template.html' %}` to connect the block `{% block content %}` to the one in _template.html_.
 
