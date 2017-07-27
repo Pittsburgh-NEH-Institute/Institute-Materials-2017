@@ -12,19 +12,25 @@
 * **Code lab:** participants code alone or in small groups
 
 * * *
-## 9:00–9:00: Publishing strategies
+## 9:00–10:30: Publishing strategies and sustainability
 
 Time | Topic | Type
 ---- | ---- | ---- 
-0 min |  | 
+25 min | Publishing strategies | 
+15 min | Hands on publishing | 
+25 min | Sustainability | 
+25 min | Hands on sustainability | 
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–11:00: Sustainability
+## 11:00–12:30: Data visualization
 
 Time | Topic | Type
 ---- | ---- | ---- 
-0 min |  | 
+25 min | Data visualization 1 | 
+25 min | Hands on Data visualization 1 | 
+15 min | Data visualization 2 | 
+25 min | Hands on Data visualization 2 | 
 
 ## 12:30–2:00: Lunch
 
