@@ -9,8 +9,14 @@ RESTful or REST-like APIs are more about nouns than verbs.
 
 <http://localhost:5000/resource/form1/value/ljo>
 
+![Response from request with prefilled value](images/url-form1-value-response.png)
+
+More on this later.
+
 ![Simple Client-Server interaction](images/Client-server-overview.svg)
+
 ![Client-Server and external Client-Server interaction](images/Client-server-external-overview.svg)
+
 ![Server overview and (internals)](images/Server-overview.svg)
 
 
