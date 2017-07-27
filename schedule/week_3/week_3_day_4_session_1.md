@@ -119,6 +119,9 @@ Think about the things you might want an API for your edition to do. APIs can de
 ### Notes
  * The Web is your API
  * API Anti-Patterns
-  * Hiding
-  * Oversharing
-  * Overcomplicating
+   * Hiding
+   * Oversharing
+   * Overcomplicating
+   * Using GET for everything
+   * Not using response codes
+   * Not using hypermedia
