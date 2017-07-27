@@ -29,7 +29,10 @@ def get_local_resource_with_value(resource_name = '', value = ''):
 @app.route("/neh-artifact/<idnbr>")
 def get_neh_artifact(idnbr = ''):
     #return render_template("resource.html", resource_name=idnbr)
-    return ("Request for artifact: " + idnbr + " You primarily want: " + get_list_comma_header(get_request_header('Accept', ''))[0] + " " + " but not available yet.")
+    primary_accept = get_list_comma_header(get_request_header('Accept', ''))[0]
+    if (primary_accept == "text/html"):
+        return ("Request for artifact: " + idnbr + " You primarily want: " + primary_accept + " " + " but not available yet.", 404)
+    return ("Request for artifact: " + idnbr + " You primarily want: " + primary_accept) 
 
 def get_list_comma_header(header_value):
     return [x.strip() for x in header_value.split(',')]
