@@ -879,7 +879,7 @@
             </slot>
 -->
             <slot time="09:00:00">
-                <title>The edition and APIs</title>
+                <title>[The edition and APIs](week_3_day_4_session_1.md)</title>
                 <act time="30">
                     <desc>Intro APIs</desc>
                 </act>
