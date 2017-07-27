@@ -5,6 +5,7 @@ In this session we are focusing on building your API, i.e. the interface to your
 ## More on templates
 As in the Flask intro we use the Jinja templating engine available in Python. Remember the convention to put the templates in a subdirectory called `templates`.
 You need to include it in your python header:
+
 ```python
 from flask import render_template
 ```
@@ -13,78 +14,79 @@ We added a few more templates and resources in the [templates directory](templat
 
 One is the base template [template.html](templates/template.html) with the following contents:
 
-```html
-<?xml version="1.0" encoding="utf-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    {% block head %}
-    <link rel="stylesheet" href="style.css" />
-    <title>{% block title %}{% endblock %} - Base template page</title>
+<pre class="xml">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;
+    &#123;% block head %&#125;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+    &lt;title&gt;&#123;% block title %&#125;&#123;% endblock %&#125; - Base template page&lt;/title&gt;
     {% endblock %}
-  </head>
-  <body>
-    <div class="container">
-      {% block content %}
-      {% endblock %}
-    </div>
-    <div id="footer">
-      {% block footer %}
-      &copy; Copyright 2017 by <a href="http://makeyouredition.net/">Make your edition</a>.
-      {% endblock %}
-    </div>
-  </body>
-</html>
-```
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="container"&gt;
+      &123;% block content %&#125;
+      &123;% endblock %&#125;
+    &lt;/div&gt;
+    &lt;div id="footer"&gt;
+      &123;% block footer %&#125;
+      &copy; Copyright 2017 by &lt;a href="http://makeyouredition.net/"&gt;Make your edition&lt;/a&gt;.
+      &123;% endblock %&#125;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
 
-We see three template blocks `{% block head %}` `{% block content %}` `{% block footer %}`.
+
+We see three template blocks <code>&#123;% block head %&#125;</code> <code>&#123;% block content %&#125;</code> <code>&#123;% block footer %&#125;</code>.
 
 In the second new template [resource.html](templates/resource.html) we put some minor logic for including _resources_ into the template: 
 
-```html
-?xml version="1.0" encoding="utf-8"?&gt;
-{% extends 'template.html' %}
-{% block content %}
-    {% if resource_name == 'resource1' %}
-        {% include 'resource1.html' %}
-    {% endif %}
-    {% if resource_name == 'missing1' %}
-        {% include 'missing1.html' ignore missing %}
-    {% endif %}
-    {% if resource_name == 'xhtml2' %}
-        {% include ['xhtml.html', 'resource2.xhtml'] %}
-	{# Includes the first existing template, e.g. resource2.xhtml #}
-    {% endif %}
-    {% if resource_name == 'form1' %}
-        {% include 'form1.html' %}
-    {% endif %}
-{% endblock %}
-```
+<pre class="xml">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&#123;% extends 'template.html' %&#125;
+&#123;% block content %&#125;
+    &#123;% if resource_name == 'resource1' %&#125;
+        &#123;% include 'resource1.html' %&#125;
+    &#123;% endif %&#125;
+    &#123;% if resource_name == 'missing1' %&#125;
+        &#123;% include 'missing1.html' ignore missing %&#125;
+    &#123;% endif %&#125;
+    &#123;% if resource_name == 'xhtml2' %&#125;
+        &#123;% include ['xhtml.html', 'resource2.xhtml'] %&#125;
+	&#123;# Includes the first existing template, e.g. resource2.xhtml #&#125;
+    &#123;% endif %&#125;
+    &#123;% if resource_name == 'form1' %&#125;
+        &#123;% include 'form1.html' %&#125;
+    &#123;% endif %&#125;
+&#123;% endblock %&#125;
+</pre>
 
-It also uses directive `{% extends 'template.html' %}` to connect the block `{% block content %}` to the one in _template.html_.
+It also uses directive <code>&#123;% extends 'template.html' %&#125;</code> to connect the block <code>&#123;% block content %&#125;</code> to the one in _template.html_.
 
-Some of the files are also included. (Not the missing one though :)). In that case we use additional directive to the include `{% include 'missing1.html' ignore missing %}` otherwise the request would fail.
+Some of the files are also included. (Not the missing one though :)). In that case we use additional directive to the include <code>&#123;% include 'missing1.html' ignore missing %&#125;</code> otherwise the request would fail.
 
 To continue on the example from Flask intro the new templates could be used like this:
 
-```python
+<pre class="python">
 from flask import Flask
 from flask import render_template
 from flask import request
 
-defaults = { 'title': 'dynamic request header index.html' ,
+defaults = &#123; 'title': 'dynamic request header index.html' ,
              'header': 'Default "header" is used. Give request parameter header with a value to change it.',
              'paragraph': 'This is index.html with dynamic contents in response to a request for / (ROOT) in flask-request.py'
-}
+&#125;
 
 app = Flask(__name__)
 @app.route("/")
 def get_my_index():
     header = get_request_value_with_fallback('header')
-    values = {
+    values = &#123;
         'title': defaults['title'],
         'header': header,
         'paragraph': defaults['paragraph'] 
-    }
+    &#125;
     return render_template("index-dyn-dict.html", dict=values)
 
 @app.route("/resource/<resource_name>")
@@ -117,7 +119,7 @@ def get_request_value_with_fallback(key):
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
-``` 
+</pre>
 
 See [flask-request-get-resource.py](flask-request-get-resource.py).
 
