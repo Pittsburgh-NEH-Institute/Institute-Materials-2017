@@ -89,15 +89,15 @@ def get_my_index():
     &#125;
     return render_template("index-dyn-dict.html", dict=values)
 
-@app.route("/resource/<resource_name>")
+@app.route("/resource/&lt;resource_name&gt;")
 def get_local_resource(resource_name = ''):
     return render_template("resource.html", resource_name=resource_name)
 
-@app.route("/resource/<resource_name>/value/<value>")
+@app.route("/resource/&lt;resource_name&gt;/value/&lt;value&gt;")
 def get_local_resource_with_value(resource_name = '', value = ''):
     return render_template("resource.html", resource_name=resource_name, value=value)
 
-@app.route("/neh-artifact/<idnbr>")
+@app.route("/neh-artifact/&lt;idnbr&gt;")
 def get_neh_artifact(idnbr = ''):
     #return render_template("resource.html", resource_name=idnbr)
     primary_accept = get_list_comma_header(get_request_header('Accept', ''))[0]
