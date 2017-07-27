@@ -16,7 +16,8 @@
 
 Time | Topic | Type
 ---- | ---- | ---- 
-45 min | Intro APIs | 
+30 min | Intro APIs | 
+15 min | Hands on intro APIs | 
 20 min | API creation talk lab | 
 25 min | API creation best practices | 
 
@@ -57,13 +58,13 @@ Time | Topic | Type
 10 min | Priorities | 
 30 min | Review | 
 
-## 7:00–9:00: eXist-db workshop
+## 7:00–9:00: Leif-Jöran: eXist-db workshop
 
 Time | Topic | Type
 ---- | ---- | ---- 
 30 min | XQuery | 
-30 min | Webapps | 
 30 min | Individual services | 
+30 min | Webapps | 
 30 min | Wrap-up/review | 
 
 We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 3, Day 4 feedback](week_3_day_4_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 3, Day 4 feedback”.
