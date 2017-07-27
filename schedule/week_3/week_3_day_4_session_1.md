@@ -110,8 +110,6 @@ r.json()[1]["name"]
 ```
 Our old friend, the Stylesheets!
 
-```
-
 ## Talk Lab: Planning your API
 
 Think about the things you might want an API for your edition to do. APIs can deal with things like navigation, search, filtering, annotation, creating new resources, and modifying existing resources.
