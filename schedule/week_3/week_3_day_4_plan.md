@@ -36,7 +36,7 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: Building your own API
+## 2:00–3:30: [Building your own API](building_apis.md)
 
 Time | Topic | Type
 ---- | ---- | ---- 
