@@ -781,37 +781,21 @@
                 </act>
             </slot>
         </day>
-        <!--
-                <title>Data visualization</title>
-                <act time="15">
-                    <desc>Data visualization 1</desc>
-                </act>
-                <act time="15">
-                    <desc>Hands on Data visualization 1</desc>
-                </act>
-                <act time="15">
-                    <desc>Data visualization 2</desc>
-                </act>
-                <act time="15">
-                    <desc>Hands on Data visualization 2</desc>
-                </act>
-
--->
         <day d="Wednesday">
             <date>July 26</date>
             <syn/>
             <slot time="09:00:00">
                 <title>Getting to know and use the TEI stylesheets</title>
-                <act time="15">
-                    <desc/>
+                <act time="15" type="Code_lab">
+                    <desc>[Setup](XSLT.md)</desc>
                 </act>
-                <act time="30">
+                <act time="30" type="Code_lab">
                     <desc>Hands on TEI stylesheets</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Presentation">
                     <desc>TEI stylesheets 2</desc>
                 </act>
-                <act time="30">
+                <act time="30" type="Code_lab">
                     <desc>Hands on TEI stylesheets 2</desc>
                 </act>
             </slot>
@@ -823,19 +807,19 @@
             </slot>
             <slot time="11:00:00">
                 <title>TAG and Alexandria: models and visualizations</title>
-                <act time="10">
+                <act time="10" type="Presentation">
                     <desc>TAG as model</desc>
                 </act>
-                <act time="20">
+                <act time="20" type="Code_lab">
                     <desc>Hands on TAG as model</desc>
                 </act>
-                <act time="10">
+                <act time="10" type="Presentation">
                     <desc>Alexandria as model and visualization</desc>
                 </act>
-                <act time="30">
+                <act time="30" type="Code_lab">
                     <desc>Hands on Alexandria as model and visualization</desc>
                 </act>
-                <act time="20">
+                <act time="20" type="Discussion">
                     <desc>Review</desc>
                 </act>
             </slot>
@@ -847,10 +831,10 @@
             </slot>
             <slot time="14:00:00">
                 <title>Lightning talks 1</title>
-                <act time="1">
+                <act time="1" type="Presentation">
                     <desc>Intro to lightning talks</desc>
                 </act>
-                <act time="89">
+                <act time="89" type="Talk_lab">
                   <desc>Project slam 1, max 10 minutes per project, no discussion, switch on
                   signal</desc>
                 </act>
@@ -863,14 +847,14 @@
             </slot>
             <slot time="16:00:00">
                 <title>Lightning talks 2</title>
-                <act time="45">
+                <act time="45" type="Talk_lab">
                     <desc>Project slam 2, max 10 minutes per project, no discussion, switch on
 		    signal</desc>
                 </act>
-                <act time="25">
+                <act time="25" type="Presentation">
                     <desc>Around the table reflections</desc>
                 </act>
-                <act time="20">
+                <act time="20" type="Discussion">
                     <desc>Review</desc>
                 </act>
             </slot>
@@ -895,9 +879,18 @@
             </slot>
 -->
             <slot time="09:00:00">
-                <title>The edition and APIs</title>
-                <act time="0">
-                    <desc/>
+                <title>[The edition and APIs](week_3_day_4_session_1.md)</title>
+                <act time="30">
+                    <desc>Intro APIs</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on intro APIs</desc>
+                </act>
+                <act time="20">
+                    <desc>API creation talk lab</desc>
+                </act>
+                <act time="25">
+                    <desc>API creation best practices</desc>
                 </act>
             </slot>
             <slot time="10:30:00">
@@ -908,8 +901,23 @@
             </slot>
             <slot time="11:00:00">
                 <title>Using APIs in your edition</title>
-                <act time="0">
-                    <desc/>
+                <act time="15">
+                    <desc>Verbs and parameters</desc>
+                </act>
+                <act time="15">
+                    <desc>Navigation and filtering</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on navigation and filtering</desc>
+                </act>
+                <act time="15">
+                    <desc>Internal and external services, documentation</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on internal and external service, documentation</desc>
+                </act>
+                <act time="15">
+                    <desc>Show your API</desc>
                 </act>
             </slot>
             <slot time="12:30:00">
@@ -920,8 +928,23 @@
             </slot>
             <slot time="14:00:00">
                 <title>Building your own API</title>
-                <act time="0">
-                    <desc/>
+                <act time="15">
+                    <desc>Flask verbs and parameters</desc>
+                </act>
+                <act time="15">
+                    <desc>Navigation and filtering</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on navigation and filtering</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on internal and external services</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on documentation</desc>
+                </act>
+                <act time="15">
+                    <desc>Try your neighbours API</desc>
                 </act>
             </slot>
             <slot time="15:30:00">
@@ -935,11 +958,29 @@
                 <act time="30">
                     <desc>Licensing, archiving, and planning for the future</desc>
                 </act>
-                <act time="10">
+                <act time="20">
                     <desc>Hands on Licensing, archiving, and planning for the future</desc>
+                </act>
+                <act time="10">
+                    <desc>Priorities</desc>
                 </act>
                 <act time="30">
                     <desc>Review</desc>
+                </act>
+            </slot>
+            <slot time="19:00:00">
+                <title>Leif-Jöran: eXist-db workshop</title>
+                <act time="30">
+                    <desc>XQuery</desc>
+                </act>
+                <act time="30">
+                    <desc>Individual services</desc>
+                </act>
+                <act time="30">
+                    <desc>Webapps</desc>
+                </act>
+                <act time="30">
+                    <desc>Wrap-up/review</desc>
                 </act>
             </slot>
         </day>
@@ -947,9 +988,18 @@
             <date>July 28</date>
             <syn/>
             <slot time="09:00:00">
-                <title>Publishing strategies</title>
-                <act time="0">
-                    <desc/>
+                <title>Publishing strategies and sustainability</title>
+                <act time="25">
+                    <desc>Publishing strategies</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on publishing</desc>
+                </act>
+                <act time="25">
+                    <desc>Sustainability</desc>
+                </act>
+                <act time="25">
+                    <desc>Hands on sustainability</desc>
                 </act>
             </slot>
             <slot time="10:30:00">
@@ -959,9 +1009,18 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>Sustainability</title>
-                <act time="0">
-                    <desc/>
+                <title>Data visualization</title>
+                <act time="25">
+                    <desc>Data visualization 1</desc>
+                </act>
+                <act time="25">
+                    <desc>Hands on Data visualization 1</desc>
+                </act>
+                <act time="15">
+                    <desc>Data visualization 2</desc>
+                </act>
+                <act time="25">
+                    <desc>Hands on Data visualization 2</desc>
                 </act>
             </slot>
             <slot time="12:30:00">
