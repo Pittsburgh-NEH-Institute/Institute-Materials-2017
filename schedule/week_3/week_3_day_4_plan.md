@@ -12,7 +12,7 @@
 * **Code lab:** participants code alone or in small groups
 
 * * *
-## 9:00–10:30: The edition and APIs
+## 9:00–10:30: [The edition and APIs](week_3_day_4_session_1.md)
 
 Time | Topic | Type
 ---- | ---- | ---- 
