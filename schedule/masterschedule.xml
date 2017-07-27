@@ -900,7 +900,7 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>[Using APIs in your edition](using_aips_edition.md)</title>
+                <title>[Using APIs in your edition](using_apis_edition.md)</title>
                 <act time="15" type="Presentation">
                     <desc>Verbs and parameters</desc>
                 </act>
