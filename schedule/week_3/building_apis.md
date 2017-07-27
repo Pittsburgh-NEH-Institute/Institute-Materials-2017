@@ -12,28 +12,30 @@ from flask import render_template
 We added a few more templates and resources in the [templates directory](templates/)
 
 One is the base template [template.html](templates/template.html) with the following contents:
-```html
-<?xml version="1.0" encoding="utf-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
+
+<pre>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;
     {% block head %}
-    <link rel="stylesheet" href="style.css" />
-    <title>{% block title %}{% endblock %} - Base template page</title>
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+    &lt;title&gt;{% block title %}{% endblock %} - Base template page&lt;/title&gt;
     {% endblock %}
-  </head>
-  <body>
-    <div class="container">
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="container"&gt;
       {% block content %}
       {% endblock %}
-    </div>
-    <div id="footer">
+    &lt;/div&gt;
+    &lt;div id="footer"&gt;
       {% block footer %}
-      &copy; Copyright 2017 by <a href="http://makeyouredition.net/">Make your edition</a>.
+      &copy; Copyright 2017 by &lt;a href="http://makeyouredition.net/"&gt;Make your edition&lt;/a&gt;.
       {% endblock %}
-    </div>
-  </body>
-</html>
-```
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
 We see three template blocks `{% block header %}` `{% block content %}` `{% block footer %}`.
 In the second new template [resource.html](templates/resource.html) we put some minor logic for including _resources_ into the template: 
 ```html
