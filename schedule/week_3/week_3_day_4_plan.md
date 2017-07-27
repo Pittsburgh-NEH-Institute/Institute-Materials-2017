@@ -23,7 +23,7 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: Using APIs in your edition
+## 11:00–12:30: [Using APIs in your edition](using_aips_edition.md)
 
 Time | Topic | Type
 ---- | ---- | ---- 
