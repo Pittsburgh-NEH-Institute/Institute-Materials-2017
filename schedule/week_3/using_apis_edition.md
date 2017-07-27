@@ -99,3 +99,6 @@ Don't forget do make a human-readable documentation for each endpoint:
 * Any metadata
 
 OpenAPI could help you with schema modeling and documentation (there are other options but they often change names. E.g. Apiary, Blueprint). _RAML_ is a schema modeling language. You could look at [API commons](http://apicommons.org/) and get inspired for some parts of your APIs.
+
+*Exercise*: Think about the most important _nouns_ in your usecases. Write down on sticky notes and connect with yarn to features and usecases previously put on the board.
+
