@@ -835,8 +835,8 @@
                     <desc>Intro to lightning talks</desc>
                 </act>
                 <act time="89" type="Talk_lab">
-                  <desc>Project slam 1, max 10 minutes per project, no discussion, switch on
-                  signal</desc>
+                    <desc>Project slam 1, max 10 minutes per project, no discussion, switch on
+                        signal</desc>
                 </act>
             </slot>
             <slot time="15:30:00">
@@ -849,7 +849,7 @@
                 <title>Lightning talks 2</title>
                 <act time="45" type="Talk_lab">
                     <desc>Project slam 2, max 10 minutes per project, no discussion, switch on
-		    signal</desc>
+                        signal</desc>
                 </act>
                 <act time="25" type="Presentation">
                     <desc>Around the table reflections</desc>
@@ -862,7 +862,7 @@
         <day d="Thursday">
             <date>July 27</date>
             <syn/>
-<!--            <slot time="11:00:00">
+            <!--            <slot time="11:00:00">
                 <title>TEI Publisher</title>
                 <act time="15">
                     <desc>eXist Solution's TEI Publisher</desc>
@@ -880,16 +880,16 @@
 -->
             <slot time="09:00:00">
                 <title>[The edition and APIs](week_3_day_4_session_1.md)</title>
-                <act time="30">
+                <act time="30" type="Presentation">
                     <desc>Intro APIs</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Code_lab">
                     <desc>Hands on intro APIs</desc>
                 </act>
-                <act time="20">
+                <act time="20" type="Talk_lab">
                     <desc>API creation talk lab</desc>
                 </act>
-                <act time="25">
+                <act time="25" type="Presentation">
                     <desc>API creation best practices</desc>
                 </act>
             </slot>
@@ -901,22 +901,22 @@
             </slot>
             <slot time="11:00:00">
                 <title>Using APIs in your edition</title>
-                <act time="15">
+                <act time="15" type="Presentation">
                     <desc>Verbs and parameters</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Presentation">
                     <desc>Navigation and filtering</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Code_lab">
                     <desc>Hands on navigation and filtering</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Presentation">
                     <desc>Internal and external services, documentation</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Presentation">
                     <desc>Hands on internal and external service, documentation</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Talk_lab">
                     <desc>Show your API</desc>
                 </act>
             </slot>
@@ -928,22 +928,22 @@
             </slot>
             <slot time="14:00:00">
                 <title>Building your own API</title>
-                <act time="15">
+                <act time="15" type="Presentation">
                     <desc>Flask verbs and parameters</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Presentation">
                     <desc>Navigation and filtering</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Code_lab">
                     <desc>Hands on navigation and filtering</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Code_lab">
                     <desc>Hands on internal and external services</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Code_lab">
                     <desc>Hands on documentation</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Code_lab">
                     <desc>Try your neighbours API</desc>
                 </act>
             </slot>
@@ -955,31 +955,31 @@
             </slot>
             <slot time="16:00:00">
                 <title>Licensing, archiving, and planning for the future</title>
-                <act time="30">
+                <act time="30" type="Presentation">
                     <desc>Licensing, archiving, and planning for the future</desc>
                 </act>
-                <act time="20">
+                <act time="20" type="Talk_lab">
                     <desc>Hands on Licensing, archiving, and planning for the future</desc>
                 </act>
-                <act time="10">
+                <act time="10" type="Presentation">
                     <desc>Priorities</desc>
                 </act>
-                <act time="30">
+                <act time="30" type="Talk_lab">
                     <desc>Review</desc>
                 </act>
             </slot>
             <slot time="19:00:00">
                 <title>Leif-Jöran: eXist-db workshop</title>
-                <act time="30">
+                <act time="30" type="Code_lab">
                     <desc>XQuery</desc>
                 </act>
-                <act time="30">
+                <act time="30" type="Code_lab">
                     <desc>Individual services</desc>
                 </act>
-                <act time="30">
+                <act time="30" type="Code_lab">
                     <desc>Webapps</desc>
                 </act>
-                <act time="30">
+                <act time="30" type="Talk_lab">
                     <desc>Wrap-up/review</desc>
                 </act>
             </slot>
