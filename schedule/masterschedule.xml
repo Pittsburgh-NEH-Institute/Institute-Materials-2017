@@ -781,22 +781,6 @@
                 </act>
             </slot>
         </day>
-        <!--
-                <title>Data visualization</title>
-                <act time="15">
-                    <desc>Data visualization 1</desc>
-                </act>
-                <act time="15">
-                    <desc>Hands on Data visualization 1</desc>
-                </act>
-                <act time="15">
-                    <desc>Data visualization 2</desc>
-                </act>
-                <act time="15">
-                    <desc>Hands on Data visualization 2</desc>
-                </act>
-
--->
         <day d="Wednesday">
             <date>July 26</date>
             <syn/>
@@ -896,8 +880,14 @@
 -->
             <slot time="09:00:00">
                 <title>The edition and APIs</title>
-                <act time="0">
-                    <desc/>
+                <act time="45">
+                    <desc>Intro APIs</desc>
+                </act>
+                <act time="20">
+                    <desc>API creation talk lab</desc>
+                </act>
+                <act time="25">
+                    <desc>API creation best practices</desc>
                 </act>
             </slot>
             <slot time="10:30:00">
@@ -908,8 +898,23 @@
             </slot>
             <slot time="11:00:00">
                 <title>Using APIs in your edition</title>
-                <act time="0">
-                    <desc/>
+                <act time="15">
+                    <desc>Verbs and parameters</desc>
+                </act>
+                <act time="15">
+                    <desc>Navigation and filtering</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on navigation and filtering</desc>
+                </act>
+                <act time="15">
+                    <desc>Internal and external services, documentation</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on internal and external service, documentation</desc>
+                </act>
+                <act time="15">
+                    <desc>Show your API</desc>
                 </act>
             </slot>
             <slot time="12:30:00">
@@ -920,8 +925,23 @@
             </slot>
             <slot time="14:00:00">
                 <title>Building your own API</title>
-                <act time="0">
-                    <desc/>
+                <act time="15">
+                    <desc>Flask verbs and parameters</desc>
+                </act>
+                <act time="15">
+                    <desc>Navigation and filtering</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on navigation and filtering</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on internal and external services</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on documentation</desc>
+                </act>
+                <act time="15">
+                    <desc>Try your neighbours API</desc>
                 </act>
             </slot>
             <slot time="15:30:00">
@@ -935,11 +955,29 @@
                 <act time="30">
                     <desc>Licensing, archiving, and planning for the future</desc>
                 </act>
-                <act time="10">
+                <act time="20">
                     <desc>Hands on Licensing, archiving, and planning for the future</desc>
+                </act>
+                <act time="10">
+                    <desc>Priorities</desc>
                 </act>
                 <act time="30">
                     <desc>Review</desc>
+                </act>
+            </slot>
+            <slot time="19:00:00">
+                <title>eXist-db workshop</title>
+                <act time="30">
+                    <desc>XQuery</desc>
+                </act>
+                <act time="30">
+                    <desc>Webapps</desc>
+                </act>
+                <act time="30">
+                    <desc>Individual services</desc>
+                </act>
+                <act time="30">
+                    <desc>Wrap-up/review</desc>
                 </act>
             </slot>
         </day>
@@ -947,9 +985,18 @@
             <date>July 28</date>
             <syn/>
             <slot time="09:00:00">
-                <title>Publishing strategies</title>
-                <act time="0">
-                    <desc/>
+                <title>Publishing strategies and sustainability</title>
+                <act time="25">
+                    <desc>Publishing strategies</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on publishing</desc>
+                </act>
+                <act time="25">
+                    <desc>Sustainability</desc>
+                </act>
+                <act time="25">
+                    <desc>Hands on sustainability</desc>
                 </act>
             </slot>
             <slot time="10:30:00">
@@ -959,9 +1006,18 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>Sustainability</title>
-                <act time="0">
-                    <desc/>
+                <title>Data visualization</title>
+                <act time="25">
+                    <desc>Data visualization 1</desc>
+                </act>
+                <act time="25">
+                    <desc>Hands on Data visualization 1</desc>
+                </act>
+                <act time="15">
+                    <desc>Data visualization 2</desc>
+                </act>
+                <act time="25">
+                    <desc>Hands on Data visualization 2</desc>
                 </act>
             </slot>
             <slot time="12:30:00">
