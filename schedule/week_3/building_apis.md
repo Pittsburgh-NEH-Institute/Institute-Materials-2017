@@ -1,5 +1,5 @@
 # Building your APIs
-In this session we are foccusing on building your API, i.e. the interface to your functionality programatically fulfilling your use cases. This build on the modeling you did in the previous session [Using APIs in your edition](using_apis_edition.md). It also gives you more some more fluency working with Flask [Flask intro](flask_micro_framework.md)
+In this session we are focusing on building your API, i.e. the interface to your functionality programatically fulfilling your use cases. This build on the modeling you did in the previous session [Using APIs in your edition](using_apis_edition.md). It also gives you more some more fluency working with Flask [Flask intro](flask_micro_framework.md)
 
 
 ## More on templates
