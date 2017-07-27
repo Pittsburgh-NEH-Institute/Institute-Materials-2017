@@ -880,8 +880,11 @@
 -->
             <slot time="09:00:00">
                 <title>The edition and APIs</title>
-                <act time="45">
+                <act time="30">
                     <desc>Intro APIs</desc>
+                </act>
+                <act time="15">
+                    <desc>Hands on intro APIs</desc>
                 </act>
                 <act time="20">
                     <desc>API creation talk lab</desc>
@@ -966,15 +969,15 @@
                 </act>
             </slot>
             <slot time="19:00:00">
-                <title>eXist-db workshop</title>
+                <title>Leif-Jöran: eXist-db workshop</title>
                 <act time="30">
                     <desc>XQuery</desc>
                 </act>
                 <act time="30">
-                    <desc>Webapps</desc>
+                    <desc>Individual services</desc>
                 </act>
                 <act time="30">
-                    <desc>Individual services</desc>
+                    <desc>Webapps</desc>
                 </act>
                 <act time="30">
                     <desc>Wrap-up/review</desc>
