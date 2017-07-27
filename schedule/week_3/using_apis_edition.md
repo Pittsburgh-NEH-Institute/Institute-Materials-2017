@@ -13,11 +13,11 @@ RESTful or REST-like APIs are more about nouns than verbs.
 
 More on this later.
 
-![Simple Client-Server interaction](images/Client-server-overview.svg)
+![Simple Client-Server interaction](images/Client-server-overview.png)
 
-![Client-Server and external Client-Server interaction](images/Client-server-external-overview.svg)
+![Client-Server and external Client-Server interaction](images/Client-server-external-overview.png)
 
-![Server overview and (internals)](images/Server-overview.svg)
+![Server overview and (internals)](images/Server-overview.png)
 
 
 ## What makes it work or not?
