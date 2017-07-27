@@ -13,7 +13,7 @@ And you using external resources:
 
 ![Client-Server and external Client-Server interaction](images/Client-server-external-overview.png)
 
-Your Server is not an black box so why not open it up:
+Your Server is not a black box so why not open it up:
 
 ![Server overview and (internals)](images/Server-overview.png)
 
