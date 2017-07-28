@@ -2,7 +2,7 @@
 
 Time | [Monday](week_3_day_1_plan.md) |[Tuesday](week_3_day_2_plan.md) |[Wednesday](week_3_day_3_plan.md) |[Thursday](week_3_day_4_plan.md) |[Friday](week_3_day_5_plan.md) |[Saturday](week_3_day_6_plan.md) |
 ---- | ---- | ---- | ---- | ---- | ---- | ----
-9:00–10:30 | Mike Kestemont: Bag-of-words models in Python (`numpy`, `scipy`) | Bringing it all together | Getting to know and use the TEI stylesheets | [The edition and APIs](week_3_day_4_session_1.md) | Publishing strategies and sustainability | Rationale and design of the Institute 
+9:00–10:30 | Mike Kestemont: Bag-of-words models in Python (`numpy`, `scipy`) | Bringing it all together | Getting to know and use the TEI stylesheets | [The edition and APIs](week_3_day_4_session_1.md) | [Publishing strategies and sustainability](week_3_day_5_session_1.md) | Rationale and design of the Institute 
 10:30–11:00 | Coffee break | Coffee break | Coffee break | Coffee break | Coffee break | Coffee break 
 11:00–12:30 | Mike Kestemont: Stylometry and machine learning in Python (`sklearn`) | Plugging your edition into the graph | TAG and Alexandria: models and visualizations | [Using APIs in your edition](using_apis_edition.md) | Data visualization | Rationale and design of the Institute (continued) 
 12:30–12:30 | Lunch | Lunch | Lunch | Lunch | Lunch 
