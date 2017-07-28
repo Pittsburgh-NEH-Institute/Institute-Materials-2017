@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication<milestone unit="wb"/>Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information<milestone unit="wb"/>about<milestone unit="wb"/>the<milestone unit="wb"/>source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+            <w>This</w>
+            <w>is</w>
+            <w>the</w>
+            <w>first</w>
+            <w>paragraph.</w>
+         </p>
+         <p>
+            <w>This</w>
+            <w>is</w>
+            <w>the</w>
+            <w>second</w>
+            <w>line.</w>
+         </p>
+      </body>
+   </text>
+</TEI>
