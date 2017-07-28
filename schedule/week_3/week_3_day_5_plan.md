@@ -23,14 +23,14 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: Data visualization
+## 11:00–12:30: [Visualization of text and editions](visualization.md)
 
 Time | Topic | Type
 ---- | ---- | ---- 
-25 min | Data visualization 1 | 
-25 min | Hands on Data visualization 1 | 
-15 min | Data visualization 2 | 
-25 min | Hands on Data visualization 2 | 
+15 min | Why visualize? | Discussion
+20 min | What does your text look like? | Talk lab
+25 min | Visualizations, transformation, and manipulation | Presentation
+30 min | Using Graphviz | Code lab
 
 ## 12:30–2:00: Lunch
 
