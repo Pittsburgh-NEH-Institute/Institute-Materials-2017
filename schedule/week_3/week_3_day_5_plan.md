@@ -38,7 +38,9 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-90 min | Deployment | Code lab
+15 min | [Visualizing TAG and LMNL with Alexandria](alexandria.md) | Presentation
+30 min | Collation with XML (open `collating_xml.ipynb`, which is inside `schedule/week_2/collation_with_markup`) | Presentation
+45 min | Deployment | Presentation
 
 ## 3:30–4:00: Coffee break
 
