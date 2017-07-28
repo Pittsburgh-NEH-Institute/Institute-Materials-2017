@@ -17,15 +17,15 @@
                 "/>
         <xsl:sequence select="format-time($startTime, '[h]:[m01]') || '–' || $end-time"/>
     </xsl:function>
-    <xsl:variable name="time_slots" select="distinct-values(//slot/@time)" as="xs:string+"/>
     <xsl:template match="/">
         <!-- Create weekly and then daily schedules -->
         <xsl:apply-templates select="//week"/>
-        <!--<xsl:apply-templates select="//week" mode="daily"/>-->
+        <xsl:apply-templates select="//week" mode="daily"/>
     </xsl:template>
 
     <!-- Templates for weekly plans -->
     <xsl:template match="week">
+        <xsl:variable name="time_slots" select="distinct-values(descendant::slot/@time)" as="xs:string+"/>
         <xsl:variable name="currentWeek" select="." as="element(week)"/>
         <xsl:variable name="filename" as="xs:string"
             select="'week_' || @num || '/week_' || @num || '_plan.md'"/>
@@ -40,7 +40,7 @@
             <xsl:text>&#x0a;</xsl:text>
             <xsl:for-each select="$time_slots">
                 <xsl:variable name="currentSlot" select="current()" as="xs:string"/>
-                <xsl:variable name="slotContents" as="xs:string+">                    
+                <xsl:variable name="slotContents" as="xs:string+">
                     <xsl:for-each select="$currentWeek/day">
                         <xsl:choose>
                             <xsl:when test="current()/slot/@time = $currentSlot">
@@ -53,8 +53,12 @@
                     </xsl:for-each>
                 </xsl:variable>
                 <xsl:variable name="timeFunction">
-                    <xsl:value-of select="djb:timeRange(xs:time($currentSlot), max(for $day in $currentWeek/day return sum($day/slot[@time = $currentSlot]/act/@time)))"/>
-                <!-- sending the duration to function by finding max of sum of the day where the slot in which the current time is the same as the slot's time, then drilling down to the act to get time to sum -->
+                    <xsl:value-of
+                        select="
+                            djb:timeRange(xs:time($currentSlot), max(for $day in $currentWeek/day
+                            return
+                                sum($day/slot[@time = $currentSlot]/act/@time)))"/>
+                    <!-- sending the duration to function by finding max of sum of the day where the slot in which the current time is the same as the slot's time, then drilling down to the act to get time to sum -->
                 </xsl:variable>
                 <xsl:message select="sum($currentWeek/act/@time)"/>
                 <xsl:sequence

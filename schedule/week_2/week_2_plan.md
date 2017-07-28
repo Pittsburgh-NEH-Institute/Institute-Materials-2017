@@ -9,4 +9,3 @@ Time | [Monday](week_2_day_1_plan.md) |[Tuesday](week_2_day_2_plan.md) |[Wednesd
 2:00–3:30 |  Transcription with markup: XML | Tokenization | Challenging textual phenomena: Introducing Text as Graph (TAG) | Modeling: annotations as layers to the text | Queries and XML 
 3:30–4:00 |  Coffee break | Coffee break | Coffee break | Coffee break | Coffee break 
 4:00–5:30 |  XML as a tree / XPath | Normalization | Review | Collation 2 | Visualization as outcome 
-7:00–7:00 |        |       |       |       |       
