@@ -1032,7 +1032,7 @@
             <slot time="14:00:00">
                 <title>Deployment and further coding if needed</title>
                 <act time="90" type="Code_lab">
-                    <desc/>
+                    <desc>Deployment</desc>
                 </act>
             </slot>
             <slot time="15:30:00">
@@ -1044,7 +1044,7 @@
             <slot time="16:00:00">
                 <title>Wrapping up: What have we learned?</title>
                 <act time="90" type="Discussion">
-                    <desc/>
+                    <desc>Taking stock</desc>
                 </act>
             </slot>
         </day>
