@@ -1031,8 +1031,15 @@
             </slot>
             <slot time="14:00:00">
                 <title>Deployment and further coding if needed</title>
-                <act time="90" type="Code_lab">
-                    <desc>Deployment</desc>
+                <act time="15" type="Presentation">
+                    <desc>[Visualizing TAG and LMNL with Alexandria](alexandria.md)</desc>
+                </act>
+                <act time="30" type="Presentation">
+                    <desc>Collation with XML (open `collating_xml.ipynb`, which is inside
+                        `schedule/week_2/collation_with_markup`)</desc>
+                </act>
+                <act time="45" type="Presentation">
+                    <desc>Deploymenty</desc>
                 </act>
             </slot>
             <slot time="15:30:00">
