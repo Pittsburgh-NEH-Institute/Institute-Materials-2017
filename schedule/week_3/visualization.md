@@ -18,12 +18,13 @@ We can look at [some examples of interfaces and what stories they are trying to 
 We can also consider the use of software that is intended to produce a standard interface for a critical edition, such as <a href="https://visualizationtechnology.wordpress.com">EVT</a> or <a href="http://www.bbaw.de/telota/software/ediarum">Ediarum</a>. 
 
 Some editions produced with Ediarum:
-* http://edition-humboldt.de/index.xql
-* http://schleiermacher-in-berlin.bbaw.de/index.xql
-* http://cagb-db.bbaw.de/index.xql
+* <http://edition-humboldt.de/index.xql>
+* <http://schleiermacher-in-berlin.bbaw.de/index.xql>
+* <http://cagb-db.bbaw.de/index.xql>
 
 An edition produced with EVT:
-* http://vbd.humnet.unipi.it/beta2/
+
+* <http://vbd.humnet.unipi.it/beta2/>
 
 These packages have the obvious advantage that they are meant to take the place of a publishing house, in that they have "house styles" for layout, font, organisation of information, and so on. But they also carry a major disadvantage, which is that it becomes very easy to close yourself off from the possibility of making your own 
 
