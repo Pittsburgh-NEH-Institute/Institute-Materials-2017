@@ -1009,7 +1009,7 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>Data visualization</title>
+                <title>[Data visualization](visualization.md)</title>
                 <act time="25" type="Presentation">
                     <desc>Data visualization 1</desc>
                 </act>

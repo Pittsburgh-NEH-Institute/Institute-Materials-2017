@@ -23,7 +23,7 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: Data visualization
+## 11:00–12:30: [Data visualization](visualization.md)
 
 Time | Topic | Type
 ---- | ---- | ---- 
