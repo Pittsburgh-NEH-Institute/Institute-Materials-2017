@@ -21,7 +21,7 @@
     <xsl:template match="/">
         <!-- Create weekly and then daily schedules -->
         <xsl:apply-templates select="//week"/>
-        <xsl:apply-templates select="//week" mode="daily"/>
+        <!--<xsl:apply-templates select="//week" mode="daily"/>-->
     </xsl:template>
 
     <!-- Templates for weekly plans -->
@@ -53,8 +53,10 @@
                     </xsl:for-each>
                 </xsl:variable>
                 <xsl:variable name="timeFunction">
-                    <xsl:value-of select="djb:timeRange(xs:time($currentSlot), sum($currentWeek/act/@time))"/>
+                    <xsl:value-of select="djb:timeRange(xs:time($currentSlot), max(for $day in $currentWeek/day return sum($day/slot[@time = $currentSlot]/act/@time)))"/>
+                <!-- sending the duration to function by finding max of sum of the day where the slot in which the current time is the same as the slot's time, then drilling down to the act to get time to sum -->
                 </xsl:variable>
+                <xsl:message select="sum($currentWeek/act/@time)"/>
                 <xsl:sequence
                     select="$timeFunction, ' | ', string-join($slotContents, ' | '), '&#x0a;'"/>
             </xsl:for-each>
