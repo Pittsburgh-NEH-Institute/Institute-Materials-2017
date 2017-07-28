@@ -3,9 +3,9 @@
 ## All regular sessions will be held in [Alumni Hall](http://www.tour.pitt.edu/tour/alumni-hall) Room 531. Exceptions are listed below.
 
 - July 10, 9:00 a.m.–5:30 p.m.: [Alumni](http://www.tour.pitt.edu/tour/alumni-hall) 528 (Windows users only; Mac users are in the regular Alumni 531 room)
-- July 21, 9:00 a.m.–5:30 p.m.): [Mervis](http://www.tour.pitt.edu/tour/mervis-hall) 114
-- July 28, 9:00 a.m.–5:30 p.m.): [Alumni](http://www.tour.pitt.edu/tour/alumni-hall) 528
-- July 29, 9:00 a.m.–12:30 p.m.): [Mervis](http://www.tour.pitt.edu/tour/mervis-hall) 114
+- July 21, 9:00 a.m.–5:30 p.m.: [Mervis](http://www.tour.pitt.edu/tour/mervis-hall) 114
+- July 28, 9:00 a.m.–5:30 p.m.: [Alumni](http://www.tour.pitt.edu/tour/alumni-hall) 528
+- July 29, 9:00 a.m.–12:30 p.m.: [Mervis](http://www.tour.pitt.edu/tour/mervis-hall) 114
 
 The reception will take place on Friday, July 21 at 6:00 p.m. in the [Humanities Center](http://www.humcenter.pitt.edu/), 602 [Cathedral of Learning](http://www.tour.pitt.edu/tour/cathedral-learning).
 

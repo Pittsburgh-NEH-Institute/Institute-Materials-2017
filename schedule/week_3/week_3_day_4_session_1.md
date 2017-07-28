@@ -110,8 +110,6 @@ r.json()[1]["name"]
 ```
 Our old friend, the Stylesheets!
 
-```
-
 ## Talk Lab: Planning your API
 
 Think about the things you might want an API for your edition to do. APIs can deal with things like navigation, search, filtering, annotation, creating new resources, and modifying existing resources.
@@ -121,6 +119,9 @@ Think about the things you might want an API for your edition to do. APIs can de
 ### Notes
  * The Web is your API
  * API Anti-Patterns
-  * Hiding
-  * Oversharing
-  * Overcomplicating
+   * Hiding
+   * Oversharing
+   * Overcomplicating
+   * Using GET for everything
+   * Not using response codes
+   * Not using hypermedia

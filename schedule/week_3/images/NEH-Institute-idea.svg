@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="31cm" height="12cm" viewBox="160 69 611 224" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffffff" cx="300" cy="200" rx="63" ry="63"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2.4; stroke: #000000" cx="300" cy="200" rx="63" ry="63"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2.4; stroke: #000000" cx="300" cy="200" rx="63" ry="63"/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="244.979" y="195.222">
+    <tspan x="244.979" y="195.222">NEH-Institute</tspan>
+    <tspan x="244.979" y="211.222">Make your edition</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2.5; stroke: #000000" d="M 300 137 C 305.312,137 300,102 259,85 C 218,68 190,76 170.155,79.3075"/>
+    <polygon style="fill: #000000" points="162.757,80.5405 171.799,73.9645 170.155,79.3075 173.443,83.8285 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2.5; stroke: #000000" points="162.757,80.5405 171.799,73.9645 170.155,79.3075 173.443,83.8285 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2.5; stroke: #000000" d="M 300 137 C 303,125.462 312,104 342,88 C 372,72 410,74 430.958,78.7324"/>
+    <polygon style="fill: #000000" points="438.274,80.3844 427.418,83.0589 430.958,78.7324 429.62,73.3045 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2.5; stroke: #000000" points="438.274,80.3844 427.418,83.0589 430.958,78.7324 429.62,73.3045 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="651.697" y="159.095" width="117.38" height="70.0036"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2.5; stroke: #000000" x="651.697" y="159.095" width="117.38" height="70.0036"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="499.669" y="141.418" width="120.208" height="62.2254"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2.5; stroke: #000000" x="499.669" y="141.418" width="120.208" height="62.2254"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="524.417" y="227.685" width="117.38" height="64.3467"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2.5; stroke: #000000" x="524.417" y="227.685" width="117.38" height="64.3467"/>
+  </g>
+</svg>
