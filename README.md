@@ -27,6 +27,12 @@ The instructors will be assisted by:
 <tr><td><img src="images/ekb.jpg" width="200px" alt="[Bennett picture]"/></td><td style="vertical-align: middle">Eleanor (Kyri) Bennett<br/>Institute Assistant<br/>University of Pittsburgh</td></tr>
 <tr><td><img src="images/ks_cropped.png" width="200px" alt="[Sanders image]"/></td><td style="vertical-align: middle">Kaylen Sanders<br/>Institute Assistant<br/>University of Pittsburgh</td></tr>
 </table>
+
+## Participants
+
+<img src="images/nehgroup.jpg" alt="Group photo"/>
+
+Thank you to all of our participants for a brilliant Institute!
  
 ## Additional information
 
