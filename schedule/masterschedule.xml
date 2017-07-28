@@ -989,16 +989,16 @@
             <syn/>
             <slot time="09:00:00">
                 <title>Publishing strategies and sustainability</title>
-                <act time="25">
+                <act time="25" type="Discussion">
                     <desc>Publishing strategies</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Code_lab">
                     <desc>Hands on publishing</desc>
                 </act>
-                <act time="25">
+                <act time="25" type="Discussion">
                     <desc>Sustainability</desc>
                 </act>
-                <act time="25">
+                <act time="25" type="Code_lab">
                     <desc>Hands on sustainability</desc>
                 </act>
             </slot>
@@ -1010,16 +1010,16 @@
             </slot>
             <slot time="11:00:00">
                 <title>Data visualization</title>
-                <act time="25">
+                <act time="25" type="Presentation">
                     <desc>Data visualization 1</desc>
                 </act>
-                <act time="25">
+                <act time="25" type="Code_lab">
                     <desc>Hands on Data visualization 1</desc>
                 </act>
-                <act time="15">
+                <act time="15" type="Presentation">
                     <desc>Data visualization 2</desc>
                 </act>
-                <act time="25">
+                <act time="25" type="Code_lab">
                     <desc>Hands on Data visualization 2</desc>
                 </act>
             </slot>
@@ -1031,7 +1031,7 @@
             </slot>
             <slot time="14:00:00">
                 <title>Deployment and further coding if needed</title>
-                <act time="0">
+                <act time="90" type="Code_lab">
                     <desc/>
                 </act>
             </slot>
@@ -1043,7 +1043,7 @@
             </slot>
             <slot time="16:00:00">
                 <title>Wrapping up: What have we learned?</title>
-                <act time="0">
+                <act time="90" type="Discussion">
                     <desc/>
                 </act>
             </slot>
