@@ -11,45 +11,45 @@ Alexandria is a text repository and database that supports Text As Graph (TAG). 
 
 2. Create a directory and copy the following file (which must be called `docker-compose.yml`) into it:
 
-	```
-	version: '3'
-	services:
-	  # the alexandria server
-	  alexandria:
-	        image: huygensing/alexandria-markup-server:latest
-	        ports:
-	          - 8002:8080
-	          - 8003:8081
-	        environment:
-	          - BASE_URI=http://localhost:8002
+```
+version: '3'
+services:
+  # the alexandria server
+  alexandria:
+        image: huygensing/alexandria-markup-server:latest
+        ports:
+          - 8002:8080
+          - 8003:8081
+        environment:
+          - BASE_URI=http://localhost:8002
 
-	  # the tex-util server, which can convert the LaTeX from the alexandria server to SVG)
-	  latex:
-	        image: huygensing/tex-util-server:latest
-	        ports:
-	          - 8000:8080
-	          - 8001:8081
-	        depends_on:
-	          - alexandria
-	        environment:
-	          - BASE_URI= http://localhost:8000
+  # the tex-util server, which can convert the LaTeX from the alexandria server to SVG)
+  latex:
+        image: huygensing/tex-util-server:latest
+        ports:
+          - 8000:8080
+          - 8001:8081
+        depends_on:
+          - alexandria
+        environment:
+          - BASE_URI= http://localhost:8000
 
-	  # the relevant notebooks and python code to connect to the alexandria and latex services
-	  notebook:
-	        image: huygensing/alexandria-markup-notebook:latest
-	        ports:
-	          - 8888:8888
-	        depends_on:
-	          - latex
-	          - alexandria
-	        volumes:
-	          # Your work notebooks will be stored here
-	          - /Users/djb/docker:/work
-	```
+  # the relevant notebooks and python code to connect to the alexandria and latex services
+  notebook:
+        image: huygensing/alexandria-markup-notebook:latest
+        ports:
+          - 8888:8888
+        depends_on:
+          - latex
+          - alexandria
+        volumes:
+          # Your work notebooks will be stored here
+          - /Users/djb/docker:/work
+```
 
 1. Change the last line to specify your own workspace by replacing the “djb” with your own userid. If not on Docker CE (Modern Macs, Windows Entreprise) and on Docker Toolbox instead (old Macs, Windows Home) also change the two occurrences of “localhost“ to the ip address of your Docker. 
 
-2. Create a subdirectory called `docker` under your home.
+2. Create a subdirectory called `docker` under your home directory.
 
 1. If you are using ports 8000, 8001, 8002, 8003, or 8888 on your machine for other purposes (you probably aren’t), you need to change the ports Alexandria uses. The only numbers you have to change are for the ports you are using, and only in the following two types of situations:
 
