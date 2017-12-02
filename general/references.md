@@ -46,8 +46,8 @@ See also the Modern language association (MLA) [Guidelines for editors of schola
 The repo and portal for the Huygens Institute TAG model introduced in the Institute is <https://github.com/HuygensING/TAG>.
 
 * Eide, Øyvind, 2014. “Sequence, tree and graph at the tip of your Java classes,” <http://dharchive.org/paper/DH2014/Paper-639.xml>
-* Ide, Nancy and Keith Suderman, 2007. “GrAF: A graph-based format for linguistic annotations.” _Proceedings of the Linguistic annotation workshop, held in conjunction with ACL 2007, Prague, June 28-29_, 1-8. <http://www.cs.vassar.edu/~ide/papers/LAW.pdf>
 * Haentjens Dekker, Ronald, and David J. Birnbaum. “It's more than just overlap: Text As Graph.” Presented at Balisage: The Markup Conference 2017, Washington, DC, August 1–4, 2017. In *Proceedings of Balisage: The Markup Conference 2017.* Balisage Series on Markup Technologies, vol. 19 (2017). doi:10.4242/BalisageVol19.Dekker01. <https://www.balisage.net/Proceedings/vol19/html/Dekker01/BalisageVol19-Dekker01.html>
+* Ide, Nancy and Keith Suderman, 2007. “GrAF: A graph-based format for linguistic annotations.” _Proceedings of the Linguistic annotation workshop, held in conjunction with ACL 2007, Prague, June 28-29_, 1-8. <http://www.cs.vassar.edu/~ide/papers/LAW.pdf>
 * Marcoux, Yves, C. Michael Sperberg-McQueen, and Claus Huitfeldt, 2011. “Expressive power of markup languages and graph structures”. Presented at the DH 2011 Stanford University conference (<http://xtf-prod.stanford.edu/xtf/view?docId=tei/ab-390.xml;query=;brand=default>).
 
 ### Reference
