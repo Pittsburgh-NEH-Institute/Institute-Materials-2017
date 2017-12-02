@@ -1,1 +1,1 @@
-Placaeholder for general folder
+Placeholder for general folder

@@ -39,6 +39,8 @@ Thank you to all of our participants for a brilliant Institute!
 * [Call](admin/call.md) for applications
 * [Lightning talk](admin/lightning.md) from the NEH Office of Digital Humanities Project Directors Meeting, 2016-09-16
 * Follow us on Twitter: [@makeyouredition](https://twitter.com/makeyouredition), [#MakeYourEdition2017](https://twitter.com/hashtag/MakeYourEdition2017).
+* [Digital editions created by Institute participants]
+(general/participant-editions.md)
 
 ____
 <a href="https://www.neh.gov/" title="National Endowment for the Humanities"><img align="left" src="images/neh_logo_horizontal_rgb.png" alt="NEH" class="rpad"></a>_Make_ your _edition: models and methods for digital textual scholarship_ has been made possible in part by a major grant from the National Endowment for the Humanities: Exploring the human endeavor. Any views, findings, conclusions, or recommendations expressed in materials developed for this project do not necessarily represent those of the National Endowment for the Humanities.
