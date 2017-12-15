@@ -25,3 +25,16 @@ I am developing an edition of Konrad von Würzburg’s short stories. The aim is
 ## Rikk Mulligan
 
 I am one of the developers of The [Pittsburgh Frankenstein project](https://ebeshero.github.io/Pittsburgh_Frankenstein/), described above under the entry for [Elisa Beshero-Bondar](#elisa-beshero-bondar).
+
+## Christopher Ohge
+
+My digital editing projects have covered quite a range of approaches. My first digital edition was a fairly traditional diplomatic-facsimile edition of journal by a minor Transcendentalist Christopher Cranch, which includes a fairly detailed personography: <http://scholarlyediting.org/2014/editions/intro.cranchjournal.html>.
+
+When I was at the Mark Twain Project (c. 2014–2017), I used traditional approaches of eclectic text and documentary editing: <http://www.marktwainproject.org/homepage.html>. Because most of those texts involved very rigorous textual apparatus, we weren’t doing a lot of innovative mark-up. The app crit was enough work.
+
+I’m currently a co-editor at the Melville Electronic Library, which employs a *fluid text* model of editing (for more on that you can read John Bryant’s *The fluid text* [U of Michigan P, 2002). For the past few years I’ve been working with a team on *Billy Budd* (still not done, but it’s getting there!): <https://mel.hofstra.edu/versions-of-billy-budd.html>.
+
+You may recall that I quickly presented the following project on Mark Twain’s April Fool hoax (1884) at the Institute: <http://scholarlyediting.org/2017/editions/aprilfools/intro.html>.
+This illustrates what I think is a more promising way of digital editing, in that it uses a variety of interfaces and considers the edition (as David has suggested) more broadly. In my case, this was an edition of an event, which included an annotated newspaper text, private documents with facsimiles, and a network graph. 
+
+Thanks to the Institute, I’ve been thinking of ways that the curated data of editions can be extracted for other purposes. For example, with *Melville’s Marginalia Online* (<http://melvillesmarginalia.org>), on which I’m currently an associate editor, I’ve been working with a team to run quantitative analyses using R on the data of Melville’s reading of eight volumes of Shakespeare. Because the Melville-reading-Shakespeare files are marked up in XML, we can make distinctions in our analyses between marked passages and unmarked ones. Our GitHub repo with the R scripts (please note it is a work-in-progress) can be found at <https://github.com/melvillesmarks/ranalysis>. Eventually we’ll use this example to do analyses on larger data sets of Melville’s reading. 
