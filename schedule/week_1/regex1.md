@@ -5,9 +5,9 @@ When using a _RE language_, you specify the _rules_ for the _set_ of possible _s
 * sentences in a language, 
 * e-mail addresses, 
 * TeX commands, or
-* anything you like.<sup>0</sup>
+* anything you like.
 
-<sup>0</sup> It does not replace a parser for XML or HTML since you can easily create invalid and non-wellformed markup.
+It does not replace a parser for XML or HTML since you can easily create invalid and non-wellformed markup.
 
 You can then ask questions such as:
 * Does this _string_ _match_ _the pattern_?, or

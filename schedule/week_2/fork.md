@@ -73,4 +73,4 @@ Remember that you can’t push your local changes to our original repo because y
 
 ## For more information
 
-For more information, see our [Git tutorial](../week_1/git_tutorial.md) and our list of links to [Git and GitHub resources](git_resources.md).
+For more information, see our [Git tutorial](../week_1/git_tutorial.md) and our list of links to [Git and GitHub resources](../week_1/git_resources.md).
