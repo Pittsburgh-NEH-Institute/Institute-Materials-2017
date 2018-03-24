@@ -5,7 +5,7 @@
 * **References:** Much of the content of these sessions is summarized at our [Command line quick reference](command-line_resources.md) page.
 * **Credit:** Our materials are based on the Software Carpentry [Unix Shell](http://swcarpentry.github.io/shell-novice/) course
 * **Etherpad:** We’ll create an [Etherpad](https://etherpad.net) where participants who wish to do so can take notes collaboratively. For a quick overview of Etherpad functionality see <http://write.flossmanuals.net/etherpad/introduction/>.
-* **Something to play with:** Follow the instructions at <http://swcarpentry.github.io/shell-novice/setup/> to copy some practice files.
+* **Something to play with:** Follow the instructions at <http://swcarpentry.github.io/shell-novice/setup.html> to copy some practice files.
 
 ## General review (see also below)
 

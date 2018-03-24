@@ -296,13 +296,13 @@
                 computational pipelines.</syn>
             <slot time="09:00:00">
                 <title>Normalization</title>
-                <act time="0">
+                <act time="15" type="Discussion">
                     <desc>Review of Week 2, Day 2: computational pipelines, modeling, processing,
                         and tokenization</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="0" type="Presentation">
                     <desc>Basic normalization</desc>
 
                     <outcome/>

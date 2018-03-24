@@ -51,7 +51,7 @@ Time | Topic | Type
 10 min | Create [your own fork of our Institute GitHub repository](fork.md) | Code lab
 20 min | XML as a tree ([OHCO: “ordered hierarchy of content objects”])(ohco.md) | Discussion
 15 min | [Making the implicit explicit with markup](explicit.md) | Discussion
-30 min | Tag ["Oxymandias"](ozymandias.txt) in XML (e.g., lines, sentences, phrases, speakers, words, feet, syllables, stress) | Code lab
+30 min | Tag ["Ozymandias"](ozymandias.txt) in XML (e.g., lines, sentences, phrases, speakers, words, feet, syllables, stress) | Code lab
 15 min | [What's hard in XML](xml_limitations.md) | Discussion
 
 ## 3:30–4:00: Coffee break

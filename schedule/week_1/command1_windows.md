@@ -1,7 +1,7 @@
 # Command line 1 (Windows)
 * The three Command Line lessons are based on the wonderful [Software Carpentry's materials](http://swcarpentry.github.io/shell-novice/). 
 * **Windows users** will work through a **special breakout session** for Command Line 1 only. We will cover:
-  *  [Setup](http://swcarpentry.github.io/shell-novice/setup/)
+  *  [Setup](http://swcarpentry.github.io/shell-novice/setup.html)
   * [1. Introducing the Shell](http://swcarpentry.github.io/shell-novice/01-intro/)
   * [2. Navigating Files and Directories](http://swcarpentry.github.io/shell-novice/02-filedir/)
   * [3. Working with Files and Directories](http://swcarpentry.github.io/shell-novice/03-create/)

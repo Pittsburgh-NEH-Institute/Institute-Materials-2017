@@ -18,4 +18,23 @@
 
 ## Week 2, day 2
 
-* [placeholder]
+* Understanding modeling perspectives (tree, ranges, graph) and communities
+* Modular development: thinking about digital edition development as a computational pipeline
+* Beginning to tokenize texts
+* Beginning to normalize texts
+
+## Week 2, day 3
+* Understanding the principles of basic text transformations like normalization and how they serve different objectives
+* Bringing together tokenization and normalization as individual pipeline steps and seeing how they can be implemented in the act of collation
+* Normalize, tokenize, and collate text
+* Fundamentals of TAG: hypergraph Modeling discontinuity
+
+## Week 2, day 4
+* Grasping the concept of modelling text as trees and graphs Understanding annotation as a form of adding layers to text Varieties of layered editions
+* Deeper discussion of the alignment step in the GM 
+* An awareness of computation to understand that we do near-matching late (in the pipeline) for reasons of efficiency
+
+## Week 2, day 5
+* Visualization as part of the text processing pipeline: making decisions, selecting formats, interacting with, and producing visualizations 
+* Hands-on: a departure from Word Cloud
+* Review of XQuery
