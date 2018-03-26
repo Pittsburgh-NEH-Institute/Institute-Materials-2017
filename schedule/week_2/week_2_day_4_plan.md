@@ -1,11 +1,12 @@
 # Week 2, Day 4: Thursday, July 20
 ## Synopsis
 
-Week 2, Day 4 concentrates on ...
+Week 2, Day 4 concentrates on text analytics and collation.
 
 ## Outcome goals
 * Grasping the concept of modelling text as trees and graphs Understanding annotation as a form of adding layers to text Varieties of layered editions
-* Deeper discussion of the alignment step in the GM An awareness of computation to understand that we do near-matching late (in the pipeline) for reasons of efficiency
+* Deeper discussion of the alignment step in the GM 
+* An awareness of computation to understand that we do near-matching late (in the pipeline) for reasons of efficiency
 ## Legend
 
 * **Presentation:** by instructors
@@ -14,16 +15,16 @@ Week 2, Day 4 concentrates on ...
 * **Code lab:** participants code alone or in small groups
 
 * * *
-## 9:00–9:00: Text analytics 1
+## 9:00–10:30: Text analytics 1
 
 Text analytics 1
 
 Time | Topic | Type
 ---- | ---- | ---- 
-0 min | Bag of words | 
-0 min | Text processing | 
-0 min | Text as tables | 
-0 min | Query the tables | 
+30 min | Bag of words | Presentation
+20 min | Text processing | Discussion
+10 min | Text as tables | Code lab 
+30 min | Query the tables | Code lab
 
 ## 10:30–11:00: Coffee break
 
@@ -31,21 +32,21 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-0 min | Bag of words, text processing, text as tables, query the tables (continued) | 
+90 min | Bag of words, text processing, text as tables, query the tables (continued) | Code lab
 
 ## 12:30–2:00: Lunch
 
-## 2:00–2:00: Modeling: annotations as layers to the text
+## 2:00–3:30: Modeling: annotations as layers to the text
 
 Modeling: annotations as layers to the text
 
 Time | Topic | Type
 ---- | ---- | ---- 
-0 min | Review of tokenization, normalization, and collation from the point of view of annotations | 
-0 min | Envisioning your edition as a layered model | 
-0 min | Existing models (e.g. computational linguistics) | 
-0 min | Hands-on: identify your own layers | 
-0 min | Hands-on: model your edition's pipeline | 
+20 min | Review of tokenization, normalization, and collation from the point of view of annotations | Presentation
+20 min | Envisioning your edition as a layered model | Talk lab
+20 min | Existing models (e.g. computational linguistics) | Discussion
+20 min | Hands-on: identify your own layers | Talk lab
+10 min | Hands-on: model your edition's pipeline | Talk lab
 
 ## 3:30–4:00: Coffee break
 
