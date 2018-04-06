@@ -302,28 +302,28 @@
 
                     <outcome/>
                 </act>
-                <act time="0" type="Presentation">
+                <act time="15" type="Presentation">
                     <desc>Basic normalization</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="15" type="Code_lab">
                     <desc>NLTK</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="15" type="Code_lab">
                     <desc>Regular expressions</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="15" type="Code_lab">
                     <desc>Basic XML normalization: transforming XML to a stream of normalized (word)
                         tokens</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="15" type="Code_lab">
                     <desc>Hands-on exercise with NLTK and regular expressions</desc>
 
                     <outcome/>
@@ -342,20 +342,20 @@
             </slot>
             <slot time="11:00:00">
                 <title>Collation</title>
-                <act time="0">
+                <act time="15" type="Presentation">
                     <desc>Modeling and collation</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="15" type="Talk_lab">
                     <desc>Collation within editorial theory</desc>
 
                 </act>
-                <act time="0">
+                <act time="30" type="Code_lab">
                     <desc>Collation practice</desc>
 
                 </act>
-                <act time="0">
+                <act time="30" type="Code_lab">
                     <desc>Tokenization and normalization for collation purposes</desc>
 
                 </act>
@@ -374,7 +374,7 @@
             </slot>
             <slot time="14:00:00">
                 <title>Challenging textual phenomena: Introducing Text as Graph (TAG)</title>
-                <act time="0">
+                <act time="90" type="Presentation">
                     <desc>Challenging textual phenomena: Introducing Text as Graph (TAG)</desc>
                 </act>
                 <outcome>
@@ -390,7 +390,7 @@
             </slot>
             <slot time="16:00:00">
                 <title>Review</title>
-                <act time="0">
+                <act time="90" type="Talk_lab">
                     <desc>Review</desc>
                 </act>
             </slot>
@@ -401,22 +401,22 @@
             <slot time="09:00:00">
                 <title>Text analytics 1</title>
                 <desc>Text analytics 1</desc>
-                <act time="0">
+                <act time="15" type="Presentation">
                     <desc>Bag of words</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="30" type="Presentation">
                     <desc>Text processing</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="15" type="Code_lab">
                     <desc>Text as tables</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="30" type="Code_lab">
                     <desc>Query the tables</desc>
 
                     <outcome/>
@@ -430,7 +430,7 @@
             </slot>
             <slot time="11:00:00">
                 <title>Text analytics 1 (cont.)</title>
-                <act time="0">
+                <act time="90" type="Code_lab">
                     <desc>Bag of words, text processing, text as tables, query the tables
                         (continued) </desc>
                 </act>
@@ -445,28 +445,28 @@
             <slot time="14:00:00">
                 <title>Modeling: annotations as layers to the text</title>
                 <desc>Modeling: annotations as layers to the text</desc>
-                <act time="0">
+                <act time="15" type="Discussion">
                     <desc>Review of tokenization, normalization, and collation from the point of
                         view of annotations</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="15" type="Talk_lab">
                     <desc>Envisioning your edition as a layered model</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="15" type="Presentation">
                     <desc>Existing models (e.g. computational linguistics)</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="15" type="Talk_lab">
                     <desc>Hands-on: identify your own layers</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="30" type="Code_lab">
                     <desc>Hands-on: model your edition's pipeline</desc>
 
                 </act>
@@ -485,16 +485,16 @@
             <slot time="16:00:00">
                 <title>Collation 2</title>
                 <desc>Collation 2</desc>
-                <act time="0">
+                <act time="30" type="Presentation">
                     <desc>Advanced collation</desc>
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="30" type="Code_lab">
                     <desc>Near-matching - theory (as step in the computational pipeline)</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="30" type="Code_lab">
                     <desc>Hands-on: ...</desc>
 
                     <outcome/>
@@ -518,22 +518,22 @@
                 <title>Text analytics 2</title>
                 <desc>Text analytics 2</desc>
 
-                <act time="0">
+                <act time="30" type="Presentation">
                     <desc>Unsupervised learning</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="30" type="Code_lab">
                     <desc>Cluster analysis</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="15" type="Discussion">
                     <desc>PCA</desc>
 
                     <outcome/>
                 </act>
-                <act time="0">
+                <act time="15" type="Presentation">
                     <desc>Paleographic analysis</desc>
 
                     <outcome/>
@@ -548,7 +548,7 @@
             </slot>
             <slot time="11:00:00">
                 <title>Text analytics 2 (cont.)</title>
-                <act time="0">
+                <act time="90" type="Discussion">
                     <desc>Unsupervised learning, cluster analysis, PCA, paleographic analysis
                         (continued)</desc>
 
@@ -564,14 +564,14 @@
             <slot time="14:00:00">
                 <title>Queries and XML</title>
                 <desc>Queries and XML</desc>
-                <act time="0">
+                <act time="45" type="Code_lab">
                     <desc>Querying your text with XQuery in an eXist framework</desc>
 
                     <outcome>
                         <goal>Learning XQuery to ...</goal>
                     </outcome>
                 </act>
-                <act time="0">
+                <act time="45" type="Code_lab">
                     <desc>Using elastic search to index the content of your edition</desc>
 
                     <outcome/>
@@ -586,7 +586,7 @@
             <slot time="16:00:00">
                 <title>Visualization as outcome</title>
                 <desc>Visualization as outcome</desc>
-                <act time="0">
+                <act time="90" type="Discussion">
                     <desc>Getting from layered annotations to (a specific) visualization</desc>
 
                 </act>
@@ -632,22 +632,22 @@
             </slot>
             <slot time="12:30:00">
                 <title>Lunch</title>
-                <act time="0">
+                <act time="90">
                     <desc>Lunch</desc>
                 </act>
             </slot>
             <slot time="14:00:00">
                 <title>Introducing CETEIcean / Publishing on GitHub Pages</title>
-                <act time="25">
+                <act time="25" type="Presentation">
                     <desc>Introducing CETEIcean / Publishing on GitHub Pages</desc>
                 </act>
-                <act time="20">
+                <act time="20" type="Code_lab">
                     <desc>Hands on</desc>
                 </act>
-                <act time="25">
+                <act time="25" type="Talk_lab">
                     <desc>Next steps: Customizing your edition with CSS and Javascript</desc>
                 </act>
-                <act time="20">
+                <act time="20" type="Code_lab">
                     <desc>Hands on</desc>
                 </act>
             </slot>
@@ -659,14 +659,14 @@
             </slot>
             <slot time="16:00:00">
                 <title>Web Publishing Frameworks: Flask</title>
-                <act time="25">
+                <act time="25" type="Talk_lab">
                     <desc>[Next steps: Beyond GitHub Pages — Flask
                         ](flask_micro_framework.md)</desc>
                 </act>
-                <act time="40">
+                <act time="40" type="Code_lab">
                     <desc>Hands on Flask</desc>
                 </act>
-                <act time="25">
+                <act time="25" type="Discussion">
                     <desc>Review</desc>
                 </act>
             </slot>
@@ -970,16 +970,16 @@
             </slot>
             <slot time="19:00:00">
                 <title>Leif-Jöran: eXist-db workshop</title>
-                <act time="30" type="Code_lab">
+                <act time="25" type="Code_lab">
                     <desc>XQuery</desc>
                 </act>
-                <act time="30" type="Code_lab">
+                <act time="25" type="Code_lab">
                     <desc>Individual services</desc>
                 </act>
-                <act time="30" type="Code_lab">
+                <act time="25" type="Code_lab">
                     <desc>Webapps</desc>
                 </act>
-                <act time="30" type="Talk_lab">
+                <act time="15" type="Talk_lab">
                     <desc>Wrap-up/review</desc>
                 </act>
             </slot>
@@ -1060,7 +1060,7 @@
             <syn>Half day for philosphy and pedagogy of the Insitute</syn>
             <slot time="09:00:00">
                 <title>Rationale and design of the Institute</title>
-                <act time="90">
+                <act time="90" type="Presentation">
                     <desc/>
                 </act>
             </slot>
@@ -1072,7 +1072,7 @@
             </slot>
             <slot time="11:00:00">
                 <title>Rationale and design of the Institute (continued)</title>
-                <act time="90">
+                <act time="90" type="Discussion">
                     <desc/>
                 </act>
             </slot>
