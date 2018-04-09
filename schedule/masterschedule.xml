@@ -99,7 +99,7 @@
                     <outcome/>
                 </act>
                 <act time="30" type="Code_lab">
-                    <desc>Tag ["Oxymandias"](ozymandias.txt) in XML (e.g., lines, sentences,
+                    <desc>Tag ["Ozymandias"](ozymandias.txt) in XML (e.g., lines, sentences,
                         phrases, speakers, words, feet, syllables, stress)</desc>
                     <outcome/>
                 </act>
