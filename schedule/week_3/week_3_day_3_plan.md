@@ -29,7 +29,7 @@ Time | Topic | Type
 ---- | ---- | ---- 
 10 min | TAG as model | Presentation
 20 min | Hands on TAG as model | Code lab
-10 min | [Alexandria as model and visualization](alexandria.md) | Presentation
+10 min | Alexandria as model and visualization | Presentation
 30 min | Hands on Alexandria as model and visualization | Code lab
 20 min | Review | Discussion
 

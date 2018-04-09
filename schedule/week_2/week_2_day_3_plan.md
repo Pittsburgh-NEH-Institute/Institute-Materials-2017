@@ -19,12 +19,12 @@ Week 2, Day 3 expands upon the idea of digital editions as text processing pipel
 
 Time | Topic | Type
 ---- | ---- | ---- 
-10 min | Review of Week 2, Day 2: computational pipelines, modeling, processing, and tokenization | 
-15 min | Basic normalization | 
-20 min | NLTK | 
-20 min | Regular expressions | 
-10 min | Basic XML normalization: transforming XML to a stream of normalized (word) tokens | 
-15 min | Hands-on exercise with NLTK and regular expressions | 
+15 min | Review of Week 2, Day 2: computational pipelines, modeling, processing, and tokenization | Discussion
+15 min | Basic normalization | Presentation
+15 min | NLTK | Code lab
+15 min | Regular expressions | Code lab
+15 min | Basic XML normalization: transforming XML to a stream of normalized (word) tokens | Code lab
+15 min | Hands-on exercise with NLTK and regular expressions | Code lab
 
 ## 10:30–11:00: Coffee break
 
@@ -32,10 +32,10 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-10 min | Modeling and collation | 
-30 min | Collation within editorial theory | 
-20 min | Collation practice | 
-30 min | Tokenization and normalization for collation purposes | 
+15 min | Modeling and collation | Presentation
+15 min | Collation within editorial theory | Talk lab
+30 min | Collation practice | Code lab
+30 min | Tokenization and normalization for collation purposes | Code lab
 
 ## 12:30–2:00: Lunch
 
@@ -43,7 +43,7 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-90 min | Challenging textual phenomena: Introducing Text as Graph (TAG) | 
+90 min | Challenging textual phenomena: Introducing Text as Graph (TAG) | Presentation
 
 ## 3:30–4:00: Coffee break
 
@@ -51,6 +51,6 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-90 min | Review | 
+90 min | Review | Talk lab
 
 We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 2, Day 3 feedback](week_2_day_3_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 2, Day 3 feedback”.
