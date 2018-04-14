@@ -1,6 +1,6 @@
 start = schedule
 schedule = element schedule {week+}
-num = attribute num {"2" | "3"}
+num = attribute num {"1" | "2" | "3"}
 week = element week {title, day+, num}
 d = attribute d {"Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday" | "Saturday"}
 day = element day {d, date, synopsis, slot+}

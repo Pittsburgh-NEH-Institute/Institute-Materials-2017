@@ -2,6 +2,535 @@
 <?xml-model href="masterschedule.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-model href="masterschedule.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <schedule>
+    <week num="1">
+        <title>Bootcamp: Computational groundwork skills </title>
+        <day d="Monday">
+            <date>July 10</date>
+            <syn>Week 1 is dedicated to developing background knowledge of the computing environment
+                that the participants need to bring to Weeks 2 and 3, the editing and publishing
+                portions of the Institute. Topic areas include: * Operating system conventions
+                (Windows, Mac, Linux) * Working with files, programs, and the command line * Regular
+                expressions * Understanding programming and naming conventions * Understanding how
+                the Internet and the Web work * Python clinic: applying Python programming skills in
+                a coding project * Git and Github for collaborative code development * Don’t panic:
+                documentation and error messages</syn>
+            <slot time="09:00:00">
+                <title>Getting to know your OS</title>
+                <desc>[Windows](getting_to_know_windows.md) and [Mac](getting_to_know_mac.md) users
+                    will split into breakout groups so that participants can focus on how to work in
+                    their specific environments. How does your OS both facilitate and inhibit your
+                    work now, and how might that change?</desc>
+                <act time="15" type="Presentation">
+                    <desc>Introduction and technology setup.</desc>
+                    <outcome>
+                        <goal>Know your machine: Windows, Mac, and Linux users will all have
+                            different experiences and knowledge. Sometimes (= much of the time) the
+                            steps toward completing a task or solving a problem may depend on the
+                            operating system</goal>
+                    </outcome>
+                </act>
+                <act time="25" type="Talk_lab">
+                    <desc>Your machine, your files</desc>
+                    <outcome>
+                        <goal>What are files, directories, and programs?</goal>
+                    </outcome>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>Navigating through the file system</desc>
+
+                    <outcome>
+                        <goal>Directory navigation and file manipulation</goal>
+                    </outcome>
+                </act>
+                <act time="25" type="Presentation">
+                    <desc>External drives, administration, and system variables</desc>
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+
+            </slot>
+            <slot time="11:00:00">
+                <title>Command line 1</title>
+                <desc>What is a shell? How do we use it? In breakout groups, we begin working at the
+                    command line by navigating through our filesystems a step at a time.</desc>
+                <act time="90" type="Presentation">
+                    <desc>[Mac OS](getting_to_know_mac.md) (in Alumni Hall 531)
+                        [Windows](getting_to_know_windows.md) (in Alumni Hall 528) The Software
+                        Carpentry activities associated with the Mac Command line 1 session are 1.
+                        Introducing the Shell 2. Navigating Files and Directories 3. Working with
+                        Files and Directories</desc>
+                    <outcome/>
+                </act>
+
+                <outcome/>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>[Programs and Files 1](programs_and_files1.md)</title>
+                <desc>Now that we know where to find them and what they are, how can we manipulate
+                    and use files and directories for our benefit?</desc>
+                <act time="15" type="Presentation">
+                    <desc>File types</desc>
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Character sets, Unicode, and text editors</desc>
+                    <outcome/>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>Operating system conventions</desc>
+                    <outcome/>
+                </act>
+                <act time="20" type="Code_lab">
+                    <desc>A shell is just a program</desc>
+                    <outcome/>
+                </act>
+
+                <outcome/>
+
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Don't panic: interpretation of error messages</title>
+                <act time="90" type="Discussion">
+                    <desc>You learn how to find the location and nature of your errors in seemingly
+                        inscrutable stack traces and other error reports.</desc>
+                    <outcome>
+                        <goal>Understanding and dealing with error messages.</goal>
+                    </outcome>
+                </act>
+
+            </slot>
+        </day>
+        <day d="Tuesday">
+            <date>July 11</date>
+            <syn>The second day of Week 1 starts with an introduction to regular expressions. From
+                there, we build on the first day’s overview of the command line and expand our
+                understanding of programs and files, introducing the use of variables and data
+                pipelines.</syn>
+            <slot time="09:00:00">
+                <title>Regular expressions 1</title>
+                <desc>What are regular expressions, and how can they improve our pattern-matching
+                    when dealing with an abundance of textual data?</desc>
+
+                <act time="15" type="Discussion">
+                    <desc>Review of [previous day](week_1_day_1_plan.md)</desc>
+
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Why use [regular expressions](regex1.md)</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Simple patterns</desc>
+                    <outcome/>
+                </act>
+                <act time="30" type="Presentation">
+                    <desc>Repetition</desc>
+                    <outcome/>
+                </act>
+
+                <outcome>
+                    <goal>Ability to interpret and produce regular expressions for simple match
+                        patterns</goal>
+                </outcome>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>[Command line 2](command_line_2.djb.md)</title>
+
+                <act time="90" type="Discussion">
+                    <desc>The Software Carpentry activities associated with the Command line 2
+                        session are: 3. [Working with Files and
+                        Directories](http://swcarpentry.github.io/shell-novice/03-create/) 4. [Pipes
+                        and
+                        Filters](http://swcarpentry.github.io/shell-novice/04-pipefilter/)</desc>
+
+                </act>
+                <outcome>
+                    <goal>Editing within the command line interface</goal>
+                    <goal>Data workflow in the shell</goal>
+                </outcome>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>[Programs and files 2](programs_and_files2.md)</title>
+                <desc>We have a basic grasp of directory navigation, but what don’t we know about
+                    `$PATH`? How does our environment affect our file processing? How can we use
+                    commands and variables to manipulate files more efficiently?</desc>
+                <act time="20" type="Discussion">
+                    <desc>Variables and repeating things</desc>
+                    <outcome/>
+                </act>
+                <act time="30" type="Presentation">
+                    <desc>The environment and `$PATH`</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>The locale and its effects</desc>
+                </act>
+                <act time="10" type="Presentation">
+                    <desc>Miscellaneous commands</desc>
+                </act>
+                <outcome>
+                    <goal>Familiarity with conventions of your own operating system</goal>
+
+                </outcome>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Review</title>
+                <desc>A recap of regular expressions, working in the command line, and file
+                    manipulation. What topics would benefit from additional clarifcation? What are
+                    you confused about? What would you like to know more about?</desc>
+                <act time="90" type="Discussion">
+                    <desc>Review and troubleshooting</desc>
+
+                </act>
+
+            </slot>
+        </day>
+        <day d="Wednesday">
+            <date>July 19</date>
+            <syn>Week 2, Day 3 expands upon the idea of digital editions as text processing
+                pipelines. After a short recap of day 2, we continue with the step normalization. We
+                will show how these two pipeline stages prepare texts for automated collation. The
+                process of automated collation is also discussed from a modeling perspective (GM).
+                Participants learn that their research goals and questions influence the
+                computational pipelines.</syn>
+            <slot time="09:00:00">
+                <title>Normalization</title>
+                <act time="15" type="Discussion">
+                    <desc>Review of Week 2, Day 2: computational pipelines, modeling, processing,
+                        and tokenization</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Basic normalization</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>NLTK</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Regular expressions</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Basic XML normalization: transforming XML to a stream of normalized (word)
+                        tokens</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Hands-on exercise with NLTK and regular expressions</desc>
+
+                    <outcome/>
+                </act>
+                <outcome>
+                    <goal>Understanding the principles of basic text transformations like
+                        normalization and how they serve different objectives</goal>
+                </outcome>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>Collation</title>
+                <act time="15" type="Presentation">
+                    <desc>Modeling and collation</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Talk_lab">
+                    <desc>Collation within editorial theory</desc>
+
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Collation practice</desc>
+
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Tokenization and normalization for collation purposes</desc>
+
+                </act>
+                <outcome>
+                    <goal>Bringing together tokenization and normalization as individual pipeline
+                        steps and seeing how they can be implemented in the act of collation</goal>
+                    <goal>Normalize, tokenize, and collate text</goal>
+                </outcome>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>Challenging textual phenomena: Introducing Text as Graph (TAG)</title>
+                <act time="90" type="Presentation">
+                    <desc>Challenging textual phenomena: Introducing Text as Graph (TAG)</desc>
+                </act>
+                <outcome>
+                    <goal>Fundamentals of TAG: hypergraph</goal>
+                    <goal>Modeling discontinuity</goal>
+                </outcome>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Review</title>
+                <act time="90" type="Talk_lab">
+                    <desc>Review</desc>
+                </act>
+            </slot>
+        </day>
+        <day d="Thursday">
+            <date>July 20</date>
+            <syn>Week 2, Day 4 concentrates on ...</syn>
+            <slot time="09:00:00">
+                <title>Text analytics 1</title>
+                <desc>Text analytics 1</desc>
+                <act time="15" type="Presentation">
+                    <desc>Bag of words</desc>
+
+                    <outcome/>
+                </act>
+                <act time="30" type="Presentation">
+                    <desc>Text processing</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Text as tables</desc>
+
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Query the tables</desc>
+
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>Text analytics 1 (cont.)</title>
+                <act time="90" type="Code_lab">
+                    <desc>Bag of words, text processing, text as tables, query the tables
+                        (continued) </desc>
+                </act>
+
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>Modeling: annotations as layers to the text</title>
+                <desc>Modeling: annotations as layers to the text</desc>
+                <act time="15" type="Discussion">
+                    <desc>Review of tokenization, normalization, and collation from the point of
+                        view of annotations</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Talk_lab">
+                    <desc>Envisioning your edition as a layered model</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Existing models (e.g. computational linguistics)</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Talk_lab">
+                    <desc>Hands-on: identify your own layers</desc>
+
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Hands-on: model your edition's pipeline</desc>
+
+                </act>
+                <outcome>
+                    <goal>Grasping the concept of modelling text as trees and graphs</goal>
+                    <goal>Understanding annotation as a form of adding layers to text</goal>
+                    <goal>Varieties of layered editions</goal>
+                </outcome>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Collation 2</title>
+                <desc>Collation 2</desc>
+                <act time="30" type="Presentation">
+                    <desc>Advanced collation</desc>
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Near-matching - theory (as step in the computational pipeline)</desc>
+
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Hands-on: ...</desc>
+
+                    <outcome/>
+                </act>
+                <outcome>
+                    <goal>Deeper discussion of the alignment step in the GM</goal>
+                    <goal>An awareness of computation to understand that we do near-matching late
+                        (in the pipeline) for reasons of efficiency</goal>
+                </outcome>
+            </slot>
+        </day>
+        <day d="Friday">
+            <date>July 21</date>
+            <syn>Week 2, Day 5 concentrates on querying text, on creating visualizations, and on
+                presenting research outcomes to the end user. After desigining and implementing the
+                content of your edition, after adding layers of information to your model, we think
+                about how to query the information and how to present it to an audience. It means
+                that the content need to be made accessible in a way that does not require an end
+                user to code.</syn>
+            <slot time="09:00:00">
+                <title>Text analytics 2</title>
+                <desc>Text analytics 2</desc>
+
+                <act time="30" type="Presentation">
+                    <desc>Unsupervised learning</desc>
+
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Cluster analysis</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Discussion">
+                    <desc>PCA</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Paleographic analysis</desc>
+
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>Text analytics 2 (cont.)</title>
+                <act time="90" type="Discussion">
+                    <desc>Unsupervised learning, cluster analysis, PCA, paleographic analysis
+                        (continued)</desc>
+
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>Queries and XML</title>
+                <desc>Queries and XML</desc>
+                <act time="45" type="Code_lab">
+                    <desc>Querying your text with XQuery in an eXist framework</desc>
+
+                    <outcome>
+                        <goal>Learning XQuery to ...</goal>
+                    </outcome>
+                </act>
+                <act time="45" type="Code_lab">
+                    <desc>Using elastic search to index the content of your edition</desc>
+
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Visualization as outcome</title>
+                <desc>Visualization as outcome</desc>
+                <act time="90" type="Discussion">
+                    <desc>Getting from layered annotations to (a specific) visualization</desc>
+
+                </act>
+                <outcome>
+                    <goal>Visualization as part of the text processing pipeline: making decisions,
+                        selecting formats, interacting with, and producing visualizations</goal>
+                    <goal>Hands-on: a departure from Word Cloud</goal>
+                </outcome>
+            </slot>
+        </day>
+    </week>
     <week num="2">
         <title>Philcamp: Digital philology, creating a digital edition</title>
         <day d="Monday">
