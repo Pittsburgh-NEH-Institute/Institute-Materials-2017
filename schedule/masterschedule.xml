@@ -220,50 +220,35 @@
             </slot>
         </day>
         <day d="Wednesday">
-            <date>July 19</date>
-            <syn>Week 2, Day 3 expands upon the idea of digital editions as text processing
-                pipelines. After a short recap of day 2, we continue with the step normalization. We
-                will show how these two pipeline stages prepare texts for automated collation. The
-                process of automated collation is also discussed from a modeling perspective (GM).
-                Participants learn that their research goals and questions influence the
-                computational pipelines.</syn>
+            <date>July 12</date>
+            <syn>Day three kicks off with a deeper look at refining regular expressions to tailor
+                patterns to specific research needs. Day three introduces `grep`, which applies
+                regex to operating on the command line. Day three also introduces Python and covers
+                the basics of its text processing capabilities.</syn>
             <slot time="09:00:00">
-                <title>Normalization</title>
-                <act time="15" type="Discussion">
-                    <desc>Review of Week 2, Day 2: computational pipelines, modeling, processing,
-                        and tokenization</desc>
+                <title>(Regular Expressions 2)[regex2.md]</title>
+                <desc>Last session we covered simple patterns and repetition. We also did some
+                    exercises on this using `egrep`. Today we firstly want to cover alternation and
+                    grouping before we continue using `egrep` with more advanced expressions. Later
+                    on we will start compare `egreps` REs to Python.</desc>
+                <act time="30" type="Code_lab">
+                    <desc>Alternation</desc>
 
                     <outcome/>
                 </act>
-                <act time="15" type="Presentation">
-                    <desc>Basic normalization</desc>
+                <act time="30" type="Code_lab">
+                    <desc>Grouping</desc>
 
                     <outcome/>
                 </act>
-                <act time="15" type="Code_lab">
-                    <desc>NLTK</desc>
+                <act time="30" type="Code_lab">
+                    <desc>Comparison to Python</desc>
 
                     <outcome/>
                 </act>
-                <act time="15" type="Code_lab">
-                    <desc>Regular expressions</desc>
 
-                    <outcome/>
-                </act>
-                <act time="15" type="Code_lab">
-                    <desc>Basic XML normalization: transforming XML to a stream of normalized (word)
-                        tokens</desc>
-
-                    <outcome/>
-                </act>
-                <act time="15" type="Code_lab">
-                    <desc>Hands-on exercise with NLTK and regular expressions</desc>
-
-                    <outcome/>
-                </act>
                 <outcome>
-                    <goal>Understanding the principles of basic text transformations like
-                        normalization and how they serve different objectives</goal>
+                    <goal>Creating regular expressions for more complicated match patterns</goal>
                 </outcome>
             </slot>
             <slot time="10:30:00">
@@ -274,29 +259,30 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>Collation</title>
-                <act time="15" type="Presentation">
-                    <desc>Modeling and collation</desc>
+                <title>(Command line 3)[command_line_3_djb.md]</title>
+                <desc>With regular expressions under our belt, we are ready to learn advanced `grep`
+                    skills for the command line. We will explore how we can search for lines that
+                    match a pattern and how to exploit advanced features (and work around
+                    complications) of this utility. We will also learn about the `find`
+                    command.</desc>
+                <act time="15" type="Code_lab">
+                    <desc>Working with files</desc>
 
                     <outcome/>
                 </act>
-                <act time="15" type="Talk_lab">
-                    <desc>Collation within editorial theory</desc>
-
+                <act time="15" type="Code_lab">
+                    <desc>Looping with `for`</desc>
                 </act>
-                <act time="30" type="Code_lab">
-                    <desc>Collation practice</desc>
-
+                <act time="45" type="Code_lab">
+                    <desc>Matching things with `grep`</desc>
+                    <outcome>
+                        <goal>Using Regex and the command line collaboratively</goal>
+                        <!-- Where does `grep` fall short and how can we get around this?-->
+                    </outcome>
                 </act>
-                <act time="30" type="Code_lab">
-                    <desc>Tokenization and normalization for collation purposes</desc>
-
+                <act time="15" type="Code_lab">
+                    <desc>Finding files with `find`</desc>
                 </act>
-                <outcome>
-                    <goal>Bringing together tokenization and normalization as individual pipeline
-                        steps and seeing how they can be implemented in the act of collation</goal>
-                    <goal>Normalize, tokenize, and collate text</goal>
-                </outcome>
             </slot>
             <slot time="12:30:00">
                 <title>Lunch</title>
@@ -306,13 +292,33 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>Challenging textual phenomena: Introducing Text as Graph (TAG)</title>
-                <act time="90" type="Presentation">
-                    <desc>Challenging textual phenomena: Introducing Text as Graph (TAG)</desc>
+                <title>Python clinic 1</title>
+                <desc>The first day of the Python clinic will introduce the basics of text
+                    processing, in preparation for more complex textual analysis in the continuation
+                    of this unit. We will introduce and discuss the Natural Language Toolkit (NLTK)
+                    and the role it plays in processing text files. Participants will also gain
+                    familiarity with the Jupyter Notebook environment.</desc>
+                <act time="15" type="Discussion">
+                    <desc>Data prep and Jupyter tips</desc>
+                </act>
+                <act time="30" type="Presentation">
+                    <desc>Python basics</desc>
+                </act>
+                <act time="20" type="Presentation">
+                    <desc>Using NLTK</desc>
+                    <outcome>
+                        <goal>Facility with NLTK</goal>
+                    </outcome>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>Processing a single text file</desc>
+                    <outcome>
+                        <goal> Processing a text file in Python </goal>
+                    </outcome>
                 </act>
                 <outcome>
-                    <goal>Fundamentals of TAG: hypergraph</goal>
-                    <goal>Modeling discontinuity</goal>
+                    <goal>Facility with Python</goal>
+
                 </outcome>
             </slot>
             <slot time="15:30:00">
