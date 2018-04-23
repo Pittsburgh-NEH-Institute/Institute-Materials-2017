@@ -161,7 +161,7 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>[Command line 2](command_line_2.djb.md)</title>
+                <title>[Command line 2](command_line_2_djb.md)</title>
 
                 <act time="90" type="Discussion">
                     <desc>The Software Carpentry activities associated with the Command line 2
@@ -228,33 +228,24 @@
             <date>July 12</date>
             <syn>Day three kicks off with a deeper look at refining regular expressions to tailor
                 patterns to specific research needs. Day three introduces `grep`, which applies
-                regex to operating on the command line. Day three also introduces Python and covers
+                Regex to operating on the command line. Day three also introduces Python and covers
                 the basics of its text processing capabilities.</syn>
             <slot time="09:00:00">
                 <title>[Regular expressions 2](regex2.md)</title>
                 <desc>Last session we covered simple patterns and repetition. We also did some
-                    exercises on this using `egrep`. Today we firstly want to cover alternation and
-                    grouping before we continue using `egrep` with more advanced expressions. Later
-                    on we will start compare `egreps` REs to Python.</desc>
+                    exercises on this using `egrep`. Today, we cover alternation and
+                    grouping before we continue using `egrep` with more advanced expressions. We then compare Regex in `egrep` and Python.</desc>
                 <act time="30" type="Code_lab">
                     <desc>Alternation</desc>
-
-                    <outcome/>
                 </act>
                 <act time="30" type="Code_lab">
                     <desc>Grouping</desc>
-
-                    <outcome/>
                 </act>
                 <act time="30" type="Code_lab">
                     <desc>Comparison to Python</desc>
-
-                    <outcome/>
                 </act>
-
-                <outcome>
-                    <goal>Creating regular expressions for more complicated match patterns</goal>
-                </outcome>
+                    <outcome><goal>Creating regular expressions for more complicated match patterns</goal></outcome>
+                
             </slot>
             <slot time="10:30:00">
                 <title>Coffee break</title>
@@ -453,10 +444,10 @@
         <day d="Friday">
             <date>July 14</date>
             <syn>Day 5 begins with an expanded session on how the Internet works. Topics covered
-                include internet security and the nitty-gritty of HTTP. Git 2 covers how to resolve
-                merge commits, along with how to use Git issues and the other site features.
+                include Internet security and the nitty-gritty of HTTP. Git 2 covers how to resolve
+                merge conflicts, along with how to use Git Issues and other site features.
                 Finally, a lesson on web technologies, including HTML, CSS, and Markdown will
-                prepare participants for future sessions, as well as familiarize them with some
+                prepare participants for future sessions, and familiarize them with some
                 common, useful tools.</syn>
             <slot time="09:00:00">
                 <title>[How the Internet works 2](internet_2.md)</title>
@@ -470,12 +461,12 @@
                 <act time="25" type="Discussion">
                     <desc>Security and SSL</desc>
                     <outcome>
-                        <goal>How does SSL help protect communication?</goal>
+                        <goal>How does SSL protect communication?</goal>
                     </outcome>
 
                 </act>
                 <act time="25" type="Code_lab">
-                    <desc>HTTP Protocol</desc>
+                    <desc>HTTP protocol</desc>
                     <outcome>
                         <goal>Understand the basics of HTTP requests and headers</goal>
                     </outcome>
@@ -496,8 +487,8 @@
                 <title>[Git 2](git_tutorial_part_2.md)</title>
                 <desc>Git commits can sometimes go awry, but there are commands that undo previous
                     edits and can help save different versions, especially when working with
-                    multiple branches. GitHub’s website has social and collaborative tools as well,
-                    though they are not available via the command line.</desc>
+                    multiple branches. GitHub’s web site has social and collaborative tools as well,
+                    though they are not accessible via the command line.</desc>
                 <act time="20" type="Code_lab">
                     <desc>Managing branches</desc>
 
@@ -520,7 +511,7 @@
                 <act time="20" type="Talk_lab">
                     <desc>Git review</desc>
                     <outcome>
-                        <goal>Review command line git</goal>
+                        <goal>Review command line Git</goal>
                     </outcome>
                 </act>
             </slot>
@@ -571,11 +562,6 @@
                 <act time="90" type="Discussion">
                     <desc>Review</desc>
                 </act>
-                <outcome>
-                    <goal>Visualization as part of the text processing pipeline: making decisions,
-                        selecting formats, interacting with, and producing visualizations</goal>
-                    <goal>Hands-on: a departure from Word Cloud</goal>
-                </outcome>
             </slot>
         </day>
     </week>
