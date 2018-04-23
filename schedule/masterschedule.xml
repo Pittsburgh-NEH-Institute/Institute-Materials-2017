@@ -9,15 +9,15 @@
             <syn xml:space="preserve">Week 1 is dedicated to developing background knowledge of the computing environment
                 that the participants need to bring to Weeks 2 and 3, the editing and publishing
                 portions of the Institute. Topic areas include: 
-                * Operating system conventions
-                (Windows, Mac, Linux) 
-                * Working with files, programs, and the command line 
-                * Regular expressions 
-                * Understanding programming and naming conventions 
-                * Understanding how the Internet and the Web work 
-                * Python clinic: applying Python programming skills in a coding project 
-                * Git and Github for collaborative code development 
-                * Don’t panic: documentation and error messages</syn>
+                
+* Operating system conventions (Windows, Mac, Linux) 
+* Working with files, programs, and the command line 
+* Regular expressions 
+* Understanding programming and naming conventions 
+* Understanding how the Internet and the Web work 
+* Python clinic: applying Python programming skills in a coding project 
+* Git and Github for collaborative code development 
+* Don’t panic: documentation and error messages</syn>
             <slot time="09:00:00">
                 <title>Getting to know your OS</title>
                 <desc>[Windows](getting_to_know_windows.md) and [Mac](getting_to_know_mac.md) users
