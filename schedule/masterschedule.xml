@@ -115,13 +115,11 @@
             <slot time="16:00:00">
                 <title>Don’t panic: interpretation of error messages</title>
                 <act time="90" type="Discussion">
-                    <desc>You learn how to find the location and nature of your errors in seemingly
-                        inscrutable stack traces and other error reports.</desc>
+                    <desc>Stack traces and other error reports</desc>
                     <outcome>
                         <goal>Understand and deal with error messages</goal>
                     </outcome>
                 </act>
-
             </slot>
         </day>
         <day d="Tuesday">
@@ -177,6 +175,7 @@
                     <goal>Editing within the command line interface</goal>
                     <goal>Data workflow in the shell</goal>
                 </outcome>
+                
             </slot>
             <slot time="12:30:00">
                 <title>Lunch</title>

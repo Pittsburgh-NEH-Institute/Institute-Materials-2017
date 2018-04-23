@@ -4,8 +4,11 @@
 Week 2, Day 4 concentrates on ...
 
 ## Outcome goals
-* Grasping the concept of modelling text as trees and graphs Understanding annotation as a form of adding layers to text Varieties of layered editions
-* Deeper discussion of the alignment step in the GM An awareness of computation to understand that we do near-matching late (in the pipeline) for reasons of efficiency
+* Grasping the concept of modelling text as trees and graphs
+* Understanding annotation as a form of adding layers to text
+* Varieties of layered editions
+* Deeper discussion of the alignment step in the GM
+* An awareness of computation to understand that we do near-matching late (in the pipeline) for reasons of efficiency
 ## Legend
 
 * **Presentation:** by instructors

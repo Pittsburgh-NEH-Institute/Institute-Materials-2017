@@ -9,7 +9,10 @@ Day 4 begins with an introduction to how the Internet works, a topic that will
 
 ## Outcome goals
 * Understand how communication over the Internet works
-* Understand why version control matters Understand the Git workflow Become comfortable with command line Git Know how to clone a Git repo
+* Understand why version control matters
+* Understand the Git workflow
+* Become comfortable with command line Git
+* Know how to clone a Git repo
 * Process text corpora with Python
 ## Legend
 

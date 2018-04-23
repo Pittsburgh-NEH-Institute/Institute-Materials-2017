@@ -10,7 +10,8 @@ Week 2, Day 5 concentrates on querying text, on creating visualizations, and on
 
 ## Outcome goals
 * Learning XQuery to ...
-* Visualization as part of the text processing pipeline: making decisions, selecting formats, interacting with, and producing visualizations Hands-on: a departure from Word Cloud
+* Visualization as part of the text processing pipeline: making decisions, selecting formats, interacting with, and producing visualizations
+* Hands-on: a departure from Word Cloud
 ## Legend
 
 * **Presentation:** by instructors

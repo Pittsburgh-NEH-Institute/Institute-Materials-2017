@@ -17,7 +17,8 @@ Day 5 begins with an expanded session on how the Internet works. Topics covered
 * Review command line git
 * Transform documents using Pandoc
 * Understand and write HTML, CSS, and Markdown
-* Visualization as part of the text processing pipeline: making decisions, selecting formats, interacting with, and producing visualizations Hands-on: a departure from Word Cloud
+* Visualization as part of the text processing pipeline: making decisions, selecting formats, interacting with, and producing visualizations
+* Hands-on: a departure from Word Cloud
 ## Legend
 
 * **Presentation:** by instructors

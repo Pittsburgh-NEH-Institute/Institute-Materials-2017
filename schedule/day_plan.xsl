@@ -104,7 +104,7 @@
             <xsl:apply-templates select="syn" mode="daily"/>
             <!-- outcome goals -->
             <xsl:text>## Outcome goals&#x0a;</xsl:text>
-            <xsl:apply-templates select="./slot//outcome" mode="daily"/>
+            <xsl:apply-templates select="./slot//goal" mode="daily"/>
             <!-- legend -->
             <xsl:text>## Legend
 
@@ -152,11 +152,10 @@
         />
     </xsl:template>
     <!-- create list of goals -->
-    <xsl:template match="outcome" mode="daily">
-        <xsl:if test="goal">
+    <xsl:template match="goal" mode="daily">
             <xsl:text>* </xsl:text>
             <xsl:apply-templates select="normalize-space(.)"/>
             <xsl:text>&#x0a;</xsl:text>
-        </xsl:if>
+        
     </xsl:template>
 </xsl:stylesheet>

@@ -69,6 +69,6 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-90 min | You learn how to find the location and nature of your errors in seemingly inscrutable stack traces and other error reports. | Discussion
+90 min | Stack traces and other error reports | Discussion
 
 We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 1, Day 1 feedback](week_1_day_1_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 1, Day 1 feedback”.

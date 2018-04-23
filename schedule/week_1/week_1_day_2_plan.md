@@ -8,7 +8,8 @@ The second day of Week 1 starts with an introduction to regular expressions. Fro
 
 ## Outcome goals
 * Ability to interpret and produce regular expressions for simple match patterns
-* Editing within the command line interface Data workflow in the shell
+* Editing within the command line interface
+* Data workflow in the shell
 * Familiarity with conventions of your own operating system
 ## Legend
 

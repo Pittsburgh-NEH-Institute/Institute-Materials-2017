@@ -10,8 +10,10 @@ Week 2, Day 3 expands upon the idea of digital editions as text processing
 
 ## Outcome goals
 * Understanding the principles of basic text transformations like normalization and how they serve different objectives
-* Bringing together tokenization and normalization as individual pipeline steps and seeing how they can be implemented in the act of collation Normalize, tokenize, and collate text
-* Fundamentals of TAG: hypergraph Modeling discontinuity
+* Bringing together tokenization and normalization as individual pipeline steps and seeing how they can be implemented in the act of collation
+* Normalize, tokenize, and collate text
+* Fundamentals of TAG: hypergraph
+* Modeling discontinuity
 ## Legend
 
 * **Presentation:** by instructors

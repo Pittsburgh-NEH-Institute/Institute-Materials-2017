@@ -12,7 +12,8 @@ The first half of Week 2, Day 2 continues the focus on document modeling from th
                 Java SE for your operating system
 
 ## Outcome goals
-* Understanding modeling perspectives (tree, ranges, graph) and communities Modular development: thinking about digital edition development as a computational pipeline
+* Understanding modeling perspectives (tree, ranges, graph) and communities
+* Modular development: thinking about digital edition development as a computational pipeline
 * Beginning to tokenize texts
 * Beginning to normalize texts
 ## Legend
