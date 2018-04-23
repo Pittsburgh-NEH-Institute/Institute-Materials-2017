@@ -1,10 +1,7 @@
 # Week 1, Day 3: Wednesday, July 12
 ## Synopsis
 
-Day three kicks off with a deeper look at refining regular expressions to tailor
-                patterns to specific research needs. Day three introduces `grep`, which applies
-                regex to operating on the command line. Day three also introduces Python and covers
-                the basics of its text processing capabilities.
+Day three kicks off with a deeper look at refining regular expressions to tailor patterns to specific research needs. Day three introduces `grep`, which applies regex to operating on the command line. Day three also introduces Python and covers the basics of its text processing capabilities.
 
 ## Outcome goals
 * Creating regular expressions for more complicated match patterns

@@ -1,20 +1,7 @@
 # Week 1, Day 1: Monday, July 10
 ## Synopsis
 
-Week 1 is dedicated to developing background knowledge of the computing environment
-                that the participants need to bring to Weeks 2 and 3, the editing and publishing
-                portions of the Institute. Topic areas include: 
-
-* Operating system conventions (Windows, Mac, Linux) 
-* Working with files, programs, and the command line 
-* Regular expressions 
-* Understanding programming and naming conventions 
-* Understanding how the Internet and the Web work 
-* Python clinic: applying Python programming skills in a coding project 
-* Git and GitHub for collaborative code development 
-* Don’t panic: documentation and error messages
-
-            
+Week 1 is dedicated to developing background knowledge of the computing environment that the participants need to bring to Weeks 2 and 3, the editing and publishing portions of the Institute. Topic areas include: * Operating system conventions (Windows, Mac, Linux) * Working with files, programs, and the command line * Regular expressions * Understanding programming and naming conventions * Understanding how the Internet and the Web work * Python clinic: applying Python programming skills in a coding project * Git and GitHub for collaborative code development * Don’t panic: documentation and error messages
 
 ## Outcome goals
 * Know your machine: Windows, Mac, and Linux users will all have different experiences and knowledge. Sometimes (= much of the time) the steps toward completing a task or solving a problem may depend on the operating system
@@ -48,13 +35,7 @@ What is a shell? How do we use it? In breakout groups, we begin working at the c
 
 Time | Topic | Type
 ---- | ---- | ---- 
-90 min | [macOS](getting_to_know_mac.md) (in Alumni Hall 531)
-                        [Windows](getting_to_know_windows.md) (in Alumni Hall 528) The Software
-                        Carpentry activities associated with the Mac Command line 1 session are 
-                        1. Introducing the Shell 
-                            2. Navigating Files and Directories 
-                            3. Working with Files and Directories
-                     | Presentation
+90 min | [macOS](getting_to_know_mac.md) (in Alumni Hall 531) [Windows](getting_to_know_windows.md) (in Alumni Hall 528) The Software Carpentry activities associated with the Mac Command line 1 session are 1. Introducing the Shell 2. Navigating Files and Directories 3. Working with Files and Directories | Presentation
 
 ## 12:30–2:00: Lunch
 
@@ -75,7 +56,6 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-90 min | You learn how to find the location and nature of your errors in seemingly
-                        inscrutable stack traces and other error reports. | Discussion
+90 min | You learn how to find the location and nature of your errors in seemingly inscrutable stack traces and other error reports. | Discussion
 
 We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 1, Day 1 feedback](week_1_day_1_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 1, Day 1 feedback”.

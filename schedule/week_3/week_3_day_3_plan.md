@@ -40,8 +40,7 @@ Time | Topic | Type
 Time | Topic | Type
 ---- | ---- | ---- 
 1 min | Intro to lightning talks | Presentation
-89 min | Project slam 1, max 10 minutes per project, no discussion, switch on
-                        signal | Talk lab
+89 min | Project slam 1, max 10 minutes per project, no discussion, switch on signal | Talk lab
 
 ## 3:30–4:00: Coffee break
 
@@ -49,8 +48,7 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-45 min | Project slam 2, max 10 minutes per project, no discussion, switch on
-                        signal | Talk lab
+45 min | Project slam 2, max 10 minutes per project, no discussion, switch on signal | Talk lab
 25 min | Around the table reflections | Presentation
 20 min | Review | Discussion
 

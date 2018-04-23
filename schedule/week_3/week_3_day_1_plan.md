@@ -1,10 +1,7 @@
 # Week 3, Day 1: Monday, July 24
 ## Synopsis
 
-The first day of Week 3 focuses on the ins and outs of getting your edition online.
-                We will introduce a workflow for putting the edition online during its development
-                and discuss how to iterating on it as you progress through the steps of digital
-                publication.
+The first day of Week 3 focuses on the ins and outs of getting your edition online. We will introduce a workflow for putting the edition online during its development and discuss how to iterating on it as you progress through the steps of digital publication.
 
 ## Outcome goals
 ## Legend
@@ -49,8 +46,7 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-25 min | [Next steps: Beyond GitHub Pages — Flask
-                        ](flask_micro_framework.md) | Talk lab
+25 min | [Next steps: Beyond GitHub Pages — Flask ](flask_micro_framework.md) | Talk lab
 40 min | Hands on Flask | Code lab
 25 min | Review | Discussion
 

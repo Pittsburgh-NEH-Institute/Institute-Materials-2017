@@ -128,7 +128,7 @@
     </xsl:template>
     <xsl:template match="syn" mode="daily">
         <xsl:text>&#x0a;</xsl:text>
-        <xsl:value-of select="."/>
+        <xsl:value-of select="normalize-space(.)"/>
         <xsl:text>&#x0a;&#x0a;</xsl:text>
     </xsl:template>
     <!-- create and styles time headers -->
@@ -148,7 +148,7 @@
     <!-- create the activity times in table  -->
     <xsl:template match="act" mode="daily">
         <xsl:value-of
-            select="@time || ' min | ' || desc || ' | ' || translate(@type, '_', ' ') || '&#x0a;'"
+            select="@time || ' min | ' || normalize-space(desc) || ' | ' || translate(@type, '_', ' ') || '&#x0a;'"
         />
     </xsl:template>
     <!-- create list of goals -->

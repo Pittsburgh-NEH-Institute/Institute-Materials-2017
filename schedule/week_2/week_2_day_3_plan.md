@@ -1,12 +1,7 @@
 # Week 2, Day 3: Wednesday, July 19
 ## Synopsis
 
-Week 2, Day 3 expands upon the idea of digital editions as text processing
-                pipelines. After a short recap of day 2, we continue with the step normalization. We
-                will show how these two pipeline stages prepare texts for automated collation. The
-                process of automated collation is also discussed from a modeling perspective (GM).
-                Participants learn that their research goals and questions influence the
-                computational pipelines.
+Week 2, Day 3 expands upon the idea of digital editions as text processing pipelines. After a short recap of day 2, we continue with the step normalization. We will show how these two pipeline stages prepare texts for automated collation. The process of automated collation is also discussed from a modeling perspective (GM). Participants learn that their research goals and questions influence the computational pipelines.
 
 ## Outcome goals
 * Understanding the principles of basic text transformations like normalization and how they serve different objectives
@@ -24,13 +19,11 @@ Week 2, Day 3 expands upon the idea of digital editions as text processing
 
 Time | Topic | Type
 ---- | ---- | ---- 
-15 min | Review of Week 2, Day 2: computational pipelines, modeling, processing,
-                        and tokenization | Discussion
+15 min | Review of Week 2, Day 2: computational pipelines, modeling, processing, and tokenization | Discussion
 15 min | Basic normalization | Presentation
 15 min | NLTK | Code lab
 15 min | Regular expressions | Code lab
-15 min | Basic XML normalization: transforming XML to a stream of normalized (word)
-                        tokens | Code lab
+15 min | Basic XML normalization: transforming XML to a stream of normalized (word) tokens | Code lab
 15 min | Hands-on exercise with NLTK and regular expressions | Code lab
 
 ## 10:30–11:00: Coffee break

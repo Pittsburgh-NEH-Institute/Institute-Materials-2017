@@ -1,12 +1,7 @@
 # Week 1, Day 5: Friday, July 14
 ## Synopsis
 
-Day 5 begins with an expanded session on how the Internet works. Topics covered
-                include internet security and the nitty-gritty of HTTP. Git 2 covers how to resolve
-                merge commits, along with how to use Git issues and the other site features.
-                Finally, a lesson on web technologies, including HTML, CSS, and Markdown will
-                prepare participants for future sessions, as well as familiarize them with some
-                common, useful tools.
+Day 5 begins with an expanded session on how the Internet works. Topics covered include internet security and the nitty-gritty of HTTP. Git 2 covers how to resolve merge commits, along with how to use Git issues and the other site features. Finally, a lesson on web technologies, including HTML, CSS, and Markdown will prepare participants for future sessions, as well as familiarize them with some common, useful tools.
 
 ## Outcome goals
 * How does SSL help protect communication?

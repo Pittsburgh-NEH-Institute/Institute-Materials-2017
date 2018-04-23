@@ -31,8 +31,7 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-90 min | Bag of words, text processing, text as tables, query the tables
-                        (continued)  | Code lab
+90 min | Bag of words, text processing, text as tables, query the tables (continued) | Code lab
 
 ## 12:30–2:00: Lunch
 
@@ -42,8 +41,7 @@ Modeling: annotations as layers to the text
 
 Time | Topic | Type
 ---- | ---- | ---- 
-15 min | Review of tokenization, normalization, and collation from the point of
-                        view of annotations | Discussion
+15 min | Review of tokenization, normalization, and collation from the point of view of annotations | Discussion
 15 min | Envisioning your edition as a layered model | Talk lab
 15 min | Existing models (e.g. computational linguistics) | Presentation
 15 min | Hands-on: identify your own layers | Talk lab

@@ -1,10 +1,7 @@
 # Week 1, Day 2: Tuesday, July 11
 ## Synopsis
 
-The second day of Week 1 starts with an introduction to regular expressions. From
-                there, we build on the first day’s overview of the command line and expand our
-                understanding of programs and files, introducing the use of variables and data
-                pipelines.
+The second day of Week 1 starts with an introduction to regular expressions. From there, we build on the first day’s overview of the command line and expand our understanding of programs and files, introducing the use of variables and data pipelines.
 
 ## Outcome goals
 * Ability to interpret and produce regular expressions for simple match patterns
@@ -35,11 +32,7 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-90 min | The Software Carpentry activities associated with the Command line 2
-                        session are: 3. [Working with Files and
-                        Directories](http://swcarpentry.github.io/shell-novice/03-create/) 4. [Pipes
-                        and
-                        Filters](http://swcarpentry.github.io/shell-novice/04-pipefilter/) | Discussion
+90 min | The Software Carpentry activities associated with the Command line 2 session are: 3. [Working with Files and Directories](http://swcarpentry.github.io/shell-novice/03-create/) 4. [Pipes and Filters](http://swcarpentry.github.io/shell-novice/04-pipefilter/) | Discussion
 
 ## 12:30–2:00: Lunch
 
