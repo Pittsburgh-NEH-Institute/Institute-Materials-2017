@@ -10,7 +10,7 @@
                 that the participants need to bring to Weeks 2 and 3, the editing and publishing
                 portions of the Institute. Topic areas include: 
                 
-* Operating system conventions (Windows, Mac, Linux) 
+* Operating system conventions(Windows, Mac, Linux) 
 * Working with files, programs, and the command line 
 * Regular expressions 
 * Understanding programming and naming conventions 
@@ -66,9 +66,10 @@
                     <desc xml:space="preserve">[Mac OS](getting_to_know_mac.md) (in Alumni Hall 531)
                         [Windows](getting_to_know_windows.md) (in Alumni Hall 528) The Software
                         Carpentry activities associated with the Mac Command line 1 session are 
-                        1.Introducing the Shell 
-                        2. Navigating Files and Directories 
-                        3. Working with Files and Directories</desc>
+                        
+1.Introducing the Shell 
+2. Navigating Files and Directories 
+3. Working with Files and Directories</desc>
                     <outcome/>
                 </act>
 
@@ -231,7 +232,7 @@
                 regex to operating on the command line. Day three also introduces Python and covers
                 the basics of its text processing capabilities.</syn>
             <slot time="09:00:00">
-                <title>(Regular Expressions 2)[regex2.md]</title>
+                <title>[Regular Expressions 2](regex2.md)</title>
                 <desc>Last session we covered simple patterns and repetition. We also did some
                     exercises on this using `egrep`. Today we firstly want to cover alternation and
                     grouping before we continue using `egrep` with more advanced expressions. Later
@@ -264,7 +265,7 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>(Command line 3)[command_line_3_djb.md]</title>
+                <title>[Command line 3](command_line_3_djb.md)</title>
                 <desc>With regular expressions under our belt, we are ready to learn advanced `grep`
                     skills for the command line. We will explore how we can search for lines that
                     match a pattern and how to exploit advanced features (and work around
@@ -346,7 +347,7 @@
                 Institute). We conclude with more advanced Python activities within Jupyter
                 Notebook.</syn>
             <slot time="09:00:00">
-                <title>(How the internet works 1)[internet_1.md]</title>
+                <title>[How the internet works 1](internet_1.md)</title>
 
                 <act time="20" type="Discussion">
                     <desc>Hostnames and DNS</desc>
@@ -378,7 +379,7 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>(Git 1)[git_tutorial.md]</title>
+                <title>[Git 1](git_tutorial.md)</title>
                 <desc>Git is a tool for managing, sharing, and creating content, particularly code.
                     This tutorial aims to acclimate users to command line Git, which bypasses the
                     GUI and provides both more power and more flexibility.</desc>
@@ -409,7 +410,7 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>(Python clinic 2)[Python_Clinic_Day_2.html]</title>
+                <title>[Python clinic 2](Python_Clinic_Day_2.html)</title>
                 <desc>After practicing first with processing single documents using Python, we move
                     to processing a corpus (in this case, of U.S. Presidential inaugural addresses)
                     with NLTK.</desc>
@@ -459,7 +460,7 @@
                 prepare participants for future sessions, as well as familiarize them with some
                 common, useful tools.</syn>
             <slot time="09:00:00">
-                <title>(How the Internet works 2)[internet_2.md]</title>
+                <title>[How the Internet works 2](internet_2.md)</title>
                 <desc>DESCRIPTION NEEDED</desc>
 
                 <act time="15" type="Discussion">
@@ -493,7 +494,7 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>(Git 2)[git_tutorial_part_2.md]</title>
+                <title>[Git 2](git_tutorial_part_2.md)</title>
                 <desc>Git commits can sometimes go awry, but there are commands that undo previous
                     edits and can help save different versions, especially when working with
                     multiple branches. GitHub’s website has social and collaborative tools as well,
@@ -531,7 +532,7 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>(Web Technologies)[web_technologies.md]</title>
+                <title>[Web Technologies](web_technologies.md)</title>
                 <desc>This session introduces HTML, CSS, and JavaScript, which are the most
                     fundamental technologies for publishing web pages. Markdown, a simplified way to
                     create and publish HTML, is used both on GitHub and in Jupyter notebook. Pandoc
