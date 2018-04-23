@@ -128,7 +128,7 @@
     </xsl:template>
     <xsl:template match="syn" mode="daily">
         <xsl:text>&#x0a;</xsl:text>
-        <xsl:value-of select="normalize-space(.)"/>
+        <xsl:value-of select="."/>
         <xsl:text>&#x0a;&#x0a;</xsl:text>
     </xsl:template>
     <!-- create and styles time headers -->

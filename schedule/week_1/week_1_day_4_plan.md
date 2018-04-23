@@ -1,7 +1,11 @@
 # Week 1, Day 4: Thursday, July 20
 ## Synopsis
 
-Day 4 begins with an introduction to how the Internet works, a topic that will recur when we turn to publishing in Week 3. This day also introduces the version management system Git (which, among other things, hosts all materials for our Institute). We conclude with more advanced Python activities within Jupyter Notebook.
+Day 4 begins with an introduction to how the Internet works, a topic that will
+                recur when we turn to publishing in Week 3. This day also introduces the version
+                management system Git (which, among other things, hosts all materials for our
+                Institute). We conclude with more advanced Python activities within Jupyter
+                Notebook.
 
 ## Outcome goals
 * Understand how communication over the Internet works

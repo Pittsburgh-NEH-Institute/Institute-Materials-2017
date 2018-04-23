@@ -1,7 +1,8 @@
 # Week 3, Day 2: Tuesday, July 25
 ## Synopsis
 
-The second day of Week 3 looks at how digital editions themselves may be treated as data in various ways, as well as how data may be embedded within them.
+The second day of Week 3 looks at how digital editions themselves may be treated as
+                data in various ways, as well as how data may be embedded within them.
 
 ## Outcome goals
 ## Legend
