@@ -128,7 +128,7 @@
     </xsl:template>
     <xsl:template match="syn" mode="daily">
         <xsl:text>&#x0a;</xsl:text>
-        <xsl:value-of select="normalize-space(.)"/>
+        <xsl:value-of select="."/>
         <xsl:text>&#x0a;&#x0a;</xsl:text>
     </xsl:template>
     <!-- create and styles time headers -->
@@ -136,7 +136,7 @@
         <xsl:value-of
             select="'## ' || djb:timeRange(@time, sum(act/@time)) || ': ' || title || '&#x0a;&#x0a;'"/>
         <xsl:if test="desc">
-            <xsl:value-of select="normalize-space(desc) || '&#x0a;&#x0a;'"/>
+            <xsl:value-of select="desc || '&#x0a;&#x0a;'"/>
         </xsl:if>
         <xsl:if test="not(title = ('Coffee break', 'Lunch'))">
             <xsl:text>Time | Topic | Type&#x0a;</xsl:text>

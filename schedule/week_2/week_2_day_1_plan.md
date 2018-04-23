@@ -1,7 +1,12 @@
 # Week 2, Day 1: Monday, July 17
 ## Synopsis
 
-Scholars create digital editions to serve research purposes that may differ from project to project. The first day of Week 2 begins by exploring the role in project planning of defining research goals (which includes defining *non-goals* in order to avoid *scope-creep*). From planning and research questions we move to modeling and structuring the digital edition workflow as a computational pipeline, encouraging a modular perspective on digital editing.
+Scholars create digital editions to serve research purposes that may differ from
+                project to project. The first day of Week 2 begins by exploring the role in project
+                planning of defining research goals (which includes defining *non-goals* in order to
+                avoid *scope-creep*). From planning and research questions we move to modeling and
+                structuring the digital edition workflow as a computational pipeline, encouraging a
+                modular perspective on digital editing.
 
 ## Outcome goals
 * Don’t touch that keyboard! Planning *your* edition: starting with research questions
@@ -18,7 +23,11 @@ Scholars create digital editions to serve research purposes that may differ from
 * * *
 ## 9:00–10:30: Planning your project
 
-There cannot be a single set of *best practice* recommendations for all digital editions because scholars create editions to meet different research goals, and they do that under different working conditions. What’s the purpose of your edition, and what are the resources at your disposal and the constraints on your efforts?
+There cannot be a single set of *best practice* recommendations for all
+                    digital editions because scholars create editions to meet different research
+                    goals, and they do that under different working conditions. What’s the purpose
+                    of your edition, and what are the resources at your disposal and the constraints
+                    on your efforts?
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -31,7 +40,8 @@ Time | Topic | Type
 
 ## 11:00–12:30: Model, syntax, and markup semantics
 
-How can the elaboration of a digital edition be modularized? How are *model*, *syntax*, and *markup semantics* similar and different?
+How can the elaboration of a digital edition be modularized? How are *model*,
+                    *syntax*, and *markup semantics* similar and different?
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -44,7 +54,9 @@ Time | Topic | Type
 
 ## 2:00–3:30: Transcription with markup: XML
 
-How are documents like trees and how are they different? What is represented by the model alone (the XML tree), and what requires markup semantics (schema)? What’s hard in XML and how do we do it anyway?
+How are documents like trees and how are they different? What is represented
+                    by the model alone (the XML tree), and what requires markup semantics (schema)?
+                    What’s hard in XML and how do we do it anyway?
 
 Time | Topic | Type
 ---- | ---- | ---- 

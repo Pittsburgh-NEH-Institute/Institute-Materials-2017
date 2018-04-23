@@ -1,7 +1,10 @@
 # Week 1, Day 3: Wednesday, July 12
 ## Synopsis
 
-Day three kicks off with a deeper look at refining regular expressions to tailor patterns to specific research needs. Day three introduces `grep`, which applies regex to operating on the command line. Day three also introduces Python and covers the basics of its text processing capabilities.
+Day three kicks off with a deeper look at refining regular expressions to tailor
+                patterns to specific research needs. Day three introduces `grep`, which applies
+                regex to operating on the command line. Day three also introduces Python and covers
+                the basics of its text processing capabilities.
 
 ## Outcome goals
 * Creating regular expressions for more complicated match patterns
@@ -19,7 +22,10 @@ Day three kicks off with a deeper look at refining regular expressions to tailor
 * * *
 ## 9:00–10:30: (Regular Expressions 2)[regex2.md]
 
-Last session we covered simple patterns and repetition. We also did some exercises on this using `egrep`. Today we firstly want to cover alternation and grouping before we continue using `egrep` with more advanced expressions. Later on we will start compare `egreps` REs to Python.
+Last session we covered simple patterns and repetition. We also did some
+                    exercises on this using `egrep`. Today we firstly want to cover alternation and
+                    grouping before we continue using `egrep` with more advanced expressions. Later
+                    on we will start compare `egreps` REs to Python.
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -31,7 +37,11 @@ Time | Topic | Type
 
 ## 11:00–12:30: (Command line 3)[command_line_3_djb.md]
 
-With regular expressions under our belt, we are ready to learn advanced `grep` skills for the command line. We will explore how we can search for lines that match a pattern and how to exploit advanced features (and work around complications) of this utility. We will also learn about the `find` command.
+With regular expressions under our belt, we are ready to learn advanced `grep`
+                    skills for the command line. We will explore how we can search for lines that
+                    match a pattern and how to exploit advanced features (and work around
+                    complications) of this utility. We will also learn about the `find`
+                    command.
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -44,7 +54,11 @@ Time | Topic | Type
 
 ## 2:00–3:30: Python clinic 1
 
-The first day of the Python clinic will introduce the basics of text processing, in preparation for more complex textual analysis in the continuation of this unit. We will introduce and discuss the Natural Language Toolkit (NLTK) and the role it plays in processing text files. Participants will also gain familiarity with the Jupyter Notebook environment.
+The first day of the Python clinic will introduce the basics of text
+                    processing, in preparation for more complex textual analysis in the continuation
+                    of this unit. We will introduce and discuss the Natural Language Toolkit (NLTK)
+                    and the role it plays in processing text files. Participants will also gain
+                    familiarity with the Jupyter Notebook environment.
 
 Time | Topic | Type
 ---- | ---- | ---- 

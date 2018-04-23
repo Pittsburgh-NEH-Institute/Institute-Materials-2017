@@ -1,7 +1,15 @@
 # Week 2, Day 2: Tuesday, July 18
 ## Synopsis
 
-The first half of Week 2, Day 2 continues the focus on document modeling from the previous day, with attention to three models of text: XML (text as tree), LMNL (text as ranges), and TAG (text as graph). The second half of the day introduces the idea of developing a digital edition as a computational pipeline. We illustrate the pipeline with the Gothenburg model of textual variation, and then begin to explore the first two stages of that model, tokenization and normalization. Java SE installation: <"http://www.oracle.com/technetwork/java/javase/downloads/index.html">. Choose Java SE for your operating system
+The first half of Week 2, Day 2 continues the focus on document modeling from the
+                previous day, with attention to three models of text: XML (text as tree), LMNL (text
+                as ranges), and TAG (text as graph). The second half of the day introduces the idea
+                of developing a digital edition as a computational pipeline. We illustrate the
+                pipeline with the Gothenburg model of textual variation, and then begin to explore
+                the first two stages of that model, tokenization and normalization. Java SE
+                installation:
+                <"http://www.oracle.com/technetwork/java/javase/downloads/index.html">. Choose
+                Java SE for your operating system
 
 ## Outcome goals
 * Understanding modeling perspectives (tree, ranges, graph) and communities Modular development: thinking about digital edition development as a computational pipeline
@@ -30,7 +38,10 @@ Time | Topic | Type
 
 ## 11:00–12:30: Theory of edition
 
-Are you making an edition of a manuscript or of a text? What is the role of language and orthography in your edition? How will the text be presented? How will users interact with the views? What will be the role of graphic visualization?
+Are you making an edition of a manuscript or of a text? What is the role of
+                    language and orthography in your edition? How will the text be presented? How
+                    will users interact with the views? What will be the role of graphic
+                    visualization?
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -54,7 +65,13 @@ Time | Topic | Type
 
 ## 4:00–5:30: Normalization
 
-Before we start: 1. Navigate to your fork of our Institute repo and run `git pull upstream remote`. 2. Start Jupyter notebook either from the Anaconda launcher or by navigating to your home directory and typing `jupyter notebook`. 3. Within the main Jupyter notebook web page, navigate to schedule/week_2 in your fork of our repo and open `Normalization.ipynb`, `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and `Integrating_XML_with_Python.ipynb`.
+Before we start: 1. Navigate to your fork of our Institute repo and run `git
+                    pull upstream remote`. 2. Start Jupyter notebook either from the Anaconda
+                    launcher or by navigating to your home directory and typing `jupyter notebook`.
+                    3. Within the main Jupyter notebook web page, navigate to schedule/week_2 in
+                    your fork of our repo and open `Normalization.ipynb`,
+                    `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and
+                    `Integrating_XML_with_Python.ipynb`.
 
 Time | Topic | Type
 ---- | ---- | ---- 

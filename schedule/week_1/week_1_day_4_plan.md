@@ -1,7 +1,11 @@
 # Week 1, Day 4: Thursday, July 20
 ## Synopsis
 
-Day 4 begins with an introduction to how the Internet works, a topic that will recur when we turn to publishing in Week 3. This day also introduces the version management system Git (which, among other things, hosts all materials for our Institute). We conclude with more advanced Python activities within Jupyter Notebook.
+Day 4 begins with an introduction to how the Internet works, a topic that will
+                recur when we turn to publishing in Week 3. This day also introduces the version
+                management system Git (which, among other things, hosts all materials for our
+                Institute). We conclude with more advanced Python activities within Jupyter
+                Notebook.
 
 ## Outcome goals
 * Understand how communication over the Internet works
@@ -28,7 +32,9 @@ Time | Topic | Type
 
 ## 11:00–12:30: (Git 1)[git_tutorial.md]
 
-Git is a tool for managing, sharing, and creating content, particularly code. This tutorial aims to acclimate users to command line Git, which bypasses the GUI and provides both more power and more flexibility.
+Git is a tool for managing, sharing, and creating content, particularly code.
+                    This tutorial aims to acclimate users to command line Git, which bypasses the
+                    GUI and provides both more power and more flexibility.
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -41,7 +47,9 @@ Time | Topic | Type
 
 ## 2:00–3:30: (Python clinic 2)[Python_Clinic_Day_2.html]
 
-After practicing first with processing single documents using Python, we move to processing a corpus (in this case, of U.S. Presidential inaugural addresses) with NLTK.
+After practicing first with processing single documents using Python, we move
+                    to processing a corpus (in this case, of U.S. Presidential inaugural addresses)
+                    with NLTK.
 
 Time | Topic | Type
 ---- | ---- | ---- 

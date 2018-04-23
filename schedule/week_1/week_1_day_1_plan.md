@@ -1,7 +1,18 @@
 # Week 1, Day 1: Monday, July 10
 ## Synopsis
 
-Week 1 is dedicated to developing background knowledge of the computing environment that the participants need to bring to Weeks 2 and 3, the editing and publishing portions of the Institute. Topic areas include: * Operating system conventions (Windows, Mac, Linux) * Working with files, programs, and the command line * Regular expressions * Understanding programming and naming conventions * Understanding how the Internet and the Web work * Python clinic: applying Python programming skills in a coding project * Git and Github for collaborative code development * Don’t panic: documentation and error messages
+Week 1 is dedicated to developing background knowledge of the computing environment
+                that the participants need to bring to Weeks 2 and 3, the editing and publishing
+                portions of the Institute. Topic areas include: 
+                * Operating system conventions
+                (Windows, Mac, Linux) 
+                * Working with files, programs, and the command line 
+                * Regular expressions 
+                * Understanding programming and naming conventions 
+                * Understanding how the Internet and the Web work 
+                * Python clinic: applying Python programming skills in a coding project 
+                * Git and Github for collaborative code development 
+                * Don’t panic: documentation and error messages
 
 ## Outcome goals
 * Know your machine: Windows, Mac, and Linux users will all have different experiences and knowledge. Sometimes (= much of the time) the steps toward completing a task or solving a problem may depend on the operating system
@@ -18,7 +29,10 @@ Week 1 is dedicated to developing background knowledge of the computing environm
 * * *
 ## 9:00–10:30: Getting to know your OS
 
-[Windows](getting_to_know_windows.md) and [Mac](getting_to_know_mac.md) users will split into breakout groups so that participants can focus on how to work in their specific environments. How does your OS both facilitate and inhibit your work now, and how might that change?
+[Windows](getting_to_know_windows.md) and [Mac](getting_to_know_mac.md) users
+                    will split into breakout groups so that participants can focus on how to work in
+                    their specific environments. How does your OS both facilitate and inhibit your
+                    work now, and how might that change?
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -31,7 +45,8 @@ Time | Topic | Type
 
 ## 11:00–12:30: Command line 1
 
-What is a shell? How do we use it? In breakout groups, we begin working at the command line by navigating through our filesystems a step at a time.
+What is a shell? How do we use it? In breakout groups, we begin working at the
+                    command line by navigating through our filesystems a step at a time.
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -41,7 +56,8 @@ Time | Topic | Type
 
 ## 2:00–3:30: [Programs and Files 1](programs_and_files1.md)
 
-Now that we know where to find them and what they are, how can we manipulate and use files and directories for our benefit?
+Now that we know where to find them and what they are, how can we manipulate
+                    and use files and directories for our benefit?
 
 Time | Topic | Type
 ---- | ---- | ---- 
