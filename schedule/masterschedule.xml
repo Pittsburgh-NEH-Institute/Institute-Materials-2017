@@ -67,10 +67,8 @@
                 <act time="90" type="Presentation">
                     <desc>[macOS](getting_to_know_mac.md) (in Alumni Hall 531)
                         [Windows](getting_to_know_windows.md) (in Alumni Hall 528) The Software
-                        Carpentry activities associated with the Mac Command line 1 session are 
-                        <list xml:space="preserve">1. Introducing the Shell 
-                            2. Navigating Files and Directories 
-                            3. Working with Files and Directories</list>
+                        Carpentry activities associated with the Mac Command line 1 session are: 
+                        1. Introducing the Shell. 2. Navigating Files and Directories 3. Working with Files and Directories
                     </desc>
                     <outcome/>
                 </act>

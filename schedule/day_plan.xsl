@@ -3,7 +3,7 @@
     xmlns:math="http://www.w3.org/2005/xpath-functions/math" exclude-result-prefixes="xs math"
     version="3.0">
     <xsl:output method="text" omit-xml-declaration="yes"/>
-    <xsl:preserve-space elements="list"/>
+
     <xsl:function name="djb:timeRange" as="xs:string">
         <!--
             Parameters: $startTime as xs:time, $duration as xs:double
