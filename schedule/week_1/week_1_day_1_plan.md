@@ -5,20 +5,20 @@ Week 1 is dedicated to developing background knowledge of the computing environm
                 that the participants need to bring to Weeks 2 and 3, the editing and publishing
                 portions of the Institute. Topic areas include: 
                 
-* Operating system conventions(Windows, Mac, Linux) 
+* Operating system conventions (Windows, Mac, Linux) 
 * Working with files, programs, and the command line 
 * Regular expressions 
 * Understanding programming and naming conventions 
 * Understanding how the Internet and the Web work 
 * Python clinic: applying Python programming skills in a coding project 
-* Git and Github for collaborative code development 
+* Git and GitHub for collaborative code development 
 * Don’t panic: documentation and error messages
 
 ## Outcome goals
 * Know your machine: Windows, Mac, and Linux users will all have different experiences and knowledge. Sometimes (= much of the time) the steps toward completing a task or solving a problem may depend on the operating system
 * What are files, directories, and programs?
 * Directory navigation and file manipulation
-* Understanding and dealing with error messages.
+* Understand and deal with error messages
 ## Legend
 
 * **Presentation:** by instructors
@@ -36,7 +36,7 @@ Week 1 is dedicated to developing background knowledge of the computing environm
 
 Time | Topic | Type
 ---- | ---- | ---- 
-15 min | Introduction and technology setup. | Presentation
+15 min | Introduction and technology setup | Presentation
 25 min | Your machine, your files | Talk lab
 25 min | Navigating through the file system | Code lab
 25 min | External drives, administration, and system variables | Presentation
@@ -50,7 +50,7 @@ What is a shell? How do we use it? In breakout groups, we begin working at the
 
 Time | Topic | Type
 ---- | ---- | ---- 
-90 min | [Mac OS](getting_to_know_mac.md) (in Alumni Hall 531) [Windows](getting_to_know_windows.md) (in Alumni Hall 528) The Software Carpentry activities associated with the Mac Command line 1 session are 1.Introducing the Shell 2. Navigating Files and Directories 3. Working with Files and Directories | Presentation
+90 min | [macOS](getting_to_know_mac.md) (in Alumni Hall 531) [Windows](getting_to_know_windows.md) (in Alumni Hall 528) The Software Carpentry activities associated with the Mac Command line 1 session are 1. Introducing the Shell 2. Navigating Files and Directories 3. Working with Files and Directories | Presentation
 
 ## 12:30–2:00: Lunch
 

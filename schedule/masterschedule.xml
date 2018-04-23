@@ -10,13 +10,13 @@
                 that the participants need to bring to Weeks 2 and 3, the editing and publishing
                 portions of the Institute. Topic areas include: 
                 
-* Operating system conventions(Windows, Mac, Linux) 
+* Operating system conventions (Windows, Mac, Linux) 
 * Working with files, programs, and the command line 
 * Regular expressions 
 * Understanding programming and naming conventions 
 * Understanding how the Internet and the Web work 
 * Python clinic: applying Python programming skills in a coding project 
-* Git and Github for collaborative code development 
+* Git and GitHub for collaborative code development 
 * Don’t panic: documentation and error messages</syn>
             <slot time="09:00:00">
                 <title>Getting to know your OS</title>
@@ -25,7 +25,7 @@
                     their specific environments. How does your OS both facilitate and inhibit your
                     work now, and how might that change?</desc>
                 <act time="15" type="Presentation">
-                    <desc>Introduction and technology setup.</desc>
+                    <desc>Introduction and technology setup</desc>
                     <outcome>
                         <goal>Know your machine: Windows, Mac, and Linux users will all have
                             different experiences and knowledge. Sometimes (= much of the time) the
@@ -63,13 +63,14 @@
                 <desc>What is a shell? How do we use it? In breakout groups, we begin working at the
                     command line by navigating through our filesystems a step at a time.</desc>
                 <act time="90" type="Presentation">
-                    <desc xml:space="preserve">[Mac OS](getting_to_know_mac.md) (in Alumni Hall 531)
+                    <desc xml:space="preserve">[macOS](getting_to_know_mac.md) (in Alumni Hall 531)
                         [Windows](getting_to_know_windows.md) (in Alumni Hall 528) The Software
                         Carpentry activities associated with the Mac Command line 1 session are 
                         
-1.Introducing the Shell 
+1. Introducing the Shell 
 2. Navigating Files and Directories 
-3. Working with Files and Directories</desc>
+3. Working with Files and Directories
+                    </desc>
                     <outcome/>
                 </act>
 
@@ -118,7 +119,7 @@
                     <desc>You learn how to find the location and nature of your errors in seemingly
                         inscrutable stack traces and other error reports.</desc>
                     <outcome>
-                        <goal>Understanding and dealing with error messages.</goal>
+                        <goal>Understand and deal with error messages</goal>
                     </outcome>
                 </act>
 
