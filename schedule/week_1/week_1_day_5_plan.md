@@ -2,23 +2,21 @@
 ## Synopsis
 
 Day 5 begins with an expanded session on how the Internet works. Topics covered
-                include internet security and the nitty-gritty of HTTP. Git 2 covers how to resolve
-                merge commits, along with how to use Git issues and the other site features.
+                include Internet security and the nitty-gritty of HTTP. Git 2 covers how to resolve
+                merge conflicts, along with how to use Git Issues and other site features.
                 Finally, a lesson on web technologies, including HTML, CSS, and Markdown will
-                prepare participants for future sessions, as well as familiarize them with some
+                prepare participants for future sessions, and familiarize them with some
                 common, useful tools.
 
 ## Outcome goals
-* How does SSL help protect communication?
+* How does SSL protect communication?
 * Understand the basics of HTTP requests and headers
 * Manage branches with Git
 * How to solve merge conflicts
 * GitHub Issues, Comments, and Assignments
-* Review command line git
+* Review command line Git
 * Transform documents using Pandoc
 * Understand and write HTML, CSS, and Markdown
-* Visualization as part of the text processing pipeline: making decisions, selecting formats, interacting with, and producing visualizations
-* Hands-on: a departure from Word Cloud
 ## Legend
 
 * **Presentation:** by instructors
@@ -35,14 +33,14 @@ Time | Topic | Type
 ---- | ---- | ---- 
 15 min | Review | Discussion
 25 min | Security and SSL | Discussion
-25 min | HTTP Protocol | Code lab
+25 min | HTTP protocol | Code lab
 25 min | Any other business | Discussion
 
 ## 10:30–11:00: Coffee break
 
 ## 11:00–12:30: [Git 2](git_tutorial_part_2.md)
 
-Git commits can sometimes go awry, but there are commands that undo previous edits and can help save different versions, especially when working with multiple branches. GitHub’s website has social and collaborative tools as well, though they are not available via the command line.
+Git commits can sometimes go awry, but there are commands that undo previous edits and can help save different versions, especially when working with multiple branches. GitHub’s web site has social and collaborative tools as well, though they are not accessible via the command line.
 
 Time | Topic | Type
 ---- | ---- | ---- 

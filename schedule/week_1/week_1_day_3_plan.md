@@ -3,7 +3,7 @@
 
 Day three kicks off with a deeper look at refining regular expressions to tailor
                 patterns to specific research needs. Day three introduces `grep`, which applies
-                regex to operating on the command line. Day three also introduces Python and covers
+                Regex to operating on the command line. Day three also introduces Python and covers
                 the basics of its text processing capabilities.
 
 ## Outcome goals
@@ -22,7 +22,7 @@ Day three kicks off with a deeper look at refining regular expressions to tailor
 * * *
 ## 9:00–10:30: [Regular expressions 2](regex2.md)
 
-Last session we covered simple patterns and repetition. We also did some exercises on this using `egrep`. Today we firstly want to cover alternation and grouping before we continue using `egrep` with more advanced expressions. Later on we will start compare `egreps` REs to Python.
+Last session we covered simple patterns and repetition. We also did some exercises on this using `egrep`. Today, we cover alternation and grouping before we continue using `egrep` with more advanced expressions. We then compare Regex in `egrep` and Python.
 
 Time | Topic | Type
 ---- | ---- | ---- 
