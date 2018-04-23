@@ -148,7 +148,7 @@
     <!-- create the activity times in table  -->
     <xsl:template match="act" mode="daily">
         <xsl:value-of
-            select="@time || ' min | ' || normalize-space(desc) || ' | ' || translate(@type, '_', ' ') || '&#x0a;'"
+            select="@time || ' min | ' || desc || ' | ' || translate(@type, '_', ' ') || '&#x0a;'"
         />
     </xsl:template>
     <!-- create list of goals -->

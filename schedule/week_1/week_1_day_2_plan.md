@@ -36,7 +36,11 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-90 min | The Software Carpentry activities associated with the Command line 2 session are: 3. [Working with Files and Directories](http://swcarpentry.github.io/shell-novice/03-create/) 4. [Pipes and Filters](http://swcarpentry.github.io/shell-novice/04-pipefilter/) | Discussion
+90 min | The Software Carpentry activities associated with the Command line 2
+                        session are: 3. [Working with Files and
+                        Directories](http://swcarpentry.github.io/shell-novice/03-create/) 4. [Pipes
+                        and
+                        Filters](http://swcarpentry.github.io/shell-novice/04-pipefilter/) | Discussion
 
 ## 12:30–2:00: Lunch
 

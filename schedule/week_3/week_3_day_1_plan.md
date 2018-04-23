@@ -49,7 +49,8 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-25 min | [Next steps: Beyond GitHub Pages — Flask ](flask_micro_framework.md) | Talk lab
+25 min | [Next steps: Beyond GitHub Pages — Flask
+                        ](flask_micro_framework.md) | Talk lab
 40 min | Hands on Flask | Code lab
 25 min | Review | Discussion
 

@@ -38,7 +38,7 @@ Git is a tool for managing, sharing, and creating content, particularly code.
 
 Time | Topic | Type
 ---- | ---- | ---- 
-15 min | What is Git? | Presentation
+15 min | What is Git?  | Presentation
 30 min | Setting your identity and creating a repo | Code lab
 30 min | Editing, adding, and committing | Code lab
 15 min | Synching and reverting | Code lab 

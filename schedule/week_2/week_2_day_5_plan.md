@@ -36,7 +36,8 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-90 min | Unsupervised learning, cluster analysis, PCA, paleographic analysis (continued) | Discussion
+90 min | Unsupervised learning, cluster analysis, PCA, paleographic analysis
+                        (continued) | Discussion
 
 ## 12:30–2:00: Lunch
 

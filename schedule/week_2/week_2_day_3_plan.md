@@ -24,11 +24,13 @@ Week 2, Day 3 expands upon the idea of digital editions as text processing
 
 Time | Topic | Type
 ---- | ---- | ---- 
-15 min | Review of Week 2, Day 2: computational pipelines, modeling, processing, and tokenization | Discussion
+15 min | Review of Week 2, Day 2: computational pipelines, modeling, processing,
+                        and tokenization | Discussion
 15 min | Basic normalization | Presentation
 15 min | NLTK | Code lab
 15 min | Regular expressions | Code lab
-15 min | Basic XML normalization: transforming XML to a stream of normalized (word) tokens | Code lab
+15 min | Basic XML normalization: transforming XML to a stream of normalized (word)
+                        tokens | Code lab
 15 min | Hands-on exercise with NLTK and regular expressions | Code lab
 
 ## 10:30–11:00: Coffee break

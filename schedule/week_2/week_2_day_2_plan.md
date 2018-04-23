@@ -28,7 +28,8 @@ The first half of Week 2, Day 2 continues the focus on document modeling from th
 Time | Topic | Type
 ---- | ---- | ---- 
 10 min | Review of [week 2, day 1](week_2_day_1_plan.md) | Discussion
-10 min | [Introduction to the LMNL data model and sawtooth syntax](lmnl_syntax.md) | Presentation
+10 min | [Introduction to the LMNL data model and sawtooth
+                        syntax](lmnl_syntax.md) | Presentation
 20 min | Tag "[Ozymandias](ozymandias.txt)" in LMNL | Code lab
 20 min | Introduction to TAG and Alexandria | Presentation
 15 min | [Alexandria installation](alexandria.md) | Code lab
@@ -46,7 +47,8 @@ Are you making an edition of a manuscript or of a text? What is the role of
 Time | Topic | Type
 ---- | ---- | ---- 
 20 min | Explore [edition terms and concepts](edition_terms_and_concepts.md) | Discussion
-20 min | It isn’t just words! [What story are you trying to tell?](sample_visualizations.md) | Discussion
+20 min | It isn’t just words! [What story are you trying to
+                        tell?](sample_visualizations.md) | Discussion
 30 min | Explore participant data in light of terms and concepts | Talk lab
 20 min | General discussion of Talk lab results | Discussion
 
@@ -78,6 +80,7 @@ Time | Topic | Type
 30 min | About normalization (`Normalization.ipynb` notebook) | Code lab
 10 min | Unicode normalization (`Unicode-normalization.ipynb` notebook) | Presentation
 20 min | Normalization examples (`Normalization_examples.ipynb` notebook) | Presentation
-30 min | Normalizing XML input (`Integrating_XML_with_Python.ipynb` notebook) | Code lab
+30 min | Normalizing XML input (`Integrating_XML_with_Python.ipynb`
+                        notebook) | Code lab
 
 We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 2, Day 2 feedback](week_2_day_2_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 2, Day 2 feedback”.
