@@ -26,7 +26,7 @@ Day 5 begins with an expanded session on how the Internet works. Topics covered
 * **Code lab:** participants code alone or in small groups
 
 * * *
-## 9:00–10:30: (How the Internet works 2)[internet_2.md]
+## 9:00–10:30: [How the Internet works 2](internet_2.md)
 
 DESCRIPTION NEEDED
 
@@ -39,7 +39,7 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: (Git 2)[git_tutorial_part_2.md]
+## 11:00–12:30: [Git 2](git_tutorial_part_2.md)
 
 Git commits can sometimes go awry, but there are commands that undo previous
                     edits and can help save different versions, especially when working with
@@ -55,7 +55,7 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: (Web Technologies)[web_technologies.md]
+## 2:00–3:30: [Web technologies](web_technologies.md)
 
 This session introduces HTML, CSS, and JavaScript, which are the most
                     fundamental technologies for publishing web pages. Markdown, a simplified way to
@@ -73,7 +73,7 @@ Time | Topic | Type
 
 ## 3:30–4:00: Coffee break
 
-## 4:00–5:30: Review and Wrap-up
+## 4:00–5:30: Review and wrap-up
 
 Time | Topic | Type
 ---- | ---- | ---- 

@@ -20,7 +20,7 @@ Day three kicks off with a deeper look at refining regular expressions to tailor
 * **Code lab:** participants code alone or in small groups
 
 * * *
-## 9:00–10:30: (Regular Expressions 2)[regex2.md]
+## 9:00–10:30: [Regular expressions 2](regex2.md)
 
 Last session we covered simple patterns and repetition. We also did some
                     exercises on this using `egrep`. Today we firstly want to cover alternation and
@@ -35,7 +35,7 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: (Command line 3)[command_line_3_djb.md]
+## 11:00–12:30: [Command line 3](command_line_3_djb.md)
 
 With regular expressions under our belt, we are ready to learn advanced `grep`
                     skills for the command line. We will explore how we can search for lines that

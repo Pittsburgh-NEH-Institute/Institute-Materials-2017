@@ -5,7 +5,7 @@ Week 1 is dedicated to developing background knowledge of the computing environm
                 that the participants need to bring to Weeks 2 and 3, the editing and publishing
                 portions of the Institute. Topic areas include: 
                 
-* Operating system conventions (Windows, Mac, Linux) 
+* Operating system conventions(Windows, Mac, Linux) 
 * Working with files, programs, and the command line 
 * Regular expressions 
 * Understanding programming and naming conventions 
@@ -54,7 +54,7 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: [Programs and Files 1](programs_and_files1.md)
+## 2:00–3:30: [Programs and files 1](programs_and_files1.md)
 
 Now that we know where to find them and what they are, how can we manipulate
                     and use files and directories for our benefit?
@@ -68,7 +68,7 @@ Time | Topic | Type
 
 ## 3:30–4:00: Coffee break
 
-## 4:00–5:30: Don't panic: interpretation of error messages
+## 4:00–5:30: Don’t panic: interpretation of error messages
 
 Time | Topic | Type
 ---- | ---- | ---- 

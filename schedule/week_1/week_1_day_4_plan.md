@@ -19,7 +19,7 @@ Day 4 begins with an introduction to how the Internet works, a topic that will
 * **Code lab:** participants code alone or in small groups
 
 * * *
-## 9:00–10:30: (How the internet works 1)[internet_1.md]
+## 9:00–10:30: [How the Internet works 1](internet_1.md)
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -30,7 +30,7 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: (Git 1)[git_tutorial.md]
+## 11:00–12:30: [Git 1](git_tutorial.md)
 
 Git is a tool for managing, sharing, and creating content, particularly code.
                     This tutorial aims to acclimate users to command line Git, which bypasses the
@@ -45,7 +45,7 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: (Python clinic 2)[Python_Clinic_Day_2.html]
+## 2:00–3:30: [Python clinic 2](Python_Clinic_Day_2.html)
 
 After practicing first with processing single documents using Python, we move
                     to processing a corpus (in this case, of U.S. Presidential inaugural addresses)

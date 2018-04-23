@@ -82,7 +82,7 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>[Programs and Files 1](programs_and_files1.md)</title>
+                <title>[Programs and files 1](programs_and_files1.md)</title>
                 <desc>Now that we know where to find them and what they are, how can we manipulate
                     and use files and directories for our benefit?</desc>
                 <act time="15" type="Presentation">
@@ -113,7 +113,7 @@
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title>Don't panic: interpretation of error messages</title>
+                <title>Don’t panic: interpretation of error messages</title>
                 <act time="90" type="Discussion">
                     <desc>You learn how to find the location and nature of your errors in seemingly
                         inscrutable stack traces and other error reports.</desc>
@@ -232,7 +232,7 @@
                 regex to operating on the command line. Day three also introduces Python and covers
                 the basics of its text processing capabilities.</syn>
             <slot time="09:00:00">
-                <title>[Regular Expressions 2](regex2.md)</title>
+                <title>[Regular expressions 2](regex2.md)</title>
                 <desc>Last session we covered simple patterns and repetition. We also did some
                     exercises on this using `egrep`. Today we firstly want to cover alternation and
                     grouping before we continue using `egrep` with more advanced expressions. Later
@@ -347,7 +347,7 @@
                 Institute). We conclude with more advanced Python activities within Jupyter
                 Notebook.</syn>
             <slot time="09:00:00">
-                <title>[How the internet works 1](internet_1.md)</title>
+                <title>[How the Internet works 1](internet_1.md)</title>
 
                 <act time="20" type="Discussion">
                     <desc>Hostnames and DNS</desc>
@@ -532,7 +532,7 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>[Web Technologies](web_technologies.md)</title>
+                <title>[Web technologies](web_technologies.md)</title>
                 <desc>This session introduces HTML, CSS, and JavaScript, which are the most
                     fundamental technologies for publishing web pages. Markdown, a simplified way to
                     create and publish HTML, is used both on GitHub and in Jupyter notebook. Pandoc
@@ -568,7 +568,7 @@
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title>Review and Wrap-up</title>
+                <title>Review and wrap-up</title>
                 <act time="90" type="Discussion">
                     <desc>Review</desc>
                 </act>
