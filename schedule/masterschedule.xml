@@ -6,14 +6,18 @@
         <title>Bootcamp: Computational groundwork skills </title>
         <day d="Monday">
             <date>July 10</date>
-            <syn>Week 1 is dedicated to developing background knowledge of the computing environment
+            <syn xml:space="preserve">Week 1 is dedicated to developing background knowledge of the computing environment
                 that the participants need to bring to Weeks 2 and 3, the editing and publishing
-                portions of the Institute. Topic areas include: * Operating system conventions
-                (Windows, Mac, Linux) * Working with files, programs, and the command line * Regular
-                expressions * Understanding programming and naming conventions * Understanding how
-                the Internet and the Web work * Python clinic: applying Python programming skills in
-                a coding project * Git and Github for collaborative code development * Don’t panic:
-                documentation and error messages</syn>
+                portions of the Institute. Topic areas include: 
+                * Operating system conventions
+                (Windows, Mac, Linux) 
+                * Working with files, programs, and the command line 
+                * Regular expressions 
+                * Understanding programming and naming conventions 
+                * Understanding how the Internet and the Web work 
+                * Python clinic: applying Python programming skills in a coding project 
+                * Git and Github for collaborative code development 
+                * Don’t panic: documentation and error messages</syn>
             <slot time="09:00:00">
                 <title>Getting to know your OS</title>
                 <desc>[Windows](getting_to_know_windows.md) and [Mac](getting_to_know_mac.md) users
@@ -59,11 +63,12 @@
                 <desc>What is a shell? How do we use it? In breakout groups, we begin working at the
                     command line by navigating through our filesystems a step at a time.</desc>
                 <act time="90" type="Presentation">
-                    <desc>[Mac OS](getting_to_know_mac.md) (in Alumni Hall 531)
+                    <desc xml:space="preserve">[Mac OS](getting_to_know_mac.md) (in Alumni Hall 531)
                         [Windows](getting_to_know_windows.md) (in Alumni Hall 528) The Software
-                        Carpentry activities associated with the Mac Command line 1 session are 1.
-                        Introducing the Shell 2. Navigating Files and Directories 3. Working with
-                        Files and Directories</desc>
+                        Carpentry activities associated with the Mac Command line 1 session are 
+                        1.Introducing the Shell 
+                        2. Navigating Files and Directories 
+                        3. Working with Files and Directories</desc>
                     <outcome/>
                 </act>
 

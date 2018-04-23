@@ -35,7 +35,7 @@ What is a shell? How do we use it? In breakout groups, we begin working at the c
 
 Time | Topic | Type
 ---- | ---- | ---- 
-90 min | [Mac OS](getting_to_know_mac.md) (in Alumni Hall 531) [Windows](getting_to_know_windows.md) (in Alumni Hall 528) The Software Carpentry activities associated with the Mac Command line 1 session are 1. Introducing the Shell 2. Navigating Files and Directories 3. Working with Files and Directories | Presentation
+90 min | [Mac OS](getting_to_know_mac.md) (in Alumni Hall 531) [Windows](getting_to_know_windows.md) (in Alumni Hall 528) The Software Carpentry activities associated with the Mac Command line 1 session are 1.Introducing the Shell 2. Navigating Files and Directories 3. Working with Files and Directories | Presentation
 
 ## 12:30–2:00: Lunch
 
