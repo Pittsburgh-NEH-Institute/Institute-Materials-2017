@@ -41,10 +41,7 @@ Time | Topic | Type
 
 ## 11:00–12:30: [Git 2](git_tutorial_part_2.md)
 
-Git commits can sometimes go awry, but there are commands that undo previous
-                    edits and can help save different versions, especially when working with
-                    multiple branches. GitHub’s website has social and collaborative tools as well,
-                    though they are not available via the command line.
+Git commits can sometimes go awry, but there are commands that undo previous edits and can help save different versions, especially when working with multiple branches. GitHub’s website has social and collaborative tools as well, though they are not available via the command line.
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -57,11 +54,7 @@ Time | Topic | Type
 
 ## 2:00–3:30: [Web technologies](web_technologies.md)
 
-This session introduces HTML, CSS, and JavaScript, which are the most
-                    fundamental technologies for publishing web pages. Markdown, a simplified way to
-                    create and publish HTML, is used both on GitHub and in Jupyter notebook. Pandoc
-                    is a program for converting file formats, including HTML, Markdown, and
-                    others.
+This session introduces HTML, CSS, and JavaScript, which are the most fundamental technologies for publishing web pages. Markdown, a simplified way to create and publish HTML, is used both on GitHub and in Jupyter notebook. Pandoc is a program for converting file formats, including HTML, Markdown, and others.
 
 Time | Topic | Type
 ---- | ---- | ---- 

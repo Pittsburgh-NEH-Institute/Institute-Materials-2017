@@ -3,7 +3,7 @@
     xmlns:math="http://www.w3.org/2005/xpath-functions/math" exclude-result-prefixes="xs math"
     version="3.0">
     <xsl:output method="text" omit-xml-declaration="yes"/>
-
+    <xsl:preserve-space elements="list"/>
     <xsl:function name="djb:timeRange" as="xs:string">
         <!--
             Parameters: $startTime as xs:time, $duration as xs:double
@@ -136,7 +136,7 @@
         <xsl:value-of
             select="'## ' || djb:timeRange(@time, sum(act/@time)) || ': ' || title || '&#x0a;&#x0a;'"/>
         <xsl:if test="desc">
-            <xsl:value-of select="desc || '&#x0a;&#x0a;'"/>
+            <xsl:value-of select="normalize-space(desc) || '&#x0a;&#x0a;'"/>
         </xsl:if>
         <xsl:if test="not(title = ('Coffee break', 'Lunch'))">
             <xsl:text>Time | Topic | Type&#x0a;</xsl:text>

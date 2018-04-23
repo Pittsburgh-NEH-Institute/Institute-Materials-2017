@@ -20,8 +20,7 @@ The second day of Week 1 starts with an introduction to regular expressions. Fro
 * * *
 ## 9:00–10:30: Regular expressions 1
 
-What are regular expressions, and how can they improve our pattern-matching
-                    when dealing with an abundance of textual data?
+What are regular expressions, and how can they improve our pattern-matching when dealing with an abundance of textual data?
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -46,9 +45,7 @@ Time | Topic | Type
 
 ## 2:00–3:30: [Programs and files 2](programs_and_files2.md)
 
-We have a basic grasp of directory navigation, but what don’t we know about
-                    `$PATH`? How does our environment affect our file processing? How can we use
-                    commands and variables to manipulate files more efficiently?
+We have a basic grasp of directory navigation, but what don’t we know about `$PATH`? How does our environment affect our file processing? How can we use commands and variables to manipulate files more efficiently?
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -61,9 +58,7 @@ Time | Topic | Type
 
 ## 4:00–5:30: Review
 
-A recap of regular expressions, working in the command line, and file
-                    manipulation. What topics would benefit from additional clarifcation? What are
-                    you confused about? What would you like to know more about?
+A recap of regular expressions, working in the command line, and file manipulation. What topics would benefit from additional clarifcation? What are you confused about? What would you like to know more about?
 
 Time | Topic | Type
 ---- | ---- | ---- 

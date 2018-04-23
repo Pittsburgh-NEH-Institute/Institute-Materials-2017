@@ -32,9 +32,7 @@ Time | Topic | Type
 
 ## 11:00–12:30: [Git 1](git_tutorial.md)
 
-Git is a tool for managing, sharing, and creating content, particularly code.
-                    This tutorial aims to acclimate users to command line Git, which bypasses the
-                    GUI and provides both more power and more flexibility.
+Git is a tool for managing, sharing, and creating content, particularly code. This tutorial aims to acclimate users to command line Git, which bypasses the GUI and provides both more power and more flexibility.
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -47,9 +45,7 @@ Time | Topic | Type
 
 ## 2:00–3:30: [Python clinic 2](Python_Clinic_Day_2.html)
 
-After practicing first with processing single documents using Python, we move
-                    to processing a corpus (in this case, of U.S. Presidential inaugural addresses)
-                    with NLTK.
+After practicing first with processing single documents using Python, we move to processing a corpus (in this case, of U.S. Presidential inaugural addresses) with NLTK.
 
 Time | Topic | Type
 ---- | ---- | ---- 

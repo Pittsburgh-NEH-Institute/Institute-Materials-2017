@@ -39,10 +39,7 @@ Time | Topic | Type
 
 ## 11:00–12:30: Theory of edition
 
-Are you making an edition of a manuscript or of a text? What is the role of
-                    language and orthography in your edition? How will the text be presented? How
-                    will users interact with the views? What will be the role of graphic
-                    visualization?
+Are you making an edition of a manuscript or of a text? What is the role of language and orthography in your edition? How will the text be presented? How will users interact with the views? What will be the role of graphic visualization?
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -67,13 +64,7 @@ Time | Topic | Type
 
 ## 4:00–5:30: Normalization
 
-Before we start: 1. Navigate to your fork of our Institute repo and run `git
-                    pull upstream remote`. 2. Start Jupyter notebook either from the Anaconda
-                    launcher or by navigating to your home directory and typing `jupyter notebook`.
-                    3. Within the main Jupyter notebook web page, navigate to schedule/week_2 in
-                    your fork of our repo and open `Normalization.ipynb`,
-                    `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and
-                    `Integrating_XML_with_Python.ipynb`.
+Before we start: 1. Navigate to your fork of our Institute repo and run `git pull upstream remote`. 2. Start Jupyter notebook either from the Anaconda launcher or by navigating to your home directory and typing `jupyter notebook`. 3. Within the main Jupyter notebook web page, navigate to schedule/week_2 in your fork of our repo and open `Normalization.ipynb`, `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and `Integrating_XML_with_Python.ipynb`.
 
 Time | Topic | Type
 ---- | ---- | ---- 

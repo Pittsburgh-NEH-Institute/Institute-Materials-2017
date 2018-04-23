@@ -23,11 +23,7 @@ Scholars create digital editions to serve research purposes that may differ from
 * * *
 ## 9:00–10:30: Planning your project
 
-There cannot be a single set of *best practice* recommendations for all
-                    digital editions because scholars create editions to meet different research
-                    goals, and they do that under different working conditions. What’s the purpose
-                    of your edition, and what are the resources at your disposal and the constraints
-                    on your efforts?
+There cannot be a single set of *best practice* recommendations for all digital editions because scholars create editions to meet different research goals, and they do that under different working conditions. What’s the purpose of your edition, and what are the resources at your disposal and the constraints on your efforts?
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -41,8 +37,7 @@ Time | Topic | Type
 
 ## 11:00–12:30: Model, syntax, and markup semantics
 
-How can the elaboration of a digital edition be modularized? How are *model*,
-                    *syntax*, and *markup semantics* similar and different?
+How can the elaboration of a digital edition be modularized? How are *model*, *syntax*, and *markup semantics* similar and different?
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -57,9 +52,7 @@ Time | Topic | Type
 
 ## 2:00–3:30: Transcription with markup: XML
 
-How are documents like trees and how are they different? What is represented
-                    by the model alone (the XML tree), and what requires markup semantics (schema)?
-                    What’s hard in XML and how do we do it anyway?
+How are documents like trees and how are they different? What is represented by the model alone (the XML tree), and what requires markup semantics (schema)? What’s hard in XML and how do we do it anyway?
 
 Time | Topic | Type
 ---- | ---- | ---- 
