@@ -318,7 +318,6 @@
                 </act>
                 <outcome>
                     <goal>Facility with Python</goal>
-
                 </outcome>
             </slot>
             <slot time="15:30:00">
@@ -336,27 +335,33 @@
         </day>
         <day d="Thursday">
             <date>July 20</date>
-            <syn>Week 2, Day 4 concentrates on ...</syn>
+            <syn>Day 4 begins with an introduction to how the Internet works, a topic that will
+                recur when we turn to publishing in Week 3. This day also introduces the version
+                management system Git (which, among other things, hosts all materials for our
+                Institute). We conclude with more advanced Python activities within Jupyter
+                Notebook.</syn>
             <slot time="09:00:00">
-                <title>Text analytics 1</title>
-                <desc>Text analytics 1</desc>
-                <act time="15" type="Presentation">
-                    <desc>Bag of words</desc>
+                <title>(How the internet works 1)[internet_1.md]</title>
+
+                <act time="20" type="Discussion">
+                    <desc>Hostnames and DNS</desc>
+
+                    <outcome>
+                        <goal>Understand how communication over the Internet works</goal>
+                    </outcome>
+                </act>
+                <act time="20" type="Discussion">
+                    <desc>IP and Internet addresses</desc>
 
                     <outcome/>
                 </act>
-                <act time="30" type="Presentation">
-                    <desc>Text processing</desc>
+                <act time="25" type="Presentation">
+                    <desc>Network communication</desc>
 
                     <outcome/>
                 </act>
-                <act time="15" type="Code_lab">
-                    <desc>Text as tables</desc>
-
-                    <outcome/>
-                </act>
-                <act time="30" type="Code_lab">
-                    <desc>Query the tables</desc>
+                <act time="25" type="Code_lab">
+                    <desc>Network protocols</desc>
 
                     <outcome/>
                 </act>
@@ -368,11 +373,28 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>Text analytics 1 (cont.)</title>
-                <act time="90" type="Code_lab">
-                    <desc>Bag of words, text processing, text as tables, query the tables
-                        (continued) </desc>
+                <title>(Git 1)[git_tutorial.md]</title>
+                <desc>Git is a tool for managing, sharing, and creating content, particularly code.
+                    This tutorial aims to acclimate users to command line Git, which bypasses the
+                    GUI and provides both more power and more flexibility.</desc>
+                <act time="15" type="Presentation">
+                    <desc>What is Git? </desc>
                 </act>
+                <act time="30" type="Code_lab">
+                    <desc>Setting your identity and creating a repo</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Editing, adding, and committing</desc>
+                </act>
+                <act time="15" type="Code_lab ">
+                    <desc>Synching and reverting</desc>
+                </act>
+                <outcome>
+                    <goal>Understand why version control matters</goal>
+                    <goal> Understand the Git workflow</goal>
+                    <goal>Become comfortable with command line Git</goal>
+                    <goal>Know how to clone a Git repo</goal>
+                </outcome>
 
             </slot>
             <slot time="12:30:00">
@@ -382,38 +404,30 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>Modeling: annotations as layers to the text</title>
-                <desc>Modeling: annotations as layers to the text</desc>
-                <act time="15" type="Discussion">
-                    <desc>Review of tokenization, normalization, and collation from the point of
-                        view of annotations</desc>
+                <title>(Python clinic 2)[Python_Clinic_Day_2.html]</title>
+                <desc>After practicing first with processing single documents using Python, we move
+                    to processing a corpus (in this case, of U.S. Presidential inaugural addresses)
+                    with NLTK.</desc>
+                <act time="20" type="Presentation">
+                    <desc>Review</desc>
 
                     <outcome/>
                 </act>
-                <act time="15" type="Talk_lab">
-                    <desc>Envisioning your edition as a layered model</desc>
+                <act time="25" type="Code_lab">
+                    <desc>Processing single files</desc>
+                </act>
+                <act time="20" type="Code_lab">
+                    <desc>Processing a corpus</desc>
+
+                    <outcome>
+                        <goal>Process text corpora with Python</goal>
+                    </outcome>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>Troubleshooting</desc>
 
                     <outcome/>
                 </act>
-                <act time="15" type="Presentation">
-                    <desc>Existing models (e.g. computational linguistics)</desc>
-
-                    <outcome/>
-                </act>
-                <act time="15" type="Talk_lab">
-                    <desc>Hands-on: identify your own layers</desc>
-
-                    <outcome/>
-                </act>
-                <act time="30" type="Code_lab">
-                    <desc>Hands-on: model your edition's pipeline</desc>
-
-                </act>
-                <outcome>
-                    <goal>Grasping the concept of modelling text as trees and graphs</goal>
-                    <goal>Understanding annotation as a form of adding layers to text</goal>
-                    <goal>Varieties of layered editions</goal>
-                </outcome>
             </slot>
             <slot time="15:30:00">
                 <title>Coffee break</title>
@@ -422,60 +436,48 @@
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title>Collation 2</title>
-                <desc>Collation 2</desc>
-                <act time="30" type="Presentation">
-                    <desc>Advanced collation</desc>
+                <title>Review</title>
+                <desc>Review</desc>
+                <act time="90" type="Discussion">
+                    <desc>Review</desc>
                     <outcome/>
                 </act>
-                <act time="30" type="Code_lab">
-                    <desc>Near-matching - theory (as step in the computational pipeline)</desc>
 
-                    <outcome/>
-                </act>
-                <act time="30" type="Code_lab">
-                    <desc>Hands-on: ...</desc>
-
-                    <outcome/>
-                </act>
-                <outcome>
-                    <goal>Deeper discussion of the alignment step in the GM</goal>
-                    <goal>An awareness of computation to understand that we do near-matching late
-                        (in the pipeline) for reasons of efficiency</goal>
-                </outcome>
             </slot>
         </day>
         <day d="Friday">
-            <date>July 21</date>
-            <syn>Week 2, Day 5 concentrates on querying text, on creating visualizations, and on
-                presenting research outcomes to the end user. After desigining and implementing the
-                content of your edition, after adding layers of information to your model, we think
-                about how to query the information and how to present it to an audience. It means
-                that the content need to be made accessible in a way that does not require an end
-                user to code.</syn>
+            <date>July 14</date>
+            <syn>Day 5 begins with an expanded session on how the Internet works. Topics covered
+                include internet security and the nitty-gritty of HTTP. Git 2 covers how to resolve
+                merge commits, along with how to use Git issues and the other site features.
+                Finally, a lesson on web technologies, including HTML, CSS, and Markdown will
+                prepare participants for future sessions, as well as familiarize them with some
+                common, useful tools.</syn>
             <slot time="09:00:00">
-                <title>Text analytics 2</title>
-                <desc>Text analytics 2</desc>
+                <title>(How the Internet works 2)[internet_2.md]</title>
+                <desc>DESCRIPTION NEEDED</desc>
 
-                <act time="30" type="Presentation">
-                    <desc>Unsupervised learning</desc>
-
-                    <outcome/>
-                </act>
-                <act time="30" type="Code_lab">
-                    <desc>Cluster analysis</desc>
-
-                    <outcome/>
-                </act>
                 <act time="15" type="Discussion">
-                    <desc>PCA</desc>
+                    <desc>Review</desc>
 
                     <outcome/>
                 </act>
-                <act time="15" type="Presentation">
-                    <desc>Paleographic analysis</desc>
+                <act time="25" type="Discussion">
+                    <desc>Security and SSL</desc>
+                    <outcome>
+                        <goal>How does SSL help protect communication?</goal>
+                    </outcome>
 
-                    <outcome/>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>HTTP Protocol</desc>
+                    <outcome>
+                        <goal>Understand the basics of HTTP requests and headers</goal>
+                    </outcome>
+                </act>
+                <act time="25" type="Discussion">
+                    <desc>Any other business</desc>
+
                 </act>
             </slot>
             <slot time="10:30:00">
@@ -486,12 +488,35 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>Text analytics 2 (cont.)</title>
-                <act time="90" type="Discussion">
-                    <desc>Unsupervised learning, cluster analysis, PCA, paleographic analysis
-                        (continued)</desc>
+                <title>(Git 2)[git_tutorial_part_2.md]</title>
+                <desc>Git commits can sometimes go awry, but there are commands that undo previous
+                    edits and can help save different versions, especially when working with
+                    multiple branches. GitHub’s website has social and collaborative tools as well,
+                    though they are not available via the command line.</desc>
+                <act time="20" type="Code_lab">
+                    <desc>Managing branches</desc>
 
-                    <outcome/>
+                    <outcome>
+                        <goal>Manage branches with Git</goal>
+                    </outcome>
+                </act>
+                <act time="20" type="Presentation">
+                    <desc>Merge conflicts</desc>
+                    <outcome>
+                        <goal>How to solve merge conflicts</goal>
+                    </outcome>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Social GitHub</desc>
+                    <outcome>
+                        <goal>GitHub Issues, Comments, and Assignments</goal>
+                    </outcome>
+                </act>
+                <act time="20" type="Talk_lab">
+                    <desc>Git review</desc>
+                    <outcome>
+                        <goal>Review command line git</goal>
+                    </outcome>
                 </act>
             </slot>
             <slot time="12:30:00">
@@ -501,20 +526,34 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>Queries and XML</title>
-                <desc>Queries and XML</desc>
-                <act time="45" type="Code_lab">
-                    <desc>Querying your text with XQuery in an eXist framework</desc>
+                <title>(Web Technologies)[web_technologies.md]</title>
+                <desc>This session introduces HTML, CSS, and JavaScript, which are the most
+                    fundamental technologies for publishing web pages. Markdown, a simplified way to
+                    create and publish HTML, is used both on GitHub and in Jupyter notebook. Pandoc
+                    is a program for converting file formats, including HTML, Markdown, and
+                    others.</desc>
+                <act time="15" type="Code_lab">
+                    <desc>HTML</desc>
 
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>CSS</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>JavaScript</desc>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Markdown</desc>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Pandoc</desc>
                     <outcome>
-                        <goal>Learning XQuery to ...</goal>
+                        <goal>Transform documents using Pandoc</goal>
                     </outcome>
                 </act>
-                <act time="45" type="Code_lab">
-                    <desc>Using elastic search to index the content of your edition</desc>
-
-                    <outcome/>
-                </act>
+                <outcome>
+                    <goal>Understand and write HTML, CSS, and Markdown</goal>
+                </outcome>
             </slot>
             <slot time="15:30:00">
                 <title>Coffee break</title>
@@ -523,11 +562,9 @@
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title>Visualization as outcome</title>
-                <desc>Visualization as outcome</desc>
+                <title>Review and Wrap-up</title>
                 <act time="90" type="Discussion">
-                    <desc>Getting from layered annotations to (a specific) visualization</desc>
-
+                    <desc>Review</desc>
                 </act>
                 <outcome>
                     <goal>Visualization as part of the text processing pipeline: making decisions,
