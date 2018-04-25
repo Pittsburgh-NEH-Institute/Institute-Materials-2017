@@ -22,11 +22,11 @@ If you don't have a Github account, create one here:
 
 ## Preparation
 
-![](git_repository_preparation.gif)
+![](images/git_repository_preparation.gif)
 
 ## General workflow 
 
-![](git_process_diagram.gif)
+![](images/git_process_diagram.gif)
 
 ## Create a new Github repository
 
@@ -42,17 +42,10 @@ If you don't have a Github account, create one here:
 	* You can create a CODEOWNERS file, which describes which individuals or teams own certain files in the repository.
 	* You can create a .gitignore file, which is a set of ignore rules.
 	* You can choose to add a software license for your project.
-
-		For this exercise choose to at least add a README file. You can choose to add a license if you like. 	
+	* For this exercise choose to at least add a `README` file. You can choose to add a license if you like. 	
 * When you're finished, click Create repository.
 
-
-
 Your repository will be located at `https://github.com/username/repositoryname`.
-
-
-
-
 
 ## Set your identity on your local machine
 
@@ -63,10 +56,9 @@ Open a terminal window and type the following commands, replacing John Doe with 
 * `$ git config --global user.name "John Doe"`
 * `$ git config --global user.email johndoe@example.com`
 
-
 ## Cloning remote repositories
 
-![Git clone](git_cloning.gif)
+![Git clone](images/git_cloning.gif)
 
 To work with the repository we just created we need to transfer the data from the remote repository to the local machine. Copying a remote repository to the local machine is called cloning in Git. For completeness sake I also included in the table below the git command to create a new repository on the local machine. 
 
@@ -86,15 +78,12 @@ $ mkdir Workspace
 $ cd Workspace
 ```
 
-Now we clone the repository that we just made on Github to the local machine.
-
+Now we clone the repository that we just made on GitHub to the local machine.
 
 ```bash
 $ git clone https://github.com/username/repositoryname
-
 $ cd repositoryname
 $ ls -lisa
-
 ```
 
 There should be your files. 
