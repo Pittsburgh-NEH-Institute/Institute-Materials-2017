@@ -82,7 +82,7 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>[Programs and files 1](programs_and_files1.md)</title>
+                <title>[Programs and files 1](programs_and_files_1.md)</title>
                 <desc>Now that we know where to find them and what they are, how can we manipulate
                     and use files and directories for our benefit?</desc>
                 <act time="15" type="Presentation">
@@ -184,7 +184,7 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>[Programs and files 2](programs_and_files2.md)</title>
+                <title>[Programs and files 2](programs_and_files_2.md)</title>
                 <desc>We have a basic grasp of directory navigation, but what don’t we know about
                     `$PATH`? How does our environment affect our file processing? How can we use
                     commands and variables to manipulate files more efficiently?</desc>

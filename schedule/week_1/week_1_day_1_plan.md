@@ -52,7 +52,7 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: [Programs and files 1](programs_and_files1.md)
+## 2:00–3:30: [Programs and files 1](programs_and_files_1.md)
 
 Now that we know where to find them and what they are, how can we manipulate and use files and directories for our benefit?
 
