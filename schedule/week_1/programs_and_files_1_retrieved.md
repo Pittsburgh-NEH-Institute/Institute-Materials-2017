@@ -24,8 +24,8 @@
 * Why UTF-8 is preferred by most people: backwards compatibility
 * How to know what you have: the `file` command
 * How to change what you have: your text editor
-   * [Example on Notepad++](images/programs_and_files1_ansi.png)
-   * [Example on BBEdit](images/programs_and_files1_bbedit.png)
+   * [Example on Notepad++](images/programs_and_files_1_ansi.png)
+   * [Example on BBEdit](images/programs_and_files_1_bbedit.png)
 * How to change what you have on the command line: `iconv -f CP1251 -t UTF-8 oldfile.txt > newfile.txt`
 * How to get up close and personal with the bits: `xxd -l 1000 filename` or `xxd filename` for the whole file
  
