@@ -2,11 +2,11 @@
 
 ## Using a central repository for a project
 
-![Git central repository](git_central_repo.gif)
+![Git central repository](images/git_central_repo.gif)
 
 ## Forking repositories
 
-![Git forking repositories](git_forking.gif)
+![Git forking repositories](images/git_forking.gif)
 
 * Log in to Github
 * On Github fork the NEH Institute Materials 2017 repository
@@ -14,7 +14,6 @@
 In your Workspace directory in your home directory do:
 `$ git clone https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017`
 * On your local machine add the original repository as a second remote repository called upstream
-
 
 ```bash
 $ git remote -v
@@ -42,13 +41,11 @@ upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
 
 What you think Git is:
 
-![Git branch simplified](git_branch_simplified.gif)
+![Git branch simplified](images/git_branch_simplified.gif)
 
 What Git really is:
 
-![Git branch real life](git_branch_real_life.gif)
-
-
+![Git branch real life](images/git_branch_real_life.gif)
 
 Command | Description
 --------|------------
@@ -62,8 +59,7 @@ Command | Description
 
 ## How a merge works
 
-![Git syncing repositories](git_syncing.gif)
-
+![Git syncing repositories](images/git_syncing.gif)
 
 Command | Description
 --------|------------
@@ -79,9 +75,6 @@ Command | Description
 
 ## How to resolve a merge conflict
 
-
-
-
 ## Notes
 
 * A fork is a remote repository on GitHub. 
@@ -92,15 +85,6 @@ Command | Description
 * Explain difference between a pull and a fetch
 * The Git `pull` command is not the same as a *pull request* on GitHub.
 * Git does not track empty directories or empty files.
-
-
-
-
-
-
-
-
-
 
 ## Terms learned part 2
 

@@ -101,12 +101,6 @@ origin	https://github.com/username/repositoryname (push)
 
 What *fetch* and *push* stand for we will get into later (under section syncing repositories)
 
-
-
-
-
-
-
 ## Working directory
 
 When you have a terminal window open, you are in what is called the *working directory*. The complete repository, with all the changes that people have ever made, is present, but in the background. Information other than current versions of your files is outside your working directory, but you can reach it when you need it.
@@ -118,7 +112,7 @@ When you have a terminal window open, you are in what is called the *working dir
 
 ## Working with changes locally and tracking them
 
-![Git commit](git_making_changes.gif)
+![Git commit](images/git_making_changes.gif)
 
 Command | Description 
 --------|-----------------
@@ -163,10 +157,9 @@ You type | What happens
 
 The use of the escape key in Vim, the `i` for insert mode, `:wq` and `:q!` to cancel 
 
-
 # Syncing repositories
 
-![Git syncing repositories](git_syncing.gif)
+![Git syncing repositories](images/git_syncing.gif)
 
 Command | Description
 ------- | -----------
@@ -175,7 +168,6 @@ Command | Description
  `git fetch` | Fetch the commits from a remote repository into the local repository
  `git merge` | Merge the commits from the local repository with commits fetched from a remote repository (actually this works on branches; this will be explained in the git tutorial part 2)
 
-
 ## Terms learned
 
 * Repository
@@ -183,4 +175,3 @@ Command | Description
 * Working directory
 * Commit
 * Push and pull
-
