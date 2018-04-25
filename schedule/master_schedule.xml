@@ -82,7 +82,7 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>[Programs and files 1](programs_and_files1.md)</title>
+                <title>[Programs and files 1](programs_and_files_1.md)</title>
                 <desc>Now that we know where to find them and what they are, how can we manipulate
                     and use files and directories for our benefit?</desc>
                 <act time="15" type="Presentation">
@@ -138,7 +138,7 @@
 
                 </act>
                 <act time="15" type="Presentation">
-                    <desc>Why use [regular expressions](regex1.md)</desc>
+                    <desc>Why use [regular expressions](regex_1.md)</desc>
                 </act>
                 <act time="30" type="Code_lab">
                     <desc>Simple patterns</desc>
@@ -184,7 +184,7 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>[Programs and files 2](programs_and_files2.md)</title>
+                <title>[Programs and files 2](programs_and_files_2.md)</title>
                 <desc>We have a basic grasp of directory navigation, but what don’t we know about
                     `$PATH`? How does our environment affect our file processing? How can we use
                     commands and variables to manipulate files more efficiently?</desc>
@@ -231,7 +231,7 @@
                 Regex to operating on the command line. Day three also introduces Python and covers
                 the basics of its text processing capabilities.</syn>
             <slot time="09:00:00">
-                <title>[Regular expressions 2](regex2.md)</title>
+                <title>[Regular expressions 2](regex_2.md)</title>
                 <desc>Last session we covered simple patterns and repetition. We also did some
                     exercises on this using `egrep`. Today, we cover alternation and
                     grouping before we continue using `egrep` with more advanced expressions. We then compare Regex in `egrep` and Python.</desc>
@@ -400,7 +400,7 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>[Python clinic 2](Python_Clinic_Day_2.html)</title>
+                <title>[Python clinic 2](python_2.html)</title>
                 <desc>After practicing first with processing single documents using Python, we move
                     to processing a corpus (in this case, of U.S. Presidential inaugural addresses)
                     with NLTK.</desc>

@@ -26,7 +26,7 @@ What are regular expressions, and how can they improve our pattern-matching when
 Time | Topic | Type
 ---- | ---- | ---- 
 15 min | Review of [previous day](week_1_day_1_plan.md) | Discussion
-15 min | Why use [regular expressions](regex1.md) | Presentation
+15 min | Why use [regular expressions](regex_1.md) | Presentation
 30 min | Simple patterns | Code lab
 30 min | Repetition | Presentation
 
@@ -40,7 +40,7 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: [Programs and files 2](programs_and_files2.md)
+## 2:00–3:30: [Programs and files 2](programs_and_files_2.md)
 
 We have a basic grasp of directory navigation, but what don’t we know about `$PATH`? How does our environment affect our file processing? How can we use commands and variables to manipulate files more efficiently?
 

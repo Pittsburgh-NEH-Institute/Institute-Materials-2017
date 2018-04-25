@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Python_Clinic_Day_2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Python_Clinic_Day_1</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -6752,7 +6752,7 @@ button.close {
 @font-face {
   font-family: 'FontAwesome';
   src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?v=4.2.0');
-  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../components/font-awesome/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../components/font-awesome/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&amp;v=4.2.0') format('embedded-opentype'), url('../components/font-awesome/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../components/font-awesome/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -9709,7 +9709,7 @@ div.input_area > div.highlight > pre {
   padding: 0px;
   background-color: transparent;
 }
-/* The following gets added to the <head> if it is detected that the user has a
+/* The following gets added to the &lt;head&gt; if it is detected that the user has a
  * monospace font with inconsistent normal/bold/italic height.  See
  * notebookmain.js.  Such fonts will have keywords vertically offset with
  * respect to the rest of the text.  The user should select a better font.
@@ -9755,7 +9755,7 @@ div.input_area > div.highlight > pre {
 }
 /*
 
-Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+Original style from softwaremaniacs.org (c) Ivan Sagalaev &lt;Maniac@SoftwareManiacs.Org&gt;
 Adapted from GitHub theme
 
 */
@@ -11745,7 +11745,7 @@ div#notebook {
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="custom.css">
+<link rel="stylesheet" href="custom.css"/>
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
@@ -11778,7 +11778,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Python-clinic-day-2:-Corpus-processing">Python clinic day 2: Corpus processing<a class="anchor-link" href="#Python-clinic-day-2:-Corpus-processing">&#182;</a></h1><p>Na-Rae Han (<a href="mailto:naraehan@pitt.edu">naraehan@pitt.edu</a>), 2017-07-13, <a href="https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/">Pittsburgh NEH Institute “Make Your Edition”</a></p>
+<h1 id="Python-clinic-day-1:-Text-processing">Python clinic day 1: Text processing<a class="anchor-link" href="#Python-clinic-day-1:-Text-processing">&#182;</a></h1><p>Na-Rae Han (<a href="mailto:naraehan@pitt.edu">naraehan@pitt.edu</a>), 2017-07-12, <a href="https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/">Pittsburgh NEH Institute “Make Your Edition”</a></p>
 
 </div>
 </div>
@@ -11789,7 +11789,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Preparation">Preparation<a class="anchor-link" href="#Preparation">&#182;</a></h2><h3 id="Data">Data<a class="anchor-link" href="#Data">&#182;</a></h3><ul>
-<li>This tutorial is found on <a href="https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_1/week_1_day_4_plan.html">https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_1/week_1_day_4_plan.html</a></li>
+<li>This tutorial is found on <a href="https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_1/week_1_day_3_plan.html">https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_1/week_1_day_3_plan.html</a></li>
 <li>Download and unzip the “C-Span Inaugural Address Corpus”, available on NLTK’s corpora page: <a href="http://www.nltk.org/nltk_data/">http://www.nltk.org/nltk_data/</a></li>
 <li>Place the unzipped <code>inaugural</code> folder <strong>on your desktop</strong> </li>
 </ul>
@@ -11808,20 +11808,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Review">Review<a class="anchor-link" href="#Review">&#182;</a></h2><ul>
-<li>Let’s review <a href="Python_Clinic_Day_1.html">what we learned yesterday</a>. </li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Processing-a-single-text-file,-continued">Processing a single text file, continued<a class="anchor-link" href="#Processing-a-single-text-file,-continued">&#182;</a></h2><h3 id="Reading-in-a-text-file">Reading in a text file<a class="anchor-link" href="#Reading-in-a-text-file">&#182;</a></h3><ul>
-<li>Start by opening up the 1789 Washington address, using <code>open(filename).read()</code>. </li>
+<h2 id="The-very-basics">The very basics<a class="anchor-link" href="#The-very-basics">&#182;</a></h2><h3 id="First-code">First code<a class="anchor-link" href="#First-code">&#182;</a></h3><ul>
+<li>Printing a string, using <code>print()</code>. </li>
 </ul>
 
 </div>
@@ -11829,12 +11817,619 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world!&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Strings">Strings<a class="anchor-link" href="#Strings">&#182;</a></h3><ul>
+<li>String type objects are enclosed in quotation marks (" or ').</li>
+<li>+ is a concatenation operator.</li>
+<li>Below, <code>greet</code> is a variable name assigned to a string value. </li>
+<li>Here we are not explicitly printing out; instead, a string value is <em>returned</em>. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">greet</span> <span class="o">=</span> <span class="s2">&quot;Hello, world!&quot;</span>
+<span class="n">greet</span> <span class="o">=</span> <span class="n">greet</span> <span class="o">+</span> <span class="s2">&quot; I come in peace.&quot;</span>
+<span class="n">greet</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>String methods such as <code>.upper()</code>, <code>.lower()</code> transform a string. </li>
+<li>Rather than changing the original variable, the commands <em>return</em> a <em>new</em> string value. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">greet</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Some string methods return a boolean value (True/False) </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># try .isupper(), .isalnum(), .startswith(&#39;he&#39;)</span>
+<span class="s1">&#39;hello&#39;</span><span class="o">.</span><span class="n">islower</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>len()</code> returns the length of a string in the # of characters. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">greet</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>in</code> tests substring-hood between two strings. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;he&#39;</span> <span class="ow">in</span> <span class="s1">&#39;hello&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Numbers">Numbers<a class="anchor-link" href="#Numbers">&#182;</a></h3><ul>
+<li>Integers and floats are written without quotes. </li>
+<li>You can use algebraic operations such as <code>+</code>, <code>-</code>, <code>*</code> and <code>/</code> with numbers. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num1</span> <span class="o">=</span> <span class="mi">5678</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="mf">3.141592</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="s2">&quot;divided by&quot;</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="s2">&quot;is&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>  <span class="c1"># can print multiple things! </span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Lists">Lists<a class="anchor-link" href="#Lists">&#182;</a></h3><ul>
+<li>Lists are enclosed in <code>[ ]</code>, with elements separated with commas. Lists can contain strings, numbers, and more. </li>
+<li>As with string, you can use <code>len()</code> to get the size of a list. </li>
+<li>As with string, you can use <code>in</code> to see whether an element is in a list. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="s1">&#39;pink&#39;</span><span class="p">]</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Try logical operators not, and, or</span>
+<span class="s1">&#39;mauve&#39;</span> <span class="ow">in</span> <span class="n">li</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>A list can be indexed through <code>li[i]</code>. Python indexes starts with 0. </li>
+<li>A list can be sliced: <code>li[3:5]</code> returns a sub-list beginning with index 3 up to and not including index 5. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Try [0], [2], [-1], [3:5], [3:], [:5]</span>
+<span class="n">li</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="for-loop"><code>for</code> loop<a class="anchor-link" href="#for-loop">&#182;</a></h3><ul>
+<li>Using a <code>for</code> loop, you can loop through a list of items, applying the same set of operations to each element. </li>
+<li>The embedded code block is marked with indentation. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">li</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;is&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="s2">&quot;characters long.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Done!&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="List-comprehension">List comprehension<a class="anchor-link" href="#List-comprehension">&#182;</a></h3><ul>
+<li>List comprehension builds a new list from an existing list. </li>
+<li>You can filter to include only certain elements, and you can apply transformationa in the process.</li>
+<li>Try: <code>.upper()</code>, <code>len()</code>, <code>+'ish'</code></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># filter</span>
+<span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">li</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;e&#39;</span><span class="p">)]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># transform</span>
+<span class="p">[</span><span class="n">x</span><span class="o">+</span><span class="s1">&#39;ish&#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">li</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># filter and transform</span>
+<span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">li</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">&gt;=</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Dictionaries">Dictionaries<a class="anchor-link" href="#Dictionaries">&#182;</a></h3><ul>
+<li>Dictionaries hold <strong>key:value</strong> mappings. </li>
+<li><code>len()</code> on dictionary returns the number of keys. </li>
+<li>Looping over a dictionary means looping over its keys. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">di</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Homer&#39;</span><span class="p">:</span><span class="mi">35</span><span class="p">,</span> <span class="s1">&#39;Marge&#39;</span><span class="p">:</span><span class="mi">35</span><span class="p">,</span> <span class="s1">&#39;Bart&#39;</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;Lisa&#39;</span><span class="p">:</span><span class="mi">8</span><span class="p">}</span>
+<span class="n">di</span><span class="p">[</span><span class="s1">&#39;Lisa&#39;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 20 years-old or younger. x is bound to keys. </span>
+<span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">di</span> <span class="k">if</span> <span class="n">di</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">20</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">di</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Using-NLTK">Using NLTK<a class="anchor-link" href="#Using-NLTK">&#182;</a></h2><ul>
+<li>NLTK (<a href="http://www.nltk.org/">Natural Language Toolkit</a>) is an external library; you must import it first. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Let's first download some data files. In the doanloader window, Models &gt; punkt &gt; Download. </li>
+<li>If server is overloaded, download <a href="http://www.pitt.edu/~naraehan/punkt.zip">this punkt.zip file</a> and unzip it as <code>~/nltk_data/tokenizers/punkt</code></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Tokenizing function: turns a text (a single string) into a list of word &amp; symbol tokens</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">greet</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sent</span> <span class="o">=</span> <span class="s2">&quot;You haven&#39;t seen Star Wars...?&quot;</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">sent</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>nltk.FreqDist()</code> is is another useful NLTK function. </li>
+<li>It builds a frequency count dictionary from a list. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># First &quot;Rose&quot; is capitalized. How to lowercase? </span>
+<span class="n">sent</span> <span class="o">=</span> <span class="s1">&#39;Rose is a rose is a rose is a rose.&#39;</span>
+<span class="n">toks</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">sent</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">toks</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">freq</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FreqDist</span><span class="p">(</span><span class="n">toks</span><span class="p">)</span>
+<span class="n">freq</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">freq</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">freq</span><span class="p">[</span><span class="s1">&#39;rose&#39;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">freq</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Processing-a-single-text-file">Processing a single text file<a class="anchor-link" href="#Processing-a-single-text-file">&#182;</a></h2><h3 id="Reading-in-a-text-file">Reading in a text file<a class="anchor-link" href="#Reading-in-a-text-file">&#182;</a></h3><ul>
+<li><code>open(filename).read()</code> opens a text file and reads in the content as a <em>single continuous string</em>. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">myfile</span> <span class="o">=</span> <span class="s1">&#39;C:/Users/narae/Desktop/inaugural/1789-Washington.txt&#39;</span>  <span class="c1"># Use your own userid; Mac users should omit C:</span>
 <span class="n">wtxt</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">myfile</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">wtxt</span><span class="p">[:</span><span class="mi">500</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">wtxt</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">wtxt</span><span class="p">)</span>     <span class="c1"># Number of characters in text</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;fellow citizens&#39;</span> <span class="ow">in</span> <span class="n">wtxt</span>  <span class="c1"># phrase as a substring. try &quot;Americans&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;th&#39;</span> <span class="ow">in</span> <span class="n">wtxt</span>
 </pre></div>
 
 </div>
@@ -11853,11 +12448,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>    <span class="c1"># Don&#39;t forget to import nltk</span>
-<span class="o">%</span><span class="k">pprint</span>    # Turn off/on pretty printing (prints too many lines)
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Turn off/on pretty printing (prints too many lines)</span>
+<span class="o">%</span><span class="k">pprint</span>    
 </pre></div>
 
 </div>
@@ -11867,11 +12462,24 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Build a token list</span>
-<span class="n">wtokens</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">wtxt</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Tokenize text</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">wtxt</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wtokens</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">wtxt</span><span class="p">)</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">wtokens</span><span class="p">)</span>     <span class="c1"># Number of words in text</span>
 </pre></div>
 
@@ -11882,10 +12490,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Build a dictionary of word frequency count</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Build a dictionary of frequency count</span>
 <span class="n">wfreq</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FreqDist</span><span class="p">(</span><span class="n">wtokens</span><span class="p">)</span>
 <span class="n">wfreq</span><span class="p">[</span><span class="s1">&#39;the&#39;</span><span class="p">]</span>
 </pre></div>
@@ -11897,7 +12505,20 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wfreq</span><span class="p">[</span><span class="s1">&#39;we&#39;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">wfreq</span><span class="p">)</span>      <span class="c1"># Number of unique words in text</span>
@@ -11910,7 +12531,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&#xa0;[&#xa0;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">wfreq</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>     <span class="c1"># 40 most common words</span>
@@ -11926,381 +12547,16 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Average-sentence-length,-frequency-of-long-words">Average sentence length, frequency of long words<a class="anchor-link" href="#Average-sentence-length,-frequency-of-long-words">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sentcount</span> <span class="o">=</span> <span class="n">wfreq</span><span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">wfreq</span><span class="p">[</span><span class="s1">&#39;?&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">wfreq</span><span class="p">[</span><span class="s1">&#39;!&#39;</span><span class="p">]</span>  <span class="c1"># Assuming every sentence ends with ., ! or </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sentcount</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Tokens include symbols and punctuation. First 50 tokens:</span>
-<span class="n">wtokens</span><span class="p">[:</span><span class="mi">50</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wtokens_nosym</span> <span class="o">=</span> <span class="p">[</span><span class="n">t</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">wtokens</span> <span class="k">if</span> <span class="n">t</span><span class="o">.</span><span class="n">isalnum</span><span class="p">()]</span>    <span class="c1"># alpha-numeric tokens only</span>
-<span class="nb">len</span><span class="p">(</span><span class="n">wtokens_nosym</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Try &quot;n&#39;t&quot;, &quot;20th&quot;, &quot;.&quot;</span>
-<span class="s2">&quot;n&#39;t&quot;</span><span class="o">.</span><span class="n">isalnum</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># First 50 tokens, alpha-numeric tokens only: </span>
-<span class="n">wtokens_nosym</span><span class="p">[:</span><span class="mi">50</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">wtokens_nosym</span><span class="p">)</span><span class="o">/</span><span class="n">sentcount</span>     <span class="c1"># Average sentence length in number of words</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">[</span><span class="n">w</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">wfreq</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">13</span><span class="p">]</span>       <span class="c1"># all 13+ character words</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">long</span> <span class="o">=</span> <span class="p">[</span><span class="n">w</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">wfreq</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">13</span><span class="p">]</span> 
-<span class="c1"># sort long alphabetically using sorted()</span>
-<span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">long</span><span class="p">)</span> <span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">),</span> <span class="n">wfreq</span><span class="p">[</span><span class="n">w</span><span class="p">])</span>               <span class="c1"># long words tend to be less frequent</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Processing-a--corpus">Processing a  corpus<a class="anchor-link" href="#Processing-a--corpus">&#182;</a></h2><ul>
-<li>NLTK can read in an entire corpus from a directory (the “root” directory).</li>
-<li>As it reads in a corpus, it applies word tokenization (<code>.words()</code>) and sentence tokenization (<code>.sents()</code>). </li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="k">import</span> <span class="n">PlaintextCorpusReader</span>
-<span class="n">corpus_root</span> <span class="o">=</span> <span class="s1">&#39;C:/Users/Jane Eyre/Desktop/inaugural&#39;</span>  <span class="c1"># Use your own userid; Mac users should omit C:</span>
-<span class="n">inaug</span> <span class="o">=</span> <span class="n">PlaintextCorpusReader</span><span class="p">(</span><span class="n">corpus_root</span><span class="p">,</span> <span class="s1">&#39;.*txt&#39;</span><span class="p">)</span>  <span class="c1"># all files ending in &#39;txt&#39; </span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># .txt file names as file IDs</span>
-<span class="n">inaug</span><span class="o">.</span><span class="n">fileids</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># NLTK automatically tokenizes the corpus. First 50 words: </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">()[:</span><span class="mi">50</span><span class="p">])</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># You can also specify individual file ID. First 50 words from Obama 2009:</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;2009-Obama.txt&#39;</span><span class="p">)[:</span><span class="mi">50</span><span class="p">])</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># NLTK automatically segments sentences too, which are accessed through .sents()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">sents</span><span class="p">(</span><span class="s1">&#39;2009-Obama.txt&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>   <span class="c1"># first sentence</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">sents</span><span class="p">(</span><span class="s1">&#39;2009-Obama.txt&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>   <span class="c1"># 2nd sentence</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># How long are these speeches in terms of word and sentence count?</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Washington 1789:&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;1789-Washington.txt&#39;</span><span class="p">)),</span> <span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">sents</span><span class="p">(</span><span class="s1">&#39;1789-Washington.txt&#39;</span><span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Obama 2009:&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;2009-Obama.txt&#39;</span><span class="p">)),</span> <span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">sents</span><span class="p">(</span><span class="s1">&#39;2009-Obama.txt&#39;</span><span class="p">)))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># for-loop through file IDs and print out word count. </span>
-<span class="c1"># While looping, populate fid_avsent which holds avg sent lengths.</span>
-<span class="c1"># Break long line with \, specify tab separator. </span>
-<span class="n">fid_avsent</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">inaug</span><span class="o">.</span><span class="n">fileids</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="n">f</span><span class="p">)),</span> <span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">sents</span><span class="p">(</span><span class="n">f</span><span class="p">)),</span> \
-          <span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">sents</span><span class="p">(</span><span class="n">f</span><span class="p">)),</span> <span class="n">f</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
-    <span class="n">fid_avsent</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">sents</span><span class="p">(</span><span class="n">f</span><span class="p">)),</span> <span class="n">f</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Turn pretty print back on </span>
-<span class="o">%</span><span class="k">pprint</span>
-<span class="nb">sorted</span><span class="p">(</span><span class="n">fid_avsent</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># same thing, with list comprehension! </span>
-<span class="n">fid_avsent2</span> <span class="o">=</span> <span class="p">[(</span><span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">sents</span><span class="p">(</span><span class="n">f</span><span class="p">)),</span> <span class="n">f</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">inaug</span><span class="o">.</span><span class="n">fileids</span><span class="p">()]</span>
-<span class="nb">sorted</span><span class="p">(</span><span class="n">fid_avsent2</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Trouble-shooting">Trouble shooting<a class="anchor-link" href="#Trouble-shooting">&#182;</a></h3><ul>
-<li>Unfortunately, 2005 Bush file produces a Unicode encoding error. </li>
-<li>Let's make a new text file from <a href="http://www.presidency.ucsb.edu/inaugurals.php">http://www.presidency.ucsb.edu/inaugurals.php</a></li>
-<li>Copy text and paste in Notepad/Notepad++ (Windows) or BBEdit (Mac). <ul>
-<li>Windows users: make sure to choose <strong>UTF-8</strong> encoding and not ANSI when saving. </li>
+<h2 id="More-tomorrow">More tomorrow<a class="anchor-link" href="#More-tomorrow">&#182;</a></h2><ul>
+<li>How long are Washington’s sentences on average? </li>
+<li>Which long words did he use, and how frequent were they? </li>
+<li>Processing the entire Inaugural Address corpus<ul>
+<li>Which inaugural speech was the longest? The shortest?</li>
+<li>Which presidents favored long sentences?</li>
 </ul>
 </li>
-<li>The text files are locked; We will need to save, halt and then re-start the Python notebook. </li>
 </ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Corpus size in number of words</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">()))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Building word frequency distribution for the entire corpus</span>
-<span class="n">inaug_freq</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FreqDist</span><span class="p">(</span><span class="n">inaug</span><span class="o">.</span><span class="n">words</span><span class="p">())</span>
-<span class="n">inaug_freq</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Extra:-using-regular-expressions-for-tokenization">Extra: using regular expressions for tokenization<a class="anchor-link" href="#Extra:-using-regular-expressions-for-tokenization">&#182;</a></h2><ul>
-<li><code>re</code> is Python's regular expression module. Start by importing. </li>
-<li><code>re.findall</code> finds all substrings that match a pattern.</li>
-<li>For regular expression strings, use <code>r'...'</code> (rawstring) prefix. </li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sent</span> <span class="o">=</span> <span class="s2">&quot;You haven&#39;t seen Star Wars...?&quot;</span>
-<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\w+&#39;</span><span class="p">,</span> <span class="n">sent</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">pprint</span>
-<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\w+&#39;</span><span class="p">,</span> <span class="n">wtxt</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="What-next?">What next?<a class="anchor-link" href="#What-next?">&#182;</a></h2><p>Take a Python course! There are many online courses available on <a href="http://www.coursera.org">Coursera</a>, <a href="https://www.edx.org/">EdX</a>, <a href="https://www.udemy.com/courses/">udemy</a>, <a href="https://www.datacamp.com/courses">DataCamp</a>, and more.</p>
+<p>All answered in <a href="Python_Clinic_Day_2.html">Python Clinic Day 2: Corpus Processing</a></p>
 
 </div>
 </div>

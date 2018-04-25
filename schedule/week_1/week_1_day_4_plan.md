@@ -46,7 +46,7 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: [Python clinic 2](Python_Clinic_Day_2.html)
+## 2:00–3:30: [Python clinic 2](python_2.html)
 
 After practicing first with processing single documents using Python, we move to processing a corpus (in this case, of U.S. Presidential inaugural addresses) with NLTK.
 
