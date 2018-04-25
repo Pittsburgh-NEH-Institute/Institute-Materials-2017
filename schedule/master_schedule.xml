@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="masterschedule.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href="masterschedule.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="master_schedule.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="master_schedule.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <schedule>
     <week num="1">
         <title>Bootcamp: Computational groundwork skills </title>
