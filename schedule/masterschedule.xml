@@ -138,7 +138,7 @@
 
                 </act>
                 <act time="15" type="Presentation">
-                    <desc>Why use [regular expressions](regex1.md)</desc>
+                    <desc>Why use [regular expressions](regex_1.md)</desc>
                 </act>
                 <act time="30" type="Code_lab">
                     <desc>Simple patterns</desc>
@@ -231,7 +231,7 @@
                 Regex to operating on the command line. Day three also introduces Python and covers
                 the basics of its text processing capabilities.</syn>
             <slot time="09:00:00">
-                <title>[Regular expressions 2](regex2.md)</title>
+                <title>[Regular expressions 2](regex_2.md)</title>
                 <desc>Last session we covered simple patterns and repetition. We also did some
                     exercises on this using `egrep`. Today, we cover alternation and
                     grouping before we continue using `egrep` with more advanced expressions. We then compare Regex in `egrep` and Python.</desc>

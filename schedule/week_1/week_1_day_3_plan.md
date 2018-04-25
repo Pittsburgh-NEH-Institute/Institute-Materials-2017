@@ -20,7 +20,7 @@ Day three kicks off with a deeper look at refining regular expressions to tailor
 * **Code lab:** participants code alone or in small groups
 
 * * *
-## 9:00–10:30: [Regular expressions 2](regex2.md)
+## 9:00–10:30: [Regular expressions 2](regex_2.md)
 
 Last session we covered simple patterns and repetition. We also did some exercises on this using `egrep`. Today, we cover alternation and grouping before we continue using `egrep` with more advanced expressions. We then compare Regex in `egrep` and Python.
 

@@ -26,7 +26,7 @@ What are regular expressions, and how can they improve our pattern-matching when
 Time | Topic | Type
 ---- | ---- | ---- 
 15 min | Review of [previous day](week_1_day_1_plan.md) | Discussion
-15 min | Why use [regular expressions](regex1.md) | Presentation
+15 min | Why use [regular expressions](regex_1.md) | Presentation
 30 min | Simple patterns | Code lab
 30 min | Repetition | Presentation
 
