@@ -26,8 +26,8 @@ __________
 ## Our choice of shell: git bash
 
 * We will be learning the **bash** shell. 
-* When you downloaded Git, you also downloaded **Git bash** <[screenshot](images/command1_gitbash.png)>, the command line interface.
-* You may have been using `cmd.exe` <[screenshot](images/getting_to_know_cmd.png)> or Windows Powershell <[screenshot](images/command1_powershell.png)>, both native to Windows. Though each has its own benefits and drawbacks, for the purposes of this institute we will have all Windows users learn and use Git `bash`.
+* When you downloaded Git, you also downloaded **Git bash** <[screenshot](images/command_1_gitbash.png)>, the command line interface.
+* You may have been using `cmd.exe` <[screenshot](images/getting_to_know_cmd.png)> or Windows Powershell <[screenshot](images/command_1_powershell.png)>, both native to Windows. Though each has its own benefits and drawbacks, for the purposes of this institute we will have all Windows users learn and use Git `bash`.
 	* You might have heard of [“Ubuntu Bash on Windows 10”](https://msdn.microsoft.com/en-us/commandline/wsl/about). We do not recommend it—ask us why later! 
 * Why is learning `bash` a good idea? 	
 
