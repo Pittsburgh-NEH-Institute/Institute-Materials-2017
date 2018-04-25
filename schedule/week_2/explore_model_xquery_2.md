@@ -194,19 +194,19 @@ Från github.com:Pittsburgh-NEH-Institute/Institute-Materials-2017
    15828fe..d155726  master     -> origin/master
 Uppdaterar 15828fe..d155726
 error: Dina lokala ändringar av följande filer skulle skrivas över av sammanslagning:
-	schedule/week_2/explore_model_xquery2.md
+	schedule/week_2/explore_model_xquery_2.md
 Checka in dina ändringar eller använd "stash" innan du byter gren.
 Avbryter
 ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git pull
-Slår ihop schedule/week_2/explore_model_xquery2.md automatiskt
+Slår ihop schedule/week_2/explore_model_xquery_2.md automatiskt
 Waiting for Emacs...
 Merge made by the 'recursive' strategy.
- schedule/week_2/explore_model_xquery2.md | 2 ++
+ schedule/week_2/explore_model_xquery_2.md | 2 ++
  1 file changed, 2 insertions(+)
 ```
 
 ```git
-ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git log schedule/week_2/explore_model_xquery2.md
+ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git log schedule/week_2/explore_model_xquery_2.md
 :
 commit 7070aebd53a03fb68efb938b044f64de722a84f8 (HEAD ->
 master, origin/master, origin/HEAD) Merge: f7d7f29 d155726 Author:
@@ -225,7 +225,7 @@ Olsson <ljo@fripost.org> Date: Fri Jul 21 22:27:59 2017 +0200
 commit d15572627890bec8fcdb7c334dc3c7fa71e5d7c8 Author: David J
 Birnbaum <djbpitt@gmail.com> Date: Fri Jul 21 14:09:32 2017 -0400
 
-    fixed markdown quirkiness is explore_model_xquery2.md
+    fixed markdown quirkiness is explore_model_xquery_2.md
 
 commit 15828fe1cf2f6a7177a73501c967200f69b56606 Author: Leif-Jöran
 Olsson <ljo@fripost.org> Date: Fri Jul 21 19:59:04 2017 +0200
@@ -246,7 +246,7 @@ ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git br -a
 
 ```bash
 ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git co show-merge-issues
-M	schedule/week_2/explore_model_xquery2.md
+M	schedule/week_2/explore_model_xquery_2.md
 Växlade till grenen "show-merge-issues"
 
 ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git br -a
@@ -265,7 +265,7 @@ ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git br -a
 ```bash
 ljo@bakunin ~/filer/fps-gbg/NEH-institute-2017-git$> git co master
 error: Dina lokala ändringar av följande filer skulle skrivas över av utcheckning:
-	schedule/week_2/explore_model_xquery2.md
+	schedule/week_2/explore_model_xquery_2.md
 Checka in dina ändringar eller använd "stash" innan du byter gren.
 Avbryter
 

@@ -5,7 +5,7 @@
 XML is defined by its syntax ([Extensible Markup Language (XML). 1.0 (Fifth Edition).
 W3C Recommendation 26 November 2008](https://www.w3.org/TR/xml/)), but the syntax represents a serialization of a tree, which is a data model.
 
-<img src="Images/xml_structures_all.png" width="99%" alt="[XML as model and serialization]"/>
+<img src="images/xml_structures_all.png" width="99%" alt="[XML as model and serialization]"/>
 
 [Image from <http://www.wwp.neu.edu/outreach/seminars/_current/presentations/xml_intro/xml_newIntro_tutorial_02.xhtml>]
 

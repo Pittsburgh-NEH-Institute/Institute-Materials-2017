@@ -7,15 +7,15 @@ These are the HTTP methods that are also called verbs. Do you remember the ones 
 ## APIs are for interaction
 Tight coupling inhibits use and reuse. The loose coupling we strive for is a much more appealing way to do it. If we start with the overview we already visited on the white board: 
 
-![Simple Client-Server interaction](images/Client-server-overview.png)
+![Simple Client-Server interaction](images/client_server_overview.png)
 
 And you using external resources:
 
-![Client-Server and external Client-Server interaction](images/Client-server-external-overview.png)
+![Client-Server and external Client-Server interaction](images/client_server_external_overview.png)
 
 Your Server is not a black box so why not open it up:
 
-![Server overview and (internals)](images/Server-overview.png)
+![Server overview and (internals)](images/server_overview.png)
 
 Your details of course vary.
 
@@ -27,7 +27,7 @@ RESTful or REST-like APIs are more about _nouns_ than _verbs_.
 
 <http://localhost:5000/resource/form1/value/ljo>
 
-![Response from request with prefilled value](images/url-form1-value-response.png)
+![Response from request with prefilled value](images/url_form1_value_response.png)
 
 More on this later.
 

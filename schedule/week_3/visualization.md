@@ -9,7 +9,7 @@ Question 2: might a particular text have an inherent visual form?
 
 <img src="images/blake.jpg">
 
-<img src="../week_2/Images/EasterWings.jpg">
+<img src="../week_2/images/easter_wings.jpg">
 
 You've spent the last day learning about, and concentrating on, APIs. Now it is perhaps time to admit that there is a raging debate in the field over the relative place of APIs vs. graphical user interfaces on digital editions. On the one hand, if you create an elaborate user interface through which a reader is supposed exclusively to access your edition, is that not putting barriers in the way of scholars who are interested in incorporating your text and data in ways that you might not have foreseen? On the other hand, is presentation, visual choice, and even stylesheet design not a form of rhetoric, or of argument?
 

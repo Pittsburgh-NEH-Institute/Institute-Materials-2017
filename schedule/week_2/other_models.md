@@ -1,4 +1,5 @@
 # Other models and expressions
+# Other models and expressions
 
 ## LMNL: Layered Markup and Annotation Language
 
@@ -18,7 +19,7 @@ For more information see Wendell Piez, [LMNL in miniature. An introduction.](htt
 
 GODDAG is a data model for representing documents with overlapping structures, which permits children to have multiple parents. Consider the following minimalist poem:
 
-<img src="Images/Marcoux01-001.png" alt="[GODDAG example]"/>
+<img src="images/marcoux.png" alt="[GODDAG example]"/>
 
 Image from Yves Marcoux, [Graph characterization of overlap-only TexMECS and other overlapping markup formalisms](http://www.balisage.net/Proceedings/vol1/html/Marcoux01/BalisageVol1-Marcoux01.html). For more information see C. M. Sperberg-McQueen and Claus Huitfeldt, [GODDAG: A data structure for overlapping hierarchies](http://cmsmcq.com/2000/poddp2000.html).
 
@@ -47,10 +48,10 @@ Example from Yves Marcoux, [Graph characterization of overlap-only TexMECS and o
 
 TAG is a data model based on a hypergraph. The following image illustrates how information about words, stress, lines, amd metrical feet might be represented for a minimal poem consisting of the single line “No longer mourn”.
 
-<img src="Images/feet.png" width="99%" alt="[TAG example]"/>
+<img src="images/feet.png" width="99%" alt="[TAG example]"/>
 
 Alexandria Markup, an open source TAG application, visualizes this document as follows:
 
-<img src="Images/mourn_alexandria.png" width="99%" alt="[Alexandria Markup example]"/>
+<img src="images/mourn_alexandria.png" width="99%" alt="[Alexandria Markup example]"/>
 
 For more information see Ronald Haentjens Dekker and David J. Birnbaum, [It’s more than just overlap: Text As Graph”](https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_2/balisage-tag/Bal2017dekk0505.html), which is the source of the example. 

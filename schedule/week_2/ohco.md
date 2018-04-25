@@ -56,11 +56,11 @@ Consider also a title like “Romeo and Juliet”, which might be tagged in XML 
 
 which in tree form would look like:
 
-<img src="Images/romeo_xml.png" alt="[Title hierarchy]"/>
+<img src="images/romeo_xml.png" alt="[Title hierarchy]"/>
 
 Here the `<name>` elements might reasonably be considered content objects, but representing them as such compromises the hierarchy, which is no longer a string of three words, but now a sequence of two `<name>` elements with a `text()` node between them, and the `text()` nodes that contain the text of the names are on a different hierarchical level than the conjunction. LMNL and TAG, which are not obligatorily hierarchical, can tag the names without pushing the three words onto two different hierarchical levels. Here is the TAG hypergraph representation:
 
-<img src="Images/romeo_hypergraph.png" alt="[Title hypergraph]"/>
+<img src="images/romeo_hypergraph.png" alt="[Title hypergraph]"/>
 
 ## Conclusions
 

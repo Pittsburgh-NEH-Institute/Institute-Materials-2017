@@ -18,15 +18,15 @@ The visualization you choose should match the story you want to tell. Below we i
 
 A bar chart easily relates a *categorical explanatory variable* to a *quantitative response variable*, as in the example below, which shows the number of volumes (the quantitative response variable) for each text type (the categorical explanatory variable) in a hypothetical collection:
 
-<img src="Images/volumesincollbar.png" alt="[Bar graph]"/>
+<img src="images/volumes_in_coll_bar.png" alt="[Bar graph]"/>
 
 [The image is copied from [Principles of information visualization](http://www.themacroscope.org/?page_id=469), part of *The historican’s macroscope: big digital history*.]
 
 ### Bubble chart
 
-A bubble chart is capable of relating three or four parameters of information. In the example below, there are three quantitative variables: life expectency (X axis), fertility rate (Y axis), population (relative area of the bubble). There is also one categorical variable: geographic region (color of the bubble).
+A bubble chart is capable of relating three or four parameters of information. In the example below, there are three quantitative variables: life expectancy (X axis), fertility rate (Y axis), population (relative area of the bubble). There is also one categorical variable: geographic region (color of the bubble).
 
-<img src="Images/bubble_chart.png" alt="[Bubble chart]"/>
+<img src="images/bubble_chart.png" alt="[Bubble chart]"/>
 
 [The image is copied from the [Visualization: bubble chart](https://developers.google.com/chart/interactive/docs/gallery/bubblechart) page of the Google Charts documentation.]
 

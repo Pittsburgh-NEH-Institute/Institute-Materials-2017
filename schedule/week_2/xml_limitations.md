@@ -69,7 +69,7 @@ Given the title:
 
 a human thinks of this as a three-word title, where two of the words happen to be personal names, but XML markup puts the three words onto different levels of the hierarchy:
 
-<img src="Images/romeo_xml.png" alt="[Artifactual hierarchy illustration]"/>
+<img src="images/romeo_xml.png" alt="[Artifactual hierarchy illustration]"/>
 
 ## Scope of reference
 

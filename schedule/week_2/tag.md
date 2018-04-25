@@ -6,7 +6,7 @@ Text As Graph (TAG) models documents as a *hypergraph*. A *graph* consists of no
 
 The text in a TAG document is a sequence of Text nodes, where the sequence begins with a Document node. The simplest TAG document, which contains only text and no markup, looks something like:
 
-<img src="Images/tag_no-markup.png" alt="[TAG without markup]"/>
+<img src="images/tag_no-markup.png" alt="[TAG without markup]"/>
 
 ## TAG Markup-to-Text hyperedges
 
@@ -18,7 +18,7 @@ Below we add just a single Markup node (with a `name` property of “stuff”), 
 [stuff}Hello, World!{stuff]
 ```
 
-<img src="Images/tag_root-only.png" alt="[TAG with only root element]"/>
+<img src="images/tag_root_only.png" alt="[TAG with only root element]"/>
 
 While in the LMNL model, “stuff” would be range expressed over the text, in TAG it would be a Markup node that serves as the head of a hyperedge, and the tail in this case contains a single Text node.
 
@@ -37,7 +37,7 @@ The visualization below shows that the text has been divided into three Text nod
 * The Document node and the three Text nodes are connected by regular (one-to-one) edges into a chain that connects all of the text in the document.
 * There are three Markup nodes (comparable to elements in XML), two of type “name” and one of type “title”.
 
-<img src="Images/tag_names.png" alt="[TAG with name markup]"/>
+<img src="images/tag_names.png" alt="[TAG with name markup]"/>
 
 ## TAG and overlap
 

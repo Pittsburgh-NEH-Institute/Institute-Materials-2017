@@ -240,7 +240,7 @@ _EXPath_ is an effort to standardize XQuery extension modules across implementat
 Choose a name, fill in metadata, done. You will find it under `/db/apps/`. The collection structure is:
 * `modules/` - (Everything XQuery)
 * `templates/` - (Page templates used by html-files)
-* `resouces/` - (images, css, javascript) 
+* `resources/` - (images, css, javascript) 
 * `expath-pkg.xml` - (Package descriptor)
 * `repo.xml` - (Application metadata)
 * `index.html`
