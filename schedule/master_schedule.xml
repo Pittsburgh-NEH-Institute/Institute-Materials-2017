@@ -746,7 +746,7 @@
                     <outcome/>
                 </act>
                 <act time="15" type="Code_lab">
-                    <desc>[Alexandria installation](alexandria.md)</desc>
+                    <desc>[Alexandria installation](../week_3/alexandria.md)</desc>
                     <outcome/>
                 </act>
                 <act time="15" type="Code_lab">
