@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>wikipedia.html</title>
+  </head>
+  <body>
+    <h1>wikipedia.html</h1>
+    <p>This is <code>wikipedia.html</code> fetched through request for <code>/resource/wikipedia</code>.</p>
+    {% if not value %}
+    <p>You can supply a value with <code>/resource/wikipedia/value/&lt;value&gt;</code> (without the angle brackets).</p>
+    {% endif %}
+    {% if value %}
+    <p>The supplied value was <span class="value">{{value}}</span>.</p>
+    {% endif %}
+  </body>
+</html>
