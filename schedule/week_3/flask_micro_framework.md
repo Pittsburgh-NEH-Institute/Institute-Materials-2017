@@ -144,7 +144,7 @@ except ZeroDivisionError:
 # Depending on if we can recover or not: do what is needed to nicely exit or take receovery actions
 ```
 
-See [error_handling_divide_by_zero.py](error_handling_divide_by_zero).
+See [error_handling_divide_by_zero.py](error_handling_divide_by_zero.py).
 
 If you find it unrecoverable you might want to modify the exception and retrow it with `raise`:
 
