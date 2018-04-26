@@ -87,7 +87,7 @@ def get_my_index():
         'header': header,
         'paragraph': defaults['paragraph'] 
     &#125;
-    return render_template("index-dyn-dict.html", dict=values)
+    return render_template("index_dyn_dict.html", dict=values)
 
 @app.route("/resource/&lt;resource_name&gt;")
 def get_local_resource(resource_name = ''):
