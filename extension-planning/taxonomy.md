@@ -1,7 +1,5 @@
 # Taxonomy
 
-## Bootcamp
-
 * Git
 * Python
 * Regex
@@ -11,9 +9,6 @@
 * Documentation
 * Errors
 * Commands, programs, files
-
-## Philcamp
-
 * Project planning
 * Model, syntax, and markup semantics
 * Transcription with markup: XML and LMNL
@@ -28,9 +23,6 @@
 	* Visualization
 * Text analytics (Mike)
 * TAG (as model)
-
-## Pubcamp
-
 * Bag of words (Mike)
 * Stylometry (Mike)
 * Web publishing frameworks
@@ -47,7 +39,4 @@
 	* Archiving
 	* Sustainability
 * Visualization
-
-## Orphans
-
 * Participant projects
