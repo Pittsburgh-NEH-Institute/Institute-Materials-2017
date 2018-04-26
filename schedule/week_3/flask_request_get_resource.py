@@ -4,7 +4,7 @@ from flask import request
 
 defaults = { 'title': 'dynamic request header index.html' ,
              'header': 'Default "header" is used. Give request parameter header with a value to change it.',
-             'paragraph': 'This is index.html with dynamic contents in response to a request for / (ROOT) in flask-request.py'
+             'paragraph': 'This is index.html with dynamic contents in response to a request for / (ROOT) in flask_request.py'
 }
 
 app = Flask(__name__)
@@ -16,7 +16,7 @@ def get_my_index():
         'header': header,
         'paragraph': defaults['paragraph'] 
     }
-    return render_template("index-dyn-dict.html", dict=values)
+    return render_template("index_dyn_dict.html", dict=values)
 
 @app.route("/resource/<resource_name>")
 def get_local_resource(resource_name = ''):

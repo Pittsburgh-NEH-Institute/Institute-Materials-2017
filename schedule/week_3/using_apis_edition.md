@@ -25,9 +25,9 @@ These overviews and interaction diagrams give you and any partners/consultants/u
 ### RESTful or REST-like
 RESTful or REST-like APIs are more about _nouns_ than _verbs_.
 
-<http://localhost:5000/resource/form1/value/ljo>
+<http://localhost:5000/resource/form_1/value/ljo>
 
-![Response from request with prefilled value](images/url_form1_value_response.png)
+![Response from request with prefilled value](images/url_form_1_value_response.png)
 
 More on this later.
 
