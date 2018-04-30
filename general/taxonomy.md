@@ -3,8 +3,8 @@
 ## Git
  
 * [Git resources page](../schedule/week_1/git_resources.md)
-* [Git tutorial](../schedule/week_1/git_tutorial.md)
-* [Git tutorial part 2](../schedule/week_1/git_tutorial_part_2.md)
+* [Git 1](../schedule/week_1/git_l.md)
+* [Git 2](../schedule/week_1/git_2.md)
 * [Publishing on GitHub Pages](https://guides.github.com/features/pages/)
 
 ## Python
@@ -12,15 +12,14 @@
 * [PyCharm](https://www.jetbrains.com/pycharm/)
 * [Python 1](../week_1/python_1.html)
 * [Python 2](../week_1/python_2.html)
-* Note: Git `bash` requires the use of `winpty` when running certain Windows applications that are meant to run within `cmd`. For example, to run an interactive python session, you should execute `winpty python`. You may want to alias Python by adding`alias python='winpty python.exe' to your .bashrc file.
-* 
+* Note: Git `bash` requires the use of `winpty` when running certain Windows applications that are meant to run within `cmd`. For example, to run an interactive python session, you should execute `winpty python`. You may want to alias Python by adding`alias python='winpty python.exe'` to your `.bashrc` file.
 
 ## Regex
 * [Regex 1](../week_1/regex_1.md)
 * [Regex 2](../week_1/regex_2.md)
 * [Regex resources](../week_1/regex_resources.md)
 * [Regex builder](https://regex101.com)
-* [](../week_1/command_line_3)
+* [`grep`](../week_1/command_3_djb.md#finding-things-with-grep)
 
 
 * Internet (HTTP)
