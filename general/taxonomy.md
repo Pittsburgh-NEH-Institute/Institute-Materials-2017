@@ -10,12 +10,19 @@
 ## Python
 * [Anaconda Python](https://www.anaconda.com/download/)
 * [PyCharm](https://www.jetbrains.com/pycharm/)
-* [Python 1](python_1.html)
-* [Python 2](python_2.html)
+* [Python 1](../week_1/python_1.html)
+* [Python 2](../week_1/python_2.html)
 * Note: Git `bash` requires the use of `winpty` when running certain Windows applications that are meant to run within `cmd`. For example, to run an interactive python session, you should execute `winpty python`. You may want to alias Python by adding`alias python='winpty python.exe' to your .bashrc file.
 * 
 
-* Regex
+## Regex
+* [Regex 1](../week_1/regex_1.md)
+* [Regex 2](../week_1/regex_2.md)
+* [Regex resources](../week_1/regex_resources.md)
+* [Regex builder](https://regex101.com)
+* [](../week_1/command_line_3)
+
+
 * Internet (HTTP)
 * Web (HTML, CSS, JavaScript)
 * Operating system
