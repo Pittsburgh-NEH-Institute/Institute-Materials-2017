@@ -54,16 +54,33 @@
 * [Project planning guide](../schedule/week_2/project_planning.md)
 
 ## Model, syntax, and markup semantics
-* []()
-* []()
-* []()
+* [Model, syntax, and markup semantics](../schedule/week_2/model_syntax_semantics.md)
+* [Plain text as model and expression](../schedule/week_2/plain.md)
+* [XML as model and expression](../schedule/week_2/xml_model.md)
+* [Other models and expressions: LMNL, GODDAG, TexMECS, TAG](../schedule/week_2/other_models.md)
 
+### XML
+* [XML as tree](../schedule/week_2/xpath.md)
+* [Overlap in XML](../schedule/week_2/overlap_xml.md)
+* [Markup](../schedule/week_2/explicit.md)
+* [What’s hard in XML?](../schedule/week_2/xml_limitations.md)
+* [XML and OHCO](../schedule/week_2/ohco.md)
 
+### LMNL
+* [LMNL](../schedule/week_2/lmnl_syntax.md)
 
-* Transcription with markup: XML and LMNL
-* XML as tree: XPath
+### TAG
+* [Alexandria installation](../schedule/week_3/alexandria.md)
+
+## Visualization
+* [What story are you trying to tell?](../schedule/week_2/sample_visualizations.md)
+
+## Normalization
+* [Linking to a notebook](../schedule/week_2/Normalization.ipynb)
+
 * Queries and XML
-* Theory of edition
+## Theory of edition
+* [Edition terms and concepts](../schedule/week_2/edition_terms_and_concepts.md)
 * Gothenburg model
 	* Tokenization
 	* Normalization
@@ -71,7 +88,7 @@
 	* Analysis
 	* Visualization
 * Text analytics (Mike)
-* TAG (as model)
+
 * Bag of words (Mike)
 * Stylometry (Mike)
 * Web publishing frameworks
