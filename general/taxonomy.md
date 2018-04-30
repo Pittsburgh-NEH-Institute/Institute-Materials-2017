@@ -19,7 +19,7 @@
 * [Regex 2](../week_1/regex_2.md)
 * [Regex resources](../week_1/regex_resources.md)
 * [Regex builder](https://regex101.com)
-* [`grep`](../week_1/command_3_djb.md#finding-things-with-grep)
+* [Command 3 (`grep`)](https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_1/command_3_djb.html#finding-things-with-grep)
 
 
 * Internet (HTTP)
