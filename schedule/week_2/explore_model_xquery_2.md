@@ -35,10 +35,10 @@ We went through:
 * Looking up things in the function documentation, explicit functions or browse whole module. <http://localhost:8080/exist/apps/fundocs/index.html>
 
 ### Previous session 
-If you missed yesterday's session:
-* [Exploring the model with XQuery, part 1](explore_model_xquery.md)
+If you missed yesterday’s session:
+* [Exploring the model with XQuery, part 1](explore_model_xquery_1.md)
 
-### Don't forget 
+### Don’t forget 
 * Don't forget to look at the keyboard shortcuts, e.g. using `Ctrl+Enter/Cmd+Enter` will save you some time executing the queries.
 * In the result area you can page forward and backwards with the double arrows showing if your result set is larger than your page size.
 
