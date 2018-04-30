@@ -127,8 +127,8 @@ Julie André and Elena Pierazzo created an animated prototype of an opening of o
 
 **URL:** <http://individual.utoronto.ca/alangaley/visualizingvariation/animated.html>  
 
-<img src="images/animated-1.png" width="75%" alt="[Animated Variants 1 image]"/>
+<img src="images/animated_1.png" width="75%" alt="[Animated Variants 1 image]"/>
 
-<img src="images/animated-2.png" width="75%" alt="[Animated Variants 2 image]"/>
+<img src="images/animated_2.png" width="75%" alt="[Animated Variants 2 image]"/>
 
 Though not a graph nor a diagram, Alan Galey’s Animated Variants visualization tool deserves special mention here. Textual variance is represented within a sentence in an active manner, by switching among variant words in place. The tool makes a virtue of a text’s ambiguity, emphasizing Galey’s point that no variant is fixed. In this example, that ambiguity is expressed visually by changing among the words “solid”, “sallied”, and “sullied”.
