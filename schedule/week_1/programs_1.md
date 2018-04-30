@@ -7,7 +7,7 @@
 * Another way to do it: the magical `file` command
 * Why `file` is not completely infallible
 
-## Character sets
+## Character sets and file formats
 
 * Where it all began: ASCII
 * 8-bit character encodings (and why they're called that)
@@ -17,10 +17,11 @@
 * Unicode and encodings thereof 
   * The Unicode set
   * Problems of encoding and how they can be solved
-  * Byte order marks in encodings other than UTF-8
+  * Byte order marks in encodings other than UTF-8 (UTR-16, UCS-4)
     * Corollary: there is **never** a reason to choose "UTF-8 with BOM" for your encoding!
   * Unicode-enabled Windows uses UTF-16 by default
   * Unicode-enabled Mac and Linux use UTF-8
+* CSV and TSV: comma-separated values and tab-separated values
 * Why UTF-8 is preferred by most people: backwards compatibility
 * How to know what you have: the `file` command
 * How to change what you have: your text editor
@@ -57,14 +58,17 @@ We will write a 'Hello World' script in Python, for demonstration purposes.
 
 ## Shells within shells
 
+* `ls -l`
+* user, group, other
+* `chown` (You probably can’t change ownership on shared systems and don’t need to do it on your own machine. This command is useful if you install something incorrectly.)
+* `chmod` (“644”, “664” for files; “755”, “775” for directories)
 * Bash is a shell, but there are other shells
 * Running `python` - different syntax, different commands
 * Running `telnet` - another different syntax, more different commands
 * Running `bash` within `bash` and process listing
-
+ 
 ## Getting around the directory stack
 
-<!-- to explain what this is and why and how it's used -->
 * review of `cd` and `cd -`
 * `pushd`
 * `popd`

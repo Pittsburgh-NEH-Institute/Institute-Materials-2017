@@ -1,7 +1,6 @@
 # Taxonomy
 
 ## Git
- 
 * [Git resources page](../schedule/week_1/git_resources.md)
 * [Git 1](../schedule/week_1/git_l.md)
 * [Git 2](../schedule/week_1/git_2.md)
@@ -21,13 +20,32 @@
 * [Regex builder](https://regex101.com)
 * [Command 3 (`grep`)](https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_1/command_3_djb.html#finding-things-with-grep)
 
+## Internet (HTTP)
+* [How the Internet works 1](../week_1/internet_1.md)
+* [How the Internet works 2](../week_1/internet_2.md)
+* 
+## Web (HTML, CSS, JavaScript)
+* [Web technologies](../week_1/web_technologies.md)
+* [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [MDN CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-* Internet (HTTP)
-* Web (HTML, CSS, JavaScript)
-* Operating system
-* Documentation
-* Errors
-* Commands, programs, files
+## Operating system
+* [Getting to know Windows](../week_1/getting_to_know_windows.md)
+* [Windows command line](../week_1/command_1_windows.md)
+* [Getting to know Mac](../week_1/getting_to_know_mac.md)
+
+## Documentation
+* [`man`](https://www.cs.mcgill.ca/~guide/help/man.html)
+* [SS64 command line reference](https://ss64.com)
+
+## Errors
+* [Don't panic](placeholder, either find something or write something)
+
+## Commands, programs, files
+* [Programs and files 1](../week_1/programs_1.md)
+* [Programs and files 2](../week_1/programs_2.md)
+
 * Project planning
 * Model, syntax, and markup semantics
 * Transcription with markup: XML and LMNL
