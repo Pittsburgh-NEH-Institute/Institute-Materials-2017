@@ -90,7 +90,7 @@ Practice with `ls` in data-shell/molecules
 * `2>`: error messages to file (`2> /dev/null`)
 
 Save file listings with `ls`, file contents with `cat`, or command-line text with `echo`.
-
+## Sending data through pipelines
 ## Filters
 
 ### About filters

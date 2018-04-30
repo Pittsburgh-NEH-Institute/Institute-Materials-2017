@@ -45,9 +45,19 @@
 ## Commands, programs, files
 * [Programs and files 1](../week_1/programs_1.md)
 * [Programs and files 2](../week_1/programs_2.md)
+* [Command line 1](../week_1/command_1_djb.md)
+* [Command line 2](../week_1/command_2_djb.md)
 
-* Project planning
-* Model, syntax, and markup semantics
+## Project planning
+* [Project planning guide](../week_2/project_planning.md)
+
+## Model, syntax, and markup semantics
+* []()
+* []()
+* []()
+
+
+
 * Transcription with markup: XML and LMNL
 * XML as tree: XPath
 * Queries and XML
