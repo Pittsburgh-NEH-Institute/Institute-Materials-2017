@@ -75,18 +75,21 @@
 ## Visualization
 * [What story are you trying to tell?](../schedule/week_2/sample_visualizations.md)
 
-## Normalization
-* [Linking to a notebook](../schedule/week_2/Normalization.ipynb)
 
 * Queries and XML
 ## Theory of edition
 * [Edition terms and concepts](../schedule/week_2/edition_terms_and_concepts.md)
-* Gothenburg model
-	* Tokenization
-	* Normalization
-	* Alignment
-	* Analysis
-	* Visualization
+## Gothenburg model
+* [Tokenization notebook](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb)
+* Normalization
+	* [Normalization notebook](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization.ipynb)
+	* [Normalization examples](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization_examples.ipynb)
+	* [Soundex normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Soundex_normalization.ipynb)
+	* [Unicode normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Unicode_normalization.ipynb)
+	* [Integrating tokenization and normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_tokenization_and_normalization.ipynb)
+* Alignment
+* Analysis
+* Visualization
 * Text analytics (Mike)
 
 * Bag of words (Mike)
