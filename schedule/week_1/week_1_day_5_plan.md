@@ -38,7 +38,7 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: [Git 2](git_tutorial_part_2.md)
+## 11:00–12:30: [Git 2](git_2.md)
 
 Git commits can sometimes go awry, but there are commands that undo previous edits and can help save different versions, especially when working with multiple branches. GitHub’s web site has social and collaborative tools as well, though they are not accessible via the command line.
 

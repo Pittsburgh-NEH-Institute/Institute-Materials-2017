@@ -82,7 +82,7 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>[Programs and files 1](programs_and_files_1.md)</title>
+                <title>[Programs and files 1](programs_1.md)</title>
                 <desc>Now that we know where to find them and what they are, how can we manipulate
                     and use files and directories for our benefit?</desc>
                 <act time="15" type="Presentation">
@@ -161,7 +161,7 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>[Command line 2](command_line_2_djb.md)</title>
+                <title>[Command line 2](command_2_djb.md)</title>
 
                 <act time="90" type="Discussion">
                     <desc>The Software Carpentry activities associated with the Command line 2
@@ -184,7 +184,7 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>[Programs and files 2](programs_and_files_2.md)</title>
+                <title>[Programs and files 2](programs_2.md)</title>
                 <desc>We have a basic grasp of directory navigation, but what don’t we know about
                     `$PATH`? How does our environment affect our file processing? How can we use
                     commands and variables to manipulate files more efficiently?</desc>
@@ -255,7 +255,7 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>[Command line 3](command_line_3_djb.md)</title>
+                <title>[Command line 3](command_3_djb.md)</title>
                 <desc>With regular expressions under our belt, we are ready to learn advanced `grep`
                     skills for the command line. We will explore how we can search for lines that
                     match a pattern and how to exploit advanced features (and work around
@@ -369,7 +369,7 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>[Git 1](git_tutorial.md)</title>
+                <title>[Git 1](git_1.md)</title>
                 <desc>Git is a tool for managing, sharing, and creating content, particularly code.
                     This tutorial aims to acclimate users to command line Git, which bypasses the
                     GUI and provides both more power and more flexibility.</desc>
@@ -484,7 +484,7 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>[Git 2](git_tutorial_part_2.md)</title>
+                <title>[Git 2](git_2.md)</title>
                 <desc>Git commits can sometimes go awry, but there are commands that undo previous
                     edits and can help save different versions, especially when working with
                     multiple branches. GitHub’s web site has social and collaborative tools as well,

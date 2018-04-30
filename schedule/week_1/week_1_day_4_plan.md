@@ -33,7 +33,7 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: [Git 1](git_tutorial.md)
+## 11:00–12:30: [Git 1](git_1.md)
 
 Git is a tool for managing, sharing, and creating content, particularly code. This tutorial aims to acclimate users to command line Git, which bypasses the GUI and provides both more power and more flexibility.
 
