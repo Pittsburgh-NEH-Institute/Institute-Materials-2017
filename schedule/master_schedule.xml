@@ -161,7 +161,7 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>[Command line 2](command_2_djb.md)</title>
+                <title>[Command line 2](command_2.md)</title>
 
                 <act time="90" type="Discussion">
                     <desc>The Software Carpentry activities associated with the Command line 2
@@ -255,7 +255,7 @@
                 </act>
             </slot>
             <slot time="11:00:00">
-                <title>[Command line 3](command_3_djb.md)</title>
+                <title>[Command line 3](command_3.md)</title>
                 <desc>With regular expressions under our belt, we are ready to learn advanced `grep`
                     skills for the command line. We will explore how we can search for lines that
                     match a pattern and how to exploit advanced features (and work around

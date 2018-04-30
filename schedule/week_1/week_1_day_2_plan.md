@@ -32,7 +32,7 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: [Command line 2](command_2_djb.md)
+## 11:00–12:30: [Command line 2](command_2.md)
 
 Time | Topic | Type
 ---- | ---- | ---- 
