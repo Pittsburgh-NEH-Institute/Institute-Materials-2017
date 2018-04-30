@@ -2,7 +2,7 @@
 
 ## Git
 * [Git resources page](../schedule/week_1/git_resources.md)
-* [Git 1](../schedule/week_1/git_l.md)
+* [Git 1](../schedule/week_1/git_1.md)
 * [Git 2](../schedule/week_1/git_2.md)
 * [Publishing on GitHub Pages](https://guides.github.com/features/pages/)
 
@@ -18,12 +18,12 @@
 * [Regex 2](../schedule/week_1/regex_2.md)
 * [Regex resources](../schedule/week_1/regex_resources.md)
 * [Regex builder](https://regex101.com)
-* [Command 3 (`grep`)](https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_1/command_3_djb.html#finding-things-with-grep)
+* [Command 3 (`grep`)](https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_1/command_3.html#finding-things-with-grep)
 
 ## Internet (HTTP)
 * [How the Internet works 1](../schedule/week_1/internet_1.md)
 * [How the Internet works 2](../schedule/week_1/internet_2.md)
-* 
+
 ## Web (HTML, CSS, JavaScript)
 * [Web technologies](../schedule/week_1/web_technologies.md)
 * [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -32,7 +32,6 @@
 
 ## Operating system
 * [Getting to know Windows](../schedule/week_1/getting_to_know_windows.md)
-* [Windows command line](../schedule/week_1/command_1_windows.md)
 * [Getting to know Mac](../schedule/week_1/getting_to_know_mac.md)
 
 ## Documentation
@@ -45,9 +44,11 @@
 ## Commands, programs, files
 * [Programs and files 1](../schedule/week_1/programs_1.md)
 * [Programs and files 2](../schedule/week_1/programs_2.md)
-* [Command line 1](../schedule/week_1/command_1.md)
+* [Windows command line](../schedule/week_1/command_1_windows.md)
+* [Mac command line](../schedule/week_1/command_1_mac.md)
 * [Command line 2](../schedule/week_1/command_2.md)
 * [Command line 3](../schedule/week_1/command_3.md)
+
 
 ## Project planning
 * [Project planning guide](../schedule/week_2/project_planning.md)
