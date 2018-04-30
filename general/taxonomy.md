@@ -77,8 +77,6 @@ This page is a topic-based guide of all material available on the site.
 ## Visualization
 * [What story are you trying to tell?](../schedule/week_2/sample_visualizations.md)
 
-
-* Queries and XML
 ## Theory of edition
 * [Edition terms and concepts](../schedule/week_2/edition_terms_and_concepts.md)
 ## Gothenburg model
@@ -94,6 +92,7 @@ This page is a topic-based guide of all material available on the site.
 * Visualization
 * Text analytics (Mike)
 
+* Queries and XML
 * Bag of words (Mike)
 * Stylometry (Mike)
 * Web publishing frameworks
