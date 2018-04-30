@@ -188,3 +188,9 @@ Inside `writing`:
 
 * `wc -l $(find . -name '*.txt')`
 * `grep "FE" $(find .. -name '*.pdb')`
+
+<!--
+## Shell scripting
+
+Adapt from [Linux tutorial](http://linuxcommand.org/lc3_writing_shell_scripts.php).
+-->
