@@ -1,6 +1,4 @@
-# Taxonomy
-
-This page is a topic-based guide of all material available on the site.
+# Institute materials, organized by topic
 
 ## Git
 * [Git resources page](../schedule/week_1/git_resources.md)
@@ -80,7 +78,7 @@ This page is a topic-based guide of all material available on the site.
 ## Theory of edition
 * [Edition terms and concepts](../schedule/week_2/edition_terms_and_concepts.md)
 
-## Collation
+## The Gothenburg model of textual collation
 
 * [CollateX installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb)
 * [Gothenburg model](../schedule/week_2/gothenburg.md)
