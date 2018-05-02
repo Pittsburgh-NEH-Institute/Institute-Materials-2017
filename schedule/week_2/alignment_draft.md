@@ -1,3 +1,4 @@
+<!-- These material have been incorporated into alignment.md; this page should not be linked. -->
 # Alignment
 
 As part of the collation of textual variants, alignment is the process of determining which tokens in one witness should be regarded as parallel to which tokens in another. Alignment thus presupposes [tokenization](week_2_day_1_tokenization.md). Furthermore, texts may be [normalized](week2_day_1_normalization.md) before alignment as a way of treating as equivalent readings that are not string-equal. Normalization may be implemented in the text itself, completely leveling differences that may have been present originally, or it may be performed on shadow copies of the tokens, which lets the alignment process treat different readings as equivalent without irretrievably erasing evidence of the differences.
