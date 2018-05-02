@@ -49,6 +49,11 @@ Materials are organized by relevance to beginners (those just planning a project
 * [MDN CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
+## Queries and XML
+* [XPath](../schedule/week_2/xpath.md)
+* [XQuery 1](../schedule/week_2/xquery_1.md)
+* [XQuery 2](../schedule/week_2/xquery_2.md)
+
 ## Python
 * [Anaconda Python](https://www.anaconda.com/download/)
 * [PyCharm](https://www.jetbrains.com/pycharm/)
@@ -101,9 +106,10 @@ Materials are organized by relevance to beginners (those just planning a project
 	1. Visualization (serialization)
 
 ## Text analytics (Mike)
-
-## Queries and XML
+* [Mike Kestemont's website](http://www.mike-kestemont.org/)
+* 
 ## Bag of words (Mike)
+
 ## Stylometry (Mike)
 
 ## Web publishing frameworks
@@ -127,9 +133,10 @@ Materials are organized by relevance to beginners (those just planning a project
 * [Build your API](../schedule/week_3/building_apis.md)
 
 ## Publishing strategies
-	* Licensing
-	* Archiving
-	* Sustainability
-	* 
+* Licensing (ADD CONTENT)
+* Archiving
+* Sustainability
 
-## Participant projects
+## Example projects
+* [List of participant editions/testimony](participant_editions.md)
+* [List of exemplary editions](exemplary_editions.md)
