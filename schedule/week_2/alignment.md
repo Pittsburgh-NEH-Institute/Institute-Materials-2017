@@ -3,7 +3,7 @@ The alignment stage of the Gothenburg model compares the normalized forms of the
 
 To instantiate the alignment CollateX builds a *variant graph*, a structure that can be represented through the following visualization:
 
-<img src="variant_graph.png"/>
+<img src="images/variant_graph.png"/>
 
 The graph is *directed* from an empty *start* node (the square at the left numbered 5) to an empty *end* node (the square on the right numbered 3). The specific numbers in the start and end nodes are arbitrary, and are not important for understanding the graph. The graph also contains a lot of diagnostic information that is introduced by CollateX and that is useful for developers. The way to read the graph is as follows:
 
