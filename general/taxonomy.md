@@ -1,35 +1,17 @@
 # Institute materials, organized by topic
 
+Materials are organized by relevance to beginners (those just planning a project) to advanced edition makers (those ready to release an edition). Links include original materials and outside sources.
+
+
+## Project planning
+* [Project planning guide](../schedule/week_2/project_planning.md)
+
 ## Git
 * [Git resources page](../schedule/week_1/git_resources.md)
 * [Git 1](../schedule/week_1/git_1.md)
 * [Git 2](../schedule/week_1/git_2.md)
 * [Forking the Institute repo](../schedule/week_2/fork.md)
 * [Publishing on GitHub Pages](https://guides.github.com/features/pages/)
-
-## Python
-* [Anaconda Python](https://www.anaconda.com/download/)
-* [PyCharm](https://www.jetbrains.com/pycharm/)
-* [Python 1](../schedule/week_1/python_1.html)
-* [Python 2](../schedule/week_1/python_2.html)
-* Note: Git `bash` requires the use of `winpty` when running certain Windows applications that are meant to run within `cmd`. For example, to run an interactive python session, you should execute `winpty python`. You may want to alias Python by adding`alias python='winpty python.exe'` to your `.bashrc` file.
-
-## Regex
-* [Regex 1](../schedule/week_1/regex_1.md)
-* [Regex 2](../schedule/week_1/regex_2.md)
-* [Regex resources](../schedule/week_1/regex_resources.md)
-* [Regex builder](https://regex101.com)
-* [Command 3 (`grep`)](https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_1/command_3.html#finding-things-with-grep)
-
-## Internet (HTTP)
-* [How the Internet works 1](../schedule/week_1/internet_1.md)
-* [How the Internet works 2](../schedule/week_1/internet_2.md)
-
-## Web (HTML, CSS, JavaScript)
-* [Web technologies](../schedule/week_1/web_technologies.md)
-* [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [MDN CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-* [MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## Operating system
 * [Getting to know Windows](../schedule/week_1/getting_to_know_windows.md)
@@ -50,8 +32,29 @@
 * [Command line 2](../schedule/week_1/command_2.md)
 * [Command line 3](../schedule/week_1/command_3.md)
 
-## Project planning
-* [Project planning guide](../schedule/week_2/project_planning.md)
+## Regex
+* [Regex 1](../schedule/week_1/regex_1.md)
+* [Regex 2](../schedule/week_1/regex_2.md)
+* [Regex resources](../schedule/week_1/regex_resources.md)
+* [Regex builder](https://regex101.com)
+* [Command 3 (`grep`)](https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_1/command_3.html#finding-things-with-grep)
+
+## Internet (HTTP)
+* [How the Internet works 1](../schedule/week_1/internet_1.md)
+* [How the Internet works 2](../schedule/week_1/internet_2.md)
+
+## Web (HTML, CSS, JavaScript)
+* [Web technologies](../schedule/week_1/web_technologies.md)
+* [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [MDN CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+## Python
+* [Anaconda Python](https://www.anaconda.com/download/)
+* [PyCharm](https://www.jetbrains.com/pycharm/)
+* [Python 1](../schedule/week_1/python_1.html)
+* [Python 2](../schedule/week_1/python_2.html)
+* Note: Git `bash` requires the use of `winpty` when running certain Windows applications that are meant to run within `cmd`. For example, to run an interactive python session, you should execute `winpty python`. You may want to alias Python by adding`alias python='winpty python.exe'` to your `.bashrc` file.
 
 ## Model, syntax, and markup semantics
 * [Model, syntax, and markup semantics](../schedule/week_2/model_syntax_semantics.md)
@@ -71,16 +74,17 @@
 
 ### TAG
 * [Install Docker](https://docs.docker.com/install/#platform-support-matrix)
-	* Note: If you are running Windows 10 Home edition (or any OS older than Windows 10), you will instead [Docker Toolbox](https://docs.docker.com/toolbox/overview/) instead. Windows 10 HE does not support the Hyper-V Windows feature required to run a full installation of Docker.
+	* Note: If you are running Windows 10 Home edition (or any OS older than Windows 10), you will install [Docker Toolbox](https://docs.docker.com/toolbox/overview/) instead. Windows 10 HE does not support the Hyper-V Windows feature required to run a full installation of Docker.
 * [Running Alexandria](../schedule/week_3/alexandria.md)
+
 ## Visualization
 * [What story are you trying to tell?](../schedule/week_2/sample_visualizations.md)
+* [Text visualization](../schedule/week_3/visualization.md)
 
 ## Theory of edition
 * [Edition terms and concepts](../schedule/week_2/edition_terms_and_concepts.md)
 
 ## The Gothenburg model of textual collation
-
 * [CollateX installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb)
 * [Gothenburg model](../schedule/week_2/gothenburg.md)
 	1. [Tokenization](../schedule/week_2/tokenization.md)
@@ -94,7 +98,7 @@
 	1. [Alignment](../schedule/week_2/alignment.md)
 	1. [Analysis](../schedule/week_2/analysis.md)
 		* [Near matching](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Near_matching.ipynb)
-	1. Visualization
+	1. Visualization (serialization)
 
 ## Text analytics (Mike)
 
@@ -112,9 +116,6 @@
 
 ## LOD / RDF / SPARQL
 * [RDF and SPARQL](../schedule/week_3/rdf_sparql.md)
-
-## Visualization
-* [Text visualization](../schedule/week_3/visualization.md)
 
 ## TEI stylesheets
 * [TEI Stylesheets GitHub](https://github.com/TEIC/Stylesheets#stylesheets)
