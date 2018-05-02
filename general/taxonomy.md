@@ -104,19 +104,37 @@ This page is a topic-based guide of all material available on the site.
 ## Stylometry (Mike)
 
 ## Web publishing frameworks
-	* CETEIcean
-	* GitHub pages
-	* Flask
-	* eXist-db
-	* 
+* [CETEIcean](http://philomousos.com/CETEIcean/index.html)
+* [GitHub pages](https://pages.github.com/)
+* [Flask](http://flask.pocoo.org/)
+* eXist-db
+	* [eXist-db install](http://exist-db.org/exist/apps/homepage/index.html)
+	* [eXist-db, XQuery, and webapps ](https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_3/exist_xquery_webapps.html)
+
 ## LOD / RDF / SPARQL
-## TEI stylesheets
+* [RDF and SPARQL](../schedule/week_3/rdf_sparql.md)
+* 
 ## TAG and Alexandria
+* [Install Docker](https://docs.docker.com/install/#platform-support-matrix)
+	* Note: If you are running Windows 10 Home edition (or any OS older than Windows 10), you will instead [Docker Toolbox](https://docs.docker.com/toolbox/overview/) instead. Windows 10 HE does not support the Hyper-V Windows feature required to run a full installation of Docker.
+* [Running Alexandria](../schedule/week_3/alexandria.md)
+
+## Visualization
+* [Text visualization](../schedule/week_3/visualization.md)
+
+## TEI stylesheets
+* [TEI Stylesheets GitHub](https://github.com/TEIC/Stylesheets#stylesheets)
+* [Using Docker to run Stylesheets](../schedule/week_3/xslt.md)
+
 ## APIs
+* [Intro to Application Programming Interfaces](../schedule/week_3/api_intro.md)
+* [Using an API in your edition](../schedule/week_3/using_apis_edition.md)
+* [Build your API](../schedule/week_3/building_apis.md)
+
 ## Publishing strategies
 	* Licensing
 	* Archiving
 	* Sustainability
 	* 
-## Visualization
+
 ## Participant projects

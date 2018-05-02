@@ -1,4 +1,4 @@
-# RDF and Sparql
+# RDF and SPARQL
 
 ## Getting RDF from your sources
 
