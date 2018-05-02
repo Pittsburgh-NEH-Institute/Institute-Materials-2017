@@ -85,7 +85,7 @@ This page is a topic-based guide of all material available on the site.
 * Gothenburg model ([Overview](../schedule/week_2/gothenburg.md))
 	1. Tokenization ([Overview](../schedule/week_2/tokenization.md))
 		* [Tokenization notebook](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb)
-	1. Normalization ([Overview](../schedule/week_2/normalization.md))
+	1. Normalization
 		* [Normalization notebook](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization.ipynb)
 		* [Normalization examples](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization_examples.ipynb)
 		* [Unicode normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Unicode_normalization.ipynb)
