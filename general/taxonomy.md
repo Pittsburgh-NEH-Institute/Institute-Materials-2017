@@ -70,8 +70,9 @@
 * [LMNL](../schedule/week_2/lmnl_syntax.md)
 
 ### TAG
-* [Alexandria installation](../schedule/week_3/alexandria.md)
-
+* [Install Docker](https://docs.docker.com/install/#platform-support-matrix)
+	* Note: If you are running Windows 10 Home edition (or any OS older than Windows 10), you will instead [Docker Toolbox](https://docs.docker.com/toolbox/overview/) instead. Windows 10 HE does not support the Hyper-V Windows feature required to run a full installation of Docker.
+* [Running Alexandria](../schedule/week_3/alexandria.md)
 ## Visualization
 * [What story are you trying to tell?](../schedule/week_2/sample_visualizations.md)
 
@@ -111,11 +112,6 @@
 
 ## LOD / RDF / SPARQL
 * [RDF and SPARQL](../schedule/week_3/rdf_sparql.md)
-* 
-## TAG and Alexandria
-* [Install Docker](https://docs.docker.com/install/#platform-support-matrix)
-	* Note: If you are running Windows 10 Home edition (or any OS older than Windows 10), you will instead [Docker Toolbox](https://docs.docker.com/toolbox/overview/) instead. Windows 10 HE does not support the Hyper-V Windows feature required to run a full installation of Docker.
-* [Running Alexandria](../schedule/week_3/alexandria.md)
 
 ## Visualization
 * [Text visualization](../schedule/week_3/visualization.md)
