@@ -81,6 +81,7 @@ This page is a topic-based guide of all material available on the site.
 
 ## Collation
 ([CollateX installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb))
+* [Overview]()
 * [Tokenization notebook](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb)
 * Normalization
 	* [Normalization notebook](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization.ipynb)
@@ -88,9 +89,9 @@ This page is a topic-based guide of all material available on the site.
 	* [Unicode normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Unicode_normalization.ipynb)
 	* [Soundex normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Soundex_normalization.ipynb)
 	* [Integrating tokenization and normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_tokenization_and_normalization.ipynb)
-
-## Alignment
-* []()
+* [Alignment](../schedule/week_2/alignment.md)
+	
+* [Collation]()
 * 
 ## Analysis
 * 
@@ -101,10 +102,11 @@ This page is a topic-based guide of all material available on the site.
 ## Queries and XML
 ## Bag of words (Mike)
 ## Stylometry (Mike)
+
 ## Web publishing frameworks
 	* CETEIcean
 	* GitHub pages
-	* Flast
+	* Flask
 	* eXist-db
 	* 
 ## LOD / RDF / SPARQL
