@@ -51,7 +51,6 @@ This page is a topic-based guide of all material available on the site.
 * [Command line 2](../schedule/week_1/command_2.md)
 * [Command line 3](../schedule/week_1/command_3.md)
 
-
 ## Project planning
 * [Project planning guide](../schedule/week_2/project_planning.md)
 
@@ -79,7 +78,9 @@ This page is a topic-based guide of all material available on the site.
 
 ## Theory of edition
 * [Edition terms and concepts](../schedule/week_2/edition_terms_and_concepts.md)
-## Gothenburg model
+
+## Collation
+([CollateX installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb))
 * [Tokenization notebook](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb)
 * Normalization
 	* [Normalization notebook](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization.ipynb)
@@ -87,26 +88,33 @@ This page is a topic-based guide of all material available on the site.
 	* [Unicode normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Unicode_normalization.ipynb)
 	* [Soundex normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Soundex_normalization.ipynb)
 	* [Integrating tokenization and normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_tokenization_and_normalization.ipynb)
-* Alignment
-* Analysis
-* Visualization
-* Text analytics (Mike)
 
-* Queries and XML
-* Bag of words (Mike)
-* Stylometry (Mike)
-* Web publishing frameworks
+## Alignment
+* []()
+* 
+## Analysis
+* 
+## Visualization
+
+## Text analytics (Mike)
+
+## Queries and XML
+## Bag of words (Mike)
+## Stylometry (Mike)
+## Web publishing frameworks
 	* CETEIcean
 	* GitHub pages
 	* Flast
 	* eXist-db
-* LOD / RDF / SPARQL
-* TEI stylesheets
-* TAG and Alexandria
-* APIs
-* Publishing strategies
+	* 
+## LOD / RDF / SPARQL
+## TEI stylesheets
+## TAG and Alexandria
+## APIs
+## Publishing strategies
 	* Licensing
 	* Archiving
 	* Sustainability
-* Visualization
-* Participant projects
+	* 
+## Visualization
+## Participant projects
