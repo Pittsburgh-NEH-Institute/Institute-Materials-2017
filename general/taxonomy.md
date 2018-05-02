@@ -81,19 +81,19 @@ This page is a topic-based guide of all material available on the site.
 
 ## Collation
 
-([CollateX installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb))
-
-* [Overview](gothenburg.md)
-* [Tokenization notebook](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb)
-* Normalization
-	* [Normalization notebook](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization.ipynb)
-	* [Normalization examples](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization_examples.ipynb)
-	* [Unicode normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Unicode_normalization.ipynb)
-	* [Soundex normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Soundex_normalization.ipynb)
-	* [Integrating tokenization and normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_tokenization_and_normalization.ipynb)
-* [Alignment](../schedule/week_2/alignment.md)
-* Analysis
-* Visualization
+* [CollateX installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb)
+* Gothenburg model ([Overview](../schedule/week_2/gothenburg.md))
+	1. Tokenization ([Overview](../schedule/week_2/tokenization.md))
+		* [Tokenization notebook](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb)
+	1. Normalization ([Overview](../schedule/week_2/normalization.md))
+		* [Normalization notebook](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization.ipynb)
+		* [Normalization examples](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization_examples.ipynb)
+		* [Unicode normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Unicode_normalization.ipynb)
+		* [Soundex normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Soundex_normalization.ipynb)
+		* [Integrating tokenization and normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_tokenization_and_normalization.ipynb)
+	1. Alignment ([Overview](../schedule/week_2/alignment.md))
+	1. Analysis ([Overview](../schedule/week_2/analysis.md))
+	1. Visualization
 
 ## Text analytics (Mike)
 
