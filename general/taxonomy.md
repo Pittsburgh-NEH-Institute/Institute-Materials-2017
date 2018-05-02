@@ -6,6 +6,7 @@ This page is a topic-based guide of all material available on the site.
 * [Git resources page](../schedule/week_1/git_resources.md)
 * [Git 1](../schedule/week_1/git_1.md)
 * [Git 2](../schedule/week_1/git_2.md)
+* [Forking the Institute repo](../schedule/week_2/fork.md)
 * [Publishing on GitHub Pages](https://guides.github.com/features/pages/)
 
 ## Python
@@ -82,8 +83,8 @@ This page is a topic-based guide of all material available on the site.
 ## Collation
 
 * [CollateX installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb)
-* Gothenburg model ([Overview](../schedule/week_2/gothenburg.md))
-	1. Tokenization ([Overview](../schedule/week_2/tokenization.md))
+* [Gothenburg model](../schedule/week_2/gothenburg.md)
+	1. [Tokenization](../schedule/week_2/tokenization.md)
 		* [Tokenization notebook](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb)
 	1. Normalization
 		* [Normalization notebook](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization.ipynb)
@@ -91,8 +92,9 @@ This page is a topic-based guide of all material available on the site.
 		* [Unicode normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Unicode_normalization.ipynb)
 		* [Soundex normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Soundex_normalization.ipynb)
 		* [Integrating tokenization and normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_tokenization_and_normalization.ipynb)
-	1. Alignment ([Overview](../schedule/week_2/alignment.md))
-	1. Analysis ([Overview](../schedule/week_2/analysis.md))
+	1. [Alignment](../schedule/week_2/alignment.md)
+	1. [Analysis](../schedule/week_2/analysis.md)
+		* [Near matching](../schedule/week_2/Near_matching.md)
 	1. Visualization
 
 ## Text analytics (Mike)
