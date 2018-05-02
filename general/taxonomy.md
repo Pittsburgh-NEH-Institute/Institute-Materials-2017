@@ -94,7 +94,7 @@ This page is a topic-based guide of all material available on the site.
 		* [Integrating tokenization and normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_tokenization_and_normalization.ipynb)
 	1. [Alignment](../schedule/week_2/alignment.md)
 	1. [Analysis](../schedule/week_2/analysis.md)
-		* [Near matching](../schedule/week_2/Near_matching.md)
+		* [Near matching](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Near_matching.ipynb)
 	1. Visualization
 
 ## Text analytics (Mike)
