@@ -8,8 +8,8 @@
             <date>July 10</date>
             <syn>Week 1 is dedicated to developing background knowledge of the computing environment
                 that the participants need to bring to Weeks 2 and 3, the editing and publishing
-                portions of the Institute. Topic areas include: 
-<list xml:space="preserve">
+                portions of the Institute. Topic areas include:
+                <list xml:space="preserve">
 * Operating system conventions (Windows, Mac, Linux) 
 * Working with files, programs, and the command line 
 * Regular expressions 
@@ -67,9 +67,9 @@
                 <act time="90" type="Presentation">
                     <desc>[macOS](getting_to_know_mac.md) (in Alumni Hall 531)
                         [Windows](getting_to_know_windows.md) (in Alumni Hall 528) The Software
-                        Carpentry activities associated with the Mac Command line 1 session are: 
-                        1. Introducing the Shell. 2. Navigating Files and Directories 3. Working with Files and Directories
-                    </desc>
+                        Carpentry activities associated with the Mac Command line 1 session are: 1.
+                        Introducing the Shell. 2. Navigating Files and Directories 3. Working with
+                        Files and Directories </desc>
                     <outcome/>
                 </act>
 
@@ -175,7 +175,7 @@
                     <goal>Editing within the command line interface</goal>
                     <goal>Data workflow in the shell</goal>
                 </outcome>
-                
+
             </slot>
             <slot time="12:30:00">
                 <title>Lunch</title>
@@ -233,8 +233,9 @@
             <slot time="09:00:00">
                 <title>[Regular expressions 2](regex_2.md)</title>
                 <desc>Last session we covered simple patterns and repetition. We also did some
-                    exercises on this using `egrep`. Today, we cover alternation and
-                    grouping before we continue using `egrep` with more advanced expressions. We then compare Regex in `egrep` and Python.</desc>
+                    exercises on this using `egrep`. Today, we cover alternation and grouping before
+                    we continue using `egrep` with more advanced expressions. We then compare Regex
+                    in `egrep` and Python.</desc>
                 <act time="30" type="Code_lab">
                     <desc>Alternation</desc>
                 </act>
@@ -244,8 +245,10 @@
                 <act time="30" type="Code_lab">
                     <desc>Comparison to Python</desc>
                 </act>
-                    <outcome><goal>Creating regular expressions for more complicated match patterns</goal></outcome>
-                
+                <outcome>
+                    <goal>Creating regular expressions for more complicated match patterns</goal>
+                </outcome>
+
             </slot>
             <slot time="10:30:00">
                 <title>Coffee break</title>
@@ -445,10 +448,10 @@
             <date>July 14</date>
             <syn>Day 5 begins with an expanded session on how the Internet works. Topics covered
                 include Internet security and the nitty-gritty of HTTP. Git 2 covers how to resolve
-                merge conflicts, along with how to use Git Issues and other site features.
-                Finally, a lesson on web technologies, including HTML, CSS, and Markdown will
-                prepare participants for future sessions, and familiarize them with some
-                common, useful tools.</syn>
+                merge conflicts, along with how to use Git Issues and other site features. Finally,
+                a lesson on web technologies, including HTML, CSS, and Markdown will prepare
+                participants for future sessions, and familiarize them with some common, useful
+                tools.</syn>
             <slot time="09:00:00">
                 <title>[How the Internet works 2](internet_2.md)</title>
                 <desc>DESCRIPTION NEEDED</desc>
@@ -767,7 +770,8 @@
                     will users interact with the views? What will be the role of graphic
                     visualization?</desc>
                 <act time="20" type="Discussion">
-                    <desc>Explore [edition terms and concepts](edition_terms_and_concepts.md)</desc>
+                    <desc>Explore [edition terms and concepts](edition_terms_and_concepts.md) and
+                        the [digital workstation](../week_3/digital_workstation.md)</desc>
                     <outcome/>
                 </act>
                 <act time="20" type="Discussion">
@@ -799,14 +803,17 @@
             <slot time="14:00:00">
                 <title>Tokenization</title>
                 <act time="10" type="Discussion">
-                    <desc>CollateX installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb)</desc>
+                    <desc>CollateX
+                        installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb)</desc>
                     <outcome/>
                 </act>
                 <act time="30" type="Code_lab">
-                    <desc>[Tokenizing plain text](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb)</desc>
+                    <desc>[Tokenizing plain
+                        text](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb)</desc>
                 </act>
                 <act time="30" type="Code_lab">
-                    <desc>[Tokenizing XML](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb)</desc>
+                    <desc>[Tokenizing
+                        XML](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb)</desc>
                 </act>
                 <act time="20" type="Discussion">
                     <desc>[Further challenges in tokenization](tokenization.md)</desc>
