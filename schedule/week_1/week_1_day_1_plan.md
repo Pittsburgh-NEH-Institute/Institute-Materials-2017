@@ -3,8 +3,8 @@
 
 Week 1 is dedicated to developing background knowledge of the computing environment
                 that the participants need to bring to Weeks 2 and 3, the editing and publishing
-                portions of the Institute. Topic areas include: 
-
+                portions of the Institute. Topic areas include:
+                
 * Operating system conventions (Windows, Mac, Linux) 
 * Working with files, programs, and the command line 
 * Regular expressions 
