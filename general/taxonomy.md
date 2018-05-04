@@ -88,6 +88,7 @@ Materials are organized by relevance to beginners (those just planning a project
 
 ## Theory of edition
 * [Edition terms and concepts](../schedule/week_2/edition_terms_and_concepts.md)
+* [What is a digital workstation?](../schedule/week_3/digital_workstation.md)
 
 ## The Gothenburg model of textual collation
 * [CollateX installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb)
@@ -132,8 +133,6 @@ Materials are organized by relevance to beginners (those just planning a project
 * [Using an API in your edition](../schedule/week_3/using_apis_edition.md)
 * [Build your API](../schedule/week_3/building_apis.md)
 
-# The digital workstation
-* [What is a digital workstation?](../schedule/week_2/digital_workstation.md)
 
 ## Publishing strategies
 * Licensing (ADD CONTENT)
