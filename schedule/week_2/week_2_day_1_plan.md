@@ -23,14 +23,14 @@ Scholars create digital editions to serve research purposes that may differ from
 * **Code lab:** participants code alone or in small groups
 
 * * *
-## 9:00–10:30: Planning your project
+## 9:00–10:30: [Planning your project](project_planning.md)
 
 There cannot be a single set of *best practice* recommendations for all digital editions because scholars create editions to meet different research goals, and they do that under different working conditions. What’s the purpose of your edition, and what are the resources at your disposal and the constraints on your efforts?
 
 Time | Topic | Type
 ---- | ---- | ---- 
 10 min | [Overview of Week 2](topics.md) | Presentation
-30 min | Explore [project planning questions](project_planning.md) | Discussion
+30 min | Explore project planning questions | Discussion
 25 min | Apply project planning questions to your own project (individually or collaboratively) | Talk lab
 25 min | General discussion of Talk lab results | Discussion
 

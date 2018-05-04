@@ -43,7 +43,7 @@ Are you making an edition of a manuscript or of a text? What is the role of lang
 
 Time | Topic | Type
 ---- | ---- | ---- 
-20 min | Explore [edition terms and concepts](edition_terms_and_concepts.md) | Discussion
+20 min | Explore [edition terms and concepts](edition_terms_and_concepts.md) and the [digital workstation](../week_3/digital_workstation.md) | Discussion
 20 min | It isn’t just words! [What story are you trying to tell?](sample_visualizations.md) | Discussion
 30 min | Explore participant data in light of terms and concepts | Talk lab
 20 min | General discussion of Talk lab results | Discussion
@@ -54,16 +54,16 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-10 min | Intro and setup | Discussion
-30 min | Tokenizing plain text | Code lab
-30 min | Tokenizing XML | Code lab
-20 min | Further challenges in tokenization | Discussion
+10 min | CollateX installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb) | Discussion
+30 min | [Tokenizing plain text](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb) | Code lab
+30 min | [Tokenizing XML](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb) | Code lab
+20 min | [Further challenges in tokenization](tokenization.md) | Discussion
 
 ## 3:30–4:00: Coffee break
 
 ## 4:00–5:30: Normalization
 
-Before we start: 1. Navigate to your fork of our Institute repo and run `git pull upstream remote`. 2. Start Jupyter notebook either from the Anaconda launcher or by navigating to your home directory and typing `jupyter notebook`. 3. Within the main Jupyter notebook web page, navigate to schedule/week_2 in your fork of our repo and open `Normalization.ipynb`, `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and `Integrating_XML_with_Python.ipynb`.
+Before we start: 1. Navigate to your fork of our Institute repo and run `git pull upstream remote`. 2. Start Jupyter notebook either from the Anaconda launcher or by navigating to your home directory and typing `jupyter notebook`. 3. Within the main Jupyter notebook web page, navigate to `schedule/week_2` in your fork of our repo and open `Normalization.ipynb`, `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and `Integrating_XML_with_Python.ipynb`.
 
 Time | Topic | Type
 ---- | ---- | ---- 

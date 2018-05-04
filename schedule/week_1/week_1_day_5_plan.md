@@ -3,10 +3,10 @@
 
 Day 5 begins with an expanded session on how the Internet works. Topics covered
                 include Internet security and the nitty-gritty of HTTP. Git 2 covers how to resolve
-                merge conflicts, along with how to use Git Issues and other site features.
-                Finally, a lesson on web technologies, including HTML, CSS, and Markdown will
-                prepare participants for future sessions, and familiarize them with some
-                common, useful tools.
+                merge conflicts, along with how to use Git Issues and other site features. Finally,
+                a lesson on web technologies, including HTML, CSS, and Markdown will prepare
+                participants for future sessions, and familiarize them with some common, useful
+                tools.
 
 ## Outcome goals
 * How does SSL protect communication?
