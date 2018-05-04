@@ -132,6 +132,9 @@ Materials are organized by relevance to beginners (those just planning a project
 * [Using an API in your edition](../schedule/week_3/using_apis_edition.md)
 * [Build your API](../schedule/week_3/building_apis.md)
 
+# The digital workstation
+* [What is a digital workstation?](../schedule/week_2/digital_workstation.md)
+
 ## Publishing strategies
 * Licensing (ADD CONTENT)
 * Archiving
