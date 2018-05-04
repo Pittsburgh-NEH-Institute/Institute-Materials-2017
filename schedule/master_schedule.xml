@@ -803,7 +803,7 @@
             <slot time="14:00:00">
                 <title>Tokenization</title>
                 <act time="10" type="Discussion">
-                    <desc>CollateX
+                    <desc>[CollateX
                         installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb)</desc>
                     <outcome/>
                 </act>
@@ -813,7 +813,8 @@
                 </act>
                 <act time="30" type="Code_lab">
                     <desc>[Tokenizing
-                        XML](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb)</desc>
+                        XML](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb)
+                        (scroll to “The next step: tokenizing XML”)</desc>
                 </act>
                 <act time="20" type="Discussion">
                     <desc>[Further challenges in tokenization](tokenization.md)</desc>
@@ -867,8 +868,8 @@
             <slot time="09:00:00">
                 <title>Normalization</title>
                 <act time="15" type="Discussion">
-                    <desc>Review of Week 2, Day 2: computational pipelines, modeling, processing,
-                        and tokenization</desc>
+                    <desc>Review of [week 2, day 2](week_2_day_2_plan.md): computational pipelines,
+                        modeling, processing, and tokenization</desc>
 
                     <outcome/>
                 </act>

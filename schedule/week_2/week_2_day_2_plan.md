@@ -54,9 +54,9 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-10 min | CollateX installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb) | Discussion
+10 min | [CollateX installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb) | Discussion
 30 min | [Tokenizing plain text](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb) | Code lab
-30 min | [Tokenizing XML](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb) | Code lab
+30 min | [Tokenizing XML](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb) (scroll to “The next step: tokenizing XML”) | Code lab
 20 min | [Further challenges in tokenization](tokenization.md) | Discussion
 
 ## 3:30–4:00: Coffee break

@@ -26,7 +26,7 @@ Week 2, Day 3 expands upon the idea of digital editions as text processing
 
 Time | Topic | Type
 ---- | ---- | ---- 
-15 min | Review of Week 2, Day 2: computational pipelines, modeling, processing, and tokenization | Discussion
+15 min | Review of [week 2, day 2](week_2_day_2_plan.md): computational pipelines, modeling, processing, and tokenization | Discussion
 15 min | Basic normalization | Presentation
 15 min | NLTK | Code lab
 15 min | Regular expressions | Code lab
