@@ -5,6 +5,7 @@ Materials are organized by relevance to beginners (those just planning a project
 
 ## Project planning
 * [Project planning guide](../schedule/week_2/project_planning.md)
+* [Computational pipelines](../../schedule/week_2/computational_pipeline.md)
 
 ## Git
 * [Git resources page](../schedule/week_1/git_resources.md)
