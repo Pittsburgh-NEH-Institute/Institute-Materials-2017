@@ -5,19 +5,24 @@
 ### Errors in Relax NG
 
 ### Reference to an undefined pattern
-The most common error message in Relax NG is also the easiest to fix. 
-A `reference to an undefined pattern "undefined name"` This is convenient because the pattern name you have not defined appears in the error message itself, and a red line appears under the line with the undefined pattern.
-To define the pattern, most often you have to just add a new rule that defines it as either an element or attribute.
+
+The most common error message in Relax NG is also the easiest to fix: a `reference to an undefined pattern "undefined name"`
+![](images/undefined_pattern.png)
+The pattern name you have not defined appears in the error message itself, and a red squiggle appears under the line where you refer to the undefined pattern. Most often, this error message appears because you’ve referred a pattern you haven’t defined yet, and you can fix it by adding the definition. In other case, though, you may have mistyped the name of the pattern. 
 
 ### Group of “string” or “data” element
-This error appears when you define an element or attribute with an invalid group of strings, rather than just a single string or datatype.
-This most commonly appears when using commas instead of a union operator (`|`) or interleave operator (`|`).
+
+This error appears when you define an element or attribute with an invalid group of strings, rather than just a single string or datatype. 
+![](images/group_of_string.png)
+Relax NG doesn’t permit patterns that juxtapose two string values. In most cases, you typed a comma (representing sequence) when you meant to type a pipe (representing choice).
 
 ### No error message, but something isn't right
-Often your error message will appear in you XML, which you _know_ is not wrong. This often happens during the early development stages, where you're trying to model your Relax NG off a document rather than the other way around.
-In this case, it looks as though your error is in the XML when really you've written a wrong pattern. To decode this, look specifically for words like "not allowed yet" and "not allowed here". These seem useless on first glance,
-but really help you determine what's wrong with your pattern. Are you allowing for alternation of elements? Have you said there must be more than one of something you can only have one of.
-Error messages like these will not show you exactly which pattern you defined incorrectly, but can give you a clue about it.
+
+When you develop a schema after the fact, to formalize the structure of an XML document, the schema itself may be valid, but an error message may appear when you validate the XML against the schema. In this development situation, though, we’ve stipulated that the XML says what it says, so if it isn’t valid against the schema that we’re crafting to model it, we need to fix the schema. 
+
+**[Gabi: include example and explanation]**
+
+To diagnose and fix this type of error, look specifically for phrases like “not allowed yet” and “not allowed here”. Does your schema require sequence where you mean choice? Or vice versa? Did you forget to mark something that repeats as repeatable? Error messages like these don’t point to the Relax NG because the Relax NG itself is valid, but readin the error message and scrutinizing the error context should help you identify where to lok in your Relax NG.
 
 ### Errors in XPath and XSLT
 
