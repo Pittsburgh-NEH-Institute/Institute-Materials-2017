@@ -4,7 +4,32 @@
 
 ### Errors in Relax NG
 
+### Reference to an undefined pattern
+The most common error message in Relax NG is also the easiest to fix. 
+A `reference to an undefined pattern "undefined name"` This is convenient because the pattern name you have not defined appears in the error message itself, and a red line appears under the line with the undefined pattern.
+To define the pattern, most often you have to just add a new rule that defines it as either an element or attribute.
+
+### Group of “string” or “data” element
+This error appears when you define an element or attribute with an invalid group of strings, rather than just a single string or datatype.
+This most commonly appears when using commas instead of a union operator (`|`) or interleave operator (`|`).
+
+### No error message, but something isn't right
+Often your error message will appear in you XML, which you _know_ is not wrong. This often happens during the early development stages, where you're trying to model your Relax NG off a document rather than the other way around.
+In this case, it looks as though your error is in the XML when really you've written a wrong pattern. To decode this, look specifically for words like "not allowed yet" and "not allowed here". These seem useless on first glance,
+but really help you determine what's wrong with your pattern. Are you allowing for alternation of elements? Have you said there must be more than one of something you can only have one of.
+Error messages like these will not show you exactly which pattern you defined incorrectly, but can give you a clue about it.
+
 ### Errors in XPath and XSLT
+
+Each XSLT error message comes with its own unique identifier, which you can search online to find more information about the problem.
+This is especially useful when you start looking at Stack Overflow, as more than likely someone else has been having your problem too, and someone else can't wait to explain it to you.
+
+### This xsl:element may not contain some other xsl:element
+
+Just when you've decided to put the <xsl:sort> element in to get a final output, you get the error message `XTSE0010: An xsl:value-of element must not contain an xsl:sort element`. Your best bet, in this case,
+is to look up the documentation of the element you're trying to use as the child element, as documentation is always more specific about what a parent element can or cannot be than it is about possible children.
+
+
 
 ## Reading stack traces in Python
 
