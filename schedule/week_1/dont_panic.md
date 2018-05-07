@@ -1,19 +1,19 @@
 # Don’t panic: interpretation of error messages
 
+**[Add a general introduction about errors and error messages]**
+
 ## Errors with XML technologies
 
 ### Errors in Relax NG
 
 ### Reference to an undefined pattern
 
-The most common error message in Relax NG is also the easiest to fix: a `reference to an undefined pattern "undefined name"`
-![](images/undefined_pattern.png)
-The pattern name you have not defined appears in the error message itself, and a red squiggle appears under the line where you refer to the undefined pattern. Most often, this error message appears because you’ve referred a pattern you haven’t defined yet, and you can fix it by adding the definition. In other case, though, you may have mistyped the name of the pattern. 
+<img align="left" src="images/undefined_pattern.png" width="50%" style="margin-right: 1em;"/> The most common error message in Relax NG is also the easiest to fix: a reference to an undefined named pattern. The pattern name you have not defined appears in the error message itself, and a red squiggle appears under the line where you refer to the undefined pattern. Most often, this error message appears because you’ve referred a pattern you haven’t defined yet, and you can fix it by adding the definition. In other case, though, you may have mistyped the name of the pattern. 
 
 ### Group of “string” or “data” element
 
+<img align="right" src="images/group_of_string.png" width="50%" style="margin-left: 1em;"/>
 This error appears when you define an element or attribute with an invalid group of strings, rather than just a single string or datatype. 
-![](images/group_of_string.png)
 Relax NG doesn’t permit patterns that juxtapose two string values. In most cases, you typed a comma (representing sequence) when you meant to type a pipe (representing choice).
 
 ### No error message, but something isn't right
@@ -29,15 +29,11 @@ To diagnose and fix this type of error, look specifically for phrases like “no
 
 ### Errors in XPath and XSLT
 
-Each XSLT error message comes with its own unique identifier, which you can search online to find more information about the problem.
-This is especially useful when you start looking at Stack Overflow, as more than likely someone else has been having your problem too, and someone else can't wait to explain it to you.
+Each XSLT error message comes with its own unique identifier, which you can search online to find more information about the problem. This is especially useful when you start looking at StackOverflow, as more than likely someone else has been having your problem too, and someone else can’t wait to explain it to you.
 
 ### This xsl:element may not contain some other xsl:element
 
-Just when you've decided to put the <xsl:sort> element in to get a final output, you get the error message `XTSE0010: An xsl:value-of element must not contain an xsl:sort element`. Your best bet, in this case,
-is to look up the documentation of the element you're trying to use as the child element, as documentation is always more specific about what a parent element can or cannot be than it is about possible children.
-
-
+Just when you’ve decided to put an `<xsl:sort>` element in to sort your output, you get the error message `XTSE0010: An xsl:value-of element must not contain an xsl:sort element`. Your best bet, in this case, is to look up the documentation of the element you’re trying to use as the child element, as documentation is always more specific about what a parent element can or cannot be than it is about possible children.
 
 ## Reading stack traces in Python
 
