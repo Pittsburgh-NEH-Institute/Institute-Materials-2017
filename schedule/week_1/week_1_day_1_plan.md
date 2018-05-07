@@ -29,9 +29,9 @@ Week 1 is dedicated to developing background knowledge of the computing environm
 * **Code lab:** participants code alone or in small groups
 
 * * *
-## 9:00–10:30: Getting to know your OS
+## 9:00–10:30: Getting to know your OS for [Mac](getting_to_know_mac.md) and [Windows](getting_to_know_windows.md)
 
-[Windows](getting_to_know_windows.md) and [Mac](getting_to_know_mac.md) users will split into breakout groups so that participants can focus on how to work in their specific environments. How does your OS both facilitate and inhibit your work now, and how might that change?
+Mac and Windows users will split into breakout groups so that participants can focus on how to work in their specific environments. How does your OS both facilitate and inhibit your work now, and how might that change?
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -42,7 +42,7 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: Command line 1
+## 11:00–12:30: Command line 1 for {Mac](command_1_mac.md) and [Windows}(command_1_windows.md)
 
 What is a shell? How do we use it? In breakout groups, we begin working at the command line by navigating through our filesystems a step at a time.
 

@@ -19,14 +19,14 @@ The second day of Week 1 starts with an introduction to regular expressions. Fro
 * **Code lab:** participants code alone or in small groups
 
 * * *
-## 9:00–10:30: Regular expressions 1
+## 9:00–10:30: [Regular expressions 1](regex_1.md)
 
 What are regular expressions, and how can they improve our pattern-matching when dealing with an abundance of textual data?
 
 Time | Topic | Type
 ---- | ---- | ---- 
 15 min | Review of [previous day](week_1_day_1_plan.md) | Discussion
-15 min | Why use [regular expressions](regex_1.md) | Presentation
+15 min | Why use regular expressions? | Presentation
 30 min | Simple patterns | Code lab
 30 min | Repetition | Presentation
 

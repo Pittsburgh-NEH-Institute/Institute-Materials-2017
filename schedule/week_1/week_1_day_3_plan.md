@@ -45,7 +45,7 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: Python clinic 1
+## 2:00–3:30: [Python clinic 1](python_1.html)
 
 The first day of the Python clinic will introduce the basics of text processing, in preparation for more complex textual analysis in the continuation of this unit. We will introduce and discuss the Natural Language Toolkit (NLTK) and the role it plays in processing text files. Participants will also gain familiarity with the Jupyter Notebook environment.
 
