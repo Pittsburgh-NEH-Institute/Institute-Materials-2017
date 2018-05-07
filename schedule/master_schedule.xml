@@ -60,7 +60,7 @@
 
             </slot>
             <slot time="11:00:00">
-                <title>Command line 1 for {Mac](command_1_mac.md) and [Windows}(command_1_windows.md)</title>
+                <title>Command line 1 for [Mac](command_1_mac.md) and [Windows](command_1_windows.md)</title>
                 <desc>What is a shell? How do we use it? In breakout groups, we begin working at the
                     command line by navigating through our filesystems a step at a time.</desc>
                 <act time="90" type="Presentation">
