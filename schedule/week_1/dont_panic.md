@@ -1,8 +1,15 @@
 # Don’t panic: interpretation of error messages
 
-**[Add a general introduction about errors and error messages]**
+Error messages are your friends. Though your immediate reaction to an error message may be one of anxiety, most of the time the dialog box or red squiggly line contains valuable information about problem solving. Ignoring an error message just makes your job harder. Integrated development environments, web browsers, and command lines can all offer you great advice about where to go next with your code, so take advantage of it! Below we explain some of the most common errors for different technologies and the best strategies for having success with their error messages.
 
 ## Errors with XML technologies
+
+If you're using oXygen XML Editor, chances are errors are going to be pretty clear and easily defined. Nonetheless, sometimes error messages show
+up in odd places, which can confuse editors of every experience level. In XML, there are two ways to evaluate a document for errors: by well-formedness and by validity. Well-formed documents
+follow the rules for every XML document, meaning there is one root element, there are no overlapping hierarchies, every open tag has a close tag, etc.
+Validity is based on the schema(s) associated with the document. If there is no schema, you can assume all errors are well-formedness errors, and attempt to correct those with 
+an eye for detail.
+Many times, the solution for an elusive XML well-formedness error is to leave it alone and return with fresh eyes. Depending on what kind of schema you use, and how well it is written, validity errors are more easily resolved. Validity errors, as we explain below, can also indicate a problem with the schema model.
 
 ### Errors in Relax NG
 
