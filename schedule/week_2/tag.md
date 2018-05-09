@@ -2,11 +2,13 @@
 
 Text As Graph (TAG) models documents as a *hypergraph*. A *graph* consists of nodes and edges, where the edges point from one node to another. A hypergraph contains both regular edges, which point from one node to one other node, and *hyperedges*, which point from a *set of nodes* to another *set of nodes*.
 
+*See also [It's more than just overlap: Text As Graph](https://www.balisage.net/Proceedings/vol19/html/Dekker01/BalisageVol19-Dekker01.html)
+
 ## TAG counterparts to XML `text()` nodes
 
 The text in a TAG document is a sequence of Text nodes, where the sequence begins with a Document node. The simplest TAG document, which contains only text and no markup, looks something like:
 
-<img src="images/tag_no-markup.png" alt="[TAG without markup]"/>
+<img src="images/tag_no_markup.png" alt="[TAG without markup]"/>
 
 ## TAG Markup-to-Text hyperedges
 
@@ -35,10 +37,10 @@ The visualization below shows that the text has been divided into three Text nod
 * One Document node.
 * Three Text nodes, with the values “Romeo”, “&#x0a; and &#x0a;” (note the spaces on either side of the conjunction), and “Juliet”.
 * The Document node and the three Text nodes are connected by regular (one-to-one) edges into a chain that connects all of the text in the document.
-* There are three Markup nodes (comparable to elements in XML), two of type “name” and one of type “title”.
+* There are three Markup nodes (comparable to elements in XML), two of type “name” and one of type “title”. These Markup nodes are connected to Text nodes or groups of Text nodes by an edge. 
 
 <img src="images/tag_names.png" alt="[TAG with name markup]"/>
 
 ## TAG and overlap
 
-
+TAG addresses the problem of overlap by enforcing *containment* rather than *dominance*. In XML, the two ideas are not differentiated. If one element contains other elements, it is necessarily the only parent of those elements. This means no sibling or ancestor element can contain the children of that element.
