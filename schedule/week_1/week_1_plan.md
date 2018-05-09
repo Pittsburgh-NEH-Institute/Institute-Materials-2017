@@ -8,4 +8,4 @@ Time | [Monday](week_1_day_1_plan.md) |[Tuesday](week_1_day_2_plan.md) |[Wednesd
 12:30–2:00 |  Lunch | Lunch | Lunch | Lunch | Lunch 
 2:00–3:30 |  [Programs and files 1](programs_1.md) | [Programs and files 2](programs_2.md) | [Python clinic 1](python_1.html) | [Python clinic 2](python_2.html) | [Web technologies](web_technologies.md) 
 3:30–4:00 |  Coffee break | Coffee break | Coffee break | Coffee break | Coffee break 
-4:00–5:30 |  Don’t panic: interpretation of error messages | Review | Review | Review | Review and wrap-up 
+4:00–5:30 |  [Don’t panic: interpretation of error messages](dont_panic.md) | Review | Review | Review | Review and wrap-up 

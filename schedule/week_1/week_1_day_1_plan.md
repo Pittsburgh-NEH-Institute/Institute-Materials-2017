@@ -65,7 +65,7 @@ Time | Topic | Type
 
 ## 3:30–4:00: Coffee break
 
-## 4:00–5:30: Don’t panic: interpretation of error messages
+## 4:00–5:30: [Don’t panic: interpretation of error messages](dont_panic.md)
 
 Time | Topic | Type
 ---- | ---- | ---- 
