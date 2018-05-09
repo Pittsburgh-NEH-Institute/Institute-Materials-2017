@@ -1,6 +1,8 @@
 # Don’t panic: interpretation of error messages
 
-Error messages are your friends. Though your immediate reaction to an error message may be one of anxiety, most of the time the dialog box or red squiggly line contains valuable information about problem solving. Ignoring an error message just makes your job harder. Integrated development environments, web browsers, and command lines can all offer you great advice about where to go next with your code, so take advantage of it! Below we explain some of the most common errors for different technologies and the best strategies for having success with their error messages.
+Error messages are your friends. Alhough your immediate reaction to an error message may be one of anxiety, most of the time the message (e.g., text in a dialog box or the location of a red squiggly line in &lt;oXygen/&gt;) contains information you’ll need in order to correct a problem. Integrated development environments, web browsers, and command lines can all offer you important advice about how to correct problems in your code, but you need to take advantage of that advice! Below we explain some of the most common errors for different technologies and the best strategies for having success with their error messages.
+
+New coders sometimes try to reduce the reporting of errors under the mistaken impression that they are reducing errors. That strategy is a mistake. The most damaging error is the one that you don’t know about, the one that gives you an incorrect response that you think you can trust. 
 
 ## Errors with XML technologies
 
