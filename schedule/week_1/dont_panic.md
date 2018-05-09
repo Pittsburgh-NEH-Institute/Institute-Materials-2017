@@ -7,11 +7,20 @@ New coders sometimes try to reduce the reporting of errors under the mistaken im
 ## Errors with XML technologies
 
 If you're using oXygen XML Editor, chances are errors are going to be pretty clear and easily defined. Nonetheless, sometimes error messages show
-up in odd places, which can confuse editors of every experience level. In XML, there are two ways to evaluate a document for errors: by well-formedness and by validity. Well-formed documents
-follow the rules for every XML document, meaning there is one root element, there are no overlapping hierarchies, every open tag has a close tag, etc.
+up in odd places, which can confuse editors of every experience level. In XML, there are two ways to evaluate a document for errors: by well-formedness and by validity.
+
+Well-formed documents follow the rules for every XML document, meaning there is one root element, there are no overlapping hierarchies, every open tag has a close tag, etc.
+![](images/wellformedness_error.png)
+
+Above, you can see the error appears in the document on the `</book>` tag, rather than on the `<s>` tag. The message, however makes clear that the correction should be to add a closing tag.
+
 Validity is based on the schema(s) associated with the document. If there is no schema, you can assume all errors are well-formedness errors, and attempt to correct those with 
 an eye for detail.
 Many times, the solution for an elusive XML well-formedness error is to leave it alone and return with fresh eyes. Depending on what kind of schema you use, and how well it is written, validity errors are more easily resolved. Validity errors, as we explain below, can also indicate a problem with the schema model.
+
+![](images/validity_error.png)
+
+This error message tells us one of two things: either we should change our markup to fit the model, or change the model to fit the markup.
 
 ### Errors in Relax NG
 
