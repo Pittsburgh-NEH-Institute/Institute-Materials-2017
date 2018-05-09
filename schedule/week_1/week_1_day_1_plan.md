@@ -42,7 +42,7 @@ Time | Topic | Type
 
 ## 10:30–11:00: Coffee break
 
-## 11:00–12:30: Command line 1 for {Mac](command_1_mac.md) and [Windows}(command_1_windows.md)
+## 11:00–12:30: Command line 1 for [Mac](command_1_mac.md) and [Windows](command_1_windows.md)
 
 What is a shell? How do we use it? In breakout groups, we begin working at the command line by navigating through our filesystems a step at a time.
 
