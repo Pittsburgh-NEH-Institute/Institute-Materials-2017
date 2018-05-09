@@ -1,22 +1,31 @@
 # Don’t panic: interpretation of error messages
 
-Error messages are your friends. Alhough your immediate reaction to an error message may be one of anxiety, most of the time the message (e.g., text in a dialog box or the location of a red squiggly line in &lt;oXygen/&gt;) contains information you’ll need in order to correct a problem. Integrated development environments, web browsers, and command lines can all offer you important advice about how to correct problems in your code, but you need to take advantage of that advice! Below we explain some of the most common errors for different technologies and the best strategies for having success with their error messages.
+Error messages are your friends. Although your immediate reaction to an error message may be one of anxiety, most of the time the message (e.g., text in a dialog box, or the location of a red squiggly line in &lt;oXygen/&gt;) contains information you’ll need in order to correct a problem. Integrated development environments, web browsers, and command lines can all offer you important advice about how to correct problems in your code, but only if you pay attentiont to that advice! Below we explain how to read and understand a few common types of error reporting in XML technologies and Python. Your goal in reading this explanation is not primarily to learn about those specific errors; it’s to learn, in a general way, how to engage confidently and effectively with error reporting during development.
 
-New coders sometimes try to reduce the reporting of errors under the mistaken impression that they are reducing errors. That strategy is a mistake. The most damaging error is the one that you don’t know about, the one that gives you an incorrect response that you think you can trust. 
+## Don’t ignore or suppress error messages
+
+New coders sometimes try to reduce the reporting of errors under the mistaken impression that they are reducing errors. That strategy is a mistake. The most damaging error is the one that you don’t know about, the one that gives you an incorrect response without your knowledge. 
+
+### Read the error message
+
+Some types of error messages are difficult for new coders to understand, but they become less opaque with practice, and you need to learn how to read them in order to diagnose and fix your own errors. And in situations where you can’t understand an error message, you need to report the text of the message when you ask for help. Nobody is likely to be able to help you if all you say is “I tried X and it didn’t work” or “I tried X and I got an error”. When you ask for help, report the specific error message, and the starting point for reporting an error message is reading the message yourself.
+
+### Don’t suppress the error message
+
+Most programming languages and development environments provide some degree of control over the reporting of errors, and new developers sometimes confuse minimizing error reports with reducing errors. For example, in XSLT and XQuery you have a choice about whether to specify the datatype of a variable when you declare it (using `as` in XQuery or an `@as` attribute in XSLT). If you don’t specify the type, you’ll see fewer error messages, but that doesn’t mean that you’ll make fewer errors. It just means that when you make a mistake and use data of the wrong type, what your code does will differ from what you think it does, and you’ll have put yourself at risk of getting bad results because you won’t know about the difference. At least during development, you’ll make fewer errors if you take advantage of any error checking and reporting the language or environment makes available.
 
 ## Errors with XML technologies
 
-If you're using oXygen XML Editor, chances are errors are going to be pretty clear and easily defined. Nonetheless, sometimes error messages show
-up in odd places, which can confuse editors of every experience level. In XML, there are two ways to evaluate a document for errors: by well-formedness and by validity.
+If you’re using the &lt;oXygen/&gt; XML Editor, which validates strictly, you’re going to be notified of most errors. Sometimes, though, error messages show up in odd places, which can confuse editors of every experience level. In XML, there are two ways to evaluate a document for errors: by well-formedness and by validity.
 
-Well-formed documents follow the rules for every XML document, meaning there is one root element, there are no overlapping hierarchies, every open tag has a close tag, etc.
+_Well-formed documents_ follow the rules for every XML document, meaning there is one root element, there are no overlapping hierarchies, every open tag has a close tag, etc. Below is a well-formedness error, where the `<s>` element is missing it’s end tag:
+
 ![](images/wellformedness_error.png)
 
-Above, you can see the error appears in the document on the `</book>` tag, rather than on the `<s>` tag. The message, however makes clear that the correction should be to add a closing tag.
+It looks as if the red squiggly line is telling you that there’s an error with the `</book>` end tag, but what it’s really telling you is that the error is _just before_ that end tag. It might seem most natural to a human to write the `</s>` end tag at the end of line 3, but writing it at the beginning of line 4, before the `</book>` end tag, would also be well formed. &lt;oXygen/&gt; can’t know that you’ve forgotten the `</s>` end tag until it sees the `</book>` end tag, which is why it can’t report the error on the preceding line, where a human might think it occurred. The message below, however, makes clear that the correction should be to add an `</s>` end tag.
 
 Validity is based on the schema(s) associated with the document. If there is no schema, you can assume all errors are well-formedness errors, and attempt to correct those with 
-an eye for detail.
-Many times, the solution for an elusive XML well-formedness error is to leave it alone and return with fresh eyes. Depending on what kind of schema you use, and how well it is written, validity errors are more easily resolved. Validity errors, as we explain below, can also indicate a problem with the schema model.
+an eye for detail. Many times, the solution for an elusive XML well-formedness error is to leave it alone and return with fresh eyes. Depending on what kind of schema you use, and how well it is written, validity errors are more easily resolved. Validity errors, as we explain below, can also indicate a problem with the schema model.
 
 ![](images/validity_error.png)
 
@@ -34,14 +43,13 @@ This error message tells us one of two things: either we should change our marku
 This error appears when you define an element or attribute with an invalid group of strings, rather than just a single string or datatype. 
 Relax NG doesn’t permit patterns that juxtapose two string values. In most cases, you typed a comma (representing sequence) when you meant to type a pipe (representing choice).
 
-### No error message, but something isn't right
+### No error message, but something isn’t right
 
 When you develop a schema after the fact, to formalize the structure of an XML document, the schema itself may be valid, but an error message may appear when you validate the XML against the schema. In this development situation, though, we’ve stipulated that the XML says what it says, so if it isn’t valid against the schema that we’re crafting to model it, we need to fix the schema. 
 
 ![](images/relaxng_xml_error.png)
 
-In this case, the error message tells us we must have a `word` element before a `phrase` element, as we've used a comma to indicate we want one of each one, in that order.
-***MORE EXPLANATION HERE***
+In this case, the error message tells us we must have a `word` element before a `phrase` element, as we’ve used a comma to indicate we want one of each one, in that order.
 
 To diagnose and fix this type of error, look specifically for phrases like “not allowed yet” and “not allowed here”. Does your schema require sequence where you mean choice? Or vice versa? Did you forget to mark something that repeats as repeatable? Error messages like these don’t point to the Relax NG because the Relax NG itself is valid, but readin the error message and scrutinizing the error context should help you identify where to lok in your Relax NG.
 
