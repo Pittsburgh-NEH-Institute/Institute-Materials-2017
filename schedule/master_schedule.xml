@@ -112,8 +112,8 @@
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title>Don’t panic: interpretation of error messages</title>
-                <!-- YOU NEED TO WRITE THIS MATERIAL! -->
+                <title>[Don’t panic: interpretation of error messages](dont_panic.md)</title>
+                
                 <act time="90" type="Discussion">
                     <desc>Stack traces and other error reports</desc>
                     <outcome>
