@@ -1,0 +1,19 @@
+<desc>Tag ["Oxymandias"](ozymandias.txt) in XML (e.g., lines, sentences,
+<desc>Review of tokenization concepts and tools</desc>
+<desc>[Real-live tokenization in a project pipeline](https://github.com/DHUniWien/tpen2tei)</desc>
+<desc>Tokenize *your* text: mini-hackathon</desc>
+<desc>Near matching (open `Near_matching.ipynb` in Jupyter)</desc>
+<desc>[Normalization and Soundex](2014-09-15_varna-collation.pptx.pdf)</desc>
+<desc>Integrating normalization with tokenization (open `Integrating_tokenization_and_normalization.ipynb` in Jupyter)</desc>
+<desc>Normalize your text: mini-hackathon</desc>
+<desc>[Linked open data](linked_open_data.md)</desc>
+<desc>Explore project planning questions</desc>
+<desc>Publishing on GitHub pages</desc>
+<desc>Customizing your edition with CSS and Javascript</desc>
+<desc>Next steps: Beyond GitHub pages</desc>
+<desc>Linked data principles</desc>
+<desc>URIs as identifiers</desc>
+<desc>Modeling concepts and expressions</desc>
+<desc>Choosing and using ontologies</desc>
+<desc>XQuery</desc>
+<desc>Data visualization</desc>

@@ -4,9 +4,9 @@ GM emerged from a 2009 symposium within the frameworks of the EU-funded research
 
 1. [tokenization](tokenization.md)
 2. [normalization](normalization.md)
-3. [alignment]
-4. [analysis]
-4. [visualization]
+3. [alignment](alignment.md)
+4. [analysis](analysis.md)
+4. visualization
 
 Many of the components of GM are also useful outside the context of the study of textual variation.
 

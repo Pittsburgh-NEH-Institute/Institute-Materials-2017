@@ -29,10 +29,10 @@ The graph consists of just two nodes; one node of type Document and one node of 
 
 
 
-<img src="Images/tag_tutorial_propertygraph simple_example.gif">
+<img src="images/tag_tutorial_propertygraph simple_example.gif">
 
 Adding extra text or changing existing text only changes the contents of the text node.
-See figure 2. <img src="Images/tag_tutorial_propertygraph simple_example2.gif"> 
+See figure 2. <img src="images/tag_tutorial_propertygraph simple_example2.gif"> 
 
 
 

@@ -81,7 +81,7 @@ Here the last two stage directions interrupt not just the speech, but the senten
 
 Discontinuity is more easily represented in TAG:
 
-<img src="Images/discontinuity_hypergraph.png" width="99%" alt="[Discontinuity hypergraph]"/>
+<img src="images/discontinuity_hypergraph.png" width="99%" alt="[Discontinuity hypergraph]"/>
 
 Here the Markup node with the `name` property value of “q” points to a set of Text nodes. TAG sets (unlike LMNL ranges) are not required to be continuous, which means that continuous and discontinuous quoted text is represented in the same way in TAG, by a hyperedge that points from a Markup node to a set of Text nodes.
 

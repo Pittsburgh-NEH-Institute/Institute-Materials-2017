@@ -2,15 +2,12 @@
 
 [Introduction; verify that everyone’s Internet connections work]
 
-
 ## File system hierarchy 
 
 * What are files?
 * What are directories/folders? <!--Thinking about why we call them folders: a folder and a piece of paper are the same, and can do some of the same things. A folder can also hold pieces of paper.-->
 * What are programs? <!--Programs are files that can do something, but are still files nonetheless. Take a piece of paper out of your folder, fold it into an airplane, and throw it. It's still a piece of paper you can read from and write on, but it can fly.-->
 * GUI file explorers and file hierarchy
-
-
 
 ## Configuring your machine to show filename extensions
 
@@ -24,7 +21,6 @@
 		* NOTE: Protected operating system files will still stay hidden.  
 	* Also check “Display the full path in the title bar” (not essential, but recommended).
 
-
 ## About files
 
 * Why are some files hidden? <!--If you change something, however small, in some of these files, you can break your computer. Be careful!-->
@@ -33,13 +29,11 @@
 	* Mac OS and Windows are **case preserving**, but not case sensitive. <!-- (This preference can be changed when configuring the filesystem, but certain programs will not run in a case sensitive environment, so it’s best to leave it alone). A case preserving file system will spell the filename as you type it, but if you create a different file with a name that differs only in capitalization, it will overwrite the first one. We recommend not creating filenames that differ only in capitalization even on Linux; not only is it potentially confusing, but you may be collaborating on a project with someone not on Linux. -->
 * **Spaces** in a file and directory names. Why could these be problematic? 
 
-
 ## Launching a terminal
 
 * The Command Prompt **cmd.exe** <[screenshot](images/getting_to_know_cmd.png)> is the native Windows console, which grew out of DOS.  We will be using it in this session. 
 	* How to launch: from the Start menu type in “cmd”. 
 	* NOTE: For later sessions and the remainder of this institute we will be using the **bash shell** instead, which you downloaded and installed as part of Git. This is the command line interface we use and recommend.
-
 
 ## Moving through a filesystem
 <!-- Move the programs and files stuff in here, use cmd.exe -->
@@ -51,7 +45,6 @@
 	* Drive letter elsewhere: `/c/Users` (Windows Git `bash`), `/Users` (no drive letter in Mac OS and Linux)
 * `cd`: change directory <!--Open a command line and begin using `cd`. Explain that `cd` is essentially the same as selecting or clicking a folder. `cd` into your home directory.-->
 * `dir`: list all files
-
 
 ## File/directory path in File Explorer GUI vs. cmd 
 
@@ -67,13 +60,11 @@ How removable and external drives (such as a USB thumbdrive) are treated in GUI 
 * In Windows, they are assigned a new drive letter: `d:\` `e:\` (cmd)
 * In Git bash environment (will learn this later), they look like: `/d/` `/e/` 
 
- 	
 ## How to run a program as an administrator
 
 * Right click on a program icon (say, Command Prompt) and select “Run as administrator”. 
 	* **CAUTION!** You may accidentally break your system by removing essential files or directories.
 	* Use only when you have a good reason to; close program when done. 
-
 
 ## Environment variables (aka system variables)
 

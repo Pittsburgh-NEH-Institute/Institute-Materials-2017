@@ -1,13 +1,20 @@
 # Week 2, Day 1: Monday, July 17
 ## Synopsis
 
-Scholars create digital editions to serve research purposes that may differ from project to project. The first day of Week 2 begins by exploring the role in project planning of defining research goals (which includes defining *non-goals* in order to avoid *scope-creep*). From planning and research questions we move to modeling and structuring the digital edition workflow as a computational pipeline, encouraging a modular perspective on digital editing.
+Scholars create digital editions to serve research purposes that may differ from
+                project to project. The first day of Week 2 begins by exploring the role in project
+                planning of defining research goals (which includes defining *non-goals* in order to
+                avoid *scope-creep*). From planning and research questions we move to modeling and
+                structuring the digital edition workflow as a computational pipeline, encouraging a
+                modular perspective on digital editing.
 
 ## Outcome goals
 * Don’t touch that keyboard! Planning *your* edition: starting with research questions
 * Where data modeling belongs in the workflow
-* Markup as an expression of a data model; making the implicit explicit and machine-actionable The relationships among model, syntax, and markup semantics
-* How modeling reduces iterations of the document analysis → schema development → markup pipeline XML looks like a string but it’s really a tree. What does this mean for modeling, markup, and querying or processing?
+* Markup as an expression of a data model; making the implicit explicit and machine-actionable
+* The relationships among model, syntax, and markup semantics
+* How modeling reduces iterations of the document analysis → schema development → markup pipeline
+* XML looks like a string but it’s really a tree. What does this mean for modeling, markup, and querying or processing?
 ## Legend
 
 * **Presentation:** by instructors
@@ -16,14 +23,14 @@ Scholars create digital editions to serve research purposes that may differ from
 * **Code lab:** participants code alone or in small groups
 
 * * *
-## 9:00–10:30: Planning your project
+## 9:00–10:30: [Planning your project](project_planning.md)
 
 There cannot be a single set of *best practice* recommendations for all digital editions because scholars create editions to meet different research goals, and they do that under different working conditions. What’s the purpose of your edition, and what are the resources at your disposal and the constraints on your efforts?
 
 Time | Topic | Type
 ---- | ---- | ---- 
 10 min | [Overview of Week 2](topics.md) | Presentation
-30 min | Explore [project planning questions](project_planning.md) | Discussion
+30 min | Explore project planning questions | Discussion
 25 min | Apply project planning questions to your own project (individually or collaboratively) | Talk lab
 25 min | General discussion of Talk lab results | Discussion
 
@@ -49,9 +56,9 @@ How are documents like trees and how are they different? What is represented by 
 Time | Topic | Type
 ---- | ---- | ---- 
 10 min | Create [your own fork of our Institute GitHub repository](fork.md) | Code lab
-20 min | XML as a tree ([OHCO: “ordered hierarchy of content objects”])(ohco.md) | Discussion
+20 min | XML as a tree ([OHCO: “ordered hierarchy of content objects”](ohco.md) | Discussion
 15 min | [Making the implicit explicit with markup](explicit.md) | Discussion
-30 min | Tag ["Oxymandias"](ozymandias.txt) in XML (e.g., lines, sentences, phrases, speakers, words, feet, syllables, stress) | Code lab
+30 min | Tag ["Ozymandias"](ozymandias.txt) in XML (e.g., lines, sentences, phrases, speakers, words, feet, syllables, stress) | Code lab
 15 min | [What's hard in XML](xml_limitations.md) | Discussion
 
 ## 3:30–4:00: Coffee break

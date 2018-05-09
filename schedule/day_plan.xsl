@@ -17,7 +17,6 @@
                 "/>
         <xsl:sequence select="format-time($startTime, '[h]:[m01]') || '–' || $end-time"/>
     </xsl:function>
-
     <xsl:template match="/">
         <!-- Create weekly and then daily schedules -->
         <xsl:apply-templates select="//week"/>
@@ -26,7 +25,10 @@
 
     <!-- Templates for weekly plans -->
     <xsl:template match="week">
-        <xsl:variable name="filename" as="xs:string" select="'week_' || @num || '/week_' || @num || '_plan.md'"/>
+        <xsl:variable name="time_slots" select="distinct-values(descendant::slot/@time)" as="xs:string+"/>
+        <xsl:variable name="currentWeek" select="." as="element(week)"/>
+        <xsl:variable name="filename" as="xs:string"
+            select="'week_' || @num || '/week_' || @num || '_plan.md'"/>
         <xsl:result-document method="text" omit-xml-declaration="yes" href="{$filename}">
             <xsl:value-of select="'# Week ' || @num || ' plan: ' || ./title || '&#x0a;' || '&#x0a;'"/>
             <xsl:text>Time | </xsl:text>
@@ -36,7 +38,32 @@
                 <xsl:text> | ----</xsl:text>
             </xsl:for-each>
             <xsl:text>&#x0a;</xsl:text>
-            <xsl:apply-templates select="day[1]/slot"/>
+            <xsl:for-each select="$time_slots">
+                <xsl:variable name="currentSlot" select="current()" as="xs:string"/>
+                <xsl:variable name="slotContents" as="xs:string+">
+                    <xsl:for-each select="$currentWeek/day">
+                        <xsl:choose>
+                            <xsl:when test="current()/slot/@time = $currentSlot">
+                                <xsl:value-of select="current()/slot[@time = $currentSlot]/title"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:text>     </xsl:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:for-each>
+                </xsl:variable>
+                <xsl:variable name="timeFunction">
+                    <xsl:value-of
+                        select="
+                            djb:timeRange(xs:time($currentSlot), max(for $day in $currentWeek/day
+                            return
+                                sum($day/slot[@time = $currentSlot]/act/@time)))"/>
+                    <!-- sending the duration to function by finding max of sum of the day where the slot in which the current time is the same as the slot's time, then drilling down to the act to get time to sum -->
+                </xsl:variable>
+                <!--<xsl:message select="sum($currentWeek/act/@time)"/>-->
+                <xsl:sequence
+                    select="$timeFunction, ' | ', string-join($slotContents, ' | '), '&#x0a;'"/>
+            </xsl:for-each>
         </xsl:result-document>
     </xsl:template>
     <xsl:template match="day">
@@ -46,12 +73,18 @@
             select="normalize-space(concat(' [', @d, '](', $linkname, ')', ' | '))"/>
         <xsl:value-of select="$daynames"/>
     </xsl:template>
-    <xsl:template match="slot">
-        <xsl:variable name="slotContents" as="xs:string"
+    <!--<xsl:template match="slot">
+        <xsl:variable name="slotfill" as="xs:string"
             select="normalize-space(string-join(//slot[@time eq current()/@time and ancestor::week/@num eq current()/ancestor::week/@num]/title, ' | '))"/>
-        <xsl:value-of select="djb:timeRange(@time, sum(act/@time)) || ' |', $slotContents, '&#x0a;'"
-        />
-    </xsl:template>
+
+        <xsl:variable name="slotContents">
+            <xsl:value-of select="if(@time &lt;= '16:00:00') then($slotfill) else('   |    |    | ' || $slotfill)"/>
+
+        </xsl:variable>
+        <xsl:value-of select="djb:timeRange(@time, sum(act/@time)) || ' |', $slotfill, '&#x0a;'"/>
+
+
+    </xsl:template>-->
 
     <!-- Templates for daily plans -->
     <xsl:template match="week" mode="daily">
@@ -71,7 +104,7 @@
             <xsl:apply-templates select="syn" mode="daily"/>
             <!-- outcome goals -->
             <xsl:text>## Outcome goals&#x0a;</xsl:text>
-            <xsl:apply-templates select="./slot//outcome" mode="daily"/>
+            <xsl:apply-templates select="./slot//goal" mode="daily"/>
             <!-- legend -->
             <xsl:text>## Legend
 
@@ -95,7 +128,7 @@
     </xsl:template>
     <xsl:template match="syn" mode="daily">
         <xsl:text>&#x0a;</xsl:text>
-        <xsl:value-of select="normalize-space(.)"/>
+        <xsl:value-of select="."/>
         <xsl:text>&#x0a;&#x0a;</xsl:text>
     </xsl:template>
     <!-- create and styles time headers -->
@@ -119,11 +152,10 @@
         />
     </xsl:template>
     <!-- create list of goals -->
-    <xsl:template match="outcome" mode="daily">
-        <xsl:if test="goal">
+    <xsl:template match="goal" mode="daily">
             <xsl:text>* </xsl:text>
             <xsl:apply-templates select="normalize-space(.)"/>
             <xsl:text>&#x0a;</xsl:text>
-        </xsl:if>
+        
     </xsl:template>
 </xsl:stylesheet>

@@ -46,18 +46,18 @@ In the second new template [resource.html](templates/resource.html) we put some 
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
 &#123;% extends 'template.html' %&#125;
 &#123;% block content %&#125;
-    &#123;% if resource_name == 'resource1' %&#125;
-        &#123;% include 'resource1.html' %&#125;
+    &#123;% if resource_name == 'resource_1' %&#125;
+        &#123;% include 'resource_1.html' %&#125;
     &#123;% endif %&#125;
     &#123;% if resource_name == 'missing1' %&#125;
         &#123;% include 'missing1.html' ignore missing %&#125;
     &#123;% endif %&#125;
     &#123;% if resource_name == 'xhtml2' %&#125;
-        &#123;% include ['xhtml.html', 'resource2.xhtml'] %&#125;
-	&#123;# Includes the first existing template, e.g. resource2.xhtml #&#125;
+        &#123;% include ['xhtml.html', 'resource_2.xhtml'] %&#125;
+	&#123;# Includes the first existing template, e.g. resource_2.xhtml #&#125;
     &#123;% endif %&#125;
-    &#123;% if resource_name == 'form1' %&#125;
-        &#123;% include 'form1.html' %&#125;
+    &#123;% if resource_name == 'form_1' %&#125;
+        &#123;% include 'form_1.html' %&#125;
     &#123;% endif %&#125;
 &#123;% endblock %&#125;
 </pre>
@@ -75,7 +75,7 @@ from flask import request
 
 defaults = &#123; 'title': 'dynamic request header index.html' ,
              'header': 'Default "header" is used. Give request parameter header with a value to change it.',
-             'paragraph': 'This is index.html with dynamic contents in response to a request for / (ROOT) in flask-request.py'
+             'paragraph': 'This is index.html with dynamic contents in response to a request for / (ROOT) in flask_request.py'
 &#125;
 
 app = Flask(__name__)
@@ -87,7 +87,7 @@ def get_my_index():
         'header': header,
         'paragraph': defaults['paragraph'] 
     &#125;
-    return render_template("index-dyn-dict.html", dict=values)
+    return render_template("index_dyn_dict.html", dict=values)
 
 @app.route("/resource/&lt;resource_name&gt;")
 def get_local_resource(resource_name = ''):
@@ -121,15 +121,15 @@ if __name__ == '__main__':
     app.run(port=5000, debug=True)
 </pre>
 
-See [flask-request-get-resource.py](flask-request-get-resource.py).
+See [flask_request_get_resource.py](flask_request_get_resource.py).
 
 We added a couple of new decorators `@app.route("/resource/<resource_name>")`, `@app.route("/resource/<resource_name>/value/<value>")`. Like we saw in the previous session. `<resource_name>` and `<name>` are variables in the decorator that will be passed to the function it decorates.
 
-If you run `python flask-request-get-resource.py` it would not only respond to requests on `/` but also the RESTful request URL we used in in the previous session:
+If you run `python flask_request_get_resource.py` it would not only respond to requests on `/` but also the RESTful request URL we used in in the previous session:
 
-* <http://localhost:5000/resource/form1/value/ljo>
+* <http://localhost:5000/resource/form_1/value/ljo>
 and a few more: 
-* <http://localhost:5000/resource/resource1>
+* <http://localhost:5000/resource/resource_1>
 * <http://localhost:5000/resource/xhtml2>
 * <http://localhost:5000/resource/missing1>
 
@@ -142,4 +142,4 @@ Exercise: Implement one of your API methods, use a string value to return firstl
 Exercise: Implement more of your API methods, return the varible parameters to start with.
 
  
-Exercise: Implement one of your API methods to include an external API call like in [error-handling-url-not-found.py](error-handling-url-not-found.py). Either returning json or some other format. Hint you did some in the github API exercise.
+Exercise: Implement one of your API methods to include an external API call like in [error_handling_url_not_found.py](error_handling_url_not_found.py). Either returning json or some other format. Hint you did some in the github API exercise.

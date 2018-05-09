@@ -8,6 +8,6 @@
 	* [Thursday](week_1_day_4_plan.md)
 	* [Friday](week_1_day_5_plan.md)
 * Miscellaneous
-	* [Command line resources](command-line_resources.md) 
+	* [Command line resources](command_resources.md) 
 	* [Git resources](git_resources.md)
 	* [Regex resources](regex_resources.md)

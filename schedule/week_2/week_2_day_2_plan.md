@@ -1,10 +1,19 @@
 # Week 2, Day 2: Tuesday, July 18
 ## Synopsis
 
-The first half of Week 2, Day 2 continues the focus on document modeling from the previous day, with attention to three models of text: XML (text as tree), LMNL (text as ranges), and TAG (text as graph). The second half of the day introduces the idea of developing a digital edition as a computational pipeline. We illustrate the pipeline with the Gothenburg model of textual variation, and then begin to explore the first two stages of that model, tokenization and normalization. Java SE installation: <"http://www.oracle.com/technetwork/java/javase/downloads/index.html">. Choose Java SE for your operating system
+The first half of Week 2, Day 2 continues the focus on document modeling from the
+                previous day, with attention to three models of text: XML (text as tree), LMNL (text
+                as ranges), and TAG (text as graph). The second half of the day introduces the idea
+                of developing a digital edition as a computational pipeline. We illustrate the
+                pipeline with the Gothenburg model of textual variation, and then begin to explore
+                the first two stages of that model, tokenization and normalization. Java SE
+                installation:
+                <"http://www.oracle.com/technetwork/java/javase/downloads/index.html">. Choose
+                Java SE for your operating system
 
 ## Outcome goals
-* Understanding modeling perspectives (tree, ranges, graph) and communities Modular development: thinking about digital edition development as a computational pipeline
+* Understanding modeling perspectives (tree, ranges, graph) and communities
+* Modular development: thinking about digital edition development as a computational pipeline
 * Beginning to tokenize texts
 * Beginning to normalize texts
 ## Legend
@@ -23,7 +32,7 @@ Time | Topic | Type
 10 min | [Introduction to the LMNL data model and sawtooth syntax](lmnl_syntax.md) | Presentation
 20 min | Tag "[Ozymandias](ozymandias.txt)" in LMNL | Code lab
 20 min | Introduction to TAG and Alexandria | Presentation
-15 min | [Alexandria installation](alexandria.md) | Code lab
+15 min | [Alexandria installation](../week_3/alexandria.md) | Code lab
 15 min | Visualization of LMNL in Alexandria | Code lab
 
 ## 10:30–11:00: Coffee break
@@ -34,7 +43,7 @@ Are you making an edition of a manuscript or of a text? What is the role of lang
 
 Time | Topic | Type
 ---- | ---- | ---- 
-20 min | Explore [edition terms and concepts](edition_terms_and_concepts.md) | Discussion
+20 min | Explore [edition terms and concepts](edition_terms_and_concepts.md) and the [digital workstation](../week_3/digital_workstation.md) | Discussion
 20 min | It isn’t just words! [What story are you trying to tell?](sample_visualizations.md) | Discussion
 30 min | Explore participant data in light of terms and concepts | Talk lab
 20 min | General discussion of Talk lab results | Discussion
@@ -45,16 +54,16 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-10 min | Intro and setup | Discussion
-30 min | Tokenizing plain text | Code lab
-30 min | Tokenizing XML | Code lab
-20 min | Further challenges in tokenization | Discussion
+10 min | [CollateX installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb) | Discussion
+30 min | [Tokenizing plain text](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb) | Code lab
+30 min | [Tokenizing XML](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb) (scroll to “The next step: tokenizing XML”) | Code lab
+20 min | [Further challenges in tokenization](tokenization.md) | Discussion
 
 ## 3:30–4:00: Coffee break
 
 ## 4:00–5:30: Normalization
 
-Before we start: 1. Navigate to your fork of our Institute repo and run `git pull upstream remote`. 2. Start Jupyter notebook either from the Anaconda launcher or by navigating to your home directory and typing `jupyter notebook`. 3. Within the main Jupyter notebook web page, navigate to schedule/week_2 in your fork of our repo and open `Normalization.ipynb`, `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and `Integrating_XML_with_Python.ipynb`.
+Before we start: 1. Navigate to your fork of our Institute repo and run `git pull upstream remote`. 2. Start Jupyter notebook either from the Anaconda launcher or by navigating to your home directory and typing `jupyter notebook`. 3. Within the main Jupyter notebook web page, navigate to `schedule/week_2` in your fork of our repo and open `Normalization.ipynb`, `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and `Integrating_XML_with_Python.ipynb`.
 
 Time | Topic | Type
 ---- | ---- | ---- 

@@ -6,19 +6,19 @@ It is a really simple installation. All you have to do if it is not already inst
 ```bash
  $ pip install flask
 ```
-To test that it works you can run the follwing code (also available in the repo as [flask-index.py](flask-index.py)) in your terminal commandline:
+To test that it works you can run the following code (also available in the repo as [flask_index.py](flask_index.py)) in your terminal command line:
 ```python
 from flask import Flask
 app = Flask(__name__)
 @app.route("/")
 def get_my_index():
-    return "This is index for / (ROOT) in flask-index.py"
+    return "This is index for / (ROOT) in flask_index.py"
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
 ```
 When running this Flask app from the commandline it will output something like this: 
 ```bash
- $ python flask-index.py 
+ $ python flask_index.py 
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
@@ -50,7 +50,7 @@ If we put a file named index.html into the `templates` directory with the follow
   </head>
   <body>
     <h1>index.html</h1>
-    <p>This is index.html in response to a request for / (ROOT) in flask-index-template.py</p>
+    <p>This is index.html in response to a request for / (ROOT) in flask_index_template.py</p>
   </body>
 </html>
 ```
@@ -69,10 +69,10 @@ if __name__ == '__main__':
 ### Dynamic data with templates 
 The render_template() function can take more arguments than only the template name.
 ```python
- render_template("index-dyn.html", title="template index.html", header="index.html", paragraph="...") 
+ render_template("index_dyn.html", title="template index.html", header="index.html", paragraph="...") 
 ```
 
-This is used in the template `index-dyn.html`:
+This is used in the template `index_dyn.html`:
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -84,11 +84,11 @@ This is used in the template `index-dyn.html`:
   </body>
 </html>
 ```
-See [flask-index-template-dyn.py](flask-index-template-dyn.py) and [templates/index-dyn.html](templates/index-dyn.html) in the repo.
+See [flask_index_template_dyn.py](flask_index_template_dyn.py) and [templates/index_dyn.html](templates/index_dyn.html) in the repo.
 
 #### Using a Python dictionary in the template 
 Instead of passing in all single variables to the `render_template` function you can use a Python dictionary. You access the keys in the template by putting the dictionary variable name and the key together with a period, e.g. `dict.title` 
-See [flask-index-template-dyn-dict.py](flask-index-template-dyn-dict.py) and [templates/index-dyn.html](templates/index-dyn-dict.html) in the repo.
+See [flask_index_template_dyn_dict.py](flask_index_template_dyn_dict.py) and [templates/index_dyn.html](templates/index_dyn_dict.html) in the repo.
 
 ## Error handling
 When creating applications it is important to manage _forseen errors_ as well as _unforseen errors_ and _exceptions_.
@@ -104,7 +104,7 @@ from flask import request
 
 defaults = { 'title': 'dynamic request header index.html' ,
              'header': 'Default "header" is used. Give request parameter header with a value to change it.',
-             'paragraph': 'This is index.html with dynamic contents in response to a request for / (ROOT) in flask-request.py'
+             'paragraph': 'This is index.html with dynamic contents in response to a request for / (ROOT) in flask_request.py'
 }
 
 app = Flask(__name__)
@@ -115,7 +115,7 @@ def get_my_index():
         'header': header,
         'paragraph': defaults['paragraph'] 
 }
-    return render_template("index-dyn-dict.html", dict=values)
+    return render_template("index_dyn_dict.html", dict=values)
 
 def get_request_value_with_fallback(key):
     if request.args.get(key):
@@ -130,7 +130,7 @@ So by passing the request parameter we can now set the header to any string valu
  http://localhost:5000/?header=My%20header
 ```
  
-See [flask-request.py](flask-request.py).
+See [flask_request.py](flask_request.py).
 
 ### Avoid dividing by zero
 Python have _Exceptions_. They can be handled. Sometimes _catching_ them  withing _try blocks_ might be enough, but not always. In this case  we can handle `ZeroDivisionError` to say something about if we can continue or not. If we do not handle it but let Python _throw_ the error it would break the application execution and potentially cause inconsistency or at least giving you unhappy users.
@@ -144,7 +144,7 @@ except ZeroDivisionError:
 # Depending on if we can recover or not: do what is needed to nicely exit or take receovery actions
 ```
 
-See [error-handling-divide-by-zero.py](error-handling-divide-by-zero.py).
+See [error_handling_divide_by_zero.py](error_handling_divide_by_zero.py).
 
 If you find it unrecoverable you might want to modify the exception and retrow it with `raise`:
 
@@ -162,7 +162,7 @@ except ZeroDivisionError as e:
    raise
 ```
 
-See [error-handling-divide-by-zero-raise.py](error-handling-divide-by-zero-raise.py).
+See [error_handling_divide_by_zero_raise.py](error_handling_divide_by_zero_raise.py).
 
 ### Check your values
 If you are doing API calls you also need to make sure that you handle connection errors and recovery from that e.g. retries. Bur first of all you need to handle the exceptions on connection. in this case the exception is namespaced e.g. it is from the urllib2 library.
@@ -195,9 +195,9 @@ except urllib.error.URLError:
    print("Connection refused. Please check the URL and port")
 ```
 
-See [error-handling-url-not-found.py](error-handling-url-not-found.py).
+See [error_handling_url_not_found.py](error_handling_url_not_found.py).
 
-Exercise: There are of course many other errors and exceptions you would like handle in this still rather simple script. Wich ones could you come up with? 
+Exercise: There are of course many other errors and exceptions you would like handle in this still rather simple script. Which ones could you come up with? 
 
 ### Validation
 Every app running in a web browser should have validation of values from forms validated *both on client and server* side.

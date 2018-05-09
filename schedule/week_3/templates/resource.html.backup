@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+{% extends 'template.html' %}
+{% block content %}
+    {% if resource_name == 'resource1' %}
+        {% include 'resource1.html' %}
+    {% endif %}
+    {% if resource_name == 'missing1' %}
+        {% include 'missing1.html' ignore missing %}
+    {% endif %}
+    {% if resource_name == 'xhtml2' %}
+        {% include ['xhtml.html', 'resource2.xhtml'] %}
+	{# Includes the first existing template, e.g. resource2.xhtml #}
+    {% endif %}
+    {% if resource_name == 'form1' %}
+        {% include 'form1.html' %}
+    {% endif %}
+{% endblock %}

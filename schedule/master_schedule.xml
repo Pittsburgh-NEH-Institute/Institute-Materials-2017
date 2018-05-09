@@ -1,0 +1,1652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="master_schedule.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="master_schedule.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<schedule>
+    <week num="1">
+        <title>Bootcamp: Computational groundwork skills </title>
+        <day d="Monday">
+            <date>July 10</date>
+            <syn>Week 1 is dedicated to developing background knowledge of the computing environment
+                that the participants need to bring to Weeks 2 and 3, the editing and publishing
+                portions of the Institute. Topic areas include:
+                <list xml:space="preserve">
+* Operating system conventions (Windows, Mac, Linux) 
+* Working with files, programs, and the command line 
+* Regular expressions 
+* Understanding programming and naming conventions 
+* Understanding how the Internet and the Web work 
+* Python clinic: applying Python programming skills in a coding project 
+* Git and GitHub for collaborative code development 
+* Don’t panic: documentation and error messages
+</list>
+            </syn>
+            <slot time="09:00:00">
+                <title>Getting to know your OS for [Mac](getting_to_know_mac.md) and [Windows](getting_to_know_windows.md)</title>
+                <desc>Mac and Windows users will split into breakout groups so that participants can focus on how to work in
+                    their specific environments. How does your OS both facilitate and inhibit your
+                    work now, and how might that change?</desc>
+                <act time="15" type="Presentation">
+                    <desc>Introduction and technology setup</desc>
+                    <outcome>
+                        <goal>Know your machine: Windows, Mac, and Linux users will all have
+                            different experiences and knowledge. Sometimes (= much of the time) the
+                            steps toward completing a task or solving a problem may depend on the
+                            operating system</goal>
+                    </outcome>
+                </act>
+                <act time="25" type="Talk_lab">
+                    <desc>Your machine, your files</desc>
+                    <outcome>
+                        <goal>What are files, directories, and programs?</goal>
+                    </outcome>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>Navigating through the file system</desc>
+
+                    <outcome>
+                        <goal>Directory navigation and file manipulation</goal>
+                    </outcome>
+                </act>
+                <act time="25" type="Presentation">
+                    <desc>External drives, administration, and system variables</desc>
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+
+            </slot>
+            <slot time="11:00:00">
+                <title>Command line 1 for [Mac](command_1_mac.md) and [Windows](command_1_windows.md)</title>
+                <desc>What is a shell? How do we use it? In breakout groups, we begin working at the
+                    command line by navigating through our filesystems a step at a time.</desc>
+                <act time="90" type="Presentation">
+                    <desc>[macOS](getting_to_know_mac.md) (in Alumni Hall 531)
+                        [Windows](getting_to_know_windows.md) (in Alumni Hall 528) The Software
+                        Carpentry activities associated with the Mac Command line 1 session are: 1.
+                        Introducing the Shell. 2. Navigating Files and Directories 3. Working with
+                        Files and Directories </desc>
+                    <outcome/>
+                </act>
+
+                <outcome/>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>[Programs and files 1](programs_1.md)</title>
+                <desc>Now that we know where to find them and what they are, how can we manipulate
+                    and use files and directories for our benefit?</desc>
+                <act time="15" type="Presentation">
+                    <desc>File types</desc>
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Character sets, Unicode, and text editors</desc>
+                    <outcome/>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>Operating system conventions</desc>
+                    <outcome/>
+                </act>
+                <act time="20" type="Code_lab">
+                    <desc>A shell is just a program</desc>
+                    <outcome/>
+                </act>
+
+                <outcome/>
+
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Don’t panic: interpretation of error messages</title>
+                <!-- YOU NEED TO WRITE THIS MATERIAL! -->
+                <act time="90" type="Discussion">
+                    <desc>Stack traces and other error reports</desc>
+                    <outcome>
+                        <goal>Understand and deal with error messages</goal>
+                    </outcome>
+                </act>
+            </slot>
+        </day>
+        <day d="Tuesday">
+            <date>July 11</date>
+            <syn>The second day of Week 1 starts with an introduction to regular expressions. From
+                there, we build on the first day’s overview of the command line and expand our
+                understanding of programs and files, introducing the use of variables and data
+                pipelines.</syn>
+            <slot time="09:00:00">
+                <title>[Regular expressions 1](regex_1.md)</title>
+                <desc>What are regular expressions, and how can they improve our pattern-matching
+                    when dealing with an abundance of textual data?</desc>
+
+                <act time="15" type="Discussion">
+                    <desc>Review of [previous day](week_1_day_1_plan.md)</desc>
+
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Why use regular expressions?</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Simple patterns</desc>
+                    <outcome/>
+                </act>
+                <act time="30" type="Presentation">
+                    <desc>Repetition</desc>
+                    <outcome/>
+                </act>
+
+                <outcome>
+                    <goal>Ability to interpret and produce regular expressions for simple match
+                        patterns</goal>
+                </outcome>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>[Command line 2](command_2.md)</title>
+
+                <act time="90" type="Discussion">
+                    <desc>The Software Carpentry activities associated with the Command line 2
+                        session are: 3. [Working with Files and
+                        Directories](http://swcarpentry.github.io/shell-novice/03-create/) 4. [Pipes
+                        and
+                        Filters](http://swcarpentry.github.io/shell-novice/04-pipefilter/)</desc>
+
+                </act>
+                <outcome>
+                    <goal>Editing within the command line interface</goal>
+                    <goal>Data workflow in the shell</goal>
+                </outcome>
+
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>[Programs and files 2](programs_2.md)</title>
+                <desc>We have a basic grasp of directory navigation, but what don’t we know about
+                    `$PATH`? How does our environment affect our file processing? How can we use
+                    commands and variables to manipulate files more efficiently?</desc>
+                <act time="20" type="Discussion">
+                    <desc>Variables and repeating things</desc>
+                    <outcome/>
+                </act>
+                <act time="30" type="Presentation">
+                    <desc>The environment and `$PATH`</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>The locale and its effects</desc>
+                </act>
+                <act time="10" type="Presentation">
+                    <desc>Miscellaneous commands</desc>
+                </act>
+                <outcome>
+                    <goal>Familiarity with conventions of your own operating system</goal>
+
+                </outcome>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Review</title>
+                <desc>A recap of regular expressions, working in the command line, and file
+                    manipulation. What topics would benefit from additional clarifcation? What are
+                    you confused about? What would you like to know more about?</desc>
+                <act time="90" type="Discussion">
+                    <desc>Review and troubleshooting</desc>
+
+                </act>
+
+            </slot>
+        </day>
+        <day d="Wednesday">
+            <date>July 12</date>
+            <syn>Day three kicks off with a deeper look at refining regular expressions to tailor
+                patterns to specific research needs. Day three introduces `grep`, which applies
+                Regex to operating on the command line. Day three also introduces Python and covers
+                the basics of its text processing capabilities.</syn>
+            <slot time="09:00:00">
+                <title>[Regular expressions 2](regex_2.md)</title>
+                <desc>Last session we covered simple patterns and repetition. We also did some
+                    exercises on this using `egrep`. Today, we cover alternation and grouping before
+                    we continue using `egrep` with more advanced expressions. We then compare Regex
+                    in `egrep` and Python.</desc>
+                <act time="30" type="Code_lab">
+                    <desc>Alternation</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Grouping</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Comparison to Python</desc>
+                </act>
+                <outcome>
+                    <goal>Creating regular expressions for more complicated match patterns</goal>
+                </outcome>
+
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>[Command line 3](command_3.md)</title>
+                <desc>With regular expressions under our belt, we are ready to learn advanced `grep`
+                    skills for the command line. We will explore how we can search for lines that
+                    match a pattern and how to exploit advanced features (and work around
+                    complications) of this utility. We will also learn about the `find`
+                    command.</desc>
+                <act time="15" type="Code_lab">
+                    <desc>Working with files</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Looping with `for`</desc>
+                </act>
+                <act time="45" type="Code_lab">
+                    <desc>Matching things with `grep`</desc>
+                    <outcome>
+                        <goal>Using Regex and the command line collaboratively</goal>
+                        <!-- Where does `grep` fall short and how can we get around this?-->
+                    </outcome>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Finding files with `find`</desc>
+                </act>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>[Python clinic 1](python_1.html)</title>
+                <desc>The first day of the Python clinic will introduce the basics of text
+                    processing, in preparation for more complex textual analysis in the continuation
+                    of this unit. We will introduce and discuss the Natural Language Toolkit (NLTK)
+                    and the role it plays in processing text files. Participants will also gain
+                    familiarity with the Jupyter Notebook environment.</desc>
+                <act time="15" type="Discussion">
+                    <desc>Data prep and Jupyter tips</desc>
+                </act>
+                <act time="30" type="Presentation">
+                    <desc>Python basics</desc>
+                </act>
+                <act time="20" type="Presentation">
+                    <desc>Using NLTK</desc>
+                    <outcome>
+                        <goal>Facility with NLTK</goal>
+                    </outcome>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>Processing a single text file</desc>
+                    <outcome>
+                        <goal> Processing a text file in Python </goal>
+                    </outcome>
+                </act>
+                <outcome>
+                    <goal>Facility with Python</goal>
+                </outcome>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Review</title>
+                <act time="90" type="Talk_lab">
+                    <desc>Review</desc>
+                </act>
+            </slot>
+        </day>
+        <day d="Thursday">
+            <date>July 20</date>
+            <syn>Day 4 begins with an introduction to how the Internet works, a topic that will
+                recur when we turn to publishing in Week 3. This day also introduces the version
+                management system Git (which, among other things, hosts all materials for our
+                Institute). We conclude with more advanced Python activities within Jupyter
+                Notebook.</syn>
+            <slot time="09:00:00">
+                <title>[How the Internet works 1](internet_1.md)</title>
+
+                <act time="20" type="Discussion">
+                    <desc>Hostnames and DNS</desc>
+
+                    <outcome>
+                        <goal>Understand how communication over the Internet works</goal>
+                    </outcome>
+                </act>
+                <act time="20" type="Discussion">
+                    <desc>IP and Internet addresses</desc>
+
+                    <outcome/>
+                </act>
+                <act time="25" type="Presentation">
+                    <desc>Network communication</desc>
+
+                    <outcome/>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>Network protocols</desc>
+
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>[Git 1](git_1.md)</title>
+                <desc>Git is a tool for managing, sharing, and creating content, particularly code.
+                    This tutorial aims to acclimate users to command line Git, which bypasses the
+                    GUI and provides both more power and more flexibility.</desc>
+                <act time="15" type="Presentation">
+                    <desc>What is Git? </desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Setting your identity and creating a repo</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Editing, adding, and committing</desc>
+                </act>
+                <act time="15" type="Code_lab ">
+                    <desc>Synching and reverting</desc>
+                </act>
+                <outcome>
+                    <goal>Understand why version control matters</goal>
+                    <goal> Understand the Git workflow</goal>
+                    <goal>Become comfortable with command line Git</goal>
+                    <goal>Know how to clone a Git repo</goal>
+                </outcome>
+
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>[Python clinic 2](python_2.html)</title>
+                <desc>After practicing first with processing single documents using Python, we move
+                    to processing a corpus (in this case, of U.S. Presidential inaugural addresses)
+                    with NLTK.</desc>
+                <act time="20" type="Presentation">
+                    <desc>Review</desc>
+
+                    <outcome/>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>Processing single files</desc>
+                </act>
+                <act time="20" type="Code_lab">
+                    <desc>Processing a corpus</desc>
+
+                    <outcome>
+                        <goal>Process text corpora with Python</goal>
+                    </outcome>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>Troubleshooting</desc>
+
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Review</title>
+                <desc>Review</desc>
+                <act time="90" type="Discussion">
+                    <desc>Review</desc>
+                    <outcome/>
+                </act>
+
+            </slot>
+        </day>
+        <day d="Friday">
+            <date>July 14</date>
+            <syn>Day 5 begins with an expanded session on how the Internet works. Topics covered
+                include Internet security and the nitty-gritty of HTTP. Git 2 covers how to resolve
+                merge conflicts, along with how to use Git Issues and other site features. Finally,
+                a lesson on web technologies, including HTML, CSS, and Markdown will prepare
+                participants for future sessions, and familiarize them with some common, useful
+                tools.</syn>
+            <slot time="09:00:00">
+                <title>[How the Internet works 2](internet_2.md)</title>
+                <desc>DESCRIPTION NEEDED</desc>
+
+                <act time="15" type="Discussion">
+                    <desc>Review</desc>
+
+                    <outcome/>
+                </act>
+                <act time="25" type="Discussion">
+                    <desc>Security and SSL</desc>
+                    <outcome>
+                        <goal>How does SSL protect communication?</goal>
+                    </outcome>
+
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>HTTP protocol</desc>
+                    <outcome>
+                        <goal>Understand the basics of HTTP requests and headers</goal>
+                    </outcome>
+                </act>
+                <act time="25" type="Discussion">
+                    <desc>Any other business</desc>
+
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>[Git 2](git_2.md)</title>
+                <desc>Git commits can sometimes go awry, but there are commands that undo previous
+                    edits and can help save different versions, especially when working with
+                    multiple branches. GitHub’s web site has social and collaborative tools as well,
+                    though they are not accessible via the command line.</desc>
+                <act time="20" type="Code_lab">
+                    <desc>Managing branches</desc>
+
+                    <outcome>
+                        <goal>Manage branches with Git</goal>
+                    </outcome>
+                </act>
+                <act time="20" type="Presentation">
+                    <desc>Merge conflicts</desc>
+                    <outcome>
+                        <goal>How to solve merge conflicts</goal>
+                    </outcome>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Social GitHub</desc>
+                    <outcome>
+                        <goal>GitHub Issues, Comments, and Assignments</goal>
+                    </outcome>
+                </act>
+                <act time="20" type="Talk_lab">
+                    <desc>Git review</desc>
+                    <outcome>
+                        <goal>Review command line Git</goal>
+                    </outcome>
+                </act>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>[Web technologies](web_technologies.md)</title>
+                <desc>This session introduces HTML, CSS, and JavaScript, which are the most
+                    fundamental technologies for publishing web pages. Markdown, a simplified way to
+                    create and publish HTML, is used both on GitHub and in Jupyter notebook. Pandoc
+                    is a program for converting file formats, including HTML, Markdown, and
+                    others.</desc>
+                <act time="15" type="Code_lab">
+                    <desc>HTML</desc>
+
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>CSS</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>JavaScript</desc>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Markdown</desc>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Pandoc</desc>
+                    <outcome>
+                        <goal>Transform documents using Pandoc</goal>
+                    </outcome>
+                </act>
+                <outcome>
+                    <goal>Understand and write HTML, CSS, and Markdown</goal>
+                </outcome>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Review and wrap-up</title>
+                <act time="90" type="Discussion">
+                    <desc>Review</desc>
+                </act>
+            </slot>
+        </day>
+    </week>
+    <week num="2">
+        <title>Philcamp: Digital philology, creating a digital edition</title>
+        <day d="Monday">
+            <date>July 17</date>
+            <syn>Scholars create digital editions to serve research purposes that may differ from
+                project to project. The first day of Week 2 begins by exploring the role in project
+                planning of defining research goals (which includes defining *non-goals* in order to
+                avoid *scope-creep*). From planning and research questions we move to modeling and
+                structuring the digital edition workflow as a computational pipeline, encouraging a
+                modular perspective on digital editing.</syn>
+            <slot time="09:00:00">
+                <title>[Planning your project](project_planning.md)</title>
+                <desc>There cannot be a single set of *best practice* recommendations for all
+                    digital editions because scholars create editions to meet different research
+                    goals, and they do that under different working conditions. What’s the purpose
+                    of your edition, and what are the resources at your disposal and the constraints
+                    on your efforts?</desc>
+                <act time="10" type="Presentation">
+                    <desc>[Overview of Week 2](topics.md)</desc>
+                    <outcome>
+                        <goal>Don’t touch that keyboard! Planning *your* edition: starting with
+                            research questions</goal>
+                    </outcome>
+                </act>
+                <act time="30" type="Discussion">
+                    <desc>Explore project planning questions</desc>
+                    <outcome/>
+                </act>
+                <act time="25" type="Talk_lab">
+                    <desc>Apply project planning questions to your own project (individually or
+                        collaboratively)</desc>
+
+                    <outcome/>
+                </act>
+                <act time="25" type="Discussion">
+                    <desc>General discussion of Talk lab results</desc>
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+
+            </slot>
+            <slot time="11:00:00">
+                <title>Model, syntax, and markup semantics</title>
+                <desc>How can the elaboration of a digital edition be modularized? How are *model*,
+                    *syntax*, and *markup semantics* similar and different?</desc>
+                <act time="20" type="Presentation">
+                    <desc>Explore [model, syntax, and markup
+                        semantics](model_syntax_semantics.md)</desc>
+                    <outcome/>
+                </act>
+                <act time="25" type="Discussion">
+                    <desc>Explore [plain text as model and expression](plain.md)</desc>
+                    <outcome/>
+                </act>
+                <act time="25" type="Discussion">
+                    <desc>Explore [XML as model and expression](xml_model.md)</desc>
+                    <outcome/>
+                </act>
+                <act time="20" type="Presentation">
+                    <desc>Explore [other models and their expressions: LMNL, GODDAG, TexMECS,
+                        TAG](other_models.md)</desc>
+                    <outcome/>
+                </act>
+                <outcome>
+                    <goal>Where data modeling belongs in the workflow</goal>
+                </outcome>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>Transcription with markup: XML</title>
+                <desc>How are documents like trees and how are they different? What is represented
+                    by the model alone (the XML tree), and what requires markup semantics (schema)?
+                    What’s hard in XML and how do we do it anyway?</desc>
+                <act time="10" type="Code_lab">
+                    <desc>Create [your own fork of our Institute GitHub repository](fork.md)</desc>
+                    <outcome/>
+                </act>
+                <act time="20" type="Discussion">
+                    <desc>XML as a tree ([OHCO: “ordered hierarchy of content
+                        objects”](ohco.md)</desc>
+                    <outcome/>
+                </act>
+                <act time="15" type="Discussion">
+                    <desc>[Making the implicit explicit with markup](explicit.md)</desc>
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Tag ["Ozymandias"](ozymandias.txt) in XML (e.g., lines, sentences,
+                        phrases, speakers, words, feet, syllables, stress)</desc>
+                    <outcome/>
+                </act>
+                <act time="15" type="Discussion">
+                    <desc>[What's hard in XML](xml_limitations.md)</desc>
+                    <outcome/>
+                </act>
+                <outcome>
+                    <goal>Markup as an expression of a data model; making the implicit explicit and
+                        machine-actionable</goal>
+                    <goal>The relationships among model, syntax, and markup semantics</goal>
+                </outcome>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>XML as a tree / XPath</title>
+                <act time="10" type="Discussion">
+                    <desc>Review of [Week 2, Day 1](week_2_day_1_plan.md), Modeling and
+                        communities</desc>
+                </act>
+                <act time="35" type="Code_lab">
+                    <desc>[XPath as a way of navigating the tree](xpath.md) (using
+                        [Hamlet](hamlet.xml))</desc>
+                    <outcome/>
+                </act>
+                <act time="20" type="Code_lab">
+                    <desc> XPath navigation of overlap in ["Ozymandias"](ozymandias.xml): Find 1)
+                        phrases, 2) enjambments, and 3) metrical lines</desc>
+                    <outcome/>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>The [cost of workarounds during processing](overlap_xml.md)</desc>
+                    <outcome/>
+                </act>
+                <act time="10" type="Discussion">
+                    <desc>What’s so bad about markup semantics, the application layer, and
+                        workarounds?</desc>
+                    <outcome/>
+                </act>
+                <outcome>
+                    <goal>How modeling reduces iterations of the document analysis → schema
+                        development → markup pipeline</goal>
+                    <goal>XML looks like a string but it’s really a tree. What does this mean for
+                        modeling, markup, and querying or processing?</goal>
+                </outcome>
+            </slot>
+        </day>
+        <day d="Tuesday">
+            <date>July 18</date>
+            <syn>The first half of Week 2, Day 2 continues the focus on document modeling from the
+                previous day, with attention to three models of text: XML (text as tree), LMNL (text
+                as ranges), and TAG (text as graph). The second half of the day introduces the idea
+                of developing a digital edition as a computational pipeline. We illustrate the
+                pipeline with the Gothenburg model of textual variation, and then begin to explore
+                the first two stages of that model, tokenization and normalization. Java SE
+                installation:
+                &lt;"http://www.oracle.com/technetwork/java/javase/downloads/index.html">. Choose
+                Java SE for your operating system</syn>
+            <slot time="09:00:00">
+                <title>Transcription with markup: LMNL</title>
+                <act time="10" type="Discussion">
+                    <desc>Review of [week 2, day 1](week_2_day_1_plan.md)</desc>
+                    <outcome/>
+                </act>
+                <act time="10" type="Presentation">
+                    <desc>[Introduction to the LMNL data model and sawtooth
+                        syntax](lmnl_syntax.md)</desc>
+                </act>
+                <act time="20" type="Code_lab">
+                    <desc>Tag "[Ozymandias](ozymandias.txt)" in LMNL</desc>
+                    <outcome/>
+                </act>
+                <act time="20" type="Presentation">
+                    <desc>Introduction to TAG and Alexandria</desc>
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>[Alexandria installation](../week_3/alexandria.md)</desc>
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Visualization of LMNL in Alexandria</desc>
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>Theory of edition</title>
+                <desc>Are you making an edition of a manuscript or of a text? What is the role of
+                    language and orthography in your edition? How will the text be presented? How
+                    will users interact with the views? What will be the role of graphic
+                    visualization?</desc>
+                <act time="20" type="Discussion">
+                    <desc>Explore [edition terms and concepts](edition_terms_and_concepts.md) and
+                        the [digital workstation](../week_3/digital_workstation.md)</desc>
+                    <outcome/>
+                </act>
+                <act time="20" type="Discussion">
+                    <desc>It isn’t just words! [What story are you trying to
+                        tell?](sample_visualizations.md)</desc>
+                    <outcome/>
+                </act>
+                <act time="30" type="Talk_lab">
+                    <desc>Explore participant data in light of terms and concepts</desc>
+                    <outcome/>
+                </act>
+                <act time="20" type="Discussion">
+                    <desc>General discussion of Talk lab results</desc>
+                    <outcome/>
+                </act>
+                <outcome>
+                    <goal>Understanding modeling perspectives (tree, ranges, graph) and
+                        communities</goal>
+                    <goal>Modular development: thinking about digital edition development as a
+                        computational pipeline</goal>
+                </outcome>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>Tokenization</title>
+                <act time="10" type="Discussion">
+                    <desc>[CollateX
+                        installation](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/collatex_installation.ipynb)</desc>
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>[Tokenizing plain
+                        text](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb)</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>[Tokenizing
+                        XML](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Tokenization.ipynb)
+                        (scroll to “The next step: tokenizing XML”)</desc>
+                </act>
+                <act time="20" type="Discussion">
+                    <desc>[Further challenges in tokenization](tokenization.md)</desc>
+                </act>
+                <outcome>
+                    <goal>Beginning to tokenize texts</goal>
+                </outcome>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Normalization</title>
+                <desc>Before we start: 1. Navigate to your fork of our Institute repo and run `git
+                    pull upstream remote`. 2. Start Jupyter notebook either from the Anaconda
+                    launcher or by navigating to your home directory and typing `jupyter notebook`.
+                    3. Within the main Jupyter notebook web page, navigate to `schedule/week_2` in
+                    your fork of our repo and open `Normalization.ipynb`,
+                    `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and
+                    `Integrating_XML_with_Python.ipynb`.</desc>
+                <act time="30" type="Code_lab">
+                    <desc>About normalization (`Normalization.ipynb` notebook)</desc>
+                    <outcome/>
+                </act>
+                <act time="10" type="Presentation">
+                    <desc>Unicode normalization (`Unicode-normalization.ipynb` notebook)</desc>
+                </act>
+                <act time="20" type="Presentation">
+                    <desc>Normalization examples (`Normalization_examples.ipynb` notebook)</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Normalizing XML input (`Integrating_XML_with_Python.ipynb`
+                        notebook)</desc>
+                </act>
+                <outcome>
+                    <goal>Beginning to normalize texts</goal>
+                </outcome>
+            </slot>
+        </day>
+        <day d="Wednesday">
+            <date>July 19</date>
+            <syn>Week 2, Day 3 expands upon the idea of digital editions as text processing
+                pipelines. After a short recap of day 2, we continue with the step normalization. We
+                will show how these two pipeline stages prepare texts for automated collation. The
+                process of automated collation is also discussed from a modeling perspective (GM).
+                Participants learn that their research goals and questions influence the
+                computational pipelines.</syn>
+            <slot time="09:00:00">
+                <title>Normalization</title>
+                <act time="15" type="Discussion">
+                    <desc>Review of [week 2, day 2](week_2_day_2_plan.md): computational pipelines,
+                        modeling, processing, and tokenization</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Basic normalization</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>NLTK</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Regular expressions</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Basic XML normalization: transforming XML to a stream of normalized (word)
+                        tokens</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Hands-on exercise with NLTK and regular expressions</desc>
+
+                    <outcome/>
+                </act>
+                <outcome>
+                    <goal>Understanding the principles of basic text transformations like
+                        normalization and how they serve different objectives</goal>
+                </outcome>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>Collation</title>
+                <act time="15" type="Presentation">
+                    <desc>Modeling and collation</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Talk_lab">
+                    <desc>Collation within editorial theory</desc>
+
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Collation practice</desc>
+
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Tokenization and normalization for collation purposes</desc>
+
+                </act>
+                <outcome>
+                    <goal>Bringing together tokenization and normalization as individual pipeline
+                        steps and seeing how they can be implemented in the act of collation</goal>
+                    <goal>Normalize, tokenize, and collate text</goal>
+                </outcome>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>Challenging textual phenomena: Introducing Text as Graph (TAG)</title>
+                <act time="90" type="Presentation">
+                    <desc>Challenging textual phenomena: Introducing Text as Graph (TAG)</desc>
+                </act>
+                <outcome>
+                    <goal>Fundamentals of TAG: hypergraph</goal>
+                    <goal>Modeling discontinuity</goal>
+                </outcome>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Review</title>
+                <act time="90" type="Talk_lab">
+                    <desc>Review</desc>
+                </act>
+            </slot>
+        </day>
+        <day d="Thursday">
+            <date>July 20</date>
+            <syn>Week 2, Day 4 concentrates on ...</syn>
+            <slot time="09:00:00">
+                <title>Text analytics 1</title>
+                <desc>Text analytics 1</desc>
+                <act time="15" type="Presentation">
+                    <desc>Bag of words</desc>
+
+                    <outcome/>
+                </act>
+                <act time="30" type="Presentation">
+                    <desc>Text processing</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Text as tables</desc>
+
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Query the tables</desc>
+
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>Text analytics 1 (cont.)</title>
+                <act time="90" type="Code_lab">
+                    <desc>Bag of words, text processing, text as tables, query the tables
+                        (continued) </desc>
+                </act>
+
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>Modeling: annotations as layers to the text</title>
+                <desc>Modeling: annotations as layers to the text</desc>
+                <act time="15" type="Discussion">
+                    <desc>Review of tokenization, normalization, and collation from the point of
+                        view of annotations</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Talk_lab">
+                    <desc>Envisioning your edition as a layered model</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Existing models (e.g. computational linguistics)</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Talk_lab">
+                    <desc>Hands-on: identify your own layers</desc>
+
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Hands-on: model your edition's pipeline</desc>
+
+                </act>
+                <outcome>
+                    <goal>Grasping the concept of modelling text as trees and graphs</goal>
+                    <goal>Understanding annotation as a form of adding layers to text</goal>
+                    <goal>Varieties of layered editions</goal>
+                </outcome>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Collation 2</title>
+                <desc>Collation 2</desc>
+                <act time="30" type="Presentation">
+                    <desc>Advanced collation</desc>
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Near-matching - theory (as step in the computational pipeline)</desc>
+
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Hands-on: ...</desc>
+
+                    <outcome/>
+                </act>
+                <outcome>
+                    <goal>Deeper discussion of the alignment step in the GM</goal>
+                    <goal>An awareness of computation to understand that we do near-matching late
+                        (in the pipeline) for reasons of efficiency</goal>
+                </outcome>
+            </slot>
+        </day>
+        <day d="Friday">
+            <date>July 21</date>
+            <syn>Week 2, Day 5 concentrates on querying text, on creating visualizations, and on
+                presenting research outcomes to the end user. After desigining and implementing the
+                content of your edition, after adding layers of information to your model, we think
+                about how to query the information and how to present it to an audience. It means
+                that the content need to be made accessible in a way that does not require an end
+                user to code.</syn>
+            <slot time="09:00:00">
+                <title>Text analytics 2</title>
+                <desc>Text analytics 2</desc>
+
+                <act time="30" type="Presentation">
+                    <desc>Unsupervised learning</desc>
+
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Cluster analysis</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Discussion">
+                    <desc>PCA</desc>
+
+                    <outcome/>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Paleographic analysis</desc>
+
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>Text analytics 2 (cont.)</title>
+                <act time="90" type="Discussion">
+                    <desc>Unsupervised learning, cluster analysis, PCA, paleographic analysis
+                        (continued)</desc>
+
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>Queries and XML</title>
+                <desc>Queries and XML</desc>
+                <act time="45" type="Code_lab">
+                    <desc>Querying your text with XQuery in an eXist framework</desc>
+
+                    <outcome>
+                        <goal>Learning XQuery to ...</goal>
+                    </outcome>
+                </act>
+                <act time="45" type="Code_lab">
+                    <desc>Using elastic search to index the content of your edition</desc>
+
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Visualization as outcome</title>
+                <desc>Visualization as outcome</desc>
+                <act time="90" type="Discussion">
+                    <desc>Getting from layered annotations to (a specific) visualization</desc>
+
+                </act>
+                <outcome>
+                    <goal>Visualization as part of the text processing pipeline: making decisions,
+                        selecting formats, interacting with, and producing visualizations</goal>
+                    <goal>Hands-on: a departure from Word Cloud</goal>
+                </outcome>
+            </slot>
+        </day>
+    </week>
+    <week num="3">
+        <title>Pubcamp: Expressing the edition, digital publication</title>
+        <day d="Monday">
+            <date>July 24</date>
+            <syn>The first day of Week 3 focuses on the ins and outs of getting your edition online.
+                We will introduce a workflow for putting the edition online during its development
+                and discuss how to iterating on it as you progress through the steps of digital
+                publication.</syn>
+            <slot time="09:00:00">
+                <title>Mike Kestemont: Bag-of-words models in Python (`numpy`, `scipy`)</title>
+                <desc/>
+                <act time="5" type="Presentation">
+                    <desc>Overview of Week 3</desc>
+                    <outcome/>
+                </act>
+                <act time="85" type="Code_lab">
+                    <desc>Bag-of-words models in Python (`numpy`, `scipy`)</desc>
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>Mike Kestemont: Stylometry and machine learning in Python (`sklearn`)</title>
+                <act time="90" type="Code_lab">
+                    <desc>Stylometry and machine learning in Python (`sklearn`)</desc>
+                </act>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>Introducing CETEIcean / Publishing on GitHub Pages</title>
+                <act time="25" type="Presentation">
+                    <desc>Introducing CETEIcean / Publishing on GitHub Pages</desc>
+                </act>
+                <act time="20" type="Code_lab">
+                    <desc>Hands on</desc>
+                </act>
+                <act time="25" type="Talk_lab">
+                    <desc>Next steps: Customizing your edition with CSS and Javascript</desc>
+                </act>
+                <act time="20" type="Code_lab">
+                    <desc>Hands on</desc>
+                </act>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Web Publishing Frameworks: Flask</title>
+                <act time="25" type="Talk_lab">
+                    <desc>[Next steps: Beyond GitHub Pages — Flask
+                        ](flask_micro_framework.md)</desc>
+                </act>
+                <act time="40" type="Code_lab">
+                    <desc>Hands on Flask</desc>
+                </act>
+                <act time="25" type="Discussion">
+                    <desc>Review</desc>
+                </act>
+            </slot>
+        </day>
+        <day d="Tuesday">
+            <date>July 25</date>
+            <syn>The second day of Week 3 looks at how digital editions themselves may be treated as
+                data in various ways, as well as how data may be embedded within them.</syn>
+            <slot time="09:00:00">
+                <title>Bringing it all together</title>
+                <desc>Practically and conceptually</desc>
+                <act time="15" type="Presentation">
+                    <desc>Practically</desc>
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Hands on practically</desc>
+                    <outcome/>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Conceptually</desc>
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Hands on conceptually</desc>
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>Plugging your edition into the graph</title>
+                <desc>Plugging your edition into the graph</desc>
+                <act time="15" type="Presentation">
+                    <desc>Extracting and publishing RDF data</desc>
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Hands on Extracting and publishing RDF data</desc>
+                    <outcome/>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>RDF databases and SPARQL</desc>
+                    <outcome/>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Hands on RDF databases and SPARQL</desc>
+                    <outcome/>
+                </act>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>[XQuery and eXist](exist_xquery_webapps.md)</title>
+                <act time="15" type="Presentation">
+                    <desc>XQuery 3</desc>
+                    <!-- exist_xquery_webapps.md -->
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Hands on XQuery 3</desc>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Web apps in eXist</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Hands on Web apps in eXist</desc>
+                </act>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>LOD and Editions</title>
+                <desc>Linked data principles</desc>
+                <act time="10" type="Presentation">
+                    <desc>URIs as identifiers</desc>
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Hands on URIs as identifiers</desc>
+                    <outcome/>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Modeling concepts and expressions</desc>
+                    <outcome/>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Hands on Modeling concepts and expressions</desc>
+                    <outcome/>
+                </act>
+                <act time="10" type="Presentation">
+                    <desc>Choosing and using ontologies</desc>
+                    <outcome/>
+                </act>
+                <act time="10" type="Code_lab">
+                    <desc>Hands on Choosing and using ontologies</desc>
+                    <outcome/>
+                </act>
+                <act time="15" type="Discussion">
+                    <desc>Review</desc>
+                </act>
+            </slot>
+        </day>
+        <day d="Wednesday">
+            <date>July 26</date>
+            <syn/>
+            <slot time="09:00:00">
+                <title>Getting to know and use the TEI stylesheets</title>
+                <act time="15" type="Code_lab">
+                    <desc>[Setup](XSLT.md)</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Hands on TEI stylesheets</desc>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>TEI stylesheets 2</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Hands on TEI stylesheets 2</desc>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>TAG and Alexandria: models and visualizations</title>
+                <act time="10" type="Presentation">
+                    <desc>TAG as model</desc>
+                </act>
+                <act time="20" type="Code_lab">
+                    <desc>Hands on TAG as model</desc>
+                </act>
+                <act time="10" type="Presentation">
+                    <desc>Alexandria as model and visualization</desc>
+                </act>
+                <act time="30" type="Code_lab">
+                    <desc>Hands on Alexandria as model and visualization</desc>
+                </act>
+                <act time="20" type="Discussion">
+                    <desc>Review</desc>
+                </act>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>Lightning talks 1</title>
+                <act time="1" type="Presentation">
+                    <desc>Intro to lightning talks</desc>
+                </act>
+                <act time="89" type="Talk_lab">
+                    <desc>Project slam 1, max 10 minutes per project, no discussion, switch on
+                        signal</desc>
+                </act>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Lightning talks 2</title>
+                <act time="45" type="Talk_lab">
+                    <desc>Project slam 2, max 10 minutes per project, no discussion, switch on
+                        signal</desc>
+                </act>
+                <act time="25" type="Presentation">
+                    <desc>Around the table reflections</desc>
+                </act>
+                <act time="20" type="Discussion">
+                    <desc>Review</desc>
+                </act>
+            </slot>
+        </day>
+        <day d="Thursday">
+            <date>July 27</date>
+            <syn/>
+            <!--            <slot time="11:00:00">
+                <title>TEI Publisher</title>
+                <act time="15">
+                    <desc>eXist Solution's TEI Publisher</desc>
+                </act>
+                <act time="30">
+                    <desc>Hands on TEI Publisher 1</desc>
+                </act>
+                <act time="15">
+                    <desc>TEI Publisher 2</desc>
+                </act>
+                <act time="30">
+                    <desc>Hands on TEI Publisher 2</desc>
+                </act>
+            </slot>
+-->
+            <slot time="09:00:00">
+                <title>[The edition and APIs](api_intro.md)</title>
+                <act time="30" type="Presentation">
+                    <desc>Intro APIs</desc>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Hands on intro APIs</desc>
+                </act>
+                <act time="20" type="Talk_lab">
+                    <desc>API creation talk lab</desc>
+                </act>
+                <act time="25" type="Presentation">
+                    <desc>API creation best practices</desc>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>[Using APIs in your edition](using_apis_edition.md)</title>
+                <act time="15" type="Presentation">
+                    <desc>Verbs and parameters</desc>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Navigation and filtering</desc>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Hands on navigation and filtering</desc>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Internal and external services, documentation</desc>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Hands on internal and external service, documentation</desc>
+                </act>
+                <act time="15" type="Talk_lab">
+                    <desc>Show your API</desc>
+                </act>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>[Building your own API](building_apis.md)</title>
+                <act time="15" type="Presentation">
+                    <desc>Flask verbs and parameters</desc>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Navigation and filtering</desc>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Hands on navigation and filtering</desc>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Hands on internal and external services</desc>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Hands on documentation</desc>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Try your neighbours API</desc>
+                </act>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Licensing, archiving, and planning for the future</title>
+                <act time="30" type="Presentation">
+                    <desc>Licensing, archiving, and planning for the future</desc>
+                </act>
+                <act time="20" type="Talk_lab">
+                    <desc>Hands on Licensing, archiving, and planning for the future</desc>
+                </act>
+                <act time="10" type="Presentation">
+                    <desc>Priorities</desc>
+                </act>
+                <act time="30" type="Talk_lab">
+                    <desc>Review</desc>
+                </act>
+            </slot>
+            <slot time="19:00:00">
+                <title>Leif-Jöran: eXist-db workshop</title>
+                <act time="25" type="Code_lab">
+                    <desc>XQuery</desc>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>Individual services</desc>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>Webapps</desc>
+                </act>
+                <act time="15" type="Talk_lab">
+                    <desc>Wrap-up/review</desc>
+                </act>
+            </slot>
+        </day>
+        <day d="Friday">
+            <date>July 28</date>
+            <syn/>
+            <slot time="09:00:00">
+                <title>[Publishing strategies and sustainability](week_3_day_5_session_1.md)</title>
+                <act time="25" type="Discussion">
+                    <desc>Publishing strategies</desc>
+                </act>
+                <act time="15" type="Code_lab">
+                    <desc>Hands on publishing</desc>
+                </act>
+                <act time="25" type="Discussion">
+                    <desc>Sustainability</desc>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>Hands on sustainability</desc>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>[Data visualization](visualization.md)</title>
+                <act time="25" type="Presentation">
+                    <desc>Data visualization 1</desc>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>Hands on Data visualization 1</desc>
+                </act>
+                <act time="15" type="Presentation">
+                    <desc>Data visualization 2</desc>
+                </act>
+                <act time="25" type="Code_lab">
+                    <desc>Hands on Data visualization 2</desc>
+                </act>
+            </slot>
+            <slot time="12:30:00">
+                <title>Lunch</title>
+                <act time="90">
+                    <desc>Lunch</desc>
+                </act>
+            </slot>
+            <slot time="14:00:00">
+                <title>Deployment and further coding if needed</title>
+                <act time="15" type="Presentation">
+                    <desc>[Visualizing TAG and LMNL with Alexandria](alexandria.md)</desc>
+                </act>
+                <act time="30" type="Presentation">
+                    <desc>Collation with XML (open `collating_xml.ipynb`, which is inside
+                        `schedule/week_2/collation_with_markup`)</desc>
+                </act>
+                <act time="45" type="Presentation">
+                    <desc>Deployment</desc>
+                </act>
+            </slot>
+            <slot time="15:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="16:00:00">
+                <title>Wrapping up: What have we learned?</title>
+                <act time="90" type="Discussion">
+                    <desc>Taking stock</desc>
+                </act>
+            </slot>
+        </day>
+        <day d="Saturday">
+            <date>July 29</date>
+            <syn>Half day for philosphy and pedagogy of the Insitute</syn>
+            <slot time="09:00:00">
+                <title>Rationale and design of the Institute</title>
+                <act time="90" type="Presentation">
+                    <desc/>
+                </act>
+            </slot>
+            <slot time="10:30:00">
+                <title>Coffee break</title>
+                <act time="30">
+                    <desc>Coffee break</desc>
+                </act>
+            </slot>
+            <slot time="11:00:00">
+                <title>Rationale and design of the Institute (continued)</title>
+                <act time="90" type="Discussion">
+                    <desc/>
+                </act>
+            </slot>
+        </day>
+    </week>
+</schedule>
