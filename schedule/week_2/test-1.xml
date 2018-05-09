@@ -1,0 +1,5 @@
+<root>
+    <l speaker="hamlet">Hamlet is a princess of Denmark.</l>
+    <l speaker='ophelia'>Things end <choice><sic>badly</sic><corr>horrible</corr></choice>for Ophelia's mother.</l>
+    <l speaker="nobody">Julius Caesar-ion<l>dude</l> does not appear in this play.</l>
+</root>

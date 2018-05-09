@@ -18,7 +18,7 @@ def get_my_index():
     }
     return render_template("index_dyn_dict.html", dict=values)
 
-@app.route("/resource/<resource_name>")
+@app.route("/resource/form_mye")
 def get_local_resource(resource_name = ''):
     return render_template("resource.html", resource_name=resource_name)
 

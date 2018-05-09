@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', init, false);
+
 function init() {
     var buttons = document.getElementsByTagName('button');
     for (var i = 0, length = buttons.length; i < length; i++) {

@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/CETEIcean.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <div id="TEI">
+      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+    </div>
+    <script src="js/CETEI.js"></script>
+    <script>
+      var c = new CETEI();
+      /***********************************
+       * Behaviors, i.e. ways you want specific elements to be handled that
+       * you can't do with CSS, can be injected by calling the addBehaviors
+       * method, passing it an object containing a set of handler functions.
+       * Handler functions must take a single parameter which
+       * is an HTML element. The function names must match the name of the
+       * element they will be applied to.
+       ***********************************/
+      c.addBehaviors({"handlers":{
+        // Overrides the default ptr behavior, displaying a short link
+        "ptr": function(elt) {
+          var link = document.createElement("a");
+          link.innerHTML = elt.getAttribute("target").replace(/https?:\/\/([^\/]+)\/.*/, "$1");
+          link.href = elt.getAttribute("target");
+          return link;
+        },
+        // Adds a new handler for <term>, wrapping it in an HTML <b>
+        "term": function(elt) {
+            var b = document.createElement("b");
+            b.innerHTML = elt.innerHTML;
+            return b;
+        },
+        // Inserts the first array element before tei:add, and the second, after.
+        "add": ["`","´"]
+      }});
+      c.getHTML5('testTEI.xml', function(data) {
+        document.getElementById("TEI").innerHTML = "";
+        document.getElementById("TEI").appendChild(data);
+      });
+
+      // Alternatively, use then()
+      // (new CETEI).getHTML5('testTEI.xml').then(function(data){
+      //   document.getElementById("TEI").appendChild(data);
+      // });
+
+    </script>
+  </body>
+</html>
