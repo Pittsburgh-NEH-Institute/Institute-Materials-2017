@@ -18,48 +18,62 @@ Most programming languages and development environments provide some degree of c
 
 If you’re using the &lt;oXygen/&gt; XML Editor, which validates strictly, you’re going to be notified of most errors. Sometimes, though, error messages show up in odd places, which can confuse editors of every experience level. In XML, there are two ways to evaluate a document for errors: by well-formedness and by validity.
 
-_Well-formed documents_ follow the rules for every XML document, meaning there is one root element, there are no overlapping hierarchies, every open tag has a close tag, etc. Below is a well-formedness error, where the `<s>` element is missing it’s end tag:
+<img src="images/wellformedness_error.png" align="left" width="50%" style="margin-right: 1em;"/>_Well-formed documents_ follow rules that apply to every XML document, meaning there is one root element, there are no overlapping hierarchies, every start tag has a corresponding end tag, etc. In the case illustrated here, for example, &lt;oXygen/&gt; is displaying a red squiggly line because the `<s>` element is missing its end tag, which is a well-formedness violation. The location of the red squiggly line might seem to suggest that there’s an error with the `</book>` end tag, but what it’s really telling you is that the error is _just before_ that end tag. It might seem most natural to a human to write the `</s>` end tag at the end of line 3, but writing it at the beginning of line 4, before the `</book>` end tag, would also be well formed. &lt;oXygen/&gt; can’t know that you’ve forgotten the `</s>` end tag until it sees the `</book>` end tag, which is why it can’t report the error on the preceding line, where a human might think it occurred. The message that &lt;oXygen/&gt; displays at the botto of the editing window, though, makes it clear that the correction should be to add the missing `</s>` end tag.
 
-![](images/wellformedness_error.png)
-
-It looks as if the red squiggly line is telling you that there’s an error with the `</book>` end tag, but what it’s really telling you is that the error is _just before_ that end tag. It might seem most natural to a human to write the `</s>` end tag at the end of line 3, but writing it at the beginning of line 4, before the `</book>` end tag, would also be well formed. &lt;oXygen/&gt; can’t know that you’ve forgotten the `</s>` end tag until it sees the `</book>` end tag, which is why it can’t report the error on the preceding line, where a human might think it occurred. The message below, however, makes clear that the correction should be to add an `</s>` end tag.
-
-Validity is based on the schema(s) associated with the document. If there is no schema, you can assume all errors are well-formedness errors, and attempt to correct those with 
-an eye for detail. Many times, the solution for an elusive XML well-formedness error is to leave it alone and return with fresh eyes. Depending on what kind of schema you use, and how well it is written, validity errors are more easily resolved. Validity errors, as we explain below, can also indicate a problem with the schema model.
-
+_Validity_ is defined as conformity to the schema(s) associated with the document. (Among other things, this means that if there is no schema, all errors are necessarily well-formedness errors.) The following image illustrates a validation error in the XML document instance to the left. The error is that the `<s>` element on lines 4–5 does not contain a `<word>` element, although the Relax NG schema to the right, which is being used for validation, requires that an `<s>` element contain exactly one `<word>` and one `<phrase>` element, intermixed optionally with plain text. The squiggly red line identifies the `<s>` element as the location of the error, and the error message displayed below explains that a required `<word>` element is missing. 
 ![](images/validity_error.png)
 
-This error message tells us one of two things: either we should change our markup to fit the model, or change the model to fit the markup.
+This error message tells us one of two things: either we should change our markup to fit the model in the schema, or change the model to fit the markup.
+
+The real-time validation error report at the bottom of the &lt;oXygen/&gt; editing window shows only one error at a time, but if there are errors in multiple locations, you will see squiggly lines and red bars in the right margin for all of them. Consider the example below:
+
+![](images/validation_errors_1.png)
+
+The schema, to the left, requires a `<blurb>` to contain exactly one title followed by exactly one paragraph, but the document instance, to the right, has three paragraphs and no title. There are three validation errors: the missing title and the two extra paragraphs, and there are three squiggly red lines and three small red bars to the right (plus the red square above them, which is a summary report that there’s somthing amiss). The textual error message at the bottom reports only one error (the last), but if you click the red check icon above the editor screen, you’ll open a window that lists all error messages below:
+
+![](images/validation_errors_2.png)
 
 ### Errors in Relax NG
 
 ### Reference to an undefined pattern
 
-<img align="left" src="images/undefined_pattern.png" width="50%" style="margin-right: 1em;"/> The most common error message in Relax NG is also the easiest to fix: a reference to an undefined named pattern. The pattern name you have not defined appears in the error message itself, and a red squiggle appears under the line where you refer to the undefined pattern. Most often, this error message appears because you’ve referred a pattern you haven’t defined yet, and you can fix it by adding the definition. In other case, though, you may have mistyped the name of the pattern. 
+<img align="left" src="images/undefined_pattern.png" width="50%" style="margin-right: 1em;"/> The most common error in Relax NG is also the easiest to fix: a reference to an undefined named pattern. The pattern name you have not defined appears in the error message itself, and a red squiggle appears under the line where you refer to the undefined pattern. Most often, this error message appears because you’ve referred a pattern you haven’t defined yet, and you can fix it by adding the definition. In other cases, though, you may have mistyped the name of the pattern. 
 
 ### Group of “string” or “data” element
 
-<img align="right" src="images/group_of_string.png" width="50%" style="margin-left: 1em;"/>
-This error appears when you define an element or attribute with an invalid group of strings, rather than just a single string or datatype. 
-Relax NG doesn’t permit patterns that juxtapose two string values. In most cases, you typed a comma (representing sequence) when you meant to type a pipe (representing choice).
+<img align="right" src="images/group_of_string.png" width="50%" style="margin-left: 1em;"/>This error appears when you define an element or attribute with a group of strings, rather than just a single string or datatype, since Relax NG doesn’t permit patterns that juxtapose two string values. In most cases, you typed a comma (representing sequence) when you meant to type a pipe (representing choice).
 
 ### No error message, but something isn’t right
 
-When you develop a schema after the fact, to formalize the structure of an XML document, the schema itself may be valid, but an error message may appear when you validate the XML against the schema. In this development situation, though, we’ve stipulated that the XML says what it says, so if it isn’t valid against the schema that we’re crafting to model it, we need to fix the schema. 
+When you develop a schema after the fact, to formalize the structure of an XML document, the schema itself may be valid, but an error message may appear when you validate the XML against the schema. In this development scenario, though, we’ve stipulated that the XML says what it says, so if it isn’t valid against the schema that we’re crafting to model it, we need to fix the schema. 
 
 ![](images/relaxng_xml_error.png)
 
-In this case, the error message tells us we must have a `word` element before a `phrase` element, as we’ve used a comma to indicate we want one of each one, in that order.
+In the example above, the error message tells us we must have a `word` element before a `phrase` element, as we’ve used a comma in the schema to indicate we require exactly one of each one, in that order. Note that &lt;oXygen/&gt; puts squiggly red lines in two places, once for `<word>` and once for `<phrase>`, even though you moving just the `<word>` or just the `<phrase>` (that is, one edit operation) will fix both problems at once. In other words, to a human this might be one error, but to &lt;oXygen/&gt; it looks like two.
 
-To diagnose and fix this type of error, look specifically for phrases like “not allowed yet” and “not allowed here”. Does your schema require sequence where you mean choice? Or vice versa? Did you forget to mark something that repeats as repeatable? Error messages like these don’t point to the Relax NG because the Relax NG itself is valid, but readin the error message and scrutinizing the error context should help you identify where to lok in your Relax NG.
+To diagnose and fix this type of error, look specifically for phrases like “not allowed yet” and “not allowed here”. Does your schema require sequence where you mean choice? Or vice versa? Did you forget to mark something that repeats as repeatable? Error messages like these don’t point to the Relax NG because the Relax NG itself is valid, but we’ve stipulated for this example that the XML cannot be edited, and that means that the schema needs to be revised to match the reality of the document instance. In other words, it looks like the problem is invalid XML, but it’s really a schema error, according to which the schema doesn’t model what you want it to model.
 
 ### Errors in XPath and XSLT
 
-Each XSLT error message comes with its own unique identifier, which you can search online to find more information about the problem. This is especially useful when you start looking at StackOverflow, as more than likely someone else has been having your problem too, and someone else can’t wait to explain it to you.
+Each XSLT error message comes with its own unique identifier (e.g., integer division by zero is error FOAR0001), which you can search online to find more information about the problem. This is especially useful when you start looking at StackOverflow, as more than likely someone else has been having your problem too, and someone else can’t wait to explain it to you. For example, suppose you’ve introduced an `<xsl:sort>` element to sort your output, and you get the following error message:
 
-### This xsl:element may not contain some other xsl:element
+```bash
+XTSE0010: An xsl:value-of element must not contain an xsl:sort element
+```
 
-Just when you’ve decided to put an `<xsl:sort>` element in to sort your output, you get the error message `XTSE0010: An xsl:value-of element must not contain an xsl:sort element`. Your best bet, in this case, is to look up the documentation of the element you’re trying to use as the child element, as documentation is always more specific about what a parent element can or cannot be than it is about possible children.
+You may not always be able to predict where to find a more detailed explanation, that is, in this case, whether to look under `<xsl:value-of>` or `<xsl:sort>`, and the explanatory text may not always be precise. In this case, Michael Kay tells us that:
+
+> `<xsl:sort>` is always a child of `<xsl:apply-templates>`, `<xsl:for-each>`, `<xsl:for-each-group>`, or `<xsl:perform-sort>`
+
+This tells indirectly that `<xsl:sort>` cannot be a child of `<xsl:value-of>`. The error message is imprecise, though, because an `<xsl:value-of>` element _can_ actually _contain_ an `<xsl:sort>` element; the constraint is only that it cannot contain it _as a child element_. For example, the following XSLT is valid, even though in it `<xsl:value-of>` contains `<xsl:sort>`:
+
+```xslt
+<xsl:value-of>
+    <xsl:for-each select="//title">
+        <xsl:sort/>
+    </xsl:for-each>
+</xsl:value-of>
+```
 
 ## Reading stack traces in Python
 
