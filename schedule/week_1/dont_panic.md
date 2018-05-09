@@ -1,57 +1,79 @@
 # Don’t panic: interpretation of error messages
 
-Error messages are your friends. Alhough your immediate reaction to an error message may be one of anxiety, most of the time the message (e.g., text in a dialog box or the location of a red squiggly line in &lt;oXygen/&gt;) contains information you’ll need in order to correct a problem. Integrated development environments, web browsers, and command lines can all offer you important advice about how to correct problems in your code, but you need to take advantage of that advice! Below we explain some of the most common errors for different technologies and the best strategies for having success with their error messages.
+Error messages are your friends. Although your immediate reaction to an error message may be one of anxiety, most of the time the message (e.g., text in a dialog box, or the location of a red squiggly line in &lt;oXygen/&gt;) contains information you’ll need in order to correct a problem. Integrated development environments, web browsers, and command lines can all offer you important advice about how to correct problems in your code, but only if you pay attentiont to that advice! Below we explain how to read and understand a few common types of error reporting in XML technologies and Python. Your goal in reading this explanation is not primarily to learn about those specific errors; it’s to learn, in a general way, how to engage confidently and effectively with error reporting during development.
 
-New coders sometimes try to reduce the reporting of errors under the mistaken impression that they are reducing errors. That strategy is a mistake. The most damaging error is the one that you don’t know about, the one that gives you an incorrect response that you think you can trust. 
+## Don’t ignore or suppress error messages
+
+New coders sometimes try to reduce the reporting of errors under the mistaken impression that they are reducing errors. That strategy is a mistake. The most damaging error is the one that you don’t know about, the one that gives you an incorrect response without your knowledge. 
+
+### Read the error message
+
+Some types of error messages are difficult for new coders to understand, but they become less opaque with practice, and you need to learn how to read them in order to diagnose and fix your own errors. And in situations where you can’t understand an error message, you need to report the text of the message when you ask for help. Nobody is likely to be able to help you if all you say is “I tried X and it didn’t work” or “I tried X and I got an error”. When you ask for help, report the specific error message, and the starting point for reporting an error message is reading the message yourself.
+
+### Don’t suppress the error message
+
+Most programming languages and development environments provide some degree of control over the reporting of errors, and new developers sometimes confuse minimizing error reports with reducing errors. For example, in XSLT and XQuery you have a choice about whether to specify the datatype of a variable when you declare it (using `as` in XQuery or an `@as` attribute in XSLT). If you don’t specify the type, you’ll see fewer error messages, but that doesn’t mean that you’ll make fewer errors. It just means that when you make a mistake and use data of the wrong type, what your code does will differ from what you think it does, and you’ll have put yourself at risk of getting bad results because you won’t know about the difference. At least during development, you’ll make fewer errors if you take advantage of any error checking and reporting the language or environment makes available.
 
 ## Errors with XML technologies
 
-If you're using oXygen XML Editor, chances are errors are going to be pretty clear and easily defined. Nonetheless, sometimes error messages show
-up in odd places, which can confuse editors of every experience level. In XML, there are two ways to evaluate a document for errors: by well-formedness and by validity.
+If you’re using the &lt;oXygen/&gt; XML Editor, which validates strictly, you’re going to be notified of most errors. Sometimes, though, error messages show up in odd places, which can confuse editors of every experience level. In XML, there are two ways to evaluate a document for errors: by well-formedness and by validity.
 
-Well-formed documents follow the rules for every XML document, meaning there is one root element, there are no overlapping hierarchies, every open tag has a close tag, etc.
-![](images/wellformedness_error.png)
+<img src="images/wellformedness_error.png" align="left" width="50%" style="margin-right: 1em;"/>_Well-formed documents_ follow rules that apply to every XML document, meaning there is one root element, there are no overlapping hierarchies, every start tag has a corresponding end tag, etc. In the case illustrated here, for example, &lt;oXygen/&gt; is displaying a red squiggly line because the `<s>` element is missing its end tag, which is a well-formedness violation. The location of the red squiggly line might seem to suggest that there’s an error with the `</book>` end tag, but what it’s really telling you is that the error is _just before_ that end tag. It might seem most natural to a human to write the `</s>` end tag at the end of line 3, but writing it at the beginning of line 4, before the `</book>` end tag, would also be well formed. &lt;oXygen/&gt; can’t know that you’ve forgotten the `</s>` end tag until it sees the `</book>` end tag, which is why it can’t report the error on the preceding line, where a human might think it occurred. The message that &lt;oXygen/&gt; displays at the botto of the editing window, though, makes it clear that the correction should be to add the missing `</s>` end tag.
 
-Above, you can see the error appears in the document on the `</book>` tag, rather than on the `<s>` tag. The message, however makes clear that the correction should be to add a closing tag.
-
-Validity is based on the schema(s) associated with the document. If there is no schema, you can assume all errors are well-formedness errors, and attempt to correct those with 
-an eye for detail.
-Many times, the solution for an elusive XML well-formedness error is to leave it alone and return with fresh eyes. Depending on what kind of schema you use, and how well it is written, validity errors are more easily resolved. Validity errors, as we explain below, can also indicate a problem with the schema model.
-
+_Validity_ is defined as conformity to the schema(s) associated with the document. (Among other things, this means that if there is no schema, all errors are necessarily well-formedness errors.) The following image illustrates a validation error in the XML document instance to the left. The error is that the `<s>` element on lines 4–5 does not contain a `<word>` element, although the Relax NG schema to the right, which is being used for validation, requires that an `<s>` element contain exactly one `<word>` and one `<phrase>` element, intermixed optionally with plain text. The squiggly red line identifies the `<s>` element as the location of the error, and the error message displayed below explains that a required `<word>` element is missing. 
 ![](images/validity_error.png)
 
-This error message tells us one of two things: either we should change our markup to fit the model, or change the model to fit the markup.
+This error message tells us one of two things: either we should change our markup to fit the model in the schema, or change the model to fit the markup.
+
+The real-time validation error report at the bottom of the &lt;oXygen/&gt; editing window shows only one error at a time, but if there are errors in multiple locations, you will see squiggly lines and red bars in the right margin for all of them. Consider the example below:
+
+![](images/validation_errors_1.png)
+
+The schema, to the left, requires a `<blurb>` to contain exactly one title followed by exactly one paragraph, but the document instance, to the right, has three paragraphs and no title. There are three validation errors: the missing title and the two extra paragraphs, and there are three squiggly red lines and three small red bars to the right (plus the red square above them, which is a summary report that there’s somthing amiss). The textual error message at the bottom reports only one error (the last), but if you click the red check icon above the editor screen, you’ll open a window that lists all error messages below:
+
+![](images/validation_errors_2.png)
 
 ### Errors in Relax NG
 
 ### Reference to an undefined pattern
 
-<img align="left" src="images/undefined_pattern.png" width="50%" style="margin-right: 1em;"/> The most common error message in Relax NG is also the easiest to fix: a reference to an undefined named pattern. The pattern name you have not defined appears in the error message itself, and a red squiggle appears under the line where you refer to the undefined pattern. Most often, this error message appears because you’ve referred a pattern you haven’t defined yet, and you can fix it by adding the definition. In other case, though, you may have mistyped the name of the pattern. 
+<img align="left" src="images/undefined_pattern.png" width="50%" style="margin-right: 1em;"/> The most common error in Relax NG is also the easiest to fix: a reference to an undefined named pattern. The pattern name you have not defined appears in the error message itself, and a red squiggle appears under the line where you refer to the undefined pattern. Most often, this error message appears because you’ve referred a pattern you haven’t defined yet, and you can fix it by adding the definition. In other cases, though, you may have mistyped the name of the pattern. 
 
 ### Group of “string” or “data” element
 
-<img align="right" src="images/group_of_string.png" width="50%" style="margin-left: 1em;"/>
-This error appears when you define an element or attribute with an invalid group of strings, rather than just a single string or datatype. 
-Relax NG doesn’t permit patterns that juxtapose two string values. In most cases, you typed a comma (representing sequence) when you meant to type a pipe (representing choice).
+<img align="right" src="images/group_of_string.png" width="50%" style="margin-left: 1em;"/>This error appears when you define an element or attribute with a group of strings, rather than just a single string or datatype, since Relax NG doesn’t permit patterns that juxtapose two string values. In most cases, you typed a comma (representing sequence) when you meant to type a pipe (representing choice).
 
-### No error message, but something isn't right
+### No error message, but something isn’t right
 
-When you develop a schema after the fact, to formalize the structure of an XML document, the schema itself may be valid, but an error message may appear when you validate the XML against the schema. In this development situation, though, we’ve stipulated that the XML says what it says, so if it isn’t valid against the schema that we’re crafting to model it, we need to fix the schema. 
+When you develop a schema after the fact, to formalize the structure of an XML document, the schema itself may be valid, but an error message may appear when you validate the XML against the schema. In this development scenario, though, we’ve stipulated that the XML says what it says, so if it isn’t valid against the schema that we’re crafting to model it, we need to fix the schema. 
 
 ![](images/relaxng_xml_error.png)
 
-In this case, the error message tells us we must have a `word` element before a `phrase` element, as we've used a comma to indicate we want one of each one, in that order.
-***MORE EXPLANATION HERE***
+In the example above, the error message tells us we must have a `word` element before a `phrase` element, as we’ve used a comma in the schema to indicate we require exactly one of each one, in that order. Note that &lt;oXygen/&gt; puts squiggly red lines in two places, once for `<word>` and once for `<phrase>`, even though you moving just the `<word>` or just the `<phrase>` (that is, one edit operation) will fix both problems at once. In other words, to a human this might be one error, but to &lt;oXygen/&gt; it looks like two.
 
-To diagnose and fix this type of error, look specifically for phrases like “not allowed yet” and “not allowed here”. Does your schema require sequence where you mean choice? Or vice versa? Did you forget to mark something that repeats as repeatable? Error messages like these don’t point to the Relax NG because the Relax NG itself is valid, but readin the error message and scrutinizing the error context should help you identify where to lok in your Relax NG.
+To diagnose and fix this type of error, look specifically for phrases like “not allowed yet” and “not allowed here”. Does your schema require sequence where you mean choice? Or vice versa? Did you forget to mark something that repeats as repeatable? Error messages like these don’t point to the Relax NG because the Relax NG itself is valid, but we’ve stipulated for this example that the XML cannot be edited, and that means that the schema needs to be revised to match the reality of the document instance. In other words, it looks like the problem is invalid XML, but it’s really a schema error, according to which the schema doesn’t model what you want it to model.
 
 ### Errors in XPath and XSLT
 
-Each XSLT error message comes with its own unique identifier, which you can search online to find more information about the problem. This is especially useful when you start looking at StackOverflow, as more than likely someone else has been having your problem too, and someone else can’t wait to explain it to you.
+Each XSLT error message comes with its own unique identifier (e.g., integer division by zero is error FOAR0001), which you can search online to find more information about the problem. This is especially useful when you start looking at StackOverflow, as more than likely someone else has been having your problem too, and someone else can’t wait to explain it to you. For example, suppose you’ve introduced an `<xsl:sort>` element to sort your output, and you get the following error message:
 
-### This xsl:element may not contain some other xsl:element
+```bash
+XTSE0010: An xsl:value-of element must not contain an xsl:sort element
+```
 
-Just when you’ve decided to put an `<xsl:sort>` element in to sort your output, you get the error message `XTSE0010: An xsl:value-of element must not contain an xsl:sort element`. Your best bet, in this case, is to look up the documentation of the element you’re trying to use as the child element, as documentation is always more specific about what a parent element can or cannot be than it is about possible children.
+You may not always be able to predict where to find a more detailed explanation, that is, in this case, whether to look under `<xsl:value-of>` or `<xsl:sort>`, and the explanatory text may not always be precise. In this case, Michael Kay tells us that:
+
+> `<xsl:sort>` is always a child of `<xsl:apply-templates>`, `<xsl:for-each>`, `<xsl:for-each-group>`, or `<xsl:perform-sort>`
+
+This tells indirectly that `<xsl:sort>` cannot be a child of `<xsl:value-of>`. The error message is imprecise, though, because an `<xsl:value-of>` element _can_ actually _contain_ an `<xsl:sort>` element; the constraint is only that it cannot contain it _as a child element_. For example, the following XSLT is valid, even though in it `<xsl:value-of>` contains `<xsl:sort>`:
+
+```xslt
+<xsl:value-of>
+    <xsl:for-each select="//title">
+        <xsl:sort/>
+    </xsl:for-each>
+</xsl:value-of>
+```
 
 ## Reading stack traces in Python
 
