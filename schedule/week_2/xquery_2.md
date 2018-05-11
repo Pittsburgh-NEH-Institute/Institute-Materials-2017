@@ -4,7 +4,7 @@
 One of the goals are to use XQuery to begin explore your own data. Especially to get the model features you gathered in the LOD session. General goal to get more familiar with XQuery.
 
 ## Recap
-This is the query which we were evaulating when we left off yesterday:
+This is the query which we were evaulating when we left off:
 
 ```xquery
 xquery version "3.1";
@@ -36,7 +36,7 @@ We went through:
 
 ### Previous session 
 If you missed yesterday’s session:
-* [Exploring the model with XQuery, part 1](explore_model_xquery_1.md)
+* [Exploring the model with XQuery, part 1](xquery_1.md)
 
 ### Don’t forget 
 * Don't forget to look at the keyboard shortcuts, e.g. using `Ctrl+Enter/Cmd+Enter` will save you some time executing the queries.

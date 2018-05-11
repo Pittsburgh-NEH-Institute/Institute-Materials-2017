@@ -745,7 +745,7 @@
                     <outcome/>
                 </act>
                 <act time="20" type="Presentation">
-                    <desc>Introduction to TAG and Alexandria</desc>
+                    <desc>Introduction to [TAG and Alexandria](tag.md)</desc>
                     <outcome/>
                 </act>
                 <act time="15" type="Code_lab">
@@ -753,7 +753,7 @@
                     <outcome/>
                 </act>
                 <act time="15" type="Code_lab">
-                    <desc>Visualization of LMNL in Alexandria</desc>
+                    <desc>[Visualization of LMNL in Alexandria}(lmnl_alexandria.md)</desc>
                     <outcome/>
                 </act>
             </slot>
