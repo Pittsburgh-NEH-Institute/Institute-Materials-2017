@@ -753,7 +753,7 @@
                     <outcome/>
                 </act>
                 <act time="15" type="Code_lab">
-                    <desc>[Visualization of LMNL in Alexandria}(lmnl_alexandria.md)</desc>
+                    <desc>[Visualization of LMNL in Alexandria](lmnl_alexandria.md)</desc>
                     <outcome/>
                 </act>
             </slot>

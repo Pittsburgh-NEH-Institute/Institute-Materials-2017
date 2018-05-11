@@ -33,7 +33,7 @@ Time | Topic | Type
 20 min | Tag "[Ozymandias](ozymandias.txt)" in LMNL | Code lab
 20 min | Introduction to [TAG and Alexandria](tag.md) | Presentation
 15 min | [Alexandria installation](../week_3/alexandria.md) | Code lab
-15 min | [Visualization of LMNL in Alexandria}(lmnl_alexandria.md) | Code lab
+15 min | [Visualization of LMNL in Alexandria](lmnl_alexandria.md) | Code lab
 
 ## 10:30–11:00: Coffee break
 
