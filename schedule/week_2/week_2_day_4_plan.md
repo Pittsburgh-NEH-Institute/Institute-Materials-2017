@@ -1,7 +1,7 @@
 # Week 2, Day 4: Thursday, July 20
 ## Synopsis
 
-Week 2, Day 4 Mike Kestemont joins the instructional team to teach bag of words and text processing. Unfortunately, Mike Kestemont is unable to publish materials used during this institute online due to copyright issues, so for now we will link his excellent presentations instead.
+Week 2, Day 4 Mike Kestemont joins the instructional team to teach bag of words and text processing. Unfortunately, Mike is unable to publish materials used during this institute online due to copyright issues, so for now we will link his excellent presentations instead.
  [Authentication](01-authenticate.pdf) | [Stylo with R](02-stylo.pdf)
             
 

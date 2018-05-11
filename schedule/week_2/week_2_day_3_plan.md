@@ -46,7 +46,7 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: Challenging textual phenomena: Introducing Text as Graph (TAG)
+## 2:00–3:30: [Challenging textual phenomena: Introducing Text as Graph (TAG)](tag.md)
 
 Time | Topic | Type
 ---- | ---- | ---- 
