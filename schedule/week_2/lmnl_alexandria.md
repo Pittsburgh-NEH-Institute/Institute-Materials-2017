@@ -41,9 +41,9 @@ Example from <https://github.com/wendellpiez/Luminescent>
 
 ### Alexandria
 
-[Alexandria]() ingests the LMNL markup and interprets it as TAG. The structure can be visualized in Alexandria. Below is an excerpt; click on it to open a visualization of the full hypergraph:
+[Alexandria](../week_3/alexandria.md) ingests the LMNL markup and interprets it as TAG. The structure can be visualized in Alexandria. Below is an excerpt; click on it to open a visualization of the full hypergraph:
 
-[![](images/ozymandias_alexandria_snippet.png)](images/ozymandias_alexandria_snippet.png)
+[![](images/ozymandias_alexandria_snippet.png)](ozymandias_hypergraph.svg)
 
 ### Sonneteer
 
