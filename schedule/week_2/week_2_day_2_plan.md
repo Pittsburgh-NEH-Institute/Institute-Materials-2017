@@ -67,7 +67,7 @@ Before we start: 1. Navigate to your fork of our Institute repo and run `git pul
 
 Time | Topic | Type
 ---- | ---- | ---- 
-30 min | About normalization (`Normalization.ipynb` notebook) | Code lab
+30 min | [About normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization.ipynb) | Code lab
 10 min | [Unicode normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Unicode_normalization.ipynb) | Presentation
 20 min | [Normalization examples](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization.ipynb) | Presentation
 30 min | [Normalizing XML input](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_XML_with_Python.ipynb)) | Code lab
