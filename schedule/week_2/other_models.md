@@ -1,5 +1,4 @@
 # Other models and expressions
-# Other models and expressions
 
 ## LMNL: Layered Markup and Annotation Language
 
