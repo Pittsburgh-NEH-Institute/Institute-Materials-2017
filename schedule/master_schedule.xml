@@ -849,7 +849,7 @@
                     <desc>[Normalization examples](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization.ipynb)</desc>
                 </act>
                 <act time="30" type="Code_lab">
-                    <desc>[Normalizing XML input](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_XML_with_Python.ipynb))</desc>
+                    <desc>[Normalizing XML input](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_XML_with_Python.ipynb)</desc>
                 </act>
                 <outcome>
                     <goal>Beginning to normalize texts</goal>
