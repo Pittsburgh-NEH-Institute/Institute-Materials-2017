@@ -12,7 +12,7 @@ Bibliographic titles (articles, books, etc.) capitalize only the first word and 
 
 ### Filenames
 
-Filename parts are entirely lowercase, with words separated by underscores. Do not use camelCase or hyphens, and do not juxtapose numbers directly with words. For example, write “command_line_1.md”.
+Filename parts are entirely lowercase, with words separated by underscores. Do not use camelCase or hyphens, and do not juxtapose numbers directly with words. For example, write “week_1_plan.md”.  Eliminate unnecessary words such as “and,” and any small words you can. For example, “programs_and_files_2.md” should be changed to “programs_2.md”. Eliminate all punctuation, including hyphens and apostrophes, other than underscores. For example, “dont_panic.md”. The exception to these rules is Python notebooks (.ipynb files).
 
 ### Apostrophes and quotation marks
 

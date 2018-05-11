@@ -839,7 +839,7 @@
                     `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and
                     `Integrating_XML_with_Python.ipynb`.</desc>
                 <act time="30" type="Code_lab">
-                    <desc>About normalization (`Normalization.ipynb` notebook)</desc>
+                    <desc>[About normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization.ipynb)</desc>
                     <outcome/>
                 </act>
                 <act time="10" type="Presentation">
@@ -967,7 +967,9 @@
         </day>
         <day d="Thursday">
             <date>July 20</date>
-            <syn>Week 2, Day 4 concentrates on ...</syn>
+            <syn>Week 2, Day 4 Mike Kestemont joins the instructional team to teach bag of words and text processing. Unfortunately, Mike Kestemont is unable to publish materials used during this institute online due to copyright issues, so for now we will link his excellent presentations instead.
+ [Authentication](01-authenticate.pdf) | [Stylo with R](02-stylo.pdf)
+            </syn>
             <slot time="09:00:00">
                 <title>Text analytics 1</title>
                 <desc>Text analytics 1</desc>

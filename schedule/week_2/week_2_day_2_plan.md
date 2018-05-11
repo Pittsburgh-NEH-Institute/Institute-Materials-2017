@@ -67,9 +67,9 @@ Before we start: 1. Navigate to your fork of our Institute repo and run `git pul
 
 Time | Topic | Type
 ---- | ---- | ---- 
-30 min | About normalization (`Normalization.ipynb` notebook) | Code lab
-10 min | Unicode normalization (`Unicode-normalization.ipynb` notebook) | Presentation
-20 min | Normalization examples (`Normalization_examples.ipynb` notebook) | Presentation
-30 min | Normalizing XML input (`Integrating_XML_with_Python.ipynb` notebook) | Code lab
+30 min | [About normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization.ipynb) | Code lab
+10 min | [Unicode normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Unicode_normalization.ipynb) | Presentation
+20 min | [Normalization examples](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Normalization.ipynb) | Presentation
+30 min | [Normalizing XML input](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_XML_with_Python.ipynb)) | Code lab
 
 We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 2, Day 2 feedback](week_2_day_2_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 2, Day 2 feedback”.
