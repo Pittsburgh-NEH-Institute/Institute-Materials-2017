@@ -70,22 +70,18 @@ Standards come into play throughout LOD, starting with the formats for storing d
   * XML 
   * JSON-LD
 
-Standards are definitely a technological question, but again, other factors come into play that may influence your decisions.
+Standards are definitely a technological question, but again, other factors come into play that may influence your decisions. These may include stakeholders' and users' willingess to adopt certain standards or workflows using them ("Our users won't type angle brackets" for example). 
 
 ## Referenceable Resources
 
-This is an information design question. What things do you want to represent in your website? Ideally, everything you might want to refer to should have its own (stable) URL.
+This is an information design question. What things do you want to represent in your website? Ideally, everything you might want to refer to should have its own (stable) URL. 
 
 ### Examples
 http://example.com/person/123 (info about a person)
 http://example.com/document/456 (a document)
 http://example.com/document/456#ch1 (section in a larger document) or maybe http://example.com/document/456/ch1 (chunked large document with referenceable sections)
 
-Another important design question has to do with the "opacity" of your URIs. Should you refer to things using a human-readable name or a random id? Compare http://papyri.info/ddbdp/p.fay;;110 (P.Fay 110 is a citation to an edition of a papyrus in *Fayum Towns and their Papyri*, ed. B.P. Grenfell, A.S. Hunt and D.G. Hogarth. London 1900.) to http://papyri.info/hgv/10775. These resolve to the same document, which aggregates information about the papyrus. http://papyri.info/ddbdp/p.fay;;110 is the edition, and http://papyri.info/hgv/10775 provides data about the source document and the edition. The Duke Databank of Documentary Papyri (DDbDP) has human-legible identifiers and the Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV) uses opaque numbers. There's not a right or wrong answer here, but note that the DDbDP has to mint and redirect to a new URI when a new edition comes out, and HGV just has to update a record.
-
-
-
-
+Another important design question has to do with the "opacity" of your URIs. Should you refer to things using a human-readable name or a random id? Compare http://papyri.info/ddbdp/p.fay;;110 (P.Fay 110 is a citation to an edition of a papyrus in *Fayum Towns and their Papyri*, ed. B.P. Grenfell, A.S. Hunt and D.G. Hogarth. London 1900.) to http://papyri.info/hgv/10775. These resolve to the same document, which aggregates information about the papyrus. http://papyri.info/ddbdp/p.fay;;110 is the edition, and http://papyri.info/hgv/10775 provides data about the source document and the edition. The Duke Databank of Documentary Papyri (DDbDP) has human-legible identifiers and the Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV) uses opaque numbers. There's not a right or wrong answer here, but note that the DDbDP has to mint and redirect to a new URI when a new edition comes out, and HGV just has to update a record. This may be acceptable, or even desirable, but it does demonstrate that your choices about URIs have downstream consequences worth thinking about.
 
 ## A Recipe for Usable Linked Open Data
 
@@ -139,6 +135,26 @@ The response is in the form of an RDF *serialization* (a format for writing out 
 The prefixes are just a way to shorten commonly-used URIs. The predicates (or properties) in RDF tend to be repeated a lot, so we shorten them. So what is this saying? First, `http://papyri.info/ddbdp/p.fay;;110` is about (has as a `foaf:topic`, or `http://xmlns.com/foaf/0.1/topic` to give it its expanded form) `http://papyri.info/ddbdp/p.fay;;110/source` and `http://papyri.info/hgv/10775/source`. These two both have the same web page, `http://papyri.info/ddbdp/p.fay;;110`. And there's also an annotation, `http://papyri.info/ddbdp/p.fay;;110/annotation/1ada6e40334262008d8ca4840e01ef9f`, which also points at `http://papyri.info/ddbdp/p.fay;;110`. That's it. Just a list of facts. If we go ahead an interrogate one of the objects of `foaf:topic`, as example #3 did, we see more information. <http://papyri.info/ddbdp/p.fay;;110> is a web page that aggregates information from several sources, and <http://papyri.info/ddbdp/p.fay;;110/source> is one of those sources, a TEI edition. It has `dc:relation`s to the other documents aggregated with it, one of which, <http://www.trismegistos.org/text/10775>, is located on another website. It is `dc:isPartOf` the collection corresponding to the print volume in which it was originally published, <http://papyri.info/ddbdp/p.fay>. 
 
 As we follow these chains of information around, we can start to see that RDF is a graph. Subjects in one triple can be objects in another, and vice-versa. Properties can be subjects or objects too, and in fact this is how RDF schemas work, by defining the properties and types of entities in an RDF graph. Because RDF triples have *direction* (subject, predicate, object), the kind of graph they instantiate is called a *directed* graph. And, because the URIs we're using in our RDF graph are also names for web resources, we're tying everything on our website together in a machine-readable way.
+
+Having our data in RDF can be useful because we can use existing facts to produce new facts:
+* A is related to B.
+* B is related to C.
+* So:	A is related to C.
+That is, we can take existing triples and make new triples using the facts therein. This process is called *inferencing*.
+
+## SPARQL
+
+## Complications
+
+What do I do if I want to say something about a non-web resource? Like an actual person? These sorts of things...
+HTTP 303 (see other) redirect. Try it: paste http://viaf.org/viaf/88342447 (Ovid) into your browser. Notice you end up at https://viaf.org/viaf/88342447/.
+Abuse the fragment identifier. Have a convention that http://example.com/person/123#this is the person, and http://example.com/person/123 is the web page.
+Punning. Who's going to confuse the actual person with a web page? Can get tricky when you're talking about documents though.
+Problem remains that this is confusing and no-one cares.
+
+
+
+
 
 ## Some Linked Data Sites
 
