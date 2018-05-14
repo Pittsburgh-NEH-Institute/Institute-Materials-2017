@@ -146,6 +146,8 @@ That is, we can take existing triples and make new triples using the facts there
 
 ## Complications
 
+### IRs and NIRs
+
 What do I do if I want to say something about a non-web resource? Like an actual person? These sorts of things are sometimes referred to as *non-information resources* (NIRs). If we want to be able to make RDF statements about NIRs, we will have to assign them URIs just like we do with Information Resources (IRs). But what should thoses URIs do when we visit them? There are a handful of solutions:
  * Have the server issue a HTTP 303 (see other) redirect. Try it: paste http://viaf.org/viaf/88342447 (Ovid) into your browser. Notice you end up at https://viaf.org/viaf/88342447/. Or even better, try using curl as above. The web server is responding to the request for an NIR with a pointer to a related IR. The advantage of this method is that it's unambiguous, but it means you have to have enough control of the web server to get it to issue these kinds of redirects.
  * Abuse the fragment identifier. Have a convention that http://example.com/person/123#this is the person, and http://example.com/person/123 is the web page. Because the server doesn't process the fragment identifier, you can have a different URI that will return the same page. This method has the advantage that you don't need control of the web server to make it work.
@@ -153,9 +155,27 @@ What do I do if I want to say something about a non-web resource? Like an actual
  
 The central problem remains that this is confusing and no-one cares. Well, most of your users won't care (or indeed notice) that your system is doing this.
 
+### Which RDF ontology should I use?
 
+Again, there are a few approaches you can take:
 
+1. One ontolgy to rule them all. This is the CIDOC-CRM (<http://www.cidoc-crm.org>) approach. 
+2. Mix and match. Pick the properties and types you need from several ontologies. Lots of ontologies are designed to do just one thing, so this can work well. You might still need to do some work to glue them together. This is the approach <http://lawd.info> takes.
+3. Fake it till you make it. Don't worry about what ontology to use, just define your own properties as needed. Once you've worked on it for a while, you should have a good feel for what you need and be able to decide on a properly defined ontolgy.
 
+### How do I know things about my facts?
+RDF triples don't have context, so how do I know where a particular "fact" came from? What if I have (e.g.) conflicting date or place information about a resource?
+
+1. RDF triple stores and SPARQL have support for "named graphs". More simply, they are actually quad stores, with an extra column for the graph (a URI) to which each triple belongs. Because these are URIs, you can say things about them in RDF.
+2. Another solution is simply not to use RDF for contingent information. RDF is not a good universal data format and you may be better off choosing a file format like TEI XML that you can annotate and version.
+
+### Reasons to do Linked Open Data
+
+If we cooperate and use the same URIs for things we talk about (places, people, etc.), then we can discover and connect contextual information about our resources coming from other websites.
+
+Following Linked Open Data principles makes for good web architecture and so makes our sites more discoverable and more navigable. Using "cool" URIs for our resources makes for good long-term sustainability.
+
+BUT, be a little wary of the semantic web stuff. It's powerful, but confusing, has a steep learning curve, and can take a lot of time. How useful are interfaces like <https://collection.britishmuseum.org/sparql> or <http://dbpedia.org/snorql/>?
 
 ## Some Linked Data Sites
 
