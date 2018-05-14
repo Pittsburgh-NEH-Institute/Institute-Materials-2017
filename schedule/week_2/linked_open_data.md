@@ -7,7 +7,7 @@
 4. And use open web standards to describe your data
 5. And best of all, do all the above and link to other people's data too
 
-`#4 explicitly calls out the standards around the Resource Description Framework (RDF) and the query language defined for it, SPARQL. This are powerful and useful tools, but it's important not to put the cart before the horse. You should get your data in good shape before you start thinking about modeling it in RDF.
+#4 explicitly calls out the standards around the Resource Description Framework (RDF) and the query language defined for it, SPARQL. This are powerful and useful tools, but it's important not to put the cart before the horse. You should get your data in good shape before you start thinking about modeling it in RDF.
 
 ## The Foundations of Linked Open Data
 
@@ -142,15 +142,16 @@ Having our data in RDF can be useful because we can use existing facts to produc
 * So:	A is related to C.
 That is, we can take existing triples and make new triples using the facts therein. This process is called *inferencing*.
 
-## SPARQL
+## SPARQL. Querying RDF
 
 ## Complications
 
-What do I do if I want to say something about a non-web resource? Like an actual person? These sorts of things...
-HTTP 303 (see other) redirect. Try it: paste http://viaf.org/viaf/88342447 (Ovid) into your browser. Notice you end up at https://viaf.org/viaf/88342447/.
-Abuse the fragment identifier. Have a convention that http://example.com/person/123#this is the person, and http://example.com/person/123 is the web page.
-Punning. Who's going to confuse the actual person with a web page? Can get tricky when you're talking about documents though.
-Problem remains that this is confusing and no-one cares.
+What do I do if I want to say something about a non-web resource? Like an actual person? These sorts of things are sometimes referred to as *non-information resources* (NIRs). If we want to be able to make RDF statements about NIRs, we will have to assign them URIs just like we do with Information Resources (IRs). But what should thoses URIs do when we visit them? There are a handful of solutions:
+ * Have the server issue a HTTP 303 (see other) redirect. Try it: paste http://viaf.org/viaf/88342447 (Ovid) into your browser. Notice you end up at https://viaf.org/viaf/88342447/. Or even better, try using curl as above. The web server is responding to the request for an NIR with a pointer to a related IR. The advantage of this method is that it's unambiguous, but it means you have to have enough control of the web server to get it to issue these kinds of redirects.
+ * Abuse the fragment identifier. Have a convention that http://example.com/person/123#this is the person, and http://example.com/person/123 is the web page. Because the server doesn't process the fragment identifier, you can have a different URI that will return the same page. This method has the advantage that you don't need control of the web server to make it work.
+ * Punning. After all, who's going to confuse the actual person with a web page? It can get tricky when you're talking about more-easily-confused things, such as documents though.
+ 
+The central problem remains that this is confusing and no-one cares. Well, most of your users won't care (or indeed notice) that your system is doing this.
 
 
 
