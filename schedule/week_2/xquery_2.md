@@ -116,7 +116,7 @@ Even if you have prior experience with XQuery 2.0, you should acquaint yourself 
 * the arrow operator
 * string constructors
 
-Here are some examples:
+Here are some examples (mostly from <http://docs.basex.org/wiki/XQuery_3.1>):
 
 ```xquery
 xquery version "3.1";
