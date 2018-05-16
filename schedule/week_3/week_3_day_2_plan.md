@@ -39,14 +39,16 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: [XQuery and eXist](exist_xquery_webapps.md)
+## 2:00–3:30: [XQuery 2](xquery_2.md)
+
+In this session, we review XQuery basics and expand those skills. You will end up writing XQuery for your own documents, so come prepared.
 
 Time | Topic | Type
 ---- | ---- | ---- 
-15 min | XQuery 3 | Presentation
-30 min | Hands on XQuery 3 | Code lab
-15 min | Web apps in eXist | Presentation
-30 min | Hands on Web apps in eXist | Code lab
+20 min | [Review of XQuery 1](../week_2/xquery_1.md) | Presentation
+20 min | Hands on XQuery practice | Code lab
+10 min | Defining your own functions | Presentation
+40 min | Explore your documents | Code lab
 
 ## 3:30–4:00: Coffee break
 

@@ -22,7 +22,7 @@ When in the IDE you will notice some similarities and differences of XQuery comp
 For these tutorials, we’ll be using the following XML documents, which you can download from the GitHub repo and then save into your local copy of eXist-db. You can do that by “Collections” icon on your eXist-db dashboard, creating a new collection under the `/db` root collection, and storing the XML documents there.
 
 * [test_1.xml](test_1.xml) (small practice sample)
-* [test_2.xml](test_2.xml) **[REVISE THIS]**
+* [test_2.xml](test_2.xml) (another small practice sample)
 * [ozymandias.xml](ozymandias.xml) (TEI version of Shelley’s “Ozymandias”)
 * [ozymandias_2.xml](ozymandias_2.xml) (the same, but with richer markup to correct the spelling of “desart”)
 * [hamlet.xml](hamlet.xml) (the WordHoard TEI version of _Hamlet_)

@@ -46,7 +46,7 @@ Modeling: annotations as layers to the text
 
 Time | Topic | Type
 ---- | ---- | ---- 
-15 min | Review of tokenization, normalization, and collation from the point of view of annotations | Discussion
+15 min | [Review of tokenization, normalization, and collation from the point of view of annotations] | Discussion
 15 min | Envisioning your edition as a layered model | Talk lab
 15 min | Existing models (e.g. computational linguistics) | Presentation
 15 min | Hands-on: identify your own layers | Talk lab
@@ -60,8 +60,8 @@ Collation 2
 
 Time | Topic | Type
 ---- | ---- | ---- 
-30 min | Advanced collation | Presentation
-30 min | Near-matching - theory (as step in the computational pipeline) | Code lab
-30 min | Hands-on: ... | Code lab
+15 min | Advanced collation: Alignment in the Gothenburg Model | Presentation
+45 min | [Near-matching - theory (as step in the computational pipeline)](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Near_matching.ipynb) | Code lab
+30 min | Review | Talk lab
 
 We’ll end each day with a request for feedback, based on a general version of the day’s outcome goals, and we’ll try to adapt on the fly to your responses. Please complete [Week 2, Day 4 feedback](week_2_day_4_feedback.md) (just copy and paste it into a plain-text document) and email your response to Kaylen at [kaylensanders@pitt.edu](mailto:kaylensanders@pitt.edu) with the subject heading “Week 2, Day 4 feedback”.

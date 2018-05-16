@@ -888,8 +888,8 @@
                     <outcome/>
                 </act>
                 <act time="15" type="Code_lab">
-                    <desc>Basic XML normalization: transforming XML to a stream of normalized (word)
-                        tokens</desc>
+                    <desc>[Basic XML normalization: transforming XML to a stream of normalized (word)
+                        tokens](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/tree/master/schedule/week_2/collation_with_markup)</desc>
 
                     <outcome/>
                 </act>
@@ -1018,8 +1018,8 @@
                 <title>Modeling: annotations as layers to the text</title>
                 <desc>Modeling: annotations as layers to the text</desc>
                 <act time="15" type="Discussion">
-                    <desc>Review of tokenization, normalization, and collation from the point of
-                        view of annotations</desc>
+                    <desc>[Review of tokenization, normalization, and collation from the point of
+                        view of annotations]</desc>
 
                     <outcome/>
                 </act>
@@ -1057,20 +1057,19 @@
             <slot time="16:00:00">
                 <title>Collation 2</title>
                 <desc>Collation 2</desc>
-                <act time="30" type="Presentation">
-                    <desc>Advanced collation</desc>
+                <act time="15" type="Presentation">
+                    <desc>Advanced collation: Alignment in the Gothenburg Model</desc>
                     <outcome/>
                 </act>
-                <act time="30" type="Code_lab">
-                    <desc>Near-matching - theory (as step in the computational pipeline)</desc>
+                <act time="45" type="Code_lab">
+                    <desc>[Near-matching - theory (as step in the computational pipeline)](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Near_matching.ipynb)</desc>
 
                     <outcome/>
                 </act>
-                <act time="30" type="Code_lab">
-                    <desc>Hands-on: ...</desc>
-
-                    <outcome/>
+                <act time="30" type="Talk_lab">
+                    <desc>Review</desc>
                 </act>
+                
                 <outcome>
                     <goal>Deeper discussion of the alignment step in the GM</goal>
                     <goal>An awareness of computation to understand that we do near-matching late
@@ -1134,20 +1133,21 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>Queries and XML</title>
-                <desc>Queries and XML</desc>
-                <act time="45" type="Code_lab">
-                    <desc>Querying your text with XQuery in an eXist framework</desc>
+                <title>[eXist-db and XQuery](xquery_1.md)</title>
+                <desc>XQuery is a query language for XML databases. In this session, we will install eXist-db and begin writing queries using XPath and XQuery.</desc>
+                <act time="20" type="Code_lab">
+                    <desc>Installing eXist-db</desc>
+                </act>
+                <act time="70" type="Code_lab">
+                    <desc>Introduction to XQuery</desc>
 
                     <outcome>
-                        <goal>Learning XQuery to ...</goal>
+                        <goal>Introduction to XQuery</goal>
+                        <goal>Familiarity with FLWOR statements</goal>
                     </outcome>
                 </act>
-                <act time="45" type="Code_lab">
-                    <desc>Using elastic search to index the content of your edition</desc>
 
                     <outcome/>
-                </act>
             </slot>
             <slot time="15:30:00">
                 <title>Coffee break</title>
@@ -1300,19 +1300,19 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>[XQuery and eXist](exist_xquery_webapps.md)</title>
-                <act time="15" type="Presentation">
-                    <desc>XQuery 3</desc>
-                    <!-- exist_xquery_webapps.md -->
+                <title>[XQuery 2](xquery_2.md)</title>
+                <desc>In this session, we review XQuery basics and expand those skills. You will end up writing XQuery for your own documents, so come prepared.</desc>
+                <act time="20" type="Presentation">
+                    <desc>[Review of XQuery 1](../week_2/xquery_1.md)</desc>
                 </act>
-                <act time="30" type="Code_lab">
-                    <desc>Hands on XQuery 3</desc>
+                <act time="20" type="Code_lab">
+                    <desc>Hands on XQuery practice</desc>
                 </act>
-                <act time="15" type="Presentation">
-                    <desc>Web apps in eXist</desc>
+                <act time="10" type="Presentation">
+                    <desc>Defining your own functions</desc>
                 </act>
-                <act time="30" type="Code_lab">
-                    <desc>Hands on Web apps in eXist</desc>
+                <act time="40" type="Code_lab">
+                    <desc>Explore your documents</desc>
                 </act>
             </slot>
             <slot time="15:30:00">
@@ -1541,7 +1541,7 @@
                 </act>
             </slot>
             <slot time="19:00:00">
-                <title>Leif-Jöran: eXist-db workshop</title>
+                <title>[Leif-Jöran: eXist-db workshop on webapps](exist_xquery_webapps.md)</title>
                 <act time="25" type="Code_lab">
                     <desc>XQuery</desc>
                 </act>
