@@ -9,7 +9,8 @@ Week 2, Day 5 concentrates on querying text, on creating visualizations, and on
                 user to code.
 
 ## Outcome goals
-* Learning XQuery to ...
+* Introduction to XQuery
+* Familiarity with FLWOR statements
 * Visualization as part of the text processing pipeline: making decisions, selecting formats, interacting with, and producing visualizations
 * Hands-on: a departure from Word Cloud
 ## Legend
@@ -41,14 +42,14 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: Queries and XML
+## 2:00–3:30: [eXist-db and XQuery](xquery_1.md)
 
-Queries and XML
+XQuery is a query language for XML databases. In this session, we will install eXist-db and begin writing queries using XPath and XQuery.
 
 Time | Topic | Type
 ---- | ---- | ---- 
-45 min | Querying your text with XQuery in an eXist framework | Code lab
-45 min | Using elastic search to index the content of your edition | Code lab
+20 min | Installing eXist-db | Code lab
+70 min | Introduction to XQuery | Code lab
 
 ## 3:30–4:00: Coffee break
 

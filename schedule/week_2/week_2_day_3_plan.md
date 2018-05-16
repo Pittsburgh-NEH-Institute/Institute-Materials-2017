@@ -30,7 +30,7 @@ Time | Topic | Type
 15 min | [Basic normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_XML_with_Python.ipynb)) | Presentation
 15 min | [Using NLTK for normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_XML_with_Python.ipynb) | Code lab
 15 min | Regular expressions | Code lab
-15 min | Basic XML normalization: transforming XML to a stream of normalized (word) tokens | Code lab
+15 min | [Basic XML normalization: transforming XML to a stream of normalized (word) tokens](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/tree/master/schedule/week_2/collation_with_markup) | Code lab
 15 min | Hands-on exercise with NLTK and regular expressions | Code lab
 
 ## 10:30–11:00: Coffee break
