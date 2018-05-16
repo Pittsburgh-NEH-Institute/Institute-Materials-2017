@@ -2,20 +2,26 @@
 
 We continue with XQuery and get into how to create webapps in eXist-db.
 
-## httpclient example 1
+## httpclient
+
+`httpclient` provides functions for interacting with resources with a REST API. The following example connects to a server at Clarin and returns information about technical contact persons. It takes three parameters: the URL to process, a Boolean value that indicates whether the HTTP state (cookies, credentials, etc.) should persist for the life of the query (we set this to `False`), and optional request headers (in this case, the empty sequence). To construct the URL we append different numbers to a base URL of the Clarin REST interface <http://www.clarin.eu/restxml/> using the XPath `concat()` function, and then convert the string to a URI with the XPath `xs:anyURI` function. The `httpclient:get()` function returns a connection, to which we append the XPath path expressions `//cmd:TechnicalContact/cmd:Person` to return the information we need.
+
 ```xquery
 xquery version "3.0";
- <techContacts>{
-for $center-pos in ("1", "3", "4", "5", "6", "10", "11", "13", "20", "24", "25")
- (: (1 to 29) :)
-return
-httpclient:get(
-    xs:anyURI(concat("https://centres.clarin.eu/restxml/", $center-pos)),
-    false(), ())//cmd:TechnicalContact//cmd:Person
+declare namespace cmd="http://www.clarin.eu/cmd/";
+<techContacts>{
+	for $center-pos in ("1", "3", "4", "5", "6", "10", "11", "13", "20", "24", "25")
+		(: (1 to 29) :)
+	return
+		httpclient:get(
+    		xs:anyURI(concat("https://centres.clarin.eu/restxml/", $center-pos)),
+    		false(),
+    		())//cmd:TechnicalContact//cmd:Person
 }</techContacts>
 ```
+<!-- remove httpclient:post-form example because we didn’t use it
+### httpclient example 2
 
-## httpclient example 2
 ```xquery
 xquery version "3.0";
 
@@ -33,30 +39,40 @@ ord,
      <header name="Accept" value="text/xml"/>
  </headers>)
 ```
-
-## FLWOR
-_FLWOR_ is a mnemonic accronym for _for_, _let_, _where_, _order by_, _return. 
-
+-->
 
 ## Index configuration
-Types of indexes:
-* Structural: element + attribute occurrences
-* Range: node values (used with `=, <, >, contains, matches …`)
-* N-gram: node values (`ngram:contains`)
-* Lucene: tokenized text
-* `xml:id`: use with `fn:id` (created automatically)
-* Other: geospatial, sort, rdf-sparql ...
 
-Location of configuration files:
-* `/db/system/config/db/<project>...`
-* Config files have to end in `.xconf`
+eXist-db constructs persistent indexes that support quick search and retrieval, much as a back-of-the-book index in a printed volume helps readers find specific content without having to look at every page. 
+
+### Types of indexes
+
+Of the indexes listed below, eXist-db constructs a structural index and an xml:id index for all XML documents automatically, but the others have to be configured explicitly. See <https://exist-db.org/exist/apps/doc/indexing.xml> for information about how to do that.
+
+* **structural:** element and attribute occurrences; created automatically
+* **xml:id:** query with `fn:id()`; created automatically
+* **range:** typed node values (used with general and value comparison and some functions, such as `contains()` and `matches()`). eXist-db has both a _new range index_ and a _legacy range index_. New projects should use the new range index.
+* **ngram:** character substrings inside noes (`ngram:contains()`)
+* **Lucene:** full-text index of tokenized text. There is also a _legacy full-text index_, which should not be used.
+* **Other:** geospatial, rdf-sparql, and others
+
+### Location of configuration files
+
+* `/db/system/config/db/<project>`
+* Config files must end in `.xconf`
 * Collection hierarchy is mirrored in `/db/system/config/db/<project>...`
 * Configurations on a lower level of the hierarchy overwrite configurations on higher levels
 
+Updates to `collection.xconf` apply automatically only to newly stored documents. To apply a revised configuration to existing documents, you must call `xmldb:reindex("/db/project/...")` in XQuery or use the Java admin client to reindex.
 
-Updates to collection.xconf apply automatically to all newly stored documents. To re-apply the configuration to existing documents, you must call `xmldb:reindex("/db/project/...")` in XQuery or use the Java admin client to reindex.
+### Sample index configuration
 
-Sample index configuration (collection.xconf):
+The index configuration file must be called `collection.xconf`, and you’ll need to read the instructions at <https://exist-db.org/exist/apps/doc/lucene.xml> to learn how to configure it. As a brief illustration, though, in the following example, we configure:
+
+* The Lucene full-text index using the standard, whitespace, and keyword analyzers, and we tell it to index specific elements and attributes. You can read about Lucene analyzers at <https://exist-db.org/exist/apps/doc/lucene.xml#D3.15.66>. 
+* We create a new range index on the `@n` attribute.
+* We create an ngram index on `<head>` and `<p>` elements.
+
 ```xml
 <collection xmlns="http://exist-db.org/collection-config/1.0">
     <index xmlns:tei="http://www.tei-c.org/ns/1.0" 
@@ -80,7 +96,8 @@ Sample index configuration (collection.xconf):
     </index>
 </collection>
 ```
-NB: Make sure the namespaces are defined correctly otherwise it won't work.
+
+NB: Namespace must be defined correctly.
 
 ### Range index
 * Used by operators `=, >, <, !=, eq, gt, …`
