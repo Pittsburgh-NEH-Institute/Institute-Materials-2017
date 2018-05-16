@@ -43,7 +43,7 @@ ord,
 
 ## Index configuration
 
-eXist-db constructs persistent indexes that support quick search and retrieval, much as a back-of-the-book index in a printed volume helps readers find specific content without having to look at every page. eXist-db will execute XQuery scrips with or without index support, but for unindexed queries will be slow. For professional-quality results, you must configure indexes. In addition to the [Configuring database indexes](https://exist-db.org/exist/apps/doc/indexing.xml), see the indexing section of [Tuning the database](http://exist-db.org/exist/apps/doc/tuning) for guidelines.
+eXist-db constructs persistent indexes that support quick search and retrieval, much as a back-of-the-book index in a printed volume helps readers find specific content without having to look at every page. eXist-db will execute XQuery scripts with or without index support, but for unindexed queries will be slow. For professional-quality results, you must configure indexes. In addition to the [Configuring database indexes](https://exist-db.org/exist/apps/doc/indexing.xml), see the indexing section of [Tuning the database](http://exist-db.org/exist/apps/doc/tuning) for guidelines.
 
 ### Types of indexes
 
@@ -67,7 +67,7 @@ New documents are automatically indexed according to whatever indexes are in pla
 
 ### Sample index configuration
 
-The index configuration file is typicallyz called `collection.xconf`, and you’ll need to read [Configuring database indexes](https://exist-db.org/exist/apps/doc/indexing.xml) to learn how to configure it. As a brief illustration, though, in the following example, we configure:
+The index configuration file is typically called `collection.xconf`, and you’ll need to read [Configuring database indexes](https://exist-db.org/exist/apps/doc/indexing.xml) to learn how to configure it. As a brief illustration, though, in the following example, we configure:
 
 * The Lucene full-text index using the standard, whitespace, and keyword analyzers, and we tell it to index specific elements and attributes. You can read about Lucene analyzers at <https://exist-db.org/exist/apps/doc/lucene.xml>. 
 * We create a new range index on the `@n` attribute. You can read about the new range index at <https://exist-db.org/exist/apps/doc/newrangeindex.xml>.
