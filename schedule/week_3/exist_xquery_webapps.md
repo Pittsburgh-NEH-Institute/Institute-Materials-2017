@@ -43,35 +43,35 @@ ord,
 
 ## Index configuration
 
-eXist-db constructs persistent indexes that support quick search and retrieval, much as a back-of-the-book index in a printed volume helps readers find specific content without having to look at every page. 
+eXist-db constructs persistent indexes that support quick search and retrieval, much as a back-of-the-book index in a printed volume helps readers find specific content without having to look at every page. eXist-db will execute XQuery scrips with or without index support, but for unindexed queries will be slow. For professional-quality results, you must configure indexes. In addition to the [Configuring database indexes](https://exist-db.org/exist/apps/doc/indexing.xml), see the indexing section of [Tuning the database](http://exist-db.org/exist/apps/doc/tuning) for guidelines.
 
 ### Types of indexes
 
-Of the indexes listed below, eXist-db constructs a structural index and an xml:id index for all XML documents automatically, but the others have to be configured explicitly. See <https://exist-db.org/exist/apps/doc/indexing.xml> for information about how to do that.
+eXist-db constructs a structural index and an xml:id index for all XML documents automatically, but the other index types listed below have to be configured explicitly. 
 
 * **structural:** element and attribute occurrences; created automatically
 * **xml:id:** query with `fn:id()`; created automatically
-* **range:** typed node values (used with general and value comparison and some functions, such as `contains()` and `matches()`). eXist-db has both a _new range index_ and a _legacy range index_. New projects should use the new range index.
-* **ngram:** character substrings inside noes (`ngram:contains()`)
-* **Lucene:** full-text index of tokenized text. There is also a _legacy full-text index_, which should not be used.
+* **range:** typed node values (used with general and value comparison and some functions, such as `contains()`). eXist-db has both a _new range index_ and a _legacy range index_. New projects should use the new range index.
+* **ngram:** character substrings inside nodes (`ngram:contains()`)
+* **Lucene:** full index of tokenized text. There is also a _legacy full-text index_, which should not be used.
 * **Other:** geospatial, rdf-sparql, and others
 
 ### Location of configuration files
 
-* `/db/system/config/db/<project>`
-* Config files must end in `.xconf`
-* Collection hierarchy is mirrored in `/db/system/config/db/<project>...`
+* Configuration files can be created separately for each collection and subcollection and must be placed in `/db/system/config/db/<path-to-collection>`
+* Configuration files must end in `.xconf`, and are typically called `collection.xconf`.
+* The collection hierarchy is mirrored in `/db/system/config/db/<path-to-collection>`
 * Configurations on a lower level of the hierarchy overwrite configurations on higher levels
 
-Updates to `collection.xconf` apply automatically only to newly stored documents. To apply a revised configuration to existing documents, you must call `xmldb:reindex("/db/project/...")` in XQuery or use the Java admin client to reindex.
+New documents are automatically indexed according to whatever indexes are in place when the documents are uploaded, but existing documents are not automatically reindexed when you update `collection.xconf`. To apply a revised configuration to existing documents, you must call `xmldb:reindex("/db/project/...")` in XQuery or use the Java admin client to reindex.
 
 ### Sample index configuration
 
-The index configuration file must be called `collection.xconf`, and you’ll need to read the instructions at <https://exist-db.org/exist/apps/doc/lucene.xml> to learn how to configure it. As a brief illustration, though, in the following example, we configure:
+The index configuration file is typicallyz called `collection.xconf`, and you’ll need to read [Configuring database indexes](https://exist-db.org/exist/apps/doc/indexing.xml) to learn how to configure it. As a brief illustration, though, in the following example, we configure:
 
-* The Lucene full-text index using the standard, whitespace, and keyword analyzers, and we tell it to index specific elements and attributes. You can read about Lucene analyzers at <https://exist-db.org/exist/apps/doc/lucene.xml#D3.15.66>. 
-* We create a new range index on the `@n` attribute.
-* We create an ngram index on `<head>` and `<p>` elements.
+* The Lucene full-text index using the standard, whitespace, and keyword analyzers, and we tell it to index specific elements and attributes. You can read about Lucene analyzers at <https://exist-db.org/exist/apps/doc/lucene.xml>. 
+* We create a new range index on the `@n` attribute. You can read about the new range index at <https://exist-db.org/exist/apps/doc/newrangeindex.xml>.
+* We create an ngram index on `<head>` and `<p>` elements. You can read about the ngram index at <https://exist-db.org/exist/apps/doc/ngram>.
 
 ```xml
 <collection xmlns="http://exist-db.org/collection-config/1.0">
@@ -90,36 +90,32 @@ The index configuration file must be called `collection.xconf`, and you’ll nee
             <text field="age" qname="@atLeast"/>
             <ignore qname="tei:sic"/>
         </lucene>
-        <create qname="@n" type="xs:string"/>
+        <range>
+	        <create qname="@n" type="xs:string"/>
+	    </range>
         <ngram qname="tei:head"/>
         <ngram qname="tei:p"/>
     </index>
 </collection>
 ```
 
-NB: Namespace must be defined correctly.
+Namespace must be defined correctly.
 
-### Range index
-* Used by operators `=, >, <, !=, eq, gt, …`
-* Functions: `contains, starts-with, ends-with, matches`
-* Type:
-  - xs:integer, xs:decimal and subtypes
-  - xs:string and subtypes
-  - xs:dateTime, xs:date
-  - xs:boolean
+### New range index
 
-If you define an index with a specific type, all values in the indexed collections have to be valid instances of this type.
-The operand has to match the defined index type:
-* `//a[b = 99]` – correct type, `xs:integer` index is used.
-* `//a[b = “99”]` – wrong type, index not used (you can force this though in main configuration file _conf.xml_).
+The new range index is used by:
 
-All collections in the query context need to have the same index defined otherwise it will not be used:
-```xquery
-collection(“/db/<project>”)//tei:date[@when = 1886]
-collection(“/db”)//tei:date[@when = 1886]
-```
+* General and value comparison operators. The general comparison operators are `=`, `!=`, `<`, `<=`, `>`, `>=`. The value comparison operators are `eq`, `ne`, `lt`, `le`, `gt`, `ge`. The difference between general and value comparison is discussed at [What's the difference between "eq" and "="?](https://developer.marklogic.com/blog/comparison-operators-whats-the-difference).
+* The functions `contains()`, `starts-with()`, and `ends-with()` (but not `matches()`).
+
+The new range index requires you to specify a datatype for, e.g., `xs:integer`, `xs:decimal`, or other numerical types; `xs:string`; `xs:dateTime` and other date-time types, or `xs:boolean`. If you define an index with a specific type, all values in the indexed collections have to be valid instances of this type. For example, if you have indexed `<b>` elements as being of type `xs:integer`:
+
+* `//a[b = 99]`: correct type, `xs:integer` index is used.
+* `//a[b = "99"]`: wrong type, index not used (although you can force this in the main configuration file _conf.xml_)
 
 ### Lucene full-text index
+
+The following example applies the Lucene full-text index to `<para>` elements anywhere and to `<section>` elements that are children of `<book>` elements. Within `<para>` elements, `<note>` descendants are not indexed and `<emphasis>` descendants are treated as part of their parents. (You need to specify “inline” in situations like `<word><prefix>un</prefix>clear</word>`. But default the Lucene index assumes that words end at element boundaries, but by specifying that `<prefix>` is inline, you can force the system to index “unclear” as a single word.
 
 ```xml
 ...
@@ -132,6 +128,7 @@ collection(“/db”)//tei:date[@when = 1886]
 </lucene>
 ...
 ```
+
 ```xquery
 ft:query($nodes as node()*, $query as item()) node()*
 ```
