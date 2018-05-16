@@ -107,103 +107,6 @@ doc("/db/apps/shakespeare/data/ham.xml")//tei:head[contains(.,"a")]
 
 Using an XPath expression to return a sequence that you filter with a predicate is sometimes called an _implicit `for`_.
 
-### XQuery 3 features
-
-Even if you have prior experience with XQuery 2.0, you should acquaint yourself with new features available in XQuery 3.1, including:
-
-* maps
-* arrays
-* the arrow operator
-* string constructors
-
-Here are some examples (mostly from <http://docs.basex.org/wiki/XQuery_3.1>):
-
-```xquery
-xquery version "3.1";
-declare namespace array="http://www.w3.org/2005/xpath-functions/array";
-
-(: Maps :)
-let $map-empty := map { } (: empty map :)
-let $map-two-entries := map { 'boolskt': true(), 'sequence': (<a>a</a>, <b>b</b>) }  (: map with two entries :)
-let $map-ten-entries := 
-map:merge(                                  (: map with ten entries :)
-  for $i in 1 to 10
-  return map { $i: 'value ' || $i }
-)
-let $map-put := map:put($map-empty, "put", $map-two-entries?sequence)
-let $map-neh := map { 'what': 'NEH-Instutute', 'when': 2017, 'where': 'Pittsburgh' }
-
-(:  Arrays :)
-let $array-empty := [] (: empty array :)
-let $array-one-member := [ (1, 2) ]    (: array with single member :)
-let $array-two-members := array { ('ett', 'två'), 'tre' }  (: array with two members :)
-let $array-three-members := array { 1 to 2, 'TRE' }  (: array with three members :)
-(: array:size() :)
-(: Arrow operator :)
-let $seq-three-items := ('ett', 'två', 'tre' )
-
-(: String constructors :)
-let $string-constr := ``["A new way to 'create' strings."]``
-let $string-constr-var := ``["A new way to use variables in, `{$seq-three-items}`, strings."]``
-return 
-    <root>
-        <map>{$map-two-entries?boolskt}</map>
-        <map>{$map-two-entries?sequence}</map>
-        <map>{$map-ten-entries?5}</map>
-        <map>{$map-ten-entries?((1, 3))}</map>
-        <map>{$map-ten-entries?*}</map>
-        <map>{$map-put?put}</map>
-        <map>{$map-neh?('what')}</map>
-        <map>{$map-neh?where}</map>
-        <map>{$map-neh?where[. = 'Pittsburgh']}</map>
-        <array>{$array-empty}</array>
-        <array>{try { $array-one-member(2) } catch err:FOAY0001 { "Expected error: index greater than actual size" } }</array>
-        <array>{$array-two-members(2)}</array> 
-        <array>{$array-three-members?2}</array> 
-        <array>{$array-three-members(3)}</array>
-        <array>{array:reverse($array-three-members)}</array>
-        <array>{$array-three-members?*}</array>
-        <arrow>{$seq-three-items => count()}</arrow>
-        <arrow>{$seq-three-items => string-join("-") => upper-case()}</arrow>
-        <array>{for $i in 'NEH-Institute' => string-to-codepoints() return $i}</array>
-        <string-constr>{$string-constr}</string-constr>
-        <string-constr>{$string-constr-var}</string-constr>
-    </root>
-```
-
-The output is:
-
-```xml
-<root>
-    <map>true</map>
-    <map>
-        <a>a</a>
-        <b>b</b>
-    </map>
-    <map>value 5</map>
-    <map>value 1 value 3</map>
-    <map>value 1 value 2 value 3 value 4 value 5 value 6 value 7 value 8 value 9 value 10</map>
-    <map>
-        <a>a</a>
-        <b>b</b>
-    </map>
-    <map>NEH-Instutute</map>
-    <map>Pittsburgh</map>
-    <map>Pittsburgh</map>
-    <array/>
-    <array>Expected error: index greater than actual size</array>
-    <array>två</array>
-    <array>2</array>
-    <array>TRE</array>
-    <array>TRE 2 1</array>
-    <array>1 2 TRE</array>
-    <arrow>3</arrow>
-    <arrow>ETT-TVÅ-TRE</arrow>
-    <array>78 69 72 45 73 110 115 116 105 116 117 116 101</array>
-    <string-constr>"A new way to 'create' strings."</string-constr>
-    <string-constr>"A new way to use variables in, ett två tre, strings."</string-constr>
-</root>
-```
 
 ### Functions
 
@@ -256,4 +159,12 @@ This adds a UUID to each element as a `@uid` attribute value, unless the element
 ```
 
 (Your UUID values will differ from ours, and they’ll be different each time you run the query.)
+
+While we doubt you'll need to give your elements unique UUIDs, this is a good example of how to write your own function to deal with complex problems.
+
+### Working with your own texts
+
+Add your own files to the database by clicking the “Collections” icon in your dashboard. Remember to add a new collection so you don't put your own work into the practice collection. When you're done, begin by writing XPath in the eXide window, and then adapting that into a FLWOR statement.
+
+Challenge yourself by building on that initial query, or make a goal for processing an interesting feature in a new way. Instructors will be around to help.
 
