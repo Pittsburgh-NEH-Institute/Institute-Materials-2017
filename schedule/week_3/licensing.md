@@ -35,3 +35,16 @@ Basically, you can do anything you want with it. Copy it, change it, sell it. We
 Do what you want, but give the creator(s) credit.
 
 All of these licenses depend on copyright. You have to have rights over something before you can license it.
+
+
+### Archiving through your institution
+Many institutions are eager to host faculty digital projects, though they may require some collaboration with IT for network security and resources. Likely, your university library system will facilitate this process. If you choose to host your project on an outside server, know that the project has less chance of surviving beyond the life of that hosting service.
+
+The implications of this choice might not make a difference during your lifetime, but may make a difference over the life of the project. A stable URL (more likely to be provided by a university) will probably outlast you, thus any reference to the project in outside publications will also outlast you. It's important to remember that digital technology rapidly dates itself, thus making it difficult to maintain a website that looks and runs like it was built recently.
+
+While archiving or hosting through your institution may not make sense immediatelyy, down the line it can save you from losing work or recognition if your project somehow goes offline.
+
+Questions for discussion
+* What are you doing to ensure the longevity of your edition?
+* What resources are available at your institution? Are the right for you?
+* How are you making your project accessible, sustainable, and usable?

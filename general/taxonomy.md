@@ -23,7 +23,7 @@ Materials are organized by relevance to beginners (those just planning a project
 * [SS64 command line reference](https://ss64.com)
 
 ## Errors
-* [Don't panic](placeholder, either find something or write something)
+* [Don't panic](../schedule/week_1/dont_panic.md)
 
 ## Commands, programs, files
 * [Programs and files 1](../schedule/week_1/programs_1.md)
@@ -53,7 +53,8 @@ Materials are organized by relevance to beginners (those just planning a project
 ## Queries and XML
 * [XPath](../schedule/week_2/xpath.md)
 * [XQuery 1](../schedule/week_2/xquery_1.md)
-* [XQuery 2](../schedule/week_2/xquery_2.md)
+* [XQuery 2](../schedule/week_3/xquery_2.md)
+* [XQuery webapps tutorial](../schedule/week_3/xquery_3.md)
 
 ## Python
 * [Anaconda Python](https://www.anaconda.com/download/)
@@ -77,8 +78,10 @@ Materials are organized by relevance to beginners (those just planning a project
 
 ### LMNL
 * [LMNL](../schedule/week_2/lmnl_syntax.md)
+* [LMNL and Alexandria](../schedule/week_2/lmnl_alexandria.md)
 
 ### TAG
+* [What is TAG?](../schedule/week_2/tag.md)
 * [Install Docker](https://docs.docker.com/install/#platform-support-matrix)
 	* Note: If you are running Windows 10 Home edition (or any OS older than Windows 10), you will install [Docker Toolbox](https://docs.docker.com/toolbox/overview/) instead. Windows 10 HE does not support the Hyper-V Windows feature required to run a full installation of Docker.
 * [Running Alexandria](../schedule/week_3/alexandria.md)
@@ -109,10 +112,6 @@ Materials are organized by relevance to beginners (those just planning a project
 
 ## Text analytics (Mike)
 * [Mike Kestemont's website](http://www.mike-kestemont.org/)
-* 
-## Bag of words (Mike)
-
-## Stylometry (Mike)
 
 ## Web publishing frameworks
 * [CETEIcean](http://philomousos.com/CETEIcean/index.html)
@@ -124,6 +123,7 @@ Materials are organized by relevance to beginners (those just planning a project
 
 ## LOD / RDF / SPARQL
 * [RDF and SPARQL](../schedule/week_3/rdf_sparql.md)
+* [Linked Open Data (LOD)](../schedule/week_2/linked_open_data.md)
 
 ## TEI stylesheets
 * [TEI Stylesheets GitHub](https://github.com/TEIC/Stylesheets#stylesheets)
@@ -135,8 +135,8 @@ Materials are organized by relevance to beginners (those just planning a project
 * [Build your API](../schedule/week_3/building_apis.md)
 
 
-## Publishing strategies
-* Licensing (ADD CONTENT)
+## [Publishing strategies](../schedule/week_3/publish.md)
+* [Creative Commons Licensing](https://creativecommons.org/)
 * Archiving
 * Sustainability
 

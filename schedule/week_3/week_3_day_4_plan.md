@@ -49,16 +49,17 @@ Time | Topic | Type
 
 ## 3:30–4:00: Coffee break
 
-## 4:00–5:30: Licensing, archiving, and planning for the future
+## 4:00–5:30: [Licensing, archiving, and planning for the future](licensing.md)
 
 Time | Topic | Type
 ---- | ---- | ---- 
-30 min | Licensing, archiving, and planning for the future | Presentation
-20 min | Hands on Licensing, archiving, and planning for the future | Talk lab
+30 min | Ownership and attribution | Presentation
+20 min | Hands on licensing and [Creative Commons](https://creativecommons.org/) | Talk lab
 10 min | Priorities | Presentation
-30 min | Review | Talk lab
+10 min | Archiving | Discussion
+20 min | Review | Talk lab
 
-## 7:00–8:30: [eXist-db and webapps](exist_xquery_webapps.md)
+## 7:00–8:30: [eXist-db and webapps](xquery_3.md)
 
 Time | Topic | Type
 ---- | ---- | ---- 

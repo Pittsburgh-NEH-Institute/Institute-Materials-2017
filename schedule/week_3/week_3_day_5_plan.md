@@ -12,7 +12,7 @@
 * **Code lab:** participants code alone or in small groups
 
 * * *
-## 9:00–10:30: [Publishing strategies and sustainability](week_3_day_5_session_1.md)
+## 9:00–10:30: [Publishing strategies and sustainability](publish.md)
 
 Time | Topic | Type
 ---- | ---- | ---- 
