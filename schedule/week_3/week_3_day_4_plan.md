@@ -58,7 +58,7 @@ Time | Topic | Type
 10 min | Priorities | Presentation
 30 min | Review | Talk lab
 
-## 7:00–8:30: [eXist-db and webapps](exist_xquery_webapps.md)
+## 7:00–8:30: [eXist-db and webapps](xquery_3.md)
 
 Time | Topic | Type
 ---- | ---- | ---- 

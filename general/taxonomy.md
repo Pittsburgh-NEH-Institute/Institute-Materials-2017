@@ -135,8 +135,8 @@ Materials are organized by relevance to beginners (those just planning a project
 * [Build your API](../schedule/week_3/building_apis.md)
 
 
-## Publishing strategies
-* Licensing (ADD CONTENT)
+## [Publishing strategies](../schedule/week_3/publish.md)
+* [Creative Commons Licensing](https://creativecommons.org/)
 * Archiving
 * Sustainability
 
