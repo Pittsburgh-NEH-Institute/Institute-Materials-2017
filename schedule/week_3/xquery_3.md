@@ -202,97 +202,113 @@ All of these have XML counterparts, e.g.:
 ```
 
 ## Webapps
-Recap of `typeswitch` function:
+
+### Recap of `typeswitch()` function
+
+The `typeswitch()` function mimics the declarative template architecture of XSLT. The example below adds a UUID to all elements in _Hamlet_. It works by applying the `add-uid-attributes-to-fragment()` to the document (see the last line of the code). That function tests the datatype of its argument, and it treats the document node in one way (applies itself to all of the children), elements another way (adds a UUID and then applies itself to all of the children), and other nodes (attributes, text, comments, etc.) by just returning them. You can think of each `case` value as comparable to an XSLT template that matches a specific type of node.
+
 ```xquery
 xquery version "3.1";
-
 declare namespace tei="http://www.tei-c.org/ns/1.0";
-
 declare function local:gen-uuid($prefix as xs:string?) as xs:string {
-concat($prefix, if (empty($prefix)) then "" else "-", util:uuid())
+	concat($prefix, if (empty($prefix)) then "" else "-", util:uuid())
 };
-
-
-declare function local:add-uid-attributes-to-fragment($item as item())
- as item() {
-  typeswitch($item)
-    case document-node() return
-        for $child in $item/node()
-        return local:add-uid-attributes-to-fragment($child)
-    case element() return
-      element {node-name($item)} {
-        $item/@*,
-        if ($item[not(@uid)]) then attribute {"uid"} {local:gen-uuid(name($item))} else (),
-        for $child in $item/node()
-        return local:add-uid-attributes-to-fragment($child)
-      }
-    default return $item
+declare function local:add-uid-attributes-to-fragment($item as item()) as item() {
+	typeswitch($item)
+		case document-node() return
+			for $child in $item/node()
+        	return local:add-uid-attributes-to-fragment($child)
+    	case element() return
+      		element {node-name($item)} {
+        	$item/@*,
+        	if ($item[not(@uid)]) 
+        		then attribute {"uid"} {local:gen-uuid(name($item))} else (),
+       	for $child in $item/node()
+        	return local:add-uid-attributes-to-fragment($child)
+      		}
+    	default return $item
 };
-
-
-
-let $data-collection := collection("/db/neh-2017")
-let $result := "a string"
-let $xml := <result><b val="b"> no bss</b> another word starting with a {$result}</result>
-
-return local:add-uid-attributes-to-fragment($xml)
+let $hamlet := doc('/db/apps/shakespeare/data/ham.xml')
+return local:add-uid-attributes-to-fragment($hamlet)
 ```
 
+See <https://en.wikibooks.org/wiki/XQuery/Typeswitch_Transformations> for more information.
+
+It is also possible to use XSLT within XQuery. For example, you could use XQuery to retrieve information from the database with its original markup, assemble it into an XML document, and then—within eXist-db—pipe it through XSLT to transform it. eXist-db has long supported XSLT with the `transform:transform()` function; XPath 3.1 introduces `transform()` as a regular (core) function, but it has not been incorporated into eXist-db as of v. 4.1, which therefore still requires the version that is in the `transform:` namespace.
+
 ### Serialization
+
 ```xquery
 declare option exist:serialize "method=html5 enforce-xhtml=yes";
 ```
-* Controls how query output is sent to the browser
-* Supported methods: `xml, xhtml, html5, text, json`
+
+Serialization control how query output is sent to the browser. Serialization parameters are ignored in the output of “Eval” in eXide, but you can configure the output rendering  there in a dropdown list within eXide itself.
+
+* Supported methods: `xml`, `xhtml`, `html5`, `text`, `json`
 * `enforce-xhtml`: make sure all elements are in the XHTML default namespace
 
-## Request
+See <https://exist-db.org/exist/apps/doc/xquery.xml#serialization> for more information.
+
+### Request
+
+It is possible to pass values from a web form into eXist-db and use them as input into a query. The first argument to the `request:get-parameter()` function is the name of the parameter in the web form from which to retrieve the value, and the second is a default value to use if no value is passed in from the form. The following example:
+
 ```xquery
-request:get-parameter($name, $value)
+declare variable $title as xs:string := request:get-parameter("title", "Hamlet");
 ```
-`$name` is the name of the parameter and `$default`  is the default value to use if the parameter is not given.
 
-See more functions in request and response modules:
-* <http://demo.exist-db.org/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/request&location=java:org.exist.xquery.functions.request.RequestModule>
-* <http://demo.exist-db.org/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/response&location=java:org.exist.xquery.functions.response.ResponseModule>
+retrieves the value of the `title` input parameter from a web form and assigns it to a variable `$title` in the XQuery. If no title value is passed from the form, the value “Hamlet” is used instead.
 
+For information about related functions, see the documentation for the [request](http://demo.exist-db.org/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/request&location=java:org.exist.xquery.functions.request.RequestModule) and [response](http://demo.exist-db.org/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/response&location=java:org.exist.xquery.functions.response.ResponseModule) modules.
 
 ## Structure your app
-_EXPath_ is an effort to standardize XQuery extension modules across implementations.
+
+The [EXPath packaging system](http://expath.org/modules/pkg/) is an effort to standardize XQuery extension modules across implementations. It includes:
+
 * Distribution of library modules (XQuery/Java/XSLT) as self-contained packages
-* Register modules with the query engine
-* Simple installation, hot deployment into running database
+* Registration of modules with the query engine
+* Simple installation, with hot deployment into running database
 
-### eXist-db's application repository
+### eXist-db application repository
+
+eXist-db is not just an XQuery processor and not just an XML database. It can also serve as a content management system (CMS), which makes it possible to build and distribute an entire application, including data and the means to interact with the data, as an eXist-db application package. The eXist-db application repository:
+
 * Extends EXPath packages
-* Hot deployment and configuration of entire applications or services
-* Self-contained, modular applications
-* Foundation for component reuse
-* Simplifies development process
-* Simple deployment via eXist-db's [`dashboard`](http://localhost:8080/exist/apps/dashboard/index.html)
+* Supports hot deployment and configuration of entire applications or services
+* Supports self-contained, modular applications
+* Provides a foundation for component reuse
+* Simplifies the development process
+* Supports deployment via the eXist-db dashboard
 
-[`eXide`](http://localhost:8080/exist/apps/eXide/index.html) supports app development and generates app structure and puts your provided metadata in place. In eXide `Application->New application`.
+eXide builds in support for app development, and can generate an app template that guides the provision of data, metadata, and functionality. Inside eXide, select `Application → New application`.  Choose a name, fill in the metadata, and an application skeleton, ready for development, will be installed inside `/db/apps/`. The collection structure is:
 
-Choose a name, fill in metadata, done. You will find it under `/db/apps/`. The collection structure is:
-* `modules/` - (Everything XQuery)
-* `templates/` - (Page templates used by html-files)
-* `resources/` - (images, css, javascript) 
-* `expath-pkg.xml` - (Package descriptor)
-* `repo.xml` - (Application metadata)
-* `index.html`
-* `controller.xql` (URL rewriter)
-* `pre-install.xql` - (executed before deployment)
+* `modules/`: (Everything XQuery)
+* `templates/`: (Page templates used by html files)
+* `resources/`: (images, css, javascript) 
+* `expath-pkg.xml`: (Package descriptor)
+* `repo.xml`: (Application metadata)
+* `index.html`: (Main page)
+* `controller.xql`: (URL rewriter)
+* `pre-install.xql`: (executed before deployment)
 
-Model-View-Controller concept:
-* XML - model
-* html - view
-* XQuery - controller, implementing application logic
+eXist applications implement the _Model-View-Controller_ concept:
+
+* XML is the model
+* HTML is the view
+* XQuery provides the controller and implements application logic
+
+For more information and tutorial instruction see [Getting started with web application development](https://exist-db.org/exist/apps/doc/development-starter.xml) (text) and [Getting started with app development in eXist-db 2.0](https://www.youtube.com/watch?v=o0KRyFM9kck) (video).
+
+#[RESUME HERE]
 
 ### HTML templating
+
 ```xml
 <div class="templates:surround?with=templates/page.html&amp;at=content">
 ```
+
 calls
+
 ```xquery
 declare function templates:surround($node as node(), 
 	$params as element(parameters)?, $model as item()*)
@@ -305,13 +321,17 @@ declare function templates:surround($node as node(),
 declare function templates:surround($node as node(), 
 	$params as element(parameters)?, $model as item()*)
 ```
+
 Parameters:
+
 * `$node`: HTML node which called the template
 * `$params`: parameters passed
 * `$model`: arbitrary data to be forwarded to nested templates
 
 ### URL Rewriting
+
 Typical tasks:
+
 * Check if a user is logged in and redirect to a login page
 * Error handling
 * Import resources from the file system
