@@ -8,5 +8,5 @@ Time | [Monday](week_3_day_1_plan.md) |[Tuesday](week_3_day_2_plan.md) |[Wednesd
 12:30–2:00 |  Lunch | Lunch | Lunch | Lunch | Lunch |       
 2:00–3:30 |  Introducing CETEIcean / Publishing on GitHub Pages | [XQuery 2](xquery_2.md) | Lightning talks 1 | [Building your own API](building_apis.md) | Deployment and further coding if needed |       
 3:30–4:00 |  Coffee break | Coffee break | Coffee break | Coffee break | Coffee break |       
-4:00–5:30 |  Web Publishing Frameworks: Flask | LOD and Editions | Lightning talks 2 | Licensing, archiving, and planning for the future | Wrapping up: What have we learned? |       
+4:00–5:30 |  Web Publishing Frameworks: Flask | LOD and Editions | Lightning talks 2 | [Licensing, archiving, and planning for the future](licensing.md) | Wrapping up: What have we learned? |       
 7:00–8:30 |        |       |       | [eXist-db and webapps](xquery_3.md) |       |       

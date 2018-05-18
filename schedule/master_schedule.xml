@@ -1526,17 +1526,20 @@
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title>Licensing, archiving, and planning for the future</title>
+                <title>[Licensing, archiving, and planning for the future](licensing.md)</title>
                 <act time="30" type="Presentation">
-                    <desc>Licensing, archiving, and planning for the future</desc>
+                    <desc>Ownership and attribution</desc>
                 </act>
                 <act time="20" type="Talk_lab">
-                    <desc>Hands on Licensing, archiving, and planning for the future</desc>
+                    <desc>Hands on licensing and [Creative Commons](https://creativecommons.org/)</desc>
                 </act>
                 <act time="10" type="Presentation">
                     <desc>Priorities</desc>
                 </act>
-                <act time="30" type="Talk_lab">
+                <act time="10" type="Discussion">
+                    <desc>Archiving</desc>
+                </act>
+                <act time="20" type="Talk_lab">
                     <desc>Review</desc>
                 </act>
             </slot>
