@@ -1,10 +1,10 @@
-# eXist-db XQuery 3 and webapps
+# XQuery 3: eXist-db and webapps
 
 We continue with XQuery and get into how to create webapps in eXist-db.
 
 ## httpclient
 
-`httpclient` provides functions for interacting with resources with a REST API. The following example connects to a server at Clarin and returns information about technical contact persons. It takes three parameters: the URL to process, a Boolean value that indicates whether the HTTP state (cookies, credentials, etc.) should persist for the life of the query (we set this to `False`), and optional request headers (in this case, the empty sequence). To construct the URL we append different numbers to a base URL of the Clarin REST interface <http://www.clarin.eu/restxml/> using the XPath `concat()` function, and then convert the string to a URI with the XPath `xs:anyURI` function. The `httpclient:get()` function returns a connection, to which we append the XPath path expressions `//cmd:TechnicalContact/cmd:Person` to return the information we need.
+The `httpclient` module provides functions for interacting with resources using a REST API. The following example connects to a server at Clarin and returns information about technical contact persons. The `httpclient:get()` function takes three parameters: the URL to process, a Boolean value that indicates whether the HTTP state (cookies, credentials, etc.) should persist for the life of the query (we set this to `false()`), and optional request headers (in this case, the empty sequence). To construct the URLs dynamically we append different numbers to a base URL of the Clarin REST interface <http://www.clarin.eu/restxml/> using the XPath `concat()` function, and then cast the string to a URI with the XPath `xs:anyURI()` function. The `httpclient:get()` function returns a connection, to which we append the XPath path expression `//cmd:TechnicalContact/cmd:Person` to navigate to and return the information we need.
 
 ```xquery
 xquery version "3.0";
@@ -23,14 +23,14 @@ declare namespace cmd="http://www.clarin.eu/cmd/";
 ### httpclient example 2
 
 ```xquery
-xquery version "3.0";
+xquery version "3.1";
 
- httpclient:post-form(
- xs:anyURI("https://ws.example.com/wsauth/authenticate"), 
- <httpclient:fields>
-    <httpclient:field name="username" value="{$username}" type="string"/>
-    <httpclient:field name="password" value="{$password}" type="string"/>
-    <httpclient:field name="checksum" value="{util:hash(concat($username, $passw
+httpclient:post-form(
+	xs:anyURI("https://ws.example.com/wsauth/authenticate"), 
+ 	<httpclient:fields>
+   		<httpclient:field name="username" value="{$username}" type="string"/>
+    	<httpclient:field name="password" value="{$password}" type="string"/>
+    	<httpclient:field name="checksum" value="{util:hash(concat($username, $passw
 ord,
     $bas:config-doc//auth-salt), "md5")}" type="string"/>
  </httpclient:fields>,
@@ -43,16 +43,16 @@ ord,
 
 ## Index configuration
 
-eXist-db constructs persistent indexes that support quick search and retrieval, much as a back-of-the-book index in a printed volume helps readers find specific content without having to look at every page. eXist-db will execute XQuery scripts with or without index support, but for unindexed queries will be slow. For professional-quality results, you must configure indexes. In addition to the [Configuring database indexes](https://exist-db.org/exist/apps/doc/indexing.xml), see the indexing section of [Tuning the database](http://exist-db.org/exist/apps/doc/tuning) for guidelines.
+eXist-db constructs persistent indexes that support quick search and retrieval, much as a back-of-the-book index in a printed volume helps readers find specific content without having to look at every page. eXist-db will execute XQuery scripts with or without index support, but unindexed queries will be slow. For professional-quality results, you must configure indexes. In addition to the official [Configuring database indexes](https://exist-db.org/exist/apps/doc/indexing.xml) documentation, see the indexing section of [Tuning the database](http://exist-db.org/exist/apps/doc/tuning) for guidelines.
 
 ### Types of indexes
 
 eXist-db constructs a structural index and an xml:id index for all XML documents automatically, but the other index types listed below have to be configured explicitly. 
 
 * **structural:** element and attribute occurrences; created automatically
-* **xml:id:** query with `fn:id()`; created automatically
+* **xml:id:** query with `id()`; created automatically
 * **range:** typed node values (used with general and value comparison and some functions, such as `contains()`). eXist-db has both a _new range index_ and a _legacy range index_. New projects should use the new range index.
-* **ngram:** character substrings inside nodes (`ngram:contains()`)
+* **ngram:** character substrings inside nodes (query with `ngram:contains()`)
 * **Lucene:** full index of tokenized text. There is also a _legacy full-text index_, which should not be used.
 * **Other:** geospatial, rdf-sparql, and others
 
@@ -60,7 +60,7 @@ eXist-db constructs a structural index and an xml:id index for all XML documents
 
 * Configuration files can be created separately for each collection and subcollection and must be placed in `/db/system/config/db/<path-to-collection>`
 * Configuration files must end in `.xconf`, and are typically called `collection.xconf`.
-* The collection hierarchy is mirrored in `/db/system/config/db/<path-to-collection>`
+* The collection hierarchy is mirrored in `/db/system/config/db/<path-to-collection>`. For example, if the XML files for your project are in `/db/edition/xml`, the configuration file that controls indexing for those files would normally be `/db/system/config//db/edition/xml/collection.xconf`.
 * Configurations on a lower level of the hierarchy overwrite configurations on higher levels
 
 New documents are automatically indexed according to whatever indexes are in place when the documents are uploaded, but existing documents are not automatically reindexed when you update `collection.xconf`. To apply a revised configuration to existing documents, you must call `xmldb:reindex("/db/project/...")` in XQuery or use the Java admin client to reindex.
@@ -69,7 +69,7 @@ New documents are automatically indexed according to whatever indexes are in pla
 
 The index configuration file is typically called `collection.xconf`, and you’ll need to read [Configuring database indexes](https://exist-db.org/exist/apps/doc/indexing.xml) to learn how to configure it. As a brief illustration, though, in the following example, we configure:
 
-* The Lucene full-text index using the standard, whitespace, and keyword analyzers, and we tell it to index specific elements and attributes. You can read about Lucene analyzers at <https://exist-db.org/exist/apps/doc/lucene.xml>. 
+* The Lucene full-text index using the standard and whitespace analyzers, and we tell it to index specific elements and attributes. In this example, the standard analyzer is our default and we use the whitespace analyzer for `<head>` elements (specified in the `@analyzer` attribute on the corresponding `<text>` element). You can read about Lucene analyzers at <https://exist-db.org/exist/apps/doc/lucene.xml>.
 * We create a new range index on the `@n` attribute. You can read about the new range index at <https://exist-db.org/exist/apps/doc/newrangeindex.xml>.
 * We create an ngram index on `<head>` and `<p>` elements. You can read about the ngram index at <https://exist-db.org/exist/apps/doc/ngram>.
 
@@ -80,9 +80,8 @@ The index configuration file is typically called `collection.xconf`, and you’l
         <lucene>
             <analyzer class="org.apache.lucene.analysis.standard.StandardAnalyzer"/>
             <analyzer id="ws" class="org.apache.lucene.analysis.core.WhitespaceAnalyzer"/>
-            <analyzer id="kw" class="org.apache.lucene.analysis.core.KeywordAnalyzer"/>
             <text qname="tei:w"/>
-            <text qname="tei:head"/>
+            <text qname="tei:head" analyzer="ws"/>
             <text qname="tei:p"/>
             <text qname="tei:lg"/>
             <text qname="tei:cell"/>
@@ -99,7 +98,7 @@ The index configuration file is typically called `collection.xconf`, and you’l
 </collection>
 ```
 
-Namespace must be defined correctly.
+Namespace must be declared and referenced correctly.
 
 ### New range index
 
@@ -108,71 +107,94 @@ The new range index is used by:
 * General and value comparison operators. The general comparison operators are `=`, `!=`, `<`, `<=`, `>`, `>=`. The value comparison operators are `eq`, `ne`, `lt`, `le`, `gt`, `ge`. The difference between general and value comparison is discussed at [What's the difference between "eq" and "="?](https://developer.marklogic.com/blog/comparison-operators-whats-the-difference).
 * The functions `contains()`, `starts-with()`, and `ends-with()` (but not `matches()`).
 
-The new range index requires you to specify a datatype for, e.g., `xs:integer`, `xs:decimal`, or other numerical types; `xs:string`; `xs:dateTime` and other date-time types, or `xs:boolean`. If you define an index with a specific type, all values in the indexed collections have to be valid instances of this type. For example, if you have indexed `<b>` elements as being of type `xs:integer`:
-
-* `//a[b = 99]`: correct type, `xs:integer` index is used.
-* `//a[b = "99"]`: wrong type, index not used (although you can force this in the main configuration file _conf.xml_)
+The new range index requires you to specify a datatype, e.g., `xs:integer`, `xs:decimal`, or other numerical types; `xs:string`; `xs:dateTime`, or other date-time types; or `xs:boolean`. If you define an index with a specific type, all values in the indexed collections must be valid instances of this type.
 
 ### Lucene full-text index
 
-The following example applies the Lucene full-text index to `<para>` elements anywhere and to `<section>` elements that are children of `<book>` elements. Within `<para>` elements, `<note>` descendants are not indexed and `<emphasis>` descendants are treated as part of their parents. (You need to specify “inline” in situations like `<word><prefix>un</prefix>clear</word>`. But default the Lucene index assumes that words end at element boundaries, but by specifying that `<prefix>` is inline, you can force the system to index “unclear” as a single word.
+The following example applies the Lucene full-text index to `<para>` elements anywhere and to `<section>` elements that are children of `<book>` elements. Within `<para>` elements, `<note>` descendants are not indexed and `<prefix>` descendants are treated as part of their parents. We specify `<inline>` to handle situations like `<para>... <prefix>un</prefix>clear ...</para>`. By default, the Lucene indexer assumes that words end at element boundaries, and therefore would not recognize “unclear” as an indexed word. By specifying that `<prefix>` is inline, we can force the system to index “unclear” as a single word.
 
 ```xml
 ...
 <lucene>
   <text qname=”para”>
     <ignore qname=”note”/>
-    <inline qname=”emphasis”/>
+    <inline qname=”prefix”/>
   </text>
   <text match=”//book/section”/>
 </lucene>
 ...
 ```
+We use the Lucene full-text index in queries with `ft:query()`, as in the following example:
 
-```xquery
-ft:query($nodes as node()*, $query as item()) node()*
-```
-Requires a Lucene index on the collections in context.
-The query expressed as either:
-* Lucene query string, or
-* an XML fragment defining the Lucene query
-
-Term example:
 ```xquery
 xquery version "3.1";
-
-declare namespace tei = "http://www.tei-c.org/ns/1.0";
-
-let $text := xmldb:xcollection("/db/dramawebben/data/works/StrindbergA_FrokenJulie")//tei:text
-let $query := <query><term>mindre</term></query>
-let $result := ft:query($text/descendant::tei:p, $query)
+declare namespace tei="http://www.tei-c.org/ns/1.0";
+declare variable $ham as document-node() := doc('/db/apps/shakespeare/data/ham.xml');
+ft:query($ham//tei:sp,'son')
 ```
-Wildcard example:
+
+If we have defined a Lucene full-text index on `<sp>` elements in this play, the query will return the `<sp>` elements that contain the word “son”. If we have not defined the index, though, it will return an empty sequence (not an error!). The query target above is expressed as a string, but it may also be expressed as an XML fragment using Lucene-specific markup (see <https://exist-db.org/exist/apps/doc/lucene.xml#D3.23.24> for more details):
+
+```xquery
+xquery version "3.1";
+declare namespace tei="http://www.tei-c.org/ns/1.0";
+declare variable $ham as document-node() := doc('/db/apps/shakespeare/data/ham.xml');
+let $query := <query><term>son</term></query>
+return ft:query($ham//tei:sp, $query)
+```
+
+The preceding query finds all speeches that contain “son”. The following query finds those that contain either “son” or “daughter”:
+
+```xquery
+xquery version "3.1";
+declare namespace tei="http://www.tei-c.org/ns/1.0";
+declare variable $ham as document-node() := doc('/db/apps/shakespeare/data/ham.xml');
+let $query := 
+    <query>
+        <bool>
+            <term>son</term>
+            <term>daughter</term>
+        </bool>
+    </query>
+return ft:query($ham//tei:sp, $query)
+```
+
+Lucene supports _wildcard_ queries. The following finds all `<p>` elements that contain words that begin with the characters “ha”:
+
 ```xquery
 $data-collection//tei:p[ft:query(.,<query><wildcard>ha*</wildcard></query>)]
 ```
 
-Lucene query string example:
-```
-Wildcards: photograph*, photographer?
-Multiple terms: native burmese
-Phrase: “native burmese”~10
-Fuzzy: photographer~
-Required: +buddhist +burmese
-Excluded: buddhist -burmese
-Boost: buddhist^10 burmese
-And: "caspian sea" AND tibet
-Not: "caspian sea" NOT tibet
-```
-vs:
+(Queries that begin with a wildcard can be slow and require special handling, and are best avoided.)
+
+Lucene supports several string-query types:
+
+* Wildcards: `photograph*`, `photographer?`
+* Multiple terms: `native burmese`
+* Phrase: `“native burmese”~10`
+* Fuzzy: `photographer~`
+* Required: `+buddhist +burmese`
+* Excluded: `buddhist -burmese`
+* Boost: `buddhist^10 burmese`
+* And: `"caspian sea" AND tibet`
+* Not: `"caspian sea" NOT tibet`
+
+All of these have XML counterparts, e.g.:
+
 ```xml
 <bool>
   <term occur=”must”>caspian</term>
   <term occur=”should”>sea</term>
   <term occur=”not”>tibet</term>
 </bool>
+```
+```xml
 <near>caspian sea</near>
+```
+```xml
 <phrase>caspian sea</phrase>
+```
+```xml
 <bool>
   <near occur="must">caspian sea</near>
   <term occur="must">tibet</term>
