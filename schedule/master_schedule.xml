@@ -1541,7 +1541,7 @@
                 </act>
             </slot>
             <slot time="19:00:00">
-                <title>[Leif-Jöran: eXist-db workshop on webapps](exist_xquery_webapps.md)</title>
+                <title>[eXist-db and webapps](exist_xquery_webapps.md)</title>
                 <act time="25" type="Code_lab">
                     <desc>XQuery</desc>
                 </act>
