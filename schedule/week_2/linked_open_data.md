@@ -103,7 +103,7 @@ Another important design question has to do with the "opacity" of your URIs. Sho
  2. `curl -v -L -H "Accept: text/turtle" "http://papyri.info/ddbdp/p.fay;;110"`
  3. `curl -v -L -H "Accept: text/turtle" "http://papyri.info/ddbdp/p.fay;;110/source"`
 
- ## RDF
+## RDF
  
  The command uses a program named [curl](https://curl.haxx.se/); the option `-v` tells it to be verbose (i.e. tell you what it's doing), so it will both log what it does and display the request and response headers; `-L` tells it follow redirects—if the server says "what you want is actually over *here*, curl will automatically get the resource at the new location; `-H "Accept: text/turtle"` tells it to send a request header informaing the server what format it wants as a response; and finally gives the URL to retrieve the data from. HTTP(S) communication takes the form of a header and a body. 
 
