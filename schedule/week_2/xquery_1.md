@@ -13,9 +13,9 @@ We will explore XQuery inside eXist-db, an open-source XML database and XQuery e
 eXist-db requires Java SE 1.8, so if you 1) did not have it installed before you arrived at the Institute and 2) did not install it earlier this week, please do so now: <http://www.oracle.com/technetwork/java/javase/downloads/index.html>. If you aren’t sure whether you have Java (or the right version of Java) installed, follow the instructions at <https://www.java.com/en/download/help/version_manual.xml> to check.
 
 We will use eXide, the integrated development environment (IDE) bundled with eXist-db. 
-After you installed and launched eXist-db, you can launch eXide by clicking on the eXide icon in your eXist dashboard. If you are running eXist on your own machine with default settings, your dashboard is at <http://localhost:8080> and you can launch eXide directly, bypassing the dashboard, at <http://localhost:8080/exist/apps/eXide/>.
+After you install and launch eXist-db, access eXide by clicking on the eXide icon in your eXist dashboard. If you are running eXist on your own machine with default settings, your dashboard is at <http://localhost:8080> and you can launch eXide directly, bypassing the dashboard, at <http://localhost:8080/exist/apps/eXide/>.
 
-When you install eXist-db on your own machine, you also install all documentation for both the XQuery function library (core XPath and XQuery functions) and eXist-db itself. The default location for the function library documentation on your local machine is <http://localhost:8080/exist/apps/fundocs/> (if you’re consulting local documentation for the first time, you’ll be prompted to generate it first), and you can also find a copy on the eXist-db demo server at <http://demo.exist-db.org/exist/apps/fundocs/> inside the database. You also run eXide and use interactive tutorials on the demo server any time you like; eXide is located at <http://demo.exist-db.org/exist/apps/eXide/index.html>. You can’t, for obvious reasons, save your own documents in the demo server, so if you want to do that, install your own copy of eXist-db on your own machine.
+When you install eXist-db on your own machine, you also install all documentation for both the XQuery function library (core XPath and XQuery functions) and eXist-db itself. The default location for the function library documentation on your local machine is <http://localhost:8080/exist/apps/fundocs/> (if you’re consulting local documentation for the first time, you’ll be prompted to generate it first). You can also find a copy on the eXist-db demo server on the internet at <http://demo.exist-db.org/exist/apps/fundocs/>. Indeed, you can access eXide and use interactive tutorials online on the demo server any time you like; that instance of eXide is located at <http://demo.exist-db.org/exist/apps/eXide/index.html>. eXist-db is often installed on web servers to support XML-based projects online, and if you have access to a server, you may wish to explore the eXist-db documentation to try installing eXist-db there and learn how to use it to support dynamic searches. If you have access to a web server, you may wish to explore the [advanced eXist-db documentation](https://exist-db.org/exist/apps/doc/advanced-installation.xml#headless) to try installing eXist-db there and learn how to use it to support dynamic searches. For now, though, unless you have permissions to save files on the web installations of eXist-db, you can’t upload and save your own documents there. That is why we recommend installing your own local copy of eXist-db on your machine, so you can practice and experiment with saving and querying your own files.
 
 When in the IDE you will notice some similarities and differences of XQuery compared to other languages we’ve visited in this Institute, such as Python, Bash shell scripting, and XPath. 
 
@@ -159,7 +159,7 @@ declare namespace tei="http://www.tei-c.org/ns/1.0";
 count(distinct-values(doc('/db/neh-2017/hamlet.xml')//tei:speaker))
 ```
 
-Everything happens in one line here, which has the advantage of concision, but at the expense of making the code harder to write (it’s easy to lose count and wind up with unbalanced paraentheses) and harder to debug. For example, if you get the wrong result, you could have pointed to the wrong document, you could have used the wrong element name to find the speakers, you could have made an error in trying to get the `distinct-values()` of something, you could have made an error in trying to `count()` something, or you could have all of the pieces correct, but in the wrong order. For example, if you put `distinct-values()` outside `count()`, instead of the reverse, you’ll get one number, but it will be a different number, and the wrong one. Why is that the case?
+Everything happens in one line here, but at the expense of making the code hard to write (it’s easy to lose count and wind up with unbalanced paraentheses) and harder to debug. For example, if you get the wrong result, you could have pointed to the wrong document, you could have used the wrong element name to find the speakers, you could have made an error in trying to get the `distinct-values()` of something, you could have made an error in trying to `count()` something, or you could have all of the pieces correct, but in the wrong order. For example, if you put `distinct-values()` outside `count()`, instead of the reverse, you’ll get one number, but it will be a different number, and the wrong one. Why is that the case?
 
 With a FLWOR expression, it’s easier to segment, change, and build your results:
 
@@ -172,11 +172,13 @@ let $count := count($distinct)
 return $count
 ```
 
-No one would ever write such a simple expression this way, but this example shows you how you can create individual steps by declaring variables. During development, we might write each step separately and return the result to verify that we are asking for what we think we’re asking for. If we wanted to change the code to focus on a single scene, instead of the entire play, or to get us the distinct speakers for each act, or to count the speakers by act, we could do so by adding a few lines and editing the result.
+This example shows you how you can create individual steps by declaring variables. During development, we might write each step separately and return the result to verify that we are asking for what we think we’re asking for. If we wanted to change the code to focus on a single scene, instead of the entire play, or to get us the distinct speakers for each act, or to count the speakers by act, we could do so by adding a few lines and editing the result.
+
+For more examples and explanation of FLWOR expressions, see Michael Kay’s [Blooming FLWOR—an introduction to the XQuery FLWOR expression](http://www.stylusstudio.com/xquery-flwor.html).
 
 ## Your turn
 
-Experiment now with writing your own FLWOR expressions, and then we’ll tackle Michael Kay’s [Blooming FLWOR—an introduction to the XQuery FLWOR expression](http://www.stylusstudio.com/xquery-flwor.html) together.
+Experiment now with writing your own FLWOR expressions and try to access some interesting data from the sample files uploaded in your eXist-db. 
 
 
 
