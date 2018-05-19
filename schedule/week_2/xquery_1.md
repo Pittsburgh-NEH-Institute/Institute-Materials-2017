@@ -159,7 +159,7 @@ declare namespace tei="http://www.tei-c.org/ns/1.0";
 count(distinct-values(doc('/db/neh-2017/hamlet.xml')//tei:speaker))
 ```
 
-Everything happens in one line here, but at the expense of making the code hard to write (it’s easy to lose count and wind up with unbalanced paraentheses) and harder to debug. For example, if you get the wrong result, you could have pointed to the wrong document, you could have used the wrong element name to find the speakers, you could have made an error in trying to get the `distinct-values()` of something, you could have made an error in trying to `count()` something, or you could have all of the pieces correct, but in the wrong order. For example, if you put `distinct-values()` outside `count()`, instead of the reverse, you’ll get one number, but it will be a different number, and the wrong one. Why is that the case?
+Everything happens in one line here, but at the expense of making the code hard to write (it’s easy to lose count and wind up with unbalanced parentheses) and difficult to debug. For example, if you get the wrong result, you could have pointed to the wrong document, you could have used the wrong element name to find the speakers, you could have made an error in trying to get the `distinct-values()` of something, you could have made an error in trying to `count()` something, or you could have all of the pieces correct, but in the wrong order. For example, if you put `distinct-values()` outside `count()`, instead of the reverse, you’ll get one number, but it will be a different number, and the wrong one. Why is that the case?
 
 With a FLWOR expression, it’s easier to segment, change, and build your results:
 
