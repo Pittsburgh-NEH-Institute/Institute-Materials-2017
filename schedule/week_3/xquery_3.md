@@ -299,7 +299,6 @@ eXist applications implement the _Model-View-Controller_ concept:
 
 For more information and tutorial instruction see [Getting started with web application development](https://exist-db.org/exist/apps/doc/development-starter.xml) (text) and [Getting started with app development in eXist-db 2.0](https://www.youtube.com/watch?v=o0KRyFM9kck) (video).
 
-#[RESUME HERE]
 
 ### HTML templating
 
