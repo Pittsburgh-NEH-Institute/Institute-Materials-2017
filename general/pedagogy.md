@@ -62,4 +62,25 @@ As you begin to adapt these materials into your own teaching, please learn from 
 
 ## Week 3: Pubcamp: Expressing the edition, digital publication
 
+Rather than introduce publication strategies that only allow you to pour your data into an existing model, we tried to emphasize technologies you could mold to your own needs. In some cases, this could be as simple as GitHub pages (especially when you're just starting out), or as complicated as a webapp in eXist-db. 
+The week began with simpler technologies and moved to more complicated ones. This was a common approach throughout the Insitute, as we wanted to acclimate you to the kind of learning you were doing before we dove into complicated work. 
+We don't expect you to remember everything you learned this week, especially because many of you are not yet prepared to publish an edition. For this reason, the materials used this week are available online. We've also emphasized a "Look it up" approach to problem-solving. 
+This was not out of laziness or neglect, but stemmed from the belief that you'll have to do this stuff yourself, on your own, in a matter of weeks. In the mean time, we can help you learn to read error messages, stack traces, and help websites to glean the most useful information.
 
+We intended the Pubcamp week not to teach you exactly how to publish your edition, but to show you a selection of options. In the future, you should do more research about which format might work best for you, and use our materials as reference in the event you need them.
+
+### eXist-DB and XQuery (cont.)
+
+
+### Lightning talks
+
+We hope you all enjoyed one another's lightning talks. It was wonderful to see how much everyone's ideas have evolved. We included lightning talks as a way to integrate your editions and your ideas into the day-to-day of an Institute that could sometimes be very abstract. We hope the lightning talks afforded you the chance to collaborate and discuss ideas openly with other participants, and to bounce ideas off instructors as well.
+
+Lightning talks were part of a more general emphasis on the social aspect of the Institute. Your evening sessions and reviews together in Bouquet Gardens were meant to happen, though they appeared organically. The diversity of intellectual discipline in attendance was purposeful. Many institutes like this bring together scholars from only one field or subfield. While this is a sensible way to run an institute, it does not promote networking, collaboration, or problem solving in the same way this community does.
+
+### Licensing and archiving
+
+Issues of licensing and archiving are significantly more complicated when you publish independently. Automatically, you own the copyright to anything you create. But you might not own the materials you're using in your edition, which can become complicated very quickly.
+We don't touch on those issues much here, though they're a considerable hurdle for any edition-making project. We don't go into much detail because everyone's case is different, and you have to research your particular case on your own.
+
+Instead, we offered an overview of the issues and how one might research to resolve them. We also encourage you to use Creative Commons licenses in the spirit of collaboration and building community.
