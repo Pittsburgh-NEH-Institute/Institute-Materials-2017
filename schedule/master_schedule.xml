@@ -968,7 +968,7 @@
         <day d="Thursday">
             <date>July 20</date>
             <syn>Week 2, Day 4 Mike Kestemont joins the instructional team to teach bag of words and text processing. Unfortunately, Mike is unable to publish materials used during this institute online due to copyright issues, so for now we will link his excellent presentations instead.
- [Authentication](01-authenticate.pdf) | [Stylo with R](02-stylo.pdf)
+ [Authenticity criticism](01-authenticate.pdf) | [Stylometry with R](02-stylo.pdf)
             </syn>
             <slot time="09:00:00">
                 <title>Text analytics 1</title>
@@ -1632,7 +1632,7 @@
         </day>
         <day d="Saturday">
             <date>July 29</date>
-            <syn>[Half day for philosphy and pedagogy of the Institute](../../general/pedagogy.md)</syn>
+            <syn>[Half day for philosophy and pedagogy of the Institute](../../general/pedagogy.md)</syn>
             <slot time="09:00:00">
                 <title>Rationale and design of the Institute</title>
                 <act time="90" type="Presentation">

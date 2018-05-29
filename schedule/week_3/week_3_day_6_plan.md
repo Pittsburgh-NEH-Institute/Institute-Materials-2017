@@ -1,7 +1,7 @@
 # Week 3, Day 6: Saturday, July 29
 ## Synopsis
 
-[Half day for philosphy and pedagogy of the Institute](../../general/pedagogy.md)
+[Half day for philosophy and pedagogy of the Institute](../../general/pedagogy.md)
 
 ## Outcome goals
 ## Legend
