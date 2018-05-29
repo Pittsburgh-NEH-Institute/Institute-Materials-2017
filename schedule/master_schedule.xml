@@ -1632,7 +1632,7 @@
         </day>
         <day d="Saturday">
             <date>July 29</date>
-            <syn>Half day for philosphy and pedagogy of the Insitute</syn>
+            <syn>[Half day for philosphy and pedagogy of the Institute](../../general/pedagogy.md)</syn>
             <slot time="09:00:00">
                 <title>Rationale and design of the Institute</title>
                 <act time="90" type="Presentation">
