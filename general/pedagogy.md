@@ -9,9 +9,9 @@
 
 ### Basic computer skills and humanists
 
-The bootcamp is based on two ideas: 1. Humanists can learn to program, and become adept at it and 2. Programming and encoding are vital to digital edition making. These two ideas ground all other topics taught in the three weeks. The work you undertake here is both achievable and necessary, and you are the only person qualified to determine what that work will entail.
+The bootcamp is based on two ideas: 1. Humanists can learn to program, and become adept at it and 2. Programming and encoding are vital to digital edition making. These two ideas ground all other topics taught in the three weeks. The work you undertake here is both achievable and necessary, and will help you what work a future edition will entail.
 
-For that reason, we designed the bootcamp to cover basic, necessary skills that you will be able to build on, regardless of what tools you decide to use in the future. Python may very well be useless to you, but regular expressions work in Java (and plenty of other languages) as well. Your project may not have collaborators, but using GitHub gives you as an individual researcher a unique advantage that Dropbox cannot confer: community. As we have emphasized throughout, the bootcamp was not about "tooling up." Rather, we hoped it would give you skills that would make "tooling up" for yourself easier later on in your work process.
+For that reason, we designed the bootcamp to cover basic, necessary skills that you will be able to build on, regardless of what tools you decide to use in the future. Python may very well be useless to you, but regular expressions work in Java (and plenty of other languages) as well. Your project may not have collaborators, but using GitHub gives you, the individual researcher, a unique advantage that Dropbox cannot confer: community. As we emphasized throughout, the bootcamp was not about “tooling up.” Rather, we hoped it would give you skills that would make “tooling up” for yourself easier later on in your work process.
 
 The bootcamp was optional because some of you were already familiar with all the material it covered. There were benefits and drawbacks to this decision, and in future versions of this Institute, it may prove more useful to integrate this material in with edition work.
 
@@ -29,13 +29,12 @@ In the future, if you'd like to learn or teach more on this subject, we recommen
 
 We hope you will all continue to use Git to track and share your work. We emphasized this and other free, open-source technologies because we believe digital humanists should do their part to encourage free and open access to information. We hope, if the copyright status of your materials allows, that you will continue to work in public in the future.
 
-We also hope you will continue to use (and promote) Best Practice for version control and project management in your future endeavors, as =this can greatly increase your [bus number](https://en.wikipedia.org/wiki/Bus_factor).
+We also hope you will continue to use (and promote) Best Practice for version control and project management in your future endeavors, as this can greatly increase your [bus number](https://en.wikipedia.org/wiki/Bus_factor).
 
 
 ##### Questions for feedback:
 * Could the first week stand on its own as an independent course?
 * How well did you feel prepared for weeks two and three?
-* 
 
 ## Week 2: Philcamp: Digital philology, creating a digital edition
 
@@ -49,7 +48,7 @@ Collation is a big part of many traditional editions, but is often thought of as
 These five steps are part of a computational pipeline, each of which takes input and creates output, which is then fed into the proceeding step.
 This philological pipeline can be implemented without understanding the way individual steps work, which means team members can work on different parts of the project without interfering with others.
 
-From a teaching perspective, this is advantageous for two reasons. First, collation is something many of you are probably looking to do as part of your research questions. Second, CollateX is a great example of a pipeline, upon which you can model other working pipelines in your projects.
+From a teaching perspective, this is advantageous for two reasons. First, collation is something many of you are probably looking to do as part of your research questions. Second, CollateX is a great example of a pipeline, upon which you can model other working pipelines in your projects. You can model pipelines other ways of course, but we happen to think this one is relevant and very cool.
 
 ### Text analytics with Mike
 
@@ -59,6 +58,11 @@ From a teaching perspective, this is advantageous for two reasons. First, collat
 
 Arguably these didn't become immediately relevant until the third week, but we tried to do software installation ahead of time (this meant putting out many fires, some fiercer than others). Ultimately, it was our intention to allow you time over the weekend to sit with XQuery before we dove into more difficult work in the third week.
 As you begin to adapt these materials into your own teaching, please learn from our mistakes and budget your time for software installation better than we did.
+
+### Questions for feedback
+* How would you plan to model and teach pipelines?
+* Did you find the pipeline development model was something you were already doing? How, and how does your new knowledge change that?
+* In future versions of this Institute, what other examples of a pipeline might we be able to use?
 
 ## Week 3: Pubcamp: Expressing the edition, digital publication
 
@@ -71,6 +75,9 @@ We intended the Pubcamp week not to teach you exactly how to publish your editio
 
 ### eXist-DB and XQuery (cont.)
 
+Building a web app, API, and publishing an edition are all tasks that we understand are way in your future. We chose to teach them here because some of you may have projects already built that could benefit from updates, while others may be far off still. We did not teach these complicated publication technologies to demonstrate exactly how you should do it, but to show a mindful, balanced approach to publication. You should think critically about whether an eXist-db database is for you, and you should research other options as well. But we wanted to show the steps one takes in making that decision and learning to implement it.
+
+We hope that you got everything you could from the XQuery lessons. We saw many people struggle, and then triumph after much hard work in review sessions. Know that this will be something you can expect throughout your career as a digital humanist, and that teaching technologies to others will improve your skills with them even more.
 
 ### Lightning talks
 
@@ -84,3 +91,7 @@ Issues of licensing and archiving are significantly more complicated when you pu
 We don't touch on those issues much here, though they're a considerable hurdle for any edition-making project. We don't go into much detail because everyone's case is different, and you have to research your particular case on your own.
 
 Instead, we offered an overview of the issues and how one might research to resolve them. We also encourage you to use Creative Commons licenses in the spirit of collaboration and building community.
+
+## Conclusions
+
+Thank you all for such a wonderful NEH Institute experience! Individual instructors will make their remarks, please feel free to ask questions as they do.
