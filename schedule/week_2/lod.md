@@ -21,7 +21,7 @@
 
 [Creative Commons licenses](https://creativecommons.org/choose/) are generally good for content. The less restrictive, the better. This obviously depends on copyright and what you’r allowed to do with the data (after all, you have to own the Copyright—or have the owner’s permission—in order to be able to apply a license). You should think about the code as well as the data. There are licenses that work better for code, such as the GNU GPL, Apache, and others; see <https://choosealicense.com/> for comparative information.
 
-Licensing involves cultural, political, and social decisions more than technological ones. What will the content owner allow? What will your institution allow? Funders will often insist on open licenses.
+Licensing involves cultural, political, and social decisions more than technological ones. In many cases, open-access, open-license is the best possible outcome. With regards to data related to indigenous peoples, there are often [community-implemented restrictions](https://responsibledata.io/2017/09/22/indigenous-peoples-responsible-data-readings/) designed to preserve cultural heritage. When choosing a license, you must ask: What will the content owner allow? What are your licensing goals? What will your institution allow? Funders will often insist on open licenses.
 
 
 ### 2. Stable URIs
@@ -45,7 +45,7 @@ This example links to a particular section of an HTML document. The protocol tel
 |--------|-----------|----|-------------------|
 |http|papyri.info|/search|STRING=(στρατηγ), no_caps=on, no_marks=on, target=text, DATE_MODE=LOOSE, DOCS_PER_PAGE=15|
 
-This example shows the use of _query parameters_ in a URL, and query paramters, which are commin search interfaces (such as the one above), *are* processed by the server, unlike fragment identifiers. In essence, the client is sending some information to the server, which is using it to tailor the response it returns. 
+This example shows the use of _query parameters_ in a URL, and query parameters, which are common search interfaces (such as the one above), *are* processed by the server, unlike fragment identifiers. In essence, the client is sending some information to the server, which is using it to tailor the response it returns. 
 
 Linked Data URLs tend to look more like a) `https://example.com/resource/123` than b) `https://example.com/resource?id=123`. Partly, this is just convention. What happens on the server before a request is answered is totally opaque to the client. The server could be simply reading a file off disk and sending the data to the client, or it could be retrieving data from one or more databases, combining it, transforming it, and then returning the result. In general though, URLs with parameters like (b) tend to be used for functions like search, and URLs like (a) tend to be used for naming and retrieving resources.
 
