@@ -123,7 +123,7 @@ Materials are organized by relevance to beginners (those just planning a project
 
 ## LOD / RDF / SPARQL
 * [RDF and SPARQL](../schedule/week_3/rdf_sparql.md)
-* [Linked Open Data (LOD)](../schedule/week_2/linked_open_data.md)
+* [Linked Open Data (LOD)](../schedule/week_2/lod.md)
 
 ## TEI stylesheets
 * [TEI Stylesheets GitHub](https://github.com/TEIC/Stylesheets#stylesheets)

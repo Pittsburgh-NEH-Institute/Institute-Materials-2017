@@ -6,7 +6,6 @@
 <desc>[Normalization and Soundex](2014-09-15_varna-collation.pptx.pdf)</desc>
 <desc>Integrating normalization with tokenization (open `Integrating_tokenization_and_normalization.ipynb` in Jupyter)</desc>
 <desc>Normalize your text: mini-hackathon</desc>
-<desc>[Linked open data](linked_open_data.md)</desc>
 <desc>Explore project planning questions</desc>
 <desc>Publishing on GitHub pages</desc>
 <desc>Customizing your edition with CSS and Javascript</desc>
