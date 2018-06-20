@@ -1,60 +1,63 @@
-# Linked Open Data
+# Linked Open Data (LOD)
 
-(summarized from https://www.w3.org/DesignIssues/LinkedData.html) 
+(summarized from <https://www.w3.org/DesignIssues/LinkedData.html>)
+
 1. Publish your data with an open license
 2. Use machine-readable formats
 3. Better, use machine-readable *open* formats
 4. And use open web standards to describe your data
-5. And best of all, do all the above and link to other people's data too
+5. And best of all, do all the above and link to other people’s data too
 
-#4 explicitly calls out the standards around the Resource Description Framework (RDF) and the query language defined for it, SPARQL. This are powerful and useful tools, but it's important not to put the cart before the horse. You should get your data in good shape before you start thinking about modeling it in RDF.
+\#4 explicitly calls out the standards around the [Resource Description Framework (RDF)](https://www.w3.org/standards/techs/rdf#w3c_all) and the query language defined for it, [SPARQL](https://www.w3.org/TR/sparql11-query/). These are powerful and useful tools, but it’s important not to put the cart before the horse. You need to get your data in good shape before you start thinking about modeling it in RDF.
 
-## The Foundations of Linked Open Data
+## The foundations of Linked Open Data
 
-* Open Licenses 
-  * Can people use our data once they've got it? Can they re-publish it? Build on it?
-* Stable URIs
-  * Can people link to our resources and expect they will stay available?
-* Open Standards 
-  * Will users be able to understand and use the formats I publish in for the foreseeable future?
-* Referenceable Data Resources 
-  * Can people link to the parts of the data they're interested in? Is everything hidden behind a search interface?
+1. **Open licenses:** Can people use our data once they’ve got it? Can they re-publish it? Build on it?
+1. **Stable URIs:** Can people link to our resources and expect they will stay available?
+1. **Open standards:** Will people be able to understand and use the formats we publish in for the foreseeable future?
+1. **Referenceable data resources:** Can people link to the parts of the data they’re interested in? Or is everything hidden behind a search interface?
 
-## Open Licenses
+## 1. Open licenses
 
-Creative Commons licenses are generally good for content. The less restrictive, the better. Obviously, this hinges on copyright and what you're actually allowed to do with the data. Remember, you have to own the Copyright (or have the owner's permission) in order to be able to apply a license. You should think about the code as well as the data. There are licenses that work better for code, such as the GNU GPL, Apache, or ?
+[Creative Commons licenses](https://creativecommons.org/choose/) are generally good for content. The less restrictive, the better. This obviously depends on copyright and what you’r allowed to do with the data (after all, you have to own the Copyright—or have the owner’s permission—in order to be able to apply a license). You should think about the code as well as the data. There are licenses that work better for code, such as the GNU GPL, Apache, and others; see <https://choosealicense.com/> for comparative information.
 
-These are cultural, political decisions more than technological ones. What will the content owner allow? What will your institution allow? Funders will often insist on open licenses.
+Licensing involves cultural, political, and social decisions more than technological ones. What will the content owner allow? What will your institution allow? Funders will often insist on open licenses.
 
 
-## Stable URIs
+## 2. Stable URIs
 
-"Cool URIs don't change." (https://www.w3.org/Provider/Style/URI) 
+“Cool URIs don't change.” (<https://www.w3.org/Provider/Style/URI>) 
 
-The linking part of this requires that we spend some time understanding how links work. It's not as simple as it may at first appear. URIs are Uniform Resource Identifiers—they *identify*, that is, name, resources on the Web. They may do this by giving us an address, in which case they are Locators (URLs) or by simply naming the resource (URNs). URIs deal only in basic ASCII text, so if you want, say, a Greek character in your URI, you have to escape it. RDF technologies add another layer with *Internationalized* Resource Indentifiers (IRIs), which can have Unicode characters in them. If we're going to link to things, we want a) there to be web resources we can link to—so that we can retrieve them by clicking on a link and b) we want those links to persist. If they're going to last, we probably want the form of our URIs not to be too dependent on the technology used to present them, which has some design implications.
+The linking part of this requires that we spend some time understanding how links work, which is not as simple as it may at first appear. URIs are _Uniform Resource Identifiers_—they *identify*, that is, name, resources on the Web. They may do this by giving us an address, in which case they are _Locators_ (_URL_s) or by simply naming the resource (_URN_s). URIs deal only in basic ASCII text, so if you need, for example, to include a Greek character in your URI, you have to escape it. RDF technologies add another layer with *Internationalized* Resource Indentifiers (_IRI_s), which can have Unicode characters in them. If we’re going to link to things, a) we want there to be web resources we can link to—so that we can retrieve them by clicking on a link, and b) we want those links to persist. If they’re going to last, we probably want the form of our URIs not to be too dependent on the technology used to present them, which has some design implications.
 
 ### URLs
+
 #### `https://digitallatin.github.io/guidelines/LDLT-Guidelines.html#apparatus-criticus`
 
 |protocol|server name|path|fragment identifier|
 |--------|-----------|----|-------------------|
 |https|digitallatin.github.io|/guidelines/LDLT-Guidelines.html|apparatus-criticus|
 
-This example links to a particular section of an HTML document. The protocol tells the client (whether that be a web browser or something else) how to retrieve it, the server name tells it what system to ask for the resource, the path, what to ask that system for. As far as the server is concerned, that's it. It ignores the fragment identifier part. If you're using a web browser, it will probably scroll to that section of the document, but what to do with that part of the URL is a client concern. You may have used web applications call "single page applications" where what you see in the browser is entirely dependent on the content of the fragment identifier. What this means is that there is code running in the browser that either fetches additional data or decides from the data it has what to display based on the fragment id. This is ok for someone using a browser, but less so for other types of client. To an archiving service, for example, a single-page app looks like just that, a single web page. Not a rich set of web resources.
+This example links to a particular section of an HTML document. The protocol tells the client (whether that be a web browser or something else) how to retrieve it, the server name tells it what system to ask for the resource, and the path, what to ask that system for. As far as the server is concerned, that’s it—that is, the server communication ignores the fragment identifier part. If you’re using a web browser, it will probably scroll to that section of the document, but what to do with the fragment identifier portion of the URL is a client concern. You may have used web applications called _single page applications_, where what you see in the browser is entirely dependent on the content of the fragment identifier. What this means is that there is code running in the browser that either fetches additional data or decides from the data it has what to display based on the fragment identifier. This meets the needs of a person using a browser, but less so for other types of client. To an archiving service, for example, a single-page application looks like just that, a single web page, and not a rich set of web resources.
 
 #### `http://papyri.info/search?STRING=(στρατηγ)&no_caps=on&no_marks=on&target=text&DATE_MODE=LOOSE&DOCS_PER_PAGE=15`
 |protocol|server name|path|query parameters|
 |--------|-----------|----|-------------------|
 |http|papyri.info|/search|STRING=(στρατηγ), no_caps=on, no_marks=on, target=text, DATE_MODE=LOOSE, DOCS_PER_PAGE=15|
 
-This example shows the use of query parameters in a URL. These *are* processed by the server. They're very common in search interfaces, such as the one above. In essence, the client is sending some information to the server, which is using it to tailor the response it sends. Linked Data URLs tend to look more like a) `https://example.com/resource/123` than b) `https://example.com/resource?id=123`. Partly, this is just convention. What happens on the server before a request is answered is totally opaque to the client. The server could be simply reading a file off disk and sending the data to the client, or it could be retrieving data from one or more databases, combining it, and then sending that. In general though, URLs with parameters like #b tend to be used for functions like search, and URLs like #a tend to be used for naming and retrieving resources.
+This example shows the use of _query parameters_ in a URL, and query paramters, which are commin search interfaces (such as the one above), *are* processed by the server, unlike fragment identifiers. In essence, the client is sending some information to the server, which is using it to tailor the response it returns. 
+
+Linked Data URLs tend to look more like a) `https://example.com/resource/123` than b) `https://example.com/resource?id=123`. Partly, this is just convention. What happens on the server before a request is answered is totally opaque to the client. The server could be simply reading a file off disk and sending the data to the client, or it could be retrieving data from one or more databases, combining it, transforming it, and then returning the result. In general though, URLs with parameters like (b) tend to be used for functions like search, and URLs like (a) tend to be used for naming and retrieving resources.
 
 ### URNs
+
 #### `urn:cts:latinLit:phi0830.phi001`
 
-URNs uniquely name resources, but they don't contain within them instructions for retrieving the named resources. So they have to be plugged in to some sort of resolution service for you to actually get the thing they name. That doesn't stop them from being useful as identifiers though. And sometimes you want to talk about things that are not web resources. The URN above uses the [CTS](http://www.homermultitext.org/hmt-doc/cite/cts-urn-overview.html) naming scheme to identify the *Eclogues* of a Latin poet named Calpurnius Siculus. There are several editions of these, some available on the web, but this doesn't name a particular one of those. It refers to the abstract idea or group of physical and digital works with this author and name.
+URNs uniquely _name_ resources, but they don’t contain within them instructions for retrieving the named resources. This means that they need to be plugged into some sort of resolution service if they are to return the thing they name. That doesn’t stop them from being useful as identifiers, though—not to mention that sometimes we need to talk about things that are not web resources. The URN above uses the [Canonical Text Services (CTS)](http://www.homermultitext.org/hmt-doc/cite/cts-urn-overview.html) naming scheme to identify the *Eclogues* of a Latin poet named Calpurnius Siculus. There are several editions of these texts, some available on the web, and the URN doesn’t name a particular edition. It refers instead to the abstract idea or group of physical and digital works with this author and title.
 
-So, to sum up, URIs can be used not just to get resources on the web, but to uniquely identify them too. We want resource URIs to persist, because no-one likes broken links, and so it's a good idea to think a bit about how to design them so that they're independent of the underlying implementation. This is partially a technological question, but has more to do with long-term sustainability and management. Having stable URIs means having control over your web infrastructure and being able to do things like set up redirects from one URI to another. Again, there are political and cultural questions here. Will your system admins cooperate and let you design your URIs? Will the stakeholders be able to agree on what data gets a URI?
+RESUME HERE
+
+To sum up, URIs can be used not just to get resources on the web, but to uniquely identify them too. We want resource URIs to persist, because no-one likes broken links, and so it's a good idea to think a bit about how to design them so that they're independent of the underlying implementation. This is partially a technological question, but has more to do with long-term sustainability and management. Having stable URIs means having control over your web infrastructure and being able to do things like set up redirects from one URI to another. Again, there are political and cultural questions here. Will your system admins cooperate and let you design your URIs? Will the stakeholders be able to agree on what data gets a URI?
 
 ## Open Standards
 
