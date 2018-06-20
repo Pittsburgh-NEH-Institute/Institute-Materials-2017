@@ -76,7 +76,7 @@ Standards are definitely a technological question, but here, too, other factors 
 
 ## 4. Referenceable resources
 
-Referenceable resources are information design issue. What things do you want to represent in your website? Ideally, everything you might want to refer to should have its own (stable) URL. 
+Referenceable resources are an information design issue. What things do you want to represent in your website? Ideally, everything you might want to refer to should have its own (stable) URL. 
 
 ### Examples
 
@@ -84,7 +84,7 @@ Referenceable resources are information design issue. What things do you want to
 * `http://example.com/document/456` (a document)
 * `http://example.com/document/456#ch1` (section in a larger document) or maybe `http://example.com/document/456/ch1` (chunked large document with referenceable sections)
 
-Another important design question has to do with the _opacity_ of your URIs. Should you refer to things using a human-readable name or a random id? Compare `http://papyri.info/ddbdp/p.fay;;110` (“P.Fay 110” is a citation to an edition of a papyrus in *Fayum towns and their papyri*, ed. B. P. Grenfell, A. S. Hunt, and D. G. Hogarth. London, 1900) to `http://papyri.info/hgv/10775`. These two URIs resolve to the same document, which aggregates information about the papyrus. `http://papyri.info/ddbdp/p.fay;;110` is the edition, and `http://papyri.info/hgv/10775` provides data about the source document and the edition. The Duke Databank of Documentary Papyri (DDbDP) has human-legible identifiers and the Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV) uses opaque numbers. There isn’t a single right or wrong answer here, but note that the DDbDP has to mint and redirect to a new URI when a new edition comes out, and HGV just has to update a record. Thi strategy may be acceptable, or even desirable, but it also demonstrates that choices about URIs have downstream implications that are worth thinking about.
+Another important design question has to do with the _opacity_ of your URIs. Should you refer to things using a human-readable name or a random id? Compare `http://papyri.info/ddbdp/p.fay;;110` (“P.Fay 110” is a citation to an edition of a papyrus in *Fayum towns and their papyri*, ed. B. P. Grenfell, A. S. Hunt, and D. G. Hogarth. London, 1900) to `http://papyri.info/hgv/10775`. These two URIs resolve to the same document, which aggregates information about the papyrus. `http://papyri.info/ddbdp/p.fay;;110` is the edition, and `http://papyri.info/hgv/10775` provides data about the source document and the edition. The Duke Databank of Documentary Papyri (DDbDP) has human-legible identifiers and the Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV) uses opaque numbers. There isn’t a single right or wrong answer here, but note that the DDbDP has to mint and redirect to a new URI when a new edition comes out, and HGV just has to update a record. This strategy may be acceptable, or even desirable, but it also demonstrates that choices about URIs have downstream implications that are worth thinking about.
 
 ## A recipe for usable Linked Open Data
 
