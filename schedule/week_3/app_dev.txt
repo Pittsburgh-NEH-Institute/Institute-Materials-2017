@@ -1,0 +1,45 @@
+# eXist-db Application Development “”
+
+## Why we use web apps
+
+- You’re already committed to an XML database, and you probably already know XQuery
+- You can export your app in a .xar file for use on other computers, or serve your application over the web
+- Data, processing, and presentation (model, control, and view) all happen in the same place (no PHP or ancillary servers)
+- Single programming language (and you probably already know XQuery)
+- Easier to control security?
+
+## Preliminary steps
+
+If you’ve never used eXist-db before, we recommend you follow [this tutorial](https://exist-db.org/exist/apps/doc/documentation.xml) for installation and basic XQuery.
+
+For more information, see eXist-db’s [Getting started with web application development](https://exist-db.org/exist/apps/doc/development-starter.xml) and [HTML templating module](https://exist-db.org/exist/apps/doc/templating.xml).
+
+## Initializing your webapp
+
+To create a new web app, open eXide and select “Applications”/“New application”.
+Then, select your preferences from the menu. We prefer the “Plain (using Bootstrap CSS)” template, as it affords you better views during development. Leave “Type of package” as “Application”. Name your target collection (the folder in which your app will live) whatever you'd like (avoiding spaces). The name can be any URI. In this example, we've used a real website associated with this project, but you can use any URI. If you aren't sure what to use, you can always go with `http://exist-db.org/yourname`.
+
+Next, give your app an abbreviation and a name, and leave everything else on this screen as is. Click Next to add your author name, description, and website. [Figure out what User thing does.]
+
+After you click “Done,” the file explorer box will prompt you to open a file in your app. For now, click index.html. After it opens in the eXide editor, open the webpage version by clicking the little arrow in the left-lower corner of the interface. {web app 5}
+
+Notice that this looks like a completely normal (though boring) website. We chose the Bootstrap CSS template so our website would appear this way during app development. You'll likely write your own CSS over this later on, but for now it makes everything look a little bit easier.
+
+There are two things on this page we want you to notice. The header, footer, and menu bar are all part of something called `page.html`. Everything else, which we will be calling content, is what actually appears in `index.html`. The template 
+
+## Web app file structure
+
+### Content page: `index.html`
+
+### Template page: `page.html`
+
+### How HTML templates
+
+### Program logic: `app.xql`
+
+## Your first content page: `hello.html`
+
+## Alternatives
+
+- XRX, betterFORM
+- TEIPublisher
