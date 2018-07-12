@@ -1322,7 +1322,7 @@
                 </act>
             </slot>
             <slot time="16:00:00">
-                <title>LOD and Editions</title>
+                <title>[LOD](lod.md) and editions</title>
                 <desc>Linked data principles</desc>
                 <act time="10" type="Presentation">
                     <desc>URIs as identifiers</desc>

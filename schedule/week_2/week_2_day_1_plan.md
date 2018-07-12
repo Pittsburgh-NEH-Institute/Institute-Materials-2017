@@ -1,14 +1,17 @@
 # Week 2, Day 1: Monday, July 17
 ## Synopsis
 
-Scholars create digital editions to serve research purposes that may differ from project to project. The first day of Week 2 begins by exploring the role in project planning of defining research goals (which includes defining *non-goals* in order to avoid *scope-creep*). From planning and research questions we move to modeling and structuring the digital edition workflow as a computational pipeline, encouraging a modular perspective on digital editing.
+Scholars create digital editions to serve research purposes that may differ from
+                project to project. The first day of Week 2 begins by exploring the role in project
+                planning of defining research goals (which includes defining *non-goals* in order to
+                avoid *scope-creep*). From planning and research questions we move to modeling and
+                structuring the digital edition workflow as a computational pipeline, encouraging a
+                modular perspective on digital editing.
 
 ## Outcome goals
-The program of the first day touches upon several important points.
-
-* Don’t touch that keyboard yet! Planning *your* edition starts with research questions
-* The place of data modeling in the workflow
-* Markup as an expression of a textual model and a data model; making the implicit explicit and machine-actionable
+* Don’t touch that keyboard! Planning *your* edition: starting with research questions
+* Where data modeling belongs in the workflow
+* Markup as an expression of a data model; making the implicit explicit and machine-actionable
 * The relationships among model, syntax, and markup semantics
 * How modeling reduces iterations of the document analysis → schema development → markup pipeline
 * XML looks like a string but it’s really a tree. What does this mean for modeling, markup, and querying or processing?
@@ -29,7 +32,7 @@ Time | Topic | Type
 10 min | [Overview of Week 2](topics.md) | Presentation
 30 min | Explore project planning questions | Discussion
 25 min | Apply project planning questions to your own project (individually or collaboratively) | Talk lab
-25 min | General discussion of **Talk lab** results | Discussion
+25 min | General discussion of Talk lab results | Discussion
 
 ## 10:30–11:00: Coffee break
 

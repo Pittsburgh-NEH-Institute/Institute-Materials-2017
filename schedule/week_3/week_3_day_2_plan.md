@@ -52,7 +52,7 @@ Time | Topic | Type
 
 ## 3:30–4:00: Coffee break
 
-## 4:00–5:30: LOD and Editions
+## 4:00–5:30: [LOD](lod.md) and editions
 
 Linked data principles
 
