@@ -15,6 +15,9 @@ Scholars create digital editions to serve research purposes that may differ from
 * The relationships among model, syntax, and markup semantics
 * How modeling reduces iterations of the document analysis → schema development → markup pipeline
 * XML looks like a string but it’s really a tree. What does this mean for modeling, markup, and querying or processing?
+* Version management: working with Git and GitHub
+
+
 ## Legend
 
 * **Presentation:** by instructors
@@ -51,7 +54,7 @@ Time | Topic | Type
 
 ## 2:00–3:30: Transcription with markup: XML
 
-How are documents like trees and how are they different? What is represented by the model alone (the XML tree), and what requires markup semantics (schema)? What’s hard in XML and how do we do it anyway?
+A digital project relies on good version management. In the Institute you learn to use Git and GitHub for version control and to better handle collaborative work. We dive deeper into data models for textual editing, focusing on the OHCO (tree) model of XML. How are documents like trees and how are they different? What is represented by the model alone (the XML tree), and what requires markup semantics (schema)? What’s hard in XML and how do we do it anyway?
 
 Time | Topic | Type
 ---- | ---- | ---- 

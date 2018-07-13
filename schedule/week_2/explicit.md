@@ -2,7 +2,7 @@
 
 ## Adding linguistic information to a text
 
-Consider the following sentence:
+Markup is famously referred to as a means to making explicit an interpretation of a text (see [Sperberg McQueen and Burnard 2004](http://www.tei-c.org/release/doc/tei-p4-doc/html/SG.html)). Consider the following sentence:
 
 ```
 Hamlet is a prince of Denmark.
@@ -26,11 +26,11 @@ One purposes of markup, then, can be understood as making the implicit explicit.
 
 ## Typography, layout, pseudo-markup; presentational and descriptive markup
 
-Sometimes information is already explicit, or, at least, partially so, through typographic or layout conventions. For example, paragraphs begin on new lines and may begin with indentation or be preceded by extra vertical space (e.g., a blank line), titles may be centered and embolded, etc. These particular examples are typically unambiguous to human readers, but not all typographic conventions are. For example, printed text may use italics for emphasis, for foreign words, for book titles, and in other meanings, with the result that the meaning may have to be disambiguated by the reader on the basis of pragmatic knowledge. This is a classic argument for the advantage of descriptive markup over presentational markup: a presentational element like `<italic>` leaves the meaning of the italics implicit, while descriptive elements like `<emphasis>` or `<foreign>` or `<bookTitle>` make it explicit.
+Sometimes information is already explicit, or, at least, partially so, through typographic or layout conventions. For example, paragraphs begin on new lines and may begin with indentation or be preceded by extra vertical space (e.g., a blank line), titles may be centered and embolded, etc. These particular examples are typically unambiguous to human readers, but not all typographic conventions are. For example, printed text may use italics for emphasis, for foreign words, for book titles, and in other meanings. As a result, the meaning may have to be disambiguated by the reader on the basis of pragmatic knowledge or contextual information. This is a classic example of the argument for the advantage of descriptive markup over presentational markup: a presentational element like `<italic>` leaves the meaning of the italics implicit, while descriptive elements like `<emphasis>` or `<foreign>` or `<bookTitle>` make it explicit.
 
 ## White space as pseudo-markup
 
-Except in linguistic studies it is unusual to tag the individual words of a text. One reason is that the definition of a word is not always unambiguous; for example, “didn’t” might be considered a single word orthographically, since it is delimited by white space, but NLTK will tokenize it as “did” and “n’t”, which is correct in a different way. But even where word tokenization is unambiguous, we often don’t treat (or perhaps even recognize) it as pseudo-markup. Barnard et al. make this clearer by reminding us that word spacing in European writing is a relatively recent orthographic convention:
+In linguistic studies it is unusual to tag the individual words of a text. One reason is that the definition of a word is not always unambiguous; for example, “didn’t” might be considered a single word orthographically, since it is delimited by white space, but NLTK will tokenize it as “did” and “n’t”, which is correct in a different way. But even where word tokenization is unambiguous, we often don’t treat (or perhaps even recognize) it as pseudo-markup. Barnard et al. make this clearer by reminding us that word spacing in European writing is a relatively recent orthographic convention:
 
 > Figure 1: Forms of markup.
 >
