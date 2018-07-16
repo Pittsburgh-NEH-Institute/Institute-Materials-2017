@@ -133,7 +133,7 @@ RDF can be serialized in different ways. The following two examples are showing 
 
 The RDF/XML example above consists of a number of statements.  An RDF statement is formed by a resource, a property, and a property value (known as a subject, a predicate, and an object respectively). Let's take a closer look at the following RDF statement:
 
-```
+```xml
 <rdf:Description rdf:about="https://www.example.com/rdf/corpus/gettysburg/lemma/nation">  
 <c:lemma>nation</c:lemma>
 ```
@@ -204,7 +204,7 @@ As far as the XML data model is concerned, element and attribute names are arbit
 
 The children of an XML element are always ordered in the XML data model, which is what we normally want, since, for example, if we change the order of paragraphs in a chapter, the meaning of the text in the document changes as well. But some items may not be inherently ordered, such as an abbreviation and its expansion or an error and its correction. The TEI uses a `<choice>` element to represent that the order between an `<orig>` and a `<reg>` is arbitrary. However, an XML parser cannot know that the order of the children of a `<choice>` element is different from the order of the paragraphs in a chapter. The same applies to software implementations that read the XML file. In other words, they do not see the difference between XML elements that are inherently ordered, like the `<p>`s in this `<div>` :
 
-```
+```xml
 <div type="chapter">
 	<p n="1">
 		<!-- some text here -->
@@ -217,33 +217,35 @@ The children of an XML element are always ordered in the XML data model, which i
 
 and XML elements that are not ordered, like the `<orig>` and the `<corr>` in the `<choice>` below:
 
-```
-<choice>What a
+```xml
+<s>What a 
+  <choice>
 	<sic>mitsake</sic>
-	<corr>mistake</corr> 
-	to make!
-</choice>
+	<corr>mistake</corr>
+  </choice>to make!
+</s>
+
 ```
 
 Again, you can express in the schema whether the order of sibling elements is informational or not, e.g., that the order of the siblings `<p n="1">` and `<p n="2">` in the example above _is_ informational, and the order of the siblings `<sic>` and `<corr>` is not. This information is however not part of the XML data model, within which siblings are always ordered. This means that, if an application needs to know that order is sometimes informational and sometimes not, you need to tell it. 
 
 ##### Order between XML attributes
 
-Similarly, attribute nodes on an element in the XML model are always unordered. If we think of attributes as properties of elements, we can compare them to property lists elsewhere in the world. For example, if you have blond hair and blue eyes, that’s the same as having blue eyes and blond hair, and the order in which those physical traits are expressed is not informational. Were we to express that information in XML, then the order of the attributes `"type"` and `"colour"` would not be informational:
+Similarly, attribute nodes on an element in the XML model are always unordered. If we think of attributes as properties of elements, we can compare them to property lists elsewhere in the world. For example, if you have blond hair and blue eyes, that’s the same as having blue eyes and blond hair, and the order in which those physical traits are expressed is not informational. Were we to express that information in XML, then the order of the attributes `"type"` and `"colour"` would not be informational, like in this hypothetical example:
 
-```
+```xml
 <hair type="curly" colour="blond">
 ```
 The character-level serialization of the XML must order the attributes because that’s what serialization does. Here, though, an XML processor knows that attribute order is not informational, and it will recognize that two documents that differ only in the order of attributes should nonetheless be considered informationally equal.
 
 To give an example, the following XML serialization:
 
-```
+```xml
 <del type="strikethrough" place="inline">
 ```
 is informationally equal to:
 
-```
+```xml
 <del place="inline" type="strikethrough">
 ```
 
