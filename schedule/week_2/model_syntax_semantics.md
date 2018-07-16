@@ -210,12 +210,12 @@ The children of an XML element are always ordered in the XML data model, which i
 		<!-- some text here -->
 	</p>
 	<p n="2">
-	<!-- some text here -->
+		<!-- some text here -->
 	</p>
 </div
 ```
 
-and XML elements that are not ordered, like the `<orig>` and the `<corr>` in the `<choice>` below:
+and XML elements that are not ordered, like the `<sic>` and the `<corr>` in the `<choice>` below:
 
 ```xml
 <s>What a 
