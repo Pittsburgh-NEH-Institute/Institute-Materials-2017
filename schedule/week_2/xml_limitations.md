@@ -31,7 +31,7 @@ The following line from Lewis Carroll’s *Alice in Wonderland* has a single spe
  
 In this example, XML is unable to tag the two parts of the quotation as a single element; instead it needs to consist of two `<q>` elements:
 
-```
+```xml
 <q>"and what is the use of a book,"</q> thought Alice <q>"without pictures or conversation?"</q>
 ```
 
@@ -43,12 +43,12 @@ Jeni Tennison writes:
 
 XML does not distinguish containment from dominance. Furthermore, if an entire paragraph consists of an entire quotation, in XML terms either the paragraph is a child of the quotation or vice versa: 
 
-```
+```xml
 <s><q>"And what is the use of a book, without pictures or conversation?"</q></s>
 ```
 or
 
-```
+```xml
 <q><s>"And what is the use of a book, without pictures or conversation?"</s></q>
 ```
 
@@ -96,7 +96,7 @@ Here, the XML model places the names "Romeo" and "Juliet" on a different hierarc
 
 With "scope of reference" we mean that we cannot explicitly mark the scope of XML elements like `<footnote>` or `<note>`. In the example below, it is not clear whether the footnote about David Young's study points to the preceding word(s), sentences, or to the entire paragraph:
 
-```
+```xml
 <p>
   <s>The myth of himself Yeats took such pains to manufacture, is repeatedly and faithfully taken up in biographical studies of his poetry.</s>
   <s>It is itself the golden bird of his <title>Byzantium</title> that artificial monument in which he figures his own mortality.</s>

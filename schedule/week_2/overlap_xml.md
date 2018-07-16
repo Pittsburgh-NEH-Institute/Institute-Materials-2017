@@ -1,6 +1,6 @@
 # Overlap in XML
 
-The examples below illustrate that the XML prohibition against overlap not only distorts the markup, but also complicates processing. The point of the XPath and XQuery examples is not as much to analyze the advanced features needed to process milestone workarounds as to demonstrate that processing overlapping structures represented by milestone workarounds is harder than processing regular XML “container” elements.
+The examples below illustrate that the XML prohibition against overlap not only distorts the markup, but also complicates processing. The point of the XPath and XQuery examples is not so much to analyze the advanced features needed to process milestone workarounds, but to demonstrate that processing overlapping structures represented by milestone workarounds is harder than processing regular XML “container” elements. In other words, the examples below illustrate why resorting to established workarounds is not always the best option. If you do use workarounds to capture complex textuel phenomena, then you need to be aware of the potential consequences for parsin, processing, and analyzing.
 
 ## Markup complications
 
@@ -25,7 +25,7 @@ Excerpt from TEI edition of [“Ozymandias”](ozymandias.xml):
 </p>
 ```
 
-Phrases and lines overlap. We can’t make both of them containers, so instead of the standard TEI `<lg>` (line group) and `<l>` (line) [wrapper markup of lines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COVE), we've used [wrapper markup of phrases](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/AI.html#AILC) (`<phr>`) and tagged the beginnings of lines with empty `<lb/>` (line beginning) milestones, but more appropriately understood as ‘line beginning’). We could, alternatively, have used regular wrapper tags for lines and milestones for phrases. What we can’t do straightforwardly, because of the XML prohibition against overlap, is use both `<l>` and `<phr>` unless we do some joining with attribute pointers, thus:
+Phrases and lines overlap. We can’t make both of them containers, so instead of the standard TEI `<lg>` (line group) and `<l>` (line) [wrapper markup of lines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COVE), we've used [wrapper markup of phrases](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/AI.html#AILC) (`<phr>`) and tagged the beginnings of lines with empty `<lb/>` (line beginning) milestones, but more appropriately understood as ‘line break'. We could, alternatively, have used regular wrapper tags for lines and milestones for phrases. What we can’t do straightforwardly, because of the XML prohibition against overlap, is use both `<l>` and `<phr>` unless we do some joining with attribute pointers, for example:
 
 ```xml
 <p>
