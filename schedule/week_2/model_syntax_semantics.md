@@ -66,7 +66,7 @@ struggled | 1
 
 Here is word cloud of the text:
 
-<img src="Images/gettysburg_word_cloud.png" width="99%" alt="[Gettysburg Address word cloud]"/>
+<img src="images/gettysburg_word-cloud.png" width="99%" alt="[Gettysburg Address word cloud]"/>
 
 The data model we employ to model the most frequent words is an ordered list, which is expressed above as a table (a serialization) and, graphically, as a word cloud. Both of these expressions represent properties of the individual words (text, frequency) and relationships among them (relative frequency). How does each do that? Only the word cloud has color; what does it represent, and is there anything analogous to color in the table? Both the table and the word cloud have to position the words with respect to one another; how does each representation use position to express information? How are ties represented in the two expressions? Does either expression impose artifactual features that are not part of the abstract model? What are the advantages and disadvantages of the two as representations of the abstract model of a frequency list? 
 
