@@ -60,7 +60,7 @@ To a human, a line of poetry with metrically strong syllables tagged, along the 
 <line>Two v<stress>a</stress>st and tr<stress>u</stress>nkless l<stress>e</stress>gs of st<stress>o</stress>ne</line>
 ```
 
-is a sequence of seven words with markup on strong syllables. But there is no graceful way to tag the words individually using XML processing because the white space does not delimit items that have been modeled in a machine-actionable way as content objects. From an XML perspective, the children of the `<line>` element are:
+is a sequence of seven words with markup on strong syllables. But there is no graceful way to tag the words individually using XML processing with XPath, because the white space does not delimit items that have been modeled in a machine-actionable way as content objects. From an XPath perspective, the children of the `<line>` element are:
 
 Node type | Value
 ---- | ----
@@ -74,7 +74,7 @@ Node type | Value
 `element(stress)` | o
 `text()` | ne
 
-See also the ["Making explicit"](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/explicit.md) section about white space as pseudo-markup.
+See also the ["Making explicit"](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/explicit.md) section about white space as pseudo-markup and the unit with instructions about XML processing with [XPath](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/xpath.md).
 
 ## Artifactual hierarchy
 
