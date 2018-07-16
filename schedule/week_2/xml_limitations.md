@@ -42,12 +42,12 @@ Jeni Tennison writes:
 XML does not distinguish containment from dominance. Furthermore, if an entire paragraph consists of an entire quotation, in XML terms either the paragraph is a child of the quotation or vice versa: 
 
 ```
-<s><q>"And what is the use of a book, without pictures or converstation?"</q></s>
+<s><q>"And what is the use of a book, without pictures or conversation?"</q></s>
 ```
 or
 
 ```
-<q><s>"And what is the use of a book, without pictures or converstation?"</s></q>
+<q><s>"And what is the use of a book, without pictures or conversation?"</s></q>
 ```
 
 This means that not only does XML not distinguish containment from dominance, but it also has no concept of coextensiveness other than a parent/child relationship that simultaneously and obligatorily expresses both containment and dominance.
