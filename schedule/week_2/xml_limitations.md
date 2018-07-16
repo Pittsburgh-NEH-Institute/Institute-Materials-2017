@@ -21,6 +21,8 @@ The phrase that begins on the second line continues onto the third, crossing the
 
 ```
 
+As you may well know, dealing with overlapping structures is a key issue for the text modeling and markup communities. We will therefore explore this topic further in the next unit: [Overlap in XML](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/overlap_xml.md).
+
 ## Discontinuity
 
 The following line from Lewis Carroll’s *Alice in Wonderland* has a single speech act divided by a narrative interpolation:

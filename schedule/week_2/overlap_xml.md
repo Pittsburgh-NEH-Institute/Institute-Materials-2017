@@ -346,7 +346,7 @@ When run against the poem, the output is:
    <phrase>and the heart that fed;</phrase>
    <phrase>And on the pedestal,</phrase>
    <phrase>these words appear:</phrase>
-   <phrase>My name is Ozymandias,</phrase>
+   <phrase>My name is Ozymandias,</phrase	>
    <phrase>King of Kings,</phrase>
    <phrase>Look on my Works,</phrase>
    <phrase>ye Mighty,</phrase>
