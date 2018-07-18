@@ -2,12 +2,15 @@
 
 ## What is an edition?
 
-* Edition as *digital workstation*
-* *Silicon paper*
-* The role of the interface; interface as scholarship
+In this section we discuss the following topics:
+
+* Conceptualizing the edition as a *digital workstation*
+* What we mean by *silicon paper*
+* The role of the interface of a digital edition; interface as scholarship
 * Reader-oriented theory of edition
 
 ## What goes into an edition?
+There are often multiple perspectives on the components of an edition.  For example, we can look at a manuscript as an object in itself, or as a witness to text. And what do we mean, exactly, when we talk about *text*? Take a look at the following, sometimes opposing concepts:
 
 * Manuscript as object ~ witness to text
 * Work ~ text ~ redaction
@@ -16,6 +19,8 @@
 * Documentary ~ analytical functions
 * Research result ~ research resource
 * Transcription principles
+
+A scholarly edition represents an editorial argument about a text. A *digital* scholarly edition can contain more (background) information about that argument and can offer more ways to explore that argument. This prompts workflow questions: what do you leave in, what do you leave out? How do you interlink the edition's content to make it available to an end-user?
 
 ## The traditional shape of the edition
 
