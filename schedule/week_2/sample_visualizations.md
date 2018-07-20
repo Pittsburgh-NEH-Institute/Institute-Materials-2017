@@ -70,7 +70,9 @@ CATview was developed by the [working group on eHumanities of the Computer Scien
 
 **URL:** <http://www.traviz.vizcovery.org/>
 
-<img src="Images/TRAViz.png" width="99%" alt="[TRAViz image]"/>  
+![Traviz](images/TRAViz.png)
+
+<!--<img src="Images/TRAViz.png" width="99%" alt="[TRAViz image]”/>-->
 
 TRAViz is a set of [JavaScript packages](https://github.com/stjaenicke/TRAViz) primarily intended to render variant graphs, and it offers an elaborate variant graph visualization. Among other things, TRAViz lets users interact with the graph and adjust it to match their needs and interests.
 
