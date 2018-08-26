@@ -2,6 +2,10 @@
 
 The following are selected editions prepared by members of our Institute. We define *digital edition* as ‘the digital publication of a text with editorial enhancement’. This is a broader definition than that employed by some other scholars within the digital editions community, such as [Patrick Sahle](http://www.digitale-edition.de/vlet-about.html) and [Greta Franzini](https://github.com/gfranzini/digEds_cat/wiki), whose focus is more specifically on editions that analyze variation during textual transmission. Institute participants are encouraged to contribute links for inclusion in this page, as a way of documenting the interests and accomplishments of our Institute community.
 
+## Susanna Allés Torrent
+
+[Vitae Illustrium Virorum](https://alfonsodepalencia.github.io/Vitae/) contains the first steps toward the conceptualization and implementation of a digital edition of a set of biographies written in Latin and translated into old Spanish during the fifteenth century. The edition is based on materials from my doctoral dissertation, “Parallelae sive Vitae Illustrium Virorum (Las Vidas de Plutarco, Sevilla, 1491). Estudio y edición crítica de la traducción de alfonso de Palencia de las vidas compuestas por Donato Acciaiuoli, Leonardo Bruni y Guarino Veronés”, defended at the University of Barcelona in 2012.
+
 ## Elisa Beshero-Bondar
 
 
@@ -17,6 +21,20 @@ and <https://github.com/ebeshero/Pittsburgh_Frankenstein/tree/master/collateXPre
 ## David J. Birnbaum
 
 In the [e-PVL](http://pvl.obdurodon.org/browser.xhtml), I use CollateX to create a word-level alignment of variant readings. The digital [Codex Suprasliensis](http://suprasliensis.obdurodon.org/) is a fairly traditional diplomatic/facsimile edition. For something more original, which uses graphic visualization to represent and explore themes across linguistic traditions, see the [Digenis Akritis: Greek and Slavic](http://digenis.obdurodon.org/) and [Daniel the Prisoner: A virtual florilegium](http://zatochnik.obdurodon.org/). The texts at the [Annotated Afanas′ev library](http://aal.obdurodon.org/) form a pedagogical edition, with linguistic and folkloric annotations.
+
+## Francesca Giovannetti
+
+[Paolo Bufalini. Appunti (1981–1991)](https://github.com/marilenadaquino/bufalinis-notebook)
+
+Between 1981 and 1991 Paolo Bufalini, Italian politician and renowned translator of Horace, kept a private notebook in which he gathered together his own thoughts, citations from Latin, Italian, and European classics, and translations. Bufalini’s aim was to reason about the history of literature, interpreting influences among his beloved authors and connecting their texts and ideas. The aim of the digital edition is to highlight all the aspects underpinning Bufalini’s network of citations, i.e., intertextuality and intratextuality.  
+
+We decided to experiment with using semantic web technologies in combination with TEI to:
+
+* represent inter/intratextual relations within a more expressive conceptual framework (ontologies vs schemas, graphs vs hierarchy);
+* integrate data, allowing knowledge discovery across editions and other cultural resources on the web;
+* make everything citable by associating persistent URIs with the entities composing the edition.
+
+Collaborators: Marilena Daquino, Francesca Giovannetti, Francesca Tomasi
 
 ## Brian Long
 
