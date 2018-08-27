@@ -38,7 +38,7 @@ Time | Topic | Type
 
 Time | Topic | Type
 ---- | ---- | ---- 
-25 min | Introducing CETEIcean / Publishing on GitHub Pages | Presentation
+25 min | [Introducing CETEIcean / Publishing on GitHub Pages](ceteicean.md) | Presentation
 20 min | Hands on | Code lab
 25 min | Next steps: Customizing your edition with CSS and Javascript | Talk lab
 20 min | Hands on | Code lab

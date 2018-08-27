@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/pitt.css" title="no title" charset="utf-8">
+    <script src="js/CETEI.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      let c = new CETEI();
+      // Functions that will be used by CETEIcean behaviors
+      
+      /* Check if the node in the first parameter has the element in the second as an ancestor
+         Used by prevUntil and nextUntil
+      */
+      let hasAncestor = function(node, elt) {
+        if (!node.parentElement) return false;
+        if (node.parentElement === elt) return true;
+        return hasAncestor(node.parentElement, elt);
+      }
+      /* EpiDoc uses <hi> to mark accentuation in the source document. E.g. 
+       * <hi rend="diaeresis">ἰ</hi>δίωι in line 2. The apparatus will need to print
+       * ϊδίωι (with a double dot above the first iota). This means we have to grab the
+       * text around the <hi>, which is unmarked. The following two functions help us do 
+       * that by looking backwards and forwards until they find the input string (a space).
+       * These could be made better by looking for word-break regexes (\b) instead of strings.
+       */
+      let prevUntil = function(node, str) {
+        /* JavaScript does XPath! Just in an incredibly clumsy way. See 
+         * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_using_XPath_in_JavaScript
+         */
+        let prev = document.evaluate("preceding::text()[not(parent::*/@data-original)][1]",node,null,XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue;
+        if (prev && hasAncestor(prev, node.parentElement)) {
+          if (prev.nodeValue.includes(str)) {
+            return prev.nodeValue.substring(prev.nodeValue.lastIndexOf(str));
+          } else {
+            return prevUntil(prev, str) + prev.nodeValue;
+          }
+        }
+        return "";
+      }
+      let nextUntil = function(node, str) {
+        let next = document.evaluate("following::text()[not(parent::*/@data-original)][1]",node,null,XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue;
+        if (next && hasAncestor(next, node.parentElement)) {
+          if (next.nodeValue.includes(str)) {
+            return next.nodeValue.substring(0,next.nodeValue.indexOf(str));
+          } else {
+            return next.nodeValue + nextUntil(next, str);
+          }
+      }
+        return "";
+      }
+      /* We need to indicate line numbers in the app. crit., but apparatus entries may sometimes
+       * span lines. This function figures out what line the input element occurs on, and
+       * whether it spans any additional line breaks.
+       */
+      let getLine = function(e) {
+        let textpart = document.evaluate("ancestor::tei-div[@type='textpart'][1]/@n",e,null,XPathResult.STRING_TYPE,null).stringValue;
+        let line = document.evaluate("preceding::tei-lb[1]/@n",e,null,XPathResult.STRING_TYPE,null).stringValue;
+        let result = textpart + "." + line;
+        let lb;
+        if (lb = e.querySelector("tei-lb")) {
+          result += "–" + lb.getAttribute("n");
+        }
+        return result;
+      }
+      // Now we add the behaviors
+      c.addBehaviors({
+        "tei": {
+          "app": [
+            /* The CSS tells the browser what to do with <app> in the text,
+             * but in the apparatus, it needs to do some other stuff. We
+             * can test for <tei-app>s that have been copied into the apparatus
+             * <div> added below (see "Build apparatus").
+             */
+            ["div.apparatus tei-app", function(elt) {
+              if (elt.querySelector("tei-lem").querySelector("tei-hi")) {
+                let tmp = document.createElement("div");
+                let result = document.createElement("span");
+                tmp.setAttribute("class","apparatus");
+                let copy = this.copyAndReset(elt);
+                this.attach(tmp, "appendChild", copy);
+                tmp.innerHTML = tmp.firstChild.innerHTML;
+                result.innerHTML = tmp.innerHTML + " : " + tmp.querySelector("tei-lem>span[data-original]").innerHTML + " papyrus";
+                return result;
+              }
+            }
+          ]],
+          "div": [
+            ["[type=textpart]", ["<div><h2 class=\"textpart\">$@n</h2>","</div>"]]
+          ],
+          "ex": [
+            ["tei-expan>tei-ex", ["(",")"]]
+          ],
+          /* <gap>s should print an underdot for each missing character, a number given
+           * by @quantity, so if quantity="3", print " ̣ ̣ ̣". The functions here are a bit
+           * repetitive. Can you consolidate them into a single function called by both 
+           * behaviors?
+           */
+          "gap": [
+            ["[reason=lost][unit=character]", function(elt) {
+              let tmp = document.createElement("span");
+              tmp.innerHTML = "[" + this.repeat(" ̣", Number.parseInt(elt.getAttribute("quantity"))) + "]";
+              return tmp;
+            }],
+            ["[reason=illegible][unit=character]", function(elt) {
+              let tmp = document.createElement("span");
+              tmp.innerHTML = this.repeat(" ̣", Number.parseInt(elt.getAttribute("quantity")));
+              return tmp;
+            }]
+          ],
+          "hi": [
+            /* Matches <hi> in the text and adds an attribute with the word surrounding it,
+             * including the rendered diaeresis. How would we support other kinds of accent?
+             */
+            ["tei-ab tei-hi[rend=diaeresis]", function(elt) {
+              let tmp = "";
+              let prev = prevUntil(elt," ");
+              if (/\S/.test(prev)) {
+                tmp = prev;
+              }
+              tmp += elt.innerHTML.normalize("NFD").replace(/[\u0300-\u036F]/g, "") + "\u0308";
+              let next = nextUntil(elt, " ");
+              if (/\S/.test(next)) {
+                tmp += next;
+              }
+              elt.setAttribute("data-hi-tmp",tmp);
+            }],
+            // Deal with <tei-hi> in the apparatus
+            ["div.apparatus>p>tei-hi[rend]", function(elt) {
+              let tmp = document.createElement("span");
+              tmp.innerHTML = elt.getAttribute("data-hi-tmp") + " papyrus";
+              return tmp;
+            }],
+            /* <hi> can occur on its own, but it might also be in an apparatus lemma,
+             * so we have to deal with that separately.
+             */
+            ["div.apparatus tei-lem tei-hi", function(elt) {
+              let tmp = document.createElement("span");
+              tmp.innerHTML = elt.innerHTML.normalize("NFD").replace(/[\u0300-\u036F]/g, "") + "\u0308";
+              return tmp;
+            }]
+          ],
+          "lb": [
+            // Don't print line break on the first line
+            ["tei-ab>tei-lb:first-child", [""]],
+            /* Line breaks in the apparatus are rendered with a solidus (|) rather than
+             * a new line.
+             */
+            ["div.apparatus tei-lb", ["|"]],
+            // This is a default option that will run if the other two don't match
+            ["_", function(elt) {
+              let tmp = document.createElement("span");
+              // hyphenate word-breaking <lb>s
+              if (elt.hasAttribute("break")) {
+                tmp.innerHTML = "-"
+              }
+              // Print the line number every five lines
+              let n = elt.getAttribute("n");
+              tmp.innerHTML += "<br>";
+              if (n % 5 == 0 || isNaN(n)) {
+                tmp.innerHTML += "<span class=\"linenum\">" + n + "</span>";
+              }
+              return tmp;
+            }]
+          ],
+          "lem": [
+            ["div.apparatus tei-lem", function(elt) {
+              let tmp = document.createElement("span");
+              tmp.innerHTML = elt.getAttribute("resp") + " : ";
+              return tmp;
+            }]
+          ],
+          "rdg": [
+            ["div.apparatus tei-rdg", ["", " prev. ed."]],
+          ],
+          "reg": [
+            ["div.apparatus tei-choice>tei-reg", ["l. ","."]],
+          ],
+          "supplied": [
+            ["[reason=lost]", ["[","]"]],
+            ["[reason=omitted]", ["&lt;","&gt;"]]
+          ],
+          // <unclear> gets a dot under each letter
+          "unclear": function(elt) {
+            let tmp = document.createElement("span");
+            tmp.innerHTML = elt.innerHTML.replace(/(.)/g, "$1\u0323");
+            return tmp;
+          }
+        }
+      });
+      /* The function given in the second parameter of getHTML5() is a function
+       * that will be called after the document referenced in the first parameter
+       * has been processed. So it's here that we tidy stuff up and make our 
+       * apparatus <div>.
+       */
+      c.getHTML5('p.fay.110.xml', function(data) {
+        document.getElementsByTagName("body")[0].appendChild(data);
+        // Clean up spacing
+        for (let e of document.querySelectorAll("tei-lb")) {
+          if (e.previousSibling && e.previousSibling.nodeType === Node.TEXT_NODE) {
+            e.previousSibling.nodeValue = e.previousSibling.nodeValue.replace(/\s+$/,"");
+          }
+        }
+        // Build apparatus
+        let apparatus = document.createElement("div");
+        apparatus.setAttribute("class","apparatus");
+        apparatus.innerHTML = "<h2>Apparatus</h2>";
+        for (let e of data.querySelectorAll("tei-app,tei-hi,tei-choice")) {
+          if (e.offsetParent !== null && !e.matches("tei-app tei-hi")) {
+            let p = document.createElement("p");
+            apparatus.appendChild(p);
+            p.innerHTML = "<span>" + getLine(e) + ".</span> ";
+            let foo = c.copyAndReset(e);
+            p.appendChild(foo);
+          }
+        }
+        c.attach(document.getElementsByTagName("body")[0], "appendChild", apparatus);
+        // Clean up adjacent ][
+        let tmp = document.evaluate("//tei-text//span[not(@data-original)]/text()",document,null,XPathResult.ORDERED_NODE_ITERATOR_TYPE,null);
+        let spans = [];
+        let n;
+        while (n = tmp.iterateNext()) {
+          spans.push(n);
+        }
+        for (let i = 0; i < spans.length; i++) {
+          if (spans[i].nodeValue.endsWith("]") && spans[i+1] && spans[i+1].nodeValue.startsWith("[")) {
+            spans[i].nodeValue = spans[i].nodeValue.replace(/\]$/, "");
+            spans[i+1].nodeValue = spans[i+1].nodeValue.replace(/^\[/, "");
+          }
+        }
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
