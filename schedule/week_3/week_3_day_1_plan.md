@@ -34,11 +34,11 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: Introducing CETEIcean / Publishing on GitHub Pages
+## 2:00–3:30: [Introducing CETEIcean / Publishing on GitHub Pages](pitt_ceteicean/index.html)
 
 Time | Topic | Type
 ---- | ---- | ---- 
-25 min | [Introducing CETEIcean / Publishing on GitHub Pages](ceteicean.md) | Presentation
+25 min | Introducing CETEIcean / Publishing on GitHub Pages | Presentation
 20 min | Hands on | Code lab
 25 min | Next steps: Customizing your edition with CSS and Javascript | Talk lab
 20 min | Hands on | Code lab
