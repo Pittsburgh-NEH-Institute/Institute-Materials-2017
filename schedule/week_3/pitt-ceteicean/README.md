@@ -2,4 +2,4 @@
 
 ## Instructions
 
-See <../ceteicean.md>.
+See [../ceteicean.md](../ceteicean.md).
