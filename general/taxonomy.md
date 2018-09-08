@@ -5,7 +5,7 @@ Materials are organized by relevance to beginners (those just planning a project
 
 ## Project planning
 * [Project planning guide](../schedule/week_2/project_planning.md)
-* [Computational pipelines](../../schedule/week_2/computational_pipeline.md)
+* [Computational pipelines](../schedule/week_2/computational_pipeline.md)
 
 ## Git
 * [Git resources page](../schedule/week_1/git_resources.md)
@@ -123,7 +123,7 @@ Materials are organized by relevance to beginners (those just planning a project
 
 ## LOD / RDF / SPARQL
 * [RDF and SPARQL](../schedule/week_3/rdf_sparql.md)
-* [Linked Open Data (LOD)](../schedule/week_2/lod.md)
+* [Linked Open Data (LOD)](../schedule/week_3/lod.md)
 
 ## TEI stylesheets
 * [TEI Stylesheets GitHub](https://github.com/TEIC/Stylesheets#stylesheets)

@@ -10,7 +10,7 @@ You should get off in the Oakland neighborhood of Pittsburgh, at the corner of F
 
 ### Super Shuttle 
 
-[Super Shuttle](www.supershuttle.com) is a shared-ride van service that you can book ahead [online](https://www.supershuttle.com/locations/pittsburghpit/), via phone (1 800-258-3826), or in person at the airport upon arrival. One way trips are $26 (not including gratuity), and you can book round trips as well. List your arrival destination as “Litchfield Towers” and follow directions to Panther Central below.
+[Super Shuttle](https://www.supershuttle.com) is a shared-ride van service that you can book ahead [online](https://www.supershuttle.com/locations/pittsburghpit/), via phone (1 800-258-3826), or in person at the airport upon arrival. One way trips are $26 (not including gratuity), and you can book round trips as well. List your arrival destination as “Litchfield Towers” and follow directions to Panther Central below.
 
 ### Taxi
 

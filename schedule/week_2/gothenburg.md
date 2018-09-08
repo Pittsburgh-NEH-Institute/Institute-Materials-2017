@@ -3,7 +3,7 @@
 GM emerged from a 2009 symposium within the frameworks of the EU-funded research projects COST Action 32 and Interedition, the output of which was the modularization of the study of textual variance into five stages:
 
 1. [tokenization](tokenization.md)
-2. [normalization](normalization.md)
+2. normalization
 3. [alignment](alignment.md)
 4. [analysis](analysis.md)
 4. visualization

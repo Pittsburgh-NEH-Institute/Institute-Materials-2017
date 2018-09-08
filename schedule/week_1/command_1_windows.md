@@ -9,10 +9,6 @@
 
 __________
 
-## Setup
-* Download the zip file from the Software Carpentry's [Setup page](http://swcarpentry.github.io/shell-novice/setup/). 
-
-
 ## What is the *shell*? Why and how do we use it?
 
 * The *shell* is a program that runs other programs, typically in a Unix environment. <!--Emphasize that the shell is still a program, which takes input and gives output. The input is a command, though, so it seems as though we’re doing something different. In reality, using command line is no different than using any other program.-->

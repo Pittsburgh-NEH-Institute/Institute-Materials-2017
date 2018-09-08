@@ -8,7 +8,7 @@ Comparative visualizations are designed to explore textual variation.
 
 ### Commentary on the Sentences by Petrus Plaoul
 
-**URL:** <http://petrusplaoul.org/text/questions/plaoulcommentary>
+**URL:** <http://petrusplaoul.org/text/questions/plaoulcommentary/>
 
 <img src="images/petrus.png" width="99%" alt="[Daniel image]"/>
 
