@@ -4,11 +4,11 @@
 
 ### What is LMNL
 
-LMNL (Layered markup and annotation language) is a data model based on the expression of *ranges* over strings of *atoms*, which are typically characters. LMNL may be expressed using *sawtooth* syntax, where `[stuff}` and `{stuff]` are the start and end tags for a range that has the `name` property value “stuff”. 
+We briefly mentioned LMNL in the unit about [other data models](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/other_models.md). LMNL stands for "Layered Markup and Annotation Language" and is a data model based on the expression of *ranges* over strings of *atoms*, which are typically characters. LMNL may be expressed using *sawtooth* syntax, where `[stuff}` and `{stuff]` are the start and end tags for a range that has the `name` property value “stuff”. 
 
 ### LMNL in our Institute
 
-LMNL is a young technology that (like TAG) does not have the infrastructure support (tools, community, etc.) of XML. We introduce it in the Institute because the unfamiliarity makes us work more slowly and more carefully, and focuses our attention on the relationship between model and markup. 
+LMNL is a young technology that (like TAG) does not have the infrastructure support (tools, community, etc.) of XML. We introduce it in the Institute because the unfamiliarity makes us work more slowly and more carefully, and focuses our attention on the relationship between model and markup. What is more, LMNL provide a means to easily model structures that overlap.
 
 ## Working with LMNL
 
@@ -20,7 +20,7 @@ Range tags behave differently from XML element tags because LMNL ranges are allo
 On his own farm. He’s boss. But as to hens:  
 We fence our flowers in and the hens range.
 
-The three lines correspond to two sentences. As we saw when we examined Percy Bysshe Shelley’s “Ozymandias” in XML, it isn’t possible to tag both lines and sentences with TEI `<l>` and `<s>` elements because the two hierarchies overlap.
+The three lines correspond to two sentences. As we saw when we examined Percy Bysshe Shelley’s [“Ozymandias” in XML](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/overlap_xml.md), it isn’t possible to tag both lines and sentences with TEI `<l>` and `<s>` elements because the two hierarchies overlap.
 
 Overlap isn’t a problem in LMNL because, as we note above, LMNL ranges are permitted to overlap:
 
@@ -49,7 +49,7 @@ Annotations have the same delimiters as ranges, but annotations are stored insid
 
 ### Markup and annotation on annotation text
 
-LMNL annotation text, unlike the values of XML attributes, may be marked up. Here is an expansion of the preceding example, where metadata is provided in annotations, the text of which is marked up and annotated:
+LMNL annotation text, unlike the values of XML attributes, may be marked up. Here is an expansion of the preceding example, where metadata is provided in annotations on the `[excerpt}` range, the text of the metadata being marked up and annotated:
 
 ```
 [excerpt}
@@ -74,7 +74,7 @@ In this case there are two annotations on the `[excerpt}` range, and they are sp
 
 Open a [plain text version of “Ozymandias”](ozymandias.txt) in a plain text editor, such as Notepad++ or BBEdit and tag it in LMNL for the same features as you used with XML (e.g., lines, sentences, phrases, speakers, words, feet, syllables, stress). We’d suggest starting with lines and phrases, which overlap. 
 
-Tagging in LMNL is more challenging than tagging in XML not only because of the unfamiliarity, but also because we don’t have a validating LMNL editor (comparable to using \<oXygen/\> to edit XML), which means that it’s easy to make an error without realizing it. The repo contains a copy of [“Ozymandias with well-formed LMNL markup”](ozymandias.lmnl) , which you can use for comparison, but 1) you don’t have to use the same range names as our example, and 2) you don’t have to tag for all of the same features.
+Tagging in LMNL is more challenging than tagging in XML not only because of the unfamiliarity, but also because we don’t have a validating LMNL editor (comparable to using \<oXygen/\> to edit XML), which means that it’s easy to make an error without realizing it. The repo contains a copy of [“Ozymandias with well-formed LMNL markup”](ozymandias.lmnl) , which you can use for comparison, but 1) you don’t have to use the same range names as our example, and 2) you don’t have to tag all of the same features. The main point of this exercise is to get you thinking about what and how you would tag if you are not working in XML and if you do not have to worry about overlap.
 
 ## Optional: LMNL well-formedness checking
 

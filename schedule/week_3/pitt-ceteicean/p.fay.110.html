@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/pitt.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/CETEI.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      let c = new CETEI();
+      // Try loading the source file from its remote source instead: https://papyri.info/ddbdp/p.fay;;110/source
+      c.getHTML5('p.fay.110.xml', function(data) {
+        document.getElementsByTagName("body")[0].appendChild(data);
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

@@ -2,7 +2,7 @@
 
 ## Adding linguistic information to a text
 
-Consider the following sentence:
+Markup is famously referred to as "a means to making explicit an interpretation of a text" (see [Sperberg McQueen and Burnard 2004](http://www.tei-c.org/release/doc/tei-p4-doc/html/SG.html)). To understand what is meant with this, consider the following sentence:
 
 ```
 Hamlet is a prince of Denmark.
@@ -22,15 +22,17 @@ A speaker of English can identify the parts of speech of each word in this sente
 </p>
 ```
 
-One purposes of markup, then, can be understood as making the implicit explicit. 
+One purpose of markup, then, can be understood as making the implicit explicit. 
 
 ## Typography, layout, pseudo-markup; presentational and descriptive markup
 
-Sometimes information is already explicit, or, at least, partially so, through typographic or layout conventions. For example, paragraphs begin on new lines and may begin with indentation or be preceded by extra vertical space (e.g., a blank line), titles may be centered and embolded, etc. These particular examples are typically unambiguous to human readers, but not all typographic conventions are. For example, printed text may use italics for emphasis, for foreign words, for book titles, and in other meanings, with the result that the meaning may have to be disambiguated by the reader on the basis of pragmatic knowledge. This is a classic argument for the advantage of descriptive markup over presentational markup: a presentational element like `<italic>` leaves the meaning of the italics implicit, while descriptive elements like `<emphasis>` or `<foreign>` or `<bookTitle>` make it explicit.
+Sometimes information is already explicit, or, at least, partially so, through typographic or layout conventions. For example, paragraphs begin on new lines and may begin with indentation or be preceded by extra vertical space (e.g., a blank line), titles may be centered and embolded, etc. These particular examples are typically unambiguous to human readers, but not all typographic conventions are: printed text may use italics for emphasis, for foreign words, for book titles, and in other meanings. As a result, the meaning may have to be disambiguated by the reader on the basis of pragmatic knowledge or contextual information. A computer, of course, doesn't have these means of disambiguation: the only information it has is what we provide.
+
+This is a classic example of the argument for the advantage of descriptive markup over presentational markup: a presentational element like `<italic>` leaves the meaning of the italics implicit, while descriptive elements like `<emphasis>` or `<foreign>` or `<bookTitle>` make it explicit.
 
 ## White space as pseudo-markup
 
-Except in linguistic studies it is unusual to tag the individual words of a text. One reason is that the definition of a word is not always unambiguous; for example, “didn’t” might be considered a single word orthographically, since it is delimited by white space, but NLTK will tokenize it as “did” and “n’t”, which is correct in a different way. But even where word tokenization is unambiguous, we often don’t treat (or perhaps even recognize) it as pseudo-markup. Barnard et al. make this clearer by reminding us that word spacing in European writing is a relatively recent orthographic convention:
+In linguistic studies it is unusual to tag the individual words of a text. One reason is that the definition of a word is not always unambiguous; for example, “didn’t” might be considered a single word orthographically, since it is delimited by white space, but NLTK will tokenize it as “did” and “n’t”, which is correct in a different way. But even where word tokenization is unambiguous, we often don’t treat (or perhaps even recognize) it as pseudo-markup. <!--- Barnard et al.--> Coombs et al. make this clearer by reminding us that word spacing in European writing is a relatively recent orthographic convention:
 
 > Figure 1: Forms of markup.
 >
@@ -95,4 +97,6 @@ In this situation, tagging the words makes the overlap a syntactic problem, but 
 
 ## Sources
 
-The *scriptio continua* example is from David Barnard, Ron Hayter, Maria Karababa, George Logan, and John McFadden, “SGML-based markup for literary texts: two problems and some solutions.” *Computers and the humanities*, Vol. 22, No. 4 (1988), pp. 265–76. <http://www.jstor.org/stable/30200136>. White space as pseudo-markup is discussed in the section headed “Tokenizing mixed content” in David J. Birnbaum and Elise Thorsen, “Markup and meter: Using XML tools to teach a computer to think about versification.” Presented at Balisage: The Markup Conference 2015, Washington, DC, August 11-14, 2015. In *Proceedings of Balisage: The Markup Conference 2015.* Balisage Series on Markup Technologies, vol. 15 (2015). DOI: 10.4242/BalisageVol15.Birnbaum01. <https://www.balisage.net/Proceedings/vol15/html/Birnbaum01/BalisageVol15-Birnbaum01.html>
+The *scriptio continua* example is from <!--- David Barnard, Ron Hayter, Maria Karababa, George Logan, and John McFadden, “SGML-based markup for literary texts: two problems and some solutions.” *Computers and the humanities*, Vol. 22, No. 4 (1988), pp. 265–76. <http://www.jstor.org/stable/30200136>--> Coombs, James H., Allen H. Renear, and Steven J. DeRose. "Markup systems and the future of scholarly text processing." Communications of the ACM 30.11 (1987): 933-947. <https://vision.unipv.it/stm-cim/articoli/p933-coombs.pdf>
+
+White space as pseudo-markup is discussed in the section headed “Tokenizing mixed content” in David J. Birnbaum and Elise Thorsen, “Markup and meter: Using XML tools to teach a computer to think about versification.” Presented at Balisage: The Markup Conference 2015, Washington, DC, August 11-14, 2015. In *Proceedings of Balisage: The Markup Conference 2015.* Balisage Series on Markup Technologies, vol. 15 (2015). DOI: 10.4242/BalisageVol15.Birnbaum01. <https://www.balisage.net/Proceedings/vol15/html/Birnbaum01/BalisageVol15-Birnbaum01.html>

@@ -2,7 +2,7 @@
 
 ## Data model
 
-A data model is an abstract understanding of structure, independently of its representation. For example, a list may be represented as bullet points:
+A data model is an abstract understanding of structure, independently of its representation. For example, a list is a data model that may be represented in different ways. As bullet points:
 
 ```
 • Curly
@@ -20,14 +20,15 @@ or in other ways, but it is still a list of three stooges.
 
 ## Syntax
 
-We use the terms *syntax* and *serialization* to refer to textual *expressions* of a model. Information structured according to a model may be *serialized* as textual characters that are governed by syntactic rules. For example (and we’ll return to this later today), the XML data model is a tree, but the textual serialization of XML is a string of characters that include angle brackets, with syntactic rules that govern the use of the angle brackets in a way that enables them to express the tree structure. Information being modeled may also be expressed graphically; technically this is not a serialization because the term *serialization* means ‘as a sequence (i.e., *series*) of characters’, but it is nonetheless an expression of an abstract model.
+We use the terms *syntax* and *serialization* to refer to textual *expressions* of a model. Information structured according to a model may be *serialized* as textual characters that are governed by syntactic rules. For example (and we’ll return to this later today), the XML data model is a tree, but the textual serialization of XML is a string of characters that include angle brackets, with syntactic rules that govern the use of the angle brackets in a way that enables them to express the tree structure. Information being modeled may also be expressed graphically; a fragment of an XML transcription may be represented as a tree. Technically this graphical representation is not a serialization because the term *serialization* means ‘as a sequence (i.e., *series*) of characters’, but it is nonetheless an expression of an abstract model.
 
+By means of illustration, let's take a look at the different ways to serialize a data model. The sections below take as example a list and and RDF graph. 
 
 ### Alternative representations of a list
 
 As was noted above, a list (in the case below, of the most frequent words in a document) is a model that may be serialized or otherwise represented in different ways. An ordered rendering (in the stooge example above, vertical and bulleted or horizontal and comma-separated) is one approach to serialization. In the example below we contrast a textual serialization and a graphic representation of the same abstract word frequency list. 
 
-Here is the text of Abraham Lincoln’s Gettysburg Address (we removed punctuation and converted everything to lower case before generating frequency lists and word clouds):
+Here is the text of Abraham Lincoln’s _Gettysburg Address_ (we removed punctuation and converted everything to lower case before generating frequency lists and word clouds):
 
 > Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.  
 Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.  
@@ -65,18 +66,21 @@ struggled | 1
 
 Here is word cloud of the text:
 
-<img src="images/gettysburg_word_cloud.png" width="99%" alt="[Gettysburg Address word cloud]"/>
+<img src="images/gettysburg_word-cloud.png" width="99%" alt="[Gettysburg Address word cloud]"/>
 
 The data model we employ to model the most frequent words is an ordered list, which is expressed above as a table (a serialization) and, graphically, as a word cloud. Both of these expressions represent properties of the individual words (text, frequency) and relationships among them (relative frequency). How does each do that? Only the word cloud has color; what does it represent, and is there anything analogous to color in the table? Both the table and the word cloud have to position the words with respect to one another; how does each representation use position to express information? How are ties represented in the two expressions? Does either expression impose artifactual features that are not part of the abstract model? What are the advantages and disadvantages of the two as representations of the abstract model of a frequency list? 
 
-[Text of the Bliss copy of Abraham Lincoln’s Gettysburg Address is from <http://www.abrahamlincolnonline.org/lincoln/speeches/gettysburg.htm>. The frequency list was generated at <http://www.wordcounter.com/>, with stop words removed. The Word Cloud was generated at <https://www.jasondavies.com/wordcloud/> using default values.]
+#### Bibliographical information
 
+Text of the Bliss copy of Abraham Lincoln’s _Gettysburg Address_ is from <http://www.abrahamlincolnonline.org/lincoln/speeches/gettysburg.htm>. The frequency list was generated at <http://www.wordcounter.com/>, with stop words removed. The Word Cloud was generated at <https://www.jasondavies.com/wordcloud/> using default values.
 
-### Alternative serializations of RDF
+### Alternative representations of RDF
 
-_Resource Description Framework_ (RDF) is a _framework for describing resources on the web_. It is a part of the W3C's _Semantic Web_ Activity. RDF is designed to be read and understood by computers, not displayed to people. RDF is written in XML for easy _exchange_ between systems so it can still be read by people. It also has other serializations. RDF uses Web identifiers (_URIs_) to _identify_ resources. It describes them with _properties_ and _property values_.
+_Resource Description Framework_ (RDF) is a _framework for describing resources on the web_. It is a part of the W3C's _Semantic Web_ Activity. RDF is designed to be read and understood by computers, not displayed to people. 
 
-It this case we are using the derived _properties_ (word/lemma frequencies) of the Gettysburg Address (_the resource_).    
+Still, it is worthwhile to be able to read RDF. For that reason RDF is written in XML for easy _exchange_ between systems so it can still be read by people. It also has other serializations. 
+
+Let's return to the text of the _Gettysburg Address_. RDF uses Web identifiers (_URIs_) to _identify_ resources. It describes them with _properties_ and _property values_. It this case we are using the derived _properties_ (word/lemma frequencies) of the Gettysburg Address (_the resource_). 
 
 RDF can be serialized in different ways. The following two examples are showing one serialization in XML and the second in JSON-LD (JSON linked data). In both serializations we see specific keywords which are not in the other serialization: 
 
@@ -127,6 +131,19 @@ RDF can be serialized in different ways. The following two examples are showing 
 </rdf:RDF>
 ```
 
+The RDF/XML example above consists of a number of statements.  An RDF statement is formed by a resource, a property, and a property value (known as a subject, a predicate, and an object respectively). Let's take a closer look at the following RDF statement:
+
+```xml
+<rdf:Description rdf:about="https://www.example.com/rdf/corpus/gettysburg/lemma/nation">  
+<c:lemma>nation</c:lemma>
+```
+
+- The subject is "https://www.example.com/rdf/corpus/gettysburg/lemma/nation"
+- The predicate is ```lemma```
+- The object is ```nation```
+
+The same information in RDF can also be serialized as JSON-LD:
+
 ```json
 {
   "@context": {
@@ -171,9 +188,11 @@ RDF can be serialized in different ways. The following two examples are showing 
 }
 ```
 
+We can model text in many different ways: as plain text, as list, as XML, as RDF, etc. Because a transformation from one to another may also include some data loss, it is important to be aware of the model's strengths and weaknesses. This also helps you to better accommodate the mismatch between the model and the object that you are modelling.
+
 ## Markup semantics
 
-We’ll use XML as our principal example of the relationships among model, syntax, and semantics because it is familiar, but such relationships are applicable in other situations, as well (and we introduce an example from TexMECS markup below, for comparison).
+We’ll use XML as our principal example of the relationships among model, syntax, and semantics because it is familiar to most digital editors. Still, these relationships are applicable in other situations, as well (and we briefly introduce an example from TexMECS markup below, for comparison).
 
 ### Schema rules apply semantics to control markup
 
@@ -181,10 +200,59 @@ As far as the XML data model is concerned, element and attribute names are arbit
 
 ### Some markup properties are artifactual 
 
-The children of an XML element are always ordered in the XML data model, which is what we normally want, since, for example, if we rearrange the order of paragraphs in a chapter, the meaning of the documents is not the same. But the TEI uses a `<choice>` element to represent items that may not be inherently ordered, such as an abbreviation and its expansion or an error and its correction. This means that if two TEI documents differ only in the order of the children of an instance of `<choice>`, a XML parser cannot know that this situation is different from rearranging the paragraphs in a chapter. This means that any application that needs to know that order is sometimes informational and sometimes not needs to be told that. That the order of sibling elements is sometimes informational and sometimes not can be expressed in the schema, but it is not part of the XML data model, within which siblings are always ordered.
+##### Order between XML sibling elements
 
-Similarly, attribute nodes on an element in the XML model are always unordered. If we think of attributes as properties of elements, we can compare them to property lists elsewhere in the world. For example, if you have blond hair and blue eyes, that’s the same as having blue eyes and blond hair, and the order in which those physical traits are expressed is not informational. But the character-level serialization of the XML must order the attributes because that’s what serialization does. Here, though, an XML processor knows that attribute order is not informational, and it will recognize that two documents that differ only in the order of attributes should nonetheless be considered informationally equal.
+The children of an XML element are always ordered in the XML data model, which is what we normally want, since, for example, if we change the order of paragraphs in a chapter, the meaning of the text in the document changes as well. But some items may not be inherently ordered, such as an abbreviation and its expansion or an error and its correction. The TEI uses a `<choice>` element to represent that the order between an `<orig>` and a `<reg>` is arbitrary. However, an XML parser cannot know that the order of the children of a `<choice>` element is different from the order of the paragraphs in a chapter. The same applies to software implementations that read the XML file. In other words, they do not see the difference between XML elements that are inherently ordered, like the `<p>`s in this `<div>` :
+
+```xml
+<div type="chapter">
+	<p n="1">
+		<!-- some text here -->
+	</p>
+	<p n="2">
+		<!-- some text here -->
+	</p>
+</div
+```
+
+and XML elements that are not ordered, like the `<sic>` and the `<corr>` in the `<choice>` below:
+
+```xml
+<s>What a 
+  <choice>
+	<sic>mitsake</sic>
+	<corr>mistake</corr>
+  </choice>to make!
+</s>
+
+```
+
+Again, you can express in the schema whether the order of sibling elements is informational or not, e.g., that the order of the siblings `<p n="1">` and `<p n="2">` in the example above _is_ informational, and the order of the siblings `<sic>` and `<corr>` is not. This information is however not part of the XML data model, within which siblings are always ordered. This means that, if an application needs to know that order is sometimes informational and sometimes not, you need to tell it. 
+
+##### Order between XML attributes
+
+Similarly, attribute nodes on an element in the XML model are always unordered. If we think of attributes as properties of elements, we can compare them to property lists elsewhere in the world. For example, if you have blond hair and blue eyes, that’s the same as having blue eyes and blond hair, and the order in which those physical traits are expressed is not informational. Were we to express that information in XML, then the order of the attributes `"type"` and `"colour"` would not be informational, like in this hypothetical example:
+
+```xml
+<hair type="curly" colour="blond">
+```
+The character-level serialization of the XML must order the attributes because that’s what serialization does. Here, though, an XML processor knows that attribute order is not informational, and it will recognize that two documents that differ only in the order of attributes should nonetheless be considered informationally equal.
+
+To give an example, the following XML serialization:
+
+```xml
+<del type="strikethrough" place="inline">
+```
+is informationally equal to:
+
+```xml
+<del place="inline" type="strikethrough">
+```
 
 ### The relationship between model and serialization
 
-The challenge exemplified above is that XML models a document as an ordered tree. It knows that certain types of nodes (e.g., attributes) are not ordered. But with respect to elements, although an application can be told to ignore the order in certain circumstances, siblings are nonetheless always ordered in the XML data model, and XML syntax is therefore incapable of representing where order is and is not informational. As a comparison, TexMECS markup is a serialization that is capable of representing both ordered and unordered child elements ([TexMECS. An experimental markup meta-language for complex documents](http://mlcd.blackmesatech.com/mlcd/2003/Papers/texmecs.html)). TexMECS uses different markup for start and end tags, on the one hand, and what it calls start and end tag sets, on the other, where the sets are not mutually ordered informationally. This is one example of how TexMECS syntax is designed to express a different data model than XML syntax.
+The challenge exemplified above is that XML models a document as an ordered tree. It knows that certain types of nodes (e.g., attributes) are not ordered. But with respect to elements, although an application can be told to ignore the order in certain circumstances, siblings are nonetheless always ordered in the XML data model, and XML syntax is therefore incapable of representing where order is and is not informational. 
+
+There are other markup languages that allow you to make this information explicit. As a comparison, TexMECS markup is a serialization that is capable of representing both ordered and unordered child elements ([TexMECS. An experimental markup meta-language for complex documents](http://mlcd.blackmesatech.com/mlcd/2003/Papers/texmecs.html)). TexMECS uses different markup for start and end tags, on the one hand, and what it calls start and end tag sets, on the other, where the sets are not mutually ordered informationally. This is one example of how TexMECS syntax is designed to express a different data model than XML syntax. 
+
+The objective of this Institute is not to teach you to model in TexMECS nor in XML, but rather to make you aware of the strengths and weaknesses of data models and their serializations. Different models allow you to make different information explicit. Selecting one model has consequences for what features of the object you can easily express, and what features you can only express using workarounds or for instance a schema. In the rest of this day's section we take a closer look at the different data models and their expressive power for text modeling. See [plain Text](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/plain.md), [XML](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/xml_model.md) and [other models](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/other_models.md).  

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/pitt-1.css" charset="utf-8">
+    <script src="js/CETEI.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      var c = new CETEI();
+      c.getHTML5('p.fay.110.xml', function(data) {
+        document.getElementsByTagName("body")[0].appendChild(data);
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

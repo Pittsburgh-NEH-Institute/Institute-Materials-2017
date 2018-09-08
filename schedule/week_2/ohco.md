@@ -2,7 +2,7 @@
 
 ## OHCO enthusiasm
 
-The origin of the OHCO (ordered hierarchy of content objects) thesis is commonly traced to Steve DeRose, David Durand, Elli Mylonas, and Allen Renear’s 1990 “What is text, really?”, which said that:
+XML is based on the OHCO model. The origin of the OHCO (ordered hierarchy of content objects) thesis is commonly traced to Steve DeRose, David Durand, Elli Mylonas, and Allen Renear’s 1990 “What is text, really?”, which said that:
 
 > … text is best represented as an ordered hierarchy of content objects (OHCO), because that is what text really is.
  
@@ -34,7 +34,7 @@ The 1993 article concludes that:
 
 ## More about hierarchy: containment and dominance
 
-Overlapping hierarchy is a well-known challenge to OHCO for which many workarounds have been proposed, but a related issue is that some document components may not be hierarchical at all, at least in any meaningful way. For example, Jeni Tennison distinguishes containment from dominance with the following example (framed in terms of LMNL ranges):
+Overlapping hierarchy is a well-known challenge to OHCO for which many workarounds have been proposed, but a related issue is that some document components may not be hierarchical at all, at least in any meaningful way. For example, Jeni Tennison distinguishes containment from dominance with the following example (framed in terms of [LMNL](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/other_models.md) ranges):
 
 > Containment is a happenstance relationship between ranges while dominance is one that has a meaningful semantic. A page may happen to *contain* a stanza, but a poem dominates the *stanzas* that it contains.
 
@@ -42,7 +42,9 @@ This statement does not deny the existence of overlapping hierarchies (for examp
 
 ## Order
 
-Most of the challenges to OHCO have involved hierarchy, but order is also not an inalienable property of all textual objects. XML models documents as ordered trees of nodes, except that attributes on elements are not ordered, and neither are namespace nodes. But although element children in XML are ordered, the TEI `<choice>` element, for example, wraps child elements that have no logical mutual order, such as abbreviations and their expansions or errors and their corrections. The order of the child elements of `<choice>` is artifactual, and it distorts the ability of the model to represent what the text really is. More specifically, two TEI documents that differ only in the order of the children of their `<choice>` elements are not deep equal, although those that differ only in the order of their attributes are—even though the order is not informational in either case. As far as we can tell, the reality is that to the extent that text is a tree (or set of trees), it is *partially* ordered, while XML is *fully* ordered. And although the order can be ignored during processing, that happens at the application layer and requires semantic information that is external to the XML model. In other words, order does not always model what text really is.
+Most of the challenges to OHCO have involved hierarchy, but order is also not an inalienable property of all textual objects. As discussed in [Data model](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/model_syntax_semantics.md), XML models documents as ordered trees of nodes, except that attributes on elements are not ordered, and neither are namespace nodes. But although element children in XML are ordered, the TEI `<choice>` element, for example, wraps child elements that have no logical mutual order, such as abbreviations and their expansions or errors and their corrections. The order of the child elements of `<choice>` is artifactual, and it distorts the ability of the model to represent what the text really is. More specifically, two TEI documents that differ only in the order of the children of their `<choice>` elements are not deep equal, although those that differ only in the order of their attributes are—even though the order is not informational in either case. 
+
+As far as we can tell, the reality is that to the extent that text is a tree (or set of trees), it is *partially* ordered, while XML is *fully* ordered. And although the order can be ignored during processing, that happens at the application layer and requires semantic information that is external to the XML model. In other words, order does not always model what text really is. 
 
 ## Content objects
 
@@ -58,13 +60,15 @@ which in tree form would look like:
 
 <img src="images/romeo_xml.png" alt="[Title hierarchy]"/>
 
-Here the `<name>` elements might reasonably be considered content objects, but representing them as such compromises the hierarchy, which is no longer a string of three words, but now a sequence of two `<name>` elements with a `text()` node between them, and the `text()` nodes that contain the text of the names are on a different hierarchical level than the conjunction. LMNL and TAG, which are not obligatorily hierarchical, can tag the names without pushing the three words onto two different hierarchical levels. Here is the TAG hypergraph representation:
+Here the `<name>` elements might reasonably be considered content objects, but representing them as such compromises the hierarchy, which is no longer a string of three words, but now a sequence of two `<name>` elements with a `text()` node between them, and the `text()` nodes that contain the text of the names are on a different hierarchical level than the conjunction. The data models of LMNL and TAG are not obligatorily hierarchical, so you can tag the names without pushing the three words onto two different hierarchical levels. For comparison, here is the TAG hypergraph representation of the Romeo and Juliet phrase:
 
 <img src="images/romeo_hypergraph.png" alt="[Title hypergraph]"/>
 
 ## Conclusions
 
-It would be perverse to argue that text is not ordered, that it is not hierarchical, and that it does not consist of identifiable content objects, and the original 1990 OHCO paper compares the OHCO model favorably and correctly to alternatives that were in use at that time. But in the more than quarter century that has elapsed since 1990, we now recognize that the challenges to OHCO go beyond overlapping hierarchies, and invite a more nuanced engagement not only with the “H”, but also with the “O” and the “CO” of OHCO.
+It would be perverse to argue that text is not ordered, that it is not hierarchical, and that it does not consist of identifiable content objects, because to some extent it _is_ all of these things. But text is _more_ than an ordered hierarchy of content objects. 
+
+The original 1990 OHCO paper compares the OHCO model favorably and correctly to alternatives that were in use at that time. But in the more than quarter century that has elapsed since 1990, we now recognize that the challenges to OHCO go beyond overlapping hierarchies, and invite a more nuanced engagement not only with the “H”, but also with the “O” and the “CO” of OHCO.
 
 ## Works cited
 

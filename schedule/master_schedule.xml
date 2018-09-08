@@ -1209,7 +1209,7 @@
                 </act>
             </slot>
             <slot time="14:00:00">
-                <title>Introducing CETEIcean / Publishing on GitHub Pages</title>
+                <title>[Introducing CETEIcean / Publishing on GitHub Pages](ceteicean.html)</title>
                 <act time="25" type="Presentation">
                     <desc>Introducing CETEIcean / Publishing on GitHub Pages</desc>
                 </act>

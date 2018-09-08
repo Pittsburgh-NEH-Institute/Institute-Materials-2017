@@ -2,7 +2,7 @@
 
 ## Three views of XML
 
-XML is defined by its syntax ([Extensible Markup Language (XML). 1.0 (Fifth Edition).
+As set out in the [Data model section](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/model_syntax_semantics.md), XML is defined by its syntax ([Extensible Markup Language (XML). 1.0 (Fifth Edition).
 W3C Recommendation 26 November 2008](https://www.w3.org/TR/xml/)), but the syntax represents a serialization of a tree, which is a data model.
 
 <img src="images/xml_structures_all.png" width="99%" alt="[XML as model and serialization]"/>
@@ -11,7 +11,11 @@ W3C Recommendation 26 November 2008](https://www.w3.org/TR/xml/)), but the synta
 
 ## Markup and semantics
 
-XML (data model and syntax) prescribes no element or attribute names (except for attributes bound to the XML namespace with the `xml:` namespace prefix) and therefore no semantics. The meaning of elements and attributes is imposed by the developer, and semantically motivated constraints may optionally be formalized in a schema.
+When we talk about XML we usually mean the data model and syntax together. XML prescribes no element or attribute names (except for attributes bound to the XML namespace with the `xml:` namespace prefix) and therefore no formalized semantics. The meaning of elements and attributes is imposed by the developer or markup language designer, and semantically motivated constraints may optionally be formalized in a schema.
+
+See [Toward a semantic for XML Markup](10.1145/585058.585081)(2003) for a brief but insightful presentation of the role of semantics in markup.
+
+For example, a paragraph could be tagged with the `<para>` element, but just as well with the `<p>` element. An XML doesn't know the meaning of either of these elements, this is defined in a schema (in this case of DocBook and TEI respectively):
 
 ### Paragraphs in DocBook and in TEI
 
@@ -24,6 +28,8 @@ XML (data model and syntax) prescribes no element or attribute names (except for
 > `<p>` (paragraph) marks paragraphs in prose.
 
 ### Quotation in the TEI
+
+The same holds for a citation, which may be tagged with a `<q>` tag or with a `<quote>` tag.
 
 #### The `<q>` element
 

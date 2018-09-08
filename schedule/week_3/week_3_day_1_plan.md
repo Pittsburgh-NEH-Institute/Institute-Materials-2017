@@ -34,7 +34,7 @@ Time | Topic | Type
 
 ## 12:30–2:00: Lunch
 
-## 2:00–3:30: Introducing CETEIcean / Publishing on GitHub Pages
+## 2:00–3:30: [Introducing CETEIcean / Publishing on GitHub Pages](ceteicean.html)
 
 Time | Topic | Type
 ---- | ---- | ---- 

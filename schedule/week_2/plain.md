@@ -1,6 +1,6 @@
 # Plain text as model and expression
 
-Here are two printed images that conform to normal typographic conventions, plus one that doesn’t. How is structure expressed through layout and typography?
+Here are two printed images that conform to conventional typographic conventions, plus one that doesn’t. How is structure expressed through layout and typography?
 
 ## William Shakespeare, *Hamlet* (Second Quarto, 1604/1605)
 

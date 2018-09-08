@@ -1,8 +1,8 @@
 # Your own copy of the Institute GitHub repository
 
-Files you use for Institute activities are located in our GitHub repository (*repo*), and in order to work with them, you’re going to create your own copy of the repo, called a *fork*. This page explains how to do that.
+**Git** is a version control and general project management tool. **GitHub** is the social face of Git: you’ll use it to store your project files, share them with your project partners, keep track of revisions, and (typically) make them accessible to a broader community.
 
-Git is a version control and general project management tool. GitHub is the social face of Git: you’ll use it to store your project files, share them with your project partners, keep track of revisions, and (typically) make them accessible to a broader community.
+Files you use for Institute activities are located in our GitHub repository (*repo*), and in order to work with them, you’re going to create your own copy of the repo, called a *fork*. This page explains how to do that.
 
 ## Before you start: GitHub hygiene
 
@@ -40,7 +40,7 @@ The main repo for the Institute is at <https://github.com/Pittsburgh-NEH-Institu
 
 ## Clone your fork
 
-*Cloning* is the process of creating a local copy of a GitHub repo, and you’ll do your work in that local copy and then push your changes to your GitHub fork. <!--You could have cloned the main Institute repo instead of forking it and then cloning your fork, but the advantage of cloning your own fork is that you can create or change files and push them to GitHub, which you can’t do with the main Institute repo because you don’t have write permission-->
+*Cloning* is the process of creating a local copy of a GitHub repo. Yoou’ll do your work in that local copy and then push your changes to your GitHub fork. <!--You could have cloned the main Institute repo instead of forking it and then cloning your fork, but the advantage of cloning your own fork is that you can create or change files and push them to GitHub, which you can’t do with the main Institute repo because you don’t have write permission-->
 
 To clone your fork, navigate to it on GitHub and click on the green button on the right side labeled “Clone or download”. Copy the text in the little box that begins with “https”. Open a command line session on your local machine, navigate to the location where you want to create your local copy (you can use your Desktop if you don’t have an alternative preference), and type:
 
@@ -58,7 +58,7 @@ Do all of your work on files in your local copy of your repo, synchronizing it w
 
 When you push to and pull from GitHub, you’re synchronizing the copy of the repo on your local machine with the one in your fork on GitHub. When you first created your fork, it was an exact copy of our repo, but it doesn’t automatically keep up with changes we make. In GitHub terminology, assuming you haven’t created other branches, your local repo is your local *master*, your fork on GitHub is *origin/master*, and our repo on GitHub is *upstream/master*. Your local copy knows about *origin/master* because that got configured automatically when you cloned your fork, and that’s where you push and pull by default. But it doesn’t know about *upstream/master* until you tell it. You can do that by running the following command:
 
-```sh
+```
 git remote add upstream https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017.git
 ```
 

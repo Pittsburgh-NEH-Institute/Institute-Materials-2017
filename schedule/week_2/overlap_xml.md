@@ -1,6 +1,6 @@
 # Overlap in XML
 
-The examples below illustrate that the XML prohibition against overlap not only distorts the markup, but also complicates processing. The point of the XPath and XQuery examples is not as much to analyze the advanced features needed to process milestone workarounds as to demonstrate that processing overlapping structures represented by milestone workarounds is harder than processing regular XML “container” elements.
+The examples below illustrate that the XML prohibition against overlap not only distorts the markup, but also complicates processing. The point of the XPath and XQuery examples is not so much to analyze the advanced features needed to process milestone workarounds, but to demonstrate that processing overlapping structures represented by milestone workarounds is harder than processing regular XML “container” elements. In other words, the examples below illustrate why resorting to established workarounds is not always the best option. If you do use workarounds to capture complex textuel phenomena, then you need to be aware of the potential consequences for processing, querying, and analyzing.
 
 ## Markup complications
 
@@ -25,7 +25,7 @@ Excerpt from TEI edition of [“Ozymandias”](ozymandias.xml):
 </p>
 ```
 
-Phrases and lines overlap. We can’t make both of them containers, so instead of the standard TEI `<lg>` (line group) and `<l>` (line) [wrapper markup of lines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COVE), we've used [wrapper markup of phrases](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/AI.html#AILC) (`<phr>`) and tagged the beginnings of lines with empty `<lb/>` (line beginning) milestones, but more appropriately understood as ‘line beginning’). We could, alternatively, have used regular wrapper tags for lines and milestones for phrases. What we can’t do straightforwardly, because of the XML prohibition against overlap, is use both `<l>` and `<phr>` unless we do some joining with attribute pointers, thus:
+Phrases and lines overlap. We can’t make both of them containers, so instead of the standard TEI `<lg>` (line group) and `<l>` (line) [wrapper markup of lines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COVE), we've used [wrapper markup of phrases](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/AI.html#AILC) (`<phr>`) and tagged the beginnings of lines with empty `<lb/>` (line beginning) milestones, but more appropriately understood as ‘line break'. We could, alternatively, have used regular wrapper tags for lines and milestones for phrases. What we can’t do straightforwardly, because of the XML prohibition against overlap, is use both `<l>` and `<phr>` unless we do some joining with attribute pointers, for example:
 
 ```xml
 <p>
@@ -72,9 +72,9 @@ In comparison, the fact that lines and phrases may overlap isn’t a problem in 
 {sonneteer [encoding [resp}ebeshero{][resp}wap{]]]
 ```
 
-## Processing complications
+## Processing complications: XPath
 
-Overlap in XML is problematic not only during markup, but also during processing. Processing elements tagged with wrappers (like `<phr>` in the XML above) is easy because the XPath target is a single element. Processing elements delimited by milestones (like `<lb>` above) is harder. Try the following in the \<oXygen/\> XPath browser box, using the first version above, the one with `<lb>` milestone tags.
+Overlap in XML is problematic not only during markup, but also during processing. Processing elements tagged with wrappers (like `<phr>` in the XML above) is easy because the XPath target is a single element. Processing elements delimited by milestones (like `<lb>` above) is harder. Try the following in the \<oXygen/\> XPath browser box, using the first version above, the one with `<lb>` milestone tags. In the following paragraphs we look at the processing consequences of Markup Style 1 and Markup Style 2.
 
 ### XPath
 
@@ -111,7 +111,7 @@ for $p in //phr[not(@prev)] return
 	string-join(($p, //phr[@xml:id = substring-after($p/@next, '#')]),' ')
 ```
 
-does part of the job. Note that this XPath-only strategy doesn’t work with phrases spread over more than two lines because XPath alone cannot check recursively to see whether the “next” part of the phrase has another “next” part after it, etc.
+This does part of the job. Note that this XPath-only strategy doesn’t work with phrases spread over more than two lines because XPath alone cannot check recursively to see whether the “next” part of the phrase has another “next” part after it, etc.
 
 Finding lines is more complicated for Style 1:
 
@@ -346,7 +346,7 @@ When run against the poem, the output is:
    <phrase>and the heart that fed;</phrase>
    <phrase>And on the pedestal,</phrase>
    <phrase>these words appear:</phrase>
-   <phrase>My name is Ozymandias,</phrase>
+   <phrase>My name is Ozymandias,</phrase	>
    <phrase>King of Kings,</phrase>
    <phrase>Look on my Works,</phrase>
    <phrase>ye Mighty,</phrase>

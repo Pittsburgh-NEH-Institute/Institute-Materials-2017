@@ -2,9 +2,15 @@
 
 ## Why XPath?
 
-XPath is a technology for traversing an XML document to perform tasks like “find all speeches by Hamlet” or “find all chapters that contain only one paragraph”. Developers use XPath to explore their XML and ways to interact with it, but XPath is also important as an *ancillary* technology used by XSLT (to transform XML), XQuery (to … er … query XML), and Schematron (to validate XML against constraint rules). Everything interesting that we can do with XML starts from XPath!
+XPath is a technology for traversing an XML document to perform tasks like “find all speeches by Hamlet” or “find all chapters that contain only one paragraph”. Developers use XPath to explore their XML and as a means to interact with it, but XPath is also important as an *ancillary* technology used by XSLT (to transform XML), XQuery (to … er … query XML), and Schematron (to validate XML against constraint rules). Everything interesting that we can do with XML starts from XPath!
 
 We’ll use XPath in our Institute to examine what it means to interact with documents that have been modeled as ordered trees. It turns out that some traversals are easier than others, not only because of the distance and route, but also because XPath deals more idiomatically with some types of traversal than others.
+
+As you will learn, XPath depends on XML's tree structure. Working with XPath, then, is a good way to understand how your XML file is structured and to get a better grip at the relationship between the different nodes in the XML tree. The syntax of XPath is similar to file paths, because the file system is also a tree:
+
+<img src="images/img_xpath_folders.jpg" width="60%" alt="[Folders File system]"/>
+
+Still, you can also traverse your document using XPath in ways that completely ignore the tree structure, for example ```*distinct-values*(//speaker)``` returns all the values of the ```speaker``` elements in the document.
 
 ## XPath components
 
@@ -18,9 +24,11 @@ XPath consists of three principal types of components:
 
 ### Path expressions: walking the tree
 
-Open `hamlet.xml` from schedule/week_2 in your local copy of the Institute repo. In the upper left, configure the XPath browser box to use XPath 3.0. You’ll type XPath expressions into the browser box and hit `Return` to navigate within the document.
+Open `hamlet.xml` in your XML editor of choice. Note that the Institute uses \<oXygen/\> XML Editor and the following instructions may differ if you use a different editor. 
 
-This document is a TEI-encoded edition of a play. To navigate within an XML document you need to know how it has been marked up. If it’s in TEI, you can rely on what you know about TEI. If not, skim through the document in \<oXygen/\> to explore how it tags different components.
+You find the file `hamlet.xml` in schedule/week_2 in your local copy of the Institute repo. In the upper left of your \<oXygen/\> editor, configure the XPath browser box to use XPath 3.0. You’ll type XPath expressions into the browser box and hit `Return` to navigate within the document.
+
+This document is a TEI-encoded edition of a play. To navigate within an XML document you need to know how it has been marked up. If it’s marked up according to the TEI guidelines, you can rely on what you know about TEI. If not, skim through the document in \<oXygen/\> to explore how it tags different components.
 
 Path basics:
 
@@ -32,7 +40,7 @@ Path basics:
 
 Sample paths:
 
-* `/TEI/text/body/div` finds all acts. A path expression that begins with a slash starts at the document node, which is at the top of the document tree. Each subsequent slash navigates from the preceding one (by default to its children, unless a different axis is specified).
+* `/TEI/text/body/div` finds all acts. A path expression that begins with a slash starts at the document root node, which is at the top of the document tree. Each subsequent slash navigates from the preceding one (by default to its children, unless a different axis is specified).
 * `//body/div` finds all acts. A double slash means “look at my descendants”. A path that begins with a double slash means “start at the document node and look at the descendants”, that is, look at everything.
 
 ## XPath functions
@@ -42,7 +50,13 @@ Sample paths:
 ## Filtering with predicates
 
 * `//body/div[2]` finds Act 2. This is a *numerical predicate*. It finds all acts and then filters them to keep only the second in the sequence.
+
 * `//body/div[descendant::speaker = 'Ophelia']`. This finds all acts and filters them to keep only the ones that have a descendant `<speaker>` element of “Ophelia”, that is, all acts in which Ophelia speaks.
+
+* Find all of the stage directions that are inside a metrical line (<l>), that is, between the starting <l> and the ending </l>:
+```//l/stage[ancestor::l]```   
+
+* Enjambement: a line beginning inside a phrase can be found with the XPath ```//phr[lb]``` or ```//lb[parent://phr]```. These are good examples of predicates.
 
 ## Your turn
 

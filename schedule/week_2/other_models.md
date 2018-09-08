@@ -1,5 +1,7 @@
 # Other models and expressions
 
+This section discusses other data models and how they express textual features. Most data models have been developed to deal with specific textual features that are difficult to model in XML, such as overlap. We maintain that digital editors do not need to be well-versed in each data model, but that it is valuable to have an understanding of the specific features and strengths of alternative models in order to avoid a too narrow focus on existing technologies, as the prevalent use of TEI/XML may blind us for textual characteristics that are not part of the TEI model. Below we discuss three alternative data models and their syntax: LMNL, GODDAG and TexMECS, and TAGML.
+
 ## LMNL: Layered Markup and Annotation Language
 
 Structure is expressed through *ranges* over *atoms* (typically textual characters). LMNL is a data model, which can be represented with *sawtooth* syntax, but the data model is primary, and the syntax is just illustrative.

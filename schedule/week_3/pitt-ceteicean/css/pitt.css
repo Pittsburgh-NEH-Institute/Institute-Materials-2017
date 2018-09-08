@@ -1,0 +1,45 @@
+  tei-teiheader {
+    display: none;
+  }
+  tei-div {
+    display: block;
+  }
+  tei-div[type=edition] {
+    font-family: "Lucida Grande", "Cardo", "Arial Unicode MS";
+    margin-left: 4em;
+  }
+  h2.textpart {
+    margin-left: -2em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  span.linenum {
+    float: left;
+    margin-left: -2em;
+  }
+  tei-p,tei-ab {
+    display: block;
+  }
+  tei-choice tei-reg {
+    display: none;
+  }
+  tei-rdg {
+    display: none;
+  }
+  div.apparatus {
+    font-family: "Lucida Grande", "Cardo", "Arial Unicode MS";
+    margin-left: 4em;
+  }
+  div.apparatus tei-orig {
+    display: none;
+  }
+  div.apparatus tei-reg {
+    display: inline;
+  }
+  div.apparatus tei-rdg {
+    display:inline;
+  }
+  
+
+  
+
