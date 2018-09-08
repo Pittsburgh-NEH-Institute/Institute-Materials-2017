@@ -43,3 +43,11 @@ There are two things on this page we want you to notice. The header, footer, and
 
 - XRX, betterFORM
 - TEIPublisher
+
+
+NOTES:
+
+
+https://rvdb.wordpress.com/2011/12/07/internal-url-rewriting-with-exists-mvc-framework/
+
+https://markmail.org/message/ej35xhnrzk4tkh6p
