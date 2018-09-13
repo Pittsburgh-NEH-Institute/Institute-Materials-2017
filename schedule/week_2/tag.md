@@ -90,11 +90,11 @@ A simple TAGML example is:
 [line>The rain in Spain falls mainly on the plain.<line]
 ```
 
-with the `[line>` being the start-tag and the `<line]` being the end-tag. For every start-tag there should be an end-tag, and vice versa. --> **Update with link to paper Balisage 2018 when available**
+with the `[line>` being the start-tag and the `<line]` being the end-tag. For every start-tag there should be an end-tag, and vice versa. 
 
 ## Curious about TAG?
 
-As noted above, up-to-date information about TAG is maintained at the [TAG portal on GitHub](https://github.com/HuygensING/tag).  
+As noted above, up-to-date information about TAG is maintained at the [TAG portal on GitHub](https://github.com/HuygensING/tag). Also take a look at the [Balisage 2018 paper](https://www.balisage.net/Proceedings/vol21/html/HaentjensDekker01/BalisageVol21-HaentjensDekker01.html) for more details on TAGML and its relation to existing markup languages.
 
 
 <!--- ### TAG hyperedges
