@@ -16,7 +16,7 @@
 * Terras, Melissa, Julienne Nyhan, and Edward Vanhoutte (editors). 2014. _Defining Digital Humanities: a reader._ Oxford: Routledge.
 * Unsworth, John. 2016. "What is humanities computing and what is not?." _Defining Digital Humanities_, pp. 51-63. Oxford: Routledge.
 
-### Digital Humanities Pedagogy and Learning
+### Digital Humanities pedagogy and learning
 
 * Birnbaum, David J., 2014. Address read at the University of Pittsburgh Faculty Senate annual spring plenary session, 2014-03-19. <http://www.obdurodon.org/slides/2014-03-19_senate-plenary.pdf>
 * Birnbaum, David J. and Alison Langmead. 2017. "Task-driven programming pedagogy in the Digital Humanities." _New directions for computing education. Embedding computing across disciplines_, edited by Samuel B. Fee, Amanda Holland-Minkley, and Thomas E. Lombardi, pp. 63–85. NY: Springer.
@@ -50,6 +50,7 @@
 * Boot, Peter, Anna Cappellotto, Wout Dillen, Franz Fischer, Aodhán Kelly, Andreas Mertgens, Anna-Maria Sichani, Elena Spadini, Dirk van Hulle (editors). 2017. _Advances in digital scholarly editing. Papers presented at the DiXiT conferences in the Hague, Cologne, and Antwerp_. Leiden: Sidestone. <https://www.sidestone.com/books/advances-in-digital-scholarly-editing>
 * Bryant, John. 2002. _The fluid text: a theory of revision and editing for book and screen._ Ann Arbor: University of Michigan Press.
 * Bryant, John. 2006. "Editing a fluid text." <http://rotunda.upress.virginia.edu/melville/intro-combined.pdf>
+* Burghart, Marjorie and Elena Pierazzo. _Digital scholarly editions: manuscripts, texts and TEI encoding_. 
 * Burnard Lou, Katherine O’Brien O’Keeffe, and John Unsworth (editors). 2006. _Electronic textual editing._ NY: Modern Language Association.
 * Burnard, Lou and Syd Bauman (editors). 2015. _TEI P5: Guidelines for electronic text encoding and interchange._ Version 3.1.0. Charlottesville, Virginia: Text Encoding Initiative Consortium.
 * Buzzetti, Dino and Jerome McGann. 2006. "Critical editing in a digital horizon”. _Electronic textual editing_, edited by David Greetham, Lou Burnard, Katherine O’Brien O’Keefe, and John Unsworth, pp. 53–73. New York: AbeBooks.
