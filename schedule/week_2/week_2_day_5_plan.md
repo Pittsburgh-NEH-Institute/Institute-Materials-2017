@@ -55,7 +55,7 @@ Time | Topic | Type
 
 ## 4:00–5:30: Visualization as outcome
 
-Visualization as outcome
+In the last section, we’ll discuss [visualization as a view](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/visualization_as_view.md) on your text. We will also make you familiar with different [visualization formats](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/visualization_formats.md).
 
 Time | Topic | Type
 ---- | ---- | ---- 
