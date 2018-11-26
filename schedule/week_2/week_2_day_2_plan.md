@@ -51,6 +51,7 @@ Time | Topic | Type
 ## 12:30–2:00: Lunch
 
 ## 2:00–3:30: Tokenization
+We use the collation software CollateX to tokenize our text. After installing or upgrading CollateX, we go on to tokenize plain text files and XML files. We discuss why it’s useful, if not necessary, to tokenize your texts and go on to discuss the challenges of tokenization.
 
 Time | Topic | Type
 ---- | ---- | ---- 
@@ -63,7 +64,11 @@ Time | Topic | Type
 
 ## 4:00–5:30: Normalization
 
-Before we start: 1. Navigate to your fork of our Institute repo and run `git pull upstream remote`. 2. Start Jupyter notebook either from the Anaconda launcher or by navigating to your home directory and typing `jupyter notebook`. 3. Within the main Jupyter notebook web page, navigate to `schedule/week_2` in your fork of our repo and open `Normalization.ipynb`, `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and `Integrating_XML_with_Python.ipynb`.
+Before we start: 
+
+1. Navigate to your fork of our Institute repo and run `git pull upstream remote`. 
+2. Start Jupyter notebook either from the Anaconda launcher or by navigating to your home directory and typing `jupyter notebook`. 
+3. Within the main Jupyter notebook web page, navigate to `schedule/week_2` in your fork of our repo and open `Normalization.ipynb`, `Unicode-normalization.ipynb`, `Normalization_examples.ipynb`, and `Integrating_XML_with_Python.ipynb`.
 
 Time | Topic | Type
 ---- | ---- | ---- 

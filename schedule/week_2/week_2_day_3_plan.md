@@ -4,7 +4,7 @@
 Week 2, Day 3 expands upon the idea of digital editions as text processing
                 pipelines. After a short recap of day 2, we continue with the step normalization. We
                 will show how these two pipeline stages prepare texts for automated collation. The
-                process of automated collation is also discussed from a modeling perspective (GM).
+                process of automated collation is also discussed from a modeling perspective (with the Gothenburg Model).
                 Participants learn that their research goals and questions influence the
                 computational pipelines.
 
@@ -27,7 +27,7 @@ Week 2, Day 3 expands upon the idea of digital editions as text processing
 Time | Topic | Type
 ---- | ---- | ---- 
 15 min | Review of [week 2, day 2](week_2_day_2_plan.md): computational pipelines, modeling, processing, and tokenization | Discussion
-15 min | [Basic normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_XML_with_Python.ipynb)) | Presentation
+15 min | [Basic normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_XML_with_Python.ipynb) | Presentation
 15 min | [Using NLTK for normalization](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/blob/master/schedule/week_2/Integrating_XML_with_Python.ipynb) | Code lab
 15 min | Regular expressions | Code lab
 15 min | [Basic XML normalization: transforming XML to a stream of normalized (word) tokens](https://github.com/Pittsburgh-NEH-Institute/Institute-Materials-2017/tree/master/schedule/week_2/collation_with_markup) | Code lab
