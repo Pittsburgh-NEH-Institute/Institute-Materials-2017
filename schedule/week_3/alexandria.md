@@ -15,6 +15,7 @@ By bringing together a wide range of information about a text in a structural an
 If you enjoy experimenting with data models and advanced text analysis, _Alexandria_ is the tool for you. If you're used to working with XML, it is highly enlightening to work with a data model in which you can easily model overlapping structures, discontinuous elements, and nonlinear text without having to resort to workarounds.
 
 ### Can I use it?
+<<<<<<< HEAD
 Yes, you can. Below you’ll find the installation instructions. We also created a [tutorial](https://huygensing.github.io/alexandria-markup-server/tutorial/) in the form of a [Jupyter Notebook](http://nbviewer.jupyter.org/github/DiXiT-eu/collatex-tutorial/blob/master/unit1/Jupyter_notebook.ipynb). The notebook contains blocks of text and small snippets of code: commands that you give to your version of Alexandria. You can run these commands from within the notebook. The notebook, in other words, is a secure environment for you to play around with and get to know _Alexandria_. [The tutorial](https://huygensing.github.io/alexandria-markup-server/tutorial/) explains in detail how _Alexandria_ works and what you need to oprate it.
 
 ## Installation

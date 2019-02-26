@@ -14,7 +14,7 @@ There are two ways to model text as a graph: use a markup language that allows o
 OLD inspiration
 TAG is multiple things. It is a data model for text and an accompanining markup language. It allows for overlap to be modelled natively.
 
-the Markup fgile and the underlying graph are related.
+the Markup file and the underlying graph are related.
 END OLD
 
 H2. Introduction
