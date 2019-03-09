@@ -45,6 +45,7 @@
 ### Digital scholarly editing and theory of edition
 
 * Andrews, Tara L., 2012. “The third way: philology and critical edition in the digital age.” _Variants,_ vol. 10, pp. 61–76.
+* Andrews, Tara and Joris van Zundert. 2016. “What are you trying to say? The interface as an integral element of argument.” <https://static.uni-graz.at/fileadmin/gewi-zentren/Informationsmodellierung/PDF/andrews_zundert_interface-argument-min.pdf>
 * Apollon, Daniel, Claire Bélisle, and Philippe Régnier (editors). 2014. _Digital critical editions: exploring the interweaving of traditional and digital textual scholarship._ Urbana-Champaign: U Illinois P.
 * Bleeker, Elli. 2017. _Mapping invention in writing: digital infrastructure and the role of the genetic editor._ Ph.D. thesis, University of Antwerp.
 * Boot, Peter, Anna Cappellotto, Wout Dillen, Franz Fischer, Aodhán Kelly, Andreas Mertgens, Anna-Maria Sichani, Elena Spadini, Dirk van Hulle (editors). 2017. _Advances in digital scholarly editing. Papers presented at the DiXiT conferences in the Hague, Cologne, and Antwerp_. Leiden: Sidestone. <https://www.sidestone.com/books/advances-in-digital-scholarly-editing>
@@ -61,6 +62,7 @@ Access to Textual Cultural Heritage._ New York: ACM.
 * Dahlstrom, Mats. 2009. “The compleat edition.” _Text editing, print, and the digital world_, edited by Marilyn Deegan and Katherine Sutherland, pp. 27–44. Surrey: Ashgate Publishing.
 * Deegan, Marilyn and Katherine Sutherland (editors). _Text editing, print, and the digital world_. Surrey: Ashgate Publishing.
 * De Biasi, Pierre-Marc. 1996. "What is a literary craft? Toward a functional typology of genetic documentation", trans. Ingrid Wassenaar. _Yale French studies_, vol. 89, pp. 26–58.
+* Dillen, Wout. 2016. “The editor in the interface. Guiding the user through texts and images.” <https://static.uni-graz.at/fileadmin/gewi-zentren/Informationsmodellierung/PDF/Dillen_The-Editor-in-the-Interface-min.pdf>
 * Driscoll, Matthew James and Elena Pierazzo (editors). 2016. _Digital scholarly editing: theories and practices._ Cambridge: Open book publishers. <http://www.openbookpublishers.com/product/483/digital-scholarly-editing--theories-and-practices>
 * Eggert, Paul. 2009. _Securing the past: conservation in art, architecture and literature._ Cambridge: Cambridge University Press.
 * Fraistat, Neil and Julia Flander (editors). 2013. _The Cambridge companion to textual scholarship._ Cambridge: Cambridge University Press.
