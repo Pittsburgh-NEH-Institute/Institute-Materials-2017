@@ -22,6 +22,20 @@ and <https://github.com/ebeshero/Pittsburgh_Frankenstein/tree/master/collateXPre
 
 In the [e-PVL](http://pvl.obdurodon.org/browser.xhtml), I use CollateX to create a word-level alignment of variant readings. The digital [Codex Suprasliensis](http://suprasliensis.obdurodon.org/) is a fairly traditional diplomatic/facsimile edition. For something more original, which uses graphic visualization to represent and explore themes across linguistic traditions, see the [Digenis Akritis: Greek and Slavic](http://digenis.obdurodon.org/) and [Daniel the Prisoner: A virtual florilegium](http://zatochnik.obdurodon.org/). The texts at the [Annotated Afanas′ev library](http://aal.obdurodon.org/) form a pedagogical edition, with linguistic and folkloric annotations.
 
+
+## Elli Bleeker
+
+Research into the genesis of a literay work presents a number of particular challenges for digital scholarly editing. 
+
+- It necessitates — at the very least — a text encoding from both a document and a textual perspective. Within the framework of XML/TEI P5 this double perspective results in familiar issues of conflicting hierarchies. 
+- Current text encoding models only partially account for the temporal aspect of writing, which is nevertheless an important feature for the genetic researcher. 
+- The multilayered digital transcriptions of draft manuscripts present novel challenges for automated collation software: should the software take into account the authorial revisions on the on the page? If we have multiple layers of text on a document, what constitutes a textual version? 
+- In terms of infrastructure, a digital genetic edition requires an adequate way to navigate between textual versions and documents, between temporal stages of writing and psychical features of that writing process. 
+
+To put it briefly, digital genetic editors operate within a stimulating and compelling framework for digital research methods. For my PhD research at the Centre for Manuscript Genetics of the University of Antwerp I examined how to computationally model information about the textual genesis of _Sheherazade of Literatuur als losprijs_, written by modernist author Raymond Brulez in 1932. My reseach concentrates (1) on the automated collation of the manuscripts in a way that respects the multilayered nature of the manuscript page and (2) the visual representation of the network of interrelated textual fragments. 
+
+The NEH Institute 2017 has been fundamental for my PhD research as well as my subsequent academic career. Its main benefit has been to provide me with a deeper understanding of employing digital technologies for textual genetic research. Highly appreciated also was the Insitute’s promotion of a novel, digital mode of thinking about textual research, instead of merely teaching the use of digital tools.  
+
 ## Francesca Giovannetti
 
 [Paolo Bufalini. Appunti (1981–1991)](https://github.com/marilenadaquino/bufalinis-notebook)
