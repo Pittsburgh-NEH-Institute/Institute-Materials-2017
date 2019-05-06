@@ -50,7 +50,7 @@ The complete list of metacharacters:
 | `[` | _opening square bracket_ |
 | `]` | _closing square bracket_ |
 | `\` | _backslash_ |
-| `\|` | _pipe_ or _bar_ |
+| `|` | _pipe_ or _bar_ |
 | `(` | _opening parenthesis_ |
 | `)` | _closing parenthesis_ |
 
